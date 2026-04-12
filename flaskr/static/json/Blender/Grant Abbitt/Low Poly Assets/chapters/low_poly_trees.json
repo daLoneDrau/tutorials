@@ -1,0 +1,136 @@
+{
+  "title": "Low-Poly Trees",
+  "sections": [
+    {
+      "Part 1": {
+        "key_concepts": [
+          "[url]Make Low Poly Trees & Save the Planet | #Teamtrees | Blender 2.8^^https://www.youtube.com/watch?v=p-9pgZI3inI&t=233s[/url]",
+          {
+            "section": {
+              "header": "Skin Modifier",
+              "content": [
+                {
+                  "section": {
+                    "header": "Tree Base",
+                    "content": [
+                      "Open a new scene and delete the camera and light. [k]Tab[/k] into Edit Mode and [k]1[/k] into Vertex Mode. [k]A[/k] to select all vertices and [k]M,A[/k] to merge them at the center (Image 1). [k]E[/k] to extrude the vertex out in several directions, creating a tree-like shape (Image 2). Feel free to box-select several vertices at once and [k]G[/k] or [k]R[/k] them around.",
+                      {
+                        "image": [
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-01.jpg",
+                            "caption": "Image 1 - Merging the vertices"
+                          },
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-02.jpg",
+                            "caption": "Image 2 - Creating a tree shape"
+                          }
+                        ]
+                      },
+                      "Add a Skin Modifier (Image 3). This will give it a blocky shape. [k]Alt-Z[/k] to turn on X-Ray Mode and select the top vertices. [k]Ctrl-A[/k] will let you shrink down the top vertices to make the branches thinner (Image 4). Scale down the top vertices, and scale up the bottom ones as you see fit. If you want, you can subdivide any edges to add more topology and move branches (or the trunk) around.",
+                      {
+                        "image": [
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-03.jpg",
+                            "caption": "Image 3 - Adding the Skin Modifier"
+                          },
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-04.jpg",
+                            "caption": "Image 4 - Scaling the top vertices down"
+                          }
+                        ]
+                      },
+                      "When you are happy with your tree base, [k]Tab[/k] into Object Mode and apply the modifier."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Leaves",
+                    "content": [
+                      "Go to the end of one of the branches and [k]Shift-RMB[/k] to move the cursor there (Image 5). [k]Shift-A[/k] and add an Icosphere with Subdivisons set to 1 (Image 6). [k]Shift-D[/k], [k]G,R[/k] to add more leaves to the different parts of the tree. Make sure to leave some of the branches showing (Image 7). [k]Shift-S,W[/k] to move the 3D cursor back to the world orign when you finish.",
+                      {
+                        "image": [
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-05.jpg",
+                            "caption": "Image 5 - Moving the 3D cursor to the end of a branch"
+                          },
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-06.jpg",
+                            "caption": "Image 6 - Adding an Icosphere"
+                          },
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-07.jpg",
+                            "caption": "Image 7 - More Leaves"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Pine Tree",
+              "content": [
+                "In Object Mode, [k]Shift-A[/k] and add a cylinder with 6 vertices. [k]Tab[/k] into Edit Mode, [k]3[/k] for Face Mode and [k]S[/k] to scale in the top face to make our trunk (Image 8). In Object Mode, [k]Shift-D,Z[/k] to duplicate the trunk and move it up. [k]S,Shift-Z[/k] to scale it up in the x- and y-axes. This will be the first set of leaves (Image 9). In Edit Mode, scale in the top face and scale out the bottom face (Image 10). Select the bottom face and [k]I[/k] to inset it and [k]E[/k] to extrude it in (Image 11). This will be good when stacking the leaves.",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-08.jpg",
+                      "caption": "Image 8 - Creating the trunk"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-09.jpg",
+                      "caption": "Image 9 - Creating the leaves"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-10.jpg",
+                      "caption": "Image 10 - Shaping the leaves"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-11.jpg",
+                      "caption": "Image 11 - Insetting the bottom face"
+                    }
+                  ]
+                },
+                "In Object Mode [k]Shift-D[/k] to duplicate the first layer of leaves, move them up and [k]R[/k], [k]S[/k] them slightly. Make about five layers of leaves, rotating, and scaling as you go. The last two layers should [k]S,Z[/k] to scale them up to make them narrower as well (Image 12). At the top layer, make the top face smaller, but not a complete point. To add some variation, select one of the layers and [k]Tab[/k] into Edit Mode. [k]Ctrl-R[/k] to add a loop cut, and then [k]G[/k] to move that up slightly (Image 13). You can also add notches. Select a layer and [k]/[/k] to hide all other objects. [k]K[/k] to use the Knife Tool to cut two triangle shape front and back (Image 14). For further variation, you can add a loop cut to your trunk and [k]G,R[/k] to add a bends.",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-12.jpg",
+                      "caption": "Image 12 - Creating the leaves"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-13.jpg",
+                      "caption": "Image 13 - Moving up the loop cuts"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-14.jpg",
+                      "caption": "Image 14 - Adding notches"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Low-Poly Trees",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_trees-01.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
