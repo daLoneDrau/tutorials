@@ -1,0 +1,71 @@
+# .github/workflows/deploy.yml
+#
+# Automatically builds and deploys the static site to GitHub Pages
+# whenever you push to the main branch.
+#
+# Setup steps (one time):
+#   1. Go to your repo → Settings → Pages
+#   2. Under "Source", select "GitHub Actions"
+#   3. Push this file to .github/workflows/deploy.yml
+#   4. Push any change to main — the site will build and deploy automatically
+#
+# Your site will be available at:
+#   https://<your-username>.github.io/<your-repo-name>/
+#
+# NOTE: If your repo is not at the root of a domain (i.e. it's at
+# /repo-name/ rather than /), static asset paths like /static/style.css
+# will need a base path prefix. See the note in build.py's url_for()
+# function and update STATIC_BASE if needed.
+
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install jinja2
+
+      - name: Build static site
+        run: |
+          python build.py
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
