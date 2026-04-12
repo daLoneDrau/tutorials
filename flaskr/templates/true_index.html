@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block sideaccordion %}
+{% endblock %}
+
+{% block content %}
+<h1>Blender Tutorials</h1>
+{% for topic in library %}
+    <h2>{{ topic.topic }}</h2>
+    {% for creator in topic.creators %}
+        <h3>{{ creator.creator }}</h3>
+        <ul>
+        {% for course in creator.courses %}
+            {% if course.chapters %}
+                {% set chapter = course.chapters[0] %}
+                {% if chapter.sections %}
+                    {% set section = chapter.sections[0] %}
+                    {% set section_title = section.keys()|list|first %}
+                    <li>
+                        <a href="/tutorials/{{ topic.topic }}/{{ creator.creator }}/{{ course.course }}/{{ chapter.title }}/{{ section_title }}/">
+                            {{ course.course }}
+                        </a>
+                    </li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        </ul>
+    {% endfor %}
+{% endfor %}
+{% endblock %}
