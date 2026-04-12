@@ -4,7 +4,7 @@
     {
       "Part 1": {
         "key_concepts": [
-          "[url]Make Low Poly Trees & Save the Planet | #Teamtrees | Blender 2.8^^https://www.youtube.com/watch?v=p-9pgZI3inI&t=233s[/url]",
+          "[url]Make Low Poly Trees & Save the Planet | #Teamtrees | Blender 2.8^^https://www.youtube.com/watch?v=p-9pgZI3inI[/url]",
           {
             "section": {
               "header": "Skin Modifier",
@@ -17,11 +17,11 @@
                       {
                         "image": [
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-01.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-01.jpg",
                             "caption": "Image 1 - Merging the vertices"
                           },
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-02.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-02.jpg",
                             "caption": "Image 2 - Creating a tree shape"
                           }
                         ]
@@ -30,11 +30,11 @@
                       {
                         "image": [
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-03.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-03.jpg",
                             "caption": "Image 3 - Adding the Skin Modifier"
                           },
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-04.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-04.jpg",
                             "caption": "Image 4 - Scaling the top vertices down"
                           }
                         ]
@@ -51,15 +51,15 @@
                       {
                         "image": [
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-05.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-05.jpg",
                             "caption": "Image 5 - Moving the 3D cursor to the end of a branch"
                           },
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-06.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-06.jpg",
                             "caption": "Image 6 - Adding an Icosphere"
                           },
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-07.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-07.jpg",
                             "caption": "Image 7 - More Leaves"
                           }
                         ]
@@ -78,19 +78,19 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-08.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-08.jpg",
                       "caption": "Image 8 - Creating the trunk"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-09.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-09.jpg",
                       "caption": "Image 9 - Creating the leaves"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-10.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-10.jpg",
                       "caption": "Image 10 - Shaping the leaves"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-11.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-11.jpg",
                       "caption": "Image 11 - Insetting the bottom face"
                     }
                   ]
@@ -99,15 +99,15 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-12.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-12.jpg",
                       "caption": "Image 12 - Creating the leaves"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-13.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-13.jpg",
                       "caption": "Image 13 - Moving up the loop cuts"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-14.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_tree_01-14.jpg",
                       "caption": "Image 14 - Adding notches"
                     }
                   ]
@@ -122,7 +122,7 @@
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_trees-01.glb",
+                    "path": "Blender/Grant Abbitt/LowPolyAssets/LowPolyTrees/low_poly_trees-01.glb",
                     "canvas_number": 1
                   }
                 }
