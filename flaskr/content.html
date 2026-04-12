@@ -1,0 +1,532 @@
+{% extends "base.html" %}
+
+{% block sideaccordion %}
+    {% for topic in library %}
+        <p class="caption" role="heading"><span class="caption-text">{{ topic.topic }}</span></p>
+        <div class="accordion" id="creators-accordion">
+            {% for creator in topic.creators %}
+                <div class="accordion-item">
+                    <span class="accordion-header" id="heading{{ creator.creator|replace(' ', '_') }}">
+                        {% if _creator == creator.creator %}
+                            <button type="button" class="accordion-button creator" data-bs-toggle="collapse" data-bs-target="#collapse{{ creator.creator|replace(' ', '_') }}">
+                        {% else %}
+                            <button type="button" class="accordion-button collapsed creator" data-bs-toggle="collapse" data-bs-target="#collapse{{ creator.creator|replace(' ', '_') }}">
+                        {% endif %}
+                            {{ creator.creator }}
+                        </button>
+                    </span>
+                    {% if _creator == creator.creator %}
+                        <div id="collapse{{ creator.creator|replace(' ', '_') }}" class="accordion-collapse collapse show" data-bs-parent="#creators-accordion">
+                    {% else %}
+                        <div id="collapse{{ creator.creator|replace(' ', '_') }}" class="accordion-collapse collapse" data-bs-parent="#creators-accordion">
+                    {% endif %}
+                        <div class="accordion-body">
+                            <div class="accordion" id="courses-accordion">
+                                {% for course in creator.courses %}
+                                    <div class="accordion-item">
+                                        <span class="accordion-header" id="heading{{ course.course|replace(' ', '_') }}">
+                                            {% if _course == course.course %}
+                                                <button type="button" class="accordion-button course" data-bs-toggle="collapse" data-bs-target="#collapse{{ course.course|replace(' ', '_') }}">
+                                            {% else %}
+                                                <button type="button" class="accordion-button collapsed course" data-bs-toggle="collapse" data-bs-target="#collapse{{ course.course|replace(' ', '_') }}">
+                                            {% endif %}
+                                                {{ course.course }}
+                                            </button>
+                                        </span>
+                                        {% if _course == course.course %}
+                                            <div id="collapse{{ course.course|replace(' ', '_') }}" class="accordion-collapse collapse show" data-bs-parent="#courses-accordion">
+                                        {% else %}
+                                            <div id="collapse{{ course.course|replace(' ', '_') }}" class="accordion-collapse collapse" data-bs-parent="#courses-accordion">
+                                        {% endif %}
+                                            <div class="accordion-body">
+                                                <div class="accordion" id="chapters-accordion">
+                                                    {% for chapter in course.chapters %}
+                                                        <div class="accordion-item">
+                                                            <span class="accordion-header" id="heading{{ chapter.title|replace(' ', '_') }}">
+                                                                {% if _chapter == chapter.title %}
+                                                                    <button type="button" class="accordion-button chapter" data-bs-toggle="collapse" data-bs-target="#collapse{{ chapter.title|replace(' ', '_') }}">
+                                                                {% else %}
+                                                                    <button type="button" class="accordion-button collapsed chapter" data-bs-toggle="collapse" data-bs-target="#collapse{{ chapter.title|replace(' ', '_') }}">
+                                                                {% endif %}
+                                                                    {{ chapter.title }}
+                                                                </button>
+                                                            </span>
+                                                            {% if _chapter == chapter.title %}
+                                                                <div id="collapse{{ chapter.title|replace(' ', '_') }}" class="accordion-collapse collapse show" data-bs-parent="#chapters-accordion">
+                                                            {% else %}
+                                                                <div id="collapse{{ chapter.title|replace(' ', '_') }}" class="accordion-collapse collapse" data-bs-parent="#chapters-accordion">
+                                                            {% endif %}
+                                                                <div class="accordion-body">
+                                                                    <div class="accordion" id="sections-accordion">
+                                                                        {% for section in chapter.sections %}
+                                                                            {% for key, value in section.items() %}
+                                                                                {% if _section == key %}
+                                                                                    <a class="reference internal current" href="/{{ topic.topic }}/{{ creator.creator}}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
+                                                                                {% else %}
+                                                                                    <a class="reference internal" href="/{{ topic.topic }}/{{ creator.creator}}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
+                                                                                {% endif %}
+                                                                            {% endfor %}
+                                                                        {% endfor %}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+{% endblock %}
+
+{% block sidebar %}
+    {% for course_item in nav %}
+        <p class="caption" role="heading"><a class="caption-text" href="{{ course_item.href }}" target="_blank">{{ course_item.title }}</a></p>
+        {% if course_item.children%}
+            <ul>
+            {% for chapter_item in course_item.children %}
+                {% if chapter_item.children|length == 0 %}
+                    <li class="toctree-l1">
+                        <a class="reference internal" href="/{{ course_item.title }}/{{ chapter_item.title }}">{{ chapter_item.title }}</a>
+                    </li>
+                {% else %}
+                    <li class="toctree-l1">
+                        <a class="reference internal has-children" href="/{{ course_item.title }}/{{ chapter_item.title }}">{{ chapter_item.title }}</a>
+                        <ul>
+                            {% for section_item in chapter_item.children %}
+                                <li class="toctree-l2">
+                                    <a class="reference internal" href="/{{ course_item.title }}/{{ chapter_item.title }}/{{ section_item.title }}">{{ section_item.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+{% macro compound_text(compound_items) -%}
+    <p>
+        {% for item in compound_items %}
+            {% if item.type == "text" %}
+                {{ item.content }}
+            {% elif item.type == "anchor" %}
+                {{ url(item.href, item.content) }}
+            {% elif item.type == "code" %}
+                <code style="display:block; white-space:pre-wrap">{{ item.content }}</code>
+            {% elif item.type == "image" %}
+                {{ image(item.content) }}
+            {% elif item.type == "italic" %}
+                <span style="font-style: italic;">{{ item.content }}</span>
+            {% elif item.type == "kbd" %}
+                <kbd class="kbd docutils literal notranslate">{{ item.content }}</kbd>
+            {% elif item.type == "model" %}
+                {{ model(item.content) }}
+            {% elif item.type == "menu_selection" %}
+                <span class="menuselection">{{ item.content }}</span>
+            {% elif item.type == "strong" %}
+                <span style="font-weight: bold;">{{ item.content }}</span>
+            {% elif item.type == "underline" %}
+                <span style="text-decoration: underline;">{{ item.content }}</span>
+            {% endif %}
+        {% endfor %}
+    </p>
+{%- endmacro %}
+
+{% macro d_list(list_data) -%}
+    <dl>
+        {% for d_list_item in list_data %}
+            <dt><kbd class="kbd docutils literal notranslate">{{ d_list_item[0].kbd }}</kbd></dt><dd>{{ d_list_item[1] }}</dd>
+        {% endfor %}
+    </dl>
+{%- endmacro %}
+
+{% macro header(level, header_text) -%}
+    <{{ ["h", level|string]|join("") }}>{{ header_text }}</{{ ["h", level|string]|join("") }}>
+{%- endmacro %}
+
+{% macro plaintext(plain_text) -%}
+    <p>{{ plain_text }}</p>
+{%- endmacro %}
+
+{% macro content_markup(level, data) -%}
+    {% if data.type == "text" %}
+        {{ plaintext(data.content) }}
+    {% elif data.type == "anchor" %}
+        {{ url(data.href, data.content) }}
+    {% elif data.type == "code" %}
+        <code style="display:block; white-space:pre-wrap">{{ data.content }}</code>
+    {% elif data.type == "compound_text" %}
+        {{ compound_text(data.content) }}
+    {% elif data.type == "d_list" %}
+        {{ d_list(data.content) }}
+    {% elif data.type == "image" %}
+        {{ image(data.content) }}
+    {% elif data.type == "image-dlist" %}
+        {{ image_d_list(data.content) }}
+    {% elif data.type == "italic" %}
+        <span style="font-style: italic;">{{ data.content }}</span>
+    {% elif data.type == "kbd" %}
+        <kbd class="kbd docutils literal notranslate">{{ data.content }}</kbd>
+    {% elif data.type == "list" %}
+        {{ list_template(level + 1, data.content) }}
+    {% elif data.type == "model" %}
+        {{ model(data.content) }}
+    {% elif data.type == "section" %}
+        {{ section(level, data) }}
+    {% elif data.type == "ref-table" %}
+        {{ reference_table(level + 1, data.content) }}
+    {% elif data.type == "strong" %}
+        <span style="font-weight: bold;">{{ data.content }}</span>
+    {% elif data.type == "table" %}
+        {{ table(level, data.content) }}
+    {% elif data.type == "underline" %}
+        <span style="text-decoration: underline;">{{ data.content }}</span>
+    {% endif %}
+{%- endmacro %}
+
+{% macro image(image_obj) -%}
+    {% if image_obj|length == 1 %}
+        {% if image_obj[0].src is string %}
+            <figure class="align-default">
+                {% if 'caption' in image_obj[0] %}
+                    <a href="{{ url_for('static', filename='img/' + image_obj[0].src) }}" data-gallery="example-gallery" data-toggle="lightbox" data-caption="{{ image_obj[0].caption }}">
+                        <img src="{{ url_for('static', filename='img/' + image_obj[0].src) }}">
+                    </a>
+                    <figcaption>
+                        <p>
+                            <span class="caption-text">{{ image_obj[0].caption }}</span>
+                        </p>
+                    </figcaption>
+                {% else %}
+                    <a href="{{ url_for('static', filename='img/' + image_obj[0].src) }}" data-gallery="example-gallery" data-toggle="lightbox">
+                        <img src="{{ url_for('static', filename='img/' + image_obj[0].src) }}">
+                    </a>
+                {% endif %}
+            </figure>
+        {% else %}
+            <div class="table-wrapper docutils container">
+                <table class="docutils align-default">
+                    {% if 'caption' in image_obj[0] %}
+                        <caption>
+                            <span class="caption-text">{{ image_obj[0].caption }}</span>
+                        </caption>
+                    {% endif %}
+                    <tbody>
+                        <tr class="row-odd">
+                            {% for image_src in image_obj[0].src %}
+                                <td>
+                                    <figure class="align-default">
+                                        <a href="{{ url_for('static', filename='img/' + image_src) }}" data-gallery="example-gallery" data-toggle="lightbox">
+                                            <img src="{{ url_for('static', filename='img/' + image_src) }}">
+                                        </a>
+                                    </figure>
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        {% endif %}
+    {% else %}
+        <div class="table-wrapper docutils container">
+            <table class="docutils align-default">
+                <tbody>
+                    <tr class="row-odd">
+                        {% for image_item in image_obj %}
+                            <td>
+                                <figure class="align-default">
+                                    {% if 'caption' in image_item %}
+                                        <a href="{{ url_for('static', filename='img/' + image_item.src) }}" data-gallery="example-gallery" data-toggle="lightbox" data-caption="{{ image_item.caption }}">
+                                            <img src="{{ url_for('static', filename='img/' + image_item.src) }}">
+                                        </a>
+                                        <figcaption>
+                                            <p>
+                                                <span class="caption-text">{{ image_item.caption }}</span>
+                                            </p>
+                                        </figcaption>
+                                    {% else %}
+                                        <a href="{{ url_for('static', filename='img/' + image_item.src) }}" data-gallery="example-gallery" data-toggle="lightbox">
+                                            <img src="{{ url_for('static', filename='img/' + image_item.src) }}">
+                                        </a>
+                                    {% endif %}
+                                </figure>
+                            </td>
+                        {% endfor %}
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    {% endif %}
+{%- endmacro %}
+
+{% macro image_d_list(list_data) -%}
+    <figure class="align-left">
+        <img src="{{ url_for('static', filename='img/' + list_data.image) }}">
+    </figure>
+    <dl class="simple">
+        {% for d_list_item in list_data.content %}
+            <dt><span class="doc">{{ d_list_item[0] }}</span></dt>
+            <dd><p>{{ d_list_item[1] }}</p></dd>
+        {% endfor %}
+    </dl>
+{%- endmacro %}
+
+{% macro list_template(level, list_data) -%}
+    <ul>
+        {% for list_item in list_data %}
+            {% if list_item.type == "text" %}
+                <li>{{ plaintext(list_item.content) }}</li>
+            {% elif list_item.type == "anchor" %}
+                <li>{{ url(list_item.href, list_item.content) }}</li>
+            {% elif list_item.type == "code" %}
+                <code style="display:block; white-space:pre-wrap">{{ list_item.content }}</code>
+            {% elif list_item.type == "compound_text" %}
+                <li>{{ compound_text(list_item.content) }}</li>
+            {% elif list_item.type == "image" %}
+                <li>{{ image(list_item.content) }}</li>
+            {% elif list_item.type == "image-dlist" %}
+                <li>{{ image_d_list(list_item.content) }}</li>
+            {% elif list_item.type == "italic" %}
+                <span style="font-style: italic;">{{ list_item.content }}</span>
+            {% elif list_item.type == "kbd" %}
+                <li><kbd class="kbd docutils literal notranslate">{{ list_item.content }}</kbd></li>
+            {% elif list_item.type == "list" %}
+                {{ list_template(level + 1, list_item.content) }}
+            {% elif list_item.type == "menu_selection" %}
+                <li><span class="menuselection">{{ list_item.content }}</span></li>
+            {% elif list_item.type == "model" %}
+                {{ model(list_item.content) }}
+            {% elif list_item.type == "section" %}
+                {{ section(level, list_item) }}
+            {% elif list_item.type == "strong" %}
+                <span style="font-weight: bold;">{{ list_item.content }}</span>
+            {% elif list_item.type == "table" %}
+                table_l{{ table(level, list_item) }}
+            {% elif list_item.type == "underline" %}
+                <span style="text-decoration: underline;">{{ list_item.content }}</span>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{%- endmacro %}
+
+{% macro reference_table(level, data) -%}
+    <div class="refbox admonition" id="id1">
+        <p class="admonition-title">Reference</p>
+        <dl class="field-list simple">
+            {% for row in data %}
+                {% if loop.index is divisibleby 2 %}
+                    {% set field_class = "field-even" %}
+                {% else %}
+                    {% set field_class = "field-odd" %}
+                {% endif %}
+                {% for cell in row %}
+                    {% if "th" in cell %}
+                        <dt class="{{ field_class }}">{{ content_markup(level + 1, cell.th) }}</dt>
+                    {% else %}
+                        <dd class="{{ field_class }}"><p>{{ content_markup(level + 1, cell.td) }}</p>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </dl>
+    </div>
+{%- endmacro %}
+
+{% macro url(href, content) -%}
+    <a class="reference external" href="{{ href }}" target="_blank">{{ content }}</a>
+{%- endmacro %}
+
+{% macro model(model_data) -%}
+    <div id="canvas-container-{{ model_data['canvas_number'] }}"></div>
+    <script type="module">
+import * as THREE from 'three';
+import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+{% if model_data["type"] == "glb" %}
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+const loader = new GLTFLoader();
+{% elif model_data["type"] == "obj" %}
+import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+const loader = new OBJLoader();
+{% endif %}
+
+const SCENE_WIDTH = 640
+const SCENE_HEIGHT = 480
+const scene = new THREE.Scene();
+
+// CAMERA
+const camera = new THREE.PerspectiveCamera(
+    60, // display at 60 degrees
+    SCENE_WIDTH / SCENE_HEIGHT, 0.01, 1000 );
+
+{% if "camera_position" in model_data %}
+camera.position.set(
+    {{ model_data["camera_position"]["x"] }},
+    {{ model_data["camera_position"]["y"] }},
+    {{ model_data["camera_position"]["z"] }},
+)
+{% else %}
+camera.position.set( 0, 2, 8 );
+{% endif %}
+
+{% if "camera_rotation" in model_data %}
+camera.rotation.set(
+    {{ model_data["camera_rotation"]["x"] }},
+    {{ model_data["camera_rotation"]["y"] }},
+    {{ model_data["camera_rotation"]["z"] }},
+)
+{% endif %}
+
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(SCENE_WIDTH, SCENE_HEIGHT);
+document.getElementById("canvas-container-{{ model_data['canvas_number'] }}").appendChild( renderer.domElement );
+renderer.setClearColor( 0xaaaaaa, 1 );
+
+// CONTROLS
+const controls = new OrbitControls( camera, renderer.domElement)
+controls.addEventListener("change", controlsChanged)
+
+function controlsChanged() {
+    console.log("pos", camera.position)
+    console.log("rot", camera.rotation)
+}
+
+const gridHelper = new THREE.GridHelper( 10, 10 );
+scene.add( gridHelper );
+
+// LIGHTS
+{% if "has_lighting" in model_data %}
+{% else %}
+/*
+const spotLight = new THREE.SpotLight( 0xffffff );
+spotLight.intensity = 10;
+spotLight.position.set(-1, 3, 5)
+scene.add(spotLight)
+*/
+/*
+const pointLight = new THREE.PointLight(0xddff00, 1)
+pointLight.position.set(-1, 3, 5)
+scene.add(pointLight)
+*/
+const directionalLight = new THREE.DirectionalLight( 0xffffff, 1.5 );
+directionalLight.position.setScalar(100)
+scene.add( directionalLight );
+scene.add(new THREE.AmbientLight(0xffffff, 0.5))
+{% endif %}
+
+
+// --- data input ---
+let yRotation =  0;
+let xPosition = -1.2;
+let zPosition =  3.5;
+// -----         -----
+
+
+loader.load( '{{ url_for('static', filename='3d/' + model_data["path"]) }}', process);
+
+let model = new THREE.Object3D( );
+let c, size; // model center and size
+
+let t = 0;
+let x0 = xPosition;
+let dx;
+
+animate();
+
+function animate() {
+    requestAnimationFrame(animate)
+	renderer.render( scene, camera );
+}
+function process(gltf) {
+    const box = new THREE.Box3( ).setFromObject( gltf.scene );
+	const boxHelper = new THREE.Box3Helper( box, 0xffff00 );
+    scene.add( boxHelper );
+
+	c = box.getCenter( new THREE.Vector3( ) );
+	size = box.getSize( new THREE.Vector3( ) );
+
+	gltf.scene.position.set( -c.x, size.y / 2 - c.y, -c.z );
+
+	model.add( gltf.scene );
+
+	scene.add( model );
+}
+// GUI
+const gui = new GUI();
+
+gui.add( document, 'title' );
+    </script>
+{%- endmacro %}
+
+{% macro section(level, section_data) -%}
+    <section>
+        {{ header(level, section_data.header) }}
+        {% for section_item in section_data.content %}
+            {{ content_markup(level + 1, section_item) }}
+        {% endfor %}
+    </section>
+{%- endmacro %}
+
+{% macro table(level, table_data) -%}
+    <table>
+        {% for row in table_data %}
+            <tr>
+                {% for cell in row %}
+                    {% if "th" in cell %}
+                        <th>{{ content_markup(level + 1, cell.th) }}</th>
+                    {% else %}
+                        <td>{{ content_markup(level + 1, cell.td) }}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+{%- endmacro %}
+
+{% block content %}
+    {% for content_item in content %}
+        {% if content_item.type == "header" %}
+            {{ header(1, content_item.content) }}
+        {% elif content_item.type == "text" %}
+            {{ plaintext(content_item.content) }}
+        {% elif content_item.type == "code" %}
+            {{ content_markup(0, content_item) }}
+        {% elif content_item.type == "compound_text" %}
+            {{ compound_text(content_item.content) }}
+        {% elif content_item.type == "image" %}
+            {{ image(content_item.content) }}
+        {% elif content_item.type == "list" %}
+            {{ list_template(2, content_item.content) }}
+        {% elif content_item.type == "model" %}
+            {{ model(content_item.content) }}
+        {% elif content_item.type == "section" %}
+            {{ section(2, content_item) }}
+        {% elif content_item.type == "table" %}
+            table_c{{ table(2, content_item) }}
+        {% elif content_item.type == "exercises" %}
+            <section>
+                <h2>Exercises</h2>
+                <ol>
+                    {% for exercise_item in content_item.content %}
+                        {% if exercise_item.type == "text" %}
+                            <li>{{ plaintext(exercise_item.content) }}</li>
+                        {% elif exercise_item.type == "compound_text" %}
+                            <li>{{ compound_text(exercise_item.content) }}</li>
+                        {% elif exercise_item.type == "model" %}
+                            <li>{{ model(exercise_item.content) }}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ol>
+            </section>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
