@@ -58,15 +58,23 @@
                                                             {% endif %}
                                                                 <div class="accordion-body">
                                                                     <div class="accordion" id="sections-accordion">
-                                                                        {% for section in chapter.sections %}
-                                                                            {% for key, value in section.items() %}
-                                                                                {% if _section == key %}
-                                                                                    <a class="reference internal current" href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator}}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
-                                                                                {% else %}
-                                                                                    <a class="reference internal" href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator}}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
-                                                                                {% endif %}
-                                                                            {% endfor %}
-                                                                        {% endfor %}
+                                                                        {% if chapter.sections is defined and chapter.sections %}
+																		    {% for section in chapter.sections %}
+																		        {% for key, value in section.items() %}
+																		            {% if _section == key %}
+																		                <a class="reference internal current" href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator }}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
+																		            {% else %}
+																		                <a class="reference internal" href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator }}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
+																		            {% endif %}
+																		        {% endfor %}
+																		    {% endfor %}
+																		{% else %}
+																		    {% if _chapter == chapter.title %}
+																		        <a class="reference internal current" href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator }}/{{ course.course }}/{{ chapter.title }}">{{ chapter.title }}</a>
+																		    {% else %}
+																		        <a class="reference internal" href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator }}/{{ course.course }}/{{ chapter.title }}">{{ chapter.title }}</a>
+																		    {% endif %}
+																		{% endif %}
                                                                     </div>
                                                                 </div>
                                                             </div>
