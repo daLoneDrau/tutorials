@@ -32,6 +32,7 @@ from json import JSONDecodeError
 # ---------------------------------------------------------------------------
 
 DATA_PATH       = 'flaskr/static/json'
+BASE_PATH       = "/tutorials/"
 TEMPLATES_PATH  = 'flaskr/templates'
 STATIC_SRC      = 'flaskr/static'
 OUTPUT_DIR      = '_site'
@@ -344,7 +345,7 @@ def build_content(section_data):
     return content
 
 
-def write_page(env, template, output_path, **context):
+def (env, template, output_path, **context):
     """Render a template and write it to disk."""
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     html = template.render(**context)
@@ -404,6 +405,7 @@ def build():
         write_page(env, index_template,
                    index_path,
                    title="Blender Courses",
+                   base_path=BASE_PATH, 
                    library=library,
                    footer_data={},
                    _topic="",
@@ -455,6 +457,7 @@ def build():
                 content_template,
                 out_path,
                 title="Blender Courses",
+                base_path=BASE_PATH, 
                 nav=[],
                 library=library,
                 content=content,
