@@ -278,27 +278,46 @@ def flatten_library(library):
                 if "chapters" not in course:
                     continue
                 for chapter in course["chapters"]:
-                    if "sections" not in chapter:
-                        continue
-                    for section_item in chapter["sections"]:
-                        section_title = list(section_item.keys())[0]
+                    # 5-level: chapter has explicit sections list
+                    if "sections" in chapter:
+                        for section_item in chapter["sections"]:
+                            section_title = list(section_item.keys())[0]
+                            pages.append({
+                                "topic":   topic["topic"],
+                                "creator": creator["creator"],
+                                "course":  course["course"],
+                                "chapter": chapter["title"],
+                                "section": section_title,
+                                "data":    section_item[section_title],
+                                "depth":   5,
+                            })
+                    # 4-level: chapter has key_concepts directly
+                    # the whole chapter is one page
+                    elif "key_concepts" in chapter:
                         pages.append({
-                            "topic":    topic["topic"],
-                            "creator":  creator["creator"],
-                            "course":   course["course"],
-                            "chapter":  chapter["title"],
-                            "section":  section_title,
-                            "data":     section_item[section_title],
+                            "topic":   topic["topic"],
+                            "creator": creator["creator"],
+                            "course":  course["course"],
+                            "chapter": chapter["title"],
+                            "section": None,
+                            "data":    chapter,
+                            "depth":   4,
                         })
     return pages
 
 
 def make_href(page):
     """Build the URL path for a page dict."""
+    if page["depth"] == 4:
+        return "{}/{}/{}/{}/{}".format(
+            BASE_PATH,
+            page["topic"], page["creator"],
+            page["course"], page["chapter"]
+        )
     return "{}/{}/{}/{}/{}/{}".format(
         BASE_PATH,
-        page["topic"], page["creator"], page["course"],
-        page["chapter"], page["section"]
+        page["topic"], page["creator"],
+        page["course"], page["chapter"], page["section"]
     )
 
 
@@ -329,17 +348,21 @@ def setup_jinja_env():
 # Page builder
 # ---------------------------------------------------------------------------
 
-def build_content(section_data):
+def build_content(page):
     """Parse a section's key_concepts and exercises into content items."""
     content = []
-    content.append({"type": "header", "content": section_data.get("title", "")})
+    data = page["data"]
 
-    for key_concept in section_data.get("key_concepts", []):
+    # 5-level pages have a named section as the header
+    if page["depth"] == 5:
+        content.append({"type": "header", "content": page["section"]})
+
+    for key_concept in data.get("key_concepts", []):
         content.append(get_content_item(key_concept))
 
-    if "exercises" in section_data:
+    if "exercises" in data:
         o = {"type": "exercises", "content": []}
-        for exercise in section_data["exercises"]:
+        for exercise in data["exercises"]:
             o["content"].append(get_content_item(exercise))
         content.append(o)
 
@@ -435,7 +458,7 @@ def build():
             }
 
         try:
-            content = build_content(page["data"])
+            content = build_content(page)
         except Exception as e:
             print(f"  WARNING: Content parse error for {make_href(page)}: {e}")
             content = [{"type": "text", "content": f"[Build error: {e}]"}]
@@ -444,13 +467,17 @@ def build():
         # Output path: _site/topic/creator/course/chapter/section/index.html
         out_path = os.path.join(
             OUTPUT_DIR,
-            page["topic"],
-            page["creator"],
-            page["course"],
-            page["chapter"],
-            page["section"],
+            page["topic"], page["creator"],
+            page["course"], page["chapter"], page["section"],
             "index.html"
         )
+        if page["depth"] == 4:
+            out_path = os.path.join(
+                OUTPUT_DIR,
+                page["topic"], page["creator"],
+                page["course"], page["chapter"],
+                "index.html"
+            )
 
         try:
             write_page(
