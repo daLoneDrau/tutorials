@@ -61,9 +61,9 @@
                                                                         {% for section in chapter.sections %}
                                                                             {% for key, value in section.items() %}
                                                                                 {% if _section == key %}
-                                                                                    <a class="reference internal current" href="/{{ topic.topic }}/{{ creator.creator}}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
+                                                                                    <a class="reference internal current" href="/tutorials/{{ topic.topic }}/{{ creator.creator}}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
                                                                                 {% else %}
-                                                                                    <a class="reference internal" href="/{{ topic.topic }}/{{ creator.creator}}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
+                                                                                    <a class="reference internal" href="/tutorials/{{ topic.topic }}/{{ creator.creator}}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
                                                                                 {% endif %}
                                                                             {% endfor %}
                                                                         {% endfor %}
