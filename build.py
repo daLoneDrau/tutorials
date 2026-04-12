@@ -345,7 +345,7 @@ def build_content(section_data):
     return content
 
 
-def (env, template, output_path, **context):
+def write_page(env, template, output_path, **context):
     """Render a template and write it to disk."""
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     html = template.render(**context)
