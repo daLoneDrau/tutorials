@@ -495,6 +495,7 @@ def build():
                 _course=page["course"],
                 _chapter=page["chapter"],
                 _section=page["section"],
+                _depth=page["depth"], 
             )
         except Exception as e:
             print(f"  ERROR rendering {make_href(page)}: {e}")
