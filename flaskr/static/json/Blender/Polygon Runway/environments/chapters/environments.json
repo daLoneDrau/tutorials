@@ -1,6 +1,146 @@
 {
   "title": "Environments",
   "sections": [
+    
+    {
+      "Enchanted Forest": {
+        "key_concepts": [
+          "[url]Enchanted Forest Blender Tutorial with Commentary^^https://www.youtube.com/watch?v=dZuMn4Ffa20[/url]",
+          {
+            "section": {
+              "header": "The Base",
+              "content": [
+                "Add a Plane to scene, [k]Tab[/k] into Edit Mode, [k]S,4[/k], [k]E,1[/k] to build up a base for the terrain (Image 1). [k]RMB,S[/k] four times to subdivide the top (Image 2).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-01.jpg",
+                      "caption": "Image 1 - Adding a Plane to the scene, going into Edit Mode, scaling to 4 and extruding to build up a base for the terrain"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-02.jpg",
+                      "caption": "Image 2 - Right-click subdividing the top four times"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "The Riverbed",
+                    "content": [
+                      "Still in Vertex Select Mode, select the bottom vertices (Image 3). [k]H[/k] to hide the bottom and side faces so that we don't accidentally alter them (Image 4). [k]Numpad7[/k] into Top View, [k]3[/k] into Face Select Mode, and select an area to be the riverbed (Image 5). [k]G,Z[/k] to bring the faces down (Image 6). if you [k]Alt-H[/k] to unhide the sides you will see n-gons were created at the top and bottom when we moved the faces down (Image 7).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      "We will need more topology for the riverbed, so add Loop Cuts on both sides (Image 8). We will want to randomize the shape of the river, but we don't want to affect the outer edges of the scene. [k]1[/k] into Vertex Select Mode and select all outer vertices (Image 9). [k]H[/k] to hide them (Image 10). [k]O[/k] to turn on Proportional Editing, select a vertex on the side and [k]G,X[/k] to make a bend in the river (Image 11). Make several bends (Image 12).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      "Select a vertex at the surface and [k]G,Z[/k] to lower it (Image 13). Pick several spots to raise or lower at random (Image 14). To make a nice profile from the side, [k]Alt-H[/k] to unhide all vertices and then hide the bottom and side faces again (Image 15). Select some random vertices around the sides nd [k]G,Z[/k] to raise/lower them randomly (Image 16). Also raise/lower some random spots in the riverbed (Image 17).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      "Select the outer vertices and hide them again (Image 18). Change the Proportional Editing from Smooth to Random (Image 19). Select some random vertices and [k]G,Z[/k], [k]G,X[/k] to shift things around (Image 20). Review the changes in Object Mode, and you should see it doesn't look so uniform any more (Image 21).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The River",
+                    "content": [
+                      "[k]O[/k] to turn off Proportional Editing and add a Plane to the scene (Image 22). [k]S,Y[/k] to take the plane almost but not quite to the top and bottom edges and then [k]S,X[/k] to scale it out (Image 23). [k]Numpad1[/k] into Front View, move the plane to just under the riverbed, and then in Edit Mode extrude it up (Image 24). You may want to change the Viewport Shading to Solid and review how it looks, and if needed raise your riverbanks (Image 25).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      "We will want to subdivide the top of the river so that we can add some modifiers to it, but first we need to prepare it. [k]/[/k] to go into Local View, which will hide the base (Image 26). [k]2[/k] into Edge Select Mode and select the top side edges and [k]RMB,S[/k] to subdivide those edges (Image 27). With those two new faces selected [k]RMB,S[/k] three times to subdivide them (Image 28). Go to the Data Tab on the right, and with the subdivided faces selected create a new Vertex Group (Image 29). Add a Displace Modifier and make the target the Vertex Group that was just created (Image 30). Adjust the strength until you are pleased with the look (Image 31)."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Rocks",
+                    "content": [
+                      "Generate a rock with the Rock Generator, apply all modifiers, and then add a Decimate Modifier and bring the triangle count down to between 80 and 100 (Image 32). Turn on Snap, change the Snap Base to Face, and enable Align Rotation to Target (Image 33). Move the rock to the riverbank (Image 34). Turn off Snap, [k]Alt-D[/k] to create linked duplicates of the rock and position them around the scene, scaling and rotating them to create variation (Image 35).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Trees",
+                    "content": [
+                      "Add a Circle with 6 vertices to the scene and in Edit Mode scale it down and [k]F[/k] to fill (Image 36). In Side View, [k]E,1[/k] (Image 37), and then [k]E,LMB[/k] then [k]S[/k] to scale the new layer out (make sure Auto Merge is turned off) (Image 38). [k]E[/k] to extrude to the height of the tree (Image 39). Scale in the top edge (but not all the way) and add two Loop Cuts (Image 40). [k]2[/k] into Edge Select Mode, select the Edge Loops in the middle and [k]Ctrl-B[/k] to bevel (Image 41). Select the upper edges for the bevels and [k]S,Shift-Z[/k] to scale them out, and then scale the lower edges in (Image 42). Scale out the bottom edge loop, add a loop cut to each section and then scale those edges in (Image 43). Select the bottom edge loops for each section and rotate them in the z-axis (Image 44). Go into Vertex Select Mode, turn on Proportional Editing set to Random and then randomly move around some vertices (Image 45). Add a Loop Cut to the tree trunk and scale out the bottom (Image 46). Select all vertices and [k]G,Z[/k] to move the origin inside the trunk (Image 47). Turn Snap back on and place the tree in the scene (Image 48).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Tree Trunk",
+                    "content": [
+                      "Add a Cylinder with 8 vertices to the scene and [k]R,Y,90[/k] (Image 49). Place the cylinder in the scene and have it crossing the river; [k]S,X[/k] to lengthen it, [k]R,X[/k] to rotate, and then [k]S,Shift-X-X[/k] to scale in the local y- and z-axes (Image 50). Add some Loop Cuts and use those to create variation (Image 51). Add some more Loop Cuts in the middle (Image 52). Select four faces, use Loop Tools to make them a circle, and extrude (Image 53). Add another knot and some notches and bevels (Image 54). Lower the log to the ground (Image 55).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Tree Stump",
+                    "content": [
+                      "[k]Shift-RMB[/k] to place the 3D Cursor on the ground and add a Circle with 8 vertices to the scene (Image 56). Extrude it in the z-axis and then add some Loop Cuts and scale to add some variation (Image 57). Select all faces and extrude along normals to add a solid ring (Image 58). Add some rotation to the top faces and middle edge loop (Image 59). Add another Loop Cut towards the bottom, select three faces and [k]Alt-E,F[/k] to extrude out for roots (Image 60). [k]/[/k] into Local View and use a combination of [k]S,Z,0[/k] to even out the bottom vertices, moving, and scaling the root faces using Individual Origins as the Transform Pivot Point to shape the root system (Image 61). Add some notched (Image 62). Turn on Snap to Face and place the stump in the scene (Image 63).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Mushroom",
+                    "content": [
+                      "[k]Shift-RMB[/k] to place the 3D Cursor on the ground and add a Circle with 12 vertices to the scene (Image 64). Fill the vertices and extrude it in the z-axis, basically creating a cylinder with the pivot point at the bottom (Image 65). [k]E,Enter[/k], [k]S[/k] [k]E[/k] to create the start of a cap (Image 66). Bevel the top to round it out (Image 67). Add three Loop Cuts to the stalk and then scale out the bottom faces (Image 68). Select the edge loop near the top and scale it out to even out the stalk shape (Image 69). Select the Edge Loop under the cap and move it up in the z-axis (Image 70). If you care about a more organic, less uniform shape, turn on [k]Proportional Editing > Smooth[/k] and move some random vertices around the shape (Image 71). We want some dots around the mushrooms, so [k]Shift-RMB[/k] to place the 3D Cursor at the top of the mushroom and add a Circle with six vertices (Image 72). [k]F[/k] to fill the circle, [k]E,Z[/k] to extrude the top up a bit, and select the bottom edge loop and [k]G,Z[/k] to bring the bottom down and leave the origin in just below the top (Image 73). Turn on [k]Snap > Face[/k] and move the dot around to the side (Image 74). [k]Alt-D[/k] to create linked duplicates and place them all around the cap, scaling and rotating at random (Image 75).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Grass",
+                    "content": [
+                      "[k]Shift-RMB[/k] to place the 3D Cursor on the ground and add a Plane to the scene (Image 76). Scale it down and extrude it up in the z-axis (Image 77). Add a Loop Cut in the middle and merge the vertices at the top (Image 78). Move the top vertex to add a bend to the grass blade (Image 79). In Top View, move the blade just above the 3D Cursor, change the Transform Pivot Point to 3D Cursor, and create several duplicates of the blade, rotating around the z-axis (Image 80). Add some variety by scaling and rotating the different blades (Image 81). Enable [k]Snap > Face[/k] and place clumps of grass around the scene (Image 82).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
     {
       "Magic Portal": {
         "key_concepts": [
