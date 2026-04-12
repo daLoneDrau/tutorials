@@ -368,7 +368,7 @@
                       {
                         "model": {
                           "type": "glb",
-                          "path": "Blender/Polygon Runway/environments/portal/portal.glb",
+                          "path": "Blender/Polygon Runway/environments/portal.glb",
                           "canvas_number": 1
                         }
                       }
