@@ -316,7 +316,7 @@ def setup_jinja_env():
     # We expose a simple global function with the same signature.
     def url_for(endpoint, **kwargs):
         if endpoint == "static":
-            return "/static/" + kwargs.get("filename", "")
+            return "/tutorials/static/" + kwargs.get("filename", "")
         return "/"
 
     env.globals["url_for"] = url_for
