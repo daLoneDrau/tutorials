@@ -13,19 +13,19 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-01.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-01.jpg",
                       "caption": "Image 1 - Scaling the first brick"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-02.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-02.jpg",
                       "caption": "Image 2 - Beveling it to give a chiseled look"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-03.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-03.jpg",
                       "caption": "Image 3 - Adding Loop Cuts for more topology"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-04.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-04.jpg",
                       "caption": "Image 4 - Applying Randomness"
                     }
                   ]
@@ -41,23 +41,23 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-05.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-05.jpg",
                       "caption": "Image 5 - Selecting an Edge Loop to dissolve"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-06.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-06.jpg",
                       "caption": "Image 6 - Shortening the brick"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-07.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-07.jpg",
                       "caption": "Image 7 - Adding variation by rotating edges"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-08.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-08.jpg",
                       "caption": "Image 8 - Flipping the brick gives it more of a distinct look"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-09.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-09.jpg",
                       "caption": "Image 9 - Adding an even smaller stone"
                     }
                   ]
@@ -73,11 +73,11 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-10.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-10.jpg",
                       "caption": "Image 10 - Removing gaps between the bricks"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-11.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-11.jpg",
                       "caption": "Image 11 - Adding more bricks to the row and then scaling up to the right size"
                     }
                   ]
@@ -93,15 +93,15 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-12.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-12.jpg",
                       "caption": "Image 12 - Selecting the active object"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-13.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-13.jpg",
                       "caption": "Image 13 - Joining the bricks"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-14.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-14.jpg",
                       "caption": "Image 14 - Bending a circle"
                     }
                   ]
@@ -117,11 +117,11 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-15.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-15.jpg",
                       "caption": "Image 15 - Altering the rows of bricks"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-16.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-16.jpg",
                       "caption": "Image 16 - Putting the middle on top of the base"
                     }
                   ]
@@ -130,7 +130,7 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-17.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-17.jpg",
                       "caption": "Image 17 - Adding a Decimate Modifier"
                     }
                   ]
@@ -145,7 +145,7 @@
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-01.glb",
+                    "path": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-01.glb",
                     "canvas_number": 1
                   }
                 }
@@ -167,15 +167,15 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-01.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-01.jpg",
                       "caption": "Image 1 - Adding a cube next to the well"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-02.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-02.jpg",
                       "caption": "Image 2 - Adding wobbliness to the beam"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-03.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-03.jpg",
                       "caption": "Image 3 - Narrowing the beam in the middle"
                     }
                   ]
@@ -184,23 +184,23 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-04.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-04.jpg",
                       "caption": "Image 4 - Adding a notch"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-05.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-05.jpg",
                       "caption": "Image 5 - Adding a vertical loop cut"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-06.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-06.jpg",
                       "caption": "Image 6 - Narrowing the beam in the middle"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-07.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-07.jpg",
                       "caption": "Image 7 - Adding splits to the front"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-08.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-08.jpg",
                       "caption": "Image 8 - Adding splits to the back"
                     }
                   ]
@@ -217,27 +217,27 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-09.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-09.jpg",
                       "caption": "Image 9 - Duplicating the side beam"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-10.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-10.jpg",
                       "caption": "Image 10 - Lining the beam up in front of the well"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-11.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-11.jpg",
                       "caption": "Image 11 - Scaling it down"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-12.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-12.jpg",
                       "caption": "Image 12 - Adding variation"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-13.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-13.jpg",
                       "caption": "Image 13 - Positioning the beam from the side so it sticks out over the well"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-14.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-14.jpg",
                       "caption": "Image 14 - Finishing with a 45 degree angle"
                     }
                   ]
@@ -246,19 +246,19 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-15.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-15.jpg",
                       "caption": "Image 15 - Adding another beam"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-16.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-16.jpg",
                       "caption": "Image 16 - Extending the lower half of the beam"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-17.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-17.jpg",
                       "caption": "Image 17 - Adding variation with a Loop Cut"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-18.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-18.jpg",
                       "caption": "Image 18 - Lining up with the front and side beams"
                     }
                   ]
@@ -267,15 +267,15 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-19.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-19.jpg",
                       "caption": "Image 19 - Adding a cube"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-20.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-20.jpg",
                       "caption": "Image 20 - Connecting the beams"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-21.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-21.jpg",
                       "caption": "Image 21 - Lining up with the front and side beams"
                     }
                   ]
@@ -284,23 +284,23 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-22.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-22.jpg",
                       "caption": "Image 22 - Adding a cube for the top beam"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-23.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-23.jpg",
                       "caption": "Image 23 - Positioning the beam from the side"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-24.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-24.jpg",
                       "caption": "Image 24 - Making the beam taller"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-25.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-25.jpg",
                       "caption": "Image 25 - Adding a bend"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-26.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-26.jpg",
                       "caption": "Image 26 - Adding notches and other variation"
                     }
                   ]
@@ -316,7 +316,7 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-27.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-27.jpg",
                       "caption": "Image 27 - Adding plain axes"
                     }
                   ]
@@ -331,7 +331,7 @@
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-02.glb",
+                    "path": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-02.glb",
                     "canvas_number": 1
                   }
                 }
@@ -353,11 +353,11 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-28.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-28.jpg",
                       "caption": "Image 28 - Sizing the tile from the top"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-29.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-29.jpg",
                       "caption": "Image 29 - Sizing the tile from the side"
                     }
                   ]
@@ -366,15 +366,15 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-30.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-30.jpg",
                       "caption": "Image 30 - Curving the tile"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-31.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-31.jpg",
                       "caption": "Image 31 - Beveling the sides"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-32.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-32.jpg",
                       "caption": "Image 32 - Adding randomness"
                     }
                   ]
@@ -390,19 +390,19 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-33.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-33.jpg",
                       "caption": "Image 33 - Duplicating the first tile"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-34.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-34.jpg",
                       "caption": "Image 34 - Adding a crack"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-35.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-35.jpg",
                       "caption": "Image 35 - Adding variation"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-36.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-36.jpg",
                       "caption": "Image 36 - Adding two more versions"
                     }
                   ]
@@ -419,15 +419,15 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-37.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-37.jpg",
                       "caption": "Image 37 - Rotating the tiles"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-38.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-38.jpg",
                       "caption": "Image 38 - Stacking the tiles"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-39.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-39.jpg",
                       "caption": "Image 39 - Adding randomness"
                     }
                   ]
@@ -436,15 +436,15 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-40.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-40.jpg",
                       "caption": "Image 40 - Re-arranging the tiles"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-41.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-41.jpg",
                       "caption": "Image 41 - Lining up the tiles with the frame"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-42.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-42.jpg",
                       "caption": "Image 42 - Adding a second row"
                     }
                   ]
@@ -453,11 +453,11 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-43.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-43.jpg",
                       "caption": "Image 43 - Making rows of tiles"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-44.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-44.jpg",
                       "caption": "Image 44 - Mirroring the tiles to the opposite side"
                     }
                   ]
@@ -470,15 +470,15 @@
                       {
                         "image": [
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-45.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-45.jpg",
                             "caption": "Image 45 - Adding a Lattice in the middle of the roof"
                           },
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-46.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-46.jpg",
                             "caption": "Image 46 - Fitting the Lattice over the tiles"
                           },
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-47.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-47.jpg",
                             "caption": "Image 47 - Increasing the U and V points on the Lattice"
                           }
                         ]
@@ -488,7 +488,7 @@
                       {
                         "image": [
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-48.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-48.jpg",
                             "caption": "Image 48 - Selecting the middle vertices on the Lattice"
                           }
                         ]
@@ -506,7 +506,7 @@
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-03.glb",
+                    "path": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-03.glb",
                     "canvas_number": 1
                   }
                 }
@@ -528,19 +528,19 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-49.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-49.jpg",
                       "caption": "Image 49 - Adding a cylinder to start the crank"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-50.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-50.jpg",
                       "caption": "Image 50 - Adding the crank handle"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-51.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-51.jpg",
                       "caption": "Image 51 - Giving the first part of the handle a wedge shape"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-52.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-52.jpg",
                       "caption": "Image 52 - Adding another cylinder to complete the handle"
                     }
                   ]
@@ -556,11 +556,11 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-53.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-53.jpg",
                       "caption": "Image 53 - Adding a support strut to the bottom"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-54.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-54.jpg",
                       "caption": "Image 54 - The well frame has supports on both sides"
                     }
                   ]
@@ -576,23 +576,23 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-55.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-55.jpg",
                       "caption": "Image 55 - Adding a cylinder for the rope"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-56.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-56.jpg",
                       "caption": "Image 56 - Beveling the rope"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-57.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-57.jpg",
                       "caption": "Image 57 - Segmenting the rope"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-58.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-58.jpg",
                       "caption": "Image 58 - Angling the coils"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-59.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-59.jpg",
                       "caption": "Image 59 - Adding the dangling end"
                     }
                   ]
@@ -624,23 +624,23 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-60.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-60.jpg",
                       "caption": "Image 60 - Rocks created by the Rock Generator"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-61.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-61.jpg",
                       "caption": "Image 61 - Grouping the rocks"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-62.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-62.jpg",
                       "caption": "Image 62 - Adding a Decimate Modifier to the rocks to reduce the Triangle Count"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-63.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-63.jpg",
                       "caption": "Image 63 - Turn on Snapping"
                     },
                     {
-                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-64.jpg",
+                      "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-64.jpg",
                       "caption": "Image 64 - Arranging the rocks"
                     }
                   ]
@@ -655,7 +655,7 @@
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-04.glb",
+                    "path": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-04.glb",
                     "canvas_number": 1
                   }
                 }
@@ -682,11 +682,11 @@
                       {
                         "image": [
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-65.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-65.jpg",
                             "caption": "Image 65 - Adding a wood material"
                           },
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-66.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-66.jpg",
                             "caption": "Image 66 - Linking materials"
                           }
                         ]
@@ -702,11 +702,11 @@
                       {
                         "image": [
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-67.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-67.jpg",
                             "caption": "Image 67 - Assigning colours to a section of stones"
                           },
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-68.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-68.jpg",
                             "caption": "Image 68 - Colouring the remainder of the well"
                           }
                         ]
@@ -722,11 +722,11 @@
                       {
                         "image": [
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-69.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-69.jpg",
                             "caption": "Image 69 - Using the eyedropper to select a color from the object"
                           },
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-70.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-70.jpg",
                             "caption": "Image 68 - Colouring the remainder of the well"
                           }
                         ]
@@ -742,11 +742,11 @@
                       {
                         "image": [
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-69.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-69.jpg",
                             "caption": "Image 69 - Using the eyedropper to select a color from the object"
                           },
                           {
-                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-70.jpg",
+                            "src": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-70.jpg",
                             "caption": "Image 68 - Colouring the remainder of the well"
                           }
                         ]
@@ -764,7 +764,7 @@
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-05.glb",
+                    "path": "Blender/Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-05.glb",
                     "canvas_number": 1
                   }
                 }
