@@ -1,0 +1,778 @@
+{
+  "title": "Low-Poly Well",
+  "sections": [
+    {
+      "Part 1 - The Base": {
+        "key_concepts": [
+          "[url]Beginner Blender 4.2 Tutorial: Modelling a Low-Poly Well - Part1^^https://www.youtube.com/watch?v=QPh8h0hWkg0&list=PLn3ukorJv4vvMwZPLzlajVII2zJd-_BM-&index=5[/url]",
+          {
+            "section": {
+              "header": "The First Stone",
+              "content": [
+                "Open a new scene and delete the camera and light. The cube will be used as a brick in our well. [k]Tab[/k] into Edit Mode and [k]G,X,Y,Z[/k] to bring the brick down to appropriate dimensions (a UK brick is 21.5cm x 10.25cm x 6.5cm) (Image 1). [k]Ctrl-A,S[/k] after to apply the scale. Now, let's give it a chiseled look. [k]A[/k] to select all geometry and [k]Ctrl-B[/k] to bevel it (Image 2). And add some randomness. First, [k]Ctrl-R[/k] and add two loop cuts across the middle, and one down the top and side (Image 3). [k]A[/k] to select all and then [k]Mesh > Transform > Randomize[/k] and set an appropriate level (Image 4).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-01.jpg",
+                      "caption": "Image 1 - Scaling the first brick"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-02.jpg",
+                      "caption": "Image 2 - Beveling it to give a chiseled look"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-03.jpg",
+                      "caption": "Image 3 - Adding Loop Cuts for more topology"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-04.jpg",
+                      "caption": "Image 4 - Applying Randomness"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "More Stones",
+              "content": [
+                "We want to add more stones with some variation. First, [k]Shift-D,X[/k] to duplicate the first stone and move it to the side. In Edit Mode, select one of the middle vertical edge loops (Image 5) and [k]Ctrl-X[/k] to dissolve it. Then select the edges on the end and [k]G,X[/k] to move them in, shortening the brick (Image 6). Add some more randomness by rotating some edges or pulling vertices out of place (Image 7). Last, flip it 180 degrees around its length axis (x or y) (Image 8). Use these techniques to make an even smaller stone next (Image 9)",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-05.jpg",
+                      "caption": "Image 5 - Selecting an Edge Loop to dissolve"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-06.jpg",
+                      "caption": "Image 6 - Shortening the brick"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-07.jpg",
+                      "caption": "Image 7 - Adding variation by rotating edges"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-08.jpg",
+                      "caption": "Image 8 - Flipping the brick gives it more of a distinct look"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-09.jpg",
+                      "caption": "Image 9 - Adding an even smaller stone"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Making a Row of Bricks",
+              "content": [
+                "In Object Mode, [k]G,X[/k] to move the bricks until they are touching each other, we don't want any gaps between them (Image 10). Then [k]Shift-D,X[/k] to duplicate them and move them over to make a row. Add some variation in the order and rotation until you have a line of bricks and scale them up until they reach a length of 5m (Image 11). [k]Shift-D[/k] your bricks and [k]M[/k] to move them into a collection to keep as originals. A good idea is to create an 'originals' collection and add them in there.",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-10.jpg",
+                      "caption": "Image 10 - Removing gaps between the bricks"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-11.jpg",
+                      "caption": "Image 11 - Adding more bricks to the row and then scaling up to the right size"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Finishing the Stone Base",
+              "content": [
+                "Select all the bricks you are going to be working with and then [k]Shift-LMB[/k] the one on the left end to make it the active object (Image 12). [k]Ctrl-J[/k] to join the bricks and make it one object (Image 13). [k]Numpad7[/k] into Top View. If your bricks are aligned across the y-axis, [k]R,Z,-90[/k] to align them across the x-axis and [k]Ctrl-A,A[/k] to apply all transformation. Now add a a Simple Deform modifier, setting it to bend across the z-axis at a 360 degree angle (Image 14).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-12.jpg",
+                      "caption": "Image 12 - Selecting the active object"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-13.jpg",
+                      "caption": "Image 13 - Joining the bricks"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-14.jpg",
+                      "caption": "Image 14 - Bending a circle"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Building up the Well",
+              "content": [
+                "Duplicate the original row of bricks, and make stack it four times. Then spend some time altering the bricks until you have a row of alternating brick sizes (Image 15). [k]Ctrl-J[/k] to join them into one object. [k]Ctrl-A,A[/k] to apply transforms and add the Simple Deform Modifier. Place it on top of the well base and [k]S[/k] scale it down a bit (Image 16).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-15.jpg",
+                      "caption": "Image 15 - Altering the rows of bricks"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-16.jpg",
+                      "caption": "Image 16 - Putting the middle on top of the base"
+                    }
+                  ]
+                },
+                "Select the base row and [k]Shift-D,Z[/k] to duplicate another row at the top of the well. [k]Numpad7[/k] into Top View and [k]R[/k] to rotate it and then [k]S[/k] to scale it in slightly. Last, add a Decimate Modifier to the top. This will add a little jaggedness to the stones. Then select all layers with the top as the active object and [k]Ctrl-L,P[/k] to copy the Decimate Modifier to the objects (Image 17).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_01-17.jpg",
+                      "caption": "Image 17 - Adding a Decimate Modifier"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Low-Poly Well Pt I",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-01.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Part 2 - The Frame": {
+        "key_concepts": [
+          "[url]Beginner Blender 4.2 Tutorial: Modelling a Low-Poly Well - Part2^^https://www.youtube.com/watch?v=gyr59jaWT0U&list=PLn3ukorJv4vvMwZPLzlajVII2zJd-_BM-&index=4[/url]",
+          {
+            "section": {
+              "header": "The Side Beams",
+              "content": [
+                "Add a cube to the scene, to the right of the well and scale it down (Image 1). [k]Tab[/k] into Edit Mode, and [k]G[/k] grab the top face and make cube 3m tall. [k]Ctrl-R[/k] and add two loop cuts and then with those edge loops selected, [k]R[/k] to add a bit of wobbliness (Image 2), and [k]Numpad3[/k] into side view and add some rotation there as well. Also [k]S,Shift-Z[/k] and hold down [k]Shift[/k] to scale the loops in slightly (Image 3).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-01.jpg",
+                      "caption": "Image 1 - Adding a cube next to the well"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-02.jpg",
+                      "caption": "Image 2 - Adding wobbliness to the beam"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-03.jpg",
+                      "caption": "Image 3 - Narrowing the beam in the middle"
+                    }
+                  ]
+                },
+                "Now let's add some notches to the wood. [k]1[/k] into Vertex Mode, select a vertex and [k]Ctrl-Shift-B[/k] or [k]Ctrl-B,V[/k] to add a bevel. [k]J[/k] the vertices on opposite sides of the bevel and then [k]G,G[/k] the vertices to re-shape the notch (Image 4). We'll want some topology for more notches, so [k]Ctrl-R[/k] and add a Loop Cut vertically across the middle (Image 5). Since the bevel we added earlier created a face with an N-Gon, the Loop Cut won't go through. [k]K[/k] to use the Knife Tool to complete the loop (Image 6). Using these techniques add more notches and splits in front (Image 7) and back (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-04.jpg",
+                      "caption": "Image 4 - Adding a notch"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-05.jpg",
+                      "caption": "Image 5 - Adding a vertical loop cut"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-06.jpg",
+                      "caption": "Image 6 - Narrowing the beam in the middle"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-07.jpg",
+                      "caption": "Image 7 - Adding splits to the front"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-08.jpg",
+                      "caption": "Image 8 - Adding splits to the back"
+                    }
+                  ]
+                },
+                "We want to add the next beam. In Object Mode, [k]Shift-D,X[/k] to move it to the opposite side of the well. [k]R,Z,180[/k], [k]R,X,180[/k] to rotate it and differentiate it from the other side. Also, [k]Tab[/k] into Edit Mode and [k]S[/k] to scale up the bottom vertices to make the base slightly wider. Add some other variation but moving edge loops around or rotating them (Image 9)."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Front Beam",
+              "content": [
+                "You can use one of the side beams for the beam going across the front, so select one of them and [k]Shift-D,Y[/k] to duplicate it and move it out in the y-axis (Image 9). [k]R,Y,90[/k] to rotate it and then line it up in front of the well (Image 10). Since the object's origin is at the top, it might be easier to [k]RMB > Set Origin > Origin to Geometry[/k] to move the origin to the center. Then [k]S,X[/k] to scale down its length and [k]S,Shift-X[/k] to make it thinner (Image 11). [k]Tab[/k] into Edit Mode, select some vertices and add some variation by [k]S,SHift-X[/k] scaling them in or [k]G[/k] moving them around (Image 12). Maneuver around to the Side View ([k]Numpad3[/k] and move the beam so that it sticks out slightly over the edge of the well (Image 13). The last step is to rotate it so it angles up, [k]R,45[/k] (Image 14).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-09.jpg",
+                      "caption": "Image 9 - Duplicating the side beam"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-10.jpg",
+                      "caption": "Image 10 - Lining the beam up in front of the well"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-11.jpg",
+                      "caption": "Image 11 - Scaling it down"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-12.jpg",
+                      "caption": "Image 12 - Adding variation"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-13.jpg",
+                      "caption": "Image 13 - Positioning the beam from the side so it sticks out over the well"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-14.jpg",
+                      "caption": "Image 14 - Finishing with a 45 degree angle"
+                    }
+                  ]
+                },
+                "Now we need a connector beam to the side frame, so [k]Shift-RMB[/k] to position the 3D cursor at the top of the side beams and then [k]Shift-A > Mesh > Cube[/k] and scale it down to about beam size (Image 15). In Edit Mode, select the vertices on the left side and move them down to the front beam, rotating, and moving vertices as needed (Image 16). To add some variation, [k]Ctrl-R[/k] to add a Loop Cut, put it slightly off-center and rotate it as well (Image 17). Go into Front View, and add some further variation, and then move it into place so it lines up with the front and side (Image 18).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-15.jpg",
+                      "caption": "Image 15 - Adding another beam"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-16.jpg",
+                      "caption": "Image 16 - Extending the lower half of the beam"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-17.jpg",
+                      "caption": "Image 17 - Adding variation with a Loop Cut"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-18.jpg",
+                      "caption": "Image 18 - Lining up with the front and side beams"
+                    }
+                  ]
+                },
+                "We need a support beam connecting the front and side. [k]Shift-RMB[/k] to move the cursor to where the beam would attach to this side and add a cube and immediately scale it down (Image 19). Move the cube's vertices around until you have it connecting the front and side (Image 20). And then in Front View move it to line up with the others (Image 21).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-19.jpg",
+                      "caption": "Image 19 - Adding a cube"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-20.jpg",
+                      "caption": "Image 20 - Connecting the beams"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-21.jpg",
+                      "caption": "Image 21 - Lining up with the front and side beams"
+                    }
+                  ]
+                },
+                "For the top beam, add a cube between the side beams and scale it down in the y- and z-axes (Image 22). Move it into position in the Side View (Image 23). [k]S,Z[/k] to make it taller (Image 24). From the front, add two Loop Cuts, scale that section in the z-axis and then move it down to create a bend (Image 25). [k]Ctrl-A,S[/k] to apply the scale and then add some variation. Applying the scale helped if you add some bevels (Image 26).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-22.jpg",
+                      "caption": "Image 22 - Adding a cube for the top beam"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-23.jpg",
+                      "caption": "Image 23 - Positioning the beam from the side"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-24.jpg",
+                      "caption": "Image 24 - Making the beam taller"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-25.jpg",
+                      "caption": "Image 25 - Adding a bend"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-26.jpg",
+                      "caption": "Image 26 - Adding notches and other variation"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Mirror Object",
+              "content": [
+                "We want to mirror our beams now, but the object's origins are not centered. We can mirror an object, but if no object is centered where we want it, we can add a new object that we will use as the Mirror Object. [k]Shift-A > Empty > Plain Axes[/k] to add an empty object at the world origin (Image 27). Give it a name like \"mirror.empty\". Add a Mirror Modifier to your beams, setting the Mirror Object to the Empty that you just created (Image 28).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_02-27.jpg",
+                      "caption": "Image 27 - Adding plain axes"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Low-Poly Well Pt II",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-02.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Part 3 - Roof Tiles": {
+        "key_concepts": [
+          "[url]Beginner Blender 4.2 Tutorial: Modelling a Low-Poly Well - Part3^^https://www.youtube.com/watch?v=yBwV3CLG2uM&list=PLn3ukorJv4vvMwZPLzlajVII2zJd-_BM-&index=3[/url]",
+          {
+            "section": {
+              "header": "The First Roof Tile",
+              "content": [
+                "We're going to start off by making one tile and then duplicating it across the roof. [k]Numpad7[/k] into Top View, [kShift-RMB[/k] to position the 3D cursor beyond the well and add a cube. Scale it in the x-, y- (Image 28) and z-axes (Image 29) until it is approximately tile-sized. [k]Ctrl-A,S[/k] when you're done to apply the scale.",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-28.jpg",
+                      "caption": "Image 28 - Sizing the tile from the top"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-29.jpg",
+                      "caption": "Image 29 - Sizing the tile from the side"
+                    }
+                  ]
+                },
+                "[k]Tab[/k] into Edit Mode and add two vertical Loop Cuts to the tile and use the cuts to add a curve to the tile (Image 30). You can add a bevel ([k]Ctrl-B[/k]) to one or both sides (Image 31). Then [k]1[/k] into Vertex Mode and add some randomness with [k]Mesh > Transform > Randomize[/k]; you will probably need to bring the randomness down to 0.1 - 0.2 (Image 32).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-30.jpg",
+                      "caption": "Image 30 - Curving the tile"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-31.jpg",
+                      "caption": "Image 31 - Beveling the sides"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-32.jpg",
+                      "caption": "Image 32 - Adding randomness"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Second Variation",
+              "content": [
+                "In Object Mode, [k]Shift-D,X[/k] to create a second version off to the side (Image 33). In Edit Mode, add a bevel to one of the middle edges to add a crack to it (Image 34). Grab edges and move them around to add some more variation to differentiate the shape from the original (Image 35). Duplicate the two tiles and add variation to the duplicates so you end up with four tile versions (Image 36).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-33.jpg",
+                      "caption": "Image 33 - Duplicating the first tile"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-34.jpg",
+                      "caption": "Image 34 - Adding a crack"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-35.jpg",
+                      "caption": "Image 35 - Adding variation"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-36.jpg",
+                      "caption": "Image 36 - Adding two more versions"
+                    }
+                  ]
+                },
+                "At this point your scene may be getting cluttered, so organize your objects into different collections: 'stone.base', 'wood.frame', and 'tiles'."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating the Roof",
+              "content": [
+                "Select all four tiles, and change the Transform Pivot Point to Individual Origins. [k]R[/k] to rotate them (Image 37) and then start stacking them (Image 38). [k]Numpad7[/k] into Top View and [k]Object > Transform > Randomize Transform[/k] to add some randomness. Slightly change the values for Location X, Y, and Z, and Scale X and Y to add some variation to the tiles (Images 39).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-37.jpg",
+                      "caption": "Image 37 - Rotating the tiles"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-38.jpg",
+                      "caption": "Image 38 - Stacking the tiles"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-39.jpg",
+                      "caption": "Image 39 - Adding randomness"
+                    }
+                  ]
+                },
+                "[k]Shift-D,X[/k] to duplicate the tiles and move them over. Re-arrange the tiles' order so that it's not a repeating pattern (Image 40). Move the tiles into position with the frame in the Front View and add more tiles if needed (Image 41). Move the row back up in the z-axis. Duplicate the row and move it back in the y-axis, and then shift it in the x-axis so it doesn't line up exactly with the first. Delete that is sticking out at the end and then duplicate one of the middle tiles and move it over to other end (Image 42).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-40.jpg",
+                      "caption": "Image 40 - Re-arranging the tiles"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-41.jpg",
+                      "caption": "Image 41 - Lining up the tiles with the frame"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-42.jpg",
+                      "caption": "Image 42 - Adding a second row"
+                    }
+                  ]
+                },
+                "[k]Numpad3[/k] into Side View and move the first row in place. Follow up with the second row, rotating it slightly so it leans on the first row. Do this as many times as needed to reach the top (Image 43). Select one tile and add a Mirror Modifier with the Mirror Empty as the Mirror Object. Select the other tiles and [k]Ctrl-L,P[/k] to copy the modifier (Image 44).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-43.jpg",
+                      "caption": "Image 43 - Making rows of tiles"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-44.jpg",
+                      "caption": "Image 44 - Mirroring the tiles to the opposite side"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Sagging the Roof",
+                    "content": [
+                      "We want to add a sag to the middle of the roof, and we will accomplish this using a Lattice. [k]Shift-RMB[/k] to move th 3D cursor to the middle of the roof and then [k]Shift-A > Lattice[/k] (Image 45). Scale it in the x-, y-, and z-axes and rotate it until it covers your roof tiles snugly (Image 46). With the Lattice selected, open the Data tab on the right and increase the Resolution U to increase the number of horizontal sections across the Lattice up to 5 (Image 47).",
+                      {
+                        "image": [
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-45.jpg",
+                            "caption": "Image 45 - Adding a Lattice in the middle of the roof"
+                          },
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-46.jpg",
+                            "caption": "Image 46 - Fitting the Lattice over the tiles"
+                          },
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-47.jpg",
+                            "caption": "Image 47 - Increasing the U and V points on the Lattice"
+                          }
+                        ]
+                      },
+                      "We want to attach the tiles to the Lattice, so that we can just deform the Lattice to make them sag. Select the first tile with the Mirror Modifier and a a Lattice Modifier, with the Lattice as the Object. Copy this modifier to all the remaining tiles. With that in place, when you edit the Lattice, you will see the tiles follow the Lattice's transformations also.",
+                      "With the Lattice selected, go into Edit Mode and select the middle vertices. [k]O[/k] to turn on Proportional Editing and [k]G[/k] to move the vertices, using your mouse wheel to enlarge/shrink the circle of influence (Image 48). If you see the wooden frame going through your tiles, copy the Lattice Modifier to the affected pieces.",
+                      {
+                        "image": [
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_03-48.jpg",
+                            "caption": "Image 48 - Selecting the middle vertices on the Lattice"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Low-Poly Well Pt III",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-03.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Part 4 - The Winch": {
+        "key_concepts": [
+          "[url]Beginner Blender 4.2 Tutorial: Modelling a Low-Poly Well - Part4^^https://www.youtube.com/watch?v=yBwV3CLG2uM&list=PLn3ukorJv4vvMwZPLzlajVII2zJd-_BM-&index=4[/url]",
+          {
+            "section": {
+              "header": "The Wooden Crank",
+              "content": [
+                "Position your 3D cursor on the side of the support beams where you want the winch going through ([k]Shift-RMB[/k] and add a cylinder with 6 vertices. Scale it down and rotate it and then extend it through both beams (Image 49). In Edit Mode, add some Loop Cuts and move vertices around to make some randomness. Move the 3D cursor to where you want the handle to come out and add a cube. Scale it down, and then in the x- and z-axes so it becomes more like a crank handle for the central beam (Image 50). In Side View, widen the top and narrow the bottom to give it more of a wedge shape. Then add a vertical Loop Cut and [k]S,Z[/k] to add some roundness to the shape (Image 51). Position the 3D cursor at the bottom of the handle and add another cylinder. Scale that down and add Loop Cuts to add some variance (Image 52).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-49.jpg",
+                      "caption": "Image 49 - Adding a cylinder to start the crank"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-50.jpg",
+                      "caption": "Image 50 - Adding the crank handle"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-51.jpg",
+                      "caption": "Image 51 - Giving the first part of the handle a wedge shape"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-52.jpg",
+                      "caption": "Image 52 - Adding another cylinder to complete the handle"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Support Struts",
+              "content": [
+                "Select one of the support struts from the top and [k]Shift-D[/k] to duplicate it and move it down to the bottom. Remove the Mirror Modifier. Grab the vertices and shape it so that it shows as supporting the frame on the bottom (Image 53). Duplicate it across to the opposite side (Image 54).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-53.jpg",
+                      "caption": "Image 53 - Adding a support strut to the bottom"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-54.jpg",
+                      "caption": "Image 54 - The well frame has supports on both sides"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding A Rope",
+              "content": [
+                "Add a Cylinder in the middle of the crank shaft and scale it down (Image 55). Apply all transforms, go into Edit Mode and add some Loop Cuts. Select the edges for the Loop Cuts and [k]Ctrl-B[/k] to bevel them, adding 2 segments (Image 56). Select those inner bevels and scale them down to create segmentation, and also bevel the outer edges, this time with 1 segment (Image 57). Switch to Vertex Mode, enable X-Ray Mode, and move the top and bottom vertices to angle the rope (Image 58). Add another cylinder, scale it down and put it on one side of the rope for the dangling end (Image 59).",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-55.jpg",
+                      "caption": "Image 55 - Adding a cylinder for the rope"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-56.jpg",
+                      "caption": "Image 56 - Beveling the rope"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-57.jpg",
+                      "caption": "Image 57 - Segmenting the rope"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-58.jpg",
+                      "caption": "Image 58 - Angling the coils"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-59.jpg",
+                      "caption": "Image 59 - Adding the dangling end"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Ground",
+              "content": [
+                "In Object Mode add a Plane under the well and scale it up about 4x.",
+                {
+                  "section": {
+                    "header": "The First Rock",
+                    "content": [
+                      "Add an Icosphere with 1 subdivision and move it above the plane. [k]Tab[/k] into Edit Mode, select all vertices and [k]Mesh > Transform > Randomize[/k] and change the Amount to about 0.16. Then go in and start moving vertices around using [k]G[/k], [k]G,G[/k], and [k]Ctrl-B,V[/k] until you have a rock-like shape."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "More Rocks",
+                    "content": [
+                      "If you don't feel artistically inclined, you can have Blender create the rocks for you. First, [k]Shift-A > Mesh > Extras > Rock Generator[/k] and add as many rocks as you need. They will be added to the scene in one pile (Image 60). With them all selected [k]RMB > Convert > Mesh[/k]; this will apply the modifiers used by the Rock Generator. Separate them out into groupings of 3 or 4; this will make them easier to arrange later (Image 61). Select one of them and add a Decimate Modifier and change the Ratio to bring down the Face Count on the object to below 20. Select the remaining rocks and [k]Ctrl-L > Copy Modifiers[/k] to apply it to all the rocks (Image 62). Turn on Snapping and change the Snap Base to Face, Center from the menu on the top (Image 63). Now, select the groups of rocks and move them around the scene; with snapping they should snap to the ground plane. Scale and rotate as you see fit (Image 64)."
+                    ]
+                  }
+                },
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-60.jpg",
+                      "caption": "Image 60 - Rocks created by the Rock Generator"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-61.jpg",
+                      "caption": "Image 61 - Grouping the rocks"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-62.jpg",
+                      "caption": "Image 62 - Adding a Decimate Modifier to the rocks to reduce the Triangle Count"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-63.jpg",
+                      "caption": "Image 63 - Turn on Snapping"
+                    },
+                    {
+                      "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_04-64.jpg",
+                      "caption": "Image 64 - Arranging the rocks"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Low-Poly Well Pt IV",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-04.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Part 5 - Materials": {
+        "key_concepts": [
+          "[url]Beginner Blender 4.2 Tutorial: Modelling a Low-Poly Well - Part5^^https://www.youtube.com/watch?v=yBwV3CLG2uM&list=PLn3ukorJv4vvMwZPLzlajVII2zJd-_BM-&index=5[/url]",
+          {
+            "section": {
+              "header": "The Shading Workspace",
+              "content": [
+                "Open the Shading Workspace and switch to Material Preview Mode.",
+                {
+                  "section": {
+                    "header": "The Wooden Frame",
+                    "content": [
+                      "Select one of the wooden supports and give it a new material for wood (#8C6239, roughness 0.8) (Image 65). Select all pieces of wood you want to share the same colour and [k]Ctrl-L > Link Materials[/k] to have them share the same material (Image 66).",
+                      {
+                        "image": [
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-65.jpg",
+                            "caption": "Image 65 - Adding a wood material"
+                          },
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-66.jpg",
+                            "caption": "Image 66 - Linking materials"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Well",
+                    "content": [
+                      "Select the well and create several materials (#4C545C, #7A7A7A, #5A5A5A, #2F2F2F), with a roughness of 0.8. Select one of the sections of the well stones and [k]tab[/k] into Edit Mode. [k]3[/k] into Face Mode, select all faces and assign one color. Then, select a face on an individual stone, [k]L[/k] to select all linked faces and assign a different colour. Do this for several stones until you have the section coloured how you want it (Image 67). Go into Object Mode, select the other sections and [k]Ctrl-L > Link Materials[/k] to copy the materials to the other sections. The again go into Edit Mode and colour the faces the way you want them (Image 68).",
+                      {
+                        "image": [
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-67.jpg",
+                            "caption": "Image 67 - Assigning colours to a section of stones"
+                          },
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-68.jpg",
+                            "caption": "Image 68 - Colouring the remainder of the well"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Tiles",
+                    "content": [
+                      "Select a tile and add a new materials (#B7410E), with a roughness of 0.8. Select several other tiles and link to the same material. Select an uncoloured tile and give it a new material. When you want to select the colour, use the eyedropper tool (Image 69) to select the material from one of the ones you just coloured, but change it slightly.",
+                      {
+                        "image": [
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-69.jpg",
+                            "caption": "Image 69 - Using the eyedropper to select a color from the object"
+                          },
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-70.jpg",
+                            "caption": "Image 68 - Colouring the remainder of the well"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Rope and Stones",
+                    "content": [
+                      "Create a yellowish material and assign it to the rope objects. Re-use the well materials for the stones.",
+                      {
+                        "image": [
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-69.jpg",
+                            "caption": "Image 69 - Using the eyedropper to select a color from the object"
+                          },
+                          {
+                            "src": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well_05-70.jpg",
+                            "caption": "Image 68 - Colouring the remainder of the well"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Low-Poly Well Pt V",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Grant Abbitt/LowPolyAssets/LowPolyWell/low_poly_well-05.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
