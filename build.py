@@ -393,9 +393,9 @@ def build():
 
     # Load index template
     try:
-        index_template = env.get_template("test.html")
+        index_template = env.get_template("true_index.html")
     except Exception as e:
-        print(f"  WARNING: Could not load test.html template: {e}")
+        print(f"  WARNING: Could not load true_index.html template: {e}")
         index_template = None
 
     # Build index page
