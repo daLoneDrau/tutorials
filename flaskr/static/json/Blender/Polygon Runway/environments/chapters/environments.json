@@ -393,9 +393,53 @@
                       "[k]O[/k] to turn off Proportional Editing and add a Plane to the scene (Image 22). [k]S,Y[/k] to take the plane almost but not quite to the top and bottom edges and then [k]S,X[/k] to scale it out (Image 23). [k]Numpad1[/k] into Front View, move the plane to just under the riverbed, and then in Edit Mode extrude it up (Image 24). You may want to change the Viewport Shading to Solid and review how it looks, and if needed raise your riverbanks (Image 25).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-22.jpg",
+                            "caption": "Image 22 - Turning off Proportional Editing and adding a Plane to the scene"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-23.jpg",
+                            "caption": "Image 23 - Scaling the plane in the y-axis to almost but not quite reach the top and bottom edges and then scaling it out in the x-axis"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-24.jpg",
+                            "caption": "Image 24 - Going to Front View, moving the plane to just under the riverbed, and then extruding it up in Edit Mode"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-25.jpg",
+                            "caption": "Image 25 - Changing the Viewport Shading to Solid to review how it looks and raising the riverbanks if needed"
+                          }
                         ]
                       },
-                      "We will want to subdivide the top of the river so that we can add some modifiers to it, but first we need to prepare it. [k]/[/k] to go into Local View, which will hide the base (Image 26). [k]2[/k] into Edge Select Mode and select the top side edges and [k]RMB,S[/k] to subdivide those edges (Image 27). With those two new faces selected [k]RMB,S[/k] three times to subdivide them (Image 28). Go to the Data Tab on the right, and with the subdivided faces selected create a new Vertex Group (Image 29). Add a Displace Modifier and make the target the Vertex Group that was just created (Image 30). Adjust the strength until you are pleased with the look (Image 31)."
+                      "We will want to subdivide the top of the river so that we can add some modifiers to it, but first we need to prepare it. [k]/[/k] to go into Local View, which will hide the base (Image 26). [k]2[/k] into Edge Select Mode and select the top side edges and [k]RMB,S[/k] to subdivide those edges (Image 27). With those two new faces selected [k]RMB,S[/k] three times to subdivide them (Image 28). Go to the Data Tab on the right, and with the subdivided faces selected create a new Vertex Group (Image 29). Add a Displace Modifier and make the target the Vertex Group that was just created (Image 30). Adjust the strength until you are pleased with the look (Image 31).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-26.jpg",
+                            "caption": "Image 26 - Going into Local View to hide the base"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-27.jpg",
+                            "caption": "Image 27 - Going into Edge Select Mode, selecting the top side edges and subdividing those edges"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-28.jpg",
+                            "caption": "Image 28 - Selecting those two new faces and subdividing them three times"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-29.jpg",
+                            "caption": "Image 29 - Going to the Data Tab on the right and creating a new Vertex Group with the subdivided faces selected"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-30.jpg",
+                            "caption": "Image 30 - Adding a Displace Modifier and making the target the Vertex Group that was just created"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-31.jpg",
+                            "caption": "Image 31 - Adjusting the strength until pleased with the look"
+                          }
+                        ]
+                      }
                     ]
                   }
                 },
@@ -406,6 +450,22 @@
                       "Generate a rock with the Rock Generator, apply all modifiers, and then add a Decimate Modifier and bring the triangle count down to between 80 and 100 (Image 32). Turn on Snap, change the Snap Base to Face, and enable Align Rotation to Target (Image 33). Move the rock to the riverbank (Image 34). Turn off Snap, [k]Alt-D[/k] to create linked duplicates of the rock and position them around the scene, scaling and rotating them to create variation (Image 35).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-32.jpg",
+                            "caption": "Image 32 - Generating a rock with the Rock Generator, applying all modifiers, and adding a Decimate Modifier to bring the triangle count down to between 80 and 100"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-33.jpg",
+                            "caption": "Image 33 - Turning on Snap, changing the Snap Base to Face, and enabling Align Rotation to Target"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-34.jpg",
+                            "caption": "Image 34 - Moving the rock to the riverbank"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-35.jpg",
+                            "caption": "Image 35 - Turning off Snap, creating linked duplicates of the rock and positioning them around the scene, scaling and rotating them to create variation"
+                          }
                         ]
                       }
                     ]
@@ -415,9 +475,71 @@
                   "section": {
                     "header": "Trees",
                     "content": [
-                      "Add a Circle with 6 vertices to the scene and in Edit Mode scale it down and [k]F[/k] to fill (Image 36). In Side View, [k]E,1[/k] (Image 37), and then [k]E,LMB[/k] then [k]S[/k] to scale the new layer out (make sure Auto Merge is turned off) (Image 38). [k]E[/k] to extrude to the height of the tree (Image 39). Scale in the top edge (but not all the way) and add two Loop Cuts (Image 40). [k]2[/k] into Edge Select Mode, select the Edge Loops in the middle and [k]Ctrl-B[/k] to bevel (Image 41). Select the upper edges for the bevels and [k]S,Shift-Z[/k] to scale them out, and then scale the lower edges in (Image 42). Scale out the bottom edge loop, add a loop cut to each section and then scale those edges in (Image 43). Select the bottom edge loops for each section and rotate them in the z-axis (Image 44). Go into Vertex Select Mode, turn on Proportional Editing set to Random and then randomly move around some vertices (Image 45). Add a Loop Cut to the tree trunk and scale out the bottom (Image 46). Select all vertices and [k]G,Z[/k] to move the origin inside the trunk (Image 47). Turn Snap back on and place the tree in the scene (Image 48).",
+                      "Add a Circle with 6 vertices to the scene and in Edit Mode scale it down and [k]F[/k] to fill (Image 36). In Side View, [k]E,1[/k] (Image 37), and then [k]E,LMB[/k] then [k]S[/k] to scale the new layer out (make sure Auto Merge is turned off) (Image 38). [k]E[/k] to extrude to the height of the tree (Image 39).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-36.jpg",
+                            "caption": "Image 36 - Adding a Circle with 6 vertices to the scene, scaling it down in Edit Mode and filling it"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-37.jpg",
+                            "caption": "Image 37 - Going to Side View and extruding up"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-38.jpg",
+                            "caption": "Image 38 - Extruding and then scaling the new layer out with Auto Merge turned off"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-39.jpg",
+                            "caption": "Image 39 - Extruding to the height of the tree"
+                          }
+                        ]
+                      },
+                      "Scale in the top edge (but not all the way) and add two Loop Cuts (Image 40). [k]2[/k] into Edge Select Mode, select the Edge Loops in the middle and [k]Ctrl-B[/k] to bevel (Image 41). Select the upper edges for the bevels and [k]S,Shift-Z[/k] to scale them out, and then scale the lower edges in (Image 42). Scale out the bottom edge loop, add a loop cut to each section and then scale those edges in (Image 43). Select the bottom edge loops for each section and rotate them in the z-axis (Image 44).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-40.jpg",
+                            "caption": "Image 40 - Scaling in the top edge and adding two Loop Cuts"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-41.jpg",
+                            "caption": "Image 41 - Going into Edge Select Mode, selecting the Edge Loops in the middle and beveling them"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-42.jpg",
+                            "caption": "Image 42 - Selecting the upper edges for the bevels and scaling them out in the x- and y-axes, and then scaling the lower edges in"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-43.jpg",
+                            "caption": "Image 43 - Scaling out the bottom edge loop, adding a loop cut to each section and then scaling those edges in"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-44.jpg",
+                            "caption": "Image 44 - Selecting the bottom edge loops for each section and rotating them in the z-axis"
+                          }
+                        ]
+                      },
+                      "Go into Vertex Select Mode, turn on Proportional Editing set to Random and then randomly move around some vertices (Image 45). Add a Loop Cut to the tree trunk and scale out the bottom (Image 46). Select all vertices and [k]G,Z[/k] to move the origin inside the trunk (Image 47). Turn Snap back on and place the tree in the scene (Image 48).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-45.jpg",
+                            "caption": "Image 45 - Going into Vertex Select Mode, turning on Proportional Editing set to Random and randomly moving around some vertices"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-46.jpg",
+                            "caption": "Image 46 - Adding a Loop Cut to the tree trunk and scaling out the bottom"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-47.jpg",
+                            "caption": "Image 47 - Selecting all vertices and moving them in the z-axis to move the origin inside the trunk"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-48.jpg",
+                            "caption": "Image 48 - Turning Snap back on and placing the tree in the scene"
+                          }
                         ]
                       }
                     ]
@@ -427,9 +549,42 @@
                   "section": {
                     "header": "Tree Trunk",
                     "content": [
-                      "Add a Cylinder with 8 vertices to the scene and [k]R,Y,90[/k] (Image 49). Place the cylinder in the scene and have it crossing the river; [k]S,X[/k] to lengthen it, [k]R,X[/k] to rotate, and then [k]S,Shift-X-X[/k] to scale in the local y- and z-axes (Image 50). Add some Loop Cuts and use those to create variation (Image 51). Add some more Loop Cuts in the middle (Image 52). Select four faces, use Loop Tools to make them a circle, and extrude (Image 53). Add another knot and some notches and bevels (Image 54). Lower the log to the ground (Image 55).",
+                      "Add a Cylinder with 8 vertices to the scene and [k]R,Y,90[/k] (Image 49). Place the cylinder in the scene and have it crossing the river; [k]S,X[/k] to lengthen it, [k]R,X[/k] to rotate, and then [k]S,Shift-X-X[/k] to scale in the local y- and z-axes (Image 50). Add some Loop Cuts and use those to create variation (Image 51). Add some more Loop Cuts in the middle (Image 52).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-49.jpg",
+                            "caption": "Image 49 - Adding a Cylinder with 8 vertices to the scene and rotating it 90 degrees in the y-axis"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-50.jpg",
+                            "caption": "Image 50 - Placing the cylinder in the scene crossing the river, lengthening it in the x-axis, rotating in the x-axis, and scaling in the local y- and z-axes"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-51.jpg",
+                            "caption": "Image 51 - Adding some Loop Cuts and using those to create variation"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-52.jpg",
+                            "caption": "Image 52 - Adding some more Loop Cuts in the middle"
+                          }
+                        ]
+                      },
+                      "Select four faces, use Loop Tools to make them a circle, and extrude (Image 53). Add another knot and some notches and bevels (Image 54). Lower the log to the ground (Image 55).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-53.jpg",
+                            "caption": "Image 53 - Selecting four faces, using Loop Tools to make them a circle, and extruding"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-54.jpg",
+                            "caption": "Image 54 - Adding another knot and some notches and bevels"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-55.jpg",
+                            "caption": "Image 55 - Lowering the log to the ground"
+                          }
                         ]
                       }
                     ]
@@ -439,9 +594,46 @@
                   "section": {
                     "header": "Tree Stump",
                     "content": [
-                      "[k]Shift-RMB[/k] to place the 3D Cursor on the ground and add a Circle with 8 vertices to the scene (Image 56). Extrude it in the z-axis and then add some Loop Cuts and scale to add some variation (Image 57). Select all faces and extrude along normals to add a solid ring (Image 58). Add some rotation to the top faces and middle edge loop (Image 59). Add another Loop Cut towards the bottom, select three faces and [k]Alt-E,F[/k] to extrude out for roots (Image 60). [k]/[/k] into Local View and use a combination of [k]S,Z,0[/k] to even out the bottom vertices, moving, and scaling the root faces using Individual Origins as the Transform Pivot Point to shape the root system (Image 61). Add some notched (Image 62). Turn on Snap to Face and place the stump in the scene (Image 63).",
+                      "[k]Shift-RMB[/k] to place the 3D Cursor on the ground and add a Circle with 8 vertices to the scene (Image 56). Extrude it in the z-axis and then add some Loop Cuts and scale to add some variation (Image 57). Select all faces and extrude along normals to add a solid ring (Image 58). Add some rotation to the top faces and middle edge loop (Image 59).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-56.jpg",
+                            "caption": "Image 56 - Right-click placing the 3D Cursor on the ground and adding a Circle with 8 vertices to the scene"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-57.jpg",
+                            "caption": "Image 57 - Extruding in the z-axis and then adding some Loop Cuts and scaling to add some variation"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-58.jpg",
+                            "caption": "Image 58 - Selecting all faces and extruding along normals to add a solid ring"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-59.jpg",
+                            "caption": "Image 59 - Adding some rotation to the top faces and middle edge loop"
+                          }
+                        ]
+                      },
+                      "Add another Loop Cut towards the bottom, select three faces and [k]Alt-E,F[/k] to extrude out for roots (Image 60). [k]/[/k] into Local View and use a combination of [k]S,Z,0[/k] to even out the bottom vertices, moving, and scaling the root faces using Individual Origins as the Transform Pivot Point to shape the root system (Image 61). Add some notched (Image 62). Turn on Snap to Face and place the stump in the scene (Image 63).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-60.jpg",
+                            "caption": "Image 60 - Adding another Loop Cut towards the bottom, selecting three faces and extruding out for roots"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-61.jpg",
+                            "caption": "Image 61 - Going into Local View and using a combination of evening out the bottom vertices, moving, and scaling the root faces using Individual Origins as the Transform Pivot Point to shape the root system"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-62.jpg",
+                            "caption": "Image 62 - Adding some notches"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-63.jpg",
+                            "caption": "Image 63 - Turning on Snap to Face and placing the stump in the scene"
+                          }
                         ]
                       }
                     ]
@@ -451,9 +643,67 @@
                   "section": {
                     "header": "Mushroom",
                     "content": [
-                      "[k]Shift-RMB[/k] to place the 3D Cursor on the ground and add a Circle with 12 vertices to the scene (Image 64). Fill the vertices and extrude it in the z-axis, basically creating a cylinder with the pivot point at the bottom (Image 65). [k]E,Enter[/k], [k]S[/k] [k]E[/k] to create the start of a cap (Image 66). Bevel the top to round it out (Image 67). Add three Loop Cuts to the stalk and then scale out the bottom faces (Image 68). Select the edge loop near the top and scale it out to even out the stalk shape (Image 69). Select the Edge Loop under the cap and move it up in the z-axis (Image 70). If you care about a more organic, less uniform shape, turn on [k]Proportional Editing > Smooth[/k] and move some random vertices around the shape (Image 71). We want some dots around the mushrooms, so [k]Shift-RMB[/k] to place the 3D Cursor at the top of the mushroom and add a Circle with six vertices (Image 72). [k]F[/k] to fill the circle, [k]E,Z[/k] to extrude the top up a bit, and select the bottom edge loop and [k]G,Z[/k] to bring the bottom down and leave the origin in just below the top (Image 73). Turn on [k]Snap > Face[/k] and move the dot around to the side (Image 74). [k]Alt-D[/k] to create linked duplicates and place them all around the cap, scaling and rotating at random (Image 75).",
+                      "[k]Shift-RMB[/k] to place the 3D Cursor on the ground and add a Circle with 12 vertices to the scene (Image 64). Fill the vertices and extrude it in the z-axis, basically creating a cylinder with the pivot point at the bottom (Image 65). [k]E,Enter[/k], [k]S[/k] [k]E[/k] to create the start of a cap (Image 66). Bevel the top to round it out (Image 67).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-64.jpg",
+                            "caption": "Image 64 - Right-click placing the 3D Cursor on the ground and adding a Circle with 12 vertices to the scene"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-65.jpg",
+                            "caption": "Image 65 - Filling the vertices and extruding in the z-axis to create a cylinder with the pivot point at the bottom"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-66.jpg",
+                            "caption": "Image 66 - Extruding and entering, then scaling to create the start of a cap"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-67.jpg",
+                            "caption": "Image 67 - Beveling the top to round it out"
+                          }
+                        ]
+                      },
+                      "Add three Loop Cuts to the stalk and then scale out the bottom faces (Image 68). Select the edge loop near the top and scale it out to even out the stalk shape (Image 69). Select the Edge Loop under the cap and move it up in the z-axis (Image 70). If you care about a more organic, less uniform shape, turn on [k]Proportional Editing > Smooth[/k] and move some random vertices around the shape (Image 71).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-68.jpg",
+                            "caption": "Image 68 - Adding three Loop Cuts to the stalk and then scaling out the bottom faces"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-69.jpg",
+                            "caption": "Image 69 - Selecting the edge loop near the top and scaling it out to even out the stalk shape"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-70.jpg",
+                            "caption": "Image 70 - Selecting the Edge Loop under the cap and moving it up in the z-axis"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-71.jpg",
+                            "caption": "Image 71 - Turning on Proportional Editing set to Smooth and moving some random vertices around the shape for a more organic look"
+                          }
+                        ]
+                      },
+                      "We want some dots around the mushrooms, so [k]Shift-RMB[/k] to place the 3D Cursor at the top of the mushroom and add a Circle with six vertices (Image 72). [k]F[/k] to fill the circle, [k]E,Z[/k] to extrude the top up a bit, and select the bottom edge loop and [k]G,Z[/k] to bring the bottom down and leave the origin in just below the top (Image 73). Turn on [k]Snap > Face[/k] and move the dot around to the side (Image 74). [k]Alt-D[/k] to create linked duplicates and place them all around the cap, scaling and rotating at random (Image 75).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-72.jpg",
+                            "caption": "Image 72 - Right-click placing the 3D Cursor at the top of the mushroom and adding a Circle with six vertices"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-73.jpg",
+                            "caption": "Image 73 - Filling the circle, extruding the top up in the z-axis, and bringing the bottom down to leave the origin just below the top"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-74.jpg",
+                            "caption": "Image 74 - Turning on Snap to Face and moving the dot around to the side"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-75.jpg",
+                            "caption": "Image 75 - Creating linked duplicates and placing them all around the cap, scaling and rotating at random"
+                          }
                         ]
                       }
                     ]
@@ -463,10 +713,57 @@
                   "section": {
                     "header": "Grass",
                     "content": [
-                      "[k]Shift-RMB[/k] to place the 3D Cursor on the ground and add a Plane to the scene (Image 76). Scale it down and extrude it up in the z-axis (Image 77). Add a Loop Cut in the middle and merge the vertices at the top (Image 78). Move the top vertex to add a bend to the grass blade (Image 79). In Top View, move the blade just above the 3D Cursor, change the Transform Pivot Point to 3D Cursor, and create several duplicates of the blade, rotating around the z-axis (Image 80). Add some variety by scaling and rotating the different blades (Image 81). Enable [k]Snap > Face[/k] and place clumps of grass around the scene (Image 82).",
+                      "[k]Shift-RMB[/k] to place the 3D Cursor on the ground and add a Plane to the scene (Image 76). Scale it down and extrude it up in the z-axis (Image 77). Add a Loop Cut in the middle and merge the vertices at the top (Image 78). Move the top vertex to add a bend to the grass blade (Image 79).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-76.jpg",
+                            "caption": "Image 76 - Right-click placing the 3D Cursor on the ground and adding a Plane to the scene"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-77.jpg",
+                            "caption": "Image 77 - Scaling it down and extruding it up in the z-axis"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-78.jpg",
+                            "caption": "Image 78 - Adding a Loop Cut in the middle and merging the vertices at the top"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-79.jpg",
+                            "caption": "Image 79 - Moving the top vertex to add a bend to the grass blade"
+                          }
                         ]
+                      },
+                      "In Top View, move the blade just above the 3D Cursor, change the Transform Pivot Point to 3D Cursor, and create several duplicates of the blade, rotating around the z-axis (Image 80). Add some variety by scaling and rotating the different blades (Image 81). Enable [k]Snap > Face[/k] and place clumps of grass around the scene (Image 82).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-80.jpg",
+                            "caption": "Image 80 - Going to Top View, moving the blade just above the 3D Cursor, changing the Transform Pivot Point to 3D Cursor, and creating several duplicates of the blade rotating around the z-axis"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-81.jpg",
+                            "caption": "Image 81 - Adding some variety by scaling and rotating the different blades"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/environments/enchanted forest/enchanted_forest-82.jpg",
+                            "caption": "Image 82 - Enabling Snap to Face and placing clumps of grass around the scene"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Final Result",
+                    "content": [
+                      {
+                        "model": {
+                          "type": "glb",
+                          "path": "Blender/Polygon Runway/environments/enchanted_forest.glb",
+                          "canvas_number": 1
+                        }
                       }
                     ]
                   }
@@ -872,7 +1169,7 @@
                       {
                         "model": {
                           "type": "glb",
-                          "path": "Blender/Polygon Runway/environments/portal/portal.glb",
+                          "path": "Blender/Polygon Runway/environments/portal.glb",
                           "canvas_number": 1
                         }
                       }
