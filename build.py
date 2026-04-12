@@ -404,7 +404,13 @@ def build():
         write_page(env, index_template,
                    index_path,
                    title="Blender Courses",
-                   library=library)
+                   library=library,
+                   footer_data={},
+                   _topic="",
+                   _creator="",
+                   _course="",
+                   _chapter="",
+                   _section="")
         print(f"  index.html")
 
     # Build all content pages
