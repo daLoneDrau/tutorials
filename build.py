@@ -295,7 +295,8 @@ def flatten_library(library):
 
 def make_href(page):
     """Build the URL path for a page dict."""
-    return "/{}/{}/{}/{}/{}".format(
+    return "{}/{}/{}/{}/{}/{}".format(
+        BASE_PATH,
         page["topic"], page["creator"], page["course"],
         page["chapter"], page["section"]
     )
