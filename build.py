@@ -278,31 +278,24 @@ def flatten_library(library):
                 if "chapters" not in course:
                     continue
                 for chapter in course["chapters"]:
-                    # 5-level: chapter has explicit sections list
+                    # Determine the display title — skip chapter level if it
+                    # matches the course name (case-insensitive)
+                    chapter_is_transparent = (
+                        chapter.get("title", "").lower() == course["course"].lower()
+                    )
+                
                     if "sections" in chapter:
                         for section_item in chapter["sections"]:
                             section_title = list(section_item.keys())[0]
                             pages.append({
-                                "topic":   topic["topic"],
-                                "creator": creator["creator"],
-                                "course":  course["course"],
-                                "chapter": chapter["title"],
-                                "section": section_title,
-                                "data":    section_item[section_title],
-                                "depth":   5,
+                                "topic":               topic["topic"],
+                                "creator":             creator["creator"],
+                                "course":              course["course"],
+                                "chapter":             None if chapter_is_transparent else chapter["title"],
+                                "section":             section_title,
+                                "data":                section_item[section_title],
+                                "depth":               4 if chapter_is_transparent else 5,
                             })
-                    # 4-level: chapter has key_concepts directly
-                    # the whole chapter is one page
-                    elif "key_concepts" in chapter:
-                        pages.append({
-                            "topic":   topic["topic"],
-                            "creator": creator["creator"],
-                            "course":  course["course"],
-                            "chapter": chapter["title"],
-                            "section": None,
-                            "data":    chapter,
-                            "depth":   4,
-                        })
     return pages
 
 
@@ -312,7 +305,7 @@ def make_href(page):
         return "{}/{}/{}/{}/{}".format(
             BASE_PATH,
             page["topic"], page["creator"],
-            page["course"], page["chapter"]
+            page["course"], page["section"]
         )
     return "{}/{}/{}/{}/{}/{}".format(
         BASE_PATH,
@@ -475,7 +468,7 @@ def build():
             out_path = os.path.join(
                 OUTPUT_DIR,
                 page["topic"], page["creator"],
-                page["course"], page["chapter"],
+                page["course"], page["section"],
                 "index.html"
             )
 
