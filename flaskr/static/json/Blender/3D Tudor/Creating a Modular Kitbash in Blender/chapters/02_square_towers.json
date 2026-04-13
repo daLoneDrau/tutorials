@@ -1,0 +1,609 @@
+{
+  "title": "Basic Modelling and Sculpting",
+  "sections": [
+    {
+      "Introduction": {
+        "key_concepts": [
+          "[url]Blender Tutorial for Complete Beginners - Part 1^^https://www.youtube.com/watch?v=B0J27sf9N1Y&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z&index=1[/url]",
+          {
+            "section": {
+              "header": "Start with a new Scene",
+              "content": [
+                "[k]Ctrl-N,G[/k] to start a new scene and delete the default cube.",
+                "[k]Shift-A[/k] and add a Monkey head.",
+                {
+                  "section": {
+                    "header": "Orbiting",
+                    "content": [
+                      "Lets practice orbiting the scene. Hold down [k]MMB[/k] and move the mouse. This way you can see the model from different sides. You can also scroll the [k]MMB[/k] to zoom in and out or [k]Ctrl-MMB[/k] to zoom smoothly."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Panning",
+                    "content": [
+                      "Hold down [k]Shift-MMB[/k] to pan around the scene."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Moving the Camera",
+                    "content": [
+                      "If you want to see what the Render view looks like, press [k]Numpad0[/k] or click the Camera Icon on the right of the viewport (Image 1). Let's say you want to render from a different angle, but are not sure how to move the camera correctly. [k]N[/k] will bring up the Property menu. Go to the View tab and check the box for 'Camera to View' (Image 2). This will lock the camera to the view you see on-screen, so panning and orbiting will move the camera. Remember to uncheck the box after you're done.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Blender Guru/Donut Tutorial/intro-01.jpg",
+                            "caption": "Image 1 - Toggle the camera view"
+                          },
+                          {
+                            "src": "Blender/Blender Guru/Donut Tutorial/intro-02.jpg",
+                            "caption": "Image 2 - Enable view navigation"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Livening Things Up",
+                    "content": [
+                      "Let's give the monkey a brown material. And a hat. [k]Shift-A[/k] and add a cone. [k]G,Z[/k] to position it on the monkey's head and [k]S,Shift-Z[/k] to scale it down in the x- and y-axes. Give the cone (hat) a festive color. Move the camera and light into a good position and [k]F12[/k] to print the render.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Blender Guru/Donut Tutorial/intro-03.jpg",
+                            "caption": "Image 3 - Your first render"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "footer": [
+
+        ]
+      }
+    },
+    {
+      "Basic Modelling": {
+        "key_concepts": [
+          "[k]Ctrl-N[/k] to start out with a new scene and delete the default cube.",
+          {
+            "section": {
+              "header": "Starting Out",
+              "content": [
+                "[k]Shift-A[/k] and choose a starting mesh that resembles the final shape you want. If you are doing a house you may start with a cube, or if you are making a vase, you might choose a cone. In this case, we are doing a donut, so choose a Torus to start with and add it to the scene.",
+                "Immediately after adding the mesh the Options dialog will appear at the bottom left (Image 1). If you perform another action or deselect the mesh, it will go away, but you can bring it back by pressing [k]F9[/k].",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/basic_modelling-01.jpg",
+                      "caption": "Image 1 - The Options menu"
+                    }
+                  ]
+                },
+                "One of the options in the menu is to adjust the Major and Minor Segments. This adds topology to the object, giving it a smoother appearance. You may think that the higher the better (Image 2), but in modelling, it's easier to add resolution to a low poly model than it is to take it away from a high poly one. Set the Major Segments to 32 and the Minor Segments to 12 (Image 3). Last, play with the Major/Minor Radii until you get a donut shape you like (Image 4).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/basic_modelling-03.jpg",
+                      "caption": "Image 2 - Too much resolution"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/basic_modelling-02.jpg",
+                      "caption": "Image 3 - Setting the starting topology"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/basic_modelling-04.jpg",
+                      "caption": "Image 4 - Setting the radii"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Improving the Resolution",
+              "content": [
+                "We now have a donut with jagged edges. How can we make it smoother? One way is with Smooth Shading. [k]RMB[/k] and select Shade Smooth (Image 5). This will smooth out the object somewhat (Image 6), but if you look from [k]Numpad1[/k] or [k]Numpad3[/k] you'll see the edges are still jagged (Image 7). We can fix this with a Subdivision modifier. With the torus selected, [k]Ctrl-1[/k] will add the modifier (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/basic_modelling-05.jpg",
+                      "caption": "Image 5 - Applying Shade Smooth"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/basic_modelling-06.jpg"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/basic_modelling-07.jpg",
+                      "caption": "Image 7 - Smooth Shading still doesn't fix the silhouette"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/basic_modelling-08.jpg",
+                      "caption": "Image 8 - Applying a Subdivision Modifier"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Subdivision Modifier",
+                    "content": [
+                      "The Subdivision modifier will add topology to the object. You can choose how much to show in the Levels Viewport and the Render Viewport. Sometimes you will want to see how it looks in the Levels Viewport which is presented in the standard viewports, but then set that back down to 0 and continue working. When you want to render, the value you set in the Render Viewport is what will be displayed."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Editing the Object",
+              "content": [
+                "You now have a perfect donut. Perfect because it is mathematically precise, which makes it look fake to the human eye. It needs some imperfections. When creating art in 3D, one of the bigger problems is that things that look perfect just look fake; you have to spend some time making things look misshapen and adding variation here and there, like you see in the real world.",
+                "[k]Tab[/k] into Edit Mode, [k]1[/k] for Vertex selection, and [k]O[/k] to turn on Proportional Editing. Start [k]G[/k] grabbing vertices and pulling them around (Image 9). Be sure to rotate around the screen and [k]Numpad7[/k] to look from the top. About 10 changes should do it.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/basic_modelling-09.jpg",
+                      "caption": "Image 9 - Using Proportional Editing"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Shrinking the Circumference",
+              "content": [
+                "Donuts are not actually perfect rings, meaning they are not rounded on the sides. If you look at a donut, the side by the circumference are actually a little flat. To achieve this in Blender, [k]Alt-LMB[/k] on a vertex along the middle circumference (Image 10) to select the edge. [k]O[/k] to turn OFF Proportional Editing, and then [k]S[/k] to scale it inwards (Image 11).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/basic_modelling-10.jpg",
+                      "caption": "Image 10 - Selecting the circumference"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/basic_modelling-11.jpg",
+                      "caption": "Image 11 - Scaling in the sides"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Basic Modelling",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Blender Guru/Donut Tutorial/02-basic_modelling.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Modelling the Icing": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Duplicating an Object",
+              "content": [
+                "In order to make the icing, we need something that follows the contours of the shape of the donut. We can have that if we duplicate our donut. First, rename the donut object so you know what it is. Then [k[Shift-D,Escape[/k] (Image 1). This will create a duplicate of the donut, but leave it in place on top of the first. [k]F2[/k] to rename this one as well.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-01.jpg",
+                      "caption": "Image 1 - Duplicating the donut to create the icing"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Deleting the Bottom Half of the Icing",
+              "content": [
+                "We only need the top half of the icing, we will want to delete the bottom half. [k]Tab[/k] into Edit Mode, and [k]Alt-Z[/k] to turn on X-Ray Mode. Select the vertices in the lower half of the icing and delete them (Image 2); you will want to go into Front or Side View to make this easier. Turn off X-Ray Mode and [k]Tab[/k] back into Edit Mode and Pan around the scene. You may see some smudges or flickering (Image 3). These are indications that you have faces sitting on top of faces otherwise known as z-fighting. We can fix this by giving a thickness to our icing with a Solidify Modifier.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-02.jpg",
+                      "caption": "Image 2 - Removing the lower half of the icing"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-03.jpg",
+                      "caption": "Image 3 - Smudges are an indication of internal faces"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Solidify Modifier",
+              "content": [
+                "[url]Blender Documentation^^https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/solidify.html[/url]",
+                "Go to the Modifiers tab and select [k]Add Modifier > Generate > Solidify[/k] (Image 4). This will add more smudges to the object (Image 5). This is because the Solidify Modifier's Offset is setting the solidified output inside the mesh.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-04.jpg",
+                      "caption": "Image 4 - Adding a Solidify Modifier"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-05.jpg",
+                      "caption": "Image 5 - Seeing the solidified output inside the mesh"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Offset",
+                    "content": [
+                      "A value between (-1 to 1) to locate the solidified output inside or outside the original mesh. The inside and outside is determined by the face normals. Set to 0.0, the solidified output will be centered on the original mesh."
+                    ]
+                  }
+                },
+                "Change the Offset to 1 and you may also want to up the Thickness to 0.025 (Image 6). You will see that the icing is looking better now, but it looks wrong, since the sides are uniform without any variations or imperfections. If you [k]Tab[/k] into Edit Mode, you won't be able to see any vertices. This is because they are hidden behind the Solidify Modifier. In the Modifiers tab, uncheck the Edit box for the Solidify Modifier (Image 7). This will hide it during editing so you can make adjustments but still see it in Object Mode.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-06.jpg",
+                      "caption": "Image 6 - Adjusting the Offset and Thickness"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-07.jpg",
+                      "caption": "Image 7 - Hide modifiers during editing by unchecking the Edit box"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Snap to Face",
+              "content": [
+                "In Edit Mode, [k]O[/k] to turn ON Proportional Editing and grab a vertex (Image 8). Decrease the radius of the tool's influence so that you aren't grabbing too much. After moving it, go into Object Mode, pan around to the side. You should see that while the edit looks okay from the front, from the side it is moving away from the donut (Image 9). On a real donut, the icing hugs to the sides of the pastry.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-08.jpg",
+                      "caption": "Image 8 - Moving around vertices with the Proportional Editor"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-09.jpg",
+                      "caption": "Image 9 - Seeing the icing moving away from the donut mesh"
+                    }
+                  ]
+                },
+                "[k]Ctrl-Z[/k] to undo our edit and let's try to fix this by turning on Snap to Face (Image 10) and try to move the vertex again. This time it looks better from the side (Image 11), but from the front you can see the icing faces are going into the donut (Image 12), so Snap to Face isn't what we want.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-10.jpg",
+                      "caption": "Image 10 - Snap to Face"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-11.jpg",
+                      "caption": "Image 11 - From the side looks better after turning on Snap to Face"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-12.jpg",
+                      "caption": "Image 12 - Faces are going into the donut from the front"
+                    }
+                  ]
+                },
+                "Let's try to turn on Snap to Face Project (Image 13) and move the vertex again. This should work, but you will still see icing disappearing into the donut. That is because there isn't enough geometry to project against. To fix this, [k]Tab[/k] into Object Mode and apply the Subdivision Modifier (Image 14). Back into Edit Mode and moving the vertices around this time results in what we want (Image 15). You may want to adjust the side of the tool's radius, but don't make it so big that it grabs vertices from the opposite side by accident.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-13.jpg",
+                      "caption": "Image 13 - Snap to Face Project"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-14.jpg",
+                      "caption": "Image 14 - Applying the Subdivision Modifier"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-15.jpg",
+                      "caption": "Image 15 - With enough topology the vertices are staying on the outside of the donut"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Select More / Less",
+              "content": [
+                "In order to avoid accidentally affecting vertices along the inside of the donut's icing, we will want to [k]H[/k] hide them. A quick way to select the faces we want to hide is to [k]Alt-RMB[/k] to select all edges and then [k]Ctrl+[/k] to expand the selection."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Wavy Edges",
+              "content": [
+                "Now, go around the icing grabbing vertices and moving them along the z-axis with the Proportional Editing tool. Make big, medium, and small variations in detail along the icing. Drag some down, drag some up."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Rounding the Edges",
+              "content": [
+                "Our donut is looking better, but if you look at the bottom edge of the icing, you will see a 90 degree edge at the bottom (Image 16). We can get rid of this by adding more topology with a Subdivision modifier. Go into Object Mode and add this [k]Ctrl-1[/k] after the Solidify Modifier (Image 17). It's important that when the modifiers are listed, Solidify is first, since the Blender engine applies modifiers in order. It looks better, but we'll want the bottom to hug the donut; we can fix this by setting the [k]Edge Data > Crease Inner[/k] value to 1 (Image 18). This will set a crease to the inner edges, giving it a better shape (Image 19).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-16.jpg",
+                      "caption": "Image 16 - Sharp edge at the bottom of the icing"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-17.jpg",
+                      "caption": "Image 17 - After adding a Subdivision modifier"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-19.jpg",
+                      "caption": "Image 18 - Adjusting Edge Data > Crease Inner"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-18.jpg",
+                      "caption": "Image 19 - Seeing the crease"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Extruding the Drips",
+              "content": [
+                "Real donuts that have icing sometimes have bits of icing that dripped all the way down. We can do this, but if we tried to do it with Proportional Editing we would again have the faces going into the donut since there's not enough topology. This time, we will use the Extrusion tool. In Edit Mode, select tow vertices or an edge where the drip should start and [k]E[/k] to extrude it (Image 20). Do this extrusion in segments so there is enough topology for the drip to hug the donut without getting lost in the mesh. Do this several times around the donut.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/icing-20.jpg",
+                      "caption": "Image 20 - Extruding the drips"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Donut with Icing",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Blender Guru/Donut Tutorial/donut-03.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Sculpting": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Technical Check",
+              "content": [
+                "Before we move on to sculpting, we will want to review our mesh for imperfections, because any that are in place now will be magnified when we start sculpting. We will be looking for overlapping vertices or vertices that have separated from the mesh (Image 1). One way to fix it is to turn off Proportional Editing, turn on Snap to Face Project, and then [k]G,Enter[/k] the vertex. This will grab it but not move it, activating the snapping. But to do this for all vertices like this could be time-consuming. It would be better to make Blender do the work. We will do this with the Shrinkwrap Modifier.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/scultping-01.jpg",
+                      "caption": "Image 1 - The highlighted vertex has separated from the mesh"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Shrinkwrap Modifier",
+              "content": [
+                "[url]Blender Documentation^^https://docs.blender.org/manual/en/latest/modeling/modifiers/deform/shrinkwrap.html[/url]",
+                "In Object Mode go to [k]Add Modifier > Deform > Shrinkwrap[/k] and set the Target to the donut mesh. This should instigate more z-fighting again (Image 2). This is because the order of the modifiers matters; Blender is trying to Shrinkwrap the icing after applying the Solidify Modifier. Move the Shrinkwrap above the Solidify and that should fix it (Image 3).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/scultping-02.jpg",
+                      "caption": "Image 2 - Z-fighting between the meshes when adding the Shrinkwrap"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/scultping-03.jpg",
+                      "caption": "Image 3 - Changing the order of the modifiers to fix the z-fighting"
+                    }
+                  ]
+                },
+                "Pan around the mesh and turn the Realtime display for the Shrinkwrap Modifier on and off. You should be able to see the imperfections (Image 4) appear and disappear (Image 5) when toggling the Realtime button. After reviewing, apply the modifier. This was just a one-time modifier that we want to keep on the mesh.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/scultping-04.jpg",
+                      "caption": "Image 4 - Imperfections appearing without the Shrinkwrap Modifier"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/scultping-05.jpg",
+                      "caption": "Image 5 - And disappearing when Shrinkwrap is visible"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Varying the Icing's Thickness",
+              "content": [
+                "If you look at a real donut with icing, you will see that some in some places the icing is thicker than in others. This is because of the way the icing is applied. Icing is a liquid that is applied by a human hand, so it pools thicker in some spots and trails off thinner in others. We want to mimic that inconsistency and thicken up parts of the icing by sculpting. If we go into Edit Mode and want to thicken, we can't because the icing mesh is flat against the donut (Image 6); it only looks thick because of the Solidify Modifier. So go ahead and apply the Solidify Modifier. Now we have vertices that are not flat against the donut (Image 7).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/scultping-06.jpg",
+                      "caption": "Image 6 - The icing's vertices before applying the Solidify Modifier"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/scultping-07.jpg",
+                      "caption": "Image 7 - The icing's vertices after applying the Solidify Modifier"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Sculpting",
+              "content": [
+                "Now that we have more vertices to work with, we want to start moving them around. In Edit Mode, we can do very precise movement, but for this we will want to influence many vertices at a time, and Proportional Editing won't do the trick. Instead, go into the Sculpting workspace. If you play around with the default brush you won't see much happening. Adjust the Radius and the Strength (image 8) and try out the brush (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/scultping-08.jpg",
+                      "caption": "Image 8 - Adjusting the Sculpting brush"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Donut Tutorial/scultping-09.jpg",
+                      "caption": "Image 9 - Practicing sculpting with the Draw Brush"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "The Inflate Brush",
+                    "content": [
+                      "[k]I[/k] to change to the Inflate Brush and click a few times on one of the drops (Image 10). If you look closely at it, it has a lot of jagged edges. Low poly work is good for boxy objects, but for round objects it doesn't really work. We will want to increase the Levels Viewport for our Subdivision Modifier to 2 and then apply it. Now use the Inflate Brush to inflate the ends of the icing drips (Image 11).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Blender Guru/Donut Tutorial/scultping-10.jpg",
+                            "caption": "Image 10 - Inflating an area where there isn't enough vertices"
+                          },
+                          {
+                            "src": "Blender/Blender Guru/Donut Tutorial/scultping-11.jpg",
+                            "caption": "Image 11 - Inflating all the drips around the donut"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Grab Brush",
+                    "content": [
+                      "[k]G[/k] in Sculpt Mode will change to the Grab Brush. Using this brush will be just like pushing or pulling clay. Use this to create some tapering on the drips before the glob at the end (Image 12).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Blender Guru/Donut Tutorial/scultping-12.jpg",
+                            "caption": "Image 12 - Using the Grab Brush"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Mask Brush",
+                    "content": [
+                      "Now we want to add a raised area going around the edge of the icing at the bottom. We could [k]I[/k] to use the Inflate Brush, but there's a risk that we would inflate an area above the rim by mistake. Instead, we will want to mark the area that we want to inflate before applying. We will do this using the Mask Brush. Choose the Mask Brush from the Toolbar on the left, and change the Strength to 1 and reduce the radius. Mask a trail around the edge of the icing, making sure not to accidentally mark the drips (Image 13). If you see the mask somehow bleeding through to the opposite side of the mesh, go under Brush options at the top and check the box for Front Faces Only (Image 14). When you are done applying the mask, [k]Ctrl-I[/k] will invert the mask (Image 15).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Blender Guru/Donut Tutorial/scultping-13.jpg",
+                            "caption": "Image 13 - Applying a mask to the rim of the icing"
+                          },
+                          {
+                            "src": "Blender/Blender Guru/Donut Tutorial/scultping-14.jpg",
+                            "caption": "Image 14 - If the brush goes through the mesh, turn on Front Faces Only"
+                          },
+                          {
+                            "src": "Blender/Blender Guru/Donut Tutorial/scultping-15.jpg",
+                            "caption": "Image 15 - Inverting the mask"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Applying the Inflate Uniformly",
+                    "content": [
+                      "[k]I[/k] to select the Inflate Brush for the next step. We will want to inflate the rim now, but if we try using the Inflate Brush by hand, it won't be applied evenly as we go along the mesh. Instead, we will be using the Mesh Filter (Image 16). This will allow us to apply the inlfation evenly across the mesh, just [k]LMB[/k] and drag to the right to inflate (left is deflate). Change the Strength to 0.1 in order to make the inflation speed slower, and also go to [k]Mask > Smooth Mask[/k] (Image 17) to smooth out the edges of the rim. Finally, do the inflation (Image 18). Remove the mask afterwards by pressing [k]Alt-M[/k].",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Blender Guru/Donut Tutorial/scultping-16.jpg",
+                            "caption": "Image 16 - Turning on Mesh Filter"
+                          },
+                          {
+                            "src": "Blender/Blender Guru/Donut Tutorial/scultping-17.jpg",
+                            "caption": "Image 17 - Adding a Smooth Mask"
+                          },
+                          {
+                            "src": "Blender/Blender Guru/Donut Tutorial/scultping-18.jpg",
+                            "caption": "Image 18 - Inflating the rim"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Donut with Sculpted Icing",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Blender Guru/Donut Tutorial/donut-04.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,581 @@
+{
+  "title": "Castle Walls",
+  "sections": [
+    {
+      "Blocking Out Shapes": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Project Resources",
+              "content": [
+                "The project resource pack can be downloaded from Section 1."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Start with a new Scene",
+              "content": [
+                "Delete all basic elements: the cube, camera, and light."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "References (Model and Image)",
+              "content": [
+                "We will be using two references for the model we build:",
+                [
+                  "Human Scale: a human model reference will be used as a scale reference for real world comparison to the human body. You can either bring in the reference model provided (use the FBX), or create a cylinder that is 1.8m high and label that 'human body'.",
+                  "Wall Reference: import image Castle Walls/Castle Wall Block (B).png. Scale it up and line it up with your Human model references (Image 1) and turn on the opacity."
+                ],
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/castle_walls-01.jpg",
+                      "caption": "Image 1 - Lining up the reference model and images"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Blocking Out",
+              "content": [
+                "Add a Cube to the scene and align it with the right-edge of the reference image. [k]Tab[/k] into Edit Mode and turn on Edge Length in the Mesh Edit Mode Overlay menu (Image 2). We want to scale the cube to the dimensions laid out in the reference image: 12.5m x 7.5m x 2.7m. We could [k]S[/k] scale this in Object Mode to make it the right dimensions, but this would leave the scale untouched. Instead, from Edit Mode, [k]G[/k] grab the appropriate face and move it along the x-, y-, and z-axes until it is the right size. The Edge Length overlay will help (Image 3).",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/castle_walls-02.jpg",
+                      "caption": "Image 2 - Turning on the Edge Length overlay"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/castle_walls-03.jpg",
+                      "caption": "Image 3 - Making the Cube into the correct dimensions"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Blocked Out Castle Wall",
+                    "content": [
+                      {
+                        "model": {
+                          "type": "glb",
+                          "path": "3D Tudor/modularKitBashCastle/CastleWalls/castle_kit-01.glb",
+                          "canvas_number": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Ramparts": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Walkway Depth",
+              "content": [
+                "The castle walls are meant to be ramparts; a defensive wall with a walkway and stone parapet. We need to figure out how high the parapets will be compared to the walkway. This is there the human scale reference will come in handy. In Object Mode, [k]H[/k] the wall object. [k]G[/k] the human model and move it to the top of the wall in the reference image, so that it looks like a person has enough height to fire a weapon, but also maintain concealment (Image 1).",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-01.jpg",
+                      "caption": "Image 1 - Using the human scale reference"
+                    }
+                  ]
+                },
+                "[k]Alt-H[/k] to un-hide the wall object, [k]Tab[/k] into Edit Mode, [k]3[/k] for Face Mode and select the left face. [k]Shift-D,X[/k] to make a copy and move it to the right along the x-axis. [k]P,S[/k] to separate it from the original (Image 2). This will serve as a height marker, since we are about to lower the height of the wall to the human model's feet. [k]Tab[/k] into Object Mode, select the height marker and [k]H[/k] to hide it for now.",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-02.jpg",
+                      "caption": "Image 2 - Duplicating the right side as a height marker"
+                    }
+                  ]
+                },
+                "With the wall selected, [k]Tab[/k] back into Edit Mode, and select the top face. [k]Numpad3[/k] into Side View and [k]G,Z[/k] to drag it to below the human's feet (Image 3). If you still have Edge Length turned on you can see the new height. [k]Numpad7[/k] to go to the Top View and [k]Ctrl-R[/k] to add two loop cuts across the top (Image 4). This will be width of the walkway up top. To get an idea of how wide it needs to be, [k]Tab[/k] into Object Mode, select the human model and [k]R,Z,90[/k] to rotate the model so it's facing sideways. Then [k]Tab[/k] back into Edit Mode and select the two edges that were just created (Image 5). This gives you an idea of how wide or narrow the walkway will be. Change the Transform Pivot Point to Individual Origins, and [k]S,Y[/k] the edges until the walkway is wide enough (Image 6).",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-03.jpg",
+                      "caption": "Image 3 - Setting the height of the walkway"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-04.jpg",
+                      "caption": "Image 4 - Adding loop cuts to mark the walkway's width"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-05.jpg",
+                      "caption": "Image 5 - Reviewing the walkway's width compared to the human scale model"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-06.jpg",
+                      "caption": "Image 6 - Widening the walkway"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Building the Parapets",
+              "content": [
+                "[k]3[/k] for Face Mode and select the two top faces outside the walkway (Image 7). [k]Numpad1[/k] into Front View and [k]E[/k] to extrude them up to the height of the parapet from the reference image (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-07.jpg",
+                      "caption": "Image 7 - Selecting the top faces"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-08.jpg",
+                      "caption": "Image 8 - Raising the parapets"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Duplicating the Small Wall Block",
+                    "content": [
+                      "The goal for the kitbash is to create two types of wall sections, a large section 12.5m wide and a smaller section, 6.25m wide. At this point, we are ready to duplicate the original so we will have a smaller section to work on later. In Edit Mode, [k]A,Shift-D,X[/k] to select all geometry and duplicate the wall section (Image 9). Select the right faces and [k]G,X[/k] until the smaller wall is 6.25m wide (Image 10).",
+                      {
+                        "image": [
+                          {
+                            "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-09.jpg",
+                            "caption": "Image 9 - Create a duplicate that will be used later for the smaller wal section"
+                          },
+                          {
+                            "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-10.jpg",
+                            "caption": "Image 10 - Scaling down the smaller wall section"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Cutting the Parapets",
+                    "content": [
+                      "Go back to the original block. [k]Numpad7[/k] into Top View and [k]Ctrl-R,10,Enter,Enter[/k] to create ten Loop Cuts across the wall (Image 11). On the small block create four Loop Cuts (Image 12). At this point, bring the height marker back into view and [k]R,Z,90[/k] so it will be easy to see from the front. On both the large and small sections, [k]3[/k] and select every other top face and [k]Numpad1[/k] back into Front View. [k]E[/k] to extrude these back up to the 12.5m height (Image 13). Once the right height has been achieved you can delete the height marker.",
+                      {
+                        "image": [
+                          {
+                            "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-11.jpg",
+                            "caption": "Image 11 - Ten loop cuts on the large wall section"
+                          },
+                          {
+                            "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-12.jpg",
+                            "caption": "Image 12 - Four loop cuts on the smaller wall section"
+                          },
+                          {
+                            "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-13.jpg",
+                            "caption": "Image 13 - Raise the parapets back up to 12.5m height (notice the height marker in the middle)"
+                          }
+                        ]
+                      },
+                      "[k]Numpad1[/k] back into Front View and look at the widths of our parapets compared to the reference image (Image 14). Select all faces between parapets on the large and small sections and [k]S,X[/k] to shrink them down (Image 15). Again, make the the Transform Pivot Point is set to Individual Origins.",
+                      {
+                        "image": [
+                          {
+                            "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-14.jpg",
+                            "caption": "Image 14 - Widths between parapets is too big"
+                          },
+                          {
+                            "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-15.jpg",
+                            "caption": "Image 15 - Angling the parapets"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Breaking out the Smaller Wall Section",
+                    "content": [
+                      "Last, we need to separate the smaller wall section. In Edit Mode, select all geometry for the smaller section and [k]P,S[/k] to separate it into its own object. Rename it."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Ramparts",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "3D Tudor/modularKitBashCastle/CastleWalls/castle_kit-02.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Buttresses": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Adding a Buttress",
+              "content": [
+                "A buttress is an architectural structure built against or projecting from a wall which serves to support or reinforce the wall. We are going to be adding buttresses to the castle walls. In order to do this, we will be adding a cube to the scene.",
+                "If we haven't already, put the origin for our walls at their center bottom (Image 1). [k]Tab[/k] into Edit Mode and [k]Shift-S,T[/k] to move the 3-D cursor to the large wall's origin. [k}Shift-A,Mesh,Cube[/k] to add a cube to the scene. [k]G[/k] to move it up so it's bottom is on the ground (Image 2). [k]G,X[/k] to position it on the left side so it sticks out a bit from the wall. [k]Numpad7[/k], [k]G,Y[/k] and move it out of the wall so it's in front of the wall (Image 3). [k]Numpad3,Numpad9[/k] to switch to the Side View closest to the cube, and [k]Tab[/k] into Edit Mode. [k]3[/k] for Face Selection, and [k]G,Y[/k] to narrow down the depth of the cube so the buttress doesn't come out too far (Image 4).",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/buttress-01.jpg",
+                      "caption": "Image 1 - The large section's origin at its center-bottom"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/buttress-02.jpg",
+                      "caption": "Image 2 - Add a cube centered on the wall and put it on the ground"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/buttress-01.jpg",
+                      "caption": "Image 3 - Move the cube into position to start"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/buttress-01.jpg",
+                      "caption": "Image 4 - Narrowing down the depth"
+                    }
+                  ]
+                },
+                "[k]Numpad1[/k] into Front View, select the side face and [k]G,X[/k] to shrink the width (Image 5) and then select the top face and [k]G,Z[/k] to raise it up to the right height (Image 6). The two outer buttresses will have a slope near their top, to [k]Ctrl-R[/k] to add a Loop Cut and position it near the top (Image 7). [k]2[/k] into Edge Selection and grab the top outer edge. Slide it in to make a slope at the top of the buttress (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-05.jpg",
+                      "caption": "Image 5 - Shrinking the width"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-06.jpg",
+                      "caption": "Image 6 - Raising the height"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-07.jpg",
+                      "caption": "Image 7 - Adding a Loop Cut"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-08.jpg",
+                      "caption": "Image 8 - Adding a slope"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding a Middle Buttress",
+              "content": [
+                "We need two more, on the right and in the middle. [k]Tab[/k] into Object Mode. Select the buttress and look at the object's origin (Image 9). [k]RMB,O,O[/k] to move the buttress' origin to the center of its geometry. Then, turn on [k]Transform > Affect Only Origins[/k] (Image 10) and [k]G,Z[/k] to move the origin to the bottom.  Turn off Affect Only Origins and [k]Shift-D,X[/k] to create a duplicate and slide it to the right. [k]Shift-S,K[/k] to move the duplicate to the 3-D cursor, which should still be at the origin of the wall. [k]Numpad7,Numpad9[/k] to view it from underneath and [k]G,Y[/k] to move it to the front of the wall (Image 11). [k]Tab[/k] into Edit Mode, [k]Alt-LMB[/k] to select the loop where the slope starts and [k]G,Z[/k] to move it down (Image 12).",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-09.jpg",
+                      "caption": "Image 9 - The buttress' origin is off-center"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-08.jpg",
+                      "caption": "Image 10 - Setting Affect Only Origins"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-10.jpg",
+                      "caption": "Image 11 - Moving the middle buttress in place"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-08.jpg",
+                      "caption": "Image 12 - Changing the slope for the middle buttress"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding a Right Buttress",
+              "content": [
+                "With the 3-D cursor still at the large section's origin, select the left buttress. [k]RMB,O,T[/k] to set the origin to the 3-D cursor. Add a Mirror Modifier (Image 13). To add buttresses to the smaller section, in Object Mode [k]Shift-D[/k] and move it into place on the left side of the smaller wall. Select the smaller wall and [k]Shift-S,T[/k] to se the 3-D cursor to its origin. Select the duplicated buttress and again [k]RMB,O,T[/k] to change its origin to the 3-D cursor (Image 14).",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-13.jpg",
+                      "caption": "Image 13 - Adding a Mirror Modifier"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/ramparts-14.jpg",
+                      "caption": "Image 14 - Adding buttresses to the smaller wall"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Buttresses",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "3D Tudor/modularKitBashCastle/CastleWalls/castle_kit-03.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Arrow Loops and the Array Modifier": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "The Basic Shape",
+              "content": [
+                "Starting off will follow many of the same steps from the Ramparts lesson.",
+                "Start with a new cube, setting it to the dimensions specified in the reference image. As in the Ramparts lesson, position the human figure so that just their head sticks above the wall. Then, make a height marker by [k]Tab[/k] into Edit Mode, [k]3[/k] for Face Mode and select the left face. [k]Shift-D,X[/k] to make a copy and move it to the right along the x-axis. [k]P,S[/k] to separate it from the original. [k]Tab[/k] into Object Mode, select the height marker and [k]H[/k] to hide it for now.",
+                "With the wall selected, [k]Tab[/k] back into Edit Mode, and select the top face. [k]Numpad3[/k] into Side View and [k]G,Z[/k] to drag it to below the human's feet.",
+                "[k]Numpad7[/k] to go to the Top View and [k]Ctrl-R[/k] to add two loop cuts across the top for the walkway. Change the Transform Pivot Point to Individual Origins, and [k]S,Y[/k] the edges until the walkway is as wide as it was on the previous walls (check the lengths with Edge Length).",
+                "Now, it's time to bring up the merlons again. [k]3[/k] for Face Mode and select the two top faces outside the walkway. [k]Numpad1[/k] into Front View and [k]E[/k] to extrude them up to the correct height. Use the Edge Length and the height marker to be sure.",
+                "In Edit Mode, [k]A,Shift-D,X[/k] to select all geometry and duplicate the wall section. Select the right faces and [k]G,X[/k] until the smaller wall is 6.25m wide. [k]S,P[/k] to break into a separate object."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Arrow Slits",
+              "content": [
+                "Select the larger section and [k]Ctrl-R[/k] to add five vertical Edge Loops in order to break it up into six sections (Image 1), while partitioning the smaller section into three sections. [k]3[/k] into face mode and select the top left-most face. [k]Shift-S,2[/k] in order to place the cursor in the middle of the face (Image 2). [k]Tab[/k] into Object Mode.",
+                "[k]Shift-A[/k] and add a Cube. [k]Alt-Z[/k] to turn on transparency and with the cube selected, [k]S,X[/k], [k]S,Z[/k], [k]G,Z[/k] until the cube matches the approximate size and position of the arrow slit (Image 3). [k]Ctrl-A,S[/k] to apply the scale transformations; this is needed since we are about to apply a modifier.",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-01.jpg",
+                      "caption": "Image 1 - Break up the walls into sections"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-02.jpg",
+                      "caption": "Image 2 - Move the 3D cursor to the wall face"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-01.jpg",
+                      "caption": "Image 3 - Add a cube and size it up for the arrow slit"
+                    }
+                  ]
+                },
+                "Select the larger section and [k]Ctrl-R[/k] to add five vertical Edge Loops in order to break it up into six sections (Image 1), while partitioning the smaller section into three sections. [k]3[/k] into face mode and select the top left-most face. [k]Shift-S,2[/k] in order to place the cursor in the middle of the face (Image 2). [k]Tab[/k] into Object Mode.",
+                "[k]Shift-A[/k] and add a Cube. [k]Alt-Z[/k] to turn on transparency and with the cube selected, [k]S,X[/k], [k]S,Z[/k], [k]G,Z[/k] until the cube matches the approximate size and position of the arrow slit (Image 3). [k]Ctrl-A,S[/k] to apply the scale transformations; this is needed since we are about to apply a modifier.",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-01.jpg",
+                      "caption": "Image 1 - Break up the walls into sections"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-02.jpg",
+                      "caption": "Image 2 - Move the 3D cursor to the wall face"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-03.jpg",
+                      "caption": "Image 3 - Add a cube and size it up for the arrow slit"
+                    }
+                  ]
+                },
+                "Select the wall and [k]Tab[/k] into Edit Mode. With Edge Length on, read the width of each section, this will be the distance between arrow slits (Image 4). With the arrow slit cube selected, add an Array Modifier. Set the Count to 6 and check the box for Constant Offset and set the Distance X to the spacing (Image 5). [k]Tab[/k] into Edit Mode, [k]Numpad7[/k] into Top View, select the back face and [k]G,Y[/k] to extend it so the cube goes through the front and back walls (Image 6). [k]Ctrl-R[/k] and add four loop cuts across the length of the arrow slit cube (Image 7). [k]Alt-LMB[/k] to select the edge loops that were just created and one by one move them into place with one loop inside and outside each wall (Image 8). Select the two inside loops and [k]S,X[/k] to widen them (Image 9). When we join this to the wall, this will create an angled opening that is wider inside the wall than outside. Repeat this for the smaller wall section.",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-04.jpg",
+                      "caption": "Image 4 - Check the spacing between arrow slits (2.08m)"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-05.jpg",
+                      "caption": "Image 5 - Add an Array Modifier to space out more arrow slits"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-06.jpg",
+                      "caption": "Image 6 - Extending the arrow slits through the back walls"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-07.jpg",
+                      "caption": "Image 7 - Adding four loop cuts; these will be used to angle the opening inside the wall"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-08.jpg",
+                      "caption": "Image 8 - Moving the loops into place"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-09.jpg",
+                      "caption": "Image 9 - Scaling the inside loops"
+                    }
+                  ]
+                },
+                "In Object Mode, select each wall and [k]Ctrl-A,A[/k] to apply all transforms. Select the large wall and add a Boolean Modifier. Set the combination to Difference and use the eyedrop tool to select the arrow slits as the Object (Image 10). Apply the modifier and then delete the arrow slits. You will see the arrow slits in the wall now (Image 11). Repeat this with the smaller wall.",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-10.jpg",
+                      "caption": "Image 10 - Adding a Boolean Modifier"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-11.jpg",
+                      "caption": "Image 11 - Deleting the arrow slits"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Small Buttresses",
+              "content": [
+                "We now want to add small buttresses on the walkway. In Edit Mode, select a vertex on the edge of the wall and [k]Shift-S,2[/k] to set the cursor there (Image 12). [k]Tab[/k] into Object Mode and [k]Shift-A[/k] to add a cube there. Back into Edit Mode and [k]G[/k], [k]S[/k] until its the appropriate size for a walkway buttress (Image 13). Add an Edge Loop and move back the top to make a slope (Image 14). Again, add an Array Modifier and space out 7 of them so that they go across to the other edge (Image 15). In order to add a row opposite, select the wall and [k]Shift-S,2[/k] to move the cursor to the wall's origin and [k]RMB,O,T[/k] on the buttress to set its origin to the cursor. Add a Mirror Modifier going across the y-axis (Image 16). Repeat these steps for the smaller wall.",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-12.jpg",
+                      "caption": "Image 12 - Positioning the 3D cursor"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-08.jpg",
+                      "caption": "Image 13 - Sizing up the buttress"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-14.jpg",
+                      "caption": "Image 14 - Adding an Edge Loop"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-15.jpg",
+                      "caption": "Image 15 - Making an Array of them"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/arrow_loops-16.jpg",
+                      "caption": "Image 16 - Mirroring across to the opposite side"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Walls With Arrow Loops",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "3D Tudor/modularKitBashCastle/CastleWalls/castle_kit-04.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Wall Base": {
+        "key_concepts": [
+          "Now that we have four sections of walls (large crenelated, small crenelated, large arrow slits, and small arrow slits) we need one more block. that will be used as a base block for adding height to our walls.",
+          {
+            "section": {
+              "header": "The Building Block",
+              "content": [
+                "Pull in the reference image Castle Wall Building Block.png. This will have the dimensions we need to use. Select the large crenelated wall section and its support buttresses. [k]Shift-D,X[/k] to move it over to the side. We will be working with these objects. First, in Object Mode, apply any mirrors that were set, there should be one on the buttress. Select the buttresses and then the wall last and [k]Ctrl-J[/k] to join them.",
+                "[k]Tab[/k] into Edit Mode, [k]3[/k] into Face Mode. Select the bottom faces (Image 1). [k]P,S[/k] to separate those faces out into a new object. Delete the other geometry so that only those bottom faces are left. You might want to turn on face orientation so you can see which way the normals are facing (Image 2). We have a lot of unnecessary geometry in there, so select one the inside faces (Image 3) and [k]L[/k] to select all linked faces (Image 4). Then [k]X,L[/k] to perform a Limited Dissolve (Image 5). A Limited Dissolve can simplify your mesh by dissolving vertices and edges separating flat regions.",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/building_block-01.jpg",
+                      "caption": "Image 1 - Selecting the bottom faces"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/building_block-02.jpg",
+                      "caption": "Image 2 - The bottom faces are left (red color indicates the normals are in the opposite directon)"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/building_block-03.jpg",
+                      "caption": "Image 3 - Selecting an inside face"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/building_block-04.jpg",
+                      "caption": "Image 4 - Expanding the selection to all linked faces"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/building_block-05.jpg",
+                      "caption": "Image 5 - Performing a Limited Dissolve"
+                    }
+                  ]
+                },
+                "[k]A[/k] to select all faces. If you need to flip the normals, [k]Alt-N,F[/k], and [k]Numpad1[/k] into Front View. We now want to make the block the correct height. Make sure Edge Length is turned back on and [k]E,Z[/k] to extrude them up (Image 6). We now have a base building block. We can stack the large wall section on top in order to make a taller wall (Image 7).",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/building_block-06.jpg",
+                      "caption": "Image 6 - Raising the wall height"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/building_block-07.jpg",
+                      "caption": "Image 7 - Stacking to make taller walls"
+                    }
+                  ]
+                },
+                "We could uses the same block to stack the arrow slit section, but the buttresses being flat on top will look strange (Image 8). In this case, [k]Shift-D[/k] to duplicate it and we will want to go into Edit Mode, bring the tops of the buttresses up slightly and then round them off by moving the edges around (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/building_block-08.jpg",
+                      "caption": "Image 8 - The building block needs some adjustment to work with the arrow slit wall section"
+                    },
+                    {
+                      "src": "3D Tudor/modularKitBashCastle/CastleWalls/building_block-09.jpg",
+                      "caption": "Image 9 - Rounding off the top of the buttress"
+                    }
+                  ]
+                },
+                "Repeat these steps for the smaller wall sections."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Walls Building Blocks",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "3D Tudor/modularKitBashCastle/CastleWalls/castle_kit-05.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
