@@ -1,0 +1,234 @@
+{
+  "title": "Understanding State Machines",
+  "sections": [
+    {
+      "What Are They": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Finite State Machine",
+              "content": [
+                "A finite state machine is a method of modeling a system comprised of a limited number of modes. Depending on which mode it's in, a machine will behave in one manner or another."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "State Transition Diagrams",
+              "content": [
+                "There are many ways of expressing finite state machines, but a graphical approach is often the one taken. State transition diagrams are one way to visually characterize a particular system. The modes of a machine are drawn as a shape, usually a rectangle or circle.",
+                {
+                  "section": {
+                    "header": "Example 1 - An Oven",
+                    "content": [
+                      "In the diagram below, it shows that an oven is [b]Off[/b] when noone is using it, or [b]Heating[/b] when 'Bake' is pressed. The arrow to the left of the [b]Off[/b] state indicates that is the starting point. All arrows in the diagram represent a transition. Arrows that connect one state or another are pathways that enable you to switch between them. The rules for when a transition takes place is displayed next to the corresponding arrow ('BAKE_pressed', or 'OFF_pressed')",
+                      {
+                        "image": {
+                          "src": "/MATLAB/Understanding State Machines/what_state_machine-01.jpg",
+                          "caption": "An oven's state transition diagram"
+                        }
+                      },
+                      "An oven's heating element doesn't stay running all the time. If the oven reaches its target temperature, it goes into an [b]Idling[/b] state, until it detects the temperature getting to cold and goes back to [b]Heating[/b].",
+                      {
+                        "image": {
+                          "src": "/MATLAB/Understanding State Machines/what_state_machine-02.jpg",
+                          "caption": "Adding an Idling state"
+                        }
+                      },
+                      "In the example above, if you want to turn the oven off while it's in the [b]Idling[/b] state, nothing would happen. That's because we need a transition from [b]Idling[/b] to [b]Off[/b] for the 'OFF_pressed' event.",
+                      {
+                        "image": {
+                          "src": "/MATLAB/Understanding State Machines/what_state_machine-03.jpg",
+                          "caption": "A functioning oven prototype"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Conclusion",
+              "content": [
+                "The basic building blocks of a finite state machine are:",
+                [
+                  "States",
+                  "Transitions",
+                  "Events that serve as the rules for transitions"
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Why Use Them": {
+        "key_concepts": [
+          "Finite state machines are useful to engineers, programmers, and scientists. It turns out that state machines are most valuable for systems with abrupt changes. Systems such as ATMs rely on discrete input (a digital signal that detects the presence or absence of an electrical signal, and can be either on or off).",
+          {
+            "section": {
+              "header": "An ATM",
+              "content": [
+                "How would you code an ATM's response to instantaneous inputs? One programming strategy would be to write separate functions that determine what to do when a particular button is pressed.",
+                {
+                  "image": {
+                    "src": "/MATLAB/Understanding State Machines/why_use_them-01.jpg",
+                    "caption": "Possible ATM reactions to button #3 events"
+                  }
+                },
+                "How should the ATM react when button #3 is pressed? To get the right answer, you need to answer several questions:",
+                [
+                  "Did the person already swipe their card?",
+                  "If so, are they trying to enter their PIN?",
+                  "If not, are they entering the value of a withdrawal or deposit?",
+                  "If not any of these, what are they trying to do?"
+                ],
+                "If you try to handle all possible situations when #3 is pressed, you'll end up with a long list of nested IF-ELSEIF-ELSE statements in your code. This approach will be challenging when trying to contend with every possible combination of variables.",
+                {
+                  "image": {
+                    "src": "/MATLAB/Understanding State Machines/why_use_them-02.jpg",
+                    "caption": "Nested IF-ELSEIF-ELSE code trying to mimic a state machine"
+                  }
+                },
+                "One way to simplify things is to instead think about the ATM software as comprised of a fixed number of states. Each state can be conceived of as its own little universe, enabling us to define behaviour based on a particular set of circumstances. Rather than writing code that contends with every possible outcome when a user presses '3', we can write concise code that handles swiping the card, entering a PIN, choosing a transaction type, and so on. In each of these states, there are fewer things that can happen when '3' is pressed.",
+                {
+                  "image": {
+                    "src": "/MATLAB/Understanding State Machines/why_use_them-03.jpg",
+                    "caption": "ATM states, with variables that only matter in a particular state"
+                  }
+                }
+              ]
+            }
+          },
+          "By compartmentalizing the problem into smaller segments, it is easier to satisfy our goals.",
+          {
+            "section": {
+              "header": "Expressing State Machines",
+              "content": [
+                "One approach to expressing a state machine is to write a requirements document that details all the different modes of operation and the expected behaviour. However, this takes a lot of effort and does not convey interaction well.",
+                "State transition diagrams can display the system visually which can make the connections between states far more apparent.",
+                {
+                  "image": {
+                    "src": "/MATLAB/Understanding State Machines/why_use_them-04.jpg",
+                    "caption": "A state transition diagram"
+                  }
+                },
+                "Some tools will allow you to model a state transition diagram and then automatically convert that into code. A state transition diagram can serve as a high-level starting point for a complex software design process.",
+                {
+                  "image": {
+                    "src": "/MATLAB/Understanding State Machines/why_use_them-05.jpg",
+                    "caption": "A state transition diagram converted to code"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Mealy and Moore Machines": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Machine Output",
+              "content": [
+                "When you express the behaviour of a system, that is referred to as the machine's outputs or actions. In Mealy, the Output is on the Transition, while in Moore, the Output is inside the State.",
+                {
+                  "section": {
+                    "header": "Moore Standards",
+                    "content": [
+                      {
+                        "image": {
+                          "src": "/MATLAB/Understanding State Machines/mealy_moore-01.jpg",
+                          "caption": "The Oven's outputs described in the State, per Moore standards"
+                        }
+                      },
+                      "In the Moore standards above, we can see that heat will only be on in the [b]Heating[/b] state."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Mealy Standards",
+                    "content": [
+                      "In the Mealy standards, a machine's outputs depend not only on its state, but also potentially on the inputs to the system.",
+                      {
+                        "image": {
+                          "src": "/MATLAB/Understanding State Machines/mealy_moore-02.jpg",
+                          "caption": "The Oven's outputs described in the State, per Mealy standards"
+                        }
+                      },
+                      "In the above example, there's not much difference with the Moore standards, but if you re-organize the diagram, the advantages become obvious. In the version below, [b]Heating[/b] and [b]Idling[/b] have been merged into a single state, [b]Baking[/b]. [b]Baking[/b] has three outbound transitions, two of which are loops. Now when the oven gets too hot or too cold, it exits the state and updates the output (turning the heat on or off) and immediately returns to [b]Baking[/b]. This is something you can't do with the Moore standards.",
+                      {
+                        "image": {
+                          "src": "/MATLAB/Understanding State Machines/mealy_moore-03.jpg",
+                          "caption": "The re-organized Mealy machine."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Harel State Machines": {
+        "key_concepts": [
+          "In the 1980's, Dr. David Harel took a fresh look at finite state machines. He realized that in order to get what he wanted, he would have to add new concepts. These enhanced diagrams were called state charts. Harel's state charts are mixture of Mealy and Moore machines with three extra concepts:",
+          [
+            "Hierarchy", "Parallelism", "Broadcasting"
+          ],
+          {
+            "section": {
+              "header": "Hierarchy",
+              "content": [
+                "In the oven example, [b]Heating[/b] and [b]Idling[/b] can be thought of as part of a parent state called [b]Baking[/b]. This compartmentalizes the design, and reduces the number of transition lines required to represent a system.",
+                {
+                  "image": {
+                    "src": "/MATLAB/Understanding State Machines/harel-01.jpg",
+                    "caption": "A parent state in the Harel machine."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Parallelism",
+              "content": [
+                "The idea behind parallelism is that your state machine might be comprised of multiple state machines operating simultaneously. In the example below, a state machine for an Oven Light has been added to the diagram. This system operates at the same time as the Oven system.",
+                {
+                  "image": {
+                    "src": "/MATLAB/Understanding State Machines/harel-02.jpg",
+                    "caption": "An autonomous Oven Light system."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Broadcasting",
+              "content": [
+                "Broadcasting is the idea that these mostly autonomous machines could be exchanging information with one another. In the example below, let's say the Oven Light needs to turn off whenever the Oven isn't [b]Baking[/b]. Whenever the Oven goes into its [b]Off[/b] state, it would broadcast the 'LIGHT_OFF' event which causes the Over Light system to transition to its [b]Oven_Light_Off[/b] state.",
+                {
+                  "image": {
+                    "src": "/MATLAB/Understanding State Machines/harel-03.jpg",
+                    "caption": "Boradcasting the 'LIGHT_OFF' event."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
