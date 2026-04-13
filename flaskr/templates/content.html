@@ -41,58 +41,40 @@
                                             <div class="accordion-body">
                                                 <div class="accordion" id="chapters-accordion">
                                                     {% for chapter in course.chapters %}
-                                                        {% if chapter.title == course.course %}
-                                                            {{- '' -}}
-                                                            {# Chapter title same as course - skip accordion, show sections directly #}
-                                                            {% if chapter.sections is defined and chapter.sections %}
-                                                                {% for section in chapter.sections %}
-                                                                    {% for key, value in section.items() %}
-                                                                        {% if _section == key %}
-                                                                            <a class="reference internal current" href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator }}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
-                                                                        {% else %}
-                                                                            <a class="reference internal" href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator }}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
-                                                                        {% endif %}
-                                                                    {% endfor %}
-                                                                {% endfor %}
-                                                            {% endif %}
-                                                        {% else %}
-                                                            {# Normal chapter accordion #}
-                                                            <div class="accordion-item">
-                                                                <span class="accordion-header" id="heading{{ chapter.title|replace(' ', '_') }}">
-                                                                    {% if _chapter == chapter.title %}
-                                                                        <button type="button" class="accordion-button chapter" data-bs-toggle="collapse" data-bs-target="#collapse{{ chapter.title|replace(' ', '_') }}">
-                                                                    {% else %}
-                                                                        <button type="button" class="accordion-button collapsed chapter" data-bs-toggle="collapse" data-bs-target="#collapse{{ chapter.title|replace(' ', '_') }}">
-                                                                    {% endif %}
-                                                                        {{ chapter.title }}
-                                                                    </button>
-                                                                </span>
+                                                        <div class="accordion-item">
+                                                            <span class="accordion-header" id="heading{{ chapter.title|replace(' ', '_') }}">
                                                                 {% if _chapter == chapter.title %}
-                                                                    <div id="collapse{{ chapter.title|replace(' ', '_') }}" class="accordion-collapse collapse show" data-bs-parent="#chapters-accordion">
+                                                                    <button type="button" class="accordion-button chapter" data-bs-toggle="collapse" data-bs-target="#collapse{{ chapter.title|replace(' ', '_') }}">
                                                                 {% else %}
-                                                                    <div id="collapse{{ chapter.title|replace(' ', '_') }}" class="accordion-collapse collapse" data-bs-parent="#chapters-accordion">
+                                                                    <button type="button" class="accordion-button collapsed chapter" data-bs-toggle="collapse" data-bs-target="#collapse{{ chapter.title|replace(' ', '_') }}">
                                                                 {% endif %}
-                                                                    <div class="accordion-body">
-                                                                        <div class="accordion" id="sections-accordion">
-                                                                            {% if chapter.sections is defined and chapter.sections %}
-                                                                                {% for section in chapter.sections %}
-                                                                                    {% for key, value in section.items() %}
-                                                                                        {% if _section == key %}
-                                                                                            <a class="reference internal current" href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator }}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
-                                                                                        {% else %}
-                                                                                            <a class="reference internal" href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator }}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
-                                                                                        {% endif %}
-                                                                                    {% endfor %}
-                                                                                {% endfor %}
-                                                                            {% endif %}
-                                                                        </div>
+                                                                    {{ chapter.title }}
+                                                                </button>
+                                                            </span>
+                                                            {% if _chapter == chapter.title %}
+                                                                <div id="collapse{{ chapter.title|replace(' ', '_') }}" class="accordion-collapse collapse show" data-bs-parent="#chapters-accordion">
+                                                            {% else %}
+                                                                <div id="collapse{{ chapter.title|replace(' ', '_') }}" class="accordion-collapse collapse" data-bs-parent="#chapters-accordion">
+                                                            {% endif %}
+                                                                <div class="accordion-body">
+                                                                    <div class="accordion" id="sections-accordion">
+                                                                        {% for section in chapter.sections %}
+                                                                            {% for key, value in section.items() %}
+                                                                                {% if _section == key %}
+                                                                                    <a class="reference internal current" href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator}}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
+                                                                                {% else %}
+                                                                                    <a class="reference internal" href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator}}/{{ course.course }}/{{ chapter.title }}/{{ key }}">{{ key }}</a>
+                                                                                {% endif %}
+                                                                            {% endfor %}
+                                                                        {% endfor %}
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        {% endif %}
+                                                        </div>
                                                     {% endfor %}
                                                 </div>
                                             </div>
+                                        </div>
                                     </div>
                                 {% endfor %}
                             </div>
