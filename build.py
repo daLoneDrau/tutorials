@@ -281,35 +281,65 @@ def flatten_library(library):
                 if "chapters" not in course:
                     continue
                 for chapter in course["chapters"]:
-                    # Determine the display title — skip chapter level if it
-                    # matches the course name (case-insensitive)
-                    chapter_is_transparent = (
-                        chapter.get("title", "").lower() == course["course"].lower()
-                    )
-                
                     if "sections" in chapter:
                         for section_item in chapter["sections"]:
                             section_title = list(section_item.keys())[0]
-                            pages.append({
-                                "topic":               topic["topic"],
-                                "creator":             creator["creator"],
-                                "course":              course["course"],
-                                "chapter":             None if chapter_is_transparent else chapter["title"],
-                                "section":             section_title,
-                                "data":                section_item[section_title],
-                                "depth":               4 if chapter_is_transparent else 5,
-                            })
+                            # If chapter title matches course name, skip
+                            # the chapter segment in the URL
+                            if chapter["title"] == course["course"]:
+                                pages.append({
+                                    "topic":   topic["topic"],
+                                    "creator": creator["creator"],
+                                    "course":  course["course"],
+                                    "chapter": None,
+                                    "section": section_title,
+                                    "data":    section_item[section_title],
+                                    "depth":   4,
+                                })
+                            else:
+                                pages.append({
+                                    "topic":   topic["topic"],
+                                    "creator": creator["creator"],
+                                    "course":  course["course"],
+                                    "chapter": chapter["title"],
+                                    "section": section_title,
+                                    "data":    section_item[section_title],
+                                    "depth":   5,
+                                })
+                    elif "key_concepts" in chapter:
+                        pages.append({
+                            "topic":   topic["topic"],
+                            "creator": creator["creator"],
+                            "course":  course["course"],
+                            "chapter": chapter["title"],
+                            "section": None,
+                            "data":    chapter,
+                            "depth":   4,
+                        })
+                    else:
+                        print(f"  WARNING: Skipping chapter with unrecognised "
+                              f"structure: {topic['topic']}/{creator['creator']}/"
+                              f"{course['course']}/{chapter.get('title', '?')}")
     return pages
 
 
 def make_href(page):
     """Build the URL path for a page dict."""
-    if page["depth"] == 4:
+    if page["chapter"] is None:
+        # 4-level: course/section directly
         return "{}/{}/{}/{}/{}".format(
             BASE_PATH,
             page["topic"], page["creator"],
             page["course"], page["section"]
         )
+    if page.get("depth") == 4:
+        # 4-level: course/chapter directly
+        return "{}/{}/{}/{}/{}".format(
+            BASE_PATH,
+            page["topic"], page["creator"],
+            page["course"], page["chapter"]
+        )
+    # 5-level: course/chapter/section
     return "{}/{}/{}/{}/{}/{}".format(
         BASE_PATH,
         page["topic"], page["creator"],
@@ -461,11 +491,18 @@ def build():
             error_count += 1
 
         # Output path: _site/topic/creator/course/chapter/section/index.html
-        if page["depth"] == 4:
+        if page["chapter"] is None:
             out_path = os.path.join(
                 OUTPUT_DIR,
                 page["topic"], page["creator"],
                 page["course"], page["section"],
+                "index.html"
+            )
+        elif page.get("depth") == 4:
+            out_path = os.path.join(
+                OUTPUT_DIR,
+                page["topic"], page["creator"],
+                page["course"], page["chapter"],
                 "index.html"
             )
         else:
