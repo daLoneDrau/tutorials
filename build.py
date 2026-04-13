@@ -95,6 +95,9 @@ def get_chapter(container, path):
         with open(full_path, "r", encoding="utf-8") as f:
             try:
                 json_data = json.loads(f.read())
+                # If no title, derive it from the filename
+                if "title" not in json_data:
+                    json_data["title"] = os.path.splitext(entry)[0]
                 container.append(json_data)
             except JSONDecodeError as e:
                 print(f"  WARNING: JSON error in {full_path} — {e}")
