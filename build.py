@@ -458,17 +458,18 @@ def build():
             error_count += 1
 
         # Output path: _site/topic/creator/course/chapter/section/index.html
-        out_path = os.path.join(
-            OUTPUT_DIR,
-            page["topic"], page["creator"],
-            page["course"], page["chapter"], page["section"],
-            "index.html"
-        )
         if page["depth"] == 4:
             out_path = os.path.join(
                 OUTPUT_DIR,
                 page["topic"], page["creator"],
                 page["course"], page["section"],
+                "index.html"
+            )
+        else:
+            out_path = os.path.join(
+                OUTPUT_DIR,
+                page["topic"], page["creator"],
+                page["course"], page["chapter"], page["section"],
                 "index.html"
             )
 
