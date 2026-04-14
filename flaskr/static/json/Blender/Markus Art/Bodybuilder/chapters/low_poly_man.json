@@ -883,9 +883,109 @@
             "section": {
               "header": "The Hips",
               "content": [
-                "Select the two edges at the bottom of the torso waist, front and back, and [k]F[/k] to fill them and add a Loop Cut to the new face (Image 39). Select the Edge Loop and move it down to crotch level and scale it in (Image 40). Add Loop Cut to the front and back faces and move those edge loops down (Image 41). Create another Loop Cut in front and move it out to round out the shape (Image 42). Add two Loop Cuts to the front and back towards the top of the hips (Image 43). Select the edges around the waist that haven't been extruded yet and extrude them down to the height of the Loop Cuts you just made (Image 44). [k]S,Y[/k], [k]G,Y[/k] to move them in place from the side (Image 45). Turn on Solid viewport Shading and close the gap between the faces, using the inside vertex as the merge point (Image 46). Extrude the inner edge down and rotate to match the hips contour (Image 47) and then fill in a face with the neighboring vertices (Image 48). Go around to the side and add two more edge loops to help round out the butt (Image 49). Create a face between these two edges (Image 50). Add two Loop Cuts and move those edges out to shape the butt (Image 51). Fill in the face in the front (Image 52). Add a Loop Cut near the crotch (Image 53). Add one more Loop Cut to the band in the back (Image 54). Select the edge loop for the opening in front and use Loop Tools to make it into a circle (Image 55). Add a cut to the face on the side (Image 56). Add two more faces to close the gap in the back (Image 57). Go around the hips and shape the butt (Image 58).",
+                "Select the two edges at the bottom of the torso waist, front and back, and [k]F[/k] to fill them and add a Loop Cut to the new face (Image 39). Select the Edge Loop and move it down to crotch level and scale it in (Image 40). Add Loop Cut to the front and back faces and move those edge loops down (Image 41). Create another Loop Cut in front and move it out to round out the shape (Image 42).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-39.jpg",
+                      "caption": "Image 39 - Selecting the two edges at the bottom of the torso waist front and back, filling them, and adding a Loop Cut to the new face"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-40.jpg",
+                      "caption": "Image 40 - Selecting the Edge Loop and moving it down to crotch level and scaling it in"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-41.jpg",
+                      "caption": "Image 41 - Adding a Loop Cut to the front and back faces and moving those edge loops down"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-42.jpg",
+                      "caption": "Image 42 - Creating another Loop Cut in front and moving it out to round out the shape"
+                    }
+                  ]
+                },
+                "Add two Loop Cuts to the front and back towards the top of the hips (Image 43). Select the edges around the waist that haven't been extruded yet and extrude them down to the height of the Loop Cuts you just made (Image 44). [k]S,Y[/k], [k]G,Y[/k] to move them in place from the side (Image 45). Turn on Solid viewport Shading and close the gap between the faces, using the inside vertex as the merge point (Image 46).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-43.jpg",
+                      "caption": "Image 43 - Adding two Loop Cuts to the front and back towards the top of the hips"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-44.jpg",
+                      "caption": "Image 44 - Selecting the edges around the waist that haven't been extruded yet and extruding them down to the height of the Loop Cuts just made"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-45.jpg",
+                      "caption": "Image 45 - Scaling and moving them into place in the y-axis from the side"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-46.jpg",
+                      "caption": "Image 46 - Turning on Solid viewport shading and closing the gap between the faces using the inside vertex as the merge point"
+                    }
+                  ]
+                },
+                "Extrude the inner edge down and rotate to match the hips contour (Image 47) and then fill in a face with the neighboring vertices (Image 48). Go around to the side and add two more edge loops to help round out the butt (Image 49). Create a face between these two edges (Image 50).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-47.jpg",
+                      "caption": "Image 47 - Extruding the inner edge down and rotating to match the hips contour"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-48.jpg",
+                      "caption": "Image 48 - Filling in a face with the neighboring vertices"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-49.jpg",
+                      "caption": "Image 49 - Going around to the side and adding two more edge loops to help round out the butt"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-50.jpg",
+                      "caption": "Image 50 - Creating a face between these two edges"
+                    }
+                  ]
+                },
+                "Add two Loop Cuts and move those edges out to shape the butt (Image 51). Fill in the face in the front (Image 52). Add a Loop Cut near the crotch (Image 53). Add one more Loop Cut to the band in the back (Image 54).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-51.jpg",
+                      "caption": "Image 51 - Adding two Loop Cuts and moving those edges out to shape the butt"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-52.jpg",
+                      "caption": "Image 52 - Filling in the face in the front"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-53.jpg",
+                      "caption": "Image 53 - Adding a Loop Cut near the crotch"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-54.jpg",
+                      "caption": "Image 54 - Adding one more Loop Cut to the band in the back"
+                    }
+                  ]
+                },
+                "Select the edge loop for the opening in front and use Loop Tools to make it into a circle (Image 55). Add a cut to the face on the side (Image 56). Add two more faces to close the gap in the back (Image 57). Go around the hips and shape the butt (Image 58).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-55.jpg",
+                      "caption": "Image 55 - Selecting the edge loop for the opening in front and using Loop Tools to make it into a circle"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-56.jpg",
+                      "caption": "Image 56 - Adding a cut to the face on the side"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-57.jpg",
+                      "caption": "Image 57 - Adding two more faces to close the gap in the back"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-58.jpg",
+                      "caption": "Image 58 - Going around the hips and shaping the butt"
+                    }
                   ]
                 }
               ]
