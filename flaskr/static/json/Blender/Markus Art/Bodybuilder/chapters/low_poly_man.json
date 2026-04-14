@@ -517,7 +517,7 @@
                           }
                         ]
                       },
-                      "Move around to the side and add another cut to the shoulder (Image 59). In Front View, select the vertex sticking out and Edge Slide it in (Image 60). Do the same in the back (Image 61). From the front, line up the vertices at the side of the shoulder (Image 62). Do the same in the rear (Image 63). In the front, extrude the middle edge out (Image 64) and do the same thing in the rear (Image 65).",
+                      "Move around to the side and add another cut to the shoulder (Image 59). In Front View, select the vertex sticking out and Edge Slide it in (Image 60). Do the same in the back (Image 61).",
                       {
                         "image": [
                           {
@@ -531,7 +531,12 @@
                           {
                             "src": "Blender/Markus Art/Bodybuilder/Arms/arms-61.jpg",
                             "caption": "Image 61 - Doing the same in the back"
-                          },
+                          }
+                        ]
+                      },
+                      "From the front, line up the vertices at the side of the shoulder (Image 62). Do the same in the rear (Image 63). In the front, extrude the middle edge out (Image 64) and do the same thing in the rear (Image 65).",
+                      {
+                        "image": [
                           {
                             "src": "Blender/Markus Art/Bodybuilder/Arms/arms-62.jpg",
                             "caption": "Image 62 - Lining up the vertices at the side of the shoulder from the front"
@@ -571,37 +576,24 @@
                           }
                         ]
                       },
-                      "Make close the face loop in front (Image 70) and rear (Image 71). Select the outer loop and move it out in the x-axis (Image 72).",
+                      "Fill the empty areas with faces in front and rear and then move the outer loop and move it out in the x-axis (Image 70). [k]S,X,0[/k] to line the vertices up (Image 71). Turn on Loop Tools if needed, and [k]RMB,L,C[/k] to make the loop a circle (Image 72). Scale the circle down and move it back (Image 73).",
                       {
                         "image": [
                           {
                             "src": "Blender/Markus Art/Bodybuilder/Arms/arms-70.jpg",
-                            "caption": "Image 70 - Closing the face loop in front"
+                            "caption": "Image 70 - Filling the empty areas with faces in front and rear and then moving the outer loop and move it out in the x-axis"
                           },
                           {
                             "src": "Blender/Markus Art/Bodybuilder/Arms/arms-71.jpg",
-                            "caption": "Image 71 - Closing the face loop in the rear"
+                            "caption": "Image 71 - Lining the vertices up"
                           },
                           {
                             "src": "Blender/Markus Art/Bodybuilder/Arms/arms-72.jpg",
-                            "caption": "Image 72 - Selecting the outer loop and moving it out in the x-axis"
-                          }
-                        ]
-                      },
-                      "[k]S,X,0[/k] to line the vertices up (Image 73). Turn on Loop Tools if needed, and [k]RMB,L,C[/k] to make the loop a circle (Image 74). Scale the circle down and move it back (Image 75).",
-                      {
-                        "image": [
-                          {
-                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-73.jpg",
-                            "caption": "Image 73 - Lining the vertices up"
-                          },
-                          {
-                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-74.jpg",
-                            "caption": "Image 74 - Turning on Loop Tools if needed and making the loop a circle"
+                            "caption": "Image 72 - Turning on Loop Tools if needed and making the loop a circle"
                           },
                           {
                             "src": "Blender/Markus Art/Bodybuilder/Arms/arms-75.jpg",
-                            "caption": "Image 75 - Scaling the circle down and moving it back"
+                            "caption": "Image 73 - Scaling the circle down and moving it back"
                           }
                         ]
                       }
@@ -615,7 +607,7 @@
       }
     },
     {
-      "Legs": {
+      "III - Legs": {
         "key_concepts": [
           "[url]Create Your First Low Poly Character for Games (Easy and Practical!)^^https://www.youtube.com/watch?v=7SIY64ryWeI&list=PL7mfdgO5iYFYGCjqqPcMuafJJh9OKPiRB&index=1[/url]",
           {
@@ -793,7 +785,7 @@
       }
     },
     {
-      "Part IV - Back to the Torso": {
+      "IV - Back to the Torso": {
         "key_concepts": [
           "[url]Create Your First Low Poly Character for Games (Easy and Practical!)^^https://www.youtube.com/watch?v=7SIY64ryWeI&list=PL7mfdgO5iYFYGCjqqPcMuafJJh9OKPiRB&index=1[/url]",
           {
