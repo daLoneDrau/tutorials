@@ -13,19 +13,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-01.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-01.jpg",
                       "caption": "Image 1 - Setting up reference images and adding a Cylinder with 10 vertices to the scene"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-02.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-02.jpg",
                       "caption": "Image 2 - Deleting the top and bottom faces"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-03.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-03.jpg",
                       "caption": "Image 3 - Changing the Viewport Shading to MatCap > check_rim_dark"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-04.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-04.jpg",
                       "caption": "Image 4 - Removing the left vertices and adding a Mirror Modifier"
                     }
                   ]
@@ -34,23 +34,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-05.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-05.jpg",
                       "caption": "Image 5 - Moving the cylinder to the torso area and scaling it down to the width of the waist"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-06.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-06.jpg",
                       "caption": "Image 6 - Moving the top edge up to the armpit height, creating a v-shape"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-07.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-07.jpg",
                       "caption": "Image 7 - Extruding the top edge to the height of the shoulders"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-08.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-08.jpg",
                       "caption": "Image 8 - Scale in the top edge slightly"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-09.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-09.jpg",
                       "caption": "Image 9 - Extruding the top edge again to the height of the neck and move inwards, matching the trapezius"
                     }
                   ]
@@ -59,19 +59,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-10.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-10.jpg",
                       "caption": "Image 10 - Fixing the alignment of the inner loop by selecting edges that are too far off and Edge sliding them into position (near the nipples or under the jawline)"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-11.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-11.jpg",
                       "caption": "Image 11 - Extruding the top edge again to just under the ears to form a neck going to the base of the skull"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-12.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-12.jpg",
                       "caption": "Image 12 - Rounding out the shape in Top View "
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-13.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-13.jpg",
                       "caption": "Image 13 - Grabbing, scaling, and rotating the edge loop by the shoulders into position from the top of the chest to above ths shoulders"
                     }
                   ]
@@ -87,19 +87,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-13.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-13.jpg",
                       "caption": "Image 13 - Grabbing, scaling, and rotating the edge loop by the shoulders into position from the top of the chest to above ths shoulders"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-14.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-14.jpg",
                       "caption": "Image 14 - Rotating the edge in the middle of the neck to give match the angle of the neck"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-15.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-15.jpg",
                       "caption": "Image 15 - Lining up the top edge to the third vertex from the left until it aligns with the jaw"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-16.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-16.jpg",
                       "caption": "Image 16 - Moving the first three vertices of the collarbone edge loop lower to create a shelf where the trapezius muscles rise up"
                     }
                   ]
@@ -108,15 +108,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-17.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-17.jpg",
                       "caption": "Image 17 - Moving the left two vertices in the top edge loop to under the jaw"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-18.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-18.jpg",
                       "caption": "Image 18 - Moving the remaining vertices in the top edge loop in to match the width of the neck"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-19.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-19.jpg",
                       "caption": "Image 19 - Rounding out the edge at the front of the neck"
                     }
                   ]
@@ -132,19 +132,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-20.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-20.jpg",
                       "caption": "Image 20 - Lining up the vertical edge loops with the contours of the torso"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-21.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-21.jpg",
                       "caption": "Image 21 - Adding a horizontal Loop Cut for the waist and scaling and rotating it until it matches the reference image from the side"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-22.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-22.jpg",
                       "caption": "Image 22 - Adding a horizontal Loop Cut for the waist and scaling and rotating it until it matches the reference image from the front"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-23.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-23.jpg",
                       "caption": "Image 23 - Cutting from the side to below the chest"
                     }
                   ]
@@ -153,15 +153,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-24.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-24.jpg",
                       "caption": "Image 24 - Adjusting the contours of the chest to form a shelf for the pectorals from the side"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-25.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-25.jpg",
                       "caption": "Image 25 - Adjusting the contours of the chest from the front"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-26.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-26.jpg",
                       "caption": "Image 26 - Adding a horizontal Loop Cut for the chest and scale it out in the y-axis to round out the chest"
                     }
                   ]
@@ -170,15 +170,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-27.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-27.jpg",
                       "caption": "Image 27 - Grab the two outside vertices by the shoulder joint and moving them out in the x-axis"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-28.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-28.jpg",
                       "caption": "Image 28 - Grabbing the top three vertices and moving them in on the y-axis in Top View to shape the spine"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-29.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Torso/torso-29.jpg",
                       "caption": "Image 29 - Grabbing the bottom two vertices along the spine and moving them in on the y-axis in Bottom View"
                     }
                   ]
@@ -201,19 +201,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-01.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-01.jpg",
                       "caption": "Image 1 - Adding a Cylinder with 6 vertices to the scene and rotating it 30 degrees in the z-axis"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-02.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-02.jpg",
                       "caption": "Image 2 - Deleting the top and bottom faces"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-03.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-03.jpg",
                       "caption": "Image 3 - Moving the cylinder to the arm area and in Edit Mode and scaling and rotating it until it matches the reference image"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-04.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-04.jpg",
                       "caption": "Image 4 - Extruding the bottom edge to the wrist and rotating to match the image"
                     }
                   ]
@@ -222,23 +222,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-05.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-05.jpg",
                       "caption": "Image 5 - Adding a Loop Cut to the forearm, rotating and scaling it to match the reference image"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-06.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-06.jpg",
                       "caption": "Image 6 - Adding a Loop Cut for the bicep, rotating and scaling to match the shape of the arm"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-07.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-07.jpg",
                       "caption": "Image 7 - Scaling in the top edge somewhat to shape the arm"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-08.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-08.jpg",
                       "caption": "Image 8 - Going into Side View and adjusting the shape of the arm to match the reference image"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-09.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-09.jpg",
                       "caption": "Image 9 - Adding two Loop Cuts, one above and one below the elbow"
                     }
                   ]
@@ -247,19 +247,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-10.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-10.jpg",
                       "caption": "Image 10 - Selecting the 3 vertices along the side of the elbow and merging them at the center"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-11.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-11.jpg",
                       "caption": "Image 11 - Repeating for the other side"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-12.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-12.jpg",
                       "caption": "Image 12 - Going into Edge Mode, selecting the two edges along the side of the elbow and dissolving them"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-13.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-13.jpg",
                       "caption": "Image 13 - Repeating for the other side"
                     }
                   ]
@@ -268,15 +268,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-14.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-14.jpg",
                       "caption": "Image 14 - Going to Front View, selecting the edge in front of the elbow and scaling it in"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-15.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-15.jpg",
                       "caption": "Image 15 - Moving around to the back side and scaling in the edge by the elbow"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-16.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-16.jpg",
                       "caption": "Image 16 - Going to Side View and pulling out the edge to form the elbow"
                     }
                   ]
@@ -285,23 +285,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-17.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-17.jpg",
                       "caption": "Image 17 - Adding a Cube to the scene, scaling it down and moving it into position by the wrist"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-18.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-18.jpg",
                       "caption": "Image 18 - Positioning and scaling the cube from the side"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-19.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-19.jpg",
                       "caption": "Image 19 - Selecting the bottom face and scaling it in in the y-axis"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-20.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-20.jpg",
                       "caption": "Image 20 - Extruding it out"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-21.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-21.jpg",
                       "caption": "Image 21 - Moving the extruded face in on the x-axis and then rotating it in its local y-axis"
                     }
                   ]
@@ -310,23 +310,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-22.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-22.jpg",
                       "caption": "Image 22 - Scaling the bottom face in in the y-axis and then scaling the middle edge loop out"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-23.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-23.jpg",
                       "caption": "Image 23 - Adding 3 Loop Cuts to the bottom section"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-24.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-24.jpg",
                       "caption": "Image 24 - Adjusting the edge loops for the hand from the side to round out the shape"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-25.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-25.jpg",
                       "caption": "Image 25 - Adding two horizontal Loop Cuts near the top and bottom of the palm face"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-26.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-26.jpg",
                       "caption": "Image 26 - Extruding the face on the side and scaling it in"
                     }
                   ]
@@ -335,23 +335,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-27.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-27.jpg",
                       "caption": "Image 27 - Rotating the face in the x-axis and then moving it down in the z-axis"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-28.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-28.jpg",
                       "caption": "Image 28 - Extruding the face again, scaling it down, rotating it in the x-axis, and moving it down in the z-axis"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-29.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-29.jpg",
                       "caption": "Image 29 - Extruding the face one more time for the last thumb joint, scaling it in and moving it down in the z-axis"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-30.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-30.jpg",
                       "caption": "Image 30 - Moving each joint loop in the thumb along their local x-axis until they are lined up on their right side"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-31.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-31.jpg",
                       "caption": "Image 31 - Selecting the faces on the outside of the thumb and moving them in the x-axis to add thickness"
                     }
                   ]
@@ -360,23 +360,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-32.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-32.jpg",
                       "caption": "Image 32 - Selecting the two edges inside the palm and moving them along the x-axis to make the palm thicker"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-33.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-33.jpg",
                       "caption": "Image 33 - Selecting all edges for the palm and thumb to make them thicker"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-34.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-34.jpg",
                       "caption": "Image 34 - Adding a Loop Cut to the hand"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-35.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-35.jpg",
                       "caption": "Image 35 - Selecting the edges on the outside of the hand and moving them out along the x-axis"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-36.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-36.jpg",
                       "caption": "Image 36 - Grabbing the top edge on the inside and moving it out as well"
                     }
                   ]
@@ -385,23 +385,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-37.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-37.jpg",
                       "caption": "Image 37 - Grabbing the other edges on the inside of the hand and moving them inwards"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-38.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-38.jpg",
                       "caption": "Image 38 - Deleting the top faces"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-39.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-39.jpg",
                       "caption": "Image 39 - Going to Object Mode and joining the hand to the arm"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-40.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-40.jpg",
                       "caption": "Image 40 - Selecting the top and bottom edge loops for the wrist"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-41.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Arms/arms-41.jpg",
                       "caption": "Image 41 - Bridging the edge loops"
                     }
                   ]
@@ -414,15 +414,15 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-42.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-42.jpg",
                             "caption": "Image 42 - Adding a cylinder with 6 vertices to the scene, rotating 30 degrees in the z-axis, and removing the top and bottom faces"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-43.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-43.jpg",
                             "caption": "Image 43 - Moving it to the shoulder region and scaling down to size"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-44.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-44.jpg",
                             "caption": "Image 44 - Deleting the two bottom faces"
                           }
                         ]
@@ -431,15 +431,15 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-45.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-45.jpg",
                             "caption": "Image 45 - Extruding the bottom edge towards the upper arm"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-46.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-46.jpg",
                             "caption": "Image 46 - Scaling in the outer edges by their individual origins"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-47.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-47.jpg",
                             "caption": "Image 47 - Scaling out the middle edge, rotating it and positioning between the outer edges"
                           }
                         ]
@@ -448,15 +448,15 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-48.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-48.jpg",
                             "caption": "Image 48 - Moving the shoulder mesh in place from the side and scaling to the right size"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-49.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-49.jpg",
                             "caption": "Image 49 - Extruding the top edge out to form the top faces of the deltoid muscle"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-50.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-50.jpg",
                             "caption": "Image 50 - Scaling out the edges to match the width of the previous faces"
                           }
                         ]
@@ -465,19 +465,19 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-51.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-51.jpg",
                             "caption": "Image 51 - Selecting the shoulder and the arm mesh and joining them"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-52.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-52.jpg",
                             "caption": "Image 52 - Starting on the side and selecting vertices from the shoulder and arm and merging them"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-53.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-53.jpg",
                             "caption": "Image 53 - Going to the front, moving the two edge loops over and joining the bottom vertices"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-54.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-54.jpg",
                             "caption": "Image 54 - Doing the same for the outside edge loop"
                           }
                         ]
@@ -486,19 +486,19 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-55.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-55.jpg",
                             "caption": "Image 55 - Cutting an edge in the front face with the Knife Tool"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-56.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-56.jpg",
                             "caption": "Image 56 - Going to Rear View and moving over the two edge loops and connecting the bottom vertices"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-57.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-57.jpg",
                             "caption": "Image 57 - Joining the outside bottom vertex to the arm"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-58.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-58.jpg",
                             "caption": "Image 58 - Cutting an edge in the back face with the Knife Tool"
                           }
                         ]
@@ -507,31 +507,31 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-59.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-59.jpg",
                             "caption": "Image 59 - Moving around to the side and adding another cut to the shoulder"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-60.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-60.jpg",
                             "caption": "Image 60 - Going to Front View, selecting the vertex sticking out and Edge Sliding it in"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-61.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-61.jpg",
                             "caption": "Image 61 - Doing the same in the back"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-62.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-62.jpg",
                             "caption": "Image 62 - Lining up the vertices at the side of the shoulder from the front"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-63.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-63.jpg",
                             "caption": "Image 63 - Doing the same in the rear"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-64.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-64.jpg",
                             "caption": "Image 64 - Extruding the middle edge out from the front"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-65.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-65.jpg",
                             "caption": "Image 65 - Doing the same thing in the rear"
                           }
                         ]
@@ -540,19 +540,19 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-66.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-66.jpg",
                             "caption": "Image 66 - Extruding the inside faces"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-67.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-67.jpg",
                             "caption": "Image 67 - Creating a face for the extruded faces in front"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-68.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-68.jpg",
                             "caption": "Image 68 - Creating a face for the extruded faces in the rear"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-69.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-69.jpg",
                             "caption": "Image 69 - Extruding the top two edges"
                           }
                         ]
@@ -561,15 +561,15 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-70.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-70.jpg",
                             "caption": "Image 70 - Closing the face loop in front"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-71.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-71.jpg",
                             "caption": "Image 71 - Closing the face loop in the rear"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-72.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-72.jpg",
                             "caption": "Image 72 - Selecting the outer loop and moving it out in the x-axis"
                           }
                         ]
@@ -578,15 +578,15 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-73.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-73.jpg",
                             "caption": "Image 73 - Lining the vertices up"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-74.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-74.jpg",
                             "caption": "Image 74 - Turning on Loop Tools if needed and making the loop a circle"
                           },
                           {
-                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-75.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-75.jpg",
                             "caption": "Image 75 - Scaling the circle down and moving it back"
                           }
                         ]
@@ -612,15 +612,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-01.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-01.jpg",
                       "caption": "Image 1 - Adding a Cylinder with 8 vertices to the scene, deleting the top and bottom faces, and moving it into position by the legs"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-02.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-02.jpg",
                       "caption": "Image 2 - Moving the bottom edge loop down to the middle of the knee and rotating it to a slight angle"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-03.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-03.jpg",
                       "caption": "Image 3 - Rotating and scaling the top edge loop to match the thickest part of the thigh"
                     }
                   ]
@@ -629,15 +629,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-04.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-04.jpg",
                       "caption": "Image 4 - Extruding the top loop, rotating and scaling it for where the top of the thigh meets the pelvis"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-05.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-05.jpg",
                       "caption": "Image 5 - Showing the angles the lower leg topology should follow"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-06.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-06.jpg",
                       "caption": "Image 6 - Extruding the bottom face to the widest part of the calves and then again down to the ankle, angling the edge loops according to the guide"
                     }
                   ]
@@ -646,15 +646,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-07.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-07.jpg",
                       "caption": "Image 7 - Going to Side View and moving and scaling the vertices into position to match the reference image"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-08.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-08.jpg",
                       "caption": "Image 8 - Rotating the edge loop by the calf to match the slope of the calf muscle"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-09.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-09.jpg",
                       "caption": "Image 9 - Rotating the edge loop for the knee to match the reference"
                     }
                   ]
@@ -663,23 +663,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-10.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-10.jpg",
                       "caption": "Image 10 - Adding two Loop Cuts, one above and one below the knee"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-11.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-11.jpg",
                       "caption": "Image 11 - Selecting the 3 vertices along the side of the knee and merging them at the center"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-12.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-12.jpg",
                       "caption": "Image 12 - Repeating for the other side"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-13.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-13.jpg",
                       "caption": "Image 13 - Going into Edge Mode, selecting the two edges along the side of the knee and dissolving them"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-14.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-14.jpg",
                       "caption": "Image 14 - Repeating for the other side"
                     }
                   ]
@@ -688,19 +688,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-15.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-15.jpg",
                       "caption": "Image 15 - Selecting the edges above and below the knee"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-16.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-16.jpg",
                       "caption": "Image 16 - Going to Side View and moving the edges into position to create a bump for the knee"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-17.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-17.jpg",
                       "caption": "Image 17 - Going to the end of the leg, selecting the bottom edge loop and extruding it to the bottom of the foot"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-18.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-18.jpg",
                       "caption": "Image 18 - Evening out the edge"
                     }
                   ]
@@ -709,19 +709,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-19.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-19.jpg",
                       "caption": "Image 19 - Scaling the edge in the x-axis to widen the foot"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-20.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-20.jpg",
                       "caption": "Image 20 - Selecting the four front faces"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-21.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-21.jpg",
                       "caption": "Image 21 - Going to Side View and extruding to the front of the feet"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-22.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-22.jpg",
                       "caption": "Image 22 - Selecting the top vertices in front and Edge Sliding them down"
                     }
                   ]
@@ -730,19 +730,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-23.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-23.jpg",
                       "caption": "Image 23 - Selecting the front faces and widening the toes in the x-axis"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-24.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-24.jpg",
                       "caption": "Image 24 - Adding a Loop Cut across the foot"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-25.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-25.jpg",
                       "caption": "Image 25 - Selecting the top vertices of that cut and moving them down in the z-axis"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-26.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-26.jpg",
                       "caption": "Image 26 - Selecting all vertices for the foot, turning the feet slightly outwards, and then moving them back into position"
                     }
                   ]
@@ -751,23 +751,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-27.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-27.jpg",
                       "caption": "Image 27 - Deleting all faces on the bottom of the foot"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-28.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-28.jpg",
                       "caption": "Image 28 - Adding edge loops from the bottom of the foot to the ankle on either side of the foot"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-29.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-29.jpg",
                       "caption": "Image 29 - Creating three faces in the middle of the foot"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-30.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-30.jpg",
                       "caption": "Image 30 - Creating a face at each end"
                     },
                     {
-                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-31.jpg",
+                      "src": "Blender/Markus Art/Bodybuilder/Legs/legs-31.jpg",
                       "caption": "Image 31 - Cutting the faces in the middle using the Knife Tool"
                     }
                   ]
