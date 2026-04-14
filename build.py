@@ -82,16 +82,27 @@ def get_chapters(container, path):
         if os.path.isdir(full_path):
             get_chapter(container["chapters"], full_path)
         else:
-            with open(full_path, "r", encoding="utf-8") as f:
-                json_data = json.loads(f.read())
-            for key, value in json_data.items():
-                container[key] = value
+            print(f"      Reading course file: {full_path}")
+            try:
+                with open(full_path, "r", encoding="utf-8") as f:
+                    content = f.read()
+                if not content.strip():
+                    print(f"  WARNING: Empty file skipped: {full_path}")
+                    continue
+                json_data = json.loads(content)
+                for key, value in json_data.items():
+                    container[key] = value
+            except JSONDecodeError as e:
+                print(f"  ERROR: JSON parse error in {full_path}")
+                print(f"         {e}")
+                raise
 
 
 def get_chapter(container, path):
     basedir = os.path.abspath(path)
     for entry in sorted(os.listdir(basedir)):
         full_path = os.path.join(basedir, entry)
+        print(f"      Reading chapter file: {full_path}")
         with open(full_path, "r", encoding="utf-8") as f:
             try:
                 json_data = json.loads(f.read())
