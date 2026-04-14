@@ -12,24 +12,24 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-01.jpg",
-                      "caption": "Image 1 - Initial setup"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-01.jpg",
+                      "caption": "Image 1 - Opening a new scene, deleting the Camera and Light, going into Edit Mode and moving the Cube 1m up above the origin"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-02.jpg",
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-02.jpg",
                       "caption": "Image 2 - Changing the Transform Pivot Point to 3D Cursor"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-03.jpg",
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-03.jpg",
                       "caption": "Image 3 - Scaling the cube up"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-04.jpg",
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-04.jpg",
                       "caption": "Image 4 - Changing the Transform Pivot Point back to Median Point"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-05.jpg",
-                      "caption": "Image 5 - Moving the top face down"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-05.jpg",
+                      "caption": "Image 5 - Going into Edit Mode, selecting the top face and moving it down a little"
                     }
                   ]
                 }
@@ -44,16 +44,16 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-06.jpg",
-                      "caption": "Image 6 - Subdividing the roof"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-06.jpg",
+                      "caption": "Image 6 - Going into Edge Mode, selecting the front and back edges and subdividing them"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
-                      "caption": "Image 7 - Forming the roof"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 7 - Selecting the new edge and moving it in the z-axis to form the roof"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-08.jpg",
-                      "caption": "Image 8 - Joining the vertices around the roof"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-08.jpg",
+                      "caption": "Image 8 - Going into Vertex Mode, selecting the opposite vertices in the front and back faces and joining them"
                     }
                   ]
                 }
@@ -68,16 +68,16 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-05.jpg",
-                      "caption": "Image 9 - Deleting the bottom face"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-09.jpg",
+                      "caption": "Image 9 - Going into Face Mode and deleting the bottom face"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-06.jpg",
-                      "caption": "Image 10 - Separating the roof"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-10.jpg",
+                      "caption": "Image 10 - Moving to the top, selecting the faces of the roof, separating those pieces and renaming them in the Scene Collection"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
-                      "caption": "Image 11 - Separating the gables"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-11.jpg",
+                      "caption": "Image 11 - Repeating this for the gables"
                     }
                   ]
                 }
@@ -92,24 +92,24 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-05.jpg",
-                      "caption": "Image 9 - Adding a Loop Cut"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-12.jpg",
+                      "caption": "Image 12 - Adding a vertical Loop Cut under the gable"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-06.jpg",
-                      "caption": "Image 10 - Beveling the door"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-13.jpg",
+                      "caption": "Image 13 - Adding a bevel for the door"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
-                      "caption": "Image 11 - Adding two more Loop Cuts"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-14.jpg",
+                      "caption": "Image 14 - Adding two more Loop Cuts, one towards the roof and another in the middle"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
-                      "caption": "Image 15 - Adding a Loop Cut on the side"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-15.jpg",
+                      "caption": "Image 15 - Rotating to the side and adding a vertical Loop Cut down the middle"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
-                      "caption": "Image 10 - Beveling the window"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-16.jpg",
+                      "caption": "Image 16 - Beveling this edge as well for the window"
                     }
                   ]
                 },
