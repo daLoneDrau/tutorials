@@ -832,7 +832,7 @@
                           }
                         ]
                       },
-                      "Select the vertex near the bottom of the shoulder blade and [k]G,Z[k] to move it down (Image 33). Select the vertex above that one and [k]G,Y[/k] to move it out slightly (Image 34). Select the three vertices in the middle of the spine and [k]G,Y[/k] to move them inwards (Image 35).",
+                      "Select the vertex near the bottom of the shoulder blade and [k]G,Z[/k] to move it down (Image 33). Select the vertex above that one and [k]G,Y[/k] to move it out slightly (Image 34). Select the three vertices in the middle of the spine and [k]G,Y[/k] to move them inwards (Image 35).",
                       {
                         "image": [
                           {
