@@ -2,7 +2,7 @@
   "title": "Bodybuilder",
   "sections": [
     {
-      "Part 1 - The Torso": {
+      "I - The Torso": {
         "key_concepts": [
           "[url]Create Your First Low Poly Character for Games (Easy and Practical!)^^https://www.youtube.com/watch?v=7SIY64ryWeI&list=PL7mfdgO5iYFYGCjqqPcMuafJJh9OKPiRB&index=1[/url]",
           {
@@ -190,7 +190,7 @@
       }
     },
     {
-      "Arms": {
+      "II - Arms": {
         "key_concepts": [
           "[url]Create Your First Low Poly Character for Games (Easy and Practical!)^^https://www.youtube.com/watch?v=7SIY64ryWeI&list=PL7mfdgO5iYFYGCjqqPcMuafJJh9OKPiRB&index=1[/url]",
           {
@@ -218,7 +218,7 @@
                     }
                   ]
                 },
-                "Add a Loop Cut to the forearm, rotate and scale it to match the reference image (Image 5). Add a Loop Cut for the bicep, rotating and scaling to match the shape of the arm (Image 6). Scale in the top edge somewhat to shape the arm (Image 7). [k]Numpad3[/k] into Side View and adjust the shape of the arm to match the reference image (Image 8). Add two Loop Cuts - one above and one below the elbow (Image 9).",
+                "Add a Loop Cut to the forearm, rotate and scale it to match the reference image (Image 5). Add a Loop Cut for the bicep, rotating and scaling to match the shape of the arm (Image 6). Scale in the top edge somewhat to shape the arm (Image 7). [k]Numpad3[/k] into Side View and adjust the shape of the arm to match the reference image (Image 8).",
                 {
                   "image": [
                     {
@@ -236,16 +236,23 @@
                     {
                       "src": "Blender/Markus Art/Bodybuilder/Arms/arms-08.jpg",
                       "caption": "Image 8 - Going into Side View and adjusting the shape of the arm to match the reference image"
-                    },
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Elbow Joint",
+              "content": [
+                "Add two Loop Cuts - one above and one below the elbow (Image 9). Select the 3 vertices along the side of the elbow and [k]M,A[/k] to merge them at the center (Image 10). Repeat for the other side (Image 11). [k]2[/k] into Edge Mode, select the two edges along the side of the elbo and [k]X,I[/k] to dissolve them (Image 12). Repeat for the other side (Image 13).",
+                {
+                  "image": [
                     {
                       "src": "Blender/Markus Art/Bodybuilder/Arms/arms-09.jpg",
                       "caption": "Image 9 - Adding two Loop Cuts, one above and one below the elbow"
-                    }
-                  ]
-                },
-                "Select the 3 vertices along the side of the elbow and [k]M,A[/k] to merge them at the center (Image 10). Repeat for the other side (Image 11). [k]2[/k] into Edge Mode, select the two edges along the side of the elbo and [k]X,I[/k] to dissolve them (Image 12). Repeat for the other side (Image 13).",
-                {
-                  "image": [
+                    },
                     {
                       "src": "Blender/Markus Art/Bodybuilder/Arms/arms-10.jpg",
                       "caption": "Image 10 - Selecting the 3 vertices along the side of the elbow and merging them at the center"
@@ -280,7 +287,14 @@
                       "caption": "Image 16 - Going to Side View and pulling out the edge to form the elbow"
                     }
                   ]
-                },
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "A Cube for the Hand",
+              "content": [
                 "Add a Cube to the scene, scale it down and move it into position by the wrist (Image 17). Position and scale the cube from the side (Image 18). Select the bottom face and scale it in in the y-axis (Image 19) and then extrude it out (Image 20). Move the extruded face in on the x-axis and then rotate it in its local y-axis (Image 21).",
                 {
                   "image": [
