@@ -592,7 +592,7 @@
                             "caption": "Image 72 - Turning on Loop Tools if needed and making the loop a circle"
                           },
                           {
-                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-75.jpg",
+                            "src": "Blender/Markus Art/Bodybuilder/Arms/arms-73.jpg",
                             "caption": "Image 73 - Scaling the circle down and moving it back"
                           }
                         ]
@@ -664,8 +664,15 @@
                       "caption": "Image 9 - Rotating the edge loop for the knee to match the reference"
                     }
                   ]
-                },
-                "Add two Loop Cuts - one above and one below the knee (Image 10). Select the 3 vertices along the side of the knee and [k]M,A[/k] to merge them at the center (Image 11). Repeat for the other side (Image 12). [k]2[/k] into Edge Mode, select the two edges along the side of the knee and [k]X,I[/k] to dissolve them (Image 13). Repeat for the other side (Image 14).",
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Knee",
+              "content": [
+                "Add two Loop Cuts - one above and one below the knee (Image 10). Select the 3 vertices along the side of the knee and [k]M,A[/k] to merge them at the center (Image 11). Repeat for the other side (Image 12).",
                 {
                   "image": [
                     {
@@ -679,7 +686,12 @@
                     {
                       "src": "Blender/Markus Art/Bodybuilder/Legs/legs-12.jpg",
                       "caption": "Image 12 - Repeating for the other side"
-                    },
+                    }
+                  ]
+                },
+                "[k]2[/k] into Edge Mode, select the two edges along the side of the knee and [k]X,I[/k] to dissolve them (Image 13). Repeat for the other side (Image 14). Select the edges above and below the knee (Image 15). In Side View, [k]G[/k] to move the edges into position to create a \"bump\" for the knee (Image 16).",
+                {
+                  "image": [
                     {
                       "src": "Blender/Markus Art/Bodybuilder/Legs/legs-13.jpg",
                       "caption": "Image 13 - Going into Edge Mode, selecting the two edges along the side of the knee and dissolving them"
@@ -687,12 +699,7 @@
                     {
                       "src": "Blender/Markus Art/Bodybuilder/Legs/legs-14.jpg",
                       "caption": "Image 14 - Repeating for the other side"
-                    }
-                  ]
-                },
-                "Select the edges above and below the knee (Image 15). In Side View, [k]G[/k] to move the edges into position to create a \"bump\" for the knee (Image 16). Going to the end of the leg, select the bottom edge loop and [k]E,Z[/k] to extrude it to the bottom of the foot (Image 17). [k]S,Z,0[/k] to even out the edge (Image 18).",
-                {
-                  "image": [
+                    },
                     {
                       "src": "Blender/Markus Art/Bodybuilder/Legs/legs-15.jpg",
                       "caption": "Image 15 - Selecting the edges above and below the knee"
@@ -700,7 +707,19 @@
                     {
                       "src": "Blender/Markus Art/Bodybuilder/Legs/legs-16.jpg",
                       "caption": "Image 16 - Going to Side View and moving the edges into position to create a bump for the knee"
-                    },
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Foot",
+              "content": [
+                "Going to the end of the leg, select the bottom edge loop and [k]E,Z[/k] to extrude it to the bottom of the foot (Image 17). [k]S,Z,0[/k] to even out the edge (Image 18).",
+                {
+                  "image": [
                     {
                       "src": "Blender/Markus Art/Bodybuilder/Legs/legs-17.jpg",
                       "caption": "Image 17 - Going to the end of the leg, selecting the bottom edge loop and extruding it to the bottom of the foot"
