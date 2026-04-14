@@ -1,6 +1,208 @@
 {
   "sections": [
     {
+      "Textured Game Assets": {
+        "key_concepts": [
+          "[url]Blender Game Assets Tutorial | Polygon Runway^^https://www.youtube.com/watch?v=424SR79NN-g[/url]",
+          "Create game assets and optimize th texturing.",
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Roman Villa": {
+        "key_concepts": [
+          "[url]Blender Isometric Line Art House Tutorial | Polygon Runway^^https://www.youtube.com/watch?v=1RMQSZ13YXU[/url]",
+          "Create a simple Roman-style villa with a line art outline",
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Sci-fi Crates": {
+        "key_concepts": [
+          "[url]Sci-fi Painted Crates Tutorial in Blender 2.83^^https://www.youtube.com/watch?v=z_dfMhIRNn0[/url]",
+          {
+            "section": {
+              "header": "Modeling",
+              "content": [
+                {
+                  "section": {
+                    "header": "The Base",
+                    "content": [
+                      "Start with a new scene and delete the camera and light. [k]Tab[/k] into Edit Mode and [k]Ctrl-R[/k] to add a horizontal Loop Cut. Move it towards the top of the cube (Image 1). With the Loop Cut selected, [k]Ctrl-B[/k] to bevel the edge. Then, [k]Alt-E,F[/k] to extrude the edges along their face normals. We will want to extrude them in (Image 2). Add another hortizontal Loop Cut towards the bottom. [k]3[/k] into Face Mode and select the top and bottom faces. [k]S,Shift-Z[/k] and scale those faces in (Image 3).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-01.jpg",
+                            "caption": "Image 1 - Adding a Loop Cut"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-02.jpg",
+                            "caption": "Image 2 - Extruding in the bevel"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-03.jpg",
+                            "caption": "Image 3 - Scaling in the top and bottom"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Adding a Lock",
+                    "content": [
+                      "Select the front face on the beveled separation between top and bottom. [k]Shift-S,T[/k] to move the 3D Cursor there. Still in Edit Mode, [k]Shift-A[/k] and add a cube. Doing this in Edit Mode will make it part of the same mesh. Scale it down until it is the right shape and size for a locking mechanism (Image 4). Add a Loop Cut across the cube so that we can adjust the front face without changing the back too much (Image 5). Select the front face and [k]S[/k] to scale it in, [k]I[/k] to add an Inset, and then [k]E[/k] to extrude that inwards (Image 6). If you wanted to scale up or down the lock, selecting one of the lock faces and [k]L[/k] would select only faces attached to the lock.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-04.jpg",
+                            "caption": "Image 4 - Adding a Cube for the lock"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-05.jpg",
+                            "caption": "Image 5 - Adding a Loop Cut"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-06.jpg",
+                            "caption": "Image 6 - Extruding in the lock"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Unwrapping",
+                    "content": [
+                      "Still in Edit Mode, check the faces to see if there is any z-fighting, and also make sure all faces are oriented correctly. [k]A[/k] to select all topology, and then [k]U,S[/k] to bring up the Smart UV Project dialog. Set the Island Margin to 0.02 and click OK. Go into UV Editing Workspace to see how Blender did (Image 7).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-07.jpg",
+                            "caption": "Image 7 - Reviewing the unwrapping"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Painting",
+              "content": [
+                {
+                  "section": {
+                    "header": "Creating a New Texture",
+                    "content": [
+                      "Go to the Texture Paint Workspace. In the UV side of the screen, click New to create a new Image Texture (Image 8). Give the new image a name, and set its size to 2048x2048 to make it a 2K image (Image 9). Now we want to apply that image. In the Texture Paint side of the screen, click the Texture Slots dropdown and click the button to browse for existing images (Image 10). Apply the image that was just created.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-08.jpg",
+                            "caption": "Image 8 - Creating a new Image Texture"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-09.jpg",
+                            "caption": "Image 9 - Setting the texture size"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-10.jpg",
+                            "caption": "Image 10 - Assigning the texture to the mesh"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Setting the Base Colors",
+                    "content": [
+                      "Let's paint the bottom of the mesh blue. Choose a deep blue color for the mesh; you can do this from the color swatch at the top or from the Brush Setting menu on the right. Click the Fill Button from the menu on the right, or press [k]Shift-Space,5[/k]. Click the mesh to fill it with the blue (Image 11). You'll see this reflected not only on the mesh but in the UV Texture Image. Now let's make the top red. [k]Tab[/k] into Edit Mode, [k]3[/k] for Face Selection, and select the top face. [k]Ctrl-Numpad+[/k] to select the adjoining faces (do it twice). [k]Tab[/k] back into Texture Paint mode, and click the button for Paint Mask (Image 12). This will make only the selected faces active for painting. Switch to a deep red color and fill the top faces (Image 13).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-11.jpg",
+                            "caption": "Image 11 - Filling the texture with blue"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-12.jpg",
+                            "caption": "Image 12 - The Paint Mask button"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-13.jpg",
+                            "caption": "Image 13 - Filling the top with a base red color"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Painting Scuff Marks",
+                    "content": [
+                      "We want to draw some scuff marks on the crates, especially around the edges. Click the Draw button in the Texture Paint view, or [k]Shift-Spacebar,1[/k]. Open the colorpicker and click the eyedropper or [k]Shift-X[/k] and sample the color from the top or bottom. We want use this color, but a less saturated version of it to add scuff marks at the edges. [k]Tab[/k] into Edit Mode, and select one face to start with and then [k]Tab[/k] back into TexturePaint Mode. [k]F[/k] will allow you to enlarge/shrink the radius of the drawing brush, and [k]Shift-F[/k] will let you modify the strength. Play around with different results. If you start drawing on the face and nothing happens, your model may have been accidentally assigned a different texture. Go into the Texture section of the Tool Menu, and clear out any texture that was set (Image 14).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-14.jpg",
+                            "caption": "Image 14 - Clear any textures that were set"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-12.jpg",
+                            "caption": "Image 12 - The Paint Mask button"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/objects/sci_fi_crates-13.jpg",
+                            "caption": "Image 13 - Filling the top with a base red color"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Sci Fi Vehicle": {
+        "key_concepts": [
+          "[url]Blender Animated Game-Ready Asset Tutorial | Polygon Runway^^https://www.youtube.com/watch?v=uA0bUJvc6OQ[/url]",
+          "Model and animate a sci fi-  themed vehicle for export to game engines.",
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
       "Textured Medieval House": {
         "key_concepts": [
           "[url]Full Blender Tutorial - Textured Medieval House^^https://www.youtube.com/watch?v=r99qAsXs4nI[/url]",
@@ -117,12 +319,12 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-05.jpg",
-                      "caption": "Image 17 - Extruding the door and windows in"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-17.jpg",
+                      "caption": "Image 17 - Selecting the door and window faces and extruding them along their normals and moving them in"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-06.jpg",
-                      "caption": "Image 18 - Deleting the face below the door"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-18.jpg",
+                      "caption": "Image 18 - Selecting the face at the bottom of the door frame and deleting it"
                     }
                   ]
                 }
@@ -137,20 +339,20 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
-                      "caption": "Image 19 - Mirroring the roof and gables"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-19.jpg",
+                      "caption": "Image 19 - Going to Object Mode, selecting the gable mesh, deleting one face in Edit Mode, adding a Mirror Modifier in the y-axis, and repeating for the roof mesh mirroring in the x-axis"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
-                      "caption": "Image 20 - Adding topology for the roof ridges"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-20.jpg",
+                      "caption": "Image 20 - Adding a Loop Cut and beveling it to create the ridges on the side of the roof"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
-                      "caption": "Image 21 - Creating the roof overhang"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-21.jpg",
+                      "caption": "Image 21 - Selecting all bottom edges and extruding the roof down to create an overhang"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
-                      "caption": "Image 22 - Separating the middle piece into a new mesh"
+                      "src": "Blender/Polygon Runway/Assets/Textured Medieval House/house-22.jpg",
+                      "caption": "Image 22 - Selecting the middle face of the roof and separating it into a new mesh"
                     }
                   ]
                 },
@@ -409,6 +611,51 @@
                     }
                   ]
                 }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Treasure Chest": {
+        "key_concepts": [
+          "[url]Low Poly Treasure Chest in Blender 3.0 Full Tutorial | Polygon Runway^^https://www.youtube.com/watch?v=HJf9G4NMdt4[/url]",
+          "Model a low poly treasure chest.",
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Treasure Chest (Animated)": {
+        "key_concepts": [
+          "[url]Blender Chest Animation Tutorial | Polygon Runway^^https://www.youtube.com/watch?v=J10LuVdZUxA[/url]",
+          "Model and animate a low poly treasure chest.",
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Windows PC": {
+        "key_concepts": [
+          "[url]PS1 Style in Blender Tutorial | Polygon Runway^^https://www.youtube.com/watch?v=8mfldIPBSC8[/url]",
+          "Windows 98 PC in PS1-style low resolution graphics.",
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
               ]
             }
           }
