@@ -1,6 +1,66 @@
 {
   "sections": [
     {
+      "Ancient Crypt": {
+        "key_concepts": [
+          "[url]Ancient Crypt Blender Low Poly 3D Tutorial with Commentary^^https://www.youtube.com/watch?v=_xt4mwjW5Kg[/url]",
+          "Create an ancient crypt scene with lighting effects.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Castle Tower": {
+        "key_concepts": [
+          "[url]Blender Low Poly Tower Tutorial | Polygon Runway^^https://www.youtube.com/watch?v=6uNpS3Cqbgk[/url]",
+          "Create a low poly castle tower in the jungle.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Crystal Desert": {
+        "key_concepts": [
+          "[url]Crystal Desert Blender Tutorial with Commentary^^https://www.youtube.com/watch?v=1TN_d0-azLU[/url]",
+          "Create a fantasy crystal desert location.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Dungeon": {
+        "key_concepts": [
+          "[url]Dungeon in Blender 2.8 - Low Poly 3D Isometric modeling^^https://www.youtube.com/watch?v=ZIb1WPbey3c[/url]",
+          "Model a low poly dungeon scene",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
       "Enchanted Forest": {
         "key_concepts": [
           "[url]Enchanted Forest Blender Tutorial with Commentary^^https://www.youtube.com/watch?v=dZuMn4Ffa20[/url]",
@@ -513,6 +573,36 @@
       }
     },
     {
+      "Graveyard": {
+        "key_concepts": [
+          "[url]Low Poly Graveyard Full Tutorial with Lighting in Blender 2.93 | Polygon Runway^^https://www.youtube.com/watch?v=R6ArdU0nfOM[/url]",
+          "Create a graveyard in a low poly scene",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Jungle Temple": {
+        "key_concepts": [
+          "[url]Blender Low Poly Temple Tutorial | Polygon Runway^^https://www.youtube.com/watch?v=GBq7D2uMmMI[/url]",
+          "Create a low poly ancient temple in the jungle.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
       "Magic Portal": {
         "key_concepts": [
           "[url]Portal Environment Tutorial in Blender 2.9 | Polygon Runway^^https://www.youtube.com/watch?v=A2Wfl4pyZe0[/url]",
@@ -886,6 +976,66 @@
                     ]
                   }
                 }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Space Hangar": {
+        "key_concepts": [
+          "[url]Ancient Crypt Blender Low Poly 3D Tutorial with Commentary^^https://www.youtube.com/watch?v=361dBaD4X1g[/url]",
+          "Create a space hangar scene with ship, props, and lighting.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Witch's Brew": {
+        "key_concepts": [
+          "[url]Low Poly Witch's Brew Commentary Tutorial in Blender 2.82^^https://www.youtube.com/watch?v=a-WELAunFsc[/url]",
+          "Create a witch's brew scene with cauldron, props, and lighting.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Training Grounds": {
+        "key_concepts": [
+          "[url]Training Grounds Game Asset in Blender 2.93 | Polygon Runway^^https://www.youtube.com/watch?v=geB6eC4egzk[/url]",
+          "Create a medieval training grounds in low poly.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Witcher Castle": {
+        "key_concepts": [
+          "[url]Witcher Castle in Blender 2.8 - Low Poly 3D Modeling^^https://www.youtube.com/watch?v=Ckmv_55m46M[/url]",
+          "Create the witcher's castle in a low poly scene",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
               ]
             }
           }
