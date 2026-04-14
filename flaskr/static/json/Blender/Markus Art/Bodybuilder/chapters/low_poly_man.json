@@ -815,9 +815,38 @@
                   "section": {
                     "header": "The Back",
                     "content": [
-                      "After the arms have been developed, select the three outer vertices along the back (Image 30) and in the Top View move them towards the shoulders (Image 31). [kNumpad1,Numpad9[/k] into Rear View and add a Loop Cut (Image 32). Select the vertex near the bottom of the shoulder blade and [k]G,Z[k] to move it down (Image 33). Select the vertex above that one and [k]G,Y[/k] to move it out slightly (Image 34). Select the three vertices in the middle of the spine and [k]G,Y[/k] to move them inwards (Image 35).",
+                      "After the arms have been developed, select the three outer vertices along the back (Image 30) and in the Top View move them towards the shoulders (Image 31). [k]Numpad1,Numpad9[/k] into Rear View and add a Loop Cut (Image 32).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Markus Art/Bodybuilder/Torso/torso-30.jpg",
+                            "caption": "Image 30 - Selecting the three outer vertices along the back"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Bodybuilder/Torso/torso-31.jpg",
+                            "caption": "Image 31 - Going to Top View and moving them towards the shoulders"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Bodybuilder/Torso/torso-32.jpg",
+                            "caption": "Image 32 - Going to Rear View and adding a Loop Cut"
+                          }
+                        ]
+                      },
+                      "Select the vertex near the bottom of the shoulder blade and [k]G,Z[k] to move it down (Image 33). Select the vertex above that one and [k]G,Y[/k] to move it out slightly (Image 34). Select the three vertices in the middle of the spine and [k]G,Y[/k] to move them inwards (Image 35).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Bodybuilder/Torso/torso-33.jpg",
+                            "caption": "Image 33 - Selecting the vertex near the bottom of the shoulder blade and moving it down"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Bodybuilder/Torso/torso-34.jpg",
+                            "caption": "Image 34 - Selecting the vertex above that one and moving it out slightly"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Bodybuilder/Torso/torso-35.jpg",
+                            "caption": "Image 35 - Selecting the three vertices in the middle of the spine and moving them inwards"
+                          }
                         ]
                       }
                     ]
@@ -830,6 +859,18 @@
                       "From the front, select the three faces for the inside of the chest and [k]Shift-H[/k] to hide all other geometry (Image 36). Add a Loop Cut and move it towards the center of the chest (Image 37). Select the three inner vertices and [k]G,Y[/k] to move them in to create some cleavage (Image 38).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Markus Art/Bodybuilder/Torso/torso-36.jpg",
+                            "caption": "Image 36 - Selecting the three faces for the inside of the chest from the front and hiding all other geometry"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Bodybuilder/Torso/torso-37.jpg",
+                            "caption": "Image 37 - Adding a Loop Cut and moving it towards the center of the chest"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Bodybuilder/Torso/torso-38.jpg",
+                            "caption": "Image 38 - Selecting the three inner vertices and moving them in to create some cleavage"
+                          }
                         ]
                       }
                     ]
