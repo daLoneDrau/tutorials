@@ -73,7 +73,7 @@ def get_courses(container, path):
         if os.path.isdir(full_path):
             course = {"course": entry, "chapters": []}
             container["courses"].append(course)
-            s(course, full_path)
+            get_chapters(course, full_path)
 
 
 def get_chapters(container, path):
