@@ -24,6 +24,7 @@ import os
 import re
 import json
 import shutil
+import sys
 from jinja2 import Environment, FileSystemLoader
 from json import JSONDecodeError
 
@@ -72,7 +73,7 @@ def get_courses(container, path):
         if os.path.isdir(full_path):
             course = {"course": entry, "chapters": []}
             container["courses"].append(course)
-            get_chapters(course, full_path)
+            s(course, full_path)
 
 
 def get_chapters(container, path):
@@ -106,12 +107,69 @@ def get_chapter(container, path):
         with open(full_path, "r", encoding="utf-8") as f:
             try:
                 json_data = json.loads(f.read())
+
+                # Validate tags before processing
+                tag_issues = validate_tags(json_data, full_path)
+                if tag_issues:
+                    print(f"\n  TAG VALIDATION ISSUES in {full_path}:")
+                    for issue in tag_issues:
+                        print(issue)
+                    print()
+
                 # If no title, derive it from the filename
                 if "title" not in json_data:
                     json_data["title"] = os.path.splitext(entry)[0]
                 container.append(json_data)
             except JSONDecodeError as e:
                 print(f"  WARNING: JSON error in {full_path} — {e}")
+
+
+# ---------------------------------------------------------------------------
+# Tag validator — call before get_content_item() to catch malformed tags
+# ---------------------------------------------------------------------------
+
+KNOWN_TAGS = ["kbd", "k", "url", "i", "u", "b"]
+
+def validate_tags(content, file_path, path="root"):
+    """
+    Recursively walks a JSON structure and checks all strings for
+    malformed or unclosed custom tags. Reports exact location and content.
+    """
+    issues = []
+
+    if isinstance(content, str):
+        for tag in KNOWN_TAGS:
+            open_tag  = f"[{tag}]"
+            close_tag = f"[/{tag}]"
+            open_count  = content.count(open_tag)
+            close_count = content.count(close_tag)
+            if open_count != close_count:
+                issues.append(
+                    f"  TAG ERROR in {file_path}\n"
+                    f"    Path   : {path}\n"
+                    f"    Tag    : [{tag}] opened {open_count}x, "
+                    f"[/{tag}] closed {close_count}x\n"
+                    f"    String : {content[:120]}{'...' if len(content) > 120 else ''}"
+                )
+            # Check for nested same-type tags which would confuse the regex
+            if open_count > 1:
+                issues.append(
+                    f"  TAG WARNING in {file_path}\n"
+                    f"    Path   : {path}\n"
+                    f"    Tag    : [{tag}] appears {open_count}x in one string "
+                    f"— may cause parse issues\n"
+                    f"    String : {content[:120]}{'...' if len(content) > 120 else ''}"
+                )
+
+    elif isinstance(content, list):
+        for i, item in enumerate(content):
+            issues.extend(validate_tags(item, file_path, f"{path}[{i}]"))
+
+    elif isinstance(content, dict):
+        for key, value in content.items():
+            issues.extend(validate_tags(value, file_path, f"{path}.{key}"))
+
+    return issues
 
 
 def load_library():
@@ -394,8 +452,30 @@ def build_content(page):
     if page["depth"] == 5:
         content.append({"type": "header", "content": page["section"]})
 
-    for key_concept in data.get("key_concepts", []):
-        content.append(get_content_item(key_concept))
+    old_limit = sys.getrecursionlimit()
+    sys.setrecursionlimit(200)  # catch runaway recursion early
+
+    for i, key_concept in enumerate(data.get("key_concepts", [])):
+        try:
+            content.append(get_content_item(key_concept))
+        except RecursionError:
+            # Find the string that caused it
+            preview = ""
+            if isinstance(key_concept, str):
+                preview = key_concept[:200]
+            elif isinstance(key_concept, dict):
+                preview = str(key_concept)[:200]
+            print(f"\n  RECURSION ERROR in page: {page['topic']}/{page['creator']}"
+                  f"/{page['course']}/{page.get('chapter','')}/{page.get('section','')}")
+            print(f"  key_concept index : {i}")
+            print(f"  content preview   : {preview}")
+            print(f"  Skipping this item and continuing...\n")
+            content.append({
+                "type": "text",
+                "content": f"[Parse error in item {i} — check tags]"
+            })
+
+    sys.setrecursionlimit(old_limit)
 
     if "exercises" in data:
         o = {"type": "exercises", "content": []}
