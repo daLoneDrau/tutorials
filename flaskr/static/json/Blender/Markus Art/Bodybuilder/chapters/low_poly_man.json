@@ -856,7 +856,7 @@
                   "section": {
                     "header": "The Front",
                     "content": [
-                      "From the front, select the three faces for the inside of the chest and [k]Shift-H[/k] to hide all other geometry (Image 36). Add a Loop Cut and move it towards the center of the chest (Image 37). Select the three inner vertices and [k]G,Y[/k] to move them in to create some cleavage (Image 38).",
+                      "From the front, select the three faces for the inside of the chest and [k]Shift-H[/k] to hide all other geometry (Image 36). Add a Loop Cut and move it towards the center of the chest (Image 37). Select the three inner vertices and [k]G,Y[/k] to move them in to create some cleavage (Image 38), and then select the inner and outer vertices and [k]G,Y[/k] to shape the chest from the top View.",
                       {
                         "image": [
                           {
@@ -869,7 +869,7 @@
                           },
                           {
                             "src": "Blender/Markus Art/Bodybuilder/Torso/torso-38.jpg",
-                            "caption": "Image 38 - Selecting the three inner vertices and moving them in to create some cleavage"
+                            "caption": "Image 38 - Selecting the three inner vertices and moving them in to create some cleavage and then selecting the inner and outer vertices and moving them in the y-axis to shape the chest in the Top View"
                           }
                         ]
                       }
@@ -987,6 +987,20 @@
                       "caption": "Image 58 - Going around the hips and shaping the butt"
                     }
                   ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bodybuilder (No Head)",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Markus Art/bodybuilder_man.glb",
+                    "canvas_number": 1
+                  }
                 }
               ]
             }
