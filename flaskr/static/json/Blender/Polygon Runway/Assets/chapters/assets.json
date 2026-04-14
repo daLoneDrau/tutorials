@@ -1,0 +1,419 @@
+{
+  "sections": [
+    {
+      "Textured Medieval House": {
+        "key_concepts": [
+          "[url]Full Blender Tutorial - Textured Medieval House^^https://www.youtube.com/watch?v=r99qAsXs4nI[/url]",
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
+                "Open a new scene in Blender [k]Ctrl-N,G[/k]. [k]Delete[/k] the Camera, and Light. In Edit Mode, select the Cube and [k]G,Z,1[/k] to move it 1m up, above the origin (Image 1). Change the Transform Pivot Point to 3D Cursor (Image 2) and [k]S,4[/k] to scale the cube up (Image 3). Change the Transform Pivot Point back to Median Point (Image 4). [k]Tab[/k] into Edit Mode and select the top face. [k]G,Z,-1[/k] to move it down a little (Image 5).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-01.jpg",
+                      "caption": "Image 1 - Initial setup"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-02.jpg",
+                      "caption": "Image 2 - Changing the Transform Pivot Point to 3D Cursor"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-03.jpg",
+                      "caption": "Image 3 - Scaling the cube up"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-04.jpg",
+                      "caption": "Image 4 - Changing the Transform Pivot Point back to Median Point"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-05.jpg",
+                      "caption": "Image 5 - Moving the top face down"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Roof",
+              "content": [
+                "In Edge Mode, select the front and back edges and [k]RMB,S[/k] to subdivide them (Image 6). Select the new edge and [k]G,Z[/k] to form the roof (Image 7). [k]1[/k] into Vertex Mode and select the opposite vertices in the front and back faces and [k]J[/k] to join them (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-06.jpg",
+                      "caption": "Image 6 - Subdividing the roof"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 7 - Forming the roof"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-08.jpg",
+                      "caption": "Image 8 - Joining the vertices around the roof"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Separating Pieces",
+              "content": [
+                "Go into Face Mode and delete the bottom face (Image 9). Move around the the top and select the faces of the roof. [k]P,S[/k] to separate those pieces and rename them in the Scene Collection (Image 10). Repeat this for the gables (Image 11).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-05.jpg",
+                      "caption": "Image 9 - Deleting the bottom face"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-06.jpg",
+                      "caption": "Image 10 - Separating the roof"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 11 - Separating the gables"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Door and Window",
+              "content": [
+                "[k]Ctrl-R,Enter,Enter[/k] to add a vertical Loop Cut under the gable (Image 12). [k]Ctrl-B[/k] to add a bevel for the door (Image 13). Add two more Loop Cuts, one towards the roof, another in the middle (Image 14). Rotate to the side and add a vertical Loop Cut down the middle (Image 15). Bevel this edge as well; this will be the window (Image 16).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-05.jpg",
+                      "caption": "Image 9 - Adding a Loop Cut"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-06.jpg",
+                      "caption": "Image 10 - Beveling the door"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 11 - Adding two more Loop Cuts"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 15 - Adding a Loop Cut on the side"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 10 - Beveling the window"
+                    }
+                  ]
+                },
+                "Select the door and window faces and [k]Alt-E,F[/k] to extrude the faces along their normals and move them in (Image 17). Select the face at the bottom of the door frame and [k]X,F[/k] to delete it (Image 18).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-05.jpg",
+                      "caption": "Image 17 - Extruding the door and windows in"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-06.jpg",
+                      "caption": "Image 18 - Deleting the face below the door"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Roof",
+              "content": [
+                "Go to Object Mode to select the gable mesh, and in Edit Mode, delete one of the faces. Add a Mirror Modifier in the y-axis to add the opposite side to the scene. Repeat for the roof mesh, mirroring in the x-axis (Image 19). Make sure to enable clipping for both modifiers. Still in Edit Mode with the roof, add a Loop Cut and Bevel it to create the ridges on the side of the roof (Image 20). [k]Alt,LMB[/k] the bottom edge to select all edges and [k]G,G[/k] and hold down [k]Alt[/k] to extrude the roof down to create an overhang (Image 21). Select the middle face of the roof and [k]P,S[/k] to separate it into a new mesh (Image 22).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 19 - Mirroring the roof and gables"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 20 - Adding topology for the roof ridges"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 21 - Creating the roof overhang"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 22 - Separating the middle piece into a new mesh"
+                    }
+                  ]
+                },
+                "Select the two outside edges of the roof and [k]S,Y[/k] to scale them out (Image 23). [k]A[/k] to select all faces and [k]Alt-E,F[/k] to extrude the out along normals to raise them outwards (Image 24). Select the underneath face and [k]Alt-S[/k] to bring the bottom side down (Image 25). If you want to even it out, select the bottom edge and then top edge [k]G,G[/k] to Edge Slide them towards the opposite edge (Image 26). Delete the vertices on the opposite side and update Mirror Modifier to include the y-axis.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 19 - Scaling the roof out along the y-axis"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 24 - Raising the ridges"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 21 - Bringing down the opposite face"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 26 - Sliding the edge to make the beam more even"
+                    }
+                  ]
+                },
+                "Back in Object Mode select the roof and go into Edit Mode. Select the bottom edge and [k]G,G[/k] to Edge Slide it up to give some space for the beams on the side (Image 27).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-07.jpg",
+                      "caption": "Image 27 - Sliding the roof up"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Side Beams",
+              "content": [
+                "Go into Object Mode and select the house mesh. [k]Tab[/k], [k]1[/k] to go into Edit Mode, Vertex Selection Mode. Select a vertex on one of the bottom corners, and [k]Shift-S,T[/k] to move the 3D Cursor there (Image 28). [k]Tab[/k] into Object Mode and [k]Shift-A > Mesh > Plane[/k] to add a Plane at that spot (Image 29). [k]S[/k] to scale it down (Image 30). [k]G,Shift-Z[/k] to move it in somewhat so it's not too thick; use the dialog to make sure the movement is uniform (Image 31).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 28 - Positioning the 3D Cursor at the corner of the house"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 28 - Adding a Plane"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 28 - Scaling the Plane"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 31 - Moving the Plane towards the center of the house"
+                    }
+                  ]
+                },
+                "In Edit Mode [k]E[/k] to extrude the beam up (Image 32). [k]Numpad1[/k] into Front View and [k]Alt-Z[/k] for X-Ray Mode. Select the top vertices and [k]Shift-Ctrl-Alt-S,Y[/k] to skew the top (Image 33) and then [k]G,Z[/k] to move it down (Image 34). [k]Numpad3[/k] into Side View and [k]G,Y[/k] to line it up with the roof beams from the side (Image 35). Finally, add a Mirror Modifier using the house mesh as the Mirror Object, in x- and y-axes (Image 36).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 32 - Extruding the beam up."
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 33 - Skewing the top of the beam"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 34 - Moving the beam down below the roof beams"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 35 - Lining up the beams from the side"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 36 - Adding a Mirror Modifier"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Top Beams",
+              "content": [
+                "Select the house mesh again, and this time select the edge at the top above the door, and [k]Shift-S,T[/k] to set the 3D Cursor there (Image 37). Again add a Plane, scale it down and [k]R,X,90[/k] to rotate it (Image 38). Scale it along the x-axis and then extrude it out in the y-axis(Image 39). Finish it off with a Mirror Modifier in the y-axis (Image 40).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 37 - Positioning the 3D Cursor above the door"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 28 - Adding a Plane for the beam and scaling and rotating"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 39 - Scaling the Plane in the x-axis and extruding in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 40 - Adding a Mirror Modifier in the y-axis"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Foundation",
+              "content": [
+                "Select the house mesh and go into Edit Mode. [k]3[/k] into Face Mode and [k]Alt-LMB[/k] to select the bottom face loop (Image 41). [k]Shift-D,LMB[/k] to duplicate in plance and [k]P,S[/k] to separate the selection (Image 42). [k]Tab[/k] back into Object Mode and select the foundation mesh. Go into Edit Mode, Face Mode, and select the three faces by the door and [k]X,F[/k] to delete them (Image 43). [k]2[/k] into Edge Mode, select the top edge loop and [k]G,Z[/k] to move it down (Image 44).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 41 - Selecting the bottom Face Loop"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 42 - Duplicating and separating the bottom Face Loop"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 43 - Deleting the faces by the door"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 44 - Lowering the top edge"
+                    }
+                  ]
+                },
+                "Rotate around to the back and [k]Ctrl-R[/k] to add some Loop Cuts (Image 45). Do the same in the front (Image 46). [k]A[/k] to select all vertices and [k]Alt-E,F,S[/k] to extrude the faces out along normals (the [k]S[/k] does it at even scaling) (Image 47). Select the top edge loop and [k]G,Z[/k] to bring it down (Image 48).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 45 - Adding topology to the rear using Loop Cuts"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 46 - Adding topology to the front using Loop Cuts"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 47 - Extruding the faces out at even scaling"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 48 - Bringing the top Edge Loop down"
+                    }
+                  ]
+                },
+                "Go around the mesh and [k]G,Z[/k] to move some edges up to create some variation (Image 49). Rotate around to the bottom and delete the bottom faces that won't be seen (Image 50).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 49 - Adding variation"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 50 - Deleting the bottom faces."
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 47 - Extruding the faces out at even scaling"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 48 - Bringing the top Edge Loop down"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Door and Window Frames",
+              "content": [
+                "Select the house mesh and go into Edit Mode. [k]3[/k] into Face Mode and [k]Alt-LMB[/k] to select the faces for the door frame, [k]Shift-D,LMB[/k] to duplicate in place and [k]P,S[/k] to separate the selection (Image 51). [k]Tab[/k] back into Object Mode and select the door frame mesh. Go into Edit Mode,select all faces and [k]Alt-E,F,S[/k] to extrude them inwards by scale (Image 52). Select the faces in front and [k]E,Y[/k] to extrude them out (Image 53). In Edge Mode, select the inner edges at the front and [k]Shift-D,LMB[/k] and [k]P,S[/k] to separate just the edges (Image 54). Go into Edit Mode with that mesh, [k]A[/k] to select all edges and [k]F[/k] to fill it to create the door. Finish by [k]G,Y[/k] moving it back (Image 55).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 51 - Duplicating a separating faces for the door frame"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 52 - Extruding the door frame inwards"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 53 - Extruding the door frame out along the y-axis"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 54 - Separating the inner edge to make the door"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 55 - Filling the door and moving it in"
+                    }
+                  ]
+                },
+                "Rotate around to the back and [k]Ctrl-R[/k] to add some Loop Cuts (Image 45). Do the same in the front (Image 46). [k]A[/k] to select all vertices and [k]Alt-E,F,S[/k] to extrude the faces out along normals (the [k]S[/k] does it at even scaling) (Image 47). Select the top edge loop and [k]G,Z[/k] to bring it down (Image 48).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 45 - Adding topology to the rear using Loop Cuts"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 46 - Adding topology to the front using Loop Cuts"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 47 - Extruding the faces out at even scaling"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 48 - Bringing the top Edge Loop down"
+                    }
+                  ]
+                },
+                "Go around the mesh and [k]G,Z[/k] to move some edges up to create some variation (Image 49). Rotate around to the bottom and delete the bottom faces that won't be seen (Image 50).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 49 - Adding variation"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 50 - Deleting the bottom faces."
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 47 - Extruding the faces out at even scaling"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Commentary Tutorials/Textured Medieval House/house-28.jpg",
+                      "caption": "Image 48 - Bringing the top Edge Loop down"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
