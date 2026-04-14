@@ -1,0 +1,832 @@
+{
+  "title": "Bodybuilder",
+  "sections": [
+    {
+      "Part 1 - The Torso": {
+        "key_concepts": [
+          "[url]Create Your First Low Poly Character for Games (Easy and Practical!)^^https://www.youtube.com/watch?v=7SIY64ryWeI&list=PL7mfdgO5iYFYGCjqqPcMuafJJh9OKPiRB&index=1[/url]",
+          {
+            "section": {
+              "header": "Start With a Cylinder",
+              "content": [
+                "Set up your reference images and add a Cylinder with 10 vertices to the scene (Synty Polygon characters' torsos have 10 faces) (Image 1). Delete the top and bottom faces (Image 2). Change the Viewport Shading to [k]MatCap > check_rim_dark[/k] (Image 3). If this is not your preference, you can always change it back. Remove the left vertices and add a Mirror Modifier (Image 4).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-01.jpg",
+                      "caption": "Image 1 - Setting up reference images and adding a Cylinder with 10 vertices to the scene"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-02.jpg",
+                      "caption": "Image 2 - Deleting the top and bottom faces"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-03.jpg",
+                      "caption": "Image 3 - Changing the Viewport Shading to MatCap > check_rim_dark"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-04.jpg",
+                      "caption": "Image 4 - Removing the left vertices and adding a Mirror Modifier"
+                    }
+                  ]
+                },
+                "Move the cylinder to the torso area and scale it down to the width of the waist, with the bottom edge near the top of the hips (Image 5). Move the top edge up to the armpit height, creating a v-shape (Image 6). Extrude the top edge to the height of the shoulders (Image 7) and scale in slightly (Image 8). Extrude the top edge again to the height of the neck and move inwards, matching the trapezius (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-05.jpg",
+                      "caption": "Image 5 - Moving the cylinder to the torso area and scaling it down to the width of the waist"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-06.jpg",
+                      "caption": "Image 6 - Moving the top edge up to the armpit height, creating a v-shape"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-07.jpg",
+                      "caption": "Image 7 - Extruding the top edge to the height of the shoulders"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-08.jpg",
+                      "caption": "Image 8 - Scale in the top edge slightly"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-09.jpg",
+                      "caption": "Image 9 - Extruding the top edge again to the height of the neck and move inwards, matching the trapezius"
+                    }
+                  ]
+                },
+                "Fix the alignment of the inner loop by selecting edges that are too far off and [k]G,G[/k] to Edge slide them into position (near the nipples or under the jawline) (Image 10). Extrude the top edge again to just under the ears to form a neck going to the base of the skull (Image 11). [k]Numpad7[/k] into Top View and round the shape out if needed (Image 12). [k]Numpad3[/k] into Side View. Select the edge loop by the shoulders and [k]G[/k], [k]S[/k], [k]R[/k] it into position from the top of the chest to above ths shoulders (Image 13).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-10.jpg",
+                      "caption": "Image 10 - Fixing the alignment of the inner loop by selecting edges that are too far off and Edge sliding them into position (near the nipples or under the jawline)"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-11.jpg",
+                      "caption": "Image 11 - Extruding the top edge again to just under the ears to form a neck going to the base of the skull"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-12.jpg",
+                      "caption": "Image 12 - Rounding out the shape in Top View "
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-13.jpg",
+                      "caption": "Image 13 - Grabbing, scaling, and rotating the edge loop by the shoulders into position from the top of the chest to above ths shoulders"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Neck and Shoulders",
+              "content": [
+                "[k]Numpad3[/k] into Side View. Select the edge loop by the shoulders and [k]G[/k], [k]S[/k], [k]R[/k] it into position from the top of the chest to above ths shoulders (Image 13). Rotate the edge in the middle of the neck to give match the angle of the neck (Image 14). Line up the top edge to the 3rd vertex from the left aligns with the jaw (Image 15). Move the first three vertices of the collarbone edge loop lower to create a shelf where the trapezius muscles rise up (Image 16).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-13.jpg",
+                      "caption": "Image 13 - Grabbing, scaling, and rotating the edge loop by the shoulders into position from the top of the chest to above ths shoulders"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-14.jpg",
+                      "caption": "Image 14 - Rotating the edge in the middle of the neck to give match the angle of the neck"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-15.jpg",
+                      "caption": "Image 15 - Lining up the top edge to the third vertex from the left until it aligns with the jaw"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-16.jpg",
+                      "caption": "Image 16 - Moving the first three vertices of the collarbone edge loop lower to create a shelf where the trapezius muscles rise up"
+                    }
+                  ]
+                },
+                "Move the left two vertices in the top edge loop to under the jaw (Image 17). Move the remaining vertices in the top edge loop in to match the width of the neck (Image 18). In Front View, round out the edge at the front of the neck (Image 19).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-17.jpg",
+                      "caption": "Image 17 - Moving the left two vertices in the top edge loop to under the jaw"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-18.jpg",
+                      "caption": "Image 18 - Moving the remaining vertices in the top edge loop in to match the width of the neck"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-19.jpg",
+                      "caption": "Image 19 - Rounding out the edge at the front of the neck"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Chest and Waist",
+              "content": [
+                "In Side View, line up the vertical edge loops with the contours of the torso (Image 20). Add a horizontal Loop Cut for the waist and scale and rotate it until it matches the reference image in Side (Image 21) and Front View (Image 22). Using the Knife Tool, cut from the side to below the chest (Image 23).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-20.jpg",
+                      "caption": "Image 20 - Lining up the vertical edge loops with the contours of the torso"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-21.jpg",
+                      "caption": "Image 21 - Adding a horizontal Loop Cut for the waist and scaling and rotating it until it matches the reference image from the side"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-22.jpg",
+                      "caption": "Image 22 - Adding a horizontal Loop Cut for the waist and scaling and rotating it until it matches the reference image from the front"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-23.jpg",
+                      "caption": "Image 23 - Cutting from the side to below the chest"
+                    }
+                  ]
+                },
+                "Adjust the contours of the chest to form a shelf for the pectorals (Image 24). Adjust the contours of the chest from the front (image 25). Add a horizontal Loop Cut for the chest and scale it out in the y-axis to round out the chest (Image 26).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-24.jpg",
+                      "caption": "Image 24 - Adjusting the contours of the chest to form a shelf for the pectorals from the side"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-25.jpg",
+                      "caption": "Image 25 - Adjusting the contours of the chest from the front"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-26.jpg",
+                      "caption": "Image 26 - Adding a horizontal Loop Cut for the chest and scale it out in the y-axis to round out the chest"
+                    }
+                  ]
+                },
+                "Grab the two outside vertices by the shoulder joint and move them out in the x-axis (Image 27). [k]Numpad7[/k] into Top View, grab the top three vertices and move them in on the y-axis to shape the spine (Image 28). [k]Numpad7,Numpad9[/k] into Bottom View, grab the bottom two vertices and move them in on the y-axis (Image 29).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-27.jpg",
+                      "caption": "Image 27 - Grab the two outside vertices by the shoulder joint and moving them out in the x-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-28.jpg",
+                      "caption": "Image 28 - Grabbing the top three vertices and moving them in on the y-axis in Top View to shape the spine"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Torso/torso-29.jpg",
+                      "caption": "Image 29 - Grabbing the bottom two vertices along the spine and moving them in on the y-axis in Bottom View"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Arms": {
+        "key_concepts": [
+          "[url]Create Your First Low Poly Character for Games (Easy and Practical!)^^https://www.youtube.com/watch?v=7SIY64ryWeI&list=PL7mfdgO5iYFYGCjqqPcMuafJJh9OKPiRB&index=1[/url]",
+          {
+            "section": {
+              "header": "Begin With a Cylinder",
+              "content": [
+                "Add a Cylinder with 6 vertices to the scene and rotate it 30 degrees in the z-axis (Synty Polygon characters' arms have 6 faces) (Image 1). Delete the top and bottom faces (Image 2). Move the cylinder to the arm area and in Edit Mode scale and rotate it until it matches the reference image (Image 3). Extrude the bottom edge to the wrist and rotate to match the image (Image 4).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-01.jpg",
+                      "caption": "Image 1 - Adding a Cylinder with 6 vertices to the scene and rotating it 30 degrees in the z-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-02.jpg",
+                      "caption": "Image 2 - Deleting the top and bottom faces"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-03.jpg",
+                      "caption": "Image 3 - Moving the cylinder to the arm area and in Edit Mode and scaling and rotating it until it matches the reference image"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-04.jpg",
+                      "caption": "Image 4 - Extruding the bottom edge to the wrist and rotating to match the image"
+                    }
+                  ]
+                },
+                "Add a Loop Cut to the forearm, rotate and scale it to match the reference image (Image 5). Add a Loop Cut for the bicep, rotating and scaling to match the shape of the arm (Image 6). Scale in the top edge somewhat to shape the arm (Image 7). [k]Numpad3[/k] into Side View and adjust the shape of the arm to match the reference image (Image 8). Add two Loop Cuts - one above and one below the elbow (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-05.jpg",
+                      "caption": "Image 5 - Adding a Loop Cut to the forearm, rotating and scaling it to match the reference image"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-06.jpg",
+                      "caption": "Image 6 - Adding a Loop Cut for the bicep, rotating and scaling to match the shape of the arm"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-07.jpg",
+                      "caption": "Image 7 - Scaling in the top edge somewhat to shape the arm"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-08.jpg",
+                      "caption": "Image 8 - Going into Side View and adjusting the shape of the arm to match the reference image"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-09.jpg",
+                      "caption": "Image 9 - Adding two Loop Cuts, one above and one below the elbow"
+                    }
+                  ]
+                },
+                "Select the 3 vertices along the side of the elbow and [k]M,A[/k] to merge them at the center (Image 10). Repeat for the other side (Image 11). [k]2[/k] into Edge Mode, select the two edges along the side of the elbo and [k]X,I[/k] to dissolve them (Image 12). Repeat for the other side (Image 13).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-10.jpg",
+                      "caption": "Image 10 - Selecting the 3 vertices along the side of the elbow and merging them at the center"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-11.jpg",
+                      "caption": "Image 11 - Repeating for the other side"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-12.jpg",
+                      "caption": "Image 12 - Going into Edge Mode, selecting the two edges along the side of the elbow and dissolving them"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-13.jpg",
+                      "caption": "Image 13 - Repeating for the other side"
+                    }
+                  ]
+                },
+                "In Front View, select the edge in front of the elbow and scale it in (Image 14). Move around to the back side and scale in the edge by the elbow (Image 15). In Side View, pull out the edge to form the elbow (Image 16).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-14.jpg",
+                      "caption": "Image 14 - Going to Front View, selecting the edge in front of the elbow and scaling it in"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-15.jpg",
+                      "caption": "Image 15 - Moving around to the back side and scaling in the edge by the elbow"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-16.jpg",
+                      "caption": "Image 16 - Going to Side View and pulling out the edge to form the elbow"
+                    }
+                  ]
+                },
+                "Add a Cube to the scene, scale it down and move it into position by the wrist (Image 17). Position and scale the cube from the side (Image 18). Select the bottom face and scale it in in the y-axis (Image 19) and then extrude it out (Image 20). Move the extruded face in on the x-axis and then rotate it in its local y-axis (Image 21).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-17.jpg",
+                      "caption": "Image 17 - Adding a Cube to the scene, scaling it down and moving it into position by the wrist"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-18.jpg",
+                      "caption": "Image 18 - Positioning and scaling the cube from the side"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-19.jpg",
+                      "caption": "Image 19 - Selecting the bottom face and scaling it in in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-20.jpg",
+                      "caption": "Image 20 - Extruding it out"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-21.jpg",
+                      "caption": "Image 21 - Moving the extruded face in on the x-axis and then rotating it in its local y-axis"
+                    }
+                  ]
+                },
+                "Scale the bottom face in in the y-axis, and then scale the middle edge loop out (Image 22). Add 3 Loop Cuts to the bottom section (Image 23). From the side, adjust the edge loops for the hand to round out the shape (Image 24). Add two horizontal Loop Cuts near the top and bottom of the palm face (Image 25). Extrude the face on the side and scale it in (Image 26).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-22.jpg",
+                      "caption": "Image 22 - Scaling the bottom face in in the y-axis and then scaling the middle edge loop out"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-23.jpg",
+                      "caption": "Image 23 - Adding 3 Loop Cuts to the bottom section"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-24.jpg",
+                      "caption": "Image 24 - Adjusting the edge loops for the hand from the side to round out the shape"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-25.jpg",
+                      "caption": "Image 25 - Adding two horizontal Loop Cuts near the top and bottom of the palm face"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-26.jpg",
+                      "caption": "Image 26 - Extruding the face on the side and scaling it in"
+                    }
+                  ]
+                },
+                "Rotate the face in the x-axis and then move it down in the z-axis (Image 27). Extrude the face again, scale it down, rotate it in the x-axis, and move it down in the z-axis (Image 28). Extrude the face one more time for the last thumb joint, scale it in and and move it down in the z-axis (Image 29). Move each joint loop in the thumb along their local x-axis until they are lined up on their right side (Image 30). Select the faces on the outside of the thumb and move them in the x-axis to add thickness (Image 31).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-27.jpg",
+                      "caption": "Image 27 - Rotating the face in the x-axis and then moving it down in the z-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-28.jpg",
+                      "caption": "Image 28 - Extruding the face again, scaling it down, rotating it in the x-axis, and moving it down in the z-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-29.jpg",
+                      "caption": "Image 29 - Extruding the face one more time for the last thumb joint, scaling it in and moving it down in the z-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-30.jpg",
+                      "caption": "Image 30 - Moving each joint loop in the thumb along their local x-axis until they are lined up on their right side"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-31.jpg",
+                      "caption": "Image 31 - Selecting the faces on the outside of the thumb and moving them in the x-axis to add thickness"
+                    }
+                  ]
+                },
+                "Select the two edges inside the palm and move them along the x-axis to make the palm thicker (Image 32). Then select all edges for the palm and thumb to make them thicker (Image 33). Add a Loop Cut to the hand (Image 34). Select the edges on the outside of the hand and [k]G,X,X[/k] to move them out along the x-axis (Image 35). Grab the top edge on the inside and [k]G,X,X[/k] to move it out as well (Image 36).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-32.jpg",
+                      "caption": "Image 32 - Selecting the two edges inside the palm and moving them along the x-axis to make the palm thicker"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-33.jpg",
+                      "caption": "Image 33 - Selecting all edges for the palm and thumb to make them thicker"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-34.jpg",
+                      "caption": "Image 34 - Adding a Loop Cut to the hand"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-35.jpg",
+                      "caption": "Image 35 - Selecting the edges on the outside of the hand and moving them out along the x-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-36.jpg",
+                      "caption": "Image 36 - Grabbing the top edge on the inside and moving it out as well"
+                    }
+                  ]
+                },
+                "Grab the other edges on the inside of the hand and move them inwards (Image 37). Delete the top faces (Image 38). In Object Mode, [k]Ctrl-J[/k] to join the hand to the arm (Image 39). Select the top and bottom edge loops for the wrist (Image 40). [k]RMB,L[/k] to bridge the edge loops (Image 41).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-37.jpg",
+                      "caption": "Image 37 - Grabbing the other edges on the inside of the hand and moving them inwards"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-38.jpg",
+                      "caption": "Image 38 - Deleting the top faces"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-39.jpg",
+                      "caption": "Image 39 - Going to Object Mode and joining the hand to the arm"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-40.jpg",
+                      "caption": "Image 40 - Selecting the top and bottom edge loops for the wrist"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Arms/arms-41.jpg",
+                      "caption": "Image 41 - Bridging the edge loops"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Shoulders",
+                    "content": [
+                      "Add a cylinder with 6 vertices to the scene, rotate 30 degrees in the z-axis, and remove the top and bottom faces (Image 42). Move it to the shoulder region and scale down to size (Image 43). Delete the two bottom faces (Image 44).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-42.jpg",
+                            "caption": "Image 42 - Adding a cylinder with 6 vertices to the scene, rotating 30 degrees in the z-axis, and removing the top and bottom faces"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-43.jpg",
+                            "caption": "Image 43 - Moving it to the shoulder region and scaling down to size"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-44.jpg",
+                            "caption": "Image 44 - Deleting the two bottom faces"
+                          }
+                        ]
+                      },
+                      "Extrude the bottom edge towards the upper arm (Image 45). Scale in the outer edges by their individual origins (Image 46). Scale out the middle edge, rotate it and position between the outer edges (Image 47).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-45.jpg",
+                            "caption": "Image 45 - Extruding the bottom edge towards the upper arm"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-46.jpg",
+                            "caption": "Image 46 - Scaling in the outer edges by their individual origins"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-47.jpg",
+                            "caption": "Image 47 - Scaling out the middle edge, rotating it and positioning between the outer edges"
+                          }
+                        ]
+                      },
+                      "From the side, move the shoulder mesh in place and scale to the right size (Image 48). Extrude the top edge out to form the top faces of the deltoid muscle (Image 49). Scale out the edges to match the width of the previous faces (Image 50).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-48.jpg",
+                            "caption": "Image 48 - Moving the shoulder mesh in place from the side and scaling to the right size"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-49.jpg",
+                            "caption": "Image 49 - Extruding the top edge out to form the top faces of the deltoid muscle"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-50.jpg",
+                            "caption": "Image 50 - Scaling out the edges to match the width of the previous faces"
+                          }
+                        ]
+                      },
+                      "Select the shoulder and the arm mesh and [k]Ctrl-J[/k] to join them (Image 51). Start on the side and select vertices from the shoulder and arm and [k]M[/k] to merge them (Image 52). Going to the front, move the two edge loops over and join the bottom vertices (Image 53). Do the same for the outside edge loop (Image 54).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-51.jpg",
+                            "caption": "Image 51 - Selecting the shoulder and the arm mesh and joining them"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-52.jpg",
+                            "caption": "Image 52 - Starting on the side and selecting vertices from the shoulder and arm and merging them"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-53.jpg",
+                            "caption": "Image 53 - Going to the front, moving the two edge loops over and joining the bottom vertices"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-54.jpg",
+                            "caption": "Image 54 - Doing the same for the outside edge loop"
+                          }
+                        ]
+                      },
+                      "Cut an edge in the front face with the Knife Tool (Image 55). [k]Numpad1,9[/k] into Rear View and move over the two edge loops and connect the bottom vertices (Image 56). Join the outside bottom vertex to the arm (Image 57). Cut an edge in the back face with the Knife Tool (Image 58).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-55.jpg",
+                            "caption": "Image 55 - Cutting an edge in the front face with the Knife Tool"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-56.jpg",
+                            "caption": "Image 56 - Going to Rear View and moving over the two edge loops and connecting the bottom vertices"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-57.jpg",
+                            "caption": "Image 57 - Joining the outside bottom vertex to the arm"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-58.jpg",
+                            "caption": "Image 58 - Cutting an edge in the back face with the Knife Tool"
+                          }
+                        ]
+                      },
+                      "Move around to the side and add another cut to the shoulder (Image 59). In Front View, select the vertex sticking out and Edge Slide it in (Image 60). Do the same in the back (Image 61). From the front, line up the vertices at the side of the shoulder (Image 62). Do the same in the rear (Image 63). In the front, extrude the middle edge out (Image 64) and do the same thing in the rear (Image 65).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-59.jpg",
+                            "caption": "Image 59 - Moving around to the side and adding another cut to the shoulder"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-60.jpg",
+                            "caption": "Image 60 - Going to Front View, selecting the vertex sticking out and Edge Sliding it in"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-61.jpg",
+                            "caption": "Image 61 - Doing the same in the back"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-62.jpg",
+                            "caption": "Image 62 - Lining up the vertices at the side of the shoulder from the front"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-63.jpg",
+                            "caption": "Image 63 - Doing the same in the rear"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-64.jpg",
+                            "caption": "Image 64 - Extruding the middle edge out from the front"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-65.jpg",
+                            "caption": "Image 65 - Doing the same thing in the rear"
+                          }
+                        ]
+                      },
+                      "Extrude the inside faces (Image 66). Create a face for the extruded faces in front (Image 67) and rear (Image 68). Extrude the top two edges (Image 69).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-66.jpg",
+                            "caption": "Image 66 - Extruding the inside faces"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-67.jpg",
+                            "caption": "Image 67 - Creating a face for the extruded faces in front"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-68.jpg",
+                            "caption": "Image 68 - Creating a face for the extruded faces in the rear"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-69.jpg",
+                            "caption": "Image 69 - Extruding the top two edges"
+                          }
+                        ]
+                      },
+                      "Make close the face loop in front (Image 70) and rear (Image 71). Select the outer loop and move it out in the x-axis (Image 72).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-70.jpg",
+                            "caption": "Image 70 - Closing the face loop in front"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-71.jpg",
+                            "caption": "Image 71 - Closing the face loop in the rear"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-72.jpg",
+                            "caption": "Image 72 - Selecting the outer loop and moving it out in the x-axis"
+                          }
+                        ]
+                      },
+                      "[k]S,X,0[/k] to line the vertices up (Image 73). Turn on Loop Tools if needed, and [k]RMB,L,C[/k] to make the loop a circle (Image 74). Scale the circle down and move it back (Image 75).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-73.jpg",
+                            "caption": "Image 73 - Lining the vertices up"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-74.jpg",
+                            "caption": "Image 74 - Turning on Loop Tools if needed and making the loop a circle"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Low Poly Man/Arms/arms-75.jpg",
+                            "caption": "Image 75 - Scaling the circle down and moving it back"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Legs": {
+        "key_concepts": [
+          "[url]Create Your First Low Poly Character for Games (Easy and Practical!)^^https://www.youtube.com/watch?v=7SIY64ryWeI&list=PL7mfdgO5iYFYGCjqqPcMuafJJh9OKPiRB&index=1[/url]",
+          {
+            "section": {
+              "header": "Begin With a Cylinder",
+              "content": [
+                "Add a Cylinder with 8 vertices to the scene, delete the top and bottom faces, and move it into position by the legs (Image 1). Move the bottom edge loop down to the middle of the knee and rotate it to a slight angle (Image 2). Rotate and scale the top edge loop to match the thickest part of the thigh (Image 3).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-01.jpg",
+                      "caption": "Image 1 - Adding a Cylinder with 8 vertices to the scene, deleting the top and bottom faces, and moving it into position by the legs"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-02.jpg",
+                      "caption": "Image 2 - Moving the bottom edge loop down to the middle of the knee and rotating it to a slight angle"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-03.jpg",
+                      "caption": "Image 3 - Rotating and scaling the top edge loop to match the thickest part of the thigh"
+                    }
+                  ]
+                },
+                "Extrude the top loop, rotate and scale it for where the top of the thigh meets the pelvis (Image 4). The lower leg topology should follow certain angles (Image 5). Extrude the bottom face to the widest part of the calves and then again down to the ankle, angling the edge loops according to the guide (Image 6).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-04.jpg",
+                      "caption": "Image 4 - Extruding the top loop, rotating and scaling it for where the top of the thigh meets the pelvis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-05.jpg",
+                      "caption": "Image 5 - Showing the angles the lower leg topology should follow"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-06.jpg",
+                      "caption": "Image 6 - Extruding the bottom face to the widest part of the calves and then again down to the ankle, angling the edge loops according to the guide"
+                    }
+                  ]
+                },
+                "[k]Numpad3[/k] into Side View and [k]G,Y[/k], [k]S,Y[/k] the vertices into position to match the reference image (Image 7). Rotate the edge loop by the calf to match the slope of the calf muscle (Image 8). Rotate the edge loop for the knee also to match the reference (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-07.jpg",
+                      "caption": "Image 7 - Going to Side View and moving and scaling the vertices into position to match the reference image"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-08.jpg",
+                      "caption": "Image 8 - Rotating the edge loop by the calf to match the slope of the calf muscle"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-09.jpg",
+                      "caption": "Image 9 - Rotating the edge loop for the knee to match the reference"
+                    }
+                  ]
+                },
+                "Add two Loop Cuts - one above and one below the knee (Image 10). Select the 3 vertices along the side of the knee and [k]M,A[/k] to merge them at the center (Image 11). Repeat for the other side (Image 12). [k]2[/k] into Edge Mode, select the two edges along the side of the knee and [k]X,I[/k] to dissolve them (Image 13). Repeat for the other side (Image 14).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-10.jpg",
+                      "caption": "Image 10 - Adding two Loop Cuts, one above and one below the knee"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-11.jpg",
+                      "caption": "Image 11 - Selecting the 3 vertices along the side of the knee and merging them at the center"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-12.jpg",
+                      "caption": "Image 12 - Repeating for the other side"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-13.jpg",
+                      "caption": "Image 13 - Going into Edge Mode, selecting the two edges along the side of the knee and dissolving them"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-14.jpg",
+                      "caption": "Image 14 - Repeating for the other side"
+                    }
+                  ]
+                },
+                "Select the edges above and below the knee (Image 15). In Side View, [k]G[/k] to move the edges into position to create a \"bump\" for the knee (Image 16). Going to the end of the leg, select the bottom edge loop and [k]E,Z[/k] to extrude it to the bottom of the foot (Image 17). [k]S,Z,0[/k] to even out the edge (Image 18).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-15.jpg",
+                      "caption": "Image 15 - Selecting the edges above and below the knee"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-16.jpg",
+                      "caption": "Image 16 - Going to Side View and moving the edges into position to create a bump for the knee"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-17.jpg",
+                      "caption": "Image 17 - Going to the end of the leg, selecting the bottom edge loop and extruding it to the bottom of the foot"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-18.jpg",
+                      "caption": "Image 18 - Evening out the edge"
+                    }
+                  ]
+                },
+                "Scale the edge in the x-axis to widen the foot (Image 19). Select the four front faces (Image 20). In Side View, [k]E,Z[/k] to extrude to the front of the feet (Image 21). Select the top vertices in front and [k]G,G[/k] to Edge Slide them down (Image 22).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-19.jpg",
+                      "caption": "Image 19 - Scaling the edge in the x-axis to widen the foot"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-20.jpg",
+                      "caption": "Image 20 - Selecting the four front faces"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-21.jpg",
+                      "caption": "Image 21 - Going to Side View and extruding to the front of the feet"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-22.jpg",
+                      "caption": "Image 22 - Selecting the top vertices in front and Edge Sliding them down"
+                    }
+                  ]
+                },
+                "Select the front faces and [k]S,X[/k] to widen the toes (Image 23). Add a Loop Cut across the foot (Image 24). Select the top vertices of that cut and move them down in the z-axis (Image 25). Select all vertices for the foot and [k]R,Z,-7[/k] to turn the feet slightly outwards, and then [k]G,X[/k] to move them back into position (Image 26).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-23.jpg",
+                      "caption": "Image 23 - Selecting the front faces and widening the toes in the x-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-24.jpg",
+                      "caption": "Image 24 - Adding a Loop Cut across the foot"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-25.jpg",
+                      "caption": "Image 25 - Selecting the top vertices of that cut and moving them down in the z-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-26.jpg",
+                      "caption": "Image 26 - Selecting all vertices for the foot, turning the feet slightly outwards, and then moving them back into position"
+                    }
+                  ]
+                },
+                "Delete all faces on the bottom of the foot (Image 27). Add edge loops from the bottom of the foot to the ankle on either side of the foot (Image 28). Create three faces in the middle of the foot (Image 29) and a face at each end (Image 30). Cut the faces in the middle using the Knife Tool (Image 31).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-27.jpg",
+                      "caption": "Image 27 - Deleting all faces on the bottom of the foot"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-28.jpg",
+                      "caption": "Image 28 - Adding edge loops from the bottom of the foot to the ankle on either side of the foot"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-29.jpg",
+                      "caption": "Image 29 - Creating three faces in the middle of the foot"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-30.jpg",
+                      "caption": "Image 30 - Creating a face at each end"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Low Poly Man/Legs/legs-31.jpg",
+                      "caption": "Image 31 - Cutting the faces in the middle using the Knife Tool"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Part IV - Back to the Torso": {
+        "key_concepts": [
+          "[url]Create Your First Low Poly Character for Games (Easy and Practical!)^^https://www.youtube.com/watch?v=7SIY64ryWeI&list=PL7mfdgO5iYFYGCjqqPcMuafJJh9OKPiRB&index=1[/url]",
+          {
+            "section": {
+              "header": "Finishing Touches",
+              "content": [
+                {
+                  "section": {
+                    "header": "The Back",
+                    "content": [
+                      "After the arms have been developed, select the three outer vertices along the back (Image 30) and in the Top View move them towards the shoulders (Image 31). [kNumpad1,Numpad9[/k] into Rear View and add a Loop Cut (Image 32). Select the vertex near the bottom of the shoulder blade and [k]G,Z[k] to move it down (Image 33). Select the vertex above that one and [k]G,Y[/k] to move it out slightly (Image 34). Select the three vertices in the middle of the spine and [k]G,Y[/k] to move them inwards (Image 35).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Front",
+                    "content": [
+                      "From the front, select the three faces for the inside of the chest and [k]Shift-H[/k] to hide all other geometry (Image 36). Add a Loop Cut and move it towards the center of the chest (Image 37). Select the three inner vertices and [k]G,Y[/k] to move them in to create some cleavage (Image 38).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Hips",
+              "content": [
+                "Select the two edges at the bottom of the torso waist, front and back, and [k]F[/k] to fill them and add a Loop Cut to the new face (Image 39). Select the Edge Loop and move it down to crotch level and scale it in (Image 40). Add Loop Cut to the front and back faces and move those edge loops down (Image 41). Create another Loop Cut in front and move it out to round out the shape (Image 42). Add two Loop Cuts to the front and back towards the top of the hips (Image 43). Select the edges around the waist that haven't been extruded yet and extrude them down to the height of the Loop Cuts you just made (Image 44). [k]S,Y[/k], [k]G,Y[/k] to move them in place from the side (Image 45). Turn on Solid viewport Shading and close the gap between the faces, using the inside vertex as the merge point (Image 46). Extrude the inner edge down and rotate to match the hips contour (Image 47) and then fill in a face with the neighboring vertices (Image 48). Go around to the side and add two more edge loops to help round out the butt (Image 49). Create a face between these two edges (Image 50). Add two Loop Cuts and move those edges out to shape the butt (Image 51). Fill in the face in the front (Image 52). Add a Loop Cut near the crotch (Image 53). Add one more Loop Cut to the band in the back (Image 54). Select the edge loop for the opening in front and use Loop Tools to make it into a circle (Image 55). Add a cut to the face on the side (Image 56). Add two more faces to close the gap in the back (Image 57). Go around the hips and shape the butt (Image 58).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
