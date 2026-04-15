@@ -1,0 +1,87 @@
+{
+  "sections": [
+    {
+      "Rocks": {
+        "key_concepts": [
+          "[url]Blender 3 | Stylized Rocks the Easy Way | Create & Texture | Full Tutorial^^https://www.youtube.com/watch?v=XvQITUC4vLM[/url]",
+          "An easy way to create and texture stylized rocks with just a few simple techniques.",
+          {
+            "section": {
+              "header": "Start with a Cube",
+              "content": [
+                "Add a cube to the scene. Give it a Subdivision Surface Modifier set to Simple with the Levels at 5 (Image 1). This applies the modifier but does not change the underlying shape, so we can appy the texture to the outside surface. Minimize the Subdivision Surface Modifier and add a Displace Modifier with a new texture renamed to 'Stylized Rock' and a Strength of 0.2 and Midlevel 0.0 (Image 2). Go down to the Texture Properties tab, make sure you are on the Stylized Rock texture and change the Type to Musgrave, the Noise Basis to Voronoi F2-F1 and the Size to 1.0 (Image 3). Go down to the Colors section, check Clamp and Color Ramp, and [k]Ctrl-LMB[/k] the ramp to add a new value and set it to 0.234 (Image 4). Go to the Color Picker and under HSV change the Value to 0.867 and the Alpha to 0.5 (Image 5).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/3D Tudor/Assets/Rock Texture/rock-01.jpg",
+                      "caption": "Image 1 - Adding a cube to the scene and giving it a Subdivision Surface Modifier set to Simple with the Levels at 5"
+                    },
+                    {
+                      "src": "Blender/3D Tudor/Assets/Rock Texture/rock-02.jpg",
+                      "caption": "Image 2 - Minimizing the Subdivision Surface Modifier and adding a Displace Modifier with a new texture renamed to 'Stylized Rock' with a Strength of 0.2 and Midlevel 0.0"
+                    },
+                    {
+                      "src": "Blender/3D Tudor/Assets/Rock Texture/rock-03.jpg",
+                      "caption": "Image 3 - Going to the Texture Properties tab and changing the Type to Musgrave, the Noise Basis to Voronoi F2-F1 and the Size to 1.0"
+                    },
+                    {
+                      "src": "Blender/3D Tudor/Assets/Rock Texture/rock-04.jpg",
+                      "caption": "Image 4 - Going to the Colors section, checking Clamp and Color Ramp, and adding a new value to the ramp set to 0.234"
+                    },
+                    {
+                      "src": "Blender/3D Tudor/Assets/Rock Texture/rock-05.jpg",
+                      "caption": "Image 5 - Going to the Color Picker and changing the Value to 0.867 and the Alpha to 0.5 under HSV"
+                    }
+                  ]
+                },
+                "You can review the cube now and see it has a rocky surface, but also 12,000+ triangles (Image 6)! We will bring this down by adding a decimate modifier and reducing the Ratio (Image 7). Now add another Decimate Modifier on top of that, set to Planar, 15 degrees (Image 8). Add a Smoot Modifier and set the Repeat to 4 (Image 9). Add a Bevel Modifier, Width Type Percent, Width Percent 10%, Angle 20 degrees, and uncheck Clamp Overlap (Image 10). Add a Weighted Normal Modifier with default settings and a Triangulate Modifier with Keep Normals checked (Image 11).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/3D Tudor/Assets/Rock Texture/rock-06.jpg",
+                      "caption": "Image 6 - Reviewing the cube and seeing it has a rocky surface but also 12,000+ triangles"
+                    },
+                    {
+                      "src": "Blender/3D Tudor/Assets/Rock Texture/rock-07.jpg",
+                      "caption": "Image 7 - Adding a Decimate Modifier and reducing the Ratio to bring the triangle count down"
+                    },
+                    {
+                      "src": "Blender/3D Tudor/Assets/Rock Texture/rock-08.jpg",
+                      "caption": "Image 8 - Adding another Decimate Modifier on top, set to Planar at 15 degrees"
+                    },
+                    {
+                      "src": "Blender/3D Tudor/Assets/Rock Texture/rock-09.jpg",
+                      "caption": "Image 9 - Adding a Smooth Modifier and setting the Repeat to 4"
+                    },
+                    {
+                      "src": "Blender/3D Tudor/Assets/Rock Texture/rock-10.jpg",
+                      "caption": "Image 10 - Adding a Bevel Modifier with Width Type Percent, Width Percent 10%, Angle 20 degrees, and unchecking Clamp Overlap"
+                    },
+                    {
+                      "src": "Blender/3D Tudor/Assets/Rock Texture/rock-11.jpg",
+                      "caption": "Image 11 - Adding a Weighted Normal Modifier with default settings and a Triangulate Modifier with Keep Normals checked"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Final Result",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/3D Tudor/Assets/rock_texture.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
