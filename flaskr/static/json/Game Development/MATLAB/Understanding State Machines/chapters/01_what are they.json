@@ -31,14 +31,14 @@
                       "An oven's heating element doesn't stay running all the time. If the oven reaches its target temperature, it goes into an [b]Idling[/b] state, until it detects the temperature getting to cold and goes back to [b]Heating[/b].",
                       {
                         "image": {
-                          "src": "/MATLAB/Understanding State Machines/what_state_machine-02.jpg",
+                          "src": "Game Development/MATLAB/Understanding State Machines/what_state_machine-02.jpg",
                           "caption": "Adding an Idling state"
                         }
                       },
                       "In the example above, if you want to turn the oven off while it's in the [b]Idling[/b] state, nothing would happen. That's because we need a transition from [b]Idling[/b] to [b]Off[/b] for the 'OFF_pressed' event.",
                       {
                         "image": {
-                          "src": "/MATLAB/Understanding State Machines/what_state_machine-03.jpg",
+                          "src": "Game Development/MATLAB/Understanding State Machines/what_state_machine-03.jpg",
                           "caption": "A functioning oven prototype"
                         }
                       }
@@ -75,7 +75,7 @@
                 "How would you code an ATM's response to instantaneous inputs? One programming strategy would be to write separate functions that determine what to do when a particular button is pressed.",
                 {
                   "image": {
-                    "src": "/MATLAB/Understanding State Machines/why_use_them-01.jpg",
+                    "src": "Game Development/MATLAB/Understanding State Machines/why_use_them-01.jpg",
                     "caption": "Possible ATM reactions to button #3 events"
                   }
                 },
@@ -89,14 +89,14 @@
                 "If you try to handle all possible situations when #3 is pressed, you'll end up with a long list of nested IF-ELSEIF-ELSE statements in your code. This approach will be challenging when trying to contend with every possible combination of variables.",
                 {
                   "image": {
-                    "src": "/MATLAB/Understanding State Machines/why_use_them-02.jpg",
+                    "src": "Game Development/MATLAB/Understanding State Machines/why_use_them-02.jpg",
                     "caption": "Nested IF-ELSEIF-ELSE code trying to mimic a state machine"
                   }
                 },
                 "One way to simplify things is to instead think about the ATM software as comprised of a fixed number of states. Each state can be conceived of as its own little universe, enabling us to define behaviour based on a particular set of circumstances. Rather than writing code that contends with every possible outcome when a user presses '3', we can write concise code that handles swiping the card, entering a PIN, choosing a transaction type, and so on. In each of these states, there are fewer things that can happen when '3' is pressed.",
                 {
                   "image": {
-                    "src": "/MATLAB/Understanding State Machines/why_use_them-03.jpg",
+                    "src": "Game Development/MATLAB/Understanding State Machines/why_use_them-03.jpg",
                     "caption": "ATM states, with variables that only matter in a particular state"
                   }
                 }
@@ -112,14 +112,14 @@
                 "State transition diagrams can display the system visually which can make the connections between states far more apparent.",
                 {
                   "image": {
-                    "src": "/MATLAB/Understanding State Machines/why_use_them-04.jpg",
+                    "src": "Game Development/MATLAB/Understanding State Machines/why_use_them-04.jpg",
                     "caption": "A state transition diagram"
                   }
                 },
                 "Some tools will allow you to model a state transition diagram and then automatically convert that into code. A state transition diagram can serve as a high-level starting point for a complex software design process.",
                 {
                   "image": {
-                    "src": "/MATLAB/Understanding State Machines/why_use_them-05.jpg",
+                    "src": "Game Development/MATLAB/Understanding State Machines/why_use_them-05.jpg",
                     "caption": "A state transition diagram converted to code"
                   }
                 }
@@ -143,7 +143,7 @@
                     "content": [
                       {
                         "image": {
-                          "src": "/MATLAB/Understanding State Machines/mealy_moore-01.jpg",
+                          "src": "Game Development/MATLAB/Understanding State Machines/mealy_moore-01.jpg",
                           "caption": "The Oven's outputs described in the State, per Moore standards"
                         }
                       },
@@ -158,14 +158,14 @@
                       "In the Mealy standards, a machine's outputs depend not only on its state, but also potentially on the inputs to the system.",
                       {
                         "image": {
-                          "src": "/MATLAB/Understanding State Machines/mealy_moore-02.jpg",
+                          "src": "Game Development/MATLAB/Understanding State Machines/mealy_moore-02.jpg",
                           "caption": "The Oven's outputs described in the State, per Mealy standards"
                         }
                       },
                       "In the above example, there's not much difference with the Moore standards, but if you re-organize the diagram, the advantages become obvious. In the version below, [b]Heating[/b] and [b]Idling[/b] have been merged into a single state, [b]Baking[/b]. [b]Baking[/b] has three outbound transitions, two of which are loops. Now when the oven gets too hot or too cold, it exits the state and updates the output (turning the heat on or off) and immediately returns to [b]Baking[/b]. This is something you can't do with the Moore standards.",
                       {
                         "image": {
-                          "src": "/MATLAB/Understanding State Machines/mealy_moore-03.jpg",
+                          "src": "Game Development/MATLAB/Understanding State Machines/mealy_moore-03.jpg",
                           "caption": "The re-organized Mealy machine."
                         }
                       }
@@ -192,7 +192,7 @@
                 "In the oven example, [b]Heating[/b] and [b]Idling[/b] can be thought of as part of a parent state called [b]Baking[/b]. This compartmentalizes the design, and reduces the number of transition lines required to represent a system.",
                 {
                   "image": {
-                    "src": "/MATLAB/Understanding State Machines/harel-01.jpg",
+                    "src": "Game Development/MATLAB/Understanding State Machines/harel-01.jpg",
                     "caption": "A parent state in the Harel machine."
                   }
                 }
@@ -206,7 +206,7 @@
                 "The idea behind parallelism is that your state machine might be comprised of multiple state machines operating simultaneously. In the example below, a state machine for an Oven Light has been added to the diagram. This system operates at the same time as the Oven system.",
                 {
                   "image": {
-                    "src": "/MATLAB/Understanding State Machines/harel-02.jpg",
+                    "src": "Game Development/MATLAB/Understanding State Machines/harel-02.jpg",
                     "caption": "An autonomous Oven Light system."
                   }
                 }
@@ -220,7 +220,7 @@
                 "Broadcasting is the idea that these mostly autonomous machines could be exchanging information with one another. In the example below, let's say the Oven Light needs to turn off whenever the Oven isn't [b]Baking[/b]. Whenever the Oven goes into its [b]Off[/b] state, it would broadcast the 'LIGHT_OFF' event which causes the Over Light system to transition to its [b]Oven_Light_Off[/b] state.",
                 {
                   "image": {
-                    "src": "/MATLAB/Understanding State Machines/harel-03.jpg",
+                    "src": "Game Development/MATLAB/Understanding State Machines/harel-03.jpg",
                     "caption": "Boradcasting the 'LIGHT_OFF' event."
                   }
                 }
