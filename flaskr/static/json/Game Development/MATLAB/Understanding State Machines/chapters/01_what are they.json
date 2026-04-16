@@ -24,7 +24,7 @@
                       "In the diagram below, it shows that an oven is [b]Off[/b] when noone is using it, or [b]Heating[/b] when 'Bake' is pressed. The arrow to the left of the [b]Off[/b] state indicates that is the starting point. All arrows in the diagram represent a transition. Arrows that connect one state or another are pathways that enable you to switch between them. The rules for when a transition takes place is displayed next to the corresponding arrow ('BAKE_pressed', or 'OFF_pressed')",
                       {
                         "image": {
-                          "src": "/MATLAB/Understanding State Machines/what_state_machine-01.jpg",
+                          "src": "Game Development/MATLAB/Understanding State Machines/what_state_machine-01.jpg",
                           "caption": "An oven's state transition diagram"
                         }
                       },
