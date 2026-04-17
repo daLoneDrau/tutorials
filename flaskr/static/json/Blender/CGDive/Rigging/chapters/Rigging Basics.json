@@ -1,0 +1,240 @@
+{
+  "title": "Part 1 - Rigging Basics",
+  "sections": [
+    {
+      "Parenting Basics": {
+        "key_concepts": [
+          "[url]Blender 4.0 RIGIFY Ch 2: Rigging Basics^^https://www.youtube.com/watch?v=eoird3MVCNw[/url]",
+          "Learn the basics of rigging - armatures, parenting, weight, and more.",
+          {
+            "section": {
+              "header": "Parenting Basics",
+              "content": [
+                "Before exploring armatures, let's learn the basic of parenting. Add three mesh objects to the scene and position them scattered across the scene (Image 1). Select the cone and the sphere, with the cone as the active object and [k]Ctrl-P,O[/k] to parent the cone to the sphere (Image 2). If you grab the cone and move it around, the sphere will come with it (Image 3). Parent the cube to the cone; now when you move the cube, its child the cone will move with it, and the cone's child the sphere will come along as well (Image 4). When objects are parented, transformations applied to the parent (move, rotation, scale) also apply to the child (Image 5).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Blender Armatures 101": {
+        "key_concepts": [
+          "[url]Blender 4.0 RIGIFY Ch 2: Rigging Basics^^https://www.youtube.com/watch?v=eoird3MVCNw[/url]",
+          "Learn the basics of rigging - armatures, parenting, weight, and more.",
+          {
+            "section": {
+              "header": "Blender Armatures 101",
+              "content": [
+                "[k]Shift-A > Armature[/k] to add a single bone to the scene (Image 1). Armatures in Blender are a special kind of object that contains bones, like mesh objects contain vertices and faces. Armatures have three modes: Object Mode, Edit Mode, and Pose Mode (Image 2) We create the basic armature in Edit Mode and then pose it in Pose Mode. In Edit Mode, you can apply the regular transformations to a bone, move, rotate, and scale. In Edit Mode you can manipulate the bone by two parts that are not available in Object Mode, the Head (Image 3), and the Tail (Image 4). In Edit Mode you can add more bones to the scene by pressing [k]Shift-A[/k] (Image 5). You can also add a connected bone to an existing bone's tail by pressing [k]E[/k] (Image 6). In order to extrude from a bone's head then that part need to be selected before extruding. You can also select an existing bone and [k]RMB,S[/k] to subdivide it (Image 7). You can parent bones to each other using [k]Ctrl-P[/k] (Image 8). Choosing [k]Keep Offset[/k] will keep the offset between bone and make the parent relationship (Image 9), while [k]Connected[/k] will move the child bone to the parent's tail (Image 10). When extruding or subdividing, you automatically create child bones that are connected to their parent's tail. In Edit Mode, when you apply a transformation to a parent, the child bone is not affected (Image 11). That is because in Edit Mode you are defining the default positions of the bones. Transformations applied in Pose Mode will affect the child as you expect it (Image 12). When trying to move connected bones in Pose Mode, since you cannot change offset, you are only allowed to rotate around the parent (Image 13). You can apply transforms to bones in Pose Mode, called Pose Position (Image 14), but when you go back to Edit Mode, they will be back to their original position, called Rest Position (Image 15). In Pose Mode you can go to [k]Pose > Clear Transform > All[/k] to go back to Rest Position (Image 16).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Basic Rigging": {
+        "key_concepts": [
+          "[url]Blender 4.0 RIGIFY Ch 2: Rigging Basics^^https://www.youtube.com/watch?v=eoird3MVCNw[/url]",
+          "Learn the basics of rigging - armatures, parenting, weight, and more.",
+          {
+            "section": {
+              "header": "Basic Rigging",
+              "content": [
+                "Bring in your own mesh and then in Object Mode, [k]Shift-A > Armature[/k] and go into Edit Mode with that armature (Image 1). Go to the Data Properties tab, [k]Viewport Display > In Front[/k] and check it off to ensure the armature appears in front of the mesh (Image 2). Another option is to disable [k]Viewport Display > In Front[/k] but turn on X-Ray Mode (Image 3).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating a Spinal Column",
+              "content": [
+                "Maneuver the armature into place where the spine would be (Image 4) and [k]RMB,S[/k] to subdivide it with 2 cuts into 3 separate pieces (Image 5). In Side View, move the connections more towards the middle of the torso (Image 6). From the tail of the spine chain, [k]E[/k] to extrude two more bones for the neck and head (Image 7).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bone Naming Conventions",
+              "content": [
+                "Select a bone and open the Bone Properties tab (Image 8). You will see that the bone names will get confusing the more bones you have. Rename the bones in the Bone Properties tab, naming the three spine bones from top to bottom: 'spine_1', 'spine_2', and 'spine_3' (Image 9). Rename the neck bone to 'neck', and if you select the head bone and press [k]F2[/k] you can rename the bone right in the 3D Viewport (Image 10).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating the Leg",
+              "content": [
+                "In Front View [k]Shift-A[/k] to add a bone to the scene and [k]G,X[/k] to move it over to the leg (Image 11). In Side View, rotate it so the tail is pointing down, then line it up with the thigh (Image 12). Extrude another bone to the ankle, another to the ball of the foot, and one more for the toes (Image 13). Check the Front view to make sure the bones are aligned as well (Image 14). And last, check the Perspective View (Image 15). In the Side View, make sure the bones are not too straight and that there is an angle at the knee (Image 16). Name the bones 'thigh.L', 'shin.L', 'foot.L', and 'toe.L' (Image 17). These naming conventions will allow us to symmetrize the armature later.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating the Shoulder & Arm",
+              "content": [
+                "[k]Shift-RMB[/k] to place the 3D Cursor by the shoulder and [k]Shift-A[/k] to add a bone there (Image 18). Change the Transform Pivot Point to Individual Origins and [k]S[/k] to scale down the bone (Image 19). Position the bone inside the shoulder from the Front (Image 20) and Top (Image 21). [k]Shift-D[/k] to duplicate the bone and move it to cover the arm (Image 22). [k]RMB,S[/k] to subdivide the arm bone and them extrude it down the hand (Image 23). Align the bones from the front and top (Image 24). Name the bones 'shoulder.L', 'upper_arm.L', 'lower_arm.L', and 'hand.L' (Image 25).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Parenting the Body Parts",
+              "content": [
+                "We need to fix the parenting issues so that the armature is completely connected. In Edit Mode, parent the shoulder.L bone to upper_arm.L and spine_3 to shoulder.L, keeping the offset in both cases (Image 26). Parent spine_1 to thigh.L (Image 27). Now, in Pose Mode, you will see that spine_1 controls the whole armature (Image 28), and spine_3 controls transforms for its children (image 29).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Symmetrize",
+              "content": [
+                "In Edit Mode select all the bones and [k]RMB,Y[/k] to symmetrize the bones (image 30). This will produce a set of right-side bones with the suffix '.R' (Image 31)",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Automatic Weights",
+              "content": [
+                "[k]Shift-S,W[/k] to move the 3D Cursor back to the World Origin, go back to Object Mode, select the mesh and armature with the armature as the active object and [k]CTRL-P,H[/k] to parent the armature to the mesh with automatic weighs (Image 32). Now we can go into Pose Mode and pose our armature, and the mesh should be deformed (Image 33). The armature is attached to the mesh through weights. You can visualize this by selecting the mesh in Object Mode and going to Weight Paint Mode (Image 34). In the Data Properties tab under Vertex Groups you can see the areas of the mesh assigned to a bone; blue means no control while yellow means partial and red means full control (Image 35).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Inverse Kinematics",
+              "content": [
+                "Go into Pose Mode and select the bone connection by the ankle (Image 36). [k]E,Y[/k] to extrude a bone out in the y-axis (Image 37). We want to use this new bone to set up inverse kinematics for the leg. [k]F2[/k] and name the bone 'leg_IK.L' (Image 38). [k]Shift-LMB[/k] 'shin.L' and then [k]Ctrl-Shift-C[/k] to bring up the Add Constraints with Target menu and choose Inverse Kinematics (Image 39). This will create the constraint for you and assign the first selected bone as the target bone (Image 40). Go into Edit Mode, select leg_IK.L and [k]Alt-P[/k] to bring up the Clear Parent menu and choose Clear Parent (Image 41). Because shin.L is the parent to leg_IK.L it would cause a loop when you try to pose using leg_IK.L. Go to Pose Mode and in the Bone Constraint Properties for shin.L, change the number of bones affected by the inverse kinematics, in this case only going two bones up in the chain (Image 42). Grab the spine_1 bone and move it down; you should see the character's left leg start to squat but the foot goes through the floor (Image 43).",
+                {
+                  "image": [
+                  ]
+                },
+                "To fix this, go to Edit Mode, select foot.L, and [k]Alt-P > Clear Parent[/k], then in Pose Mode select shin.L, foot.L and [k]Ctrl-Shift-C > Copy Location[/k] (Image 44). This will un-parent the foot bone from the shin bone, but keep the foot bone in the same location as the shin. You will see foot.L is now moved up to shin.L (Image 45). To fix this, go to the Bone Constraints Property tab and change the Head/Tail setting to 1.0, making the foot.L bone copy the location of shin.L's tail (Image 46). Now, if you move the spine_1 bone down the left foot will stay planted (Image 47).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Deforming VS Non-Deforming Bones",
+              "content": [
+                "Only some of the bones should deform the mesh. Inverse kinematic bones are control bones and should not deform. Select leg_IK.L and in the Bone Properties tab uncheck Deform (Image 48). This will prevent weight being applied to the bone when you parent to a mesh with automatic weights. Now, in Edit Mode select leg_IK.L, shin.L, and foot.L and [k]RMB,Y[/k] to symmetrize the IK (Image 49). Now when you move spine_1 down, both legs will squat.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bone Collections",
+              "content": [
+                "You can also organize your bones under the Bone Collection section in the Armature tab. This is similar to Collections under the Scene Collection, you can select bones and [k]M[/k] to move them to a new or existing collection.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Custom Shapes",
+              "content": [
+                "Another way to make your rig easier to work with is by setting custom shapes. In Object Mode, add a Circle to the scene (Image 1). Go back to the armature, Pose Mode, and select the IK bone, go to the [k]Bone Properties > Viewport Display > Custom Shape > Custom Object[/k] and choose the circle (Image 2). This will change the bone to display as a circle. You can adjust the Translation, Rotation, and Scale of the custom shape in the dialog (Image 3). To adjust several values at once from the dialog, [k]Shift-LMB[/k] the first value and then drag down on the other values you want and then drag left or right to decrease or increase the value. With the bone selected, got to Edit Mode, Symmetrize, and you will see the shape copied over to the right in Pose Mode (Image 4). Repeat the same steps for the spine, neck, and head bones, adjusting the scale and translation to make it easier to handle (Image 5). Finish up by updating the arm bones and symmetrizing (Image 6). Disable X-Ray Mode in Pose, Edit, and Object Mode, and now in Pose Mode you will see you can no longer see through the mesh, but can still grab the controls you need, leading to a minimal rig (Image 7).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "IK Pole Target",
+              "content": [
+                "An IK (Inverse Kinematics) pole target is a secondary control object used in 3D rigging to dictate the direction a bone chain bends, most commonly used for elbows and knees. It ensures joints point correctly during animation, preventing unnatural rotations by forcing the joint to point towards the pole target.",
+                "Go into Edit Mode, select the thigh bone and extrude a new bone on the y-axis (Image 1). [k]Alt-P > Clear Parent[/k] for the new bone and then move it a good distance away from the armature and rename it 'IK_pole.L' (Image 2). In Pose Mode, select shin.L, and in the Bone Constraints Properties tab set [k]Pole Target > Armature[/k] [k]Bone > IK_pole.L[/k] (Image 3). You will notice the leg flip; go to the Pole Angle setting and update the value until you can enable/disable the constraint using the eye icon button and not see any changes (Image 4). Remember to uncheck Deform in Edit Mode, since the IK Pole Target bones should not be deforming (Image 5).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Simplified Leg Controls",
+              "content": [
+                "In Pose Mode you can use foot.L to move the foot around, but it would be easier to use leg_IK.L. In Edit Mode, select foot.L and then leg_IK.L as the active object and [k]Ctrl-P > Keep Offset[/k] (Image 1). Now in Pose Mode you can move the foot by rotating the IK (Image 2). Select the shin, IK, foot, and pole target and [k]RMB,Y[/k] to symmetrize them to the other side (Image 3)",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Root Bone",
+              "content": [
+                "A root bone (or root joint) is a foundational concept in 3D character rigging and animation, representing the master control bone from which all other bones in a skeleton are parented. It acts as the parent of the entire skeleton hierarchy and dictates the overall position, rotation, and scale of the character in the world.",
+                "In Edit Mode, with the 3D Cursor at the world origin [k]Shift-A[/k] to add a new bone, [k]F2[/k] to rename it 'root', enable snapping, and move the tail so that the bone is flat on the ground (Image 1). Select all un-parented bones in the armature and parent the root bone to them (Image 2).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
