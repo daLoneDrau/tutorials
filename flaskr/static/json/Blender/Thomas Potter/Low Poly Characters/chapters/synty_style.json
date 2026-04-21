@@ -363,11 +363,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/Synty-Style/Body/body-09.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-09.jpg",
                       "caption": "Image 9 - Going to Top View, selecting the top faces, and insetting them with the boundary on"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Synty-Style/Body/body-10.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-10.jpg",
                       "caption": "Image 10 - Moving the inset faces up"
                     }
                   ]
@@ -375,11 +375,39 @@
                 "Shape the chest muscles (Image 11). Add a Loop Cut for the waist, rotate it slightly, and then scale it in the x- (Image 12) and y-axes (Image 13) to match the contours of the reference image. Add another Loop Cut for the waist, rotate, and scale to match the reference image (Image 14). Select the bottom edge loop and rotate slightly to create a curving area for the lower abdominal (Image 15).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-11.jpg",
+                      "caption": "Image 11 - Shaping the chest muscles"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-12.jpg",
+                      "caption": "Image 12 - Adding a Loop Cut for the waist, rotating it slightly, and scaling it in the x-axis to match the contours of the reference image"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-13.jpg",
+                      "caption": "Image 13 - Scaling the Loop Cut in the y-axis to match the contours of the reference image"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-14.jpg",
+                      "caption": "Image 14 - Adding another Loop Cut for the waist, rotating, and scaling to match the reference image"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-15.jpg",
+                      "caption": "Image 15 - Selecting the bottom edge loop and rotating it slightly to create a curving area for the lower abdominal"
+                    }
                   ]
                 },
                 "Add a Loop Cut at the middle of the chest and scale it out in the y-axis (Image 16). Select the four faces around the shoulder/arm area and extrude them (Image 17).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-16.jpg",
+                      "caption": "Image 16 - Adding a Loop Cut at the middle of the chest and scaling it out in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-17.jpg",
+                      "caption": "Image 17 - Selecting the four faces around the shoulder and arm area and extruding them"
+                    }
                   ]
                 }
               ]
@@ -392,6 +420,18 @@
                 "[k]S,X,0[/k] the faces to line them up (Image 18). Dissolve the vertices in tbe middle of the faces in order to make the edge loop for the shoulder and face 6 edges, then use Loop Tools to make the face into a circle (Image 19). Scale the circle down and position it for the shoulder (Image 20).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-18.jpg",
+                      "caption": "Image 18 - Lining up the faces in the x-axis"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-19.jpg",
+                      "caption": "Image 19 - Dissolving the vertices in the middle of the faces to make the edge loop for the shoulder 6 edges, then using Loop Tools to make the face into a circle"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-20.jpg",
+                      "caption": "Image 20 - Scaling the circle down and positioning it for the shoulder"
+                    }
                   ]
                 },
                 "Extrude the edge loop out, rotate and scale to form the end of the shoulder (Image 21). Extrude out one more edge loop (Image 22). In Top View, move the shoulders back slightly in the y-axis (Image 23). [k]G,X[/k], [k]S,X,0[/k] to extrude to the elbow (Image 24) and then to the wrist (Image 25). Add an edge loop to the forearm and then [k]S,Z[/k] to shape the arms from the front (Image 26).",
