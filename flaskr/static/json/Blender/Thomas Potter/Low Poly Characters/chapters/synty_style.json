@@ -309,7 +309,7 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-01.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-01.jpg",
                       "caption": "Image 1 - Deleting everything from the general scene and making sure the reference images match the T-position of the final model"
                     }
                   ]
@@ -325,23 +325,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-02.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-02.jpg",
                       "caption": "Image 2 - Adding a cube to the scene with a Mirror Modifier in the x-axis and shaping it to match the reference image from the front"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-03.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-03.jpg",
                       "caption": "Image 3 - Shaping the cube to match the reference image from the side"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-04.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-04.jpg",
                       "caption": "Image 4 - Edge sliding the outer edges to give the torso a barrel shape from the top"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-05.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-05.jpg",
                       "caption": "Image 5 - Adding a Loop Cut in the x-axis"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-06.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-06.jpg",
                       "caption": "Image 6 - Shaping the outer edges to round out the torso more"
                     }
                   ]
@@ -350,11 +350,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-07.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-07.jpg",
                       "caption": "Image 7 - Beveling the Loop Cut that was just added on the side"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-08.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-08.jpg",
                       "caption": "Image 8 - Using the Knife Tool to cut an edge under the pectoral and then shaping it"
                     }
                   ]
@@ -362,6 +362,14 @@
                 "[k]Numpad7[/k] into Top View, select the top faces, and [k]I,B[/k] to inset them with the boundary on the left (Image 9). Move the inset faces up (Image 10).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Synty-Style/Body/body-09.jpg",
+                      "caption": "Image 9 - Going to Top View, selecting the top faces, and insetting them with the boundary on"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Synty-Style/Body/body-10.jpg",
+                      "caption": "Image 10 - Moving the inset faces up"
+                    }
                   ]
                 },
                 "Shape the chest muscles (Image 11). Add a Loop Cut for the waist, rotate it slightly, and then scale it in the x- (Image 12) and y-axes (Image 13) to match the contours of the reference image. Add another Loop Cut for the waist, rotate, and scale to match the reference image (Image 14). Select the bottom edge loop and rotate slightly to create a curving area for the lower abdominal (Image 15).",
