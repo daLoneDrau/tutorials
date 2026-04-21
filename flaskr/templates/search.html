@@ -1,0 +1,533 @@
+{% extends "base.html" %}
+
+{% block sideaccordion %}
+    {% for topic in library %}
+        {% set topic_id = topic.topic|replace(' ', '_') %}
+        <p class="caption" role="heading">
+            <span class="caption-text">{{ topic.topic }}</span>
+        </p>
+        <div class="accordion" id="accordion_{{ topic_id }}">
+            {% for creator in topic.creators %}
+                {% set creator_id = (topic.topic + '_' + creator.creator)|replace(' ', '_') %}
+                <div class="accordion-item">
+                    <span class="accordion-header" id="heading_{{ creator_id }}">
+                        <button type="button"
+                            class="accordion-button collapsed creator"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse_{{ creator_id }}"
+                            aria-expanded="false"
+                            aria-controls="collapse_{{ creator_id }}">
+                            {{ creator.creator }}
+                        </button>
+                    </span>
+                    <div id="collapse_{{ creator_id }}"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordion_{{ topic_id }}">
+                        <div class="accordion-body">
+                            <div class="accordion" id="accordion_{{ creator_id }}">
+                                {% for course in creator.courses %}
+                                    {% set course_id = (topic.topic + '_' + creator.creator + '_' + course.course)|replace(' ', '_') %}
+                                    <div class="accordion-item">
+                                        <span class="accordion-header" id="heading_{{ course_id }}">
+                                            <button type="button"
+                                                class="accordion-button collapsed course"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapse_{{ course_id }}"
+                                                aria-expanded="false"
+                                                aria-controls="collapse_{{ course_id }}">
+                                                {{ course.course }}
+                                            </button>
+                                        </span>
+                                        <div id="collapse_{{ course_id }}"
+                                            class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion_{{ creator_id }}">
+                                            <div class="accordion-body">
+                                                {% for chapter in course.chapters %}
+                                                    {% set chapter_id = (topic.topic + '_' + creator.creator + '_' + course.course + '_' + chapter.title)|replace(' ', '_') %}
+                                                    {% if chapter.title == course.course %}
+                                                        {% if chapter.sections is defined and chapter.sections %}
+                                                            {% for section in chapter.sections %}
+                                                                {% for key, value in section.items() %}
+                                                                    <a class="reference internal"
+                                                                        href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator }}/{{ course.course }}/{{ key }}">
+                                                                        {{ key }}
+                                                                    </a>
+                                                                {% endfor %}
+                                                            {% endfor %}
+                                                        {% endif %}
+                                                    {% else %}
+                                                        <div class="accordion" id="accordion_{{ chapter_id }}">
+                                                            <div class="accordion-item">
+                                                                <span class="accordion-header" id="heading_{{ chapter_id }}">
+                                                                    <button type="button"
+                                                                        class="accordion-button collapsed chapter"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapse_{{ chapter_id }}"
+                                                                        aria-expanded="false"
+                                                                        aria-controls="collapse_{{ chapter_id }}">
+                                                                        {{ chapter.title }}
+                                                                    </button>
+                                                                </span>
+                                                                <div id="collapse_{{ chapter_id }}"
+                                                                    class="accordion-collapse collapse"
+                                                                    data-bs-parent="#accordion_{{ chapter_id }}">
+                                                                    <div class="accordion-body">
+                                                                        {% if chapter.sections is defined and chapter.sections %}
+                                                                            {% for section in chapter.sections %}
+                                                                                {% for key, value in section.items() %}
+                                                                                    <a class="reference internal"
+                                                                                        href="{{ base_path }}/{{ topic.topic }}/{{ creator.creator }}/{{ course.course }}/{{ chapter.title }}/{{ key }}">
+                                                                                        {{ key }}
+                                                                                    </a>
+                                                                                {% endfor %}
+                                                                            {% endfor %}
+                                                                        {% endif %}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+{% endblock %}
+
+{% block content %}
+<div class="search-page">
+    <h1>Search Tutorials</h1>
+
+    <div class="search-controls">
+        <div class="search-bar-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search search-icon" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+            <input
+                type="text"
+                id="search-input"
+                class="search-input"
+                placeholder="Search tutorials…"
+                autocomplete="off"
+            >
+            <button id="clear-search" class="clear-search" aria-label="Clear search" style="display:none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="tag-cloud-section">
+        <h2 class="tag-cloud-heading">Browse by Tag</h2>
+        <div id="tag-cloud" class="tag-cloud">
+            <!-- populated by JS -->
+        </div>
+    </div>
+
+    <div class="search-results-header">
+        <span id="results-count"></span>
+        <button id="clear-filters" class="clear-filters-btn" style="display:none">
+            Clear all filters
+        </button>
+    </div>
+
+    <div id="results-list" class="results-list">
+        <!-- populated by JS -->
+    </div>
+</div>
+
+<style>
+.search-page {
+    max-width: 860px;
+    padding: 1.5rem 0;
+}
+.search-page h1 {
+    margin-bottom: 1.5rem;
+}
+
+/* Search bar */
+.search-controls {
+    margin-bottom: 2rem;
+}
+.search-bar-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.search-icon {
+    position: absolute;
+    left: 0.85rem;
+    color: var(--bs-secondary-color, #6c757d);
+    pointer-events: none;
+}
+.search-input {
+    width: 100%;
+    padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--bs-border-color, #dee2e6);
+    border-radius: 0.5rem;
+    background: var(--bs-body-bg, #fff);
+    color: var(--bs-body-color, #212529);
+    outline: none;
+    transition: border-color 0.15s;
+}
+.search-input:focus {
+    border-color: var(--bs-primary, #0d6efd);
+    box-shadow: 0 0 0 3px rgba(13,110,253,.15);
+}
+.clear-search {
+    position: absolute;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--bs-secondary-color, #6c757d);
+    padding: 0;
+    line-height: 1;
+}
+.clear-search:hover { color: var(--bs-body-color, #212529); }
+
+/* Tag cloud */
+.tag-cloud-section {
+    margin-bottom: 2rem;
+}
+.tag-cloud-heading {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--bs-secondary-color, #6c757d);
+    margin-bottom: 0.75rem;
+}
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+.tag-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 2rem;
+    border: 1px solid var(--bs-border-color, #dee2e6);
+    background: var(--bs-body-bg, #fff);
+    color: var(--bs-body-color, #212529);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.12s, color 0.12s, border-color 0.12s;
+    user-select: none;
+}
+.tag-btn:hover {
+    background: var(--bs-primary-bg-subtle, #cfe2ff);
+    border-color: var(--bs-primary, #0d6efd);
+    color: var(--bs-primary, #0d6efd);
+}
+.tag-btn.active {
+    background: var(--bs-primary, #0d6efd);
+    border-color: var(--bs-primary, #0d6efd);
+    color: #fff;
+}
+.tag-btn .tag-count {
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+
+/* Results */
+.search-results-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    min-height: 1.5rem;
+}
+#results-count {
+    font-size: 0.875rem;
+    color: var(--bs-secondary-color, #6c757d);
+}
+.clear-filters-btn {
+    background: none;
+    border: none;
+    color: var(--bs-primary, #0d6efd);
+    font-size: 0.875rem;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+}
+.clear-filters-btn:hover { opacity: 0.75; }
+
+.results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.result-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.9rem 1.1rem;
+    border: 1px solid var(--bs-border-color, #dee2e6);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.12s, box-shadow 0.12s;
+}
+.result-card:hover {
+    border-color: var(--bs-primary, #0d6efd);
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    color: inherit;
+    text-decoration: none;
+}
+.result-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--bs-primary, #0d6efd);
+}
+.result-meta {
+    font-size: 0.8rem;
+    color: var(--bs-secondary-color, #6c757d);
+}
+.result-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.25rem;
+}
+.result-tag {
+    padding: 0.1rem 0.55rem;
+    border-radius: 2rem;
+    background: var(--bs-secondary-bg, #e9ecef);
+    color: var(--bs-secondary-color, #6c757d);
+    font-size: 0.78rem;
+}
+.result-tag.matched {
+    background: var(--bs-primary-bg-subtle, #cfe2ff);
+    color: var(--bs-primary, #0d6efd);
+}
+.no-results {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--bs-secondary-color, #6c757d);
+}
+
+/* Article tags (used in content.html too, lives here for co-location) */
+.article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 0;
+    margin: 0.5rem 0 1rem;
+    border-top: 1px solid var(--bs-border-color, #dee2e6);
+    border-bottom: 1px solid var(--bs-border-color, #dee2e6);
+}
+.article-tags svg {
+    color: var(--bs-secondary-color, #6c757d);
+    flex-shrink: 0;
+}
+.article-tag {
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border-radius: 2rem;
+    background: var(--bs-secondary-bg, #e9ecef);
+    color: var(--bs-secondary-color, #6c757d);
+    font-size: 0.82rem;
+    text-decoration: none;
+    transition: background 0.12s, color 0.12s;
+}
+.article-tag:hover {
+    background: var(--bs-primary-bg-subtle, #cfe2ff);
+    color: var(--bs-primary, #0d6efd);
+    text-decoration: none;
+}
+
+/* Sidebar search link */
+.sidebar-search-link {
+    padding: 0.4rem 0.75rem 0.5rem;
+}
+.sidebar-search-anchor {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--bs-secondary-color, #6c757d);
+    text-decoration: none;
+    transition: color 0.12s;
+}
+.sidebar-search-anchor:hover { color: var(--bs-primary, #0d6efd); }
+</style>
+
+<script>
+(function () {
+    // Resolve the base path so fetch works regardless of deployment subfolder
+    const BASE = document.currentScript
+        ? new URL(document.currentScript.src).origin
+        : window.location.origin;
+    const INDEX_URL = "{{ base_path }}/search-index.json";
+
+    let allPages   = [];
+    let activeTags = new Set();
+    let searchQuery = "";
+
+    // --- URL param helpers ---
+    function getParams() {
+        const p = new URLSearchParams(window.location.search);
+        return {
+            q:    p.get("q")   || "",
+            tags: p.getAll("tag").filter(Boolean),
+        };
+    }
+    function pushParams() {
+        const p = new URLSearchParams();
+        if (searchQuery) p.set("q", searchQuery);
+        activeTags.forEach(t => p.append("tag", t));
+        const qs = p.toString();
+        history.replaceState(null, "", qs ? "?" + qs : window.location.pathname);
+    }
+
+    // --- Fetch index ---
+    fetch(INDEX_URL)
+        .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(data => {
+            allPages = data;
+            const params = getParams();
+            searchQuery = params.q;
+            activeTags  = new Set(params.tags);
+            document.getElementById("search-input").value = searchQuery;
+            if (searchQuery) document.getElementById("clear-search").style.display = "block";
+            buildTagCloud();
+            render();
+        })
+        .catch(err => {
+            document.getElementById("results-list").innerHTML =
+                `<p class="no-results">Could not load search index. (${err})</p>`;
+        });
+
+    // --- Tag cloud ---
+    function buildTagCloud() {
+        const counts = {};
+        allPages.forEach(p => (p.tags || []).forEach(t => {
+            counts[t] = (counts[t] || 0) + 1;
+        }));
+        const sorted = Object.entries(counts).sort((a, b) =>
+            b[1] - a[1] || a[0].localeCompare(b[0])
+        );
+        const cloud = document.getElementById("tag-cloud");
+        cloud.innerHTML = "";
+        sorted.forEach(([tag, count]) => {
+            const btn = document.createElement("button");
+            btn.className = "tag-btn" + (activeTags.has(tag) ? " active" : "");
+            btn.innerHTML = `${escHtml(tag)} <span class="tag-count">${count}</span>`;
+            btn.addEventListener("click", () => toggleTag(tag, btn));
+            cloud.appendChild(btn);
+        });
+    }
+    function toggleTag(tag, btn) {
+        if (activeTags.has(tag)) { activeTags.delete(tag); btn.classList.remove("active"); }
+        else                     { activeTags.add(tag);    btn.classList.add("active"); }
+        pushParams();
+        render();
+    }
+
+    // --- Filtering ---
+    function matchesQuery(page, q) {
+        if (!q) return true;
+        const needle = q.toLowerCase();
+        return (page.title   || "").toLowerCase().includes(needle)
+            || (page.course  || "").toLowerCase().includes(needle)
+            || (page.chapter || "").toLowerCase().includes(needle)
+            || (page.topic   || "").toLowerCase().includes(needle)
+            || (page.tags    || []).some(t => t.toLowerCase().includes(needle));
+    }
+    function matchesTags(page, tags) {
+        if (!tags.size) return true;
+        const pageTags = new Set(page.tags || []);
+        for (const t of tags) { if (!pageTags.has(t)) return false; }
+        return true;
+    }
+
+    // --- Render results ---
+    function render() {
+        const filtered = allPages.filter(p =>
+            matchesQuery(p, searchQuery) && matchesTags(p, activeTags)
+        );
+        const countEl   = document.getElementById("results-count");
+        const clearBtn  = document.getElementById("clear-filters");
+        const list      = document.getElementById("results-list");
+        const hasFilter = searchQuery || activeTags.size;
+
+        countEl.textContent = filtered.length === allPages.length && !hasFilter
+            ? `${allPages.length} tutorials`
+            : `${filtered.length} of ${allPages.length} tutorials`;
+
+        clearBtn.style.display = hasFilter ? "inline" : "none";
+
+        if (!filtered.length) {
+            list.innerHTML = `<div class="no-results">
+                <p>No tutorials match your search.</p>
+                <p><button class="clear-filters-btn" onclick="clearAll()">Clear filters</button></p>
+            </div>`;
+            return;
+        }
+
+        list.innerHTML = filtered.map(page => {
+            const tagsHtml = (page.tags || []).map(t =>
+                `<span class="result-tag ${activeTags.has(t) ? 'matched' : ''}">${escHtml(t)}</span>`
+            ).join("");
+            const crumbs = [page.topic, page.creator, page.course, page.chapter]
+                .filter(Boolean).join(" › ");
+            return `<a class="result-card" href="${escHtml(page.url)}">
+                <div class="result-title">${escHtml(page.title)}</div>
+                <div class="result-meta">${escHtml(crumbs)}</div>
+                ${tagsHtml ? `<div class="result-tags">${tagsHtml}</div>` : ""}
+            </a>`;
+        }).join("");
+    }
+
+    // --- Clear all ---
+    window.clearAll = function () {
+        activeTags.clear();
+        searchQuery = "";
+        document.getElementById("search-input").value = "";
+        document.getElementById("clear-search").style.display = "none";
+        document.querySelectorAll(".tag-btn").forEach(b => b.classList.remove("active"));
+        pushParams();
+        render();
+    };
+    document.getElementById("clear-filters").addEventListener("click", clearAll);
+
+    // --- Search input ---
+    const input     = document.getElementById("search-input");
+    const clearBtn2 = document.getElementById("clear-search");
+    let debounce;
+    input.addEventListener("input", () => {
+        clearTimeout(debounce);
+        searchQuery = input.value.trim();
+        clearBtn2.style.display = searchQuery ? "block" : "none";
+        debounce = setTimeout(() => { pushParams(); render(); }, 180);
+    });
+    clearBtn2.addEventListener("click", () => {
+        searchQuery = "";
+        input.value = "";
+        clearBtn2.style.display = "none";
+        pushParams();
+        render();
+    });
+
+    // --- Utility ---
+    function escHtml(s) {
+        return String(s ?? "")
+            .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+})();
+</script>
+{% endblock %}
