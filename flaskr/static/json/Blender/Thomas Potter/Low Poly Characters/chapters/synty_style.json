@@ -585,9 +585,58 @@
             "section": {
               "header": "The Legs",
               "content": [
-                "Add two Loop Cuts to the leg for the thickest part of the thighs and the knees and scale them down (Image 49). Add a Loop Cut for the calves and shape the calf and ankle edges from the front (Image 50) and side (Image 51). Add Loop Cuts above and below the knee (Image 52). In the back, edge slide the three vertices above the knee down together in the middle (Image 53). Dissolve the middle vertex (Image 54) and then recreate the faces in the back (Image 55). Dissolve the vertex in the middle below the back of the knee and then re-create those faces (Image 56). In the front, cut a diamond shape around the knee (Image 57). From the side drag the vertex for the knee out (Image 58), and grab the vertices on either side of the knee and [k]G,G[/k] to edge slide them back (Image 59).",
+                "Add two Loop Cuts to the leg for the thickest part of the thighs and the knees and scale them down (Image 49). Add a Loop Cut for the calves and shape the calf and ankle edges from the front (Image 50) and side (Image 51). Add Loop Cuts above and below the knee (Image 52). In the back, edge slide the three vertices above the knee down together in the middle (Image 53).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-49.jpg",
+                      "caption": "Image 49 - Adding two Loop Cuts to the leg for the thickest part of the thighs and the knees and scaling them down"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-50.jpg",
+                      "caption": "Image 50 - Adding a Loop Cut for the calves and shaping the calf and ankle edges from the front"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-51.jpg",
+                      "caption": "Image 51 - Shaping the calf and ankle edges from the side"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-52.jpg",
+                      "caption": "Image 52 - Adding Loop Cuts above and below the knee"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-53.jpg",
+                      "caption": "Image 53 - Edge sliding the three vertices above the knee down together in the middle in the back"
+                    }
+                  ]
+                },
+                "Dissolve the middle vertex (Image 54) and then recreate the faces in the back (Image 55). Dissolve the vertex in the middle below the back of the knee and then re-create those faces (Image 56). In the front, cut a diamond shape around the knee (Image 57). From the side drag the vertex for the knee out (Image 58), and grab the vertices on either side of the knee and [k]G,G[/k] to edge slide them back (Image 59).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-54.jpg",
+                      "caption": "Image 54 - Dissolving the middle vertex"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-55.jpg",
+                      "caption": "Image 55 - Recreating the faces in the back"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-56.jpg",
+                      "caption": "Image 56 - Dissolving the vertex in the middle below the back of the knee and then re-creating those faces"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-57.jpg",
+                      "caption": "Image 57 - Cutting a diamond shape around the knee in the front"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-58.jpg",
+                      "caption": "Image 58 - Dragging the vertex for the knee out from the side"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-59.jpg",
+                      "caption": "Image 59 - Grabbing the vertices on either side of the knee and edge sliding them back"
+                    }
                   ]
                 }
               ]
@@ -597,9 +646,54 @@
             "section": {
               "header": "The Feet",
               "content": [
-                "Select the bottom edge loop and extrude twice a short distance and then a third time all the way down (use Snap to Grid if you want to go the 0.0 on the z-axis) (Image 60). Select the vertex at the bottom of the ankle in the front and move it up (Image 61). Select the two front faces and extrude them to the toes (Image 62). Edge Slide the front of the foot down (Image 63). Select the bottom ankle loops and [k]S,Y[/k] to match the reference image (Image 64), then scale up the back half of the foot in the y-axis (Image 65). Select the vertices of the foot and [k]R,Z,6[/k] to rotate them outwards (Image 66). Widen the front of the feet (Image 67). Add a Loop Cut for the top of the foot and move it down (Image 68). Straighten up the loops on the bottom and fill in any holes (Image 69).",
+                "Select the bottom edge loop and extrude twice a short distance and then a third time all the way down (use Snap to Grid if you want to go the 0.0 on the z-axis) (Image 60). Select the vertex at the bottom of the ankle in the front and move it up (Image 61). Select the two front faces and extrude them to the toes (Image 62). Edge Slide the front of the foot down (Image 63).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-60.jpg",
+                      "caption": "Image 60 - Selecting the bottom edge loop and extruding twice a short distance and then a third time all the way down"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-61.jpg",
+                      "caption": "Image 61 - Selecting the vertex at the bottom of the ankle in the front and moving it up"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-62.jpg",
+                      "caption": "Image 62 - Selecting the two front faces and extruding them to the toes"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-63.jpg",
+                      "caption": "Image 63 - Edge Sliding the front of the foot down"
+                    }
+                  ]
+                },
+                "Select the bottom ankle loops and [k]S,Y[/k] to match the reference image (Image 64), then scale up the back half of the foot in the y-axis (Image 65). Select the vertices of the foot and [k]R,Z,6[/k] to rotate them outwards (Image 66). Widen the front of the feet (Image 67). Add a Loop Cut for the top of the foot and move it down (Image 68). Straighten up the loops on the bottom and fill in any holes (Image 69).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-64.jpg",
+                      "caption": "Image 64 - Selecting the bottom ankle loops and scaling in the y-axis to match the reference image"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-65.jpg",
+                      "caption": "Image 65 - Scaling up the back half of the foot in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-66.jpg",
+                      "caption": "Image 66 - Selecting the vertices of the foot and rotating them outwards"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-67.jpg",
+                      "caption": "Image 67 - Widening the front of the feet"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-68.jpg",
+                      "caption": "Image 68 - Adding a Loop Cut for the top of the foot and moving it down"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-69.jpg",
+                      "caption": "Image 69 - Straightening up the loops on the bottom and filling in any holes"
+                    }
                   ]
                 }
               ]
