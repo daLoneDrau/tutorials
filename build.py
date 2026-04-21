@@ -353,6 +353,7 @@ def flatten_library(library):
                     if "sections" in chapter:
                         for section_item in chapter["sections"]:
                             section_title = list(section_item.keys())[0]
+                            section_data  = section_item[section_title]
                             # If chapter title matches course name, skip
                             # the chapter segment in the URL
                             if chapter["title"] == course["course"]:
@@ -362,8 +363,9 @@ def flatten_library(library):
                                     "course":  course["course"],
                                     "chapter": None,
                                     "section": section_title,
-                                    "data":    section_item[section_title],
+                                    "data":    section_data,
                                     "depth":   4,
+                                    "tags":    section_data.get("tags", []) if isinstance(section_data, dict) else [],
                                 })
                             else:
                                 pages.append({
@@ -372,8 +374,9 @@ def flatten_library(library):
                                     "course":  course["course"],
                                     "chapter": chapter["title"],
                                     "section": section_title,
-                                    "data":    section_item[section_title],
+                                    "data":    section_data,
                                     "depth":   5,
+                                    "tags":    section_data.get("tags", []) if isinstance(section_data, dict) else [],
                                 })
                     elif "key_concepts" in chapter:
                         pages.append({
@@ -384,6 +387,7 @@ def flatten_library(library):
                             "section": None,
                             "data":    chapter,
                             "depth":   4,
+                            "tags":    chapter.get("tags", []),
                         })
                     else:
                         print(f"  WARNING: Skipping chapter with unrecognised "
@@ -556,6 +560,9 @@ def build():
                    _section="")
         print(f"  index.html")
 
+    # Build search index (written after all pages are processed)
+    search_index = []
+
     # Build all content pages
     error_count = 0
     for i, page in enumerate(all_pages):
@@ -573,6 +580,17 @@ def build():
                 "href": make_href(next_page),
                 "html": next_page["section"],
             }
+
+        # Add this page to the search index
+        search_index.append({
+            "title":   page["section"] or page["chapter"] or page["course"],
+            "url":     make_href(page),
+            "topic":   page["topic"],
+            "creator": page["creator"],
+            "course":  page["course"],
+            "chapter": page["chapter"] or "",
+            "tags":    page.get("tags", []),
+        })
 
         try:
             content = build_content(page)
@@ -620,7 +638,8 @@ def build():
                 _course=page["course"],
                 _chapter=page["chapter"],
                 _section=page["section"],
-                _depth=page["depth"], 
+                _depth=page["depth"],
+                _tags=page.get("tags", []),
             )
         except Exception as e:
             print(f"  ERROR rendering {make_href(page)}: {e}")
@@ -630,6 +649,31 @@ def build():
         # Progress indicator every 25 pages
         if (i + 1) % 25 == 0 or i == len(all_pages) - 1:
             print(f"  {i + 1}/{len(all_pages)} pages rendered...")
+
+    # Write search index JSON
+    search_index_path = os.path.join(OUTPUT_DIR, "search-index.json")
+    with open(search_index_path, "w", encoding="utf-8") as f:
+        json.dump(search_index, f, indent=2)
+    print(f"  search-index.json written ({len(search_index)} entries)")
+
+    # Build search page
+    try:
+        search_template = env.get_template("search.html")
+        search_path = os.path.join(OUTPUT_DIR, "search.html")
+        write_page(env, search_template,
+                   search_path,
+                   title="Search Tutorials",
+                   base_path=BASE_PATH,
+                   library=library,
+                   footer_data={},
+                   _topic="",
+                   _creator="",
+                   _course="",
+                   _chapter="",
+                   _section="")
+        print(f"  search.html")
+    except Exception as e:
+        print(f"  WARNING: Could not build search.html: {e}")
 
     # Summary
     print()
