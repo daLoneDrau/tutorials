@@ -367,10 +367,6 @@
 
 <script>
 (function () {
-    // Resolve the base path so fetch works regardless of deployment subfolder
-    const BASE = document.currentScript
-        ? new URL(document.currentScript.src).origin
-        : window.location.origin;
     const INDEX_URL = "{{ base_path }}/search-index.json";
 
     let allPages   = [];
