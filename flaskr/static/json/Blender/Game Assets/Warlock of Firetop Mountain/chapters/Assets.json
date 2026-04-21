@@ -1,0 +1,24 @@
+{
+  "sections": [
+    {
+      "Cave Wall": {
+        "key_concepts": [
+          "[url]Blender 3 | Stylized Rocks the Easy Way | Create & Texture | Full Tutorial^^https://www.youtube.com/watch?v=XvQITUC4vLM[/url]",
+          "An easy way to create and texture stylized rocks with just a few simple techniques.",
+          {
+            "section": {
+              "header": "Start with a Cube",
+              "content": [
+                "Add a cube to the scene. Give it a Subdivision Surface Modifier set to Simple with the Levels at 5 (Image 1). This applies the modifier but does not change the underlying shape, so we can appy the texture to the outside surface. Minimize the Subdivision Surface Modifier and add a Displace Modifier with a new texture renamed to 'Stylized Rock' and a Strength of 0.2 and Midlevel 0.0 (Image 2). Go down to the Texture Properties tab, make sure you are on the Stylized Rock texture and change the Type to Musgrave, the Noise Basis to Voronoi F2-F1 and the Size to 1.0 (Image 3). Go down to the Colors section, check Clamp and Color Ramp, and [k]Ctrl-LMB[/k] the ramp to add a new value and set it to 0.234 (Image 4). Go to the Color Picker and under HSV change the Value to 0.867 and the Alpha to 0.5 (Image 5).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
