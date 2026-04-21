@@ -62,7 +62,7 @@
     },
     {
       "Enchanted Forest": {
-        "tags": ["forest", "trees", "water", "mushroom"],
+        "tags": ["forest", "trees", "water", "mushroom", "grass", "rock"],
         "key_concepts": [
           "[url]Enchanted Forest Blender Tutorial with Commentary^^https://www.youtube.com/watch?v=dZuMn4Ffa20[/url]",
           {
@@ -605,6 +605,7 @@
     },
     {
       "Magic Portal": {
+        "tags": ["arch", "stone", "magic", "plant"],
         "key_concepts": [
           "[url]Portal Environment Tutorial in Blender 2.9 | Polygon Runway^^https://www.youtube.com/watch?v=A2Wfl4pyZe0[/url]",
           "The purpose of this tutorial is to show you how to use simple low poly modeling techniques and enhance them with a few modifiers.",
