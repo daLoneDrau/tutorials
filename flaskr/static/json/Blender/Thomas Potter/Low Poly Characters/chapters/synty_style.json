@@ -519,11 +519,63 @@
                 "Delete any faces on the bottom (Image 36). Extrude the bottom edge loop down and [k]S,Z,0[/k] (Image 37). Shape the hips from the side (Image 38). Add a face between the faces in front and back (Image 39). Add two edge loops and bring that face down (Image 40). Use LoopTools to make the leg hole a circle, and rotate and scale it into position from the front (Image 41) and side (Image 42).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-36.jpg",
+                      "caption": "Image 36 - Deleting any faces on the bottom"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-37.jpg",
+                      "caption": "Image 37 - Extruding the bottom edge loop down and evening it out in the z-axis"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-38.jpg",
+                      "caption": "Image 38 - Shaping the hips from the side"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-39.jpg",
+                      "caption": "Image 39 - Adding a face between the faces in front and back"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-40.jpg",
+                      "caption": "Image 40 - Adding two edge loops and bringing that face down"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-41.jpg",
+                      "caption": "Image 41 - Using Loop Tools to make the leg hole a circle and rotating and scaling it into position from the front"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-42.jpg",
+                      "caption": "Image 42 - Rotating and scaling the leg hole into position from the side"
+                    }
                   ]
                 },
                 "Add a Loop Cut to the middle of the hips and round them out (Image 43). Extrude the edge loop for the legs down a bit and then down to the ankles (Image 44). Use the Knife Tool to add an edge in front for the crotch (Image 45). Move the front vertex out in the y-axis (Image 46). Move the front vertices down in the z-axis to correct the topology flow around the hips (Image 47). Repeat the same steps in the back (Image 48).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-43.jpg",
+                      "caption": "Image 43 - Adding a Loop Cut to the middle of the hips and rounding them out"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-44.jpg",
+                      "caption": "Image 44 - Extruding the edge loop for the legs down a bit and then down to the ankles"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-45.jpg",
+                      "caption": "Image 45 - Using the Knife Tool to add an edge in front for the crotch"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-46.jpg",
+                      "caption": "Image 46 - Moving the front vertex out in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-47.jpg",
+                      "caption": "Image 47 - Moving the front vertices down in the z-axis to correct the topology flow around the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-48.jpg",
+                      "caption": "Image 48 - Repeating the same steps in the back"
+                    }
                   ]
                 }
               ]
