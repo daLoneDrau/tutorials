@@ -1,0 +1,453 @@
+{
+  "title": "Capuccino 3D Low Poly Assets",
+  "sections": [
+    {
+      "Low Poly Viking House Modelling Tutorial": {
+        "tags": ["house", "viking", "environment", "door", "stone", "log", "shield"],
+        "key_concepts": [
+          "[url]Low Poly Viking House Modelling Tutorial | Blender 3.0 | Capuccino 3D^^https://www.youtube.com/watch?v=f3EFDgcxtuc[/url]",
+          "Modelling a Low Poly Viking House using Blender",
+          {
+            "section": {
+              "header": "Setting up a Proportion Guide",
+              "content": [
+                "Create a cylinder with 0.5m radius and 1.8288m depth and label that 'human body'. Move it to the side for now.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-01.jpg",
+                      "caption": "Image 1 - Creating a Proportion Guide"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Blocking out the House",
+              "content": [
+                "Add a Cube to the scene. [k]S,X,2[/k], [k]S,Y,1.5[/k], and [k]S,Z,0.9[/k] to set the width, depth, and height. [k]E,Z,2[/k] to bring up the height. [k]Ctrl-A,S[/k] to apply the scale. [k]Ctrl-R[/k] to add a vertical Loop Cut down the middle for where the roof will slope down.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-02.jpg",
+                      "caption": "Image 2 - Blocking out the house"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Blocking out the Column, Plank, and Door",
+              "content": [
+                "Place the 3D Cursor at the corner of the house and add a Cube to the scene for the columns on the corners of the house. [k]S,Z,0.9[/k], [k]S,Shift-Z,0.15[/k] to set the dimensions at 0.3m x 1.8m x 0.3m. Add another cube to be the first plank siding, [k]S,Z,0.9[/k], [k]S,X,0.2[/k], [k]S,Y,0.015[/k] to set the dimensions at 0.4m x 1.8m x 0.03m. Finally, add another cube and [k]S,Z,1[/k], [k]S,X,0.45[/k], [k]S,Y,0.05[/k]. This will be the door with dimensions 0.4m x 2m x 0.03m.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-03.jpg",
+                      "caption": "Image 3 - The house exterior props"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Materials",
+              "content": [
+                "In the Shading Workspace, create the following materials:",
+                {
+                  "section": {
+                    "header": "Wood",
+                    "content": [
+                      [
+                        [
+                          "wood.aged.timber\t#6B4F3B\tRoughness\t0.8",
+                          "wood.worn.oak\t#8C6239\tRoughness 0.675",
+                          "wood.sun.bleached.pine\t#C8B18A\tRoughness 0.725",
+                          "wood.bark.brown\t#5E4634\tRoughness 0.8",
+                          "wood.dry.straw\t#C9A861\tRoughness 0.8",
+                          "wood.weathered.driftwood\t#9A8F80\tRoughness 0.8",
+                          "neutral.black\t#1A1A1A\tRoughness 0.8"
+                        ],
+                        {
+                          "section": {
+                            "header": "Logs",
+                            "content": [
+                              {
+                                "section": {
+                                  "header": "Conifer log (pine/spruce)",
+                                  "content": [
+                                    [
+                                      [
+                                        "log.conifer.bark\t#6A5746\tRoughness\t0.825",
+                                        "log.conifer.sapwood\t#D7C6A3\tRoughness\t0.675",
+                                        "log.conifer.heartwood\t#B88952\tRoughness\t0.675"
+                                      ]
+                                    ]
+                                  ]
+                                }
+                              },
+                              {
+                                "section": {
+                                  "header": "Hardwood log (oak)",
+                                  "content": [
+                                    [
+                                      [
+                                        "log.hardwood.bark\t#5B4A3A\tRoughness\t0.875",
+                                        "log.hardwood.sapwood\t#C0A780\tRoughness\t0.65",
+                                        "log.hardwood.heartwood\t#8A603A\tRoughness\t0.65"
+                                      ]
+                                    ]
+                                  ]
+                                }
+                              },
+                              {
+                                "section": {
+                                  "header": "Birch log (white bark option)",
+                                  "content": [
+                                    [
+                                      [
+                                        "log.birch.bark\t#E7E3DB\tRoughness\t0.85",
+                                        "log.birch.inner\t#D1B992\tRoughness\t0.65"
+                                      ]
+                                    ]
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Stone",
+                    "content": [
+                      [
+                        "stone:\t#7A7A7A\tRoughness 0.8",
+                        "stone.iron.slate:\t#4C545C\tRoughness 0.8",
+                        "stone.dark.granite:\t#5A5A5A\tRoughness 0.8"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Metal",
+                    "content": [
+                      [
+                        "metal.wrought.iron:\t#2A2A2A\tMetallic 1.0\tRoughness 0.8",
+                        "metal.gunmetal:\t#43464B\tMetallic 1.0\tRoughness 0.65",
+                        "metal.blue.steel:\t#2F3A45\tMetallic 1.0\tRoughness 0.6",
+                        "metal.aged.bronze:\t#6B5635\tMetallic 1.0\tRoughness 0.7",
+                        "metal.antique.brass:\t#8E6F3E\tMetallic 1.0\tRoughness 0.625",
+                        "metal.polished.copper:\t#B66A3C\tMetallic 1.0\tRoughness 0.45"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "shield",
+                    "content": [
+                      [
+                        "shield.woad.blue:\t#2E5A88\tRoughness 0.6",
+                        "shield.oxide.red:\t#98332E\tRoughness 0.6"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Details",
+              "content": [
+                "Select the column and [k]Ctrl-R[/k] to give it three horizontal Edge Loops. Select the top loop and scale it in and add some slight rotation. Do the same on the bottom. Use the Knife Tool and the Bevel to add notches and variation to the column (Image 5).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-04.jpg",
+                      "caption": "Image 4 - Adding twists to the column"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-05.jpg",
+                      "caption": "Image 5 - Adding notches to the column"
+                    }
+                  ]
+                },
+                "Select the plank and go into Edit Mode. Select the back face and [k]RMB > Cursor to selected[/k] and then in Object Mode [k]RMB > Set Origin > Origin to 3D Cursor[/k]. This will set the plank's origin to its back face, which will be important later when positioning it on the house. Back into Edit Mode and [k]RMB > Subdivide[/k] the plank and set the Number of Cuts to 10. Turn on X-Ray Mode and start by adding some cracks to the top (Image 6). Then go down the sides and add some wobbles to change the profile, and finally add some cracks at the bottom (Image 7).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-06.jpg",
+                      "caption": "Image 6 - Adding cracks to the plank"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-07.jpg",
+                      "caption": "Image 7 - Adding variation to the plank"
+                    }
+                  ]
+                },
+                "Repeat the same steps for the door. For both the plank and the door, apply a Decimate Modifier to reduce the Triangle Count while maintaining the overall shape.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-08.jpg",
+                      "caption": "Image 8 - Decimating the plank and door to reduce the Triangle Count"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-07.jpg",
+                      "caption": "Image 7 - Adding variation to the plank"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Siding",
+              "content": [
+                "In Object Mode, turn on snapping and set the Snap Base to Center and Snap Target to Face. Move the plank onto the side of the house. With snapping on, it will snap the back face onto the side of the house (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-09.jpg",
+                      "caption": "Image 9 - Snapping the plank to the side of the house"
+                    }
+                  ]
+                },
+                "Position the door where you want it. [k]Alt-D[/k] to duplicate the column and [k]R,Y.90[/k] to rotate it. Position it above the door and scale it up to the full width of the house ([k]S,X,2.222[/k]). Add another duplicate of the column to the left of the door and another to the right to frame it (Image 10)",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-10.jpg",
+                      "caption": "Image 10 - Framing the door"
+                    }
+                  ]
+                },
+                "Go back to the plank and add an Array Modifier to it. Adjust the X Offset and the Count to make it go up to the door frame (Image 11). [k]Alt-D[/k] to create a linked duplicate of the plank and move it to the right side of the front of the house. Adjust the Array Modifier's X Offset by a negative amount to finish the siding to the right of the door (Image 12). Duplicate the plank siding all around the sides of the house, making sure to keep snapping on when aligning with the sides. Lastly, duplicate the column and place one at each corner of the house as well as above the back wall (side walls won't need it due to the roof overhang) (Image 13). Duplicate the siding on the front and back and move it to the top of the house (Image 14).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-11.jpg",
+                      "caption": "Image 11 - Siding up to the door frame"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-12.jpg",
+                      "caption": "Image 12 - Full siding on the front"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-13.jpg",
+                      "caption": "Image 13 - Full siding and columns around the house"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-14.jpg",
+                      "caption": "Image 14 - Moving the siding to the top of the house"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Cleanup",
+              "content": [
+                "At this point our collection is getting cluttered. Move all planks to a 'siding' collection, and all columns to 'support.columns'. Select the original plank and go into Edit Mode. Go to the back side that is against the house and select all faces there. [k]X,F[/k] to remove the faces. This will reduce our geometry and get rid of any z-fighting that is happening by the two faces rubbing against each other."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Materials",
+              "content": [
+                "Now let's add some colouring to the model while assets are still linked (they might not be later). Go to the Shading Workspace and assign the house the neutral.black material, and the planks, columns, and door one of the wood ones. This will provide a nice outline in between planks (Image 16).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-16.jpg",
+                      "caption": "Image 16 - Adding materials"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Roof",
+              "content": [
+                "Add a Cube to the scene. [k]S,X,1.6[/k], [k]S,Y,1.5[/k], and [k]S,Z,0.05[/k] to set the width, depth, and height. This will be our roof, so give it the dry.straw material. Subdivide the edge on the bottom end and select the new vertex (Image 17). [k]Shift-S > Cursor to Selected[/k] to move the 3D cursor there. [k]Shift-D[/k] to duplicate one of the columns and [k]RMB > Snap > Selection to Cursor[/k] to move it to the end of the roof. Rotate it flat and scale it in the x-axis to have it come out past the end of the roof to make a crossbeam. Subdivide the roof edge on the opposite side, duplicate the crossbeam and move it to the other side (Image 18). Rotate the beam so it isn't an obvious copy. Position the 3D cursor in the middle of the roof and [k]Shift-A > Lattice[/k]. In Object Mode, scale the Lattice so that it just covers the roof. With the Lattice selected, open the Data tab on the right and increase the Resolution U to increase the number of horizontal sections across the Lattice up to 5 (Image 19). Select the roof piece and add several Loop Cuts in Edit Mode (Image 20). Add a Lattice Modifier to the roof pieces (roof and side beams). With the Lattice selected, go into Edit Mode and select the middle vertices. Turn on Proportional Editing and raise up the middle vertices to add a curve to the roof (Image 20).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-17.jpg",
+                      "caption": "Image 17 - Subdividing the back edge to place the 3D cursor"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-18.jpg",
+                      "caption": "Image 18 - Adding beams on the sides of the roof"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-19.jpg",
+                      "caption": "Image 19 - Increasing the sections in the Lattice"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-20.jpg",
+                      "caption": "Image 20 - Adding topology to the roof piece"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-21.jpg",
+                      "caption": "Image 21 - Adding a curve to the roof"
+                    }
+                  ]
+                },
+                "Select the roof pieces and [k]Ctrl-J[/k] to join them together, with the middle piece as the active object. Apply the Lattice Modifier and [k]R,Y,-45[/k] to rotate it to match the angle of the roof on the house, and then move it into position and add a Mirror Modifier for the opposite side (Image 22).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-22.jpg",
+                      "caption": "Image 22 - Putting up the roof"
+                    }
+                  ]
+                },
+                "Select top plank in the front and add a Boolean Modifier. Select one of the roof sides as the Object using the eyedropper and leave the combination as Difference. This will remove vertices that intersect with the roof section. Repeat this for the other side, and do it for the other planks and columns as well (Image 23). Finish the roof off by adding a horizontal beam down the middle (Image 24).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-23.jpg",
+                      "caption": "Image 23 - Using a Boolean Modifier to shorten the siding"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-24.jpg",
+                      "caption": "Image 24 - Adding a crossbeam to the roof"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Fieldstones",
+              "content": [
+                "Create a new collection titled 'fieldstones'. Add three cubes to this collection with the following dimensions:",
+                [
+                  "Small stone:   0.3 x 0.25 x 0.2 m",
+                  "Medium stone:  0.5 x 0.4 x 0.3 m",
+                  "Large stone:   0.8 x 0.6 x 0.4 m"
+                ],
+                "Add beveling, Loop Cuts, and [k]Mesh > Transform > Randomize[/k] to the stones to add variation.",
+                "Create a new collection titled 'foundation'. [k]Shift-D[/k] to duplicate the stones and place them along the front of the house to make a foundation. Be sure to go into Edit Mode and reshape the stones to provide some variation.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-25.jpg",
+                      "caption": "Image 25 - Adding a foundation"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-25.jpg",
+                      "caption": "Image 26 - Colouring the foundation"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Door Ring",
+              "content": [
+                "Create a cylinder with 6 Vertices. Shrink it down and place it in front of the door as a handle. Inset and remove the inside to form a ring. Duplicate the ring, rotate it and place it in the door. This will hold the ring in place. Assign it one of the metal materials.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-27.jpg",
+                      "caption": "Image 27 - Adding a door ring"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Logs",
+              "content": [
+                "Create a cylinder with 32 Vertices. Go into Edit Mode and begin moving the vertices around to edit the shape. Bevel the top and bottom, and then Inset the top and bottom faces to give some topology for the sapwood and heartwood (Image 28). Add Loop Cuts for some bends. Use a Decimate Modifier to bring down the Triangle Count and then scale it. Color the logs using a log material (Image 29).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-28.jpg",
+                      "caption": "Image 28 - Shaping a log"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-29.jpg",
+                      "caption": "Image 29 - A log and a pile of firewood out front"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Shield",
+              "content": [
+                "Add a Cylinder with 10 Vertices, Radius 0.4m. Select the top face and collapse it to the bottom so it has no thickness. In Edit Mode [k]I[/k] to inset a face with a radius of 0.05m, this is the thickness of the rim. Add a few more insets until you have a final one of 0.16m - 0.18m diameter for the iron boss (Image 30). Select the out ring and [k]E[/k] to extrude it in the z-axis 0.05m. Select the inner face. [k]O[/k] to turn on Proportional Editing and [k]G,Z,0.1[/k] to raise the iron boss section and affect the rings around except, excepting the rim topology. Add a few more insets in the iron boss and then with Proportional Editing still on, [k]G,Z,0.5[/k] to create a round bump (Image 31). Apply materials: wood.worn.oak for the wooden parts, metal.gunmetal for the iron boss, and shield.woad.blue and shield.oxide.red for the paint (Image 32).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-30.jpg",
+                      "caption": "Image 30 - Insetting loops for a shield"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-31.jpg",
+                      "caption": "Image 31 - Raising the iron boss"
+                    },
+                    {
+                      "src": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house-32.jpg",
+                      "caption": "Image 32 - Adding a shield to the decor"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Grass (Optional)",
+              "content": [
+                "Add a Plane and scale it up to cover a good area. In Top View, add vertical and horizontal Loop Cuts to add topology. In Edit Mode, with Proportional Editing turned on, grab some vertices up to make the ground uneven. Add a green material."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Viking House",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Capuccino 3D/Low Poly Assets/Viking House/viking_house.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
