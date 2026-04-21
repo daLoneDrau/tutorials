@@ -308,6 +308,10 @@
                 "Delete everything from the general scene. The final model will be in a T-position, so make sure your reference images match (Image 1).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-01.jpg",
+                      "caption": "Image 1 - Deleting everything from the general scene and making sure the reference images match the T-position of the final model"
+                    }
                   ]
                 }
               ]
@@ -317,14 +321,42 @@
             "section": {
               "header": "The Torso",
               "content": [
-                "Add a cube to the scene with a Mirror Modifier in the x-axis and make it a barrel-shape to match the reference image from the front (Image 2) and side (Image 3). [k]G,G[/k] to edge slide the outer edges to give the torso a barrel shape from the top (Image 4). Add a Loop Cut in the x-axis (Image 5) and shape the outer edges to round out the torso more (Image 6).",
+                  "Add a cube to the scene with a Mirror Modifier in the x-axis and make it a barrel-shape to match the reference image from the front (Image 2) and side (Image 3). [k]G,G[/k] to edge slide the outer edges to give the torso a barrel shape from the top (Image 4). Add a Loop Cut in the x-axis (Image 5) and shape the outer edges to round out the torso more (Image 6).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-02.jpg",
+                      "caption": "Image 2 - Adding a cube to the scene with a Mirror Modifier in the x-axis and shaping it to match the reference image from the front"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-03.jpg",
+                      "caption": "Image 3 - Shaping the cube to match the reference image from the side"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-04.jpg",
+                      "caption": "Image 4 - Edge sliding the outer edges to give the torso a barrel shape from the top"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-05.jpg",
+                      "caption": "Image 5 - Adding a Loop Cut in the x-axis"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-06.jpg",
+                      "caption": "Image 6 - Shaping the outer edges to round out the torso more"
+                    }
                   ]
                 },
                 "[k]Ctrl-B[/k] to bevel the Loop Cut that was just added on the side (Image 7). Using the knife Tool, cut an edge under the pectoral and then shape it (Image 8).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-07.jpg",
+                      "caption": "Image 7 - Beveling the Loop Cut that was just added on the side"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/body-08.jpg",
+                      "caption": "Image 8 - Using the Knife Tool to cut an edge under the pectoral and then shaping it"
+                    }
                   ]
                 },
                 "[k]Numpad7[/k] into Top View, select the top faces, and [k]I,B[/k] to inset them with the boundary on the left (Image 9). Move the inset faces up (Image 10).",
