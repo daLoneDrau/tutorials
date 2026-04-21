@@ -44,15 +44,126 @@
           }
         ]
       }
-    },
+    },    
     {
       "Dungeon": {
+        "tags": ["dungeon", "door", "stairs", "arch", "column", "walls", "alcove"],
         "key_concepts": [
           "[url]Dungeon in Blender 2.8 - Low Poly 3D Isometric modeling^^https://www.youtube.com/watch?v=ZIb1WPbey3c[/url]",
           "Model a low poly dungeon scene",
           {
             "section": {
-              "header": "TBD",
+              "header": "Blocking Out",
+              "content": [
+                "Add a Plane to the scene and [k]S,4[/k] (Image 1). Select the two far outer edges and [k]E,Z,4[/k] (Image 2). [k]P[/k] to separate the two new faces, go into Edit Mode for that new object and add a Loop Cut to each face (Image 3). [k]G,Y,1[/k], [k]G,X,-1[/k] to move each edge over slightly (Image 4). Select the edge in the corner and [k]G,X,1[/k], [k]G,Y,-3[/k], [k]G,X,2[/k] to move the corner into the middle (Image 5).",
+                {
+                  "image": [
+                  ]
+                },
+                "Go back to the ground plane, select the two vertices farthest in the x-axis and [k]G,X,5.5[/k] (Image 6). Select the walls, go into Edit Mode, select the bottom vertices of the far wall and [k]E,X,3.5[/k] (Image 7). [k]RMB,S[/k] to split the edge, select the middle vertex, [k]G,Y,1[/k], [k]E,Y,-2[/k] to create two vertices in the middle of the edge (Image 8). [k]E,X,2[/k] to create a landing for some stairs (if there isn't enough room, move the opposite floor and wall over) (Image 9).",
+                {
+                  "image": [
+                  ]
+                },
+                "Grab the far wall bottom vertices and [k]E,Z,-4[/k] to extrude them down (Image 10). [k]E,Z,-4[/k] to bring down the floor near the landing as well, filling in any empty faces (Image 11).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Stairs",
+              "content": [
+                "Select the two vertices at the end of the landing and [k]P[/k] to separate them and call the new object 'stairs.east' (Image 12). In Edit Mode, [k]E,X,0.25[/k], [k]E,Z,-0.25[/k] to create the first step (Image 13). Add an Array Modifier with Count 8, Offset X 1, Offset Z -1 to complete the set of stairs (Image 14). Repeat the same process of separating, extruding, for the north side of the landing, making a 16-step staircase, and then apply both modifiers (Image 15).",
+                {
+                  "image": [
+                  ]
+                },
+                "Select a stair object, [k]A.M.B[/k] to merge extra vertices, and extrude faces down and fill in the sides of the stairs (Image 16). Repeat for the other stairs (Image 17). Fill in the gap for the landing as well (Image 18).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Background",
+              "content": [
+                "Add a Plane to the scene and make it as large as the scene (Image 19). Scale it up three times as much and then add four loop cuts in a tic-tac-toe pattern (Image 20). Delete the center square (Image 21).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Columns",
+              "content": [
+                "Select the vertex at the bottom far wall and [k]Shift-S,T[/k] to move the cursor there (Image 22). In Object Mode, add a Circle with 12 vertices and radius of 0.25m to the scene (Image 23). In Edit Mode, fill the circle and extrude it up to the height of the wall (Image 24). Select the opposite corner, place the cursor there, [k]Alt-D[/k] to make a linked duplicate of the column, and [k]Shift-S,E[/k] to move the duplicate to the opposite corner (Image 25). Add one more duplicate to the far corner (Image 26).",
+                {
+                  "image": [
+                  ]
+                },
+                "Go to the original column, select its top face and [k]Shift-S,T[/k] to move the 3D cursor there, and add a Plane on top of the column and scale it down (Image 27). Extrude the face down, and then extrude down again and scale in, creating a cap (Image 28). Select the circle's face on top and move it down so there is no z-fighting (Image 29).",
+                {
+                  "image": [
+                  ]
+                },
+                "Add two Loop Cuts toward the bottom of the column, select the faces on the bottom ring and scale them out in the x- and y-axes (Image 30). Adjust the edge loops around the ring to create a slop for the base (Image 31).",
+                {
+                  "image": [
+                  ]
+                },
+                "Select the far column that is kind of floating in air and [k]Object > Relations > Make Single User > Object & Data[/k] to unlink the column's data from the others, but leave its material the same (Image 32). Select its bottom vertices and [k]G,Z,-4[/k] to move them down (Image 33)."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Walls",
+              "content": [
+                "Select the walls and [k]Alt-E,F[/k] to thicken them (Image 34).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Adding an Alcove",
+                    "content": [
+                      "Select the wall to the left of the long stairs, put the 3D Cursor there, and add a UV Sphere with 12 segments and 8 rings to the wall (Image 35). Scale the UV Sphere down a bit ([k]S,0.8[/k]), and delete the front and bottom vertices, leaving only the back top quarter (Image 36). Select the bottom edge and extrude it down, creating a capsule shape (Image 37). Move it up a bit in the z-axis (Image 38). Select the front edge loop and [k]Shift-D,Enter,P[/k] to duplicate it and make it a separate object (Image 39). Extrude the arch frame out in the x-axis and then move the back edge in the opposite direction (Image 40). Move the right-side edge back in the x-axis to just outside the wall (Image 41). Add a floor to the alcove (Image 42). In Object Mode, select the walls and add a Boolean Modifier set to Difference and set the target object to the alcove shell (Image 43).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Adding another Alcove",
+                    "content": [
+                      "Go to the far wall and add a column to the end (Image 44). Select the wall by the column and cut it into thirds vertically with another Loop Cut about a fourth of the way from the top (Image 45). Remove the surrounding faces (Image 46). Bevel the top vertices, merge the top middle vertices at their center (Image 47). With and without Proportional Editing, [k]G,Z[k] the top vertices to make a nice rounded shape at the top (Image 48). Make sure the middle piece has a front and back side (Image 49). Turn on X-Ray Mode and [k]Ctrl-X[/k] to remove any extra vertices in the outer wall edges (Image 50). Fill in the wall around the alcove and delete its front face (Image 51). Inside the arch delete the bottom and back faces (Image 52). Select the inner arch, [k]Shift-D,Enter,P[/k] to duplicate and separate (Image 53). Add a Solidify Modifier to the arch and move the front vertices out so the arch appears outside the wall (Image 54). Position the 3D Cursor on the floor in the middle of the arch, add a Plane, rotate 90 degrees in the x-axis and then scale it to cover the entryway so that a glow effect can be added later (Image 55).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Door",
               "content": [
               ]
             }
