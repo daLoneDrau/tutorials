@@ -198,7 +198,7 @@
                       "caption": "Image 30 - Adding an Edge Loop at the back of the skull in the z-axis, and moving it out to round out the back"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-30.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-31.jpg",
                       "caption": "Image 31 - Selecting the vertices in the back and filling in the gaps with faces"
                     }
                   ]
@@ -242,37 +242,37 @@
             "section": {
               "header": "Filling in the Bottom",
               "content": [
-                "Rotate around to the bottom and turn off X-Ray Mode ([k]Alt-Z[/k]) in order to see better. Select the two vertices by the chin and back of the skull and create an edge between them ([k]F[/k]) (Image 35). [l]RMB,S[/k] to subdivide the edge and then create a face below the jaw (Image 36). Select the edge in the back and subdivide that, and then create two new faces to close out the head (Image 37). Cut an edge into the face by the front of the jaw (Image 38). In Side view, adjust the edge underneath the jaw to match the reference image (Image 39).",
+                "Rotate around to the bottom and turn off X-Ray Mode ([k]Alt-Z[/k]) in order to see better. Select the two vertices by the chin and back of the skull and create an edge between them ([k]F[/k]) (Image 37). [l]RMB,S[/k] to subdivide the edge and then create a face below the jaw (Image 38). Select the edge in the back and subdivide that, and then create two new faces to close out the head (Image 39). Cut an edge into the face by the front of the jaw (Image 40). In Side view, adjust the edge underneath the jaw to match the reference image (Image 41).",
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-35.jpg",
-                      "caption": "Image 35 - Creating an edge between the two vertices by the chin and back of the skull"
-                    },
-                    {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-36.jpg",
-                      "caption": "Image 36 - Subdividing the edge and creating a face below the jaw"
-                    },
-                    {
                       "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-37.jpg",
-                      "caption": "Image 37 - Subdividing the edge in the back and creating two new faces to close out the head"
+                      "caption": "Image 37 - Creating an edge between the two vertices by the chin and back of the skull"
                     },
                     {
                       "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-38.jpg",
-                      "caption": "Image 38 - Cutting an edge into the face by the front of the jaw"
+                      "caption": "Image 38 - Subdividing the edge and creating a face below the jaw"
                     },
                     {
                       "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-39.jpg",
-                      "caption": "Image 39 - Adjusting the edge underneath the jaw to match the reference image"
+                      "caption": "Image 39 - Subdividing the edge in the back and creating two new faces to close out the head"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-40.jpg",
+                      "caption": "Image 40 - Cutting an edge into the face by the front of the jaw"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-41.jpg",
+                      "caption": "Image 41 - Adjusting the edge underneath the jaw to match the reference image"
                     }
                   ]
                 },
-                "Cut an edge in the upper back of the head and move it out to round out the top of the head (Image 40).",
+                "Cut an edge in the upper back of the head and move it out to round out the top of the head (Image 42).",
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-40.jpg",
-                      "caption": "Image 40 - Cutting an edge in the upper back of the head and moving it out to round out the top of the head"
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-42.jpg",
+                      "caption": "Image 42 - Cutting an edge in the upper back of the head and moving it out to round out the top of the head"
                     }
                   ]
                 }
