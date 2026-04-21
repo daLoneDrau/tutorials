@@ -110,9 +110,9 @@
           },
           {
             "section": {
-              "header": "Working towards the back",
+              "header": "Working towards the Back",
               "content": [
-                "Select the vertices on the outside and extrude them towards the center of the head, following the jawline (Image 16). Adjust the contours of the line in the Front View (Image 17). From the side, adjust the top vertices to angle down (Image 18). Extrude the vertices out past the ear (Image 19) and then all the way to the back of the head (Image 20). In Top View, move the vertices along the x-axis until they meet the in the middle (Image 21).",
+                "Select the vertices on the outside and extrude them towards the center of the head, following the jawline (Image 16). Adjust the contours of the line in the Front View (Image 17). From the side, adjust the top vertices to angle down (Image 18). Extrude the vertices out past the ear (Image 19) and then all the way to the back of the head (Image 20).",
                 {
                   "image": [
                     {
@@ -134,79 +134,114 @@
                     {
                       "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-20.jpg",
                       "caption": "Image 20 - Extruding the vertices out all the way to the back of the head"
-                    },
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Rounding out the Skull",
+              "content": [
+                "In Top View, move the vertices along the x-axis until they meet the in the middle (Image 21). From the side, adjust the vertices to follow the reference image and align the contours of the edges (Image 22). Select the two middle faces at the top and extrude them along the z-axis (Image 23). From the front, move them along the x-axis until they meet in the middle (Image 24).",
+                {
+                  "image": [
                     {
                       "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-21.jpg",
                       "caption": "Image 21 - Moving the vertices along the x-axis until they meet the in the middle"
-                    }
-                  ]
-                },
-                "From the side, adjust the vertices to follow the reference image and align the contours of the edges (Image 22). Select the two middle faces at the top and extrude them along the z-axis (Image 23). From the front, move them along the x-axis until they meet in the middle (Image 24). Add a Loop Cut along the y-axis to the top faces (Image 25). Align the top vertices with the curve of the head (Image 26). Fill in the gap in front with faces (Image 27). Fix the contours of the inner Edge Loop (Image 28). From the front, move that Edge Loop out to round out the skull (Image 29). In Top View, [k]Ctrl-R[/k] to add an Edge Loop at the back of the skull in the z-axis, and then [k]G[/k] to move it out to round out the back (Image 30). Select the vertices in the back and [k]F[/k] to fill in the gaps with faces (Image 31).",
-                {
-                  "image": [
+                    },
                     {
                       "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-22.jpg",
-                      "caption": "Image 21 - Adjusting the vertices to follow the reference image and align the contours of the edges"
+                      "caption": "Image 22 - Adjusting the vertices to follow the reference image and align the contours of the edges"
                     },
                     {
                       "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-23.jpg",
-                      "caption": "Image 22 - Selecting the two middle faces at the top and extrude them along the z-axis"
+                      "caption": "Image 23 - Selecting the two middle faces at the top and extrude them along the z-axis"
                     },
                     {
                       "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-24.jpg",
-                      "caption": "Image 23 - Moving the faces along the x-axis until they meet in the middle"
-                    },
-                    {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-25.jpg",
-                      "caption": "Image 24 - Aligning the top vertices with the curve of the head"
-                    },
-                    {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-26.jpg",
-                      "caption": "Image 25 - Filling in the gap in front with faces"
-                    },
-                    {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-27.jpg",
-                      "caption": "Image 26 - Fixing the contours of the inner Edge Loop"
-                    },
-                    {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-28.jpg",
-                      "caption": "Image 27 - Moving the Edge Loop out to round out the skull"
-                    },
-                    {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-29.jpg",
-                      "caption": "Image 28 - Adding an Edge Loop at the back of the skull in the z-axis, and moving it out to round out the back"
-                    },
-                    {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-30.jpg",
-                      "caption": "Image 29 - Selecting the vertices in the back and filling in the gaps with faces"
+                      "caption": "Image 24 - Moving the faces along the x-axis until they meet in the middle"
                     }
                   ]
                 },
-                "With the Knife Tool, cut around the ear shape (Image 30). Select the ear faces and [k]E[/k] to extrude them along the x-axis (Image 31). Select the front vertices and Edge Slide them back to the head (Image 32). Adjust the contours of the ear to match the reference image from the front (Image 33) and the side (Image 34).",
+                "Add a Loop Cut along the y-axis to the top faces (Image 25). Align the top vertices with the curve of the head (Image 26). Fill in the gap in front with faces (Image 27). Fix the contours of the inner Edge Loop (Image 28).",
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-30.jpg",
-                      "caption": "Image 30 - Cut around the ear shape with the Knife Tool"
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-25.jpg",
+                      "caption": "Image 25 - Adding a Loop Cut along the y-axis to the top faces"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-31.jpg",
-                      "caption": "Image 31 - Extruding the ear faces along the x-axis"
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-26.jpg",
+                      "caption": "Image 26 - Aligning the top vertices with the curve of the head"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-32.jpg",
-                      "caption": "Image 32 - Edge Sliding the front vertices back to the head"
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-27.jpg",
+                      "caption": "Image 27 - Filling in the gap in front with faces"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-33.jpg",
-                      "caption": "Image 33 - Adjusting the contours of the ear to match the reference image from the front"
-                    },
-                    {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-34.jpg",
-                      "caption": "Image 34 - Adjusting the contours of the ear to match the reference image from the side"
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-28.jpg",
+                      "caption": "Image 28 - Fixing the contours of the inner Edge Loop"
                     }
                   ]
                 },
+                "From the front, move that Edge Loop out to round out the skull (Image 29). In Top View, [k]Ctrl-R[/k] to add an Edge Loop at the back of the skull in the z-axis, and then [k]G[/k] to move it out to round out the back (Image 30). Select the vertices in the back and [k]F[/k] to fill in the gaps with faces (Image 31).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-29.jpg",
+                      "caption": "Image 29 - Moving the Edge Loop out to round out the skull"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-30.jpg",
+                      "caption": "Image 30 - Adding an Edge Loop at the back of the skull in the z-axis, and moving it out to round out the back"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-30.jpg",
+                      "caption": "Image 31 - Selecting the vertices in the back and filling in the gaps with faces"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Ear",
+              "content": [
+                "With the Knife Tool, cut around the ear shape (Image 32). Select the ear faces and [k]E[/k] to extrude them along the x-axis (Image 33). Select the front vertices and Edge Slide them back to the head (Image 34). Adjust the contours of the ear to match the reference image from the front (Image 35) and the side (Image 36).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-32.jpg",
+                      "caption": "Image 32 - Cut around the ear shape with the Knife Tool"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-33.jpg",
+                      "caption": "Image 33 - Extruding the ear faces along the x-axis"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-34.jpg",
+                      "caption": "Image 34 - Edge Sliding the front vertices back to the head"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-35.jpg",
+                      "caption": "Image 35 - Adjusting the contours of the ear to match the reference image from the front"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Head/synty_head-36.jpg",
+                      "caption": "Image 36 - Adjusting the contours of the ear to match the reference image from the side"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Filling in the Bottom",
+              "content": [
                 "Rotate around to the bottom and turn off X-Ray Mode ([k]Alt-Z[/k]) in order to see better. Select the two vertices by the chin and back of the skull and create an edge between them ([k]F[/k]) (Image 35). [l]RMB,S[/k] to subdivide the edge and then create a face below the jaw (Image 36). Select the edge in the back and subdivide that, and then create two new faces to close out the head (Image 37). Cut an edge into the face by the front of the jaw (Image 38). In Side view, adjust the edge underneath the jaw to match the reference image (Image 39).",
                 {
                   "image": [
