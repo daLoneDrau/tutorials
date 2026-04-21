@@ -363,11 +363,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-09.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-09.jpg",
                       "caption": "Image 9 - Going to Top View, selecting the top faces, and insetting them with the boundary on"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-10.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-10.jpg",
                       "caption": "Image 10 - Moving the inset faces up"
                     }
                   ]
@@ -376,23 +376,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-11.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-11.jpg",
                       "caption": "Image 11 - Shaping the chest muscles"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-12.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-12.jpg",
                       "caption": "Image 12 - Adding a Loop Cut for the waist, rotating it slightly, and scaling it in the x-axis to match the contours of the reference image"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-13.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-13.jpg",
                       "caption": "Image 13 - Scaling the Loop Cut in the y-axis to match the contours of the reference image"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-14.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-14.jpg",
                       "caption": "Image 14 - Adding another Loop Cut for the waist, rotating, and scaling to match the reference image"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-15.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-15.jpg",
                       "caption": "Image 15 - Selecting the bottom edge loop and rotating it slightly to create a curving area for the lower abdominal"
                     }
                   ]
@@ -401,11 +401,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-16.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-16.jpg",
                       "caption": "Image 16 - Adding a Loop Cut at the middle of the chest and scaling it out in the y-axis"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-17.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-17.jpg",
                       "caption": "Image 17 - Selecting the four faces around the shoulder and arm area and extruding them"
                     }
                   ]
@@ -421,15 +421,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-18.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-18.jpg",
                       "caption": "Image 18 - Lining up the faces in the x-axis"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-19.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-19.jpg",
                       "caption": "Image 19 - Dissolving the vertices in the middle of the faces to make the edge loop for the shoulder 6 edges, then using Loop Tools to make the face into a circle"
                     },
                     {
-                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty-Style/Body/body-20.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-20.jpg",
                       "caption": "Image 20 - Scaling the circle down and positioning it for the shoulder"
                     }
                   ]
@@ -437,16 +437,76 @@
                 "Extrude the edge loop out, rotate and scale to form the end of the shoulder (Image 21). Extrude out one more edge loop (Image 22). In Top View, move the shoulders back slightly in the y-axis (Image 23). [k]G,X[/k], [k]S,X,0[/k] to extrude to the elbow (Image 24) and then to the wrist (Image 25). Add an edge loop to the forearm and then [k]S,Z[/k] to shape the arms from the front (Image 26).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-21.jpg",
+                      "caption": "Image 21 - Extruding the edge loop out, rotating and scaling to form the end of the shoulder"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-22.jpg",
+                      "caption": "Image 22 - Extruding out one more edge loop"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-23.jpg",
+                      "caption": "Image 23 - Going to Top View and moving the shoulders back slightly in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-24.jpg",
+                      "caption": "Image 24 - Moving and lining up to extrude to the elbow"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-25.jpg",
+                      "caption": "Image 25 - Extruding to the wrist"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-26.jpg",
+                      "caption": "Image 26 - Adding an edge loop to the forearm and scaling in the z-axis to shape the arms from the front"
+                    }
                   ]
                 },
                 "Select the edge loop for the elbow and [k]Shift-S,T[/k] to move the 3D Cursor there (Image 27). Change the Transform Pivot Point to 3D Cursor and rotate the forearm (Image 28). Select the loops for the shoulder and scale them up in the y-axis (Image 29). Add a Loop Cut to the middle of the upper arm, rotate, and scale (Image 30).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-27.jpg",
+                      "caption": "Image 27 - Selecting the edge loop for the elbow and moving the 3D Cursor there"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-28.jpg",
+                      "caption": "Image 28 - Changing the Transform Pivot Point to 3D Cursor and rotating the forearm"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-29.jpg",
+                      "caption": "Image 29 - Selecting the loops for the shoulder and scaling them up in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-30.jpg",
+                      "caption": "Image 30 - Adding a Loop Cut to the middle of the upper arm, rotating, and scaling"
+                    }
                   ]
                 },
                 "Add two Loop Cuts around the elbow (Image 31). Merge the vertices along the side in the center on the top and bottom (Image 32). Dissolve the edges along the side (Image 33). Scale in the edges in front and back (Image 34). Move the back edge out to form the elbow (Image 35).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-31.jpg",
+                      "caption": "Image 31 - Adding two Loop Cuts around the elbow"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-32.jpg",
+                      "caption": "Image 32 - Merging the vertices along the side in the center on the top and bottom"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-33.jpg",
+                      "caption": "Image 33 - Dissolving the edges along the side"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-34.jpg",
+                      "caption": "Image 34 - Scaling in the edges in front and back"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Synty Style/Body/body-35.jpg",
+                      "caption": "Image 35 - Moving the back edge out to form the elbow"
+                    }
                   ]
                 }
               ]
