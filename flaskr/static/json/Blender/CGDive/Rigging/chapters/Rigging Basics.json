@@ -182,21 +182,21 @@
                 {
                   "image": [
                     {
-    "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-04.jpg",
-    "caption": "Image 4 - Maneuvering the armature into place where the spine would be"
-  },
-  {
-    "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-05.jpg",
-    "caption": "Image 5 - Subdividing the armature with 2 cuts into 3 separate pieces"
-  },
-  {
-    "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-06.jpg",
-    "caption": "Image 6 - Going to Side View and moving the connections more towards the middle of the torso"
-  },
-  {
-    "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-07.jpg",
-    "caption": "Image 7 - Extruding two more bones from the tail of the spine chain for the neck and head"
-  }
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-04.jpg",
+                      "caption": "Image 4 - Maneuvering the armature into place where the spine would be"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-05.jpg",
+                      "caption": "Image 5 - Subdividing the armature with 2 cuts into 3 separate pieces"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-06.jpg",
+                      "caption": "Image 6 - Going to Side View and moving the connections more towards the middle of the torso"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-07.jpg",
+                      "caption": "Image 7 - Extruding two more bones from the tail of the spine chain for the neck and head"
+                    }
                   ]
                 }
               ]
@@ -355,6 +355,14 @@
                 "In Edit Mode select all the bones and [k]RMB,Y[/k] to symmetrize the bones (image 30). This will produce a set of right-side bones with the suffix '.R' (Image 31).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-30.jpg",
+                      "caption": "Image 30 - Going into Edit Mode, selecting all the bones and symmetrizing them"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-31.jpg",
+                      "caption": "Image 31 - Seeing a set of right-side bones produced with the suffix '.R'"
+                    }
                   ]
                 }
               ]
@@ -477,96 +485,128 @@
                 }
               ]
             }
-          }
-        ]
-      }
-    },
-    {
-      "section": {
-        "header": "Bone Collections",
-        "content": [
-          "You can also organize your bones under the Bone Collection section in the Armature tab. This is similar to Collections under the Scene Collection, you can select bones and [k]M[/k] to move them to a new or existing collection.",
+          },
           {
-            "image": [
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "section": {
-        "header": "Custom Shapes",
-        "content": [
-          "Another way to make your rig easier to work with is by setting custom shapes. In Object Mode, add a Circle to the scene (Image 1). Go back to the armature, Pose Mode, and select the IK bone, go to the [k]Bone Properties > Viewport Display > Custom Shape > Custom Object[/k] and choose the circle (Image 2). This will change the bone to display as a circle. You can adjust the Translation, Rotation, and Scale of the custom shape in the dialog (Image 3). To adjust several values at once from the dialog, [k]Shift-LMB[/k] the first value and then drag down on the other values you want and then drag left or right to decrease or increase the value. With the bone selected, got to Edit Mode, Symmetrize, and you will see the shape copied over to the right in Pose Mode (Image 4). Repeat the same steps for the spine, neck, and head bones, adjusting the scale and translation to make it easier to handle (Image 5). Finish up by updating the arm bones and symmetrizing (Image 6). Disable X-Ray Mode in Pose, Edit, and Object Mode, and now in Pose Mode you will see you can no longer see through the mesh, but can still grab the controls you need, leading to a minimal rig (Image 7).",
+            "section": {
+              "header": "Bone Collections",
+              "content": [
+                "You can also organize your bones under the Bone Collection section in the Armature tab. This is similar to Collections under the Scene Collection, you can select bones and [k]M[/k] to move them to a new or existing collection.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
           {
-            "image": [
-              {
-                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-01.jpg",
-                "caption": "Image 1 - Going to Object Mode and adding a Circle to the scene"
-              },
-              {
-                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-02.jpg",
-                "caption": "Image 2 - Going back to the armature in Pose Mode, selecting the IK bone, and choosing the circle as the Custom Object under Bone Properties > Viewport Display > Custom Shape"
-              },
-              {
-                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-03.jpg",
-                "caption": "Image 3 - Adjusting the Translation, Rotation, and Scale of the custom shape in the dialog"
-              },
-              {
-                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-04.jpg",
-                "caption": "Image 4 - Going to Edit Mode with the bone selected, symmetrizing, and seeing the shape copied over to the right in Pose Mode"
-              },
-              {
-                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-05.jpg",
-                "caption": "Image 5 - Repeating the same steps for the spine, neck, and head bones, adjusting the scale and translation to make them easier to handle"
-              },
-              {
-                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-06.jpg",
-                "caption": "Image 6 - Finishing up by updating the arm bones and symmetrizing"
-              },
-              {
-                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-07.jpg",
-                "caption": "Image 7 - Disabling X-Ray Mode in Pose, Edit, and Object Mode to show a minimal rig where controls are still accessible without seeing through the mesh"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "section": {
-        "header": "IK Pole Target",
-        "content": [
-          "An IK (Inverse Kinematics) pole target is a secondary control object used in 3D rigging to dictate the direction a bone chain bends, most commonly used for elbows and knees. It ensures joints point correctly during animation, preventing unnatural rotations by forcing the joint to point towards the pole target.",
-          "Go into Edit Mode, select the thigh bone and extrude a new bone on the y-axis (Image 1). [k]Alt-P > Clear Parent[/k] for the new bone and then move it a good distance away from the armature and rename it 'IK_pole.L' (Image 2). In Pose Mode, select shin.L, and in the Bone Constraints Properties tab set [k]Pole Target > Armature[/k] [k]Bone > IK_pole.L[/k] (Image 3). You will notice the leg flip; go to the Pole Angle setting and update the value until you can enable/disable the constraint using the eye icon button and not see any changes (Image 4). Remember to uncheck Deform in Edit Mode, since the IK Pole Target bones should not be deforming (Image 5).",
+            "section": {
+              "header": "Custom Shapes",
+              "content": [
+                "Another way to make your rig easier to work with is by setting custom shapes. In Object Mode, add a Circle to the scene (Image 1). Go back to the armature, Pose Mode, and select the IK bone, go to the [k]Bone Properties > Viewport Display > Custom Shape > Custom Object[/k] and choose the circle (Image 2). This will change the bone to display as a circle. You can adjust the Translation, Rotation, and Scale of the custom shape in the dialog (Image 3). To adjust several values at once from the dialog, [k]Shift-LMB[/k] the first value and then drag down on the other values you want and then drag left or right to decrease or increase the value. With the bone selected, got to Edit Mode, Symmetrize, and you will see the shape copied over to the right in Pose Mode (Image 4). Repeat the same steps for the spine, neck, and head bones, adjusting the scale and translation to make it easier to handle (Image 5). Finish up by updating the arm bones and symmetrizing (Image 6). Disable X-Ray Mode in Pose, Edit, and Object Mode, and now in Pose Mode you will see you can no longer see through the mesh, but can still grab the controls you need, leading to a minimal rig (Image 7).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-01.jpg",
+                      "caption": "Image 1 - Going to Object Mode and adding a Circle to the scene"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-02.jpg",
+                      "caption": "Image 2 - Going back to the armature in Pose Mode, selecting the IK bone, and choosing the circle as the Custom Object under Bone Properties > Viewport Display > Custom Shape"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-03.jpg",
+                      "caption": "Image 3 - Adjusting the Translation, Rotation, and Scale of the custom shape in the dialog"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-04.jpg",
+                      "caption": "Image 4 - Going to Edit Mode with the bone selected, symmetrizing, and seeing the shape copied over to the right in Pose Mode"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-05.jpg",
+                      "caption": "Image 5 - Repeating the same steps for the spine, neck, and head bones, adjusting the scale and translation to make them easier to handle"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-06.jpg",
+                      "caption": "Image 6 - Finishing up by updating the arm bones and symmetrizing"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-07.jpg",
+                      "caption": "Image 7 - Disabling X-Ray Mode in Pose, Edit, and Object Mode to show a minimal rig where controls are still accessible without seeing through the mesh"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
           {
-            "image": [
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "section": {
-        "header": "Simplified Leg Controls",
-        "content": [
-          "In Pose Mode you can use foot.L to move the foot around, but it would be easier to use leg_IK.L. In Edit Mode, select foot.L and then leg_IK.L as the active object and [k]Ctrl-P > Keep Offset[/k] (Image 1). Now in Pose Mode you can move the foot by rotating the IK (Image 2). Select the shin, IK, foot, and pole target and [k]RMB,Y[/k] to symmetrize them to the other side (Image 3)",
+            "section": {
+              "header": "IK Pole Target",
+              "content": [
+                "An IK (Inverse Kinematics) pole target is a secondary control object used in 3D rigging to dictate the direction a bone chain bends, most commonly used for elbows and knees. It ensures joints point correctly during animation, preventing unnatural rotations by forcing the joint to point towards the pole target.",
+                "Go into Edit Mode, select the thigh bone and extrude a new bone on the y-axis (Image 1). [k]Alt-P > Clear Parent[/k] for the new bone and then move it a good distance away from the armature and rename it 'IK_pole.L' (Image 2). In Pose Mode, select shin.L, and in the Bone Constraints Properties tab set [k]Pole Target > Armature[/k] [k]Bone > IK_pole.L[/k] (Image 3). You will notice the leg flip; go to the Pole Angle setting and update the value until you can enable/disable the constraint using the eye icon button and not see any changes (Image 4). Remember to uncheck Deform in Edit Mode, since the IK Pole Target bones should not be deforming (Image 5).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/IK Pole Target/ik_pole_target-01.jpg",
+                      "caption": "Image 1 - Going into Edit Mode, selecting the thigh bone and extruding a new bone on the y-axis"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/IK Pole Target/ik_pole_target-02.jpg",
+                      "caption": "Image 2 - Clearing the parent for the new bone, moving it a good distance away from the armature and renaming it 'IK_pole.L'"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/IK Pole Target/ik_pole_target-03.jpg",
+                      "caption": "Image 3 - Going to Pose Mode, selecting shin.L, and setting the Pole Target to the armature and the bone to IK_pole.L in the Bone Constraints Properties tab"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/IK Pole Target/ik_pole_target-04.jpg",
+                      "caption": "Image 4 - Noticing the leg flip and updating the Pole Angle setting until toggling the constraint with the eye icon shows no changes"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/IK Pole Target/ik_pole_target-05.jpg",
+                      "caption": "Image 5 - Unchecking Deform in Edit Mode since the IK Pole Target bones should not be deforming"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
           {
-            "image": [
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "section": {
-        "header": "Root Bone",
-        "content": [
-          "A root bone (or root joint) is a foundational concept in 3D character rigging and animation, representing the master control bone from which all other bones in a skeleton are parented. It acts as the parent of the entire skeleton hierarchy and dictates the overall position, rotation, and scale of the character in the world.",
-          "In Edit Mode, with the 3D Cursor at the world origin [k]Shift-A[/k] to add a new bone, [k]F2[/k] to rename it 'root', enable snapping, and move the tail so that the bone is flat on the ground (Image 1). Select all un-parented bones in the armature and parent the root bone to them (Image 2).",
+            "section": {
+              "header": "Simplified Leg Controls",
+              "content": [
+                "In Pose Mode you can use foot.L to move the foot around, but it would be easier to use leg_IK.L. In Edit Mode, select foot.L and then leg_IK.L as the active object and [k]Ctrl-P > Keep Offset[/k] (Image 1). Now in Pose Mode you can move the foot by rotating the IK (Image 2). Select the shin, IK, foot, and pole target and [k]RMB,Y[/k] to symmetrize them to the other side (Image 3).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Simplified Leg Controls/leg_controls-01.jpg",
+                      "caption": "Image 1 - Going into Edit Mode, selecting foot.L and then leg_IK.L as the active object and parenting with Keep Offset"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Simplified Leg Controls/leg_controls-02.jpg",
+                      "caption": "Image 2 - Going to Pose Mode and moving the foot by rotating the IK"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Simplified Leg Controls/leg_controls-03.jpg",
+                      "caption": "Image 3 - Selecting the shin, IK, foot, and pole target and symmetrizing them to the other side"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
           {
-            "image": [
-            ]
+            "section": {
+              "header": "Root Bone",
+              "content": [
+                "A root bone (or root joint) is a foundational concept in 3D character rigging and animation, representing the master control bone from which all other bones in a skeleton are parented. It acts as the parent of the entire skeleton hierarchy and dictates the overall position, rotation, and scale of the character in the world.",
+                "In Edit Mode, with the 3D Cursor at the world origin [k]Shift-A[/k] to add a new bone, [k]F2[/k] to rename it 'root', enable snapping, and move the tail so that the bone is flat on the ground (Image 1). Select all un-parented bones in the armature and parent the root bone to them (Image 2).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
           }
         ]
       }
