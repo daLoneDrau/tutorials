@@ -50,9 +50,93 @@
             "section": {
               "header": "Blender Armatures 101",
               "content": [
-                "[k]Shift-A > Armature[/k] to add a single bone to the scene (Image 1). Armatures in Blender are a special kind of object that contains bones, like mesh objects contain vertices and faces. Armatures have three modes: Object Mode, Edit Mode, and Pose Mode (Image 2) We create the basic armature in Edit Mode and then pose it in Pose Mode. In Edit Mode, you can apply the regular transformations to a bone, move, rotate, and scale. In Edit Mode you can manipulate the bone by two parts that are not available in Object Mode, the Head (Image 3), and the Tail (Image 4). In Edit Mode you can add more bones to the scene by pressing [k]Shift-A[/k] (Image 5). You can also add a connected bone to an existing bone's tail by pressing [k]E[/k] (Image 6). In order to extrude from a bone's head then that part need to be selected before extruding. You can also select an existing bone and [k]RMB,S[/k] to subdivide it (Image 7). You can parent bones to each other using [k]Ctrl-P[/k] (Image 8). Choosing [k]Keep Offset[/k] will keep the offset between bone and make the parent relationship (Image 9), while [k]Connected[/k] will move the child bone to the parent's tail (Image 10). When extruding or subdividing, you automatically create child bones that are connected to their parent's tail. In Edit Mode, when you apply a transformation to a parent, the child bone is not affected (Image 11). That is because in Edit Mode you are defining the default positions of the bones. Transformations applied in Pose Mode will affect the child as you expect it (Image 12). When trying to move connected bones in Pose Mode, since you cannot change offset, you are only allowed to rotate around the parent (Image 13). You can apply transforms to bones in Pose Mode, called Pose Position (Image 14), but when you go back to Edit Mode, they will be back to their original position, called Rest Position (Image 15). In Pose Mode you can go to [k]Pose > Clear Transform > All[/k] to go back to Rest Position (Image 16).",
+                "[k]Shift-A > Armature[/k] to add a single bone to the scene (Image 1). Armatures in Blender are a special kind of object that contains bones, like mesh objects contain vertices and faces. Armatures have three modes: Object Mode, Edit Mode, and Pose Mode (Image 2) We create the basic armature in Edit Mode and then pose it in Pose Mode. In Edit Mode, you can apply the regular transformations to a bone, move, rotate, and scale. In Edit Mode you can manipulate the bone by two parts that are not available in Object Mode, the Head (Image 3), and the Tail (Image 4).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-01.jpg",
+                      "caption": "Image 1 - Adding a single bone to the scene"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-02.jpg",
+                      "caption": "Image 2 - Showing the three modes available for armatures: Object Mode, Edit Mode, and Pose Mode"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-03.jpg",
+                      "caption": "Image 3 - Manipulating the Head of the bone in Edit Mode"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-04.jpg",
+                      "caption": "Image 4 - Manipulating the Tail of the bone in Edit Mode"
+                    }
+                  ]
+                },
+                "In Edit Mode you can add more bones to the scene by pressing [k]Shift-A[/k] (Image 5). You can also add a connected bone to an existing bone's tail by pressing [k]E[/k] (Image 6). In order to extrude from a bone's head then that part need to be selected before extruding. You can also select an existing bone and [k]RMB,S[/k] to subdivide it (Image 7).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-05.jpg",
+                      "caption": "Image 5 - Adding more bones to the scene in Edit Mode"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-06.jpg",
+                      "caption": "Image 6 - Adding a connected bone to an existing bone's tail by extruding"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-07.jpg",
+                      "caption": "Image 7 - Selecting an existing bone and subdividing it"
+                    }
+                  ]
+                },
+                "You can parent bones to each other using [k]Ctrl-P[/k] (Image 8). Choosing [k]Keep Offset[/k] will keep the offset between bone and make the parent relationship (Image 9), while [k]Connected[/k] will move the child bone to the parent's tail (Image 10).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-08.jpg",
+                      "caption": "Image 8 - Parenting bones to each other"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-09.jpg",
+                      "caption": "Image 9 - Choosing Keep Offset to maintain the offset between bones while creating the parent relationship"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-10.jpg",
+                      "caption": "Image 10 - Choosing Connected to move the child bone to the parent's tail"
+                    }
+                  ]
+                },
+                "When extruding or subdividing, you automatically create child bones that are connected to their parent's tail. In Edit Mode, when you apply a transformation to a parent, the child bone is not affected (Image 11). That is because in Edit Mode you are defining the default positions of the bones. Transformations applied in Pose Mode will affect the child as you expect it (Image 12). When trying to move connected bones in Pose Mode, since you cannot change offset, you are only allowed to rotate around the parent (Image 13).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-11.jpg",
+                      "caption": "Image 11 - Demonstrating that transforming a parent bone in Edit Mode does not affect the child bone"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-12.jpg",
+                      "caption": "Image 12 - Showing that transformations applied in Pose Mode affect the child bone as expected"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-13.jpg",
+                      "caption": "Image 13 - Showing that connected bones in Pose Mode can only rotate around the parent since their offset cannot be changed"
+                    }
+                  ]
+                },
+                "You can apply transforms to bones in Pose Mode, called Pose Position (Image 14), but when you go back to Edit Mode, they will be back to their original position, called Rest Position (Image 15). In Pose Mode you can go to [k]Pose > Clear Transform > All[/k] to go back to Rest Position (Image 16).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-14.jpg",
+                      "caption": "Image 14 - Applying transforms to bones in Pose Mode, known as Pose Position"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-15.jpg",
+                      "caption": "Image 15 - Returning to Edit Mode to show bones revert to their original Rest Position"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Armatures/armatures-16.jpg",
+                      "caption": "Image 16 - Going to Pose > Clear Transform > All to return to Rest Position"
+                    }
                   ]
                 }
               ]
