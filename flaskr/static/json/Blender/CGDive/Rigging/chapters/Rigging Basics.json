@@ -13,6 +13,26 @@
                 "Before exploring armatures, let's learn the basic of parenting. Add three mesh objects to the scene and position them scattered across the scene (Image 1). Select the cone and the sphere, with the cone as the active object and [k]Ctrl-P,O[/k] to parent the cone to the sphere (Image 2). If you grab the cone and move it around, the sphere will come with it (Image 3). Parent the cube to the cone; now when you move the cube, its child the cone will move with it, and the cone's child the sphere will come along as well (Image 4). When objects are parented, transformations applied to the parent (move, rotation, scale) also apply to the child (Image 5).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Parenting/parenting-01.jpg",
+                      "caption": "Image 1 - Adding three mesh objects to the scene and positioning them scattered across the scene"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Parenting/parenting-02.jpg",
+                      "caption": "Image 2 - Selecting the cone and the sphere with the cone as the active object and parenting the cone to the sphere"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Parenting/parenting-03.jpg",
+                      "caption": "Image 3 - Grabbing the cone and moving it around to show the sphere comes with it"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Parenting/parenting-04.jpg",
+                      "caption": "Image 4 - Parenting the cube to the cone so that moving the cube brings the cone and sphere along with it"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Parenting/parenting-05.jpg",
+                      "caption": "Image 5 - Demonstrating that transformations applied to the parent also apply to the child"
+                    }
                   ]
                 }
               ]
