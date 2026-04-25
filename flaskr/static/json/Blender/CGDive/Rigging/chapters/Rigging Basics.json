@@ -157,6 +157,18 @@
                 "Bring in your own mesh and then in Object Mode, [k]Shift-A > Armature[/k] and go into Edit Mode with that armature (Image 1). Go to the Data Properties tab, [k]Viewport Display > In Front[/k] and check it off to ensure the armature appears in front of the mesh (Image 2). Another option is to disable [k]Viewport Display > In Front[/k] but turn on X-Ray Mode (Image 3).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-01.jpg",
+                      "caption": "Image 1 - Bringing in a mesh and adding an Armature in Object Mode, then going into Edit Mode with that armature"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-02.jpg",
+                      "caption": "Image 2 - Going to the Data Properties tab and enabling In Front under Viewport Display to ensure the armature appears in front of the mesh"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-03.jpg",
+                      "caption": "Image 3 - Disabling In Front under Viewport Display and turning on X-Ray Mode as an alternative"
+                    }
                   ]
                 }
               ]
@@ -169,6 +181,22 @@
                 "Maneuver the armature into place where the spine would be (Image 4) and [k]RMB,S[/k] to subdivide it with 2 cuts into 3 separate pieces (Image 5). In Side View, move the connections more towards the middle of the torso (Image 6). From the tail of the spine chain, [k]E[/k] to extrude two more bones for the neck and head (Image 7).",
                 {
                   "image": [
+                    {
+    "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-04.jpg",
+    "caption": "Image 4 - Maneuvering the armature into place where the spine would be"
+  },
+  {
+    "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-05.jpg",
+    "caption": "Image 5 - Subdividing the armature with 2 cuts into 3 separate pieces"
+  },
+  {
+    "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-06.jpg",
+    "caption": "Image 6 - Going to Side View and moving the connections more towards the middle of the torso"
+  },
+  {
+    "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-07.jpg",
+    "caption": "Image 7 - Extruding two more bones from the tail of the spine chain for the neck and head"
+  }
                   ]
                 }
               ]
@@ -181,6 +209,18 @@
                 "Select a bone and open the Bone Properties tab (Image 8). You will see that the bone names will get confusing the more bones you have. Rename the bones in the Bone Properties tab, naming the three spine bones from top to bottom: 'spine_1', 'spine_2', and 'spine_3' (Image 9). Rename the neck bone to 'neck', and if you select the head bone and press [k]F2[/k] you can rename the bone right in the 3D Viewport (Image 10).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-08.jpg",
+                      "caption": "Image 8 - Selecting a bone and opening the Bone Properties tab"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-09.jpg",
+                      "caption": "Image 9 - Renaming the three spine bones from top to bottom as 'spine_1', 'spine_2', and 'spine_3' in the Bone Properties tab"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-10.jpg",
+                      "caption": "Image 10 - Renaming the neck bone to 'neck' and pressing F2 with the head bone selected to rename it directly in the 3D Viewport"
+                    }
                   ]
                 }
               ]
@@ -190,9 +230,42 @@
             "section": {
               "header": "Creating the Leg",
               "content": [
-                "In Front View [k]Shift-A[/k] to add a bone to the scene and [k]G,X[/k] to move it over to the leg (Image 11). In Side View, rotate it so the tail is pointing down, then line it up with the thigh (Image 12). Extrude another bone to the ankle, another to the ball of the foot, and one more for the toes (Image 13). Check the Front view to make sure the bones are aligned as well (Image 14). And last, check the Perspective View (Image 15). In the Side View, make sure the bones are not too straight and that there is an angle at the knee (Image 16). Name the bones 'thigh.L', 'shin.L', 'foot.L', and 'toe.L' (Image 17). These naming conventions will allow us to symmetrize the armature later.",
+                "In Front View [k]Shift-A[/k] to add a bone to the scene and [k]G,X[/k] to move it over to the leg (Image 11). In Side View, rotate it so the tail is pointing down, then line it up with the thigh (Image 12). Extrude another bone to the ankle, another to the ball of the foot, and one more for the toes (Image 13).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-11.jpg",
+                      "caption": "Image 11 - Going to Front View, adding a bone to the scene and moving it over to the leg"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-12.jpg",
+                      "caption": "Image 12 - Going to Side View, rotating the bone so the tail is pointing down and lining it up with the thigh"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-13.jpg",
+                      "caption": "Image 13 - Extruding another bone to the ankle, another to the ball of the foot, and one more for the toes"
+                    }
+                  ]
+                },
+                "Check the Front view to make sure the bones are aligned as well (Image 14). And last, check the Perspective View (Image 15). In the Side View, make sure the bones are not too straight and that there is an angle at the knee (Image 16). Name the bones 'thigh.L', 'shin.L', 'foot.L', and 'toe.L' (Image 17). These naming conventions will allow us to symmetrize the armature later.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-14.jpg",
+                      "caption": "Image 14 - Checking the Front View to make sure the bones are aligned"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-15.jpg",
+                      "caption": "Image 15 - Checking the Perspective View"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-16.jpg",
+                      "caption": "Image 16 - Checking the Side View to make sure the bones are not too straight and that there is an angle at the knee"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-17.jpg",
+                      "caption": "Image 17 - Naming the bones 'thigh.L', 'shin.L', 'foot.L', and 'toe.L' to allow for symmetrizing the armature later"
+                    }
                   ]
                 }
               ]
@@ -202,9 +275,46 @@
             "section": {
               "header": "Creating the Shoulder & Arm",
               "content": [
-                "[k]Shift-RMB[/k] to place the 3D Cursor by the shoulder and [k]Shift-A[/k] to add a bone there (Image 18). Change the Transform Pivot Point to Individual Origins and [k]S[/k] to scale down the bone (Image 19). Position the bone inside the shoulder from the Front (Image 20) and Top (Image 21). [k]Shift-D[/k] to duplicate the bone and move it to cover the arm (Image 22). [k]RMB,S[/k] to subdivide the arm bone and them extrude it down the hand (Image 23). Align the bones from the front and top (Image 24). Name the bones 'shoulder.L', 'upper_arm.L', 'lower_arm.L', and 'hand.L' (Image 25).",
+                "[k]Shift-RMB[/k] to place the 3D Cursor by the shoulder and [k]Shift-A[/k] to add a bone there (Image 18). Change the Transform Pivot Point to Individual Origins and [k]S[/k] to scale down the bone (Image 19). Position the bone inside the shoulder from the Front (Image 20) and Top (Image 21).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-18.jpg",
+                      "caption": "Image 18 - Placing the 3D Cursor by the shoulder and adding a bone there"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-19.jpg",
+                      "caption": "Image 19 - Changing the Transform Pivot Point to Individual Origins and scaling down the bone"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-20.jpg",
+                      "caption": "Image 20 - Positioning the bone inside the shoulder from the Front"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-21.jpg",
+                      "caption": "Image 21 - Positioning the bone inside the shoulder from the Top"
+                    }
+                  ]
+                },
+                "[k]Shift-D[/k] to duplicate the bone and move it to cover the arm (Image 22). [k]RMB,S[/k] to subdivide the arm bone and them extrude it down the hand (Image 23). Align the bones from the front and top (Image 24). Name the bones 'shoulder.L', 'upper_arm.L', 'lower_arm.L', and 'hand.L' (Image 25).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-22.jpg",
+                      "caption": "Image 22 - Duplicating the bone and moving it to cover the arm"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-23.jpg",
+                      "caption": "Image 23 - Subdividing the arm bone and extruding it down the hand"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-24.jpg",
+                      "caption": "Image 24 - Aligning the bones from the front and top"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-25.jpg",
+                      "caption": "Image 25 - Naming the bones 'shoulder.L', 'upper_arm.L', 'lower_arm.L', and 'hand.L'"
+                    }
                   ]
                 }
               ]
@@ -217,6 +327,22 @@
                 "We need to fix the parenting issues so that the armature is completely connected. In Edit Mode, parent the shoulder.L bone to upper_arm.L and spine_3 to shoulder.L, keeping the offset in both cases (Image 26). Parent spine_1 to thigh.L (Image 27). Now, in Pose Mode, you will see that spine_1 controls the whole armature (Image 28), and spine_3 controls transforms for its children (image 29).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-26.jpg",
+                      "caption": "Image 26 - Going into Edit Mode and parenting the shoulder.L bone to upper_arm.L and spine_3 to shoulder.L, keeping the offset in both cases"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-27.jpg",
+                      "caption": "Image 27 - Parenting spine_1 to thigh.L"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-28.jpg",
+                      "caption": "Image 28 - Going to Pose Mode and seeing that spine_1 controls the whole armature"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-29.jpg",
+                      "caption": "Image 29 - Seeing that spine_3 controls transforms for its children"
+                    }
                   ]
                 }
               ]
@@ -226,7 +352,7 @@
             "section": {
               "header": "Symmetrize",
               "content": [
-                "In Edit Mode select all the bones and [k]RMB,Y[/k] to symmetrize the bones (image 30). This will produce a set of right-side bones with the suffix '.R' (Image 31)",
+                "In Edit Mode select all the bones and [k]RMB,Y[/k] to symmetrize the bones (image 30). This will produce a set of right-side bones with the suffix '.R' (Image 31).",
                 {
                   "image": [
                   ]
@@ -241,6 +367,22 @@
                 "[k]Shift-S,W[/k] to move the 3D Cursor back to the World Origin, go back to Object Mode, select the mesh and armature with the armature as the active object and [k]CTRL-P,H[/k] to parent the armature to the mesh with automatic weighs (Image 32). Now we can go into Pose Mode and pose our armature, and the mesh should be deformed (Image 33). The armature is attached to the mesh through weights. You can visualize this by selecting the mesh in Object Mode and going to Weight Paint Mode (Image 34). In the Data Properties tab under Vertex Groups you can see the areas of the mesh assigned to a bone; blue means no control while yellow means partial and red means full control (Image 35).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-32.jpg",
+                      "caption": "Image 32 - Moving the 3D Cursor back to the World Origin, selecting the mesh and armature with the armature as the active object and parenting the armature to the mesh with automatic weights"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-33.jpg",
+                      "caption": "Image 33 - Going into Pose Mode and posing the armature to show the mesh being deformed"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-34.jpg",
+                      "caption": "Image 34 - Selecting the mesh in Object Mode and going to Weight Paint Mode to visualize the weights"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-35.jpg",
+                      "caption": "Image 35 - Viewing the areas of the mesh assigned to a bone in the Data Properties tab under Vertex Groups, where blue means no control, yellow means partial, and red means full control"
+                    }
                   ]
                 }
               ]
@@ -250,14 +392,67 @@
             "section": {
               "header": "Inverse Kinematics",
               "content": [
-                "Go into Pose Mode and select the bone connection by the ankle (Image 36). [k]E,Y[/k] to extrude a bone out in the y-axis (Image 37). We want to use this new bone to set up inverse kinematics for the leg. [k]F2[/k] and name the bone 'leg_IK.L' (Image 38). [k]Shift-LMB[/k] 'shin.L' and then [k]Ctrl-Shift-C[/k] to bring up the Add Constraints with Target menu and choose Inverse Kinematics (Image 39). This will create the constraint for you and assign the first selected bone as the target bone (Image 40). Go into Edit Mode, select leg_IK.L and [k]Alt-P[/k] to bring up the Clear Parent menu and choose Clear Parent (Image 41). Because shin.L is the parent to leg_IK.L it would cause a loop when you try to pose using leg_IK.L. Go to Pose Mode and in the Bone Constraint Properties for shin.L, change the number of bones affected by the inverse kinematics, in this case only going two bones up in the chain (Image 42). Grab the spine_1 bone and move it down; you should see the character's left leg start to squat but the foot goes through the floor (Image 43).",
+                "Go into Pose Mode and select the bone connection by the ankle (Image 36). [k]E,Y[/k] to extrude a bone out in the y-axis (Image 37). We want to use this new bone to set up inverse kinematics for the leg. [k]F2[/k] and name the bone 'leg_IK.L' (Image 38). [k]Shift-LMB[/k] 'shin.L' and then [k]Ctrl-Shift-C[/k] to bring up the Add Constraints with Target menu and choose Inverse Kinematics (Image 39). This will create the constraint for you and assign the first selected bone as the target bone (Image 40).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-36.jpg",
+                      "caption": "Image 36 - Going into Pose Mode and selecting the bone connection by the ankle"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-37.jpg",
+                      "caption": "Image 37 - Extruding a bone out in the y-axis"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-38.jpg",
+                      "caption": "Image 38 - Naming the new bone 'leg_IK.L'"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-39.jpg",
+                      "caption": "Image 39 - Shift-clicking 'shin.L' and bringing up the Add Constraints with Target menu to choose Inverse Kinematics"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-40.jpg",
+                      "caption": "Image 40 - Seeing the constraint created with the first selected bone assigned as the target bone"
+                    }
+                  ]
+                },
+                "Go into Edit Mode, select leg_IK.L and [k]Alt-P[/k] to bring up the Clear Parent menu and choose Clear Parent (Image 41). Because shin.L is the parent to leg_IK.L it would cause a loop when you try to pose using leg_IK.L. Go to Pose Mode and in the Bone Constraint Properties for shin.L, change the number of bones affected by the inverse kinematics, in this case only going two bones up in the chain (Image 42). Grab the spine_1 bone and move it down; you should see the character's left leg start to squat but the foot goes through the floor (Image 43).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-41.jpg",
+                      "caption": "Image 41 - Going into Edit Mode, selecting leg_IK.L and clearing its parent to avoid a loop when posing"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-42.jpg",
+                      "caption": "Image 42 - Going to Pose Mode and changing the number of bones affected by the inverse kinematics in the Bone Constraint Properties for shin.L to only go two bones up in the chain"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-43.jpg",
+                      "caption": "Image 43 - Grabbing the spine_1 bone and moving it down to show the character's left leg starting to squat while the foot goes through the floor"
+                    }
                   ]
                 },
                 "To fix this, go to Edit Mode, select foot.L, and [k]Alt-P > Clear Parent[/k], then in Pose Mode select shin.L, foot.L and [k]Ctrl-Shift-C > Copy Location[/k] (Image 44). This will un-parent the foot bone from the shin bone, but keep the foot bone in the same location as the shin. You will see foot.L is now moved up to shin.L (Image 45). To fix this, go to the Bone Constraints Property tab and change the Head/Tail setting to 1.0, making the foot.L bone copy the location of shin.L's tail (Image 46). Now, if you move the spine_1 bone down the left foot will stay planted (Image 47).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-44.jpg",
+                      "caption": "Image 44 - Going to Edit Mode, clearing the parent of foot.L, then in Pose Mode selecting shin.L and foot.L and adding a Copy Location constraint"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-45.jpg",
+                      "caption": "Image 45 - Seeing foot.L moved up to shin.L after un-parenting the foot bone from the shin bone"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-46.jpg",
+                      "caption": "Image 46 - Going to the Bone Constraints Property tab and changing the Head/Tail setting to 1.0 to make foot.L copy the location of shin.L's tail"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-47.jpg",
+                      "caption": "Image 47 - Moving the spine_1 bone down to show the left foot staying planted"
+                    }
                   ]
                 }
               ]
@@ -270,6 +465,14 @@
                 "Only some of the bones should deform the mesh. Inverse kinematic bones are control bones and should not deform. Select leg_IK.L and in the Bone Properties tab uncheck Deform (Image 48). This will prevent weight being applied to the bone when you parent to a mesh with automatic weights. Now, in Edit Mode select leg_IK.L, shin.L, and foot.L and [k]RMB,Y[/k] to symmetrize the IK (Image 49). Now when you move spine_1 down, both legs will squat.",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-48.jpg",
+                      "caption": "Image 48 - Selecting leg_IK.L and unchecking Deform in the Bone Properties tab to prevent weight being applied to the bone when parenting to a mesh with automatic weights"
+                    },
+                    {
+                      "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-49.jpg",
+                      "caption": "Image 49 - Going into Edit Mode, selecting leg_IK.L, shin.L, and foot.L and symmetrizing the IK"
+                    }
                   ]
                 }
               ]
@@ -297,6 +500,34 @@
           "Another way to make your rig easier to work with is by setting custom shapes. In Object Mode, add a Circle to the scene (Image 1). Go back to the armature, Pose Mode, and select the IK bone, go to the [k]Bone Properties > Viewport Display > Custom Shape > Custom Object[/k] and choose the circle (Image 2). This will change the bone to display as a circle. You can adjust the Translation, Rotation, and Scale of the custom shape in the dialog (Image 3). To adjust several values at once from the dialog, [k]Shift-LMB[/k] the first value and then drag down on the other values you want and then drag left or right to decrease or increase the value. With the bone selected, got to Edit Mode, Symmetrize, and you will see the shape copied over to the right in Pose Mode (Image 4). Repeat the same steps for the spine, neck, and head bones, adjusting the scale and translation to make it easier to handle (Image 5). Finish up by updating the arm bones and symmetrizing (Image 6). Disable X-Ray Mode in Pose, Edit, and Object Mode, and now in Pose Mode you will see you can no longer see through the mesh, but can still grab the controls you need, leading to a minimal rig (Image 7).",
           {
             "image": [
+              {
+                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-01.jpg",
+                "caption": "Image 1 - Going to Object Mode and adding a Circle to the scene"
+              },
+              {
+                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-02.jpg",
+                "caption": "Image 2 - Going back to the armature in Pose Mode, selecting the IK bone, and choosing the circle as the Custom Object under Bone Properties > Viewport Display > Custom Shape"
+              },
+              {
+                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-03.jpg",
+                "caption": "Image 3 - Adjusting the Translation, Rotation, and Scale of the custom shape in the dialog"
+              },
+              {
+                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-04.jpg",
+                "caption": "Image 4 - Going to Edit Mode with the bone selected, symmetrizing, and seeing the shape copied over to the right in Pose Mode"
+              },
+              {
+                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-05.jpg",
+                "caption": "Image 5 - Repeating the same steps for the spine, neck, and head bones, adjusting the scale and translation to make them easier to handle"
+              },
+              {
+                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-06.jpg",
+                "caption": "Image 6 - Finishing up by updating the arm bones and symmetrizing"
+              },
+              {
+                "src": "Blender/CGDive/Rigging Basics/Custom Shapes/custom_shapes-07.jpg",
+                "caption": "Image 7 - Disabling X-Ray Mode in Pose, Edit, and Object Mode to show a minimal rig where controls are still accessible without seeing through the mesh"
+              }
             ]
           }
         ]
