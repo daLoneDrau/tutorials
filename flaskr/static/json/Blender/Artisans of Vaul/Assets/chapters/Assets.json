@@ -1,0 +1,119 @@
+{
+  "sections": [
+    {
+      "Ammo Crate": {
+        "tags": ["sci-fi", "futuristic", "crate"],
+        "key_concepts": [
+          "[url]Creating an Ammo Crate for 3D printing - Full Workflow^^https://www.youtube.com/watch?v=BAIqlKUta-U[/url]",
+          "Create a futuristic ammo crate.",
+          {
+            "section": {
+              "header": "Blockong Out",
+              "content": [
+                "Start with a cube, and [k]S,Y,1.5[/k], [k]S,Z,0.75[/k] to make a box that is 2m x 3m x 1.5m and [k]Ctrl-A,S[/k] to apply the scale (Image 1).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-01.jpg",
+                      "caption": "Image 1 - Starting with a cube, scaling it to make a box that is 2m x 3m x 1.5m and applying the scale"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bevels",
+              "content": [
+                "[k]Shift-D[/k] to duplicate the box. At this point, we need to make a decision. on the first box, select the side edges ([k]Shift-G,L[/k] will select all edges in the shape with the same length) (Image 2). Give the first box a wide bevel with six cuts, and the second box a narrow bevel with two cuts (Image 3). The first box with its wider, more rounded edges looks like its made of a formed polymer, while the second looks like welded or bent steel. For the futuristic look, we will go with the polymer style. Delete the second box and undo your changes on the first.",
+                {
+                  "image": [
+                  ]
+                },
+                "Select all side edges and give it a deep bevel with one segment (Image 4). [k]Shift-G,L[/k] to select all side edges again and bevel those with six segments (Image 5). Select the bottom edge loop and bevel with six segments (Image 6).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Top",
+              "content": [
+                "Select the top face and [k]Shift-D,RMB,P,S[/k] to separate it as a new object (Image 7). In Edit Mode, [k]E,0.15[/k] to make it thicker (Image 8). In Object Mode, [k]S,Shift-Z[/k] to scale it out, but then make minor adjustments to make the thickness even in the x- and y-axes (Image 9).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Structural Support",
+              "content": [
+                "Go back to the main box, select the front face and [k]Shift-D,RMB,P,S[/k] to separate it as a new object (Image 10). [k]I[/k] to inset another face in the front face (Image 11). Select the outer vertices and [k]X,V[/k] to delete them and in Object Mode [k]G,X,Shift-drag[/k] to move the face out slightly in the x-axis to get rid of the z-fighting (Image 12).",
+                {
+                  "image": [
+                  ]
+                },
+                "With the face selected, [k]E,0.1,-[/k] to extrude the face inside the box (Image 13). In Object Mode, select the box and add a Boolean Modifier set to Difference with the front face as the Object (Image 14). If you hide the front face now, you will see that box now has an indentation on the front side where the front face was (Image 15). As long as we don't apply the modifier, wa can move the front face around and change the section being removed (Image 16). Get the front face object back to the center and flip any normals in that need it to fix the box (Image 17).",
+                {
+                  "image": [
+                  ]
+                },
+                "Add a Loop Cut to the front face (Image 18). Delete the left-half and add a Mirror Modifier in the x-axis (Image 19). Hide the larger box (Image 20). Use the Knife Tool to cut an edge from the top corner to the bottom edge (Image 21). Bevel the edge (Image 22). You will need to fix the corner up top (Image 23). Extrude the vertices of the corner face in the x-, y-, and z-axes and delete the extra vertices (Image 24). Edge Slide the vertex in the corner out to close the face (Image 25). Extrude those face out in the y-axis (Image 26). Hide the front face, unhode the box and review the effect (Image 27).",
+                {
+                  "image": [
+                  ]
+                },
+                "Hide the box again and go to work on the front face, deleting and creating faces so that in the end this is the shape we have (Image 28). Move around to the back of the front faces, set the Transform Pivot Point to Individual Origins and scale in the back faces (Image 29). Go into Vertex Select Mode and try to even out the depth on all sides (Image 30). Review the effect on the box (Image 31).",
+                {
+                  "image": [
+                  ]
+                },
+                "We need to soften the sharp edges inside the depressions, so go around to the back, select the outer edges and [k]Ctrl-B[/k] to bevel them (Image 32). Review the effect on the box again (you can really see it in Material Preview Viewport Shading) (Image 33).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Top Details",
+              "content": [
+                "Select the top face of the top and [k]Shift-D,RMB,P,S[/k] to separate it as a new object (Image 34). Go to the new top object and [k]I[/k] to inset a face (Image 35). You will have some edges that create n-gons, go to the vertices at the corners, select a group, and [k]M,A[/k] to collapse them at the center (Image 36). Repeat this all around the inset face, and merge the final corner groups to make a rectangle, and delete the outer vertices (Image 37). Move the face up slightly in the z-axis to get rid of the z-fighting (Image 38).",
+                {
+                  "image": [
+                  ]
+                },
+                "[k]E,0.1,-1[/k] to move it down into the top (Image 39). In Object Mode, select the top and add a Boolean Modifier set to Difference with the top face as the Object (Image 40). Add two loop cuts to the top face to cut it into quarters, delete the opposite vertices, and add a Mirror Modifier in the x- and y-axes (Image 41). Move the left and top edges in to create a cross shape on top (Image 42). Fill in any missing faces (Image 43). Bevel the inner corner (Image 44). Move the middle edge inwards (Image 45). Scale in the back face and bevel the edges, like you did for the front face (Image 46).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Side Details",
+              "content": [
+                "Duplicate and separate the side face as a new object, add a vertical Loop Cut, remove the left half, add a Mirror Modifier in the x-axis, inset a small face and move it towards the top (Image 47). Delete the outside vertices, move the face out in the x-axis to fix the z-fighting, extrude inwards, and add the Boolean Modifier to the box (Image 48). Inset a small face and extrude it in (Image 49). Cut an edge on the bottom face of the extrusion and [k]S,X,0[/k] to even it out (Image 50). Extrude the bottom face up, and now you have some handles (Image 51). Feel free to bevel the inside edges if you want.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
