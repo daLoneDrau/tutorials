@@ -29,11 +29,31 @@
                 "[k]Shift-D[/k] to duplicate the box. At this point, we need to make a decision. on the first box, select the side edges ([k]Shift-G,L[/k] will select all edges in the shape with the same length) (Image 2). Give the first box a wide bevel with six cuts, and the second box a narrow bevel with two cuts (Image 3). The first box with its wider, more rounded edges looks like its made of a formed polymer, while the second looks like welded or bent steel. For the futuristic look, we will go with the polymer style. Delete the second box and undo your changes on the first.",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-02.jpg",
+                      "caption": "Image 2 - Duplicating the box and selecting the side edges using Shift-G to select all edges of the same length"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-03.jpg",
+                      "caption": "Image 3 - Giving the first box a wide bevel with six cuts for a polymer look and the second box a narrow bevel with two cuts for a welded steel look"
+                    }
                   ]
                 },
                 "Select all side edges and give it a deep bevel with one segment (Image 4). [k]Shift-G,L[/k] to select all side edges again and bevel those with six segments (Image 5). Select the bottom edge loop and bevel with six segments (Image 6).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-04.jpg",
+                      "caption": "Image 4 - Selecting all side edges and giving it a deep bevel with one segment"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-05.jpg",
+                      "caption": "Image 5 - Selecting all side edges again and beveling them with six segments"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-06.jpg",
+                      "caption": "Image 6 - Selecting the bottom edge loop and beveling with six segments"
+                    }
                   ]
                 }
               ]
@@ -46,6 +66,18 @@
                 "Select the top face and [k]Shift-D,RMB,P,S[/k] to separate it as a new object (Image 7). In Edit Mode, [k]E,0.15[/k] to make it thicker (Image 8). In Object Mode, [k]S,Shift-Z[/k] to scale it out, but then make minor adjustments to make the thickness even in the x- and y-axes (Image 9).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-07.jpg",
+                      "caption": "Image 7 - Selecting the top face and duplicating it in place and separating it as a new object"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-08.jpg",
+                      "caption": "Image 8 - Going into Edit Mode and extruding to make it thicker"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-09.jpg",
+                      "caption": "Image 9 - Going to Object Mode and scaling it out while making minor adjustments to keep the thickness even in the x- and y-axes"
+                    }
                   ]
                 }
               ]
@@ -58,16 +90,93 @@
                 "Go back to the main box, select the front face and [k]Shift-D,RMB,P,S[/k] to separate it as a new object (Image 10). [k]I[/k] to inset another face in the front face (Image 11). Select the outer vertices and [k]X,V[/k] to delete them and in Object Mode [k]G,X,Shift-drag[/k] to move the face out slightly in the x-axis to get rid of the z-fighting (Image 12).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-10.jpg",
+                      "caption": "Image 10 - Going back to the main box, selecting the front face and duplicating it in place and separating it as a new object"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-11.jpg",
+                      "caption": "Image 11 - Insetting another face in the front face"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-12.jpg",
+                      "caption": "Image 12 - Selecting the outer vertices and deleting them and then moving the face out slightly in the x-axis in Object Mode to get rid of the z-fighting"
+                    }
                   ]
                 },
                 "With the face selected, [k]E,0.1,-[/k] to extrude the face inside the box (Image 13). In Object Mode, select the box and add a Boolean Modifier set to Difference with the front face as the Object (Image 14). If you hide the front face now, you will see that box now has an indentation on the front side where the front face was (Image 15). As long as we don't apply the modifier, wa can move the front face around and change the section being removed (Image 16). Get the front face object back to the center and flip any normals in that need it to fix the box (Image 17).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-13.jpg",
+                      "caption": "Image 13 - Selecting the face and extruding it inside the box"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-14.jpg",
+                      "caption": "Image 14 - Going to Object Mode, selecting the box and adding a Boolean Modifier set to Difference with the front face as the Object"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-15.jpg",
+                      "caption": "Image 15 - Hiding the front face to reveal the indentation on the front side of the box where the front face was"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-16.jpg",
+                      "caption": "Image 16 - Moving the front face around to show how the section being removed can be changed without applying the modifier"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-17.jpg",
+                      "caption": "Image 17 - Getting the front face object back to the center and flipping any normals that need it to fix the box"
+                    }
                   ]
                 },
-                "Add a Loop Cut to the front face (Image 18). Delete the left-half and add a Mirror Modifier in the x-axis (Image 19). Hide the larger box (Image 20). Use the Knife Tool to cut an edge from the top corner to the bottom edge (Image 21). Bevel the edge (Image 22). You will need to fix the corner up top (Image 23). Extrude the vertices of the corner face in the x-, y-, and z-axes and delete the extra vertices (Image 24). Edge Slide the vertex in the corner out to close the face (Image 25). Extrude those face out in the y-axis (Image 26). Hide the front face, unhode the box and review the effect (Image 27).",
+                "Add a Loop Cut to the front face (Image 18). Delete the left-half and add a Mirror Modifier in the x-axis (Image 19). Hide the larger box (Image 20). Use the Knife Tool to cut an edge from the top corner to the bottom edge (Image 21). Bevel the edge (Image 22).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-18.jpg",
+                      "caption": "Image 18 - Adding a Loop Cut to the front face"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-19.jpg",
+                      "caption": "Image 19 - Deleting the left half and adding a Mirror Modifier in the x-axis"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-20.jpg",
+                      "caption": "Image 20 - Hiding the larger box"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-21.jpg",
+                      "caption": "Image 21 - Using the Knife Tool to cut an edge from the top corner to the bottom edge"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-22.jpg",
+                      "caption": "Image 22 - Beveling the edge"
+                    }
+                  ]
+                },
+                "You will need to fix the corner up top (Image 23). Extrude the vertices of the corner face in the x-, y-, and z-axes and delete the extra vertices (Image 24). Edge Slide the vertex in the corner out to close the face (Image 25). Extrude those face out in the y-axis (Image 26). Hide the front face, unhide the box and review the effect (Image 27).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-23.jpg",
+                      "caption": "Image 23 - Fixing the corner up top"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-24.jpg",
+                      "caption": "Image 24 - Extruding the vertices of the corner face in the x-, y-, and z-axes and deleting the extra vertices"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-25.jpg",
+                      "caption": "Image 25 - Edge Sliding the vertex in the corner out to close the face"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-26.jpg",
+                      "caption": "Image 26 - Extruding those faces out in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/Ammo Crate/ammo_crate-27.jpg",
+                      "caption": "Image 27 - Hiding the front face, unhiding the box and reviewing the effect"
+                    }
                   ]
                 },
                 "Hide the box again and go to work on the front face, deleting and creating faces so that in the end this is the shape we have (Image 28). Move around to the back of the front faces, set the Transform Pivot Point to Individual Origins and scale in the back faces (Image 29). Go into Vertex Select Mode and try to even out the depth on all sides (Image 30). Review the effect on the box (Image 31).",
