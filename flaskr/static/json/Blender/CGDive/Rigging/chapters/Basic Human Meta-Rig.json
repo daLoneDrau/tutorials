@@ -13,6 +13,14 @@
                 "With Rigify enabled, [k]Shift-A > Armature > Rigify Meta-Rigs > Basic > Basic Human[/k] and add to the scene (Image 1). If the metarig doesn't match the size of your mesh, scale it down and then [k]Ctrl-A,S[/k] to apply the scale, otherwise you will have problems later (Image 2).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Basic Human Metarig/human_metarig-01.jpg",
+                      "caption": "Image 1 - Enabling Rigify and adding a Basic Human Meta-Rig to the scene"
+                    },
+                    {
+                      "src": "Blender/CGDive/Basic Human Metarig/human_metarig-02.jpg",
+                      "caption": "Image 2 - Scaling the metarig down to match the size of the mesh and applying the scale to avoid problems later"
+                    }
                   ]
                 }
               ]
