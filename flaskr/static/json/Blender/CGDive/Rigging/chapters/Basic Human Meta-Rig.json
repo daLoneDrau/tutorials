@@ -38,6 +38,18 @@
                 ],
                 {
                   "image": [
+                    {
+                      "src": "Blender/CGDive/Basic Human Metarig/human_metarig-03.jpg",
+                      "caption": "Image 3 - Selecting the metarig, going to Edit Mode, and enabling symmetry across the x-axis"
+                    },
+                    {
+                      "src": "Blender/CGDive/Basic Human Metarig/human_metarig-04.jpg",
+                      "caption": "Image 4 - Starting from the legs and aligning the metarig from the front"
+                    },
+                    {
+                      "src": "Blender/CGDive/Basic Human Metarig/human_metarig-05.jpg",
+                      "caption": "Image 5 - Aligning the metarig from the side"
+                    }
                   ]
                 },
                 {
@@ -47,6 +59,14 @@
                       "Pay special attention to the heel bone. It needs to be at the back of the heel (Image 6) and as wide as the foot (Image 7).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-06.jpg",
+                            "caption": "Image 6 - Positioning the heel bone at the back of the heel"
+                          },
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-07.jpg",
+                            "caption": "Image 7 - Making the heel bone as wide as the foot"
+                          }
                         ]
                       }
                     ]
