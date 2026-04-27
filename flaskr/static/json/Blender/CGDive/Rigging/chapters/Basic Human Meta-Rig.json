@@ -143,6 +143,10 @@
                       "[k]Alt-H[/k] to un-hide any bones and in the Data Properties tab click [k]Rigify > Generate Rig[/k] (Image 15). Then select the mesh and the new rig object that was created as the active object and [k]Ctrl-P > With Automatic Weights[/k].",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-15.jpg",
+                            "caption": "Image 15 - Un-hiding any bones and clicking Generate Rig in the Data Properties tab under Rigify"
+                          }
                         ]
                       }
                     ]
@@ -155,6 +159,10 @@
                       "An important feature of Rigify is that you can keep tweaking the rig after generation. You can go back to Edit Mode, select the metarig and move your bones around if you didn't like their position. In the Data Properties tab you will see the option has changed to [k]Rigify > Re-Generate Rig[/k] (Image 16).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-16.jpg",
+                            "caption": "Image 16 - Going back to Edit Mode on the metarig to adjust bone positions and seeing the option has changed to Re-Generate Rig in the Data Properties tab under Rigify"
+                          }
                         ]
                       }
                     ]
@@ -167,6 +175,18 @@
                       "One of the most common problems you will have with Rigify has to do with the disconnected bones. Let's say you accidentally disconnected two bones (Image 17) that lead to either a deformed rig or an error with generating one. You can fix this by turning on Snap and setting the Snape Base to Vertex (Image 18). When you move a bone's head or tail it will try to snap to the closest bone you move it near (Image 19). Another option is to select the end you want to connect to and [k]Shift-S,T[/k] to move the cursor there, select the other end and [k]Shift-S,E[/k] to move the selection to the cursor.",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-17.jpg",
+                            "caption": "Image 17 - Showing accidentally disconnected bones that lead to a deformed rig or an error when generating"
+                          },
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-18.jpg",
+                            "caption": "Image 18 - Turning on Snap and setting the Snap Base to Vertex to fix disconnected bones"
+                          },
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-19.jpg",
+                            "caption": "Image 19 - Moving a bone's head or tail to snap it to the closest bone nearby"
+                          }
                         ]
                       }
                     ]
