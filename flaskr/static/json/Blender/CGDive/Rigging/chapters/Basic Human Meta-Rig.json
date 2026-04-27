@@ -30,7 +30,7 @@
             "section": {
               "header": "Adjusting the Metarig",
               "content": [
-                "You may need to make some fine adjustments to the metarig before parenting to your mesh. Select the metarig, go to Edit Mode, and enable symmetry across the x-axis (Image 3). Starting from the legs, begin aligning the metarig from the front (Image 4) and side (Image 5):",
+                "You may need to make some fine adjustments to the metarig before parenting to your mesh. Select the metarig, go to Edit Mode, and enable symmetry across the x-axis (Image 3). Starting from the legs, begin aligning the metarig from the front (Image 4) and side (Image 5), focusing on these parts:",
                 [
                   "knees",
                   "ankles",
@@ -79,6 +79,22 @@
                       "Rotate the arm bones in Edit Mode if needed, with symmetry enabled (Image 8). Align the shoulder, elbow, and wrist from the front (Image 8), and side (Image 9). Since the basic rig has no finger bones, move the hand bone past the first knuckle. Select the collarbone and [k]R,Z[/k] to straighten it out and then move it back in the y-axis to get it inside the mesh volume (Image 10). Move the breastbones out to where the breasts would be, or delete them (Image 11).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-08.jpg",
+                            "caption": "Image 8 - Rotating the arm bones in Edit Mode with symmetry enabled and aligning the shoulder, elbow, and wrist from the front"
+                          },
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-09.jpg",
+                            "caption": "Image 9 - Aligning the shoulder, elbow, and wrist from the side"
+                          },
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-10.jpg",
+                            "caption": "Image 10 - Selecting the collarbone, rotating it in the z-axis to straighten it out and moving it back in the y-axis to get it inside the mesh volume"
+                          },
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-11.jpg",
+                            "caption": "Image 11 - Moving the breastbones out to where the breasts would be or deleting them"
+                          }
                         ]
                       }
                     ]
@@ -88,9 +104,13 @@
                   "section": {
                     "header": "The Spine and Hips",
                     "content": [
-                      "Rotate the arm bones in Edit Mode if needed, with symmetry enabled (Image 8). Align the shoulder, elbow, and wrist from the front (Image 8), and side (Image 9). Since the basic rig has no finger bones, move the hand bone past the first knuckle. Select the collarbone and [k]R,Z[/k] to straighten it out and then move it back in the y-axis to get it inside the mesh volume (Image 10). Move the breastbones out to where the breasts would be, or delete them (Image 11). Hide the leg and arm bones and them move the head parts of the hips and spine bones more towards the center of the body (Image 12).",
+                      "Hide the leg and arm bones and them move the head parts of the hips and spine bones more towards the center of the body (Image 12).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-12.jpg",
+                            "caption": "Image 12 - Hiding the leg and arm bones and moving the head parts of the hips and spine bones more towards the center of the body"
+                          }
                         ]
                       }
                     ]
