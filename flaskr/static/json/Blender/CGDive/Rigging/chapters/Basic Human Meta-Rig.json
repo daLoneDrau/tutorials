@@ -199,6 +199,10 @@
                       "Select the rig and go into Pose Mode. By default, both arms and legs will be in IK mode, meaning you pose the arms and legs using the IK controls on the hands and feet (Image 20).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-20.jpg",
+                            "caption": "Image 20 - Selecting the rig and going into Pose Mode, showing both arms and legs in IK mode with IK controls on the hands and feet"
+                          }
                         ]
                       },
                       {
@@ -208,6 +212,14 @@
                             "Select the red arrows along the thigh and [k]R,R[/k] to enable trackball-style rotation in order to rotate the knee (Image 21). You can also select the red arrows and go to the Rig Main Properties tab and enable Toggle Pole, which will display the IK Pole Target that you can use to rotate the knee (Image 22).",
                             {
                               "image": [
+                                {
+                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-21.jpg",
+                                  "caption": "Image 21 - Selecting the red arrows along the thigh and using trackball-style rotation to rotate the knee"
+                                },
+                                {
+                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-22.jpg",
+                                  "caption": "Image 22 - Selecting the red arrows, going to the Rig Main Properties tab and enabling Toggle Pole to display the IK Pole Target for rotating the knee"
+                                }
                               ]
                             }
                           ]
@@ -220,6 +232,14 @@
                             "You can turn off IK for the arms by selecting the IK control on the hand and [k]Rig Main Properties > IK-FK (hand.L) > 1.0[/k] (Image 23). Now you can control the movement of the arm using the individual arm bones (Image 24).",
                             {
                               "image": [
+                                {
+                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-23.jpg",
+                                  "caption": "Image 23 - Turning off IK for the arms by selecting the IK control on the hand and setting IK-FK to 1.0 in the Rig Main Properties"
+                                },
+                                {
+                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-24.jpg",
+                                  "caption": "Image 24 - Controlling the movement of the arm using the individual arm bones"
+                                }
                               ]
                             }
                           ]
@@ -229,9 +249,46 @@
                         "section": {
                           "header": "Torso Controls",
                           "content": [
-                            "The main torso control is the box around the hips which will move the whole torso (Image 25). A curved hips control which controls the character's butt (Image 26). A curved chest control that rotates the upper body (Image 27). There are also individual controls for the shoulders (Image 28), neck (Image 29), head (Image 30), and spine (Image 31). If you enable X-Ray Mode, inside the rig are spherical controls that allow you to bend the mesh for cartoony effects (Image 32).",
+                            "The main torso control is the box around the hips which will move the whole torso (Image 25). A curved hips control which controls the character's butt (Image 26). A curved chest control that rotates the upper body (Image 27).",
                             {
                               "image": [
+                                {
+                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-25.jpg",
+                                  "caption": "Image 25 - Using the box around the hips as the main torso control to move the whole torso"
+                                },
+                                {
+                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-26.jpg",
+                                  "caption": "Image 26 - Using the curved hips control to control the character's butt"
+                                },
+                                {
+                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-27.jpg",
+                                  "caption": "Image 27 - Using the curved chest control to rotate the upper body"
+                                }
+                              ]
+                            },
+                            "There are also individual controls for the shoulders (Image 28), neck (Image 29), head (Image 30), and spine (Image 31). If you enable X-Ray Mode, inside the rig are spherical controls that allow you to bend the mesh for cartoony effects (Image 32).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-28.jpg",
+                                  "caption": "Image 28 - Using the individual controls for the shoulders"
+                                },
+                                {
+                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-29.jpg",
+                                  "caption": "Image 29 - Using the individual controls for the neck"
+                                },
+                                {
+                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-30.jpg",
+                                  "caption": "Image 30 - Using the individual controls for the head"
+                                },
+                                {
+                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-31.jpg",
+                                  "caption": "Image 31 - Using the individual controls for the spine"
+                                },
+                                {
+                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-32.jpg",
+                                  "caption": "Image 32 - Enabling X-Ray Mode to reveal the spherical controls inside the rig that allow bending the mesh for cartoony effects"
+                                }
                               ]
                             }
                           ]
