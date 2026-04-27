@@ -1,1 +1,174 @@
-
+{
+  "title": "Part 2 - Basic Human Meta-Rig",
+  "sections": [
+    {
+      "Basic Human Meta-Rig": {
+        "key_concepts": [
+          "[url]Blender 4.0 RIGIFY Ch 3: Rigging a Simple Human^^https://www.youtube.com/watch?v=dDNUjGgCNys[/url]",
+          "Learn the basics of Rigify.",
+          {
+            "section": {
+              "header": "Basic Human Meta-Rig",
+              "content": [
+                "With Rigify enabled, [k]Shift-A > Armature > Rigify Meta-Rigs > Basic > Basic Human[/k] and add to the scene (Image 1). If the metarig doesn't match the size of your mesh, scale it down and then [k]Ctrl-A,S[/k] to apply the scale, otherwise you will have problems later (Image 2).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adjusting the Metarig",
+              "content": [
+                "You may need to make some fine adjustments to the metarig before parenting to your mesh. Select the metarig, go to Edit Mode, and enable symmetry across the x-axis (Image 3). Starting from the legs, begin aligning the metarig from the front (Image 4) and side (Image 5):",
+                [
+                  "knees",
+                  "ankles",
+                  "toes"
+                ],
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Adjusting the Metarig",
+                    "content": [
+                      "Pay special attention to the heel bone. It needs to be at the back of the heel (Image 6) and as wide as the foot (Image 7).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Aligning the Arms",
+                    "content": [
+                      "Rotate the arm bones in Edit Mode if needed, with symmetry enabled (Image 8). Align the shoulder, elbow, and wrist from the front (Image 8), and side (Image 9). Since the basic rig has no finger bones, move the hand bone past the first knuckle. Select the collarbone and [k]R,Z[/k] to straighten it out and then move it back in the y-axis to get it inside the mesh volume (Image 10). Move the breastbones out to where the breasts would be, or delete them (Image 11).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Spine and Hips",
+                    "content": [
+                      "Rotate the arm bones in Edit Mode if needed, with symmetry enabled (Image 8). Align the shoulder, elbow, and wrist from the front (Image 8), and side (Image 9). Since the basic rig has no finger bones, move the hand bone past the first knuckle. Select the collarbone and [k]R,Z[/k] to straighten it out and then move it back in the y-axis to get it inside the mesh volume (Image 10). Move the breastbones out to where the breasts would be, or delete them (Image 11). Hide the leg and arm bones and them move the head parts of the hips and spine bones more towards the center of the body (Image 12).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Aligning the Neck and Head",
+                    "content": [
+                      "When moving aligning bones along the spine, be careful not to accidentally separate them; if you do wou will get errors when you try to generate the rig. Align the two neck bones with the middle of the neck (Image 13) and the head bone with the top of the head and the back of the jaw below the ear (Image 14).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Generating the Rig",
+                    "content": [
+                      "[k]Alt-H[/k] to un-hide any bones and in the Data Properties tab click [k]Rigify > Generate Rig[/k] (Image 15). Then select the mesh and the new rig object that was created as the active object and [k]Ctrl-P > With Automatic Weights[/k].",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Tweaking & Regenerating",
+                    "content": [
+                      "An important feature of Rigify is that you can keep tweaking the rig after generation. You can go back to Edit Mode, select the metarig and move your bones around if you didn't like their position. In the Data Properties tab you will see the option has changed to [k]Rigify > Re-Generate Rig[/k] (Image 16).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Troubleshooting Disconnected Bones",
+                    "content": [
+                      "One of the most common problems you will have with Rigify has to do with the disconnected bones. Let's say you accidentally disconnected two bones (Image 17) that lead to either a deformed rig or an error with generating one. You can fix this by turning on Snap and setting the Snape Base to Vertex (Image 18). When you move a bone's head or tail it will try to snap to the closest bone you move it near (Image 19). Another option is to select the end you want to connect to and [k]Shift-S,T[/k] to move the cursor there, select the other end and [k]Shift-S,E[/k] to move the selection to the cursor.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Posing the Rig",
+                    "content": [
+                      "Select the rig and go into Pose Mode. By default, both arms and legs will be in IK mode, meaning you pose the arms and legs using the IK controls on the hands and feet (Image 19).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "Leg Controls",
+                          "content": [
+                            "Select the red arrows along the thigh and [k]R,R[/k] to enable trackball-style rotation in order to rotate the knee (Image 20). You can also select the red arrows and go to the Rig Main Properties tab and enable Toggle Pole, which will display the IK Pole Target that you can use to rotate the knee (Image 21).",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Arm Controls",
+                          "content": [
+                            "You can turn off IK for the arms by selecting the IK control on the hand and [k]Rig Main Properties > IK-FK (hand.L) > 1.0[/k] (Image 22). Now you can control the movement of the arm using the individual arm bones (Image 23).",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Torso Controls",
+                          "content": [
+                            "The main torso control is the box around the hips which will move the whole torso (Image 24). A curved hips control which controls the character's butt (Image 25). A curved chest control that rotates the upper body (Image 26). There are also individual controls for the shoulders (Image 27), neck (Image 28), head (Image 29), and spine (Image 30). If you enable X-Ray Mode, inside the rig are spherical controls that allow you to bend the mesh for cartoony effects (Image 31).",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
