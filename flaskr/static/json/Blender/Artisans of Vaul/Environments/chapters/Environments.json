@@ -1,0 +1,46 @@
+{
+  "sections": [
+    {
+      "Pipes": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Creating pipes and handles in Blender^^https://www.youtube.com/watch?v=oO2-bBQ52nY[/url]",
+          "Creating pipes that follow the topography of an already existing mesh",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Rubble": {
+        "tags": [],
+        "key_concepts": [
+          "[url]How to use scatter and cell fracture in Blender to make rubble^^https://www.youtube.com/watch?v=zHRTDQxzsLQ[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
