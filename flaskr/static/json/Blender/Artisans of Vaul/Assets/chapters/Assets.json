@@ -1,14 +1,39 @@
 {
   "sections": [
     {
+      "Air Vents": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Rip verts and edges in Blender to make a vent^^https://www.youtube.com/watch?v=8KOt9Imp_Zw[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
       "Ammo Crate": {
-        "tags": ["sci-fi", "futuristic", "crate"],
+        "tags": [
+          "sci-fi",
+          "futuristic",
+          "crate"
+        ],
         "key_concepts": [
           "[url]Creating an Ammo Crate for 3D printing - Full Workflow^^https://www.youtube.com/watch?v=BAIqlKUta-U[/url]",
           "Create a futuristic ammo crate.",
           {
             "section": {
-              "header": "Blockong Out",
+              "header": "Blocking Out",
               "content": [
                 "Start with a cube, and [k]S,Y,1.5[/k], [k]S,Z,0.75[/k] to make a box that is 2m x 3m x 1.5m and [k]Ctrl-A,S[/k] to apply the scale (Image 1).",
                 {
@@ -332,6 +357,762 @@
                     "path": "Blender/Artisans of Vaul/Assets/ammo_crate.glb",
                     "canvas_number": 1
                   }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Axe": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Using the Lattice Modifier - Creating an Axe in Blender^^https://www.youtube.com/watch?v=x0pd6syEnJA[/url]",
+          "Creating an axe head and handle",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Banner": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Creating a Banner or Flag using Blender Physics Simulator^^https://www.youtube.com/watch?v=_Dl9dMRrHIc[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Bastard Sword": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing a sword: Blender Challenge 1 Answer^^https://www.youtube.com/watch?v=I8hb9KdK9pM[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Boat Hulls": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Modelling a boat hull in Blender^^https://www.youtube.com/watch?v=P6X9JzSQ1Gk[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Boltgun": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing a Boltgun in Blender^^https://www.youtube.com/watch?v=Q1CLKY8wHl4[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Bookshelves - Part 1": {
+        "tags": [],
+        "key_concepts": [
+          "[url]The Blender 5.0 Array Makes Bookshelves Easy!^^https://www.youtube.com/watch?v=ROPcinxqDzI[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Bookshelves - Part 2": {
+        "tags": [],
+        "key_concepts": [
+          "[url]SO Powerful! The Blender 5 Array Modifier Combined With Drivers^^https://www.youtube.com/watch?v=wkv-YH-WjiI[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Brazier": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Creating a Brazier in Blender using the Twist Modifier and Intersection^^https://www.youtube.com/watch?v=Mwij21PSn8k[/url]",
+          "Creating a brazier",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Cloak": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Creating a cloak in Blender^^https://www.youtube.com/watch?v=0Gwd4OXKnts[/url]",
+          "Creating a cloak or cape",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Crystals": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Creating Stylized Crystals in Blender - What should I use?^^https://www.youtube.com/watch?v=KPi2BrIkMm0[/url]",
+          "Creating a cloak or cape",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Data Slate": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing a data slate focusing on non-destructive bevels in Hard Ops^^https://www.youtube.com/watch?v=KZKtjVhu9Hc[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Diamond-Pattern Grips": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Creating diamond pattern grips^^https://www.youtube.com/watch?v=jJPCbnqnpaw[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Fuel Can": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Fuel Can Modeling Walkthrough in Blender^^https://www.youtube.com/watch?v=5oNQpQq6sxw[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Gothic Arches I": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Gothic Arches in Blender - The best method^^https://www.youtube.com/watch?v=KIz6yxkNmKs[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Gothic Arches II": {
+        "tags": [],
+        "key_concepts": [
+          "[url]What's the best method for creating Gothic Arches? - Screw Modifier^^https://www.youtube.com/watch?v=QQ06H3kGgpk[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Gothic Style Window": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Create gothic style windows using the spin tool^^https://www.youtube.com/watch?v=-Y5JWT4eu_c[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Great Helm": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing a Great Helmet in Blender^^https://www.youtube.com/watch?v=yV5Kl4o13VE[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Horns": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Using Curves to create simple and complex horns^^https://www.youtube.com/watch?v=5BXvwqVyCQw[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Icons and Symbols": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Adding icons and symbols to objects in Blender and how to make them 3D printable^^https://www.youtube.com/watch?v=Ehd9X7UW6e4[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Mechanical leg": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing a Mechanical Leg - Modelling Workflow in Blender^^https://www.youtube.com/watch?v=NIgLh0sjt_U[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Mesh Panel": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Creating a torn mesh panel in Blender^^https://www.youtube.com/watch?v=-2hfWPP39T0[/url]",
+          "Creating torn mesh coverings",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Nut and Bolt": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Screw and Bolt - Creating simple shapes in Blender^^https://www.youtube.com/watch?v=HWL_cpNEKn8[/url]",
+          "Creating torn mesh coverings",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Pillar": {
+        "tags": [],
+        "key_concepts": [
+          "[url]The correct way to model a pillar in Blender^^https://www.youtube.com/watch?v=aGnQp-oZLYc[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Robot Foot": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing a Robot Foot in Blender^^https://www.youtube.com/watch?v=44tTSgKZu2U[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Rope": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing rope in Blender using the screw and curve modifiers^^https://www.youtube.com/watch?v=6944M14guxE[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Saber": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Creating a curved blade in Blender^^https://www.youtube.com/watch?v=zsCoOBq0QUA[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Sci-Fi Ball Turret": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing a Sci-Fi Ball Turret in Blender^^https://www.youtube.com/watch?v=WgrVgsQBVhM[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Sci-Fi Energy Mace": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing a grim-dark Mace in Blender using NO paid addons^^https://www.youtube.com/watch?v=5PQyuvGuXcU[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Sci-Fi Floor Tiles": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing sci-fi floor tiles - Hard-Ops and Uniquify^^https://www.youtube.com/watch?v=ZtmE9N3L4go[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Sci-Fi Gauntlet": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing a sci-fi armoured gauntlet^^https://www.youtube.com/watch?v=g-IPvEyS7qQ[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Sci-Fi Grenades": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing Sci-Fi Grenades in Blender^^https://www.youtube.com/watch?v=lWDcUfxr5dA[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Sci-Fi Hand Flamer": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing a Hand Flamer in Blender^^https://www.youtube.com/watch?v=mE9YZ5vkEOk[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Sci-Fi Shoulder Pad": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Designing an armoured shoulder-pad: Blender Challenge Answer^^https://www.youtube.com/watch?v=SQ7Ob-kZ2Ic[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Shield": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Using the bend modifier in Blender on complex objects - Creating a shield^^https://www.youtube.com/watch?v=zBCJjFQtwig[/url]",
+          "Creating a curved shield in Blender",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Tavern Scatter": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Goblets, glasses, vases and tankards - General table scatter for a tavern^^https://www.youtube.com/watch?v=YRfIeIdNtbY[/url]",
+          "Creating a variety of goblets, cups, ",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Window Frame": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Using the shear tool to create an ornate window frame^^https://www.youtube.com/watch?v=GS4uU7L27oY[/url]",
+          "Creating a curved shield in Blender",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
                 }
               ]
             }
