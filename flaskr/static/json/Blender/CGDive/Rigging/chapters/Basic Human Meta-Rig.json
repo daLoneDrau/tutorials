@@ -1,25 +1,28 @@
 {
-  "title": "Part 2 - Basic Human Meta-Rig",
+  "title": "Playstation 1 characters in blender",
   "sections": [
     {
-      "Basic Human Meta-Rig": {
+      "PS1 Style Modeling for Beginners": {
         "key_concepts": [
-          "[url]Blender 4.0 RIGIFY Ch 3: Rigging a Simple Human^^https://www.youtube.com/watch?v=dDNUjGgCNys[/url]",
-          "Learn the basics of Rigify.",
+          "[url]Blender Low Poly Character: PS1 Style Modeling for Beginners^^https://www.youtube.com/watch?v=uIHuqFLa_X0[/url]",
           {
             "section": {
-              "header": "Basic Human Meta-Rig",
+              "header": "Why PS1 Low Poly?",
               "content": [
-                "With Rigify enabled, [k]Shift-A > Armature > Rigify Meta-Rigs > Basic > Basic Human[/k] and add to the scene (Image 1). If the metarig doesn't match the size of your mesh, scale it down and then [k]Ctrl-A,S[/k] to apply the scale, otherwise you will have problems later (Image 2).",
+                "PlayStation 1 models were created with overlapping sections and are relatively straightforward to produce."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Set up Reference Images",
+              "content": [
+                "Start with a new scene. [k]A,Del[/k] to remove the default camera, cube, and light. Add your reference image in both front and side views (Image 1).",
                 {
                   "image": [
                     {
-                      "src": "Blender/CGDive/Basic Human Metarig/human_metarig-01.jpg",
-                      "caption": "Image 1 - Enabling Rigify and adding a Basic Human Meta-Rig to the scene"
-                    },
-                    {
-                      "src": "Blender/CGDive/Basic Human Metarig/human_metarig-02.jpg",
-                      "caption": "Image 2 - Scaling the metarig down to match the size of the mesh and applying the scale to avoid problems later"
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-01.jpg",
+                      "caption": "Image 1 - Positioning reference images"
                     }
                   ]
                 }
@@ -28,44 +31,126 @@
           },
           {
             "section": {
-              "header": "Adjusting the Metarig",
+              "header": "The Head",
               "content": [
-                "You may need to make some fine adjustments to the metarig before parenting to your mesh. Select the metarig, go to Edit Mode, and enable symmetry across the x-axis (Image 3). Starting from the legs, begin aligning the metarig from the front (Image 4) and side (Image 5), focusing on these parts:",
-                [
-                  "knees",
-                  "ankles",
-                  "toes"
-                ],
+                "[k]Shift-A > Mesh > Cube[/k] to add a cube to the scene, move it up ([k]G,Z[/k]) to the head and [k]S[/k] to scale it down to a similar width (Image 2). [k]Tab[/k] into Edit Mode, [k]Ctrl-R[/k] to add a Loop Cut down the middle, delete the left half, and add a Mirror Modifier across the x-axis (Image 3). Begin shaping the head, moving the top vertices up and out (Image 4) and the bottom vertices in and down (Image 5).",
                 {
                   "image": [
                     {
-                      "src": "Blender/CGDive/Basic Human Metarig/human_metarig-03.jpg",
-                      "caption": "Image 3 - Selecting the metarig, going to Edit Mode, and enabling symmetry across the x-axis"
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-02.jpg",
+                      "caption": "Image 2 - Adding a cube to the scene, moving it up to the head and scaling it down to a similar width"
                     },
                     {
-                      "src": "Blender/CGDive/Basic Human Metarig/human_metarig-04.jpg",
-                      "caption": "Image 4 - Starting from the legs and aligning the metarig from the front"
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-03.jpg",
+                      "caption": "Image 3 - Going into Edit Mode, adding a Loop Cut down the middle, deleting the left half, and adding a Mirror Modifier across the x-axis"
                     },
                     {
-                      "src": "Blender/CGDive/Basic Human Metarig/human_metarig-05.jpg",
-                      "caption": "Image 5 - Aligning the metarig from the side"
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-04.jpg",
+                      "caption": "Image 4 - Beginning to shape the head by moving the top vertices up and out"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-05.jpg",
+                      "caption": "Image 5 - Moving the bottom vertices in and down"
+                    }
+                  ]
+                },
+                "Add a horizontal Loop Cut and drag the outer edge out to the ear (Image 6). Drag the top edge inwards if it stands out too far now that the cheekbones are shaped (Image 7). Add a Loop Cut to the top of the head and drag the outer edge out (Image 8), and add another Loop Cut to the bottom half and line its vertices up with the nose and cheeks (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-06.jpg",
+                      "caption": "Image 6 - Adding a horizontal Loop Cut and dragging the outer edge out to the ear"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-07.jpg",
+                      "caption": "Image 7 - Dragging the top edge inwards if it stands out too far now that the cheekbones are shaped"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-08.jpg",
+                      "caption": "Image 8 - Adding a Loop Cut to the top of the head and dragging the outer edge out"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-09.jpg",
+                      "caption": "Image 9 - Adding another Loop Cut to the bottom half and lining its vertices up with the nose and cheeks"
+                    }
+                  ]
+                },
+                "[k]Numpad3[/k] into Side View and grab the top vertices and [k]G,Y[/k] to move them in along the y-axis (Image 10). Going clockwise around the head, shape the remaining vertices along the contours of the head (Image 11). Do the same thing for the front vertices (Image 12). Grab the vertices by the forehead and [k]R[/k] to rotate them to match the slope (Image 13). Add a Loop Cut down the middle (Image 14).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-10.jpg",
+                      "caption": "Image 10 - Going to Side View and grabbing the top vertices and moving them in along the y-axis"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-11.jpg",
+                      "caption": "Image 11 - Going clockwise around the head, shaping the remaining vertices along the contours of the head"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-12.jpg",
+                      "caption": "Image 12 - Doing the same thing for the front vertices"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-13.jpg",
+                      "caption": "Image 13 - Grabbing the vertices by the forehead and rotating them to match the slope"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-14.jpg",
+                      "caption": "Image 14 - Adding a Loop Cut down the middle"
+                    }
+                  ]
+                },
+                "Select the front vertices (Image 15). [k]Numpad7[/k] into Top View and [k]G,G[/k] to slide them in along the y- and x-axes to round out the head (Image 16). Do the same with the back vertices (Image 17). In the Side View move some vertices in the top (Image 18) and bottom (Image 19) to round out the shape and better match the reference image. In Front View, you may need to make some adjustments for the jaw line (Image 20) and eyebrow (Image 21).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-15.jpg",
+                      "caption": "Image 15 - Selecting the front vertices"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-16.jpg",
+                      "caption": "Image 16 - Going to Top View and sliding the vertices in along the y- and x-axes to round out the head"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-17.jpg",
+                      "caption": "Image 17 - Doing the same with the back vertices"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-18.jpg",
+                      "caption": "Image 18 - Moving some vertices in the top in Side View to round out the shape and better match the reference image"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-19.jpg",
+                      "caption": "Image 19 - Moving some vertices in the bottom in Side View to round out the shape and better match the reference image"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-20.jpg",
+                      "caption": "Image 20 - Making adjustments for the jaw line in Front View"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-21.jpg",
+                      "caption": "Image 21 - Making adjustments for the eyebrow in Front View"
                     }
                   ]
                 },
                 {
                   "section": {
-                    "header": "Adjusting the Metarig",
+                    "header": "Extruding the Neck (Overlapping PS1 Style)",
                     "content": [
-                      "Pay special attention to the heel bone. It needs to be at the back of the heel (Image 6) and as wide as the foot (Image 7).",
+                      "[k]3[/k] into Face Mode and select the bottom face of the head. [k]E[/k] to extrude it down to about the collar bone (Image 22). We do this so that the neck will overlap with the chest. Go into Side View and [k]S[/k] to [k]S,Y[/k], [k]G,Y[/k] the bottom faces and move them back to keep the contours of the neck (Image 23). Add a Loop Cut to the neck, and then in Front and Side Views, [k]S,X[/k], [k]S,Y[/k] to scale it in to match the neck shape (Image 24).",
                       {
                         "image": [
                           {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-06.jpg",
-                            "caption": "Image 6 - Positioning the heel bone at the back of the heel"
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-22.jpg",
+                            "caption": "Image 22 - Going into Face Mode, selecting the bottom face of the head and extruding it down to about the collar bone"
                           },
                           {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-07.jpg",
-                            "caption": "Image 7 - Making the heel bone as wide as the foot"
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-23.jpg",
+                            "caption": "Image 23 - Going into Side View, scaling and moving the bottom faces back to keep the contours of the neck"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-24.jpg",
+                            "caption": "Image 24 - Adding a Loop Cut to the neck and then scaling it in the x- and y-axes in Front and Side Views to match the neck shape"
                           }
                         ]
                       }
@@ -74,220 +159,942 @@
                 },
                 {
                   "section": {
-                    "header": "Aligning the Arms",
+                    "header": "Modeling the Nose and Ear Details",
                     "content": [
-                      "Rotate the arm bones in Edit Mode if needed, and align the shoulder, elbow, and wrist from the front (Image 8), and top (Image 9). Since the basic rig has no finger bones, move the hand bone past the first knuckle. Select the collarbone and [k]R,Z[/k] to straighten it out and then move it back in the y-axis to get it inside the mesh volume (Image 10). Move the breastbones out to where the breasts would be, or delete them (Image 11).",
+                      "Go to Front View and add a vertical Loop Cut, moving it in towards the edge of the nose (Image 25). Select the vertex by the top of the nose and [k]G,G[/k] to slide it in (Image 26). Grab the face by the nose and [k]E[/k] to extrude it out (Image 27). Select the front face the nose and [k]G[/k], [k]S[/k], [k]R[/k] to grab, scale, and rotate the tip of the nose until you have a good shape (Image 28). Grab the two vertices under the nose and move them as well to help the shape (Image 29).",
                       {
                         "image": [
                           {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-08.jpg",
-                            "caption": "Image 8 - Rotating the arm bones in Edit Mode with symmetry enabled and aligning the shoulder, elbow, and wrist from the front"
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-25.jpg",
+                            "caption": "Image 25 - Going to Front View and adding a vertical Loop Cut, moving it in towards the edge of the nose"
                           },
                           {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-09.jpg",
-                            "caption": "Image 9 - Aligning the shoulder, elbow, and wrist from the side"
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-26.jpg",
+                            "caption": "Image 26 - Selecting the vertex by the top of the nose and sliding it in"
                           },
                           {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-10.jpg",
-                            "caption": "Image 10 - Selecting the collarbone, rotating it in the z-axis to straighten it out and moving it back in the y-axis to get it inside the mesh volume"
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-27.jpg",
+                            "caption": "Image 27 - Grabbing the face by the nose and extruding it out"
                           },
                           {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-11.jpg",
-                            "caption": "Image 11 - Moving the breastbones out to where the breasts would be or deleting them"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                },
-                {
-                  "section": {
-                    "header": "The Spine and Hips",
-                    "content": [
-                      "Hide the leg and arm bones and them move the head parts of the hips and spine bones more towards the center of the body (Image 12).",
-                      {
-                        "image": [
-                          {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-12.jpg",
-                            "caption": "Image 12 - Hiding the leg and arm bones and moving the head parts of the hips and spine bones more towards the center of the body"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                },
-                {
-                  "section": {
-                    "header": "Aligning the Neck and Head",
-                    "content": [
-                      "When moving aligning bones along the spine, be careful not to accidentally separate them; if you do wou will get errors when you try to generate the rig. Align the two neck bones with the middle of the neck (Image 13) and the head bone with the top of the head and the back of the jaw below the ear (Image 14).",
-                      {
-                        "image": [
-                          {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-13.jpg",
-                            "caption": "Image 13 - Aligning the two neck bones with the middle of the neck"
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-28.jpg",
+                            "caption": "Image 28 - Selecting the front face of the nose and grabbing, scaling, and rotating the tip of the nose until achieving a good shape"
                           },
                           {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-14.jpg",
-                            "caption": "Image 14 - Aligning the head bone with the top of the head and the back of the jaw below the ear"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                },
-                {
-                  "section": {
-                    "header": "Generating the Rig",
-                    "content": [
-                      "[k]Alt-H[/k] to un-hide any bones and in the Data Properties tab click [k]Rigify > Generate Rig[/k] (Image 15). Then select the mesh and the new rig object that was created as the active object and [k]Ctrl-P > With Automatic Weights[/k].",
-                      {
-                        "image": [
-                          {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-15.jpg",
-                            "caption": "Image 15 - Un-hiding any bones and clicking Generate Rig in the Data Properties tab under Rigify"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                },
-                {
-                  "section": {
-                    "header": "Tweaking & Regenerating",
-                    "content": [
-                      "An important feature of Rigify is that you can keep tweaking the rig after generation. You can go back to Edit Mode, select the metarig and move your bones around if you didn't like their position. In the Data Properties tab you will see the option has changed to [k]Rigify > Re-Generate Rig[/k] (Image 16).",
-                      {
-                        "image": [
-                          {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-16.jpg",
-                            "caption": "Image 16 - Going back to Edit Mode on the metarig to adjust bone positions and seeing the option has changed to Re-Generate Rig in the Data Properties tab under Rigify"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                },
-                {
-                  "section": {
-                    "header": "Troubleshooting Disconnected Bones",
-                    "content": [
-                      "One of the most common problems you will have with Rigify has to do with the disconnected bones. Let's say you accidentally disconnected two bones (Image 17) that lead to either a deformed rig or an error with generating one. You can fix this by turning on Snap and setting the Snape Base to Vertex (Image 18). When you move a bone's head or tail it will try to snap to the closest bone you move it near (Image 19). Another option is to select the end you want to connect to and [k]Shift-S,T[/k] to move the cursor there, select the other end and [k]Shift-S,E[/k] to move the selection to the cursor.",
-                      {
-                        "image": [
-                          {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-17.jpg",
-                            "caption": "Image 17 - Showing accidentally disconnected bones that lead to a deformed rig or an error when generating"
-                          },
-                          {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-18.jpg",
-                            "caption": "Image 18 - Turning on Snap and setting the Snap Base to Vertex to fix disconnected bones"
-                          },
-                          {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-19.jpg",
-                            "caption": "Image 19 - Moving a bone's head or tail to snap it to the closest bone nearby"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                },
-                {
-                  "section": {
-                    "header": "Posing the Rig",
-                    "content": [
-                      "Select the rig and go into Pose Mode. By default, both arms and legs will be in IK mode, meaning you pose the arms and legs using the IK controls on the hands and feet (Image 20).",
-                      {
-                        "image": [
-                          {
-                            "src": "Blender/CGDive/Basic Human Metarig/human_metarig-20.jpg",
-                            "caption": "Image 20 - Selecting the rig and going into Pose Mode, showing both arms and legs in IK mode with IK controls on the hands and feet"
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-29.jpg",
+                            "caption": "Image 29 - Grabbing the two vertices under the nose and moving them to help the shape"
                           }
                         ]
                       },
+                      "Go to Side View and select the two faces around the ear and [k]I[/k] to inset faces for the ear (Image 30). [k]E[/k] to extrude them out (Image 31) and shape them as best you can (Image 32).",
                       {
-                        "section": {
-                          "header": "Leg Controls",
-                          "content": [
-                            "Select the red arrows along the thigh and [k]R,R[/k] to enable trackball-style rotation in order to rotate the knee (Image 21). You can also select the red arrows and go to the Rig Main Properties tab and enable Toggle Pole, which will display the IK Pole Target that you can use to rotate the knee (Image 22).",
-                            {
-                              "image": [
-                                {
-                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-21.jpg",
-                                  "caption": "Image 21 - Selecting the red arrows along the thigh and using trackball-style rotation to rotate the knee"
-                                },
-                                {
-                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-22.jpg",
-                                  "caption": "Image 22 - Selecting the red arrows, going to the Rig Main Properties tab and enabling Toggle Pole to display the IK Pole Target for rotating the knee"
-                                }
-                              ]
-                            }
-                          ]
-                        }
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-30.jpg",
+                            "caption": "Image 30 - Going to Side View, selecting the two faces around the ear and insetting faces for the ear"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-31.jpg",
+                            "caption": "Image 31 - Extruding them out"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-32.jpg",
+                            "caption": "Image 32 - Shaping them as best you can"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Modeling the Torso and Body",
+              "content": [
+                "Add a Cube to the scene and give it a Mirror Modifier in the x-axis with clipping enabled (Image 33). Add a vertical Loop Cut and line up the top inside vertices where the neck meets the torso (Image 34). Move the outside vertices to where the shoulder begins (Image 35). Make a horizontal Loop Cut lined up with the arm socket (Image 36). Grab the bottom vertices and move them up to above the belly button and then [k]S,X[/k] to scale them in (Image 37). Make another horizontal Loop Cut towards the bottom of the rib cage and again [k]S,X[/k] to bring them in (Image 38).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-33.jpg",
+                      "caption": "Image 33 - Adding a Cube to the scene and giving it a Mirror Modifier in the x-axis with clipping enabled"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-34.jpg",
+                      "caption": "Image 34 - Adding a vertical Loop Cut and lining up the top inside vertices where the neck meets the torso"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-35.jpg",
+                      "caption": "Image 35 - Moving the outside vertices to where the shoulder begins"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-36.jpg",
+                      "caption": "Image 36 - Making a horizontal Loop Cut lined up with the arm socket"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-37.jpg",
+                      "caption": "Image 37 - Grabbing the bottom vertices and moving them up to above the belly button and then scaling them in"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-38.jpg",
+                      "caption": "Image 38 - Making another horizontal Loop Cut towards the bottom of the rib cage and scaling them in"
+                    }
+                  ]
+                },
+                "[k]Numpad3[/k] into Side View and move the top edge to match the image reference (Image 39). Position the next edge around the chest and back (Image 40). Move down to the next edge and place them under the pectoral (Image 41). Select the bottom edge and [k]G,Y[/k], [k]S,Y[/k] it into position (Image 42). [k]Ctrl-R[/k] to add a vertical Loop Cut to the side (Image 43). In Top View, [k]G,G[/k] the front and back edges to round out the torso (Image 44).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-39.jpg",
+                      "caption": "Image 39 - Going to Side View and moving the top edge to match the image reference"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-40.jpg",
+                      "caption": "Image 40 - Positioning the next edge around the chest and back"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-41.jpg",
+                      "caption": "Image 41 - Moving down to the next edge and placing them under the pectoral"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-42.jpg",
+                      "caption": "Image 42 - Selecting the bottom edge and moving and scaling it into position"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-43.jpg",
+                      "caption": "Image 43 - Adding a vertical Loop Cut to the side"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-44.jpg",
+                      "caption": "Image 44 - Going to Top View and sliding the front and back edges to round out the torso"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Modeling the Hips",
+              "content": [
+                "Add a new cube for the hips and give it a Mirror Modifier (Image 45). Go into Edit Mode and shape the hips from the front (Image 46) and the side (Image 47). Add a Loop Cut in the y-axis (Image 48) and then [k]S,Y[/k] the outer hip face to add some roundness (Image 49).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-45.jpg",
+                      "caption": "Image 45 - Adding a new cube for the hips and giving it a Mirror Modifier"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-46.jpg",
+                      "caption": "Image 46 - Going into Edit Mode and shaping the hips from the front"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-47.jpg",
+                      "caption": "Image 47 - Shaping the hips from the side"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-48.jpg",
+                      "caption": "Image 48 - Adding a Loop Cut in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-49.jpg",
+                      "caption": "Image 49 - Scaling the outer hip face in the y-axis to add some roundness"
+                    }
+                  ]
+                },
+                "Add a Loop Cut in the x-axis (Image 50) and then adjust that edge to match the contours of the reference image (Image 51). If you want, you can add another Loop Cut in the y-axis and then adjust that edge to match the contours of the lower back (Image 52). In Top View, add a Loop Cut in the x-axis (Image 53) and then select the Edge Loops on either side and [k]G,G[/k] to Edge Slide them in to round out the hips (Image 54).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-50.jpg",
+                      "caption": "Image 50 - Adding a Loop Cut in the x-axis"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-51.jpg",
+                      "caption": "Image 51 - Adjusting that edge to match the contours of the reference image"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-52.jpg",
+                      "caption": "Image 52 - Adding another Loop Cut in the y-axis and adjusting that edge to match the contours of the lower back"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-53.jpg",
+                      "caption": "Image 53 - Going to Top View and adding a Loop Cut in the x-axis"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-54.jpg",
+                      "caption": "Image 54 - Selecting the Edge Loops on either side and Edge Sliding them in to round out the hips"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating the Arms and Hands",
+              "content": [
+                {
+                  "section": {
+                    "header": "The Upper Arm",
+                    "content": [
+                      "Add a cube to the scene and move it up to the shoulder area (Image 55). [k]R[/k], [k]G[/k], [k]S,Z[/k] until is approximates the upper arm (Image 56). Rotate around to Side View and rotate and move the arm into position matching the reference image (Image 57). Go into Top View and make sure it's not too far off from the shoulder area (Image 58).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-55.jpg",
+                            "caption": "Image 55 - Adding a cube to the scene and moving it up to the shoulder area"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-56.jpg",
+                            "caption": "Image 56 - Rotating, moving, and scaling it in the z-axis until it approximates the upper arm"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-57.jpg",
+                            "caption": "Image 57 - Rotating around to Side View and rotating and moving the arm into position matching the reference image"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-58.jpg",
+                            "caption": "Image 58 - Going to Top View and making sure it's not too far off from the shoulder area"
+                          }
+                        ]
                       },
+                      "Go into Edit Mode, select the back face and scale it up and move it into to overlap the torso (Image 59). Add a Loop Cut near the top of the arm (Image 60). Select the outer edge and move it up to create a curve for the shoulder (Image 61). Move the opposite edge back (Image 62). Scale in the bottom edge for the elbow joint (Image 63).",
                       {
-                        "section": {
-                          "header": "Arm Controls",
-                          "content": [
-                            "You can turn off IK for the arms by selecting the IK control on the hand and [k]Rig Main Properties > IK-FK (hand.L) > 1.0[/k] (Image 23). Now you can control the movement of the arm using the individual arm bones (Image 24).",
-                            {
-                              "image": [
-                                {
-                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-23.jpg",
-                                  "caption": "Image 23 - Turning off IK for the arms by selecting the IK control on the hand and setting IK-FK to 1.0 in the Rig Main Properties"
-                                },
-                                {
-                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-24.jpg",
-                                  "caption": "Image 24 - Controlling the movement of the arm using the individual arm bones"
-                                }
-                              ]
-                            }
-                          ]
-                        }
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-59.jpg",
+                            "caption": "Image 59 - Going into Edit Mode, selecting the back face and scaling it up and moving it to overlap the torso"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-60.jpg",
+                            "caption": "Image 60 - Adding a Loop Cut near the top of the arm"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-61.jpg",
+                            "caption": "Image 61 - Selecting the outer edge and moving it up to create a curve for the shoulder"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-62.jpg",
+                            "caption": "Image 62 - Moving the opposite edge back"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-63.jpg",
+                            "caption": "Image 63 - Scaling in the bottom edge for the elbow joint"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Lower Arm",
+                    "content": [
+                      "In Object Mode, [k]Shift-D[/k] the upper arm and move it down and rotate it to match the lower arm (Image 64). Select the upper arm again, go into Edit Mode, and move the lower face down to the lower arm (Image 65). Add one more Loop Cut, rotate and scale it out to add some thickness for the biceps and triceps (Image 66). In Object Mode, Front View, move the lower arm into the correct position (Image 67).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-64.jpg",
+                            "caption": "Image 64 - Going to Object Mode, duplicating the upper arm and moving it down and rotating it to match the lower arm"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-65.jpg",
+                            "caption": "Image 65 - Selecting the upper arm again, going into Edit Mode, and moving the lower face down to the lower arm"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-66.jpg",
+                            "caption": "Image 66 - Adding one more Loop Cut, rotating and scaling it out to add some thickness for the biceps and triceps"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-67.jpg",
+                            "caption": "Image 67 - Going to Object Mode and Front View and moving the lower arm into the correct position"
+                          }
+                        ]
                       },
+                      "In Edit Mode, select the edge loops individually and scale, move, rotate them into place (Image 68). In order to round out the forearm, add an Edge Loop (Image 69). Select the edges on the outside of the forearm and [k]G,G[/k] to Edge Slide them in (Image 70). Repeat for the edges on the inside of the forearm (Image 71).",
                       {
-                        "section": {
-                          "header": "Torso Controls",
-                          "content": [
-                            "The main torso control is the box around the hips which will move the whole torso (Image 25). A curved hips control which controls the character's butt (Image 26). A curved chest control that rotates the upper body (Image 27).",
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-68.jpg",
+                            "caption": "Image 68 - Going into Edit Mode, selecting the edge loops individually and scaling, moving, and rotating them into place"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-69.jpg",
+                            "caption": "Image 69 - Adding an Edge Loop to round out the forearm"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-70.jpg",
+                            "caption": "Image 70 - Selecting the edges on the outside of the forearm and Edge Sliding them in"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-71.jpg",
+                            "caption": "Image 71 - Repeating for the edges on the inside of the forearm"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Hand",
+                    "content": [
+                      "Add a cube to the scene and move it up to the hand area and scale it down nice and thin (Image 72). Move around to Side View and bring it into position (Image 73). Add a Loop Cut down the middle and adjust the shape (Image 74). Go to the Front View and re-position (Image 75).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-72.jpg",
+                            "caption": "Image 72 - Adding a cube to the scene, moving it up to the hand area and scaling it down nice and thin"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-73.jpg",
+                            "caption": "Image 73 - Moving around to Side View and bringing it into position"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-74.jpg",
+                            "caption": "Image 74 - Adding a Loop Cut down the middle and adjusting the shape"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-75.jpg",
+                            "caption": "Image 75 - Going to Front View and re-positioning"
+                          }
+                        ]
+                      },
+                      "Extrude the front face down, rotate it, and scale in the x-axis, to make a knuckle (Image 76). Extrude, rotate, and scale to the end of the hand (Image 77). To make a thumb, select the outer face (Image 78) and extrude it out to the first knuckle, rotating and scaling into position (Image 79). Continue extruding, rotating, and scaling for the end of the thumb (Image 80).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-76.jpg",
+                            "caption": "Image 76 - Extruding the front face down, rotating it, and scaling in the x-axis to make a knuckle"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-77.jpg",
+                            "caption": "Image 77 - Extruding, rotating, and scaling to the end of the hand"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-78.jpg",
+                            "caption": "Image 78 - Selecting the outer face to make a thumb"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-79.jpg",
+                            "caption": "Image 79 - Extruding it out to the first knuckle, rotating and scaling into position"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-80.jpg",
+                            "caption": "Image 80 - Continuing to extrude, rotate, and scale for the end of the thumb"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating the Legs",
+              "content": [
+                {
+                  "section": {
+                    "header": "The Upper Leg",
+                    "content": [
+                      "[k]Shift-D[/k] the upper arm and move it down to the upper leg, rotating it into position (Image 81). Move it into position from the Side View (Image 82). If the leg is at an awkward angle, rotate it in the z-axis, and then move the vertices into position from the front (Image 83) and the side (Image 84).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-81.jpg",
+                            "caption": "Image 81 - Duplicating the upper arm and moving it down to the upper leg, rotating it into position"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-82.jpg",
+                            "caption": "Image 82 - Moving it into position from the Side View"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-83.jpg",
+                            "caption": "Image 83 - Rotating the leg in the z-axis if at an awkward angle, and then moving the vertices into position from the front"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-84.jpg",
+                            "caption": "Image 84 - Moving the vertices into position from the side"
+                          }
+                        ]
+                      },
+                      "Add a Loop Cut (Image 85). round out the thigh by Edge Sliding the outer (Image 86) and inner edges (Image 87). Select the top loop and move it up into the hip so there is overlap (Image 88).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-85.jpg",
+                            "caption": "Image 85 - Adding a Loop Cut"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-86.jpg",
+                            "caption": "Image 86 - Rounding out the thigh by Edge Sliding the outer edges"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-87.jpg",
+                            "caption": "Image 87 - Rounding out the thigh by Edge Sliding the inner edges"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-88.jpg",
+                            "caption": "Image 88 - Selecting the top loop and moving it up into the hip so there is overlap"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Lower Leg",
+                    "content": [
+                      "Duplicate the upper leg and move it down (Image 89). In Edit Mode, move the Edge Loops around until they match the reference image from the front (Image 90) and side (Image 91).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-89.jpg",
+                            "caption": "Image 89 - Duplicating the upper leg and moving it down"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-90.jpg",
+                            "caption": "Image 90 - Going into Edit Mode and moving the Edge Loops around until they match the reference image from the front"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-91.jpg",
+                            "caption": "Image 91 - Moving the Edge Loops around until they match the reference image from the side"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Foot",
+                    "content": [
+                      "Add a Cube to the scene and [k]G,Z,1[/k] to move it up above the origin (Image 92). Change the Transform Pivot Point to the 3D Cursor and scale and move the cube along the x-axis into position (Image 93). Extrude the top and front faces to make a blocky boot shape (Image 94). Change the Transform Pivot Point back to Median Point, add a Loop Cut at the front of the foot and shape it from the side (Image 95). In Top View, select the front face of the foot, scale in the x-axis, rotate slightly, and re-position to add a little bit of a curve to the foot (Image 96).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-92.jpg",
+                            "caption": "Image 92 - Adding a Cube to the scene and moving it up above the origin"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-93.jpg",
+                            "caption": "Image 93 - Changing the Transform Pivot Point to the 3D Cursor and scaling and moving the cube along the x-axis into position"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-94.jpg",
+                            "caption": "Image 94 - Extruding the top and front faces to make a blocky boot shape"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-95.jpg",
+                            "caption": "Image 95 - Changing the Transform Pivot Point back to Median Point, adding a Loop Cut at the front of the foot and shaping it from the side"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-96.jpg",
+                            "caption": "Image 96 - Going to Top View, selecting the front face of the foot, scaling in the x-axis, rotating slightly, and re-positioning to add a little bit of a curve to the foot"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Finishing Touches",
+              "content": [
+                "Go around the model making any touch-ups and ensuring all body parts overlap. Add a Mirror Modifier in the x-axis to one limb, using the torso as the Mirror Object (Image 97). Select all the remaining limb parts and [k]Ctrl-L,P[/k] to copy the modifier (Image 98). Hide the reference images and admire your work.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-97.jpg",
+                      "caption": "Image 97 - Adding a Mirror Modifier in the x-axis to one limb, using the torso as the Mirror Object"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/modeling/ps1_style-98.jpg",
+                      "caption": "Image 98 - Selecting all the remaining limb parts and copying the modifier"
+                    }
+                  ]
+                },
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/Low Poly Characters/ps1_style.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Texture Painting for PS1 Characters": {
+        "key_concepts": [
+          "[url]Blender Tutorial: Texture Painting for PS1 Characters (Beginner Friendly)^^https://www.youtube.com/watch?v=R76e7CQ3D7s&list=PLn3ukorJv4vuElMnRXKXos4yJZpfTYNLP&index=2[/url]",
+          {
+            "section": {
+              "header": "Preparing for Texturing: UV Editing Workspace",
+              "content": [
+                "Open the UV Editing workspace (Image 1). [k]A[/k] to select all vertices; you should notice that only the vertices for the last active mesh are selected and appear in the UV workspace (Image 2). We want unwrap the mesh for the entire character. [k]Tab[/k] into Edit Mode and [k]A[/k] to select all parts (Image 3); you will see the UV map update to show all faces.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-01.jpg",
+                      "caption": "Image 1 - Opening the UV Editing workspace"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-02.jpg",
+                      "caption": "Image 2 - Selecting all vertices and noticing that only the vertices for the last active mesh are selected and appear in the UV workspace"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-03.jpg",
+                      "caption": "Image 3 - Going into Edit Mode and selecting all parts to update the UV map to show all faces"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Smart UV Project (Unwrapping the Model)",
+              "content": [
+                "Back in Edit Mode, [k]A[/k] to select all faces (Image 4). [k]UV > Smart UV Project[/k] to begin open the Smart UV Project dialog (Image 5). Set the island setting to 0.01 and press [k]Unwrap[/k] (Image 6). In the UV Map, all faces have now been projected out (Image 7).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
+                      "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-05.jpg",
+                      "caption": "Image 5 - Opening the Smart UV Project dialog"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-06.jpg",
+                      "caption": "Image 6 - Setting the island setting to 0.01 and pressing Unwrap"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-07.jpg",
+                      "caption": "Image 7 - Viewing all faces now projected out in the UV Map"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Smart UV Project",
+                    "content": [
+                      {
+                        "ref-table": [
+                          [
                             {
-                              "image": [
-                                {
-                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-25.jpg",
-                                  "caption": "Image 25 - Using the box around the hips as the main torso control to move the whole torso"
-                                },
-                                {
-                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-26.jpg",
-                                  "caption": "Image 26 - Using the curved hips control to control the character's butt"
-                                },
-                                {
-                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-27.jpg",
-                                  "caption": "Image 27 - Using the curved chest control to rotate the upper body"
-                                }
-                              ]
+                              "th": "Editor:"
                             },
-                            "There are also individual controls for the shoulders (Image 28), neck (Image 29), head (Image 30), and spine (Image 31). If you enable X-Ray Mode, inside the rig are spherical controls that allow you to bend the mesh for cartoony effects (Image 32).",
+                            {
+                              "td": "3D Viewport, UV Editor"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Mode:"
+                            },
+                            {
+                              "td": "Edit Mode"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Menu:"
+                            },
+                            {
+                              "td": "[kbd]UV > Unwrap > Smart UV Project[/kbd]"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Shortcut:"
+                            },
+                            {
+                              "td": "[kbd]U[/kbd]"
+                            }
+                          ]
+                        ]
+                      },
+                      "Examines the angles between the selected faces, cuts them along any sharp edges, then projects each separated group of faces along its average normal and lays it out on the UV map. You can also set up seams for additional cutting. This is a good method for, say, mechanical objects or architecture.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-08.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "Options",
+                          "content": [
+                            "The [url]Adjust Last Operation^^https://docs.blender.org/manual/en/latest/interface/undo_redo.html#bpy-ops-screen-redo-last[/url] panel allows fine control over how the mesh is unwrapped:",
+                            {
+                              "section": {
+                                "header": "Angle Limit",
+                                "content": [
+                                  "The maximum allowed angle between the normals of adjacent faces before they’re split off from each other. A low limit will create lots of small UV islands with little distortion, while a high limit will create a few large islands with potentially more distortion."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Margin Method",
+                                "content": [
+                                  "The meaning of the [i]Island Margin[/i] parameter, which determines the size of the empty space between UV islands.",
+                                  {
+                                    "section": {
+                                      "header": "Scaled",
+                                      "content": [
+                                        "The [i]Island Margin[/i] is a more or less arbitrary measure with no direct relation to the sizes of the UV islands or the texture."
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Add",
+                                      "content": [
+                                        "As above, but without the internally calculated scaling factor."
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Fraction",
+                                      "content": [
+                                        "The [i]Island Margin[/i] is a fraction of the UV unit square. This means that, if you have a 1024x1024 texture and set the [i]Island Margin[/i] to 1/1024, each UV island will have a margin of 1 pixel around it (and islands will be no closer than 2 pixels to each other)."
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Rotation Method",
+                                "content": [
+                                  {
+                                    "section": {
+                                      "header": "Axis-aligned",
+                                      "content": [
+                                        "Automatically rotate to avoid wasting space."
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Axis-aligned (Horizontal)",
+                                      "content": [
+                                        "Rotate islands to be aligned horizontally."
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Axis-aligned (Vertical)",
+                                      "content": [
+                                        "Rotate islands to be aligned vertically."
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Island Margin",
+                                "content": [
+                                  "How much empty space to leave between islands. Controlled by [i]Margin Method[/i]."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Area Weight",
+                                "content": [
+                                  "With a value of 0, the projection vector of each face group is simply the average of its face normals. With a value of 1, it’s an average that’s weighted using the faces’ areas. Other values blend between the two."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Correct Aspect",
+                                "content": [
+                                  "Adjusts the UV mapping to account for the aspect ratio of the image associated with the material. This ensures that UVs are scaled correctly when unwrapping onto non-square textures.",
+                                  "For this option to work, the mesh must have a material with an [url]Image Texture node^^https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/image.html[/url], and this node must be selected in the [url]Shader Editor^^https://docs.blender.org/manual/en/latest/editors/shader_editor.html[/url]."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Scale to Bounds",
+                                "content": [
+                                  "Stretches the resulting UV map to fill the complete texture."
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Entering the Texture Paint Workspace",
+              "content": [
+                "Open the Texture Paint workspace (Image 9). Immediately you will notice part of the mesh is purple; that indicates that is the active object, and that no texture is assigned (Image 10). On the left you will the see the Image Editor showing the UVs have been projected onto an image (Image 11). The cursor has also changed to a circle where paint can be applied. If you try to paint an error message will appear; that is because no texture has been assigned to the mesh (Image 12).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-09.jpg",
+                      "caption": "Image 9 - Opening the Texture Paint workspace"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-10.jpg",
+                      "caption": "Image 10 - Noticing part of the mesh is purple, indicating it is the active object with no texture assigned"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-11.jpg",
+                      "caption": "Image 11 - Seeing the Image Editor on the left showing the UVs projected onto an image"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-12.jpg",
+                      "caption": "Image 12 - Trying to paint and seeing an error message appear because no texture has been assigned to the mesh"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Bringing in the Shader Editor",
+                    "content": [
+                      "Go to the top right corner of the left panel; you will know you are in the right spot when the cursor changes to cross hairs. Pull the window down to create a new panel on top (Image 13). Change the editor type for the new panel from Image Editor to Shader Editor (Image 14). You can press [k]N[/k] to get rid of the side panel that appears (Image 15).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-13.jpg",
+                            "caption": "Image 13 - Going to the top right corner of the left panel and pulling the window down to create a new panel on top"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-14.jpg",
+                            "caption": "Image 14 - Changing the editor type for the new panel from Image Editor to Shader Editor"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-15.jpg",
+                            "caption": "Image 15 - Pressing N to get rid of the side panel that appears"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Setting up the Material and Texture Slot",
+              "content": [
+                "At the top go to [k]Texture Slots > + > Base Color[/k] (Image 16). Give the color a good name, in true PS1 fashion reduce the size to 512px, select the skin color you like, and turn off alpha (Image 17). In the Shader Editor there are now 3 nodes created for the texture (Image 18), update the Roughness and Specular for a skin tone if you would like. Below that in the Image Editor you will see the UV texture now has the color applied (Image 19). In the 3D Viewport, the Texture Paint workspace defaults to Solid Mode, change this to Material Preview (Image 20). We can see the texture is only applied to the active object, not all parts of the mesh. Go to Object Mode (Image 21). Select all objects with the object with the material as the active object, [k]Ctrl-L,M[/k] to link materials (Image 22).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-16.jpg",
+                      "caption": "Image 16 - Going to Texture Slots and adding a Base Color"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-17.jpg",
+                      "caption": "Image 17 - Giving the color a good name, reducing the size to 512px, selecting a skin color, and turning off alpha"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-18.jpg",
+                      "caption": "Image 18 - Seeing 3 nodes created for the texture in the Shader Editor and updating the Roughness and Specular for a skin tone"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-19.jpg",
+                      "caption": "Image 19 - Seeing the UV texture with the color applied in the Image Editor below"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-20.jpg",
+                      "caption": "Image 20 - Changing the 3D Viewport from Solid Mode to Material Preview in the Texture Paint workspace"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-21.jpg",
+                      "caption": "Image 21 - Going to Object Mode and noticing the texture is only applied to the active object"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-22.jpg",
+                      "caption": "Image 22 - Selecting all objects with the material object as the active object and linking materials"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Changing the Paint",
+              "content": [
+                "Go into Texture Paint Mode (Image 23). We can start painting, but if you want to change the current active object in Texture Paint Mode, press [k]Alt-Q[/k]. Go to the Color Picker on the right (Image 24). Click on the left half of the color bar to change your primary color (Image 25).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-23.jpg",
+                      "caption": "Image 23 - Going into Texture Paint Mode"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-24.jpg",
+                      "caption": "Image 24 - Going to the Color Picker on the right"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-25.jpg",
+                      "caption": "Image 25 - Clicking on the left half of the color bar to change the primary color"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Applying the Base Colors (Texture Painting)",
+              "content": [
+                "[K]Alt-Q[/k] over the torso to select it and [k]LMB[/k] to start painting (Image 26). On the right, go to [k]Color Palette > New > +[/k] to add the current color to the palette (Image 27). You can use the palette to quickly swap between colors. Paint the torso and upper arms green for a sweater (Image 28). If you need to change the size of your brush, [k]F[/k] to increase or decrease the size (Image 29). In the Image Editor, if you want to select a color from the image, hover the color you want and press [k]Shift-X[/k] to choose that color (Image 30). Make a dark blue color for the pants and dark brown for the shoes and paint those parts (Image 31).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-26.jpg",
+                      "caption": "Image 26 - Clicking Alt-Q over the torso to select it and starting to paint"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-27.jpg",
+                      "caption": "Image 27 - Going to Color Palette and adding the current color to the palette"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-28.jpg",
+                      "caption": "Image 28 - Painting the torso and upper arms green for a sweater"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-29.jpg",
+                      "caption": "Image 29 - Using F to increase or decrease the size of the brush"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-30.jpg",
+                      "caption": "Image 30 - Hovering over a color in the Image Editor and pressing Shift-X to select that color"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-31.jpg",
+                      "caption": "Image 31 - Making a dark blue color for the pants and dark brown for the shoes and painting those parts"
+                    }
+                  ]
+                },
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/Low Poly Characters/PS1/ps1_style_texturing.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Easy Rigging Using RIGIFY in Blender": {
+        "key_concepts": [
+          "[url]Easy Rigging Using RIGIFY in Blender^^https://www.youtube.com/watch?v=RdTuAY23vzk&list=PLn3ukorJv4vuElMnRXKXos4yJZpfTYNLP&index=1[/url]",
+          {
+            "section": {
+              "header": "Adding the Rigify Armature (Meta-Rig)",
+              "content": [
+                "Prepare for rigging by [k]Shift-S,W[/k] to move the 3D Cursor to the World Origin (Image 1). This will make positioning the righ easier. Make sure Rigify is activated. Go to [k]Edit > Preferences[/k] to open the Preferences dialog and under Add-Ons search for Rigify and enable it (Image 2). [k]Shift-A > Armature > Rigify Meta-Rigs > Human[/k] to add the rig to the scene (Image 3). It will be hard to see, so with the armature selected, go to the Data tab on the right, open Viewport Display and check In Front (Image 4).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-01.jpg",
+                      "caption": "Image 1 - Opening the UV Editing workspace"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Before We Begin",
+              "content": [
+                "It is easy to mess up; frequently go into Object Mode and click the Generate Rig button (Image 5). If you messed up, you might get an error message such as [k]blender RIGIFY ERROR: Bone 'thigh.L': Input to rig type must be a chain of at least 4 bones. Incorrect armature for type 'limb_rigs'[/k]; in that case undo you last changes and start again.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-01.jpg",
+                      "caption": "Image 1 - Opening the UV Editing workspace"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Matching the Bones to the Character Mesh",
+              "content": [
+                "In Object Mode, select the armature and scale it to about the right size (Image 5). [k]Tab[/k] into Edit Mode and turn on the X-symmetry to apply changes to both sides of the armature (Image 6). Zoom in on the shoulder, [k]Shift-RMB[/k] to move the 3D cursor to the shoulder, and change the Transform Pivot Point to the 3D Cursor (Image 7). This will make it easier to rotate bones. Select the bones of the arm and hand and [k]R[/k] to rotate it into place (Image 8). Change the Pivot Point back to Median Point (Image 9) and move the hand and elbow joints into better position (Image 10). [k]Numpad3[/k] into Side View and move the arm bones into position (Image 11). Our model only has a thumb and a paw; not all finger bones are needed. Keep the middle finger bones, but select all other finger bones and [k]X,B[/k] to remove them (Image 12). We need to position the fingers, but this can be awkward. Turn on Snapping and set the Snap Base to Volume (Image 13). This will snap the bones to the volume of the mesh.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
+                      "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "The Hand",
+                    "content": [
+                      {
+                        "section": {
+                          "header": "The Middle Finger",
+                          "content": [
+                            "Start at the bottom and move the bones of the middle finger into place (Image 14). Sometimes when you go to move a bone you could accidentally disconnect them (Image 15). In that case, [k]Ctrl-Z[/k] to undo and then box select the joint area and then move into position (Image 16). The last bone of the finger is actually the hand bone; move it towards the wrist (Image 17).",
                             {
                               "image": [
                                 {
-                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-28.jpg",
-                                  "caption": "Image 28 - Using the individual controls for the shoulders"
-                                },
+                                  "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
+                                  "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "The Thumb",
+                          "content": [
+                            "Move the thumb bones in place as well, remembering that the last bone is also the hand bone (Image 18).",
+                            {
+                              "image": [
                                 {
-                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-29.jpg",
-                                  "caption": "Image 29 - Using the individual controls for the neck"
-                                },
-                                {
-                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-30.jpg",
-                                  "caption": "Image 30 - Using the individual controls for the head"
-                                },
-                                {
-                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-31.jpg",
-                                  "caption": "Image 31 - Using the individual controls for the spine"
-                                },
-                                {
-                                  "src": "Blender/CGDive/Basic Human Metarig/human_metarig-32.jpg",
-                                  "caption": "Image 32 - Enabling X-Ray Mode to reveal the spherical controls inside the rig that allow bending the mesh for cartoony effects"
+                                  "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
+                                  "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
                                 }
                               ]
                             }
@@ -295,6 +1102,114 @@
                         }
                       }
                     ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Legs",
+                    "content": [
+                      "Turn off snapping and go into Side View (Image 19). Move the knee bone, ankle bone, and toe into position (Image 20). Move the heel bone to just the bottom corner (Image 21). In Front View, [k]G,X[/k] to move the foot bones over (Image 22). Grab the foot roll bone and scale it up to be as wide as the foot (Image 23). Go up and move the knee and hip joints into position (Image 24).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
+                            "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Face",
+                    "content": [
+                      "Select all the face bones (Image 25) and delete them. Delete the ear bones as well (Image 26). [k]Alt-LMB[/k] on the head bone and you will see there is a hidden bone there called face (Image 27). Delete that last one (Image 28).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
+                            "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "Move around the model, making any final adjustments and save your work (Image 29).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
+                      "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Generating the Final Rig",
+              "content": [
+                "Go into Object Mode and with the armature selected, [k]N[/k] to bring up the Item properties window (Image 30). We see the scale is off, so [k]Ctrl-A,S[/k] to apply the scale (Image 31). Press the [k]Generate Rig[/k] button to generate (Image 32). If you go to the outliner there are now two objects: metarig which was the original bones and rig which is the rig controls; hide or delete the metarig (Image 33).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Parenting the Mesh (Automatic Weights)",
+              "content": [
+                "Select all mesh objects and the rig, making sure the rig is the active object and [k]Ctrl-P > With Automatic Weights[/k] to parent the mesh to the rig (Image 34). Go into Pose Mode (Image 35) and start playing around with the rig. On the right, go to the Data tab and enable In Front in the Viewport Display (Image 36).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Control Colors",
+                    "content": [
+                      "Select all mesh objects and the rig, making sure the rig is the active object and [k]Ctrl-P > With Automatic Weights[/k] to parent the mesh to the rig (Image 34). Go into Pose Mode (Image 35) and start playing around with the rig. On the right, go to the Data tab and enable In Front in the Viewport Display (Image 36).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Testing the Rig and Fixing Weights",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Cleaning up Bone Layers/Final Touches",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/Low Poly Characters/PS1/ps1_style_rig.glb",
+                    "canvas_number": 1
                   }
                 }
               ]
