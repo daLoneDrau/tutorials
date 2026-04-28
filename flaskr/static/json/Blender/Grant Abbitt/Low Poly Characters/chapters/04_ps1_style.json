@@ -1126,8 +1126,20 @@
                             {
                               "image": [
                                 {
-                                  "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
-                                  "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
+                                  "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-14.jpg",
+                                  "caption": "Image 14 - Starting at the bottom and moving the bones of the middle finger into place"
+                                },
+                                {
+                                  "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-15.jpg",
+                                  "caption": "Image 15 - Showing accidentally disconnected bones when moving them"
+                                },
+                                {
+                                  "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-16.jpg",
+                                  "caption": "Image 16 - Undoing and then box selecting the joint area and moving it into position"
+                                },
+                                {
+                                  "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-17.jpg",
+                                  "caption": "Image 17 - Moving the last bone of the finger, which is the hand bone, towards the wrist"
                                 }
                               ]
                             }
@@ -1142,8 +1154,8 @@
                             {
                               "image": [
                                 {
-                                  "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
-                                  "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
+                                  "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-18.jpg",
+                                  "caption": "Image 18 - Moving the thumb bones into place, remembering that the last bone is also the hand bone"
                                 }
                               ]
                             }
@@ -1157,12 +1169,37 @@
                   "section": {
                     "header": "The Legs",
                     "content": [
-                      "Turn off snapping and go into Side View (Image 19). Move the knee bone, ankle bone, and toe into position (Image 20). Move the heel bone to just the bottom corner (Image 21). In Front View, [k]G,X[/k] to move the foot bones over (Image 22). Grab the foot roll bone and scale it up to be as wide as the foot (Image 23). Go up and move the knee and hip joints into position (Image 24).",
+                      "Turn off snapping and go into Side View (Image 19). Move the knee bone, ankle bone, and toe into position (Image 20). Move the heel bone to just the bottom corner (Image 21).",
                       {
                         "image": [
                           {
-                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
-                            "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-19.jpg",
+                            "caption": "Image 19 - Turning off snapping and going into Side View"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-20.jpg",
+                            "caption": "Image 20 - Moving the knee bone, ankle bone, and toe into position"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-21.jpg",
+                            "caption": "Image 21 - Moving the heel bone to just the bottom corner"
+                          }
+                        ]
+                      },
+                      "In Front View, [k]G,X[/k] to move the foot bones over (Image 22). Grab the foot roll bone and scale it up to be as wide as the foot (Image 23). Go up and move the knee and hip joints into position (Image 24).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-22.jpg",
+                            "caption": "Image 22 - Going to Front View and moving the foot bones over in the x-axis"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-23.jpg",
+                            "caption": "Image 23 - Grabbing the foot roll bone and scaling it up to be as wide as the foot"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-24.jpg",
+                            "caption": "Image 24 - Going up and moving the knee and hip joints into position"
                           }
                         ]
                       }
@@ -1177,8 +1214,20 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
-                            "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-25.jpg",
+                            "caption": "Image 25 - Selecting all the face bones"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-26.jpg",
+                            "caption": "Image 26 - Deleting the face bones and the ear bones"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-27.jpg",
+                            "caption": "Image 27 - Alt-clicking on the head bone to reveal a hidden bone called face"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-28.jpg",
+                            "caption": "Image 28 - Deleting that last hidden bone"
                           }
                         ]
                       }
@@ -1189,8 +1238,8 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
-                      "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-29.jpg",
+                      "caption": "Image 29 - Moving around the model, making any final adjustments and saving the work"
                     }
                   ]
                 }
@@ -1204,6 +1253,22 @@
                 "Go into Object Mode and with the armature selected, [k]N[/k] to bring up the Item properties window (Image 30). We see the scale is off, so [k]Ctrl-A,S[/k] to apply the scale (Image 31). Press the [k]Generate Rig[/k] button to generate (Image 32). If you go to the outliner there are now two objects: metarig which was the original bones and rig which is the rig controls; hide or delete the metarig (Image 33).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-30.jpg",
+                      "caption": "Image 30 - Going into Object Mode with the armature selected and pressing N to bring up the Item properties window"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-31.jpg",
+                      "caption": "Image 31 - Seeing the scale is off and applying the scale"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-32.jpg",
+                      "caption": "Image 32 - Pressing the Generate Rig button to generate the rig"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-33.jpg",
+                      "caption": "Image 33 - Seeing the two objects in the outliner, metarig and rig, and hiding or deleting the metarig"
+                    }
                   ]
                 }
               ]
@@ -1216,6 +1281,18 @@
                 "Select all mesh objects and the rig, making sure the rig is the active object and [k]Ctrl-P > With Automatic Weights[/k] to parent the mesh to the rig (Image 34). Go into Pose Mode (Image 35) and start playing around with the rig. On the right, go to the Data tab and enable In Front in the Viewport Display (Image 36).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-34.jpg",
+                      "caption": "Image 34 - Selecting all mesh objects and the rig with the rig as the active object and parenting the mesh to the rig with automatic weights"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-35.jpg",
+                      "caption": "Image 35 - Going into Pose Mode"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-36.jpg",
+                      "caption": "Image 36 - Going to the Data tab on the right and enabling In Front in the Viewport Display"
+                    }
                   ]
                 },
                 {
