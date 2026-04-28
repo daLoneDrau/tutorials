@@ -1006,7 +1006,7 @@
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Blender/Grant Abbitt/Low Poly Characters/PS1/ps1_style_texturing.glb",
+                    "path": "Blender/Grant Abbitt/Low Poly Characters/ps1_style_texturing.glb",
                     "canvas_number": 1
                   }
                 }
@@ -1029,7 +1029,19 @@
                   "image": [
                     {
                       "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-01.jpg",
-                      "caption": "Image 1 - Opening the UV Editing workspace"
+                      "caption": "Image 1 - Moving the 3D Cursor to the World Origin to prepare for rigging"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-02.jpg",
+                      "caption": "Image 2 - Going to Edit > Preferences, searching for Rigify under Add-Ons and enabling it"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-03.jpg",
+                      "caption": "Image 3 - Adding a Human Rigify Meta-Rig to the scene"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-04.jpg",
+                      "caption": "Image 4 - Selecting the armature, going to the Data tab and checking In Front under Viewport Display to make it easier to see"
                     }
                   ]
                 }
@@ -1044,8 +1056,8 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-01.jpg",
-                      "caption": "Image 1 - Opening the UV Editing workspace"
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-05.jpg",
+                      "caption": "Image 5 - Going into Object Mode frequently and clicking the Generate Rig button to check for errors"
                     }
                   ]
                 }
@@ -1056,12 +1068,49 @@
             "section": {
               "header": "Matching the Bones to the Character Mesh",
               "content": [
-                "In Object Mode, select the armature and scale it to about the right size (Image 5). [k]Tab[/k] into Edit Mode and turn on the X-symmetry to apply changes to both sides of the armature (Image 6). Zoom in on the shoulder, [k]Shift-RMB[/k] to move the 3D cursor to the shoulder, and change the Transform Pivot Point to the 3D Cursor (Image 7). This will make it easier to rotate bones. Select the bones of the arm and hand and [k]R[/k] to rotate it into place (Image 8). Change the Pivot Point back to Median Point (Image 9) and move the hand and elbow joints into better position (Image 10). [k]Numpad3[/k] into Side View and move the arm bones into position (Image 11). Our model only has a thumb and a paw; not all finger bones are needed. Keep the middle finger bones, but select all other finger bones and [k]X,B[/k] to remove them (Image 12). We need to position the fingers, but this can be awkward. Turn on Snapping and set the Snap Base to Volume (Image 13). This will snap the bones to the volume of the mesh.",
+                "In Object Mode, select the armature and scale it to about the right size (Image 5). [k]Tab[/k] into Edit Mode and turn on the X-symmetry to apply changes to both sides of the armature (Image 6). Zoom in on the shoulder, [k]Shift-RMB[/k] to move the 3D cursor to the shoulder, and change the Transform Pivot Point to the 3D Cursor (Image 7). This will make it easier to rotate bones. Select the bones of the arm and hand and [k]R[/k] to rotate it into place (Image 8).",
                 {
                   "image": [
                     {
-                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/texturing/ps1_texturing-04.jpg",
-                      "caption": "Image 4 - Going back into Edit Mode and selecting all faces"
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-05.jpg",
+                      "caption": "Image 5 - Going to Object Mode, selecting the armature and scaling it to about the right size"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-06.jpg",
+                      "caption": "Image 6 - Going into Edit Mode and turning on X-symmetry to apply changes to both sides of the armature"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-07.jpg",
+                      "caption": "Image 7 - Zooming in on the shoulder, moving the 3D Cursor to the shoulder and changing the Transform Pivot Point to the 3D Cursor"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-08.jpg",
+                      "caption": "Image 8 - Selecting the bones of the arm and hand and rotating them into place"
+                    }
+                  ]
+                },
+                "Change the Pivot Point back to Median Point (Image 9) and move the hand and elbow joints into better position (Image 10). [k]Numpad3[/k] into Side View and move the arm bones into position (Image 11). Our model only has a thumb and a paw; not all finger bones are needed. Keep the middle finger bones, but select all other finger bones and [k]X,B[/k] to remove them (Image 12). We need to position the fingers, but this can be awkward. Turn on Snapping and set the Snap Base to Volume (Image 13). This will snap the bones to the volume of the mesh.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-09.jpg",
+                      "caption": "Image 9 - Changing the Pivot Point back to Median Point"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-10.jpg",
+                      "caption": "Image 10 - Moving the hand and elbow joints into better position"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-11.jpg",
+                      "caption": "Image 11 - Going to Side View and moving the arm bones into position"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-12.jpg",
+                      "caption": "Image 12 - Keeping the middle finger bones and selecting all other finger bones to remove them"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/Low Poly Characters/PS1/rigging/ps1_rig-13.jpg",
+                      "caption": "Image 13 - Turning on Snapping and setting the Snap Base to Volume to snap the bones to the volume of the mesh"
                     }
                   ]
                 },
@@ -1208,7 +1257,7 @@
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Blender/Grant Abbitt/Low Poly Characters/PS1/ps1_style_rig.glb",
+                    "path": "Blender/Grant Abbitt/Low Poly Characters/ps1_style_rig.glb",
                     "canvas_number": 1
                   }
                 }
