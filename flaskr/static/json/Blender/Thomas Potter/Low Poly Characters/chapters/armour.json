@@ -13,6 +13,18 @@
                 "Select the top faces around your shoulder and upper arm (Image 1). [k]Shift-D,RMB[/k], [k]P,S[/k] to duplicate and separate those faces (image 2). Add a Solidify Modifier and adjust the thickness (Image 3).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Armour/Part 1/armour_001-01.jpg",
+                      "caption": "Image 1 - Selecting the top faces around the shoulder and upper arm"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Armour/Part 1/armour_001-02.jpg",
+                      "caption": "Image 2 - Duplicating and separating those faces"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Armour/Part 1/armour_001-03.jpg",
+                      "caption": "Image 3 - Adding a Solidify Modifier and adjusting the thickness"
+                    }
                   ]
                 },
                 "In Edit Mode, if you want to adjust the vertices of the pieces, you will only see the original geometry (Image 4). If you want to see the full geometry as it would be with the modifier applied, select [k]On Cage[/k] (Image 5).",
