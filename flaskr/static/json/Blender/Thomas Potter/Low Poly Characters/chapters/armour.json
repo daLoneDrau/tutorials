@@ -1,0 +1,153 @@
+{
+  "title": "Armour for Low Poly Characters",
+  "sections": [
+    {
+      "Armour for Low Poly Characters Part 1": {
+        "key_concepts": [
+          "[url]How to make Low Poly Armour for Games (Blender)^^https://www.youtube.com/watch?v=C-S0o_mg0No[/url]",
+          "Create pauldrons, couters, and vambraces for a low poly mannequin",
+          {
+            "section": {
+              "header": "Pauldrons",
+              "content": [
+                "Select the top faces around your shoulder and upper arm (Image 1). [k]Shift-D,RMB[/k], [k]P,S[/k] to duplicate and separate those faces (image 2). Add a Solidify Modifier and adjust the thickness (Image 3).",
+                {
+                  "image": [
+                  ]
+                },
+                "In Edit Mode, if you want to adjust the vertices of the pieces, you will only see the original geometry (Image 4). If you want to see the full geometry as it would be with the modifier applied, select [k]On Cage[/k] (Image 5).",
+                {
+                  "image": [
+                  ]
+                },
+                "Start by moving the moving the outer edge up to where you want the armour to start and giving it a nice rounder profile (Image 6). Repeat this for the lower rows of vertices in the front (Image 7), top (Image 8), and rear (Image 9).",
+                {
+                  "image": [
+                  ]
+                },
+                "Change the Transform Pivot Point to Median and you can [k]S[/k] to scale the piece (Image 10). You can also use the Shrink/Fatten tool ([k]Alt-S[/k] to create some separation from the base mesh (Image 11).",
+                {
+                  "section": {
+                    "header": "Lamellae (Overlapping Plates)",
+                    "content": [
+                      "A recurring trope in fantasy armor is overlapping plates, especially on the shoulders (Image 12). We will attempt to reproduce that. Select the outside edge, [k]Shift-D,RMB[/k], [k]P,S[/k] to duplicate and separate it, and start editing it (Image 13). [k]E[/k] to extrude it out somewhat (Image 14). Turn on X-Ray Mode, and [k]Alt-S[/k], [k]G[/k] to move around the back edge so it stacks under the first piece (Image 15). Still in Edit Mode, duplicate the piece, move it out and shrink it down for a final overlap (Image 16). Make sure to review it from all sides. At this point, organize your collection and give each object a meaningful name (Image 17).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Vambrace",
+              "content": [
+                "Select the forearm geometry, [k]Shift-D,RMB[/k], [k]P,S[/k] to duplicate and separate it, and start editing it (Image 18). Copy the Solidify Modifier from the pauldron (Image 19). We want to make a cuff at the top, so add a Loop Cut near the top (Image 20). Select the vertices at opposite ends and [k]G,X[/k], [k]S[/k] to move them out and flare them (Image 21).",
+                {
+                  "image": [
+                  ]
+                },
+                "Add another Loop Cut down the front (Image 22). Edge Slide the vertices to round out the opening (Image 23). Add a Loop Cut towards the bottom and [k]Alt-S[/k] to shrink that edge and then [k]S[/k] to flare out the bottom (Image 24). Edge Slide the vertices to round out the opening (Image 25). Armour should give room for the user's hand to have full rotation. Last thing, repeat the same rounding of the cuffs in the rear (Image 26).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Couters",
+              "content": [
+                "Select the geometry around the elbows, [k]Shift-D,RMB[/k], [k]P,S[/k] to duplicate and separate it, and [k]Ctrl-L > Copy Modifiers[/k] to copy the Solidify Modifier from the other armour pieces (Image 27). Right now the piece is too big, in Edit Mode, select the outer edge loop and [k]G,G[/k] to Edge Slide it down towards the elbow (Image 28). Slide in the vertices in the front, leaving a larger section in the back (Image 29). Select the back faces, duplicate and separate (Image 30). Increase the Solidify Modifier's thickness and then round it out (Image 31).",
+                {
+                  "image": [
+                  ]
+                },
+                "Add another Loop Cut down the front (Image 22). Edge Slide the vertices to round out the opening (Image 23). Add a Loop Cut towards the bottom and [k]Alt-S[/k] to shrink that edge and then [k]S[/k] to flare out the bottom (Image 24). Edge Slide the vertices to round out the opening (Image 25). Armour should give room for the user's hand to have full rotation. Last thing, repeat the same rounding of the cuffs in the rear (Image 26).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "An Assortment of Heads",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Thomas Potter/Low Poly Characters/Armour/armour.001.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Armour for Low Poly Characters Part 2": {
+        "key_concepts": [
+          "[url]Make Low Poly ARMOR in BLENDER!^^https://www.youtube.com/watch?v=mGRMjo7VDCs[/url]",
+          "Create a full suit of armour for a low poly mannequin",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Armour for Low Poly Characters Part 3": {
+        "key_concepts": [
+          "[url]How to make low poly armor - blender 2.93^^https://www.youtube.com/watch?v=MkkPIIdPxUQ[/url]",
+          "Create a full suit of armour for a low poly mannequin",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Armour for Low Poly Characters Part 4": {
+        "key_concepts": [
+          "[url]How to Make Low Poly Characters in Blender^^https://www.youtube.com/watch?v=eVQCpGCpxWE[/url]",
+          "Create a complex suit of armour with a cape for a low poly mannequin",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
