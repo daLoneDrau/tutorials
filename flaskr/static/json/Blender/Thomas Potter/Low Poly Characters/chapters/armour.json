@@ -77,12 +77,12 @@
           },
           {
             "section": {
-              "header": "An Assortment of Heads",
+              "header": "Pauldron, Couter, and Vambrace",
               "content": [
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Blender/Thomas Potter/Low Poly Characters/Armour/armour.001.glb",
+                    "path": "Blender/Thomas Potter/Low Poly Characters/armour.001.glb",
                     "canvas_number": 1
                   }
                 }
