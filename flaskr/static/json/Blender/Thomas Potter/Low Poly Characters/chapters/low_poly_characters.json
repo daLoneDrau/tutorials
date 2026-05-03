@@ -601,7 +601,7 @@
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Blender/Thomas Potter/low_poly_face.glb",
+                    "path": "Blender/Thomas Potter/Low Poly Characters/low_poly_face.glb",
                     "canvas_number": 1
                   }
                 }
@@ -636,15 +636,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-001.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-001.jpg",
                       "caption": "Image 1 - Setting the opacity and side for the reference image"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-002.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-002.jpg",
                       "caption": "Image 2 - Lining up the reference image"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-003.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-003.jpg",
                       "caption": "Image 3 - Adding the side reference image"
                     }
                   ]
@@ -668,15 +668,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-004.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-004.jpg",
                       "caption": "Image 4 - Object properties settings"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-005.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-005.jpg",
                       "caption": "Image 5 - Sizing up the first proportion guideline"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-006.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-006.jpg",
                       "caption": "Image 6 - Adding an Array Modifier."
                     }
                   ]
@@ -692,35 +692,35 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-007.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-007.jpg",
                       "caption": "Image 7 - Starting the torso with a new cube"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-008.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-008.jpg",
                       "caption": "Image 8 - Scaling the waist and shoulders in the x-axis"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-009.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-009.jpg",
                       "caption": "Image 9 - Extruding the hips"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-010.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-010.jpg",
                       "caption": "Image 10 - Adding a tilt to the hips"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-011.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-011.jpg",
                       "caption": "Image 11 - Adding a tilt to the hips"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-012.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-012.jpg",
                       "caption": "Image 12 - Widening the hips from the front"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-013.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-013.jpg",
                       "caption": "Image 13 - Adjusting the edge loops from the side"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-014.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-014.jpg",
                       "caption": "Image 14 - Adjusting the edge loops from the front"
                     }
                   ]
@@ -729,11 +729,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-015.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-015.jpg",
                       "caption": "Image 15 - Adding a loop cut across the top"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-016.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-016.jpg",
                       "caption": "Image 16 - Adjusting the silhouette to match the contours of the shoulders and ribcage"
                     }
                   ]
@@ -742,11 +742,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-017.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-017.jpg",
                       "caption": "Image 17 - Widening the hips"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/018.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/018.jpg",
                       "caption": "Image 18 - Adjusting any deformities"
                     }
                   ]
@@ -755,19 +755,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-019.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-019.jpg",
                       "caption": "Image 19 - Adding a Loop Cut for more topology"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-020.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-020.jpg",
                       "caption": "Image 20 - Rounding out the torso from the front"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-020.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-020.jpg",
                       "caption": "Image 21 - Rounding out the torso from the back"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-020.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-020.jpg",
                       "caption": "Image 22 - Rounding out the torso from the side"
                     }
                   ]
@@ -776,7 +776,7 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-023.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-023.jpg",
                       "caption": "Image 23 - Lining up the bust"
                     }
                   ]
@@ -785,19 +785,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-024.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-024.jpg",
                       "caption": "Image 24 - Beveling the vertex at the top of the neck"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-025.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-025.jpg",
                       "caption": "Image 25 - Subdividing the edges"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-026.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-026.jpg",
                       "caption": "Image 26 - Cutting out to the shoulders to remove n-gons"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-027.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-027.jpg",
                       "caption": "Image 27 - Using Loop Tools to create a circle"
                     }
                   ]
@@ -806,19 +806,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-028.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-028.jpg",
                       "caption": "Image 32 - Positioning the neck"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-029.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-029.jpg",
                       "caption": "Image 29 - Adjusting the collarbone"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-030.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-030.jpg",
                       "caption": "Image 30 - Adjusting the back"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-031.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-031.jpg",
                       "caption": "Image 31 - Adjusting the base of the neck"
                     }
                   ]
@@ -827,19 +827,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-032.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-032.jpg",
                       "caption": "Image 32 - Deleting the neck faces"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-033.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-033.jpg",
                       "caption": "Image 33 - Selecting the neck edges"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-034.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-034.jpg",
                       "caption": "Image 34 - Bridging the edges"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-035.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-035.jpg",
                       "caption": "Image 35 - Adding a loop to the neck"
                     }
                   ]
@@ -855,11 +855,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-009.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-009.jpg",
                       "caption": "Image 9 - Moving the vertices into place in the back"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-010.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-010.jpg",
                       "caption": "Image 10 - Moving the vertices into place in the front"
                     }
                   ]
@@ -875,27 +875,27 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-011.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-011.jpg",
                       "caption": "Image 11 - Extruding the hips down"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-012.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-012.jpg",
                       "caption": "Image 12 - Widening the hips"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-012.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-012.jpg",
                       "caption": "Image 13 - Adding depth to the hips"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-014.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-014.jpg",
                       "caption": "Image 14 - Adding depth to the hips"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-015.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-015.jpg",
                       "caption": "Image 15 - Adding depth to the hips"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-016.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-016.jpg",
                       "caption": "Image 16 - Creating a face on the outside of the hips"
                     }
                   ]
@@ -911,27 +911,27 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-011.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-011.jpg",
                       "caption": "Image 11 - Extruding the hips down"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-012.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-012.jpg",
                       "caption": "Image 12 - Widening the hips"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-012.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-012.jpg",
                       "caption": "Image 13 - Adding depth to the hips"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-014.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-014.jpg",
                       "caption": "Image 14 - Adding depth to the hips"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-015.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-015.jpg",
                       "caption": "Image 15 - Adding depth to the hips"
                     },
                     {
-                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-016.jpg",
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Anime/low_poly_anime-016.jpg",
                       "caption": "Image 16 - Creating a face on the outside of the hips"
                     }
                   ]
