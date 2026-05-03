@@ -1,0 +1,946 @@
+{
+  "title": "Low Poly Characters (General)",
+  "sections": [
+    {
+      "Low Poly FACES": {
+        "key_concepts": [
+          "[url]How to make Low poly FACES in BLENDER 3.1!^^https://www.youtube.com/watch?v=mFSQqDborM0[/url]",
+          {
+            "section": {
+              "header": "Initial Setup and Reference Images",
+              "content": [
+                "Start with a new scene and delete the camera and light. [k]Numpad1[/k] into Front View and [k]Tab[/k] into Edit Mode. We want to turn on Auto Mirror; if you don't have that turned on, go to [k]File > Preferences > Add-ons[/k] and search for Auto Mirror and enable it (Image 1), then go to the Auto Mirror toolbar on the right (butterfly icon, see Image 2) and mirror across the x-axis. You could also [k]Ctrl-R[/k] to add an Edge Loop vertically and delete the left half and add a Mirror Modifier across the x-axis.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-01.jpg",
+                      "caption": "Image 1 - Enabling Auto Mirror"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-02.jpg",
+                      "caption": "Image 2 - Mirroring across the x-axis"
+                    }
+                  ]
+                },
+                "Bring in your reference image. For the YouTube tutorial, the image used can be found on [url]GameDev.tv^^https://community.gamedev.tv/t/female-head-reference-material/48890[/url].",
+                "[k]Tab[/k] into Object Mode and [k]Shift-A > Image > Reference[/k] to import the image. [k]Alt-Z[/k] into X-Ray Mode and [k]G,X[/k] to line the woman's front view up with the cube (Image 3). [k]Numpad7[/k] into Top View, and [k]G,Y[/k] to move it back. [k]Shift-D,Y[/k] to create a duplicate and move it down towards the cube. [k]R,Z,90[/k] to rotate it 90 degrees and [k]G,X[/k] to move it across the x-axis (Image 4). This will be the side image reference. [k]Numpad3[/k] into Side View and [k]G,Y[/k] to position the reference image (Image 5). It might be a good idea to set the opacity for the images to somewhere between 0.25 and 0.5.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-03.jpg",
+                      "caption": "Image 3 - Lining up the reference image for the Front"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-04.jpg",
+                      "caption": "Image 4 - In Top View, duplicating the reference image for the side view"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-05.jpg",
+                      "caption": "Image 5 - Positioning the side reference image"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "First Steps",
+              "content": [
+                {
+                  "section": {
+                    "header": "The Top and Bottom of the Head",
+                    "content": [
+                      "Select the cube and [k]Tab[/k] into Edit Mode and [k]1[/k] for Vertex Mode. In Wireframe Mode with X-Ray Mode enabled ([k]Alt-Z[/k]), grab the bottom vertices and drag them to the bottom of the chin (Image 6). Grab the vertices on the outside and drag them in to shape the chin (Image 7). Grab the top vertices and drag them into place to get the general shape of the top of the head (Image 8).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-06.jpg",
+                            "caption": "Image 6 - Adding a point for the chin"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-07.jpg",
+                            "caption": "Image 7 - Shaping the chin"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-08.jpg",
+                            "caption": "Image 8 - Shaping the top of the head"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Rounding out from the Side",
+                    "content": [
+                      "[k]Numapd3[/k] into Side View and [k]Ctrl-R[/k] to add a vertical Edge Loop down the middle (Image 9). [k]R,G[/k] to rotate and grab the bottom vertices and line them up along the jawline (Image 10). [k]Ctrl-R[/k] to add a horizontal loop cut across the middle. Grab the vertices on the left side of that edge loop and move them in line with the brow ridge (Image 11). Move the vertices on the top left and right to add curvature to the top of the head (Image 12). Grab the vertices at the back and round out the back of the skull (Image 13).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-09.jpg",
+                            "caption": "Image 9 - Adding a vertical Edge Loop down the middle of the side of the face"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-10.jpg",
+                            "caption": "Image 10 - Rotating and grabbing the bottom vertices to shape the jawline"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-11.jpg",
+                            "caption": "Image 11 - Adding a horizontal Loop Cut and lining up front vertices with the brow ridge"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-12.jpg",
+                            "caption": "Image 12 - Curving the top of the head"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-13.jpg",
+                            "caption": "Image 13 - Rounding out the back of the skull"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Depth",
+              "content": [
+                {
+                  "section": {
+                    "header": "... To the Brow",
+                    "content": [
+                      "[k]Numpad1[/k] into Front View, and grab the vertices going around the brow level (Image 14). [k]G[/k] and move them out to the temple area to widen the head (Image 15).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-14.jpg",
+                            "caption": "Image 14 - Grabbing the vertices around the brow"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-15.jpg",
+                            "caption": "Image 15 - Widening the top of the head"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": ".. And the Jawline",
+                    "content": [
+                      "[k]Numpad3[/k] into Side View, and grab the vertex at the jawline (Image 16). [k]Numpad1[/k] into Front View and [k]G[/k] to move it out to the side where the jawline begins to taper in (Image 17). [k]Alt-Z[/k] to toggle X-Ray Mode and you will see the changes (Image 18).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-16.jpg",
+                            "caption": "Image 16 - Grabbing the vertex for the jawline"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-17.jpg",
+                            "caption": "Image 17 - Widening the jawline"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-18.jpg",
+                            "caption": "Image 18 - Reviewing our changes outside of X-Ray Mode"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Making Adjustments",
+                    "content": [
+                      "With X-Ray Mode disabled, move around the side and select the vertex around the brow (Image 19). [k]Numpad1[/k] into Front View and [k]G[/k] to move that vertex to the edge of the brow (Image 20). [k]Numpad3[/k] into Side View and adjust it from the side (Image 21). Last, grab the vertex near the front top and move it down to follow the rounding of the skull (Image 22).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-19.jpg",
+                            "caption": "Image 19 - Grabbing the vertex for the brow"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-20.jpg",
+                            "caption": "Image 20 - Move the vertex to the edge of the brow"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-21.jpg",
+                            "caption": "Image 21 - Check the positioning for the brow from the side"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-22.jpg",
+                            "caption": "Image 22 - Curving the top of the skull down"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Cheekbones",
+              "content": [
+                "In order to position the cheekbones, add a horizontal Loop Cut (Image 23). Grab the newly-created vertex in the back (Image 24), [k]Numpad1[/k] into Front View and move it out to the widest part of the cheekbone (Image 25). [k]Alt-Z[/k] to remove X-Ray mode, grab the front cheek vertex and move it out to round out the face somewhat (Image 26). [k]Numpad3[/k] into Side View, [k]Alt-Z[/k] to enable X-Ray Mode, and line the vertex up with the cheekbone (Image 27). Last, grab the vertex by the nose and line it up with the front of the mouth (Image 28). This gives us the general face shape.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-23.jpg",
+                      "caption": "Image 23 - Add a horizontal Loop Cut to add topology for the cheekbones"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-24.jpg",
+                      "caption": "Image 24 - Select the right vertex for the cheekbone"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-25.jpg",
+                      "caption": "Image 25 - Moving the cheekbone out wide"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-26.jpg",
+                      "caption": "Image 26 - Rounding out the front of the face"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-27.jpg",
+                      "caption": "Image 27 - Lining up the cheekbone"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-28.jpg",
+                      "caption": "Image 28 - Lining up the nose with the front of the mouth"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Fixing the Back of the Head",
+              "content": [
+                "[k]Numpad7[/k] into Top View and turn off X-Ray Mode. The back of the head is flat, which is not good. [k]Alt-Z[/k] to turn X-Ray Mode back on, and grab the back vertices (Image 29). [k]G[/k] and move them down and in along the x- and y-axes (Image 30).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-29.jpg",
+                      "caption": "Image 29 - In Top View, selecting the vertices at the back of the head"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-30.jpg",
+                      "caption": "Image 30 - Reshaping the back of the head"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Making Room for the Neck",
+              "content": [
+                "[k]Numpad3[/k] into Side View and grab the two vertices at the bottom right (Image 31). [k]X,V[/k] to remove them to make an opening for the neck. Grab the two vertices at the back and move them slightly down and to the right to more closely follow the head shape (Image 32). Also grab the vertex in the middle and move it up and to the right slightly to straighten things out (Image 33).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-31.jpg",
+                      "caption": "Image 31 - Selecting the vertices at the back of the neck for removal"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-32.jpg",
+                      "caption": "Image 32 - Shaping the back of the head"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-33.jpg",
+                      "caption": "Image 33 - Lining up the middle of the side of the head"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Chin",
+              "content": [
+                "[k]2[/k] for Edge Mode and select the edge by the chin (Image 34). [k]Ctrl-B[/k] to Bevel it and [k]G[/k] move it into position (Image 35).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-34.jpg",
+                      "caption": "Image 34 - Selecting the edge for the chin"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-35.jpg",
+                      "caption": "Image 35 - Beveling the chin and moving it into position"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Nose and Eyes",
+              "content": [
+                {
+                  "section": {
+                    "header": "Starting the Nose",
+                    "content": [
+                      "[k]Numpad1[/k] into Front View, [k]1[/k] for Vertex Mode. [k]G[/k] the vertex nearest the nose and move it to the tip of the nose (Image 36). [k]Numpad3[/k] into Side view and select the vertices at the back half of the head (Image 37). [k]H[/k] to hide them and then [k]Numpad1[/k] back into Front View.  Using the Knife Tool ([k]K[/k]), cut edges for the nose (Image 38). [k]Numpad3[/k] into Side View. Select the vertices at the tip of the nose and [k]G,Y[/k] to move it out to the end of the nose (Image 39).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-36.jpg",
+                            "caption": "Image 36 - Lining up the tip of the nose"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-37.jpg",
+                            "caption": "Image 37 - Hiding the back of the head"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-38.jpg",
+                            "caption": "Image 38 - Cutting edges for the nose"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-39.jpg",
+                            "caption": "Image 39 - Lengthening the nose"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Cutting the Eyes",
+                    "content": [
+                      "Using the Knife Tool, cut an edge towards the top of the nose (Image 40). [k]Numpad3[/k] into Side View and [k]G[/k] to move those vertices back to line the left one up with the bottom of the brow ridge (Image 41). [k]Ctrl-K[/k] to cut from the inside of the brow ridge out to the edge of the brow (Image 42) and also another cut to to the top of the brow (Image 43). Select the inside edge (Image 44) and [k]X,I[/k] to dissolve it. We want our brow ridge to be a rectangle, not a triangle, so add another cut from the inside of the eye out to the side (Image 45). Select the inside edge (Image 46) and [k]X,I[/k] to dissolve it. Go into Side View and move the two vertices around so they cut across the middle of the eye (Image 47).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-40.jpg",
+                            "caption": "Image 40 - Cutting an edge to the brow"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-41.jpg",
+                            "caption": "Image 41 - Creating the brow ridge"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-42.jpg",
+                            "caption": "Image 42 - Cutting from the inside of the eye to the edge of the brow"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-43.jpg",
+                            "caption": "Image 43 - Adding another cut to the top of the brow"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-44.jpg",
+                            "caption": "Image 44 - Selecting the inside edge and then dissolving it"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-45.jpg",
+                            "caption": "Image 45 - Adding another cut to make the brow ridge a rectangle"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-46.jpg",
+                            "caption": "Image 46 - Dissolving another edge"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-47.jpg",
+                            "caption": "Image 47 - Lining up vertices so they cut across the eye"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Adding a Mesh for the Eyes",
+                    "content": [
+                      "[k]Tab[/k] into Object Mode. For the eyes, we will use a cube. [k]Shift-A > Mesh > Cube[/k] and add a cube. Shrink it down to about eye size and move it into position (Image 48). Go into Side View and position as well (Image 49). [k]Numpad7[/k] into Top View, and [k]R,Z[/k] it to align with the rotation of the front of the face (Image 50). Add a Mirror Modifier to create the second eye.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-48.jpg",
+                            "caption": "Image 48 - Adding a cube for the eyes"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-49.jpg",
+                            "caption": "Image 49 - Lining up the eyes from the side"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-50.jpg",
+                            "caption": "Image 50 - Rotating the eyes"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Completing the Neck",
+              "content": [
+                {
+                  "section": {
+                    "header": "Cutting the Jawline",
+                    "content": [
+                      "For the neck, use the Knife Tool to cut the neckline from underneath the jaw (Image 51). In order to avoid n-gons, select the two vertices pictured and [k]J[/k] to join them (Image 52). Rotate around towards the back of the head and [k]E[/k] to extrude the vertex from the neckline up (Image 53) and again out (Image 54) and then in (Image 55) to make the jawline (make sure the mirror modifier has clipping turned on). Select adjacent vertices and [k]F[/k] to fill them in, creating faces (Image 56). Adjust the vertices to straighten out the jawline (Image 57). [k]3[/k] into Face mode, select the face at the bottom (Image 58) and [k]X,F[/k] to delete it.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-51.jpg",
+                            "caption": "Image 51 - Cutting the neckline"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-52.jpg",
+                            "caption": "Image 52 - Joining vertices to fix n-gons"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-53.jpg",
+                            "caption": "Image 53 - Extrude the vertex from the neckline up"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-54.jpg",
+                            "caption": "Image 54 - Extrude the vertex out"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-55.jpg",
+                            "caption": "Image 55 - Extrude the vertex in"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-56.jpg",
+                            "caption": "Image 56 - Filling in the faces"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-57.jpg",
+                            "caption": "Image 57 - Adjusting the jawline"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-58.jpg",
+                            "caption": "Image 58 - Delete the bottom face"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Extruding the Neck",
+                    "content": [
+                      "[k]1[/k] into Vertex Mode, and [k]Alt-Shift-LMB[/k] one of the vertices around the bottom of the neck to select the whole loop (Image 59). [k]E[/k] to extrude the neck down, [k]S,Z,0[/k] [k]R[/k] to rotate to match the neck angle (Image 60). [k]Ctrl-R[/k] to add a loop cut in the middle of the neck and [k]S[/k] to scale it down (Image 61). Select the two vertices on the side of the neck (Image 62), [k]Numpad1[/k] into Front view and take these out to the side to start the shoulders (Image 63).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-59.jpg",
+                            "caption": "Image 59 - Selecting the bottom loop"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-60.jpg",
+                            "caption": "Image 60 - Extruding the neck"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-61.jpg",
+                            "caption": "Image 61 - Adding a loop cut for the neck and scaling it in"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-62.jpg",
+                            "caption": "Image 62 - Selecting the two vertices on the side of the neck"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-63.jpg",
+                            "caption": "Image 63 - Sculpting the shoulders"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding the Ears",
+              "content": [
+                {
+                  "section": {
+                    "header": "Bringing the Ears out",
+                    "content": [
+                      "[k]Numpad3[/k] into Side View. Maneuver the two vertices around the ear towards the bottom (Image 64). [k]Ctrl-K[/k] to use the Knife Tool to cut an opening for the ear (Image 65). [k]3[/k] for Face Mode, [k]Numpad1[/k] into Front View and [k]Alt-Z[/k] to turn off X-Ray Mode. With the ear face selected, [k]E[/k] to extrude it out to the side (Image 66). Move the perspective over to the side. [k]G,G[/k] to slide the front vertices of the ear back into the face to provide an angle for the ears coming out (Image 67). [k]Numpad1[/k] into Front View. Do the ears look like they've disappeared (Image 68)? That's because the side of the head is sloping towards the back. Move the view towards the back and select the back vertices for the ear (Image 69). [k]Numpad1[/k] into Front View and [k]G,X[/k] to move them out to the side (Image 70).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-64.jpg",
+                            "caption": "Image 64 - Positioning the jawline towards the bottom of the ear"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-65.jpg",
+                            "caption": "Image 65 - Cutting an opening for the ear"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-66.jpg",
+                            "caption": "Image 66 - Extruding the ears"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-67.jpg",
+                            "caption": "Image 67 - Angling the ears out from the side of the face"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-68.jpg",
+                            "caption": "Image 68 - The ears are flat against the skull"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-69.jpg",
+                            "caption": "Image 69 - Selecting the back vertices for the ears"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-70.jpg",
+                            "caption": "Image 70 - Bringing out the ears"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Shaping the Ears",
+                    "content": [
+                      "[k]Numpad3[/k] into Side View and [k]Alt-Z[/k] to turn on X-Ray Mode. Grab the top pairs of vertices for the ears and move them up to match the ear shape (Image 71). [k]2[/k] into Edge Mode and select the edge at the top of the ear. [k]Ctrl-B[/k] to Bevel it (Image 72), and then [k]G[/k] to move the edges into position around the ear (Image 73). Select the two edges at the bottom of the ear (Image 74). [k]LMB,S[/k] to subdivide them (Image 75). [k]1[/k] into Vertex Mode and select the two new vertices in the middle. [k]E[/k] to extrude them down towards the bottom of the ear (Image 76). [k]Alt-Z[/k] to turn off X-Ray Mode and [k]1[/k] into Vertex Mode. Create faces between vertices at the bottom of the ear (Image 77). Turn on the Viewport Overlay for Face Orientation (Image 78) and [k]F[/k] to complete the faces at the bottom of the ear (Image 79). [k]Ctrl-B[/k] to Bevel the bottom vertices and then moves the edges into place for the bottom of the ear (Image 80).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-71.jpg",
+                            "caption": "Image 71 - Shaping the top of the ears"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-72.jpg",
+                            "caption": "Image 72 - Beveling the top of the ear"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-73.jpg",
+                            "caption": "Image 73 - Cutting an opening for the ear"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-74.jpg",
+                            "caption": "Image 74 - Selecting the bottom edges"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-75.jpg",
+                            "caption": "Image 75 - Splitting the edges using Subdivision"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-76.jpg",
+                            "caption": "Image 76 - Extruding the vertices down towards the bottom of the ear"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-77.jpg",
+                            "caption": "Image 77 - Adding faces for the bottom of the ear"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-78.jpg",
+                            "caption": "Image 78 - Turning on Face Orientation"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-79.jpg",
+                            "caption": "Image 79 - Completing the faces for the bottom of the ear"
+                          },
+                          {
+                            "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-80.jpg",
+                            "caption": "Image 80 - Beveling the bottom of the ear"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Material",
+              "content": [
+                "[k]Tab[/k] into Edit Mode and turn on Material Preview Mode. Open the Material tab on the bottom right and click the Base Color. From the colorpicker that appears choose your preferred color (Image 81). Then open the Subsurface section and set the method to Random Walk (Skin) and the Radius' x-value to 100 (reddish) (Image 82). Select the eyes, add a new material and choose your color (Image 83).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-81.jpg",
+                      "caption": "Image 81 - Choosing a skin color"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-82.jpg",
+                      "caption": "Image 82 - Adding Subsurface scattering to render materials such as skin"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-83.jpg",
+                      "caption": "Image 83 - Making the eyes brown"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Low-Poly Face",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Thomas Potter/low_poly_face.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "Low Poly Characters": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "The Tutorial",
+              "content": [
+                "[url]Make Low Poly Characters in Blender!^^https://www.youtube.com/watch?v=dl7geQJgxI8[/url]",
+                {
+                  "section": {
+                    "header": "Reference Images",
+                    "content": [
+                      "Background image artist is TB Choi ([url]ArtStation portfolio^^https://www.artstation.com/tbchoi[/url])"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Initial Setup and Reference Images",
+              "content": [
+                "Begin with a new scene. [k]A[/k] to select all assets and [k]Delete[/k] to remove them. [k]Shift-A > Image > Reference[/k] to import the image. Open the Data tab on the right and change the image's Opacity to 0.25 and the Side to Front (Image 1). [k]G,X[/k] to line up the front-facing image with the z-axis (Image 2). [k]Numpad7[/k] into Top View, and [k]G,Y[/k] to move it back. [k]Shift-D,Y[/k] to create a duplicate and move it down towards the cube. [k]R,Z,90[/k] to rotate it 90 degrees and [k]G,X[/k] to move it across the x-axis (Image 4). This will be the side image reference. [k]Numpad3[/k] into Side View and [k]G,Y[/k] to position the reference image (Image 3).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-001.jpg",
+                      "caption": "Image 1 - Setting the opacity and side for the reference image"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-002.jpg",
+                      "caption": "Image 2 - Lining up the reference image"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-003.jpg",
+                      "caption": "Image 3 - Adding the side reference image"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Begin with the Head",
+              "content": [
+                "Follow the steps in the [url]How to make Low poly FACES^^/Blender/Small%20Tutorials/Characters/Thomas%20Potter/How%20to%20make%20Low%20poly%20FACES[/url] tutorial, without the neck."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Blocking in Proportion Guidelines",
+              "content": [
+                "With the head created, make sure you are in Object Mode and add a Cube. Go to the Object Properties tab on the right and check Shadow, In Front, and set the Display As to Wire (Image 4). This will give us a wireframe to use. Line the cube up with the head and [k]S[/k] scale it down to size (Image 5). Add an Array Modifier with a Count of 7, and Factor Z of -1 (Image 6).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-004.jpg",
+                      "caption": "Image 4 - Object properties settings"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-005.jpg",
+                      "caption": "Image 5 - Sizing up the first proportion guideline"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-006.jpg",
+                      "caption": "Image 6 - Adding an Array Modifier."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Torso",
+              "content": [
+                "With the proportion guidelines object selected, [k]Shift-D[/k] to duplicate it. Remove the Array Modifier and uncheck In Front and change the Display As to Textured in the Object Properties tab. [k]Tab[/k] into Edit Mode and [k]G[/k] to move the top and bottom vertices around; we want the top of the cube to be at shoulder height and the bottom to be above the hips (Image 7). [k]S,X[/k] to scale in the waist and scale out the shoulders (Image 8). Select the bottom edge loop and [k]E[/k] to extrude it down to the bottom of the hips (Image 9). [k]Numpad3[/k] into Side View and [k]R[/k] the bottom edge loop (Image 10). [k]Numpad1[/k] back into Front View and [k]Ctrl-R[/k] to add an Edge Loop and position it above the hips (Image 11). [k]S,X[/k] to scale it out (Image 12). Select the other edge loops and [k]S[/k] to scale them along the x- and y-axes from the side (Image 13) and front (Image 14).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-007.jpg",
+                      "caption": "Image 7 - Starting the torso with a new cube"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-008.jpg",
+                      "caption": "Image 8 - Scaling the waist and shoulders in the x-axis"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-009.jpg",
+                      "caption": "Image 9 - Extruding the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-010.jpg",
+                      "caption": "Image 10 - Adding a tilt to the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-011.jpg",
+                      "caption": "Image 11 - Adding a tilt to the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-012.jpg",
+                      "caption": "Image 12 - Widening the hips from the front"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-013.jpg",
+                      "caption": "Image 13 - Adjusting the edge loops from the side"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-014.jpg",
+                      "caption": "Image 14 - Adjusting the edge loops from the front"
+                    }
+                  ]
+                },
+                "[k]Ctrl-R[/k] to add an Edge Loop across the top (Image 15). Adjust the corner vertices to follow the contours of the shoulders and ribcage (Image 16)",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-015.jpg",
+                      "caption": "Image 15 - Adding a loop cut across the top"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-016.jpg",
+                      "caption": "Image 16 - Adjusting the silhouette to match the contours of the shoulders and ribcage"
+                    }
+                  ]
+                },
+                "Grab the two vertices at the bottom of the hips and move them out wide (Image 17). [k]Numpad3[/k] into Side View and grab the vertex that is sticking out and [k]G,G[/k] to slide it in (Image 18).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-017.jpg",
+                      "caption": "Image 17 - Widening the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/018.jpg",
+                      "caption": "Image 18 - Adjusting any deformities"
+                    }
+                  ]
+                },
+                "[k]Ctrl-R[/k] to add a Loop Cut down the side (Image 19). [k]Numpad1[/k] into Front View, [k]Alt-Z[/k] to turn off X-Ray mode. [k]2[/k] for Edge Selection and [k]Alt-LMB[/k] to select the outer loop in the front. [k]G,G[/k] to slide it in (Image 20). [k]Numpad9[/k] to view the back, grab the other edge loop and [k]G,G[/k] to slide that one in as well (Image 21). [k]Numpad3[/k] into Side View and [k]G,G[/k] to slide the loops in as well (Image 22).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-019.jpg",
+                      "caption": "Image 19 - Adding a Loop Cut for more topology"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-020.jpg",
+                      "caption": "Image 20 - Rounding out the torso from the front"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-020.jpg",
+                      "caption": "Image 21 - Rounding out the torso from the back"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-020.jpg",
+                      "caption": "Image 22 - Rounding out the torso from the side"
+                    }
+                  ]
+                },
+                "[k]Alt-Z[/k] to turn on X-Ray Mode. Grab the two vertices near the bust and [k]G[/k] to move them forward in line with the reference image (Image 23). Select the vertex at the top of the neck and [k]Ctrl-B,V[/k] to bevel it (Image 24).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-023.jpg",
+                      "caption": "Image 23 - Lining up the bust"
+                    }
+                  ]
+                },
+                "Select the vertex at the top of the neck and [k]Ctrl-B,V[/k] to bevel it (Image 24). [k]2[/k] into Edge Mode and select one of the new edges. [k]LMB,S[/k] to subdivide it; repeat this step for the other edge (Image 25). [k]K[/k] to use the Knife Tool and cut from those new vertices out to the shoulders (Image 26). Select all vertices along the beveled triangle and [k]LMB,L,C[/k] to use the Loop Tools to arrange them in a circle (Image 27). [k]Alt-Z[/k] to turn off X-Ray Mode and check to see if any of the vertices have a gap with the mirror. Make sure clipping it turned on and close any gaps. [k]3[/k] into Face Mode, select the ",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-024.jpg",
+                      "caption": "Image 24 - Beveling the vertex at the top of the neck"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-025.jpg",
+                      "caption": "Image 25 - Subdividing the edges"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-026.jpg",
+                      "caption": "Image 26 - Cutting out to the shoulders to remove n-gons"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-027.jpg",
+                      "caption": "Image 27 - Using Loop Tools to create a circle"
+                    }
+                  ]
+                },
+                "[k]Numpad1[/k] into Front View. Select the neck edge loop and [k]G[/k] to position them where the trapezius slopes into the neck, and [k]R[/k] to rotate it slightly (Image 28). Select the vertex at the front and [k]G,G[/k] to move it down to the collar bone (Image 29). [k]Numpad3[/k] into Side View and move the back vertex as well (Image 30). Select the neck edge loop again and [k]R[/k] to angle it slightly down and [k]S[/k] to scale it up to match the neck thickness (Image 31). [k]3[/k] into Face Mode and [k]X,F[/k] to delete the face at the base of the neck (Image 32).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-028.jpg",
+                      "caption": "Image 32 - Positioning the neck"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-029.jpg",
+                      "caption": "Image 29 - Adjusting the collarbone"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-030.jpg",
+                      "caption": "Image 30 - Adjusting the back"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-031.jpg",
+                      "caption": "Image 31 - Adjusting the base of the neck"
+                    }
+                  ]
+                },
+                "[k]3[/k] into Face Mode and [k]X,F[/k] to delete the face at the base of the neck (Image 32). If your head isn't part of your torso mesh, bring it now with a [k]Ctrl-J[/k] to Join them. Select the neck edge loops for the top of the torso and the bottom of the head (Image 33). [k]LMB,L,B[/k] to Bridge between the head and neck (Image 34). [k]Ctrl-R[/k] to add a loop cut across the middle. [k]K[/k] to use the Knife Tool if needed to complete the loop. Scale it in, rotate, or move it around as needed (Image 35).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-032.jpg",
+                      "caption": "Image 32 - Deleting the neck faces"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-033.jpg",
+                      "caption": "Image 33 - Selecting the neck edges"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-034.jpg",
+                      "caption": "Image 34 - Bridging the edges"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-035.jpg",
+                      "caption": "Image 35 - Adding a loop to the neck"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Shaping the Torso",
+              "content": [
+                "[k]Numpad3[/k] into Side View. Grab your vertices and [k]G,Y[/k] to move them into position in the back (Image 9) and front (Image 10).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-009.jpg",
+                      "caption": "Image 9 - Moving the vertices into place in the back"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-010.jpg",
+                      "caption": "Image 10 - Moving the vertices into place in the front"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Hips",
+              "content": [
+                "[k]Numpad1[/k] into Front View. Grab all bottom vertices and [k]E[/k] to extrude the bottom faces down towards the hips (Image 11) and then move the outer vertices to the edge of the hips (Image 12). [k]Numpad3[/k] into side view. Grab the vertices in the back and move them out to the widest part of the butt (Image 13). With those same vertices selected, [k]E[/k] and extrude them down to where the bottom meets the legs (Image 14). Select the vertices in the front and [k]F[/k] to make a new face from the vertices (Image 15). Be sure to remove the inner face at the bottom of the hips and then [k]F[/k] to create a new face using the outside vertices (Image 16). ",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-011.jpg",
+                      "caption": "Image 11 - Extruding the hips down"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-012.jpg",
+                      "caption": "Image 12 - Widening the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-012.jpg",
+                      "caption": "Image 13 - Adding depth to the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-014.jpg",
+                      "caption": "Image 14 - Adding depth to the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-015.jpg",
+                      "caption": "Image 15 - Adding depth to the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-016.jpg",
+                      "caption": "Image 16 - Creating a face on the outside of the hips"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Legs",
+              "content": [
+                "[k]Numpad1[/k] into Front View and [k]3[/k] for Face Mode. Turn off clipping on your Mirror Modifiers. Select the face at the bottom of the hips [k]E[/k] to extrude it down to the bottom of the legs (Image 17). [k]S,Z,0[/k] to flatten the bottom (Image 18).     and then move the outer vertices to the edge of the hips (Image 12). [k]Numpad3[/k] into side view. Grab the vertices in the back and move them out to the widest part of the butt (Image 13). With those same vertices selected, [k]E[/k] and extrude them down to where the bottom meets the legs (Image 14). Select the vertices in the front and [k]F[/k] to make a new face from the vertices (Image 15). Be sure to remove the inner face at the bottom of the hips and then [k]F[/k] to create a new face using the outside vertices (Image 16). ",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-011.jpg",
+                      "caption": "Image 11 - Extruding the hips down"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-012.jpg",
+                      "caption": "Image 12 - Widening the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-012.jpg",
+                      "caption": "Image 13 - Adding depth to the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-014.jpg",
+                      "caption": "Image 14 - Adding depth to the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-015.jpg",
+                      "caption": "Image 15 - Adding depth to the hips"
+                    },
+                    {
+                      "src": "Blender/Thomas Potter/LowPolyAnime/low_poly_anime-016.jpg",
+                      "caption": "Image 16 - Creating a face on the outside of the hips"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
