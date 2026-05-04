@@ -366,7 +366,7 @@
     },
     {
       "Axe": {
-        "tags": [],
+        "tags": ["medieval", "sword"],
         "key_concepts": [
           "[url]Using the Lattice Modifier - Creating an Axe in Blender^^https://www.youtube.com/watch?v=x0pd6syEnJA[/url]",
           "Creating an axe head and handle",
@@ -624,7 +624,7 @@
                   "section": {
                     "header": "Pommel",
                     "content": [
-                      "Select the bottom face of the pommel and inset it (Image 35). Select all edges around that inner face (Image 36). [k]RMB,S[/]k to subdivide them (Image 37).",
+                      "Select the bottom face of the pommel and inset it (Image 35). Select all edges around that inner face (Image 36). [k]RMB,S[/k] to subdivide them (Image 37).",
                       {
                         "image": [
                           {
