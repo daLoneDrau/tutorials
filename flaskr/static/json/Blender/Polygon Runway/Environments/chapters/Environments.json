@@ -116,7 +116,7 @@
                   "image": [
                   ]
                 },
-                "Add two Loop Cuts toward the bottom of the column, select the faces on the bottom ring and scale them out in the x- and y-axes (Image 30). Adjust the edge loops around the ring to create a slop for the base (Image 31).",
+                "Add two Loop Cuts toward the bottom of the column, select the faces on the bottom ring and scale them out in the x- and y-axes (Image 30). Adjust the edge loops around the ring to create a slope for the base (Image 31).",
                 {
                   "image": [
                   ]
@@ -150,7 +150,7 @@
                   "section": {
                     "header": "Adding another Alcove",
                     "content": [
-                      "Go to the far wall and add a column to the end (Image 44). Select the wall by the column and cut it into thirds vertically with another Loop Cut about a fourth of the way from the top (Image 45). Remove the surrounding faces (Image 46). Bevel the top vertices, merge the top middle vertices at their center (Image 47). With and without Proportional Editing, [k]G,Z[k] the top vertices to make a nice rounded shape at the top (Image 48). Make sure the middle piece has a front and back side (Image 49). Turn on X-Ray Mode and [k]Ctrl-X[/k] to remove any extra vertices in the outer wall edges (Image 50). Fill in the wall around the alcove and delete its front face (Image 51). Inside the arch delete the bottom and back faces (Image 52). Select the inner arch, [k]Shift-D,Enter,P[/k] to duplicate and separate (Image 53). Add a Solidify Modifier to the arch and move the front vertices out so the arch appears outside the wall (Image 54). Position the 3D Cursor on the floor in the middle of the arch, add a Plane, rotate 90 degrees in the x-axis and then scale it to cover the entryway so that a glow effect can be added later (Image 55).",
+                      "Go to the far wall and add a column to the end (Image 44). Select the wall by the column and cut it into thirds vertically with another Loop Cut about a fourth of the way from the top (Image 45). Remove the surrounding faces (Image 46). Bevel the top vertices, merge the top middle vertices at their center (Image 47). With and without Proportional Editing, [k]G,Z[/k] the top vertices to make a nice rounded shape at the top (Image 48). Make sure the middle piece has a front and back side (Image 49). Turn on X-Ray Mode and [k]Ctrl-X[/k] to remove any extra vertices in the outer wall edges (Image 50). Fill in the wall around the alcove and delete its front face (Image 51). Inside the arch delete the bottom and back faces (Image 52). Select the inner arch, [k]Shift-D,Enter,P[/k] to duplicate and separate (Image 53). Add a Solidify Modifier to the arch and move the front vertices out so the arch appears outside the wall (Image 54). Position the 3D Cursor on the floor in the middle of the arch, add a Plane, rotate 90 degrees in the x-axis and then scale it to cover the entryway so that a glow effect can be added later (Image 55).",
                       {
                         "image": [
                         ]
