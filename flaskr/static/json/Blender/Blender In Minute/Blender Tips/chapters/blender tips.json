@@ -1,0 +1,58 @@
+{
+  "sections": [
+    {
+      "How to Bend Any Object In Blender in 1 Minute": {
+        "tags": ["curve", "bend", "simple deform"],
+        "key_concepts": [
+          "[url]How to Bend Any Object In Blender in 1 Minute^^https://www.youtube.com/watch?v=tMHwdXB5xVo[/url]",
+          "Learn how to use the Simple Deform Modifier.",
+          {
+            "section": {
+              "header": "Bending a Cube",
+              "content": [
+                "Add a Cube to the scene, and give it some Loop Cuts running along the y-axis (Image 1). Add a Simple Deform Modifier (Image 2). Change the type to Bend (Image 3).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender In Minute/Blender Tips/Bend any Object/bend-01.jpg",
+                      "caption": "Image 1 - Adding a Cube to the scene and giving it some Loop Cuts running along the y-axis"
+                    },
+                    {
+                      "src": "Blender/Blender In Minute/Blender Tips/Bend any Object/bend-02.jpg",
+                      "caption": "Image 2 - Adding a Simple Deform Modifier"
+                    },
+                    {
+                      "src": "Blender/Blender In Minute/Blender Tips/Bend any Object/bend-03.jpg",
+                      "caption": "Image 3 - Changing the type to Bend"
+                    }
+                  ]
+                },
+                "Add an Empty to the scene (Image 4). Make the Empty the Origin of the Simple Bend Modifier (Image 5). Select the Empty and [k]R,Y,90[/k], you should see the modifier adapt (Image 6). Update the cube, changing the degree of bend, updating the size (Image 7).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender In Minute/Blender Tips/Bend any Object/bend-04.jpg",
+                      "caption": "Image 4 - Adding an Empty to the scene"
+                    },
+                    {
+                      "src": "Blender/Blender In Minute/Blender Tips/Bend any Object/bend-05.jpg",
+                      "caption": "Image 5 - Making the Empty the Origin of the Simple Bend Modifier"
+                    },
+                    {
+                      "src": "Blender/Blender In Minute/Blender Tips/Bend any Object/bend-06.jpg",
+                      "caption": "Image 6 - Selecting the Empty and rotating it 90 degrees in the y-axis to see the modifier adapt"
+                    },
+                    {
+                      "src": "Blender/Blender In Minute/Blender Tips/Bend any Object/bend-07.jpg",
+                      "caption": "Image 7 - Updating the cube by changing the degree of bend and updating the size"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
