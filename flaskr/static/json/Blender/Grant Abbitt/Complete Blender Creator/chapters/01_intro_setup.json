@@ -1,0 +1,1060 @@
+{
+  "title": "Introduction & Setup",
+  "sections": [
+    {
+      "Downloading Blender": {
+        "key_concepts": [
+          {
+            "compound_text": [
+              "Download from ",
+              {"url": {"href": "https://www.blender.org/", "html": "Blender.org"}},
+              "."
+            ]
+          },
+          {
+            "section": {
+              "header": "Update the resolution",
+              "content": [
+                {
+                  "list": [
+                    {
+                      "compound_text": [
+                        "Go to ",
+                        {"menu_selection": "Edit > Preferences > Interface"},
+                        "."
+                      ]
+                    },
+                    {
+                      "compound_text": [
+                        "Under ",
+                        {"menu_selection": "Display > Resolution Scale"},
+                        ", change the value to 1.4"
+                      ]
+                    },
+                    "This will make the font size bigger, making text easier to read"
+                  ]
+                }
+              ]
+            }
+          },
+          "Version number can be found in the bottom-right corner of the page."
+        ],
+        "footer": [
+
+        ]
+      }
+    },
+    {
+      "Moving Around the Scene": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Middle Mouse Button",
+              "content": [
+                {
+                  "list": [
+                    {
+                      "compound_text": [
+                        "Hold down the ",
+                        {"kbd": "MMB"},
+                        " and move the Mouse to rotate around the scene."
+                      ]
+                    },
+                    {
+                      "compound_text": [
+                        "Hold down ",
+                        {"kbd": "Shift-MMB"},
+                        " and move the Mouse to strafe from side to side."
+                      ]
+                    },
+                    {
+                      "section": {
+                        "header": "To zoom in and out",
+                        "content": [
+                          {
+                            "list": [
+                              "Spin the Mouse Wheel",
+                              {
+                                "compound_text": [
+                                  "Hold down ",
+                                  {
+                                    "kbd": "Ctrl-MMB"
+                                  },
+                                  " and move the Mouse."
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Numpad",
+              "content": [
+                {
+                  "d_list": [
+                    [{"kbd": "Numpad1"}, "Switch to Front-view"],
+                    [{"kbd": "Ctrl-Numpad1"}, "Switch to reverse of Front-view"],
+                    [{"kbd": "Numpad3"}, "Switch to Side-view"],
+                    [{"kbd": "Ctrl-Numpad3"}, "Switch to reverse of Side-view"],
+                    [{"kbd": "Numpad7"}, "Switch to Top-view"],
+                    [{"kbd": "Ctrl-Numpad7"}, "Switch to reverse of Top-view"],
+                    [{"kbd": "Numpad5"}, "Toggle between Perspective and Othographic view"],
+                    [{"kbd": "Numpad0"}, "Toggle Camera-view (only works if you have a camera in scene)"]
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Adding Objects": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Adding Meshes",
+              "content": [
+                {
+                  "compound_text": [
+                    "In Object Mode, you can press ",
+                    {"kbd": "Shift-A"},
+                    " to bring up the Add menu and choose Mesh."
+                  ]
+                },
+                "The Add menu is also at the top of the viewport.",
+                "Adding a mesh places it at the 3D cursor, and makes it the selected object."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Deleting Meshes",
+              "content": [
+                {
+                  "compound_text": [
+                    "Select a mesh and press the ",
+                    {"kbd": "Del"},
+                    " key."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Positioning the 3D cursor",
+              "content": [
+                {
+                  "compound_text": [
+                    {"kbd": "Shift-RMB"},
+                    " the mouse anywhere in the viewport to move the 3D cursor"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Toolbar",
+              "content": [
+                "The Toolbar appears on the left side of the viewport.",
+                {"compound_text": ["It can be toggled on and off by pressing ", {"kbd": "T"}, "."]}
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Moving Meshes",
+              "content": [
+                {
+                  "section": {
+                    "header": "Using the Toolbar",
+                    "content": [
+                      {
+                        "list": [
+                          "Select an object.",
+                          "Press the Move button in the Toolbar. It looks like four arrows going in each direction.",
+                          "Pressing Move will display a circle and axes on the selected object's median point.",
+                          {
+                            "compound_text": [
+                              "Grab the mesh's circle a ", {"kbd": "LMB"}, " and hold it to move it around the scene."
+                            ]
+                          },
+                          "To restrict movement along an axis, grab the arrow for that axis on the mesh and start moving."
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Using the Keyboard",
+                    "content": [
+                      {
+                        "list": [
+                          "Select an object.",
+                          {"compound_text": ["Press ", {"kbd": "G"}, " to 'Grab'."]},
+                          {
+                            "compound_text": [
+                              "Use the Mouse to move it into position (no need to use ", { "kbd": "LMB"}, ")."
+                            ]
+                          },
+                          {
+                            "compound_text": [
+                              "To restrict movement along an axis, press ",
+                              {"kbd": "G"},
+                              " to 'Grab' followed by the key for the axis you wish to move along. Press ",
+                              {"kbd": "G,X"},
+                              " for the x-axis, ",
+                              {"kbd": "G,Y"},
+                              " for the y-axis, and ",
+                              {"kbd": "G,Z"},
+                              " for the z-axis."
+                            ]
+                          },
+                          {
+                            "compound_text": [
+                              {"kbd": "LMB"},
+                              " to set the mesh into place, ",
+                              {"kbd": "RMB"},
+                              " to cancel the movement and return to the starting position."
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Rotating Meshes",
+              "content": [
+                {
+                  "section": {
+                    "header": "Using the Toolbar",
+                    "content": [
+                      {
+                        "list": [
+                          "Select an object.",
+                          "Press the Rotate button in the Toolbar. It looks like two arrows around a circle.",
+                          "Pressing Rotate will display a circle and curved rotation axes on the selected object's median point.",
+                          {"compound_text": ["For trackball-style rotation, ", {"kbd": "LMB"}, " the mesh and move the mouse."]},
+                          "To restrict rotation along an axis, grab the arrow for that axis on the mesh and start moving."
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Using the Keyboard",
+                    "content": [
+                      {
+                        "list": [
+                          "Select an object",
+                          {"compound_text": ["Press ", {"kbd": "R"}, " to 'Rotate'."]},
+                          "Use the Mouse to rotate. Rotation will be perpendicular to the camera.",
+                          {
+                            "compound_text": [
+                              "To restrict rotation along an axis, press ",
+                              {"kbd": "R"},
+                              " to 'Rotate' followed by the key for the axis you wish to rotate along. Press ",
+                              {"kbd": "R,X"},
+                              " for the x-axis, ",
+                              {"kbd": "R,Y"},
+                              " for the y-axis, and ",
+                              {"kbd": "R,Z"},
+                              " for the z-axis."
+                            ]
+                          },
+                          {
+                            "compound_text": ["To set the exact angle of rotation, enter the amount, such as ", {"kbd": "R,X,45"}, "."]
+                          },
+                          {
+                            "compound_text": [
+                              {"kbd": "LMB"},
+                              " to set the rotation into place, ",
+                              {"kbd": "RMB"},
+                              " to cancel the rotation and return to the starting rotation."
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Scaling Meshes",
+              "content": [
+                {
+                  "list": [
+                    {
+                      "section": {
+                        "header": "Using the Toolbar",
+                        "content": [
+                          {
+                            "list": [
+                              "Select an object.",
+                              "Press the Scale button in the Toolbar. It looks like a small box growing into a larger box.",
+                              "Pressing Scale will display a circle and arrows for the axes on the selected object's median point.",
+                              {
+                                "compound_text": [
+                                  "To scale along all axes, ",
+                                  {"kbd": "LMB"},
+                                  " the mesh and move the mouse."
+                                ]
+                              },
+                              "To restrict scaling along an axis, grab the arrow for that axis on the mesh and start moving."
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "section": {
+                        "header": "Using the Keyboard",
+                        "content": [
+                          {
+                            "list": [
+                              "Select an object",
+                              {"compound_text": ["Press ", {"kbd": "S"}, " to 'Scale'."]},
+                              "Use the Mouse to scale. Scaling will be along all axes.",
+                              {
+                                "compound_text": [
+                                  "To restrict scaling along an axis, press ",
+                                  {"kbd": "S"},
+                                  " to 'Scale' followed by the key for the axis you wish to scale along. Press ",
+                                  {"kbd": "S,X"},
+                                  " for the x-axis, ",
+                                  {"kbd": "S,Y"},
+                                  " for the y-axis, and ",
+                                  {"kbd": "S,Z"},
+                                  " for the z-axis."
+                                ]
+                              },
+                              {
+                                "compound_text": [
+                                  {"kbd": "LMB"},
+                                  " to set the mesh's scale, ",
+                                  {"kbd": "RMB"},
+                                  " to cancel the scaling and return to the starting size."
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "exercises": [
+          "Add one of each type of mesh to a Scene. Position them differently by moving the 3D cursor.",
+          "Scale the plane by a factor of 10 to create a floor.",
+          "Line up all other meshes along the x-axis.",
+          "Rotate the cylinder, torus, and monkey meshes so they appear to be sitting comfortably on the floor.",
+          {
+            "model": {
+              "type": "glb",
+              "path": "Grant Abbitt/CompleteBlendCreator/1a/exercise 1.glb",
+              "canvas_number": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Viewport & Rendering": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Viewport Shading Options",
+              "content": [
+                {
+                  "ref-table": [
+                    [{"th": "Mode:"}, {"td": "All Modes"}],
+                    [{"th": "Header:"}, {
+                      "td": {
+                        "compound_text": [
+                          {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/editors_3dview_display_shading.png"}},
+                          "[kbd]Viewport Shading[/kbd]"
+                        ]
+                      }
+                    }],
+                    [{"th": "Shortcut:"}, {"td": "[kbd]Z[/kbd][kbd]Shift-Z[/kbd]"}]
+                  ]
+                },
+                "Blender offers different shading modes for helping with different tasks. For example, Solid shading is well-suited for modeling, while Rendered is useful for setting up lighting.",
+                "The radio buttons let you change the shading mode, while the drop-down button opens a popover with additional options described below.",
+                "Pressing [kbd]Z[/kbd] opens a pie menu for changing the shading mode. Pressing [kbd]Shift-Z[/kbd] switches between the current shading mode and Wireframe.",
+                {
+                  "section": {
+                    "header": "Wireframe",
+                    "content": [
+                      "Only displays the edges (wireframes) of the objects in the scene."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Solid",
+                    "content": [
+                      "This mode utilizes the Workbench Render Engine to render the 3D Viewport. It shows solid geometry but uses simplified shading and lighting without the use of shader nodes. Solid mode is good for modeling and sculpting, and is really useful with the multitude of options to emphasize certain geometric features."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Material Preview",
+                    "content": [
+                      "Render the 3D Viewport with EEVEE and an HDRI environment. This mode is particularly suited for previewing materials and painting textures. You can select different lighting conditions to test your materials."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Rendered",
+                    "content": [
+                      "Render the 3D Viewport using the scene's Render Engine, for interactive rendering. This gives you a preview of the final result, including scene lighting effects.",
+                      "The options are the same as for Material Preview, except that the Render Pass selector will offer different passes if the scene uses the Cycles render engine."
+                    ]
+                  }
+                },
+                "There is also an X-Ray mode to the left of Wireframe. This allows you to see through the objects.",
+                "In Solid mode there appears to be some lighting, but it's fake. Moving the light around the scene won't change the shading on the objects."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Rendering",
+              "content": [
+                {
+                  "list": [
+                    {
+                      "compound_text": [
+                        "Press ", {"kbd": "Numpad0"}, " to go to Camera View. This shows what you will see when you render your scene."
+                      ]
+                    },
+                    {
+                      "compound_text": ["Press ", {"kbd": "F12"}, " to render. The rendered image will come up in a new window."]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Render Settings",
+              "content": [
+                "Click on Render Properties on the right side.",
+                "There are two major render engines: Eevee and Cycles.",
+                "Eevee is a super fast rendering system, but it's not completely accurate to real life.",
+                "Cycles gives a softness to shadows and a darkness right in the crevices here where the light can't get in."
+              ]
+            }
+          }
+        ],
+        "exercises": [
+          "Go to Render Preview Mode.",
+          "Check the differences between Eevee and Cycles.",
+          {
+            "compound_text": [
+              "Move the camera to where all objects are visible (use ",
+              {"kbd": "Numpad0"},
+              " to switch to Camera View)."
+            ]
+          },
+          "Move the light into a nice position.",
+          {
+            "compound_text": [
+              "Render the scene (",
+              {"kbd": "F12"},
+              ") and save your image."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Material Colours": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Adding Material",
+              "content": [
+                "Add material in Shading Mode.",
+                {
+                  "compound_text": [
+                    "The ",
+                    {"url": {"href": "https://docs.blender.org/manual/en/latest/editors/shader_editor.html", "html": "Shader Editor"}},
+                    " is used to edit materials which are used for rendering. Materials used by Cycles and EEVEE are defined using a node tree. Therefore, the main window of the Shader editor is a node editor."
+                  ]
+                },
+                {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/editors_shader-editor_main.png", "caption": "The Shader Editor"}},
+                "Changes to the material are displayed in real time as long as you are in Material Preview Mode or Render Mode.",
+                "Multiple objects can share a material, but changes to the material will affect all objects that share it."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Improving Material Render",
+              "content": [
+                {
+                  "section": {
+                    "header": "Ambient Occlusion",
+                    "content": [
+                      "In the Render tab, there is an option for 'Ambient Occlusion'.",
+                      "This is a shader that computes how much the hemisphere above the shading point is blocked."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Screen Space Reflections",
+                    "content": [
+                      "In the Render tab, there is an option for 'Screen Space Reflections'.",
+                      "If this effect is enabled, all Materials will use the depth buffer and the previous frame color to create more accurate reflection than reflection probes."
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "exercises": [
+          "Add a material to an object and give it a bright colour.",
+          "Make another material and share it between two objects.",
+          {
+            "model": {
+              "type": "glb",
+              "path": "Grant Abbitt/CompleteBlendCreator/1a/exercise 2.glb",
+              "canvas_number": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Material Reflections": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Principled BSDF Properties",
+              "content": [
+                {
+                  "compound_text": [
+                    "With your mouse over the Shader Editor you can press ",
+                    {"kbd": "Ctrl-Space"},
+                    " to make the Shader Editor fullscreen."
+                  ]
+                },
+                {
+                  "compound_text": [
+                    "The most important properties you will be working with are ",
+                    {
+                      "url": {
+                        "href": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html",
+                        "html": "the Metallic, the Roughness, and the Normals"
+                      }
+                    },
+                    "."
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Metallic",
+                    "content": [
+                      "Specifies microfacet roughness of the surface for specular reflection and transmission. A value of 0.0 gives a perfectly sharp reflection, while 1.0 gives a diffuse reflection.",
+                      {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/render_shader-nodes_shader_principled-metallic.webp", "caption": "Roughness from 0.0 to 1.0"}}
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Roughness",
+                    "content": [
+                      "Blends between a dielectric and metallic material model. At 0.0 the material consists of a diffuse or transmissive base layer, with a specular reflection layer on top. A value of 1.0 gives a fully specular reflection tinted with the base color, without diffuse reflection or transmission.",
+                      {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/render_shader-nodes_shader_principled-roughness.webp", "caption": "Metallic from 0.0 to 1.0"}}
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Emission",
+                    "content": [
+                      "Light emission from the surface.",
+                      {
+                        "section": {
+                          "header": "Color",
+                          "content": [
+                            "Color of light emission from the surface.",
+                            {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/render_shader-nodes_shader_principled-emission-color.webp", "caption": "Emission color variations"}}
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Strength",
+                          "content": [
+                            "Strength of the emitted light. A value of 1.0 ensures that the object in the image has the exact same color as the Emission Color, i.e. make it 'shadeless'.",
+                            {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/render_shader-nodes_shader_principled-emission-strength.webp", "caption": "Strength from 0.0 to 10.0"}}
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Smooth Shading",
+              "content": [
+                {
+                  "section": {
+                    "header": "Shade Smooth",
+                    "content": [
+                      {
+                        "compound_text": [
+                          "In the Shading Editor ",
+                          {"kbd": "RMB"},
+                          " to bring up the Object Context menu and select ",
+                          {
+                            "url": {
+                              "href": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/shading.html#shade-smooth",
+                              "html": "Shade Smooth"
+                            }
+                          },
+                          "."
+                        ]
+                      },
+                      {
+                        "compound_text": [
+                          "Sets an entire object as smooth or faceted. This forces the assignment of the 'smoothing' attribute to each face in the mesh, including when you add or delete geometry.",
+                          {
+                            "image": {
+                              "src": ["Grant Abbitt/CompleteBlendCreator/1a/scene-layout_object_editing_shading_example-flat.png", "Grant Abbitt/CompleteBlendCreator/1a/scene-layout_object_editing_shading_example-smooth.png"],
+                              "caption": "Example mesh flat (left) and smooth-shaded (right)"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Shade Auto Smooth",
+                    "content": [
+                      {
+                        "url": {
+                          "href": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/shading.html#shade-auto-smooth",
+                          "html": "Blender Documentation"
+                        }
+                      },
+                      "Adds a Smooth By Angle Modifier to automatically set the sharpness of mesh edges based on the angle between the neighboring faces. Note, the modifier will be pinned to be the last modifier."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Environmental Reflections",
+              "content": [
+                "In order to make your material reflections more interesting, try adding a background image to give your material something to reflect",
+                {
+                  "section": {
+                    "header": "Background",
+                    "content": [
+                      {
+                        "compound_text": [
+                          {
+                            "url": {
+                              "href": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/background.html",
+                              "html": "The Background shader node"
+                            }
+                          },
+                          " is used to add background light emission. This node should only be used for the world surface output.",
+                          {"image": { "src": "Grant Abbitt/CompleteBlendCreator/1a/node-types_ShaderNodeBackground.webp"}}
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "World Node",
+                    "content": [
+                      {
+                        "compound_text": [
+                          {
+                            "url": {
+                              "href": "https://docs.blender.org/manual/en/latest/render/shader_nodes/output/world.html#world-node",
+                              "html": "The World Output node"
+                            }
+                          },
+                          " is used to output light a color information to the scene's World.",
+                          {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/node-types_ShaderNodeOutputWorld.webp"}}
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Environment Texture Node",
+                    "content": [
+                      {
+                        "compound_text": [
+                          {
+                            "url": {
+                              "href": "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/environment.html#environment-texture-node",
+                              "html": "The Node Environmental Texture"
+                            }
+                          },
+                          " is used to light your scene using an environment map image file as a texture.",
+                          {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/node-types_ShaderNodeTexEnvironment.webp"}}
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "exercises": [
+          "Select an object and give it a Metallic value of 1.0 and Roughness of 0.0 to make it shiny",
+          "Select a surface with many faces (such as a cylinder) and apply Smooth Shading.",
+          {
+            "model": {
+              "type": "glb",
+              "path": "Grant Abbitt/CompleteBlendCreator/1a/exercise 3.glb",
+              "canvas_number": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Lighting": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Light Properties",
+              "content": [
+                {
+                  "list": [
+                    "Switch to Layout Workspace and select your light.",
+                    "In the Properties Editor select the Data tab."
+                  ]
+                },
+                "There are different types of Lights to choose from:",
+                {
+                  "section": {
+                    "header": "Point",
+                    "content": [
+                      {
+                        "compound_text": [
+                          {
+                            "url": {
+                              "href": "https://docs.blender.org/manual/en/latest/render/lights/light_object.html#point-light",
+                              "html": "The point light"
+                            }
+                          },
+                          " is an omni-directional point of light, that is, a point radiating the same amount of light in all directions. It's visualized by a plain, circled dot. Being a point light source, the direction of the light hitting an object's surface is determined by the line joining the light and the point on the surface of the object itself. It can be used as simple model of e.g. a light bulb.",
+                          {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/render_lights_light-object_viewport.png", "caption": "Point light."}}
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Spot Light",
+                    "content": [
+                      {
+                        "compound_text": [
+                          {
+                            "url": {
+                              "href": "https://docs.blender.org/manual/en/latest/render/lights/light_object.html#spot-light",
+                              "html": "A spot light"
+                            }
+                          },
+                          " emits a cone-shaped beam of light from the tip of the cone, in a given direction.",
+                          {
+                            "image": {
+                              "src": "Grant Abbitt/CompleteBlendCreator/1a/render_lights_light-object_terms.png",
+                              "caption": "Changing the spot options also changes the appearance of the spotlight as displayed in the 3D Viewport."
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Area Light",
+                    "content": [
+                      {
+                        "compound_text": [
+                          {
+                            "url": {
+                              "href": "https://docs.blender.org/manual/en/latest/render/lights/light_object.html#area-light",
+                              "html": "The area light"
+                            }
+                          },
+                          " simulates light originating from a surface (or surface-like) emitter. For example, a TV screen, office neon lights, a window, or a cloudy sky are just a few types of area light. The area light produces shadows with soft borders by sampling a light along a grid the size of which is defined by the user. This is in direct contrast to point-like artificial lights which produce sharp borders."
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Sun Light",
+                    "content": [
+                      {
+                        "compound_text": [
+                          {
+                            "url": {
+                              "href": "https://docs.blender.org/manual/en/latest/render/lights/light_object.html#sun-light",
+                              "html": "A sun light"
+                            }
+                          },
+                          " provides light of constant intensity emitted in a single direction from infinitely far away. It can be very handy for a uniform clear daylight open-space illumination. In the 3D Viewport, the sun light is represented by an encircled black dot with rays emitting from it, plus a dashed line indicating the direction of the light."
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "World Background",
+              "content": [
+                "Go into the Shading Editor and change the Strength of the Background node for the Hi-Res Background image. This will make it appear darker and accentuate the effect the lighting has on the rendered scene."
+              ]
+            }
+          }
+        ],
+        "exercises": [
+          "Change the floor color to darker, so that shadows will have an affect.",
+          "Change the color and power of your Point Light, and move it around.",
+          "Change the light to a Sun Light, and experiment with the color and power.",
+          "Change the light to a Spot Light, and experiment with the color, power, and radius."
+        ]
+      }
+    },
+    {
+      "Editing Objects": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Edit Mode",
+              "content": [
+                {
+                  "list": [
+                    "Start with a new Scene, in the Layout Workspace",
+                    {
+                      "compound_text": [
+                        "Select an object and press ",
+                        {"kbd": "Tab"},
+                        " to go into Edit Mode."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Selection Modes",
+                    "content": [
+                      {
+                        "url": {
+                          "href": "https://docs.blender.org/manual/en/latest/modeling/meshes/selecting/introduction.html#selection-modes",
+                          "html": "Blender documentation"
+                        }
+                      },
+                      "There are many ways to select elements, and it depends on what Mesh Select Mode you are in as to what selection tools are available.",
+                      {
+                        "section": {
+                          "header": "Vertex",
+                          "content": [
+                            {
+                              "compound_text": [
+                                "In this mode vertices are shown as points. Selected vertices are displayed in orange, unselected vertices in black, and the active or last selected vertex in white. This mode can also be toggled via ",
+                                {"kbd": "1"},
+                                "."
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Edge",
+                          "content": [
+                            {
+                              "compound_text": [
+                                "In this mode the vertices are not shown. Instead the selected edges are displayed in orange, unselected edges black, and the active or last selected edge in white. This mode can also be toggled via ",
+                                {"kbd": "2"},
+                                "."
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Face",
+                          "content": [
+                            {
+                              "compound_text": [
+                                "In this mode the faces are displayed with a selection point in the middle which is used for selecting a face. Selected faces and their selection point are displayed in orange, unselected faces are displayed in black, and the active or last selected face is highlighted in white. This mode can also be toggled via ",
+                                {"kbd": "3"},
+                                "."
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "compound_text": [
+                    "With a Vertex, Edge, or Face selected, you can press ",
+                    {"kbd": "G"},
+                    " to grab and move those elements around."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Extrude Region",
+              "content": [
+                {
+                  "url": {
+                    "href": "https://docs.blender.org/manual/en/latest/modeling/meshes/tools/extrude_region.html",
+                    "html": "Blender documentation"
+                  }
+                },
+                {
+                  "compound_text": [
+                    "Extrusion tools duplicate vertices, while keeping the new geometry connected with the original vertices. Vertices are turned into edges and edges will form faces.",
+                    {
+                      "image": [
+                        {
+                          "src": "Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_vert.png",
+                          "caption": "Single vertex extruded."
+                        },
+                        {
+                          "src": "Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_edge.png",
+                          "caption": "Single edge extruded."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "This tool is of paramount importance for creating new geometry. It allows you to create parallelepipeds from rectangles and cylinders from circles, as well as easily creating such things as tree limbs.",
+                "The axis on which vertices and edges are extruded along can be set interactively. Faces are extruded by default along their averaged normal. The extrusion can be limited to a single axis by specifying an axis; see Axis Locking.",
+                "The extrude tools differentiate in how the new geometry is connected in itself.",
+                "Only the border loop gets extruded. The inner region of the selection gets moved unchanged with the extrusion.",
+                {
+                  "image": [
+                    {
+                      "src": "Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_face-after.png",
+                      "caption": "Selected face."
+                    },
+                    {
+                      "src": "Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_edge.png",
+                      "caption": "During extrude."
+                    },
+                    {
+                      "src": "Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_face-after-zaxis.png",
+                      "caption": "Set to Z axis."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Loop Cut",
+              "content": [
+                {
+                  "url": {
+                    "href": "https://docs.blender.org/manual/en/latest/modeling/meshes/tools/loop.html",
+                    "html": "Blender documentation"
+                  }
+                },
+                {
+                  "compound_text": [
+                    "The Loop Cut tool is a modal tool version of the Loop Cut and Slide operator. This tool splits a loop of faces by inserting new edge loops intersecting the chosen edge. ",
+                    {"kbd": "Ctrl-R"}
+                  ]
+                },
+                "The tool is interactive and has two steps:",
+                {
+                  "section": {
+                    "header": "Pre-Visualizing the Cut",
+                    "content": [
+                      "After the tool is activated, move the cursor over a desired edge. The cut to be made is marked with a magenta colored line as you move the mouse over the various edges. The to be created edge loop stops at the poles (tris and n-gons) where the existing face loop terminates."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Perform the Cut",
+                    "content": [
+                      {
+                        "compound_text": [
+                          "Once the desired location of the new edge loop is found, the edge loop can be created via ",
+                          {"kbd": "LMB"},
+                          "."
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "exercises": [
+          "Use the Extrude and Loop Cut tools to create interesting shapes."
+        ]
+      }
+    }
+  ]
+}
