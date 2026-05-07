@@ -374,7 +374,7 @@
           {
             "model": {
               "type": "glb",
-              "path": "Grant Abbitt/CompleteBlendCreator/1a/exercise 1.glb",
+              "path": "Blender/Grant Abbitt/CompleteBlendCreator/1a/exercise 1.glb",
               "canvas_number": 1
             }
           }
@@ -394,7 +394,7 @@
                     [{"th": "Header:"}, {
                       "td": {
                         "compound_text": [
-                          {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/editors_3dview_display_shading.png"}},
+                          {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/editors_3dview_display_shading.png"}},
                           "[kbd]Viewport Shading[/kbd]"
                         ]
                       }
@@ -510,7 +510,7 @@
                     " is used to edit materials which are used for rendering. Materials used by Cycles and EEVEE are defined using a node tree. Therefore, the main window of the Shader editor is a node editor."
                   ]
                 },
-                {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/editors_shader-editor_main.png", "caption": "The Shader Editor"}},
+                {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/editors_shader-editor_main.png", "caption": "The Shader Editor"}},
                 "Changes to the material are displayed in real time as long as you are in Material Preview Mode or Render Mode.",
                 "Multiple objects can share a material, but changes to the material will affect all objects that share it."
               ]
@@ -548,7 +548,7 @@
           {
             "model": {
               "type": "glb",
-              "path": "Grant Abbitt/CompleteBlendCreator/1a/exercise 2.glb",
+              "path": "Blender/Grant Abbitt/CompleteBlendCreator/1a/exercise 2.glb",
               "canvas_number": 1
             }
           }
@@ -586,7 +586,7 @@
                     "header": "Metallic",
                     "content": [
                       "Specifies microfacet roughness of the surface for specular reflection and transmission. A value of 0.0 gives a perfectly sharp reflection, while 1.0 gives a diffuse reflection.",
-                      {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/render_shader-nodes_shader_principled-metallic.webp", "caption": "Roughness from 0.0 to 1.0"}}
+                      {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/render_shader-nodes_shader_principled-metallic.webp", "caption": "Roughness from 0.0 to 1.0"}}
                     ]
                   }
                 },
@@ -595,7 +595,7 @@
                     "header": "Roughness",
                     "content": [
                       "Blends between a dielectric and metallic material model. At 0.0 the material consists of a diffuse or transmissive base layer, with a specular reflection layer on top. A value of 1.0 gives a fully specular reflection tinted with the base color, without diffuse reflection or transmission.",
-                      {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/render_shader-nodes_shader_principled-roughness.webp", "caption": "Metallic from 0.0 to 1.0"}}
+                      {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/render_shader-nodes_shader_principled-roughness.webp", "caption": "Metallic from 0.0 to 1.0"}}
                     ]
                   }
                 },
@@ -609,7 +609,7 @@
                           "header": "Color",
                           "content": [
                             "Color of light emission from the surface.",
-                            {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/render_shader-nodes_shader_principled-emission-color.webp", "caption": "Emission color variations"}}
+                            {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/render_shader-nodes_shader_principled-emission-color.webp", "caption": "Emission color variations"}}
                           ]
                         }
                       },
@@ -618,7 +618,7 @@
                           "header": "Strength",
                           "content": [
                             "Strength of the emitted light. A value of 1.0 ensures that the object in the image has the exact same color as the Emission Color, i.e. make it 'shadeless'.",
-                            {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/render_shader-nodes_shader_principled-emission-strength.webp", "caption": "Strength from 0.0 to 10.0"}}
+                            {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/render_shader-nodes_shader_principled-emission-strength.webp", "caption": "Strength from 0.0 to 10.0"}}
                           ]
                         }
                       }
@@ -655,7 +655,7 @@
                           "Sets an entire object as smooth or faceted. This forces the assignment of the 'smoothing' attribute to each face in the mesh, including when you add or delete geometry.",
                           {
                             "image": {
-                              "src": ["Grant Abbitt/CompleteBlendCreator/1a/scene-layout_object_editing_shading_example-flat.png", "Grant Abbitt/CompleteBlendCreator/1a/scene-layout_object_editing_shading_example-smooth.png"],
+                              "src": ["Blender/Grant Abbitt/CompleteBlendCreator/1a/scene-layout_object_editing_shading_example-flat.png", "Blender/Grant Abbitt/CompleteBlendCreator/1a/scene-layout_object_editing_shading_example-smooth.png"],
                               "caption": "Example mesh flat (left) and smooth-shaded (right)"
                             }
                           }
@@ -699,7 +699,7 @@
                             }
                           },
                           " is used to add background light emission. This node should only be used for the world surface output.",
-                          {"image": { "src": "Grant Abbitt/CompleteBlendCreator/1a/node-types_ShaderNodeBackground.webp"}}
+                          {"image": { "src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/node-types_ShaderNodeBackground.webp"}}
                         ]
                       }
                     ]
@@ -718,7 +718,7 @@
                             }
                           },
                           " is used to output light a color information to the scene's World.",
-                          {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/node-types_ShaderNodeOutputWorld.webp"}}
+                          {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/node-types_ShaderNodeOutputWorld.webp"}}
                         ]
                       }
                     ]
@@ -737,7 +737,7 @@
                             }
                           },
                           " is used to light your scene using an environment map image file as a texture.",
-                          {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/node-types_ShaderNodeTexEnvironment.webp"}}
+                          {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/node-types_ShaderNodeTexEnvironment.webp"}}
                         ]
                       }
                     ]
@@ -753,7 +753,7 @@
           {
             "model": {
               "type": "glb",
-              "path": "Grant Abbitt/CompleteBlendCreator/1a/exercise 3.glb",
+              "path": "Blender/Grant Abbitt/CompleteBlendCreator/1a/exercise 3.glb",
               "canvas_number": 1
             }
           }
@@ -787,7 +787,7 @@
                             }
                           },
                           " is an omni-directional point of light, that is, a point radiating the same amount of light in all directions. It's visualized by a plain, circled dot. Being a point light source, the direction of the light hitting an object's surface is determined by the line joining the light and the point on the surface of the object itself. It can be used as simple model of e.g. a light bulb.",
-                          {"image": {"src": "Grant Abbitt/CompleteBlendCreator/1a/render_lights_light-object_viewport.png", "caption": "Point light."}}
+                          {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/render_lights_light-object_viewport.png", "caption": "Point light."}}
                         ]
                       }
                     ]
@@ -808,7 +808,7 @@
                           " emits a cone-shaped beam of light from the tip of the cone, in a given direction.",
                           {
                             "image": {
-                              "src": "Grant Abbitt/CompleteBlendCreator/1a/render_lights_light-object_terms.png",
+                              "src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/render_lights_light-object_terms.png",
                               "caption": "Changing the spot options also changes the appearance of the spotlight as displayed in the 3D Viewport."
                             }
                           }
@@ -974,11 +974,11 @@
                     {
                       "image": [
                         {
-                          "src": "Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_vert.png",
+                          "src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_vert.png",
                           "caption": "Single vertex extruded."
                         },
                         {
-                          "src": "Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_edge.png",
+                          "src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_edge.png",
                           "caption": "Single edge extruded."
                         }
                       ]
@@ -992,15 +992,15 @@
                 {
                   "image": [
                     {
-                      "src": "Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_face-after.png",
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_face-after.png",
                       "caption": "Selected face."
                     },
                     {
-                      "src": "Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_edge.png",
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_edge.png",
                       "caption": "During extrude."
                     },
                     {
-                      "src": "Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_face-after-zaxis.png",
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/1a/modeling_meshes_tools_extrude-region_face-after-zaxis.png",
                       "caption": "Set to Z axis."
                     }
                   ]
