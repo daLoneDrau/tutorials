@@ -3,6 +3,7 @@
   "sections": [
     {
       "Inserting Background Images": {
+        "tags": ["dinosaur", "reference images", "empty"],
         "key_concepts": [
           {
             "image": {
@@ -227,7 +228,7 @@
                             },
                             {
                               "image": {
-                                "src": "Grant Abbitt/CharCreator4Games/4/modeling_empties_draw-types.png",
+                                "src": "Blender/Grant Abbitt/CharCreator4Games/4/modeling_empties_draw-types.png",
                                 "caption": "Empty Display Types."
                               }
                             }
@@ -505,6 +506,7 @@
     },
     {
       "Dino Curves": {
+        "tags": ["dinosaur", "area options", "split screen"],
         "key_concepts": [
           {
             "section": {
@@ -1217,6 +1219,7 @@
     },
     {
       "The Landscape": {
+        "tags": ["sculpting", "terrain"],
         "key_concepts": [
           {
             "section": {
@@ -1375,6 +1378,7 @@
     },
     {
       "The Mountains": {
+        "tags": ["sculpting", "terrain", "mountains"],
         "key_concepts": [
           "The goal of this unit is to use nodes to add a gradient to the mountains.",
           {
