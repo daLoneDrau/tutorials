@@ -1,0 +1,2346 @@
+{
+  "title": "Modular Dungeon",
+  "sections": [
+    {
+      "Creating a Barrel": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel_1.jpg",
+              "caption": "The finished product."
+            }
+          },
+          {
+            "section": {
+              "header": "Starting with a Cylinder",
+              "content": [
+                "Straightaway, delete the cube from the starting scene and [kbd]Shift-A[/kbd] to add a cylinder. To get a chunky, low-poly look, make the following changes:",
+                [
+                  "Set the Vertices to 12.",
+                  "Change the Radius to 0.5m.",
+                  "Change the Depth to 1.2m."
+                ],
+                "Move the cylinder up so it's on top of the 'imaginary' floor.",
+                "Go into Edit Mode to begin working on the topology. We want the barrel to have a curved, rounded shape. The way to do this is press [kbd]Ctrl-R[/kbd] to give it two horizontal loop cuts.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel_2.jpg",
+                    "caption": "Loop cuts to define where the curve will be."
+                  }
+                },
+                "We want to select the edges that were created by the loop cut, so press [kbd]2[/kbd] to go into Edge Mode and press [kbd]Alt-LMB[/kbd] to select the first edge loop and then [kbd]Shift-Alt-LMB[/kbd] to include the second in your selection.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel_3.jpg",
+                    "caption": "Both edge loops selected."
+                  }
+                },
+                "With those edges selected press [kbd]S,Shift-Z[/kbd] to scale only in the x- and y-axes and pull the edges out to create the barrel shape. Taking it out to 1.230 scale factor should do it.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel_4.jpg",
+                    "caption": "Scaling in the x- and y-axes."
+                  }
+                },
+                "The next step is to create the metal braces that go around the middle. For that we will use the Bevel tool."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bevel Edges",
+              "content": [
+                {
+                  "ref-table": [
+                    [{"th": "Mode:"}, {"td": "Edit Mode"}],
+                    [{"th": "Menu:"}, {"td": "[kbd]Edge > Bevel Edges[/kbd] [kbd]Vertex > Bevel Vertices[/kbd]"}],
+                    [{"th": "Shortcut:"}, {"td": "[kbd]Ctrl-B[/kbd](Bevel Edges) [kbd]Shift-Ctrl-B[/kbd] (Bevel Vertices)"}]
+                  ]
+                },
+                "The Bevel tool allows you to create chamfered or rounded corners on geometry. A bevel is an effect that smooths out edges and corners.",
+                "Real world edges are very seldom exactly sharp. Not even a knife blade edge can be considered perfectly sharp. Most edges are intentionally beveled for mechanical and practical reasons.",
+                "Bevels are also useful for giving realism to non-organic models. In the real world, the blunt edges on objects catch the light and change the shading around the edges. This gives a solid, realistic look, as opposed to un-beveled objects which can look too perfect.",
+                {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_meshes_editing_edge_bevel_cubes.jpg", "caption": "Cubes with and without bevel."}},
+                {
+                  "section": {
+                    "header": "Usage",
+                    "content": [
+                      "The Bevel Edges tool works only on selected edges with exactly two adjacent faces. It will recognize any edges included in a vertex or face selection as well, and perform the bevel the same as if those edges were explicitly selected. In \"vertex only\" mode, the Bevel Vertices tool works on selected vertices instead of edges, and there is no requirement about having any adjacent faces. The Bevel tool smooths the edges and/or \"corners\" (vertices) by replacing them with faces making smooth profiles with a specified number of segments (see the options below for details about the bevel algorithm).",
+                      "Use [kbd]Ctrl-B[/kbd] or a method listed above to run the tool. Move the mouse to interactively or type a number to specify the bevel offset, and scroll the [kbd]Wheel[/kbd] to increase or decrease the number of segments (see below).",
+                      {
+                        "image": [
+                          {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_meshes_editing_edge_bevel_example-1.png", "caption": "Selected edge before beveling."},
+                          {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_meshes_editing_edge_bevel_example-2.png", "caption": "Result of bevel (one segment)."},
+                          {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_meshes_editing_edge_bevel_example-3.png", "caption": "Result of bevel (vertex only)."}
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "Options",
+                          "content": [
+                            {
+                              "section": {
+                                "header": "Width ",
+                                "content": [
+                                  "You can change the bevel width by moving the mouse towards and away from the object, a bit like with transform tools. The exact meaning of the value depends on the Width Type option (see above). As usual, the scaling can be controlled to a finer degree by holding [kbd]Shift[/kbd] to scale in 0.001 steps. [kbd]LMB[/kbd] finalizes the operation, [kbd]RMB[/kbd] or [kbd]Esc[/kbd] aborts the action."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Segments  ",
+                                "content": [
+                                  "The number of segments in the bevel can be defined by scrolling the mouse [kbd]Wheel[/kbd] to increase or decrease this value. The greater the number of segments, the smoother the bevel. Or press [kbd]S[/kbd] to change the number with mouse movements, as well as numeric input.",
+                                  "Alternatively, you can manually enter a segment number value while using the tool, or in the Mesh Tool options panel after using the tool.",
+                                  {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_meshes_editing_edge_bevel_example-4.png", "caption": "Bevel with four segments."}}
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating the Metal Braces",
+              "content": [
+                "So with the edges still selected, press [kbd]Ctrl-B[/kbd] to start creating the chunky braces",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel_5.jpg",
+                    "caption": "Beveling the edge loops."
+                  }
+                },
+                "Once you have the height you want for them, click [kbd]LMB[/kbd] to set them and then press [kbd]E[/kbd] to extrude followed immediately by [kbd]S,Shift-Z[/kbd] to scale them out in the x- and y-axes only. Scaling in the z-axis would affect the height.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel_6.jpg",
+                    "caption": "Bringing out the braces."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Top and Bottom",
+              "content": [
+                "Now we'll want to do the top and bottom of the barrel.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel_7.jpg",
+                    "caption": "Top of the barrel."
+                  }
+                },
+                "Press [kbd]3[/kbd] to go into Face Mode, and select both the top and bottom faces. Press [kbd]I[/kbd] to inset.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel_8.jpg",
+                    "caption": "Insetting the barrel top and bottom."
+                  }
+                },
+                "When that is set, press [kbd]E[/kbd] to extrude the faces and then [kbd]S,Z[/kbd] to scale them in the z-axis towards the middle. Doing them together ensures they have the same depth.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel_9.jpg",
+                    "caption": "Scaling the bottom faces in the z-axis."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Character Elements (Notches and Wobbles)",
+              "content": [
+                {
+                  "section": {
+                    "header": "Wobbles",
+                    "content": [
+                      "A good way to add character is to add distortion. Go into Vertex Mode ([kbd]1[/kbd]) and just go around the barrel and press [kbd]G[/kbd] to grab vertices along the braces or at the top and bottom edges and pull them out of alignment slightly."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Notches",
+                    "content": [
+                      "Go into Edge Mode ([kbd]2[/kbd]) and select an edge at the top or bottom. Press [kbd]Ctrl-B[/kbd] to create a bevel, and [kbd]Wheel[/kbd] to add a segment in the middle.",
+                      {
+                        "image": {
+                          "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel_10.jpg",
+                          "caption": "Bevel with a segment added."
+                        }
+                      },
+                      "With the bevel in place, we want to Edge Slide the middle segment down, creating a notch. Go into Vertex Mode ([kbd]1[/kbd])and select one of the vertices on the segment and press [kbd]G,G[/kbd] and pull them down to create the notch.",
+                      {
+                        "image": {
+                          "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel_11.jpg",
+                          "caption": "A notch created using Edge Slide."
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Edge Slide",
+                          "content": [
+                            {
+                              "ref-table": [
+                                [
+                                  {
+                                    "th": "Mode:"
+                                  },
+                                  {
+                                    "td": "Edit Mode"
+                                  }
+                                ],
+                                [
+                                  {
+                                    "th": "Header:"
+                                  },
+                                  {
+                                    "td": "[kbd]Edge > Edge Slide[/kbd]"
+                                  }
+                                ],
+                                [
+                                  {
+                                    "th": "Shortcut:"
+                                  },
+                                  {
+                                    "td": "[kbd]G,G[/kbd]"
+                                  }
+                                ]
+                              ]
+                            },
+                            "Slides one or more edges across adjacent faces with a few restrictions involving the selection of edges (i.e. the selection must define a valid loop, see below).",
+                            {
+                              "section": {
+                                "header": "Usage",
+                                "content": [
+                                  "By default, the position of vertices on the edge loop move as a percentage of the distance between their original position and the adjacent edge loop, regardless of the edges' lengths.",
+                                  {
+                                    "image": [
+                                      {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_meshes_editing_edge_edge-slide_before.png", "caption": "Selected edge loop."},
+                                      {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_meshes_editing_edge_edge-slide_after.png", "caption": "Repositioned edge loop."}
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Even Mode",
+                                "content": [
+                                  "Even mode keeps the shape of the selected edge loop the same as one of the edge loops adjacent to it, rather than sliding a percentage along each perpendicular edge.",
+                                  "In Even mode, the tool shows the position along the length of the currently selected edge which is marked in yellow, from the vertex that has an enlarged red marker. Movement of the sliding edge loop is restricted to this length. As you move the mouse the length indicator in the header changes showing where along the length of the edge you are.",
+                                  {
+                                    "image": [
+                                      {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_meshes_editing_edge_edge-slide_even.png", "caption": "Even Mode enabled."},
+                                      {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_meshes_editing_edge_edge-slide_even-flip.png", "caption": "Even Mode with Flip enabled."}
+                                    ]
+                                  },
+                                  "Moving the mouse moves the selected edge loop towards or away from the start vertex, but the loop line will only move as far as the length of the currently selected edge, conforming to the shape of one of the bounding edge loops."
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "After sliding the vertices down we have a problem; there are actually two vertices in the same position at the bottom of each side of the notch.  To fix this, we want to do two things:",
+                      [
+                        "Merge all vertices by distance. Press [kbd]A[/kbd] to select all vertices and then [kbd]M[/kbd] to merge and choose 'By Distance'.",
+                        {
+                          "compound_text": [
+                            "Turn on Auto Merge Vertices in the Toolbar on the top-right, which automatically merges vertices when they get too close to each other",
+                            {
+                              "image": {
+                                "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel_12.jpg",
+                                "caption": "The Auto Merge option."
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "Create notches at the top and bottom of the barrel."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Final Model",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/barrel.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Creating a Crate": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_1.jpg",
+              "caption": "The finished product."
+            }
+          },
+          {
+            "section": {
+              "header": "Starting with a Cube",
+              "content": [
+                "Still with the Barrel model created in the last lesson, [kbd]Tab[/kbd] into Object Mode and [kbd]H[/kbd] hide the barrel.  [kbd]Shift-A[/kbd] add a cube to the scene, setting the size to 1.2 so it has the same dimensions as the barrel. That way if you want to stack them on top of each other it will be that much easier.",
+                "[kbd]Tab[/kbd] into Edit Mode and press [kbd]3[/kbd] to go into Face Mode. We want to inset the faces to create the shape. With all sides selected press [kbd]I[/kbd] to inset. If you don't see any changes, you may have Individual faces turned off, so you would have needed to press [kbd]I,I[/kbd] to inset with them turned on.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_2.jpg",
+                    "caption": "Insetting the sides."
+                  }
+                },
+                "Next step would be to extrude the faces inwards, but if you press [kbd]E,S[/kbd] to start the extrude/scale process, the scaling would result in the inner faces becoming smaller. We want to scale the faces inwards without losing their dimensions.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_3.jpg",
+                    "caption": "Extrusion and Scale that is losing size."
+                  }
+                },
+                "Instead, press [kbd]Alt-E[/kbd] to bring up the Extrude Menu and choose 'Extrude Faces Along Normals'. This will allow us to extrude the faces inwards or outwards along their normals without affecting the dimensions. Extrude the faces inwards.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_4.jpg",
+                    "caption": "Extrusion along normals."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Slats to the Wood",
+              "content": [
+                "We want to add Edge Loops to all sides to create slats in the wood, so press [kbd]Ctrl-R[/kbd] to add Loop Cuts to all sides.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_5.jpg",
+                      "caption": "The first Loop Cuts."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_6.jpg",
+                      "caption": "The second group of Loop Cuts."
+                    }
+                  ]
+                },
+                "Select the bands of edges you want as separators for your slats, sides, top, and bottom.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_7.jpg"
+                  }
+                },
+                "Press [kbd]Ctrl-B[/kbd] to create a bevel and use the [kbd]Wheel[/kbd] to add a segment to the middle of the bevel. Then select those middle segement edges on opposing sides and press [kbd]S[/kbd] followed by [kbd]X[/kbd], [kbd]Y[/kbd], or [kbd]Z[/kbd] to bring the edges in towards the middle.  It will be [kbd]X[/kbd] or [kbd]Y[/kbd] for the opposing side edges, and [kbd]Z[/kbd] for the opposing top and bottom edges. If you [kbd]Tab[/kbd] into Object Mode, the crate should look like this:",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_8.jpg",
+                    "caption": "Slats on all sides."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Notches and Wobbles",
+              "content": [
+                {
+                  "section": {
+                    "header": "Wobbles",
+                    "content": [
+                      "Just like with the barrel, you will want to go into Edit Mode and [kbd]G[/kbd] to grab some vertices and move them slightly. A good idea is to [kbd]Ctrl-R[/kbd] to add more loop cuts across the middle so there will be more vertices to grab. Making distortions in the vertices on the slats is also good.",
+                      {
+                        "image": {
+                          "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_9.jpg",
+                          "caption": "Add more Loop Cuts and move vertices to create wobbles."
+                        }
+                      },
+                      "Check your work in Object Mode to make sure the distortions don't make anything look unnatural."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Notches",
+                    "content": [
+                      "Still in Edit Mode, press [kbd]1[/kbd] for Vertex Mode and select one of the corners. Press [kbd]Shift-Ctrl-B[/kbd] to Bevel the vertex at the corner. This creates a notch at the edge indicating wear and tear. Use the [kbd]Wheel[/kbd] to reduce the number of segments if there are too many.",
+                      {
+                        "image": {
+                          "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_10.jpg",
+                          "caption": "A Bevel on the corner vertex."
+                        }
+                      },
+                      "You can also create notches on the vertices at the edges of the crate. You may notice that the Bevel toop left behind an N-gon when appying the bevel. This can be fixed by selecting the vertices opposite each other where the N-gon needs to be cut, and pressing [kbd]J[/kbd] to Join them.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_11.jpg",
+                            "caption": "An N-gon created by beveling a vertex."
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_12.jpg",
+                            "caption": "Select opposite vertices."
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_13.jpg",
+                            "caption": "Join them to remove the N-gon."
+                          }
+                        ]
+                      },
+                      "Create notches in several places and check your work in Object Mode."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Final Model",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Creating a Pillar": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_1.jpg",
+              "caption": "The finished product."
+            }
+          },
+          {
+            "section": {
+              "header": "Starting with a Cube",
+              "content": [
+                "Keep everything from your scene (crate and barrel) but hide them away. [kbd]Shift-A[/kbd] to add a cube to the scene. Move it above the floor and then [kbd]S,Shift-Z[/kbd] to scale it down in the x- and y-axes so that it's dimensions are:",
+                [
+                  "X: 0.7 m",
+                  "Y: 0.7 m",
+                  "Z: 2 m"
+                ],
+                "Go into Edit Mode and then Face Mode and select the top face. [kbd]G,Z,1[/kbd] to move it up 1 unit, so the pillar is 3 m tall. The final pillar will be symmetrical; so we will ensure that by using a Mirror Modifier."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Mirror Modifier",
+              "content": [
+                {"url": {"href": "https://docs.blender.org/manual/en/4.2/modeling/modifiers/generate/mirror.html", "html": "Blender Documentation"}},
+                "The Mirror modifier mirrors a mesh along its local X, Y and/or Z axes, across the Object Origin. It can also use another object as the mirror center, then use that object's local axes instead of its own.",
+                {"img": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_modifiers_generate_mirror_panel.png", "caption": "The Mirror modifier."}},
+                {
+                  "section": {
+                    "header": "Options",
+                    "content": [
+                      {
+                        "section": {
+                          "header": "Axis",
+                          "content": [
+                            "The X, Y, Z axis along which to mirror, i.e. the axis perpendicular to the mirror plane of symmetry.",
+                            "To understand how the axis applies to the mirror direction, if you were to mirror on the X axis, the positive X values of the original mesh would become the negative X values on the mirrored side.",
+                            "You can select more than one of these axes. And will then get more mirrored copies. With one axis you get a single mirror, with two axes four mirrors, and with all three axes eight mirrors."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Bisect",
+                          "content": [
+                            "If the mesh is already on both sides of the mirror plane, it is cut by that plane, and only one side (the \"positive\" one by default) is kept to perform the mirror process."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Flip",
+                          "content": [
+                            "When Bisect is enabled on an axis, you can use this setting to switch the side kept and mirrored (i.e. when it is enabled, the \"negative\" side will be kept, instead of the \"positive\" one)."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Mirror Object",
+                          "content": [
+                            "An Object Selector to select an object (usually an empty), which position and rotation will be used to define mirror planes (instead of using the ones from the modified object).",
+                            "You can animate it to move the mirror axis."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Clipping",
+                          "content": [
+                            "Prevents vertices from moving through the mirror plane(s) when you transform them in Edit Mode.",
+                            "If it is enabled but vertices are beyond the mirror plane and outside of the Merge Distance, the vertices will not be merged. But as soon as the vertices are within Merge Distance they are snapped together and cannot be moved beyond the mirror plane."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Merge",
+                          "content": [
+                            "Where a vertex is in the same place (within the Merge Distance) as its mirror it will be merged with the mirrored vertex.",
+                            {
+                              "section": {
+                                "header": "Merge Distance",
+                                "content": [
+                                  "he maximum distance between a vertex and its mirror copy at which they are merged together (being snapped on the mirror plane). Needs Merge to be enabled."
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Bisect Distance",
+                          "content": [
+                            "Distance from the bisect plane within which vertices are removed."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Applying the Mirror Modifier",
+              "content": [
+                "Press [kbd]Ctrl-R[/kbd] to add a loop cut horizontally.",
+                {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_2.jpg", "caption": "A Loop cut in the middle."}},
+                "Select all the top faces (above the loop cut) and press [kbd]X,F[/kbd] to delete them.",
+                "Before adding the Mirror Modifier, one important aspect to consider is where my object center is. The modifier will be applied where the object's origin is. Check it now by going to the Modifier's tab in the properties menu to the right (looks like a wrench) and applying a Mirror Modifier. Make sure the z-axis is the one being mirrored. If you don't see the modifier being applied to the top half of the pillar, adjust the origin point until it is correct. Also turn on clipping in the modifier properties.",
+                "Now we want to start working on the pillar. The first step is to add a loop cut where we want our first ledge.",
+                {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_3.jpg", "caption": "Loop Cut for the ledge."}},
+                "You can't just scale in the faces above the loop cut, you will need to add some geometry first. So press [kbd]E,S,Shift-Z[/kbd] to extrude and then scale in along the x- and y-axes. You should see the changes being reflected on top with the mirror modifier.",
+                "We want three sections to our pillar, so add another loop cut, just above the middle. Then, with that edge loop selected, [kbd]Ctrl-B[/kbd] to add a bevel. Use the [kbd]Wheel[/kbd] to add a segment in the middle.",
+                {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_4.jpg", "caption": "Loop Cut and then a bevel."}},
+                "Select the middle edge loop in the bevel and [kbd]S,Shift-Z[/kbd] to scale it inwards.",
+                "This looks good, except now the bottom column looks like a big stone on top of a bigger stone. we want another indentation at the bottom, but we can't apply a bevel. Instead, we need to add a loop cut above the bottom, and then scale the edge in between them inwards.",
+                {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_5.jpg", "caption": "Loop Cut towards the bottom. Scale in the edge loop below it afterwards."}},
+                "Take a look at it in Solid Mode to check your work. If you think it looks too thin or too chunky, [kbd]A[/kbd] to select all geography and then [kbd]S,Shift-Z[/kbd] to scale in the x- and y-axes.",
+                "The last step is to add a base. Add a loop cut above the bottom, and then [kbd]E,S,Shift-Z[/kbd] to extrude and scale the bottom outwards to give it a pedestal.",
+                {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_6.jpg", "caption": "Loop Cut, Extrude, Scale."}},
+                "Go back into Solid Mode and review. Scale in or out if too chunky or thin.",
+                "The challenge is to create two different pillars with some variation. [kbd]Shift-D[/kbd] duplicate the original pillar but not link them."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Pillar 1",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_1.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Pillar 2",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_2.glb",
+                    "canvas_number": 2,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Pillar Details - Bevels": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_7.jpg",
+              "caption": "The finished product."
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Details",
+              "content": [
+                "Put the old pillars into a collection. In Object Mode, select your pillars and press [kbd]M[/kbd] to move them to a new collection. Name it 'Pillars'. Since we want to apply details to the pillars, we don't want them mirroring top to bottom, so apply the mirror modifiers in Object Mode.",
+                "One thing to note before you add details, go into Edit Mode and [kbd]1[/kbd] to go into Vertex Mode and select a vertex. [kbd]Ctrl-B,V[/kbd] to bevel a vertex and pull it out. You will see that the bevel isn't being applied evenly. That's because the scale on the object isn't even. [kbd]Tab[/kbd] into Object Mode and press [kbd]Ctrl-A,S[/kbd] to appy the scale transformations. This will even out the scale again.",
+                {
+                  "image": [
+                    {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_8.jpg", "caption": "Bevel before applying the scale."},
+                    {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_9.jpg", "caption": "The uneven scale."},
+                    {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_10.jpg", "caption": "Bevel after applying the scale."}
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Notches and Wobbles",
+                    "content": [
+                      {
+                        "section": {
+                          "header": "Notches",
+                          "content": [
+                            "Usually we start by adding wobbles, or minor distortions across the object, but this time we will start with notches, using the Bevel tool. Go into Edge Mode and [kbd]Ctrl-LMB[/kbd] to select some edges and then [kbd]Ctrl-B[/kbd] to Bevel. That will give some sharp edges and some worn edges. Be fairly random with it. Also do [kbd]Ctrl-B, V[/kbd] to apply to some vertices as well. Check your work in Object Mode regularly."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Pillars v2",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_3.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Pillar Details - Knife & Bisect": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_12.jpg",
+              "caption": "Work in progress."
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Edges",
+              "content": [
+                "Let's say you want to add edges going across one of the pillar faces, but when you [kbd]Ctrl-R[/kbd] the loop doesn't go fully around the pillar. Why is that? The Loop Cut tool only works on quad faces, and after notching, some of the faces are no longer quads. Instead, use the Knife Tool.",
+                {
+                  "section": {
+                    "header": "Knife Topology Tool",
+                    "content": [
+                      {
+                        "ref-table": [
+                          [
+                            {
+                              "th": "Mode:"
+                            },
+                            {
+                              "td": "Edit Mode"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Tool:"
+                            },
+                            {
+                              "td": "[kbd]Toolbar > Knife[/kbd]"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Menu:"
+                            },
+                            {
+                              "td": "[kbd]Mesh > Knife Topology Tool[/kbd]"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Shortcut:"
+                            },
+                            {
+                              "td": "[kbd]K[/kbd]"
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "url": {
+                          "href": "https://docs.blender.org/manual/en/4.2/modeling/meshes/editing/mesh/knife_topology_tool.html",
+                          "html": "Blender Documentation"
+                        }
+                      },
+                      "The Knife tool can be used to interactively subdivide (cut up) geometry by drawing lines or closed loops to create holes.",
+                      {
+                        "section": {
+                          "header": "Usage",
+                          "content": [
+                            "When using Knife, the cursor changes to an icon of a scalpel and the header changes to display options for the tool. You can draw connected straight lines by clicking [kbd]LMB[/kbd], marked with small green squares. Red squares are already defined cuts. Surrounding red squares mean that there is a cut already in that position, so no additional vertex will be created (besides the first one).",
+                            "If multiple objects are selected before entering Edit Mode, then knife cuts will affect all of those objects.",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_meshes_tools_knife_line-before.png",
+                                  "caption": "Mesh before knife cut."
+                                },
+                                {
+                                  "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_meshes_tools_knife_line-active.png",
+                                  "caption": "Knife cut active."
+                                },
+                                {
+                                  "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/modeling_meshes_tools_knife_line-after.png",
+                                  "caption": "After confirming knife cut."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "So use the Knife tool to create some edges going around your pillars, and then more notches in there.",
+                "The next tool we will use to add edges is the Bisect tool.",
+                {
+                  "section": {
+                    "header": "Bisect",
+                    "content": [
+                      {
+                        "ref-table": [
+                          [
+                            {
+                              "th": "Mode:"
+                            },
+                            {
+                              "td": "Edit Mode"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Tool:"
+                            },
+                            {
+                              "td": "[kbd]Toolbar > Knife > Bisect[/kbd]"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Menu:"
+                            },
+                            {
+                              "td": "[kbd]Mesh > Bisect[/kbd]"
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "url": {
+                          "href": "https://docs.blender.org/manual/en/4.2/modeling/meshes/editing/mesh/bisect.html",
+                          "html": "Blender Documentation"
+                        }
+                      },
+                      "The Bisect tool is a quick way to cut a mesh in two along a custom plane.",
+                      "Use [kbd]LMB[/kbd] click and drag to draw cut line. Once the cut is done the Adjust Last Operation panel gives a few options:",
+                      {
+                        "section": {
+                          "header": "Plane Point, Plane Normal",
+                          "content": [
+                            "The plane can be numerically adjusted for precise values."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Fill",
+                          "content": [
+                            "Cuts can optionally fill in the holes created, with materials, UV maps, and Color Attributes based on the surrounding geometry."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Clear Inner, Clear Outer",
+                          "content": [
+                            "Cuts may remove geometry on one side."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Axis Threshold",
+                          "content": [
+                            "Cut along the straight plane or along the existing geometry below the distance from the plane."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Plane Point, Plane Normal",
+                          "content": [
+                            "The plane can be numerically adjusted for precise values."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Plane Point, Plane Normal",
+                          "content": [
+                            "The plane can be numerically adjusted for precise values."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "Use the Bisect tool to create more edges to turn into notches. Remember, the Bisect tool is only available when you have edges or faces selected.",
+                "Remember to check your work on Object Mode regularly."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Pillars v3",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_4.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Adding Materials": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Wobbles",
+              "content": [
+                "We've finished with the notches, now it's time to add wobbles and distortion to the pillars, and this can be done on all pillars at once. In Object Mode, select all pillars and then [kbd]Tab[/kbd] into Edit Mode. You can grab vertices at random and pull them, or we can use another tool.",
+                "First, go into Wireframe or Xray View, then Vertex Mode, and [kbd]A[/kbd] to select all vertices. We don't want to add any distortions to the top or bottom of the pillars, so [kbd]1[/kbd] to go into Front View and then [kbd]Ctrl[/kbd] box select the top and bottom vertices. This will remove them from the selected vertices.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_13.jpg",
+                    "caption": "Removing unwanted vertices."
+                  }
+                },
+                "With the correct vertices selected, go into the Mesh menu and choose Transform > Randomize.",
+                {
+                  "section": {
+                    "header": "Randomize",
+                    "content": [
+                      {
+                        "ref-table": [
+                          [
+                            {
+                              "th": "Mode:"
+                            },
+                            {
+                              "td": "Edit Mode"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Menu:"
+                            },
+                            {
+                              "td": "[kbd]Mesh > Transform > Randomize[/kbd]"
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "url": {
+                          "href": "https://docs.blender.org/manual/en/4.2/modeling/meshes/editing/mesh/transform/randomize.html",
+                          "html": "Blender Documentation"
+                        }
+                      },
+                      "The Randomize tool in Edit Mode allows you to displace the vertices of a mesh along their normal.",
+                      {
+                        "section": {
+                          "header": "Amount",
+                          "content": [
+                            "Distance of the displacement."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Uniform",
+                          "content": [
+                            "Adds a random offset of the amount."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Normal",
+                          "content": [
+                            "Adds a random offset to the displacement normal."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Random Seed",
+                          "content": [
+                            "The random seed is an offset to the random transformation. A different seed will produce a new result."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "When you apply it, the pillars will become very distorted, so it's best to bring the Amount down to 0.01 or 0.02. You can also use negative numbers, so experiment with that. If you don't like it, you can [kbd]Ctrl-Z[/kbd] to remove it."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Linking Materials",
+              "content": [
+                "For the pillars, a mid to dark grey would work well. Go to the Shading workspace and select all pillars in Object Mode. Create a new 'grey' material and apply it. Since this is a stone pillar, bring the roughness to above 0.8. This should only apply it to the active object. In order to link the materials to the other pillar, select the other pillar and then the one with the material applied. The last object selected is your active object. Press [kbd]Ctrl-L[/kbd] and choose 'Link Materials'. This will apply the material from the active object.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/pillar_14.jpg",
+                    "caption": "The active object is highlighted in yellow."
+                  }
+                },
+                "If you have the barrel and crate in the same scene, we are now going to work on those. Select the crate and give it a brown material. Again, this is wood, so bring the roughness to around 0.8.",
+                "For the barrel, give it the same brown color for the wood, but give it a metallic black for the brackets. To do that, go into Edit Mode and [kbd]3[/kbd] for Face Mode. [kbd]Alt-LMB[/kbd] on an edge to select the right face loops and assign a new material. Make it a dark grey with high metallic and low roughness values."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Final",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/crate_barrel_pillar_final.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Making Walls": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/walls_1.jpg",
+              "caption": "Finished Product."
+            }
+          },
+          "So before building the walls, it's worth going through a couple of methods of making them.",
+          "The first method is building a few blocks and then repeating them over and over and kind of literally building a wall. This is a relatively quick way of building a wall.",
+          "The alternative is to have a flat plane and just kind of extruding out sections of it. The big advantage to this way is that it takes less polygons. You don't need a kind of back side to it unless you need both sides of the wall. And then, of course, you can just mirror the other side.",
+          {
+            "section": {
+              "header": "Establishing the Size and Patterns",
+              "content": [
+                "Starting with the pillars in your scene as a reference for the size is a good starting point.",
+                "[kbd]Shift-A[/kbd] to add a Plane to the scene. Set its size to 4m and press [kbd]R,X,90[/kbd] to set its x-rotation to 90°. [kbd]Numpad1[/kbd] to go into Front View and [kbd]G[/kbd] and move it in the x- and z-axes until it is sitting above the floor and in the position you want it. Do this in Object Mode so that the object's pivot point is in the center.",
+                "[kbd]Tab[/kbd] into Edit Mode and [kbd]2[/kbd] to go into Edge Mode. Select the top edge and [kbd]G,Z,-1[/kbd] to change the wall's height to 3m, so you will have a 3mx4m plane now.",
+                "[kbd]Ctrl-R[/kbd] to add three loop cuts to cut the plane into four bands of bricks. The top and bottom bands will be big stones while the middle bands will be worked bricks.",
+                "Select the top and bottom bands and [kbd]E,Y[/kbd] to extrude them slightly. You may also want a ledge at the bottom, akin to the pillars, so you can [kbd]Ctrl-R[/kbd] the top and bottom bands and [kbd]E,Y[/kbd] to extrude those out as well. Go into Face Mode and select the side faces and [kbd]X,F[/kbd] to delete them, since they're not important and will just be a waste of polygons.",
+                {
+                  "image": [
+                    {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/walls_2.jpg", "caption": "Extruding the top and bottom bands (pillar for reference)."},
+                    {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/walls_3.jpg", "caption": "Extruding ledges at the top and bottom."},
+                    {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/walls_4.jpg", "caption": "Deleting the side faces."}
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Cutting Bricks",
+              "content": [
+                "[kbd]Numpad1[/kbd] to go into Front View and then [kbd]Numpad5[/kbd] to toggler Perspective View. This will be useful because now we want to use the Knife Tool to [kbd]K[/kbd] some edges to make bricks, and we need to make sure that we don't accidentally try to cut an edge between an edge in the bricks and one of the extruded ledges. So cut edges with the Knife Tool to make a brick pattern. In order to make a non-continuous cut, [kbd]RMB[/kbd], so [kbd]LMB,LMB,RMB[/kbd] to make a cut but continue elsewhere. Don't worry about making them uneven, a little distortion looks more natural.",
+                {"image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/walls_5.jpg", "caption": "Cutting the brick pattern with the Knife Tool."}},
+                "Select all the brick faces that were created and [kbd]I,I[/kbd] to inset the individual faces. You can set the Inset depth to 5cm (0.05m) in the tool menu, or use the [kbd]E[/kbd] command.",
+                "Now we want some notches and wobbles for the bricks. Use the Randomize tool, or grab some vertices out of alignment. Also use the Bevel tool to add some notches."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Walls v1",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/wall_1.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Mirroring the Walls": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/walls_6.jpg",
+              "caption": "Finished Product."
+            }
+          },
+          "Bring back the columns you created and add them on either side of the wall to see how they look. You will want to do the other side of the wall and join them to the pillars eventually.",
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/walls_7.jpg"
+            }
+          },
+          {
+            "section": {
+              "header": "Mirroring the wall.",
+              "content": [
+                "Hide the pillars and rename the object from 'Plane' to 'Wall' if you haven't already.",
+                {
+                  "compound_text": [
+                    "Add a ",
+                    {
+                      "url": {
+                        "href": "./Creating a Pillar#Mirror Modifier",
+                        "html": "Mirror Modifier"
+                      }
+                    },
+                    " to the wall, across the y-axis. If it looks strange, make sure to apply any rotation you added (",
+                    {"kbd": "Ctrl-A,R"},
+                    ")."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Thickening the wall.",
+              "content": [
+                "The Wall is thin at the moment, so [kbd]G,Y[/kbd] to grab it and move it out in the y-axis. You should see the mirror moving as well. Bring back the pillars to see how thick you want the pillars to be.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/walls_8.jpg", "caption": "Use the pillars when adjusting the wall's thickness."
+                  }
+                },
+                "There is a gap at the top of the wall. Fill those in by going into Edge Mode and grabbing the top edge and [kbd]G,Y[/kbd] to have it join to the mirror. Make sure 'Clipping' is turned on in the modifier options.",
+                "There is also a gap at the bottom, but since those faces shouldn't be visible, you don't even need them. [kbd]3[/kbd] to go to Face Mode, select them and [kbd]X,F[/kbd] to delete those faces."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Removing unnecessary vertices.",
+              "content": [
+                "Hide the pillars again and look at the top of the wall. There is an edge at the top that is cutting through a flat face. It's completely unnecessary and should be removed.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/walls_9.jpg"
+                  }
+                },
+                "Press [kbd]X[/kbd] to bring up the Delete menu, and then choose 'Dissolve Edges'. This removes the edge but not the faces it was part of."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Walls v2",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/wall_2.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Completing the Walls": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/walls_10.jpg",
+              "caption": "Finished Product."
+            }
+          },
+          "We will now be completing the walls by joining the wall piece to the pillars.",
+          {
+            "section": {
+              "header": "Duplicating the pillars.",
+              "content": [
+                "You will want to keep an individual copy of each of the pillars you created, so go into Top View ([kbd]7[/kbd]) and [kbd]Shift-D,Y,4[/kbd] to move copies of your pillars off to the side, and also create copies of the wall to go with them.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/walls_11.jpg",
+                    "caption": "All wall and pillar combinations."
+                  }
+                },
+                "You may notice some flickering at the top of the wall where it meets the pillar. That is because the wall and the pillars are the same height, and it produces some z-fighting where the renderer isn't sure which face to render. You can fix this by selecting the top face of the pillars and moving them up slightly in the z-axis.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/walls_12.jpg",
+                    "caption": "Fix the flickering by raising the height of the pillar."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Joining the pillars to the wall.",
+              "content": [
+                "There are a few ways of joining objects, but the two that will be covered are the simple join, and Boolean join.",
+                {
+                  "section": {
+                    "header": "Simple Join",
+                    "content": [
+                      {"url": {"href": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/join.html", "html": "Blender Documentation"}},
+                      {
+                        "ref-table": [
+                          [
+                            {
+                              "th": "Mode:"
+                            },
+                            {
+                              "td": "Object Mode"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Menu:"
+                            },
+                            {
+                              "td": "[kbd]Object > Join[/kbd]"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Shortcut:"
+                            },
+                            {
+                              "td": "[kbd]Ctrl-J[/kbd]"
+                            }
+                          ]
+                        ]
+                      },
+                      "Join merges all selected objects into the last selected Active object. All object data is linked to the active object (which must be selected). All objects must be of the same type: mesh, curve, surface or armature. If several curves are joined, each one will keep its subtype (NURBS or Bézier)."
+                    ]
+                  }
+                },
+                "Select the wall and pillar, with the pillar last so it is the active object. Choose the pillar as the active object because its pivot point is in a good location for snapping to the grid and rotating. Apply the wall's mirror modifier before joining [kbd]Ctrl-J[/kbd].",
+                "Just to experiment, select the wall/pillar you just joined and [kbd]Shift-D,X,4[/kbd] to create another wall next to it and see how that looks. Repeat that step on the new wall, but add [kbd]R,Z,90[/kbd] to add a 90 degree rotation. Delete those extra walls when you're done."
+              ]
+            }
+          },
+          "Put your wall modules into a collection. Make sure you keep your original walls and pillars, and keep them in their own collection. A good suggestion is to call them 'spares' or 'originals'.",
+          {
+            "section": {
+              "header": "Walls Final",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/wall_3.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Creating the Door Surround": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_1.jpg",
+              "caption": "The Door Surround."
+            }
+          },
+          {
+            "section": {
+              "header": "Starting with a Plane",
+              "content": [
+                "Now we want to make a door for the dungeon. Go to the 'spares' or 'originals' collection and duplicate the wall and move it to the side so it's isolated. Duplicate two pillars and move them to either side of the wall to frame it. When you are ready to finish the door frame you will remove one, but it's good to have both visible as you create your model. Hide everything you don't need to see.",
+                "In order to create a stone doorway in the wall, you'll start with a plane, draw the outline of the door, and then extrude it backwards. [kbd]Shift-RMB[/kbd] to move your 3-D cursor to the bottom of the wall, and the [kbd]Shift-A[/kbd] to add a plane in front of the wall. [kbd]R,X,90[/kbd] to rotate it, [kbd]S,0.5[/kbd] to scale it down, and then move it into a good position.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_2.jpg",
+                    "caption": "Positioning the Plane."
+                  }
+                },
+                "Add the Mirror Modifier across the x-axis. It will look like nothing's happened because it's mirroring around the object origin.. So we need to move the object origin. Go up to the options, choose [kbd]Affect Only > Origins[/kbd] and then [kbd]G,X[/kbd] to move it across into the middle.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_3.jpg",
+                    "caption": "Enabling Affect Only > Origins."
+                  }
+                },
+                "Turn off the effect, and [kbd]Tab[/kbd] into Edit Mode and go into Edge Mode to start editing."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Geometry",
+              "content": [
+                [
+                  "Extrude the edge up twice and then rotate the last edge to give it an angle.",
+                  "Extrude a third time and bring it into the middle. Make sure 'Clipping' is turned on for your Mirror modifier.",
+                  "Go into Vertex Mode and start moving vertices around."
+                ],
+                {
+                  "image":
+                  [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_4.jpg",
+                      "caption": "The beginnings of an arch."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_5.jpg",
+                      "caption": "Bringing it in to the middle."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_6.jpg",
+                      "caption": "Moving individual vertices around to make a better door shape."
+                    }
+                  ]
+                },
+                [
+                  "Grab the edge closest to the center and [kbd]Ctrl-B[/kbd] to bevel it and add another brick.",
+                  "Then go back into Vertex Mode and edit the vertices until you are satisfied with the door's shape",
+                  "We'll need another arch on the back side, so add the y-axis to the mirror modifier. Make sure to [kbd]Ctrl-A[/kbd] to apply the rotation and turn on [kbd]Affect Only > Origins[/kbd] and move the origin towards the back side of the wall if needed.",
+                  "[kbd]2[/kbd] to go into Edge Mode and [kbd]Alt-LMB[/kbd] to select the outer edge loop for the arch and then[kbd]Shift-Alt-LMB[/kbd] to select the inner edges and [kbd]E,Y[/kbd] to extrude them to join them up with the back."
+                ],
+                {
+                  "image":
+                  [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_7.jpg",
+                      "caption": "Beveling in another brick."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_8.jpg",
+                      "caption": "Editing into a door shape."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Separating the Bricks",
+              "content": [
+                [
+                  "[kbd]Alt-LMB[/kbd], [kbd]Shift-Alt-LMB[/kbd] to select all edge loops going around the door surround. [kbd]Ctrl-B[/kbd] to bevel the edges and add a loop inside.",
+                  "[kbd]Alt-LMB[/kbd], [kbd]Shift-Alt-LMB[/kbd] again to select the inner edge loops that were just created.",
+                  "[kbd]S[/kbd] to scael them inwards, but make sure 'Individual Origins' is set."
+                ],
+                {
+                  "image":
+                  [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_9.jpg",
+                      "caption": "Beveling the brick edges."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_10.jpg",
+                      "caption": "Selecting the edge loops between the bricks."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_11.jpg",
+                      "caption": "Scaling the brick separation inwards."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Notches and Wobbles",
+              "content": [
+                [
+                  "Apply the mirror modifier first.",
+                  "Go into Vertex Mode and apply some bevels.",
+                  "Use the Knife and Bisect tools to cut some edge loops and apply bevels there as well.",
+                  {
+                    "compound_text": [
+                      "Go into the Mesh Transformations and add ",
+                      {"url": {"href": "./Adding Materials#Randomize", "html": "Randomize"}},
+                      "."
+                    ]
+                  }
+                ]
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Door Surround",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_1.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Cutting the Door Opening": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_12.jpg",
+              "caption": "Cutting a hole into the wall to fit the door."
+            }
+          },
+          {
+            "section": {
+              "header": "Cutting the Doorway",
+              "content": [
+                "With the Door Surround and Wall visible, we now need to cut a hole for the door. There are a coupe of ways to do this. We could cut edges into the Wall using the Knife Tool and then delete the inside faces, or we could do a Boolean operation.",
+                "Boolean operations are an advanced method that is unsuitable for a beginner because of all the difficulties that you can have. It takes a little bit of experience to know how to get over those glitches, and it would take a fair bit of time in these beginner exercises to make sure that we covered all those possible problems.",
+                "It is more important to get used to the box modelling techniques of manipulating vertices, faces, and edges and getting more experience with the basic tools.",
+                "Hide the pillars on the side of the wall so they do not distract from the work.",
+                [
+                  "Select the wall and [k]Z,W[/k] to go into Wireframe Mode.",
+                  "[k]Numpad1[/k] to go into Front View.",
+                  "[k]Numpad5[/k] to go into Orthographic Mode. to more easily see the edges.",
+                  "[k]Tab[/k] into Edit Mode.",
+                  "[k]K[/k] for the Knife Tool and begin to cut edges in order to make faces you will be able to select in the middle and delete for the hole.",
+                  "[k]3[/k] into Face Mode and select all the inside faces that need to go.",
+                  "[k]X,F[/k] to delete the faces and then go back into Solid Mode to review your work."
+                ],
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_13.jpg",
+                      "caption": "Viewing the wall in Wireframe, Orthographic Modes."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_14.jpg",
+                      "caption": "Cutting new faces with the Knife Tool."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_15.jpg",
+                      "caption": "Selecting the inside faces to delete."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_16.jpg",
+                      "caption": "After deleting the faces."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Joining your objects",
+              "content": [
+                "Delete the right-hand pillar, since you only need one. Select the door surround, the wall, and then finally the left-hand pillar last (to make it the active object) and press [k]Ctrl-J[/k] to join.",
+                "If you go into Wireframe Mode, you will see there are still some inside faces. This was not the most optimal way of doing the door, but they won't make a ton of difference.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_17.jpg",
+                      "caption": "Wireframe Mode reveals there are still inside faces."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Door Cut-out",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_2.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Shading the Walls": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Splitting the Viewport",
+              "content": [
+                "Go into the Shading workspace. The workspace as is isn't very useful; the File Browser and the Image Editor on the left aren't needed, and the Shader Editor on the bottom could be taller. So bring the left-side out towards the middle. Then go to the bottom-right corner of one of the editors and click and drag to join them together and then change the editor type to Shader Editor. Press [k]N[/k] to get rid of the side Node window that is not needed. You can now mor easily zoom in on your Principled BSDF. Last, drag down the viewport on the right, since you don't need the other Shader Editor.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/shading_1.jpg",
+                      "caption": "The default Shading Workspace. Not every window is needed."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/shading_2.jpg",
+                      "caption": "Extending the left side."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/shading_3.jpg",
+                      "caption": "Joining the two left-side editor windows."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/shading_4.jpg",
+                      "caption": "Changing the left side to a Shader Editor."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/shading_5.jpg",
+                      "caption": "Extending the 3D Viewport on the right."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Shading the First Wall Module",
+              "content": [
+                "Select the first object you want to shade. Press [k]NumpadPeriod[/k] to zoom in on it and then [k]Tab[/k] into Edit Mode so you can start thinking about which faces you want to assign certain colors to. Grey for the stone is nice, but it would be good to add a lighter grey for the stony section in the wall. If you want to select certain faces, say on the wall face, it will be hard to separate those from the pillar just using the box select, since they are so close. We can isolate the different objects using [i]Select Linked[/i].",
+                {
+                  "section": {
+                    "header": "Select Linked",
+                    "content": [
+                      {
+                        "ref-table": [
+                          [
+                            {
+                              "th": "Mode:"
+                            },
+                            {
+                              "td": "Edit Mode"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Menu:"
+                            },
+                            {
+                              "td": "[kbd]Select > Select Linked > Linked[/kbd]"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Shortcut:"
+                            },
+                            {
+                              "td": "[kbd]Ctrl-L[/kbd]"
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "url": {
+                          "href": "https://docs.blender.org/manual/en/latest/modeling/meshes/selecting/linked.html",
+                          "html": "Blender Documentation"
+                        }
+                      },
+                      "Select geometry connected to already selected elements. This is often useful when a mesh has disconnected, overlapping parts, where isolating it any other way would be tedious. To give more control, you can also enable delimiters in the Adjust Last Operation panel, so the selection is constrained by seams, sharp edges, materials or UV islands.",
+                      "With [i]Pick Linked[/i] you can also select connected geometry directly under the cursor, using the [k]L[/k] shortcut to select or [k]Shift-L[/k] to deselect linked. This works differently in that it uses the geometry under the cursor instead of the existing selection."
+                    ]
+                  }
+                },
+                "[k]1[/k] into Vertex Mode and select a vertex in the wall. [k]Ctrl-L[/k] to select all vertices linked to the wall. [k]Shift-H[/k] to hide all non-linked vertices, which will hide the pillar, or [k]Ctrl-I[/k] which will select the inverse vertices, and then you can hide with [k]H[/k]. Now you can select the faces you want to adjust. Select the middle stones and give them a light grey colour.",
+                "[k]Alt-H[/k] will reveal all hidden geometry. This time, using the same steps, select the top and bottom pillar stones and give them the light grey colouring. If the light grey looks too shiny, remember to bring thr roughness up, to about 0.8.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/shading_6.jpg",
+                      "caption": "Selecting all linked vertices in the wall."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/shading_7.jpg",
+                      "caption": "Give the middle stones in the wall a light grey colour."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/shading_8.jpg",
+                      "caption": "Colouring the pillar stones light grey."
+                    }
+                  ]
+                },
+                "Color the other wall modules using [i]grey[/i] and [i]grey - light[/i] in interesting patterns.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/shading_9.jpg",
+                      "caption": "Colouring the Door Surround."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Door Cut-out",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/door_2.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Creating the Floor Modules": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Mapping out a small Room",
+              "content": [
+                "In order to make it easier to create the floor modules, it would help to lay out a small room. [k]Numpad7[/k] to go into top view, and start placing your wall and door modules in 3x3 pattern to create a small room. Remember to [k]Alt-D[/k] to create linked duplicates of your originals.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-01.jpg",
+                      "caption": "Arranging a small room."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-02.jpg",
+                      "caption": "Seeing the room from another angle."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating the First Floor Module",
+              "content": [
+                "We want to add a mesh to become the floor, so [k]Shift-A[/k] and choose Plane to add. Make it 4m by 4m. The plane gets added where the 3D cursor is. If that was moved away from the world origin and you want to move it back, press [k]Shift-S,1[/k] to move it back to the world origin. It's a good idea to have a few floor modules, to provide some variation for the flooring.",
+                {
+                  "section": {
+                    "header": "Broken Floor Tiles",
+                    "content": [
+                      "[k]Shift-A[/k] to add a cube to the scene and shrink it in the z-axis, and then the x- and y-axes.",
+                      "It should have some chipped corners and other imperfections, so [k]Tab[/k] into Edit Mode and then [k]Alt-Z[/k] into X-Ray Mode to being editing. Grab a corner edge and [k]Ctrl-B[/k] to bevel it. Also [k]G[/k] to grab some edges and move them around to alter the shape.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-03.jpg",
+                            "caption": "Shrinking the floor tile in the z-axis."
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-04.jpg",
+                            "caption": "Shrinking the floor tile in the x- and y-axes."
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-05.jpg",
+                            "caption": "Adding a bevel to give it imperfections."
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-06.jpg",
+                            "caption": "Adjusting the shape."
+                          }
+                        ]
+                      },
+                      "Back in Object Mode, [k]Shift-D[/k] to duplicate the tile and start another one. Move edges and vertices around to alter the shape and [k]R[/k], [k]S[/k] to rotate and scale the tiles as well. Make several versions of the tiles, grouping them together.",
+                      {
+                        "compound_text": [
+                          "After you have your tiles laid out, it's time to position them on the floor. Duplicate your plane and position it under the floor tiles. If you want to rotate the tiles, remember to change the ",
+                          {"url": {"href": "/Complete Blender Creator/Simple Models/Linked Duplicates#Pivot Point", "html": "Pivot Point"}},
+                          " to Median Point."
+                        ]
+                      },
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-07.jpg",
+                            "caption": "Make several tiles."
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-08.jpg",
+                            "caption": "Positioning the tiles."
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-09.jpg",
+                            "caption": "Adding some rotation."
+                          }
+                        ]
+                      },
+                      "You will want to [k]Ctrl=J[/k] to join the tiles and floor together, but first you will want to [k]Shift-D[/k] to duplicate them so you can make several sets of tiles. You will want three floor modules, with enough variation to not appear identical. You may also want to rotate the tile stones in the x- or y-axes to add some variation. Before joining the tiles and the floor, move a duplicate to the 'originals' folder. When you join them, make sure the floor is the active object so that they will use the floor's pivot point.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-10.jpg",
+                            "caption": "[k]Shift-D[/k] to duplicate the objects before joining them."
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-11.jpg",
+                            "caption": "Adjust the tiles adding randomness."
+                          }
+                        ]
+                      },
+                      "You should end up with four floor modules; one empty floor and three with broken tiles in them. Place these in random locations in your small room. Apply rotation to the floor modules when duplicating to provide variation, and make sure to use linked duplicates so that when you shade them, the material is applied to all.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-12.jpg",
+                            "caption": "Placing floors in the room."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Texturing the floor modules",
+              "content": [
+                "There are two grey materials. Apply one for the floor and the other for the tiles.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/floor-13.jpg",
+                      "caption": "Adding materials."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "A Small Room",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/small_room.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Creating the Torch": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Stop - Challenge",
+              "content": [
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-01.jpg"
+                    }
+                  ]
+                },
+                "Before the lesson, try to create the torch handle on your own, starting with an eight-sided cylinder. Do not attempt the flame."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating the Torch Handle",
+              "content": [
+                [
+                  "[k]Shift-A[/k] to add a cylinder. Give it eight sides.",
+                  "[k]S[/k] to scale in all axes, and then [k]S,Z[/k] to scale it in the z-axis and make it taller.",
+                  "Go into Edit Mode, select the bottom face and scale it in."
+                ],
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-02.jpg",
+                      "caption": "Scale it down in size."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-03.jpg",
+                      "caption": "Make it taller."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-04.jpg",
+                      "caption": "Scale in the bottom face."
+                    }
+                  ]
+                },
+                [
+                  "Apply two loop cuts in the middle for the bracket.",
+                  "Edge slide them closer together.",
+                  "Select the face loop going across the middle and [k]E,S,Shift-Z[/k] to make it thicker. You'll want to do the sections this way to keep the top and bottom edges straight. If you were two extrude out for the bracket and then extrude in for the top section, the edges wouldn't be a continuous straight line."
+                ],
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-05.jpg",
+                      "caption": "Adding two loop cuts."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-06.jpg",
+                      "caption": "Bringing the edges closer."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-07.jpg",
+                      "caption": "Extruding the face loop to make the bracket."
+                    }
+                  ]
+                },
+                [
+                  "Grab the top face and [k]E,S[/k] to scale it out slightly. Then [k]G,Z[/k] to bring it up slightly to create a slight slope.",
+                  "[k]E[/k] to raise up the top face and [k]S[/k] to scale it out slightly.",
+                  "[k]I[/k] to inset the top face and the [k]E[/k] to extrude and bring it down. Then [k]S[/k] to scale that bottom face in slightly to follow the slop of the top part of the torch."
+                ],
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-08.jpg",
+                      "caption": "Creating a slight slope before the top."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-09.jpg",
+                      "caption": "Bringing out the top section."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-10.jpg",
+                      "caption": "Bringing in the top."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating the Flame",
+              "content": [
+                "Now we can start on the flame. [k]Alt-LMB[/k] on one of the loops on the inside of the top of the torch and [k]Shift-S[/k] and select [k]Cursor to Selected[/k] to move the cursor into position.",
+                "Go into Object Mode and [k]Shift-A[/k] and add a cylinder with 8 sides. Scale it in and bring it up slightly.",
+                "[k]Tab[/k] back into Edit Mode, select the top face and [k]S[/k] to scale it out. [k]E[/k] to extrude it out and then [k]S[/k] to scale it in again. [k]E[/k] to extrude it up again and then [k]S,0[/k] to bring it in to a point.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-11.jpg",
+                      "caption": "Moving the 3D cursor to the top of the torch."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-12.jpg",
+                      "caption": "Starting the flame off with a cylinder."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-13.jpg",
+                      "caption": "Starting the flame shape."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-14.jpg",
+                      "caption": "Shaping the flame."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-15.jpg",
+                      "caption": "Ending the flame in a point."
+                    }
+                  ]
+                },
+                "This is a basic cone, but you should shape it into a flame shape. Select the edge going around the middle and [k]G[/k] to grab and move it to the side. It's probably a bit fat for a flame, so [k]A[/k] to select all geometry, and [k]S,Shift-Z[/k] to scale it thinner, then [k]S,Z[/k] to make it taller.",
+                "Use the bevel tool ([k]Ctrl-B[/k] on the two edges around the middle to add more loop cuts. To shape the flame, we will use Proportional Editing",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-16.jpg",
+                      "caption": "Adding some bends to the flame."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-17.jpg",
+                      "caption": "Making the flame thinner and taller."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-18.jpg",
+                      "caption": "Adding more loop cuts with the Bevel Tool."
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Proportional Editing",
+                    "content": [
+                      {"url": {"href": "https://docs.blender.org/manual/en/4.2/editors/3dview/controls/proportional_editing.html#proportional-editing", "html": "Blender Documentation"}},
+                      {
+                        "ref-table": [
+                          [
+                            {
+                              "th": "Mode:"
+                            },
+                            {
+                              "td": "Object and Edit Mode"
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Header:"
+                            },
+                            {
+                              "td": {
+                                "compound_text": [
+                                  {
+                                    "image": {
+                                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/editors_3dview_object_editing_transform_control_proportional-edit_header.png"
+                                    }
+                                  },
+                                  "[k]Proportional Editing[/k]"
+                                ]
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "th": "Shortcut:"
+                            },
+                            {
+                              "td": "[k]O[/k]"
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "table": [
+                          [
+                            {
+                              "td": "Proportional Editing is a way of transforming selected elements while also affecting the nearby unselected elements. The farther away an unselected element is, the less it will be affected (hence the \"proportional\"). This feature is very useful for smoothly deforming dense meshes."
+                            },
+                            {
+                              "td": {
+                                "image": {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/editors_3dview_controls_proportional-editing_tool.png"}
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "Controls",
+                          "content": [
+                            {
+                              "table": [
+                                [
+                                  {
+                                    "th": "Disable"
+                                  },
+                                  {
+                                    "td": "[k]O[/k]"
+                                  }
+                                ]
+                              ]
+                            },
+                            "Proportional Editing is off, only selected vertices will be affected.",
+                            {
+                              "table": [
+                                [
+                                  {
+                                    "th": "Enable"
+                                  },
+                                  {
+                                    "td": "[k]O[/k]"
+                                  }
+                                ]
+                              ]
+                            },
+                            "Vertices other than the selected vertex are affected, within a defined radius."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Proportional Size",
+                          "content": [
+                            "You can increase or decrease the radius of the tool's influence during a transform operation from the Proportional Editing popover or with [k]WheelUp[/k]/[k]WheelDown[/k], or [k]PageUp[/k]/[k]PageDown[/k] respectively. As you change the radius, the points surrounding your selection will adjust their positions accordingly.",
+                            {
+                              "image": [
+                                {"src": "Blender/Grant Abbitt/CompleteBlendCreator/2/editors_3dview_controls_proportional-editing_influence.png", "caption": "Influence circle."}
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "So turn on Proportional Editing and [k]G[/k] to grab and move geometry around. Proportional Editing also works with rotation as well. You can rotate from the sides and also [k]Numpad7[/k] and rotate from the top as well.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-19.jpg",
+                      "caption": "Moving geometry in Proportional Editing."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-20.jpg",
+                      "caption": "Proportional Editing works with Rotation as well."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-21.jpg",
+                      "caption": "Applying Rotation in Proportional Editing from the top to give a twist."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Material",
+              "content": [
+                "Apply the brown and grey material that we already added for the wood and the brackets. Create a new material for the flame. Give it a nice yellow for the Emission Color and turn up the Emission Strength.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch-22.jpg",
+                      "caption": "Creating an emission material for the flame."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "The last step is to select the flame and then the torch body last and [k]Ctrl-J[/k] to join them.",
+          {
+            "section": {
+              "header": "A Small Room",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/torch.glb",
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Lighting the Dungeon": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Positioning the Torch",
+              "content": [
+                "Go into Top View [k]Numpad7[/k] and move the torch next to one of the walls. Line it up in the middle of the wall and then [k]R,Y[/k] to lean it out away from the wall, and if you need to, [k]G,X[/k] to move it closer to the wall. Since you rotated the torch, the flame is now going at an angle instead of straight up. You can fix that by [k]Tab[/k] into Edit Mode, [k]1[/k] for Vertex Mode and select a vertex in the flame. [k]Ctrl-L[/k] to select the linked vertices in the flame part and [k]R,Y[/k] to rotate it.",
+                "If Proportional Editing is still on, press [k]O[/k] to turn it off. Then, [k]G,X[/k] to move the flame back to the center of the torch holder.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/lighting-01.jpg", "caption": "Lining the torch up next to the wall"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/lighting-02.jpg", "caption": "Rotating the top of the torch away from the wall"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/lighting-03.jpg", "caption": "Rotating the flame back towards the ceiling"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding a Light Source",
+              "content": [
+                [
+                  "In Object Mode, select the torch and [k]Shift-S[/k] and select [k]Cursor to Selected[/k] to move the 3D cursor to the torch. [k]Shift-A > Light > Point Light[/k] to add a Point Light where the torch is. [k]G[/k] to grab the light and move it on top of the flame.",
+                  "Go to the Light properties and change the color to same as the Emission material we used for the flame and change its Power to around 95w. If you look at the scene in Render Preview Mode, you won't notice any change; that is because by default, the light's radius is 0.0m and it is currently inside the flame mesh being blocked. Change that to about 0.25m and you will see the light reaching beyond the torch."
+                ],
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/lighting-04.jpg",
+                      "caption": "Moving the light into position"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/lighting-05.jpg",
+                      "caption": "Modifying the light's color and power"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/lighting-06.jpg",
+                      "caption": "Increasing the light's radius will improve visibility."
+                    }
+                  ]
+                },
+                "You can't join the light and the torch together, but you will want to duplicate them with [k]Alt-D[/k], but first move them to a new collection so you will always have the originals. Once they are in a collection, press [k]Alt-D[/k] to make a linked duplicate. You will want linked duplicates if you want to adjust the strength of the light, so you will be able to affect all of them. Begin moving the duplicates into position. When moving to the opposite wall, [k]R,Z,180[/k] to update the rotation to lean away from the wall.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/lighting-07.jpg",
+                      "caption": "Rotating the torch when duplicating on an opposite wall."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/lighting-08.jpg",
+                      "caption": "Lighting the room."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "A Dimly-Lit Room",
+              "content": [
+                "[i]For this display, the wattage on the Point Lights has been turned down to 300mw.[/i]",
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/lit_room.glb",
+                    "canvas_number": 1,
+                    "has_lighting": true,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Building the Dungeon": {
+        "key_concepts": [
+          "Go back into Layout workspace and zoom out so you can get a better view of the dungeon. Using your modules, add a short corridor and a small room off your first. Remember if you have overlap between faces, such as pillars on top of pillars, that will show in some game engines so you will want to deletd the extra geometry. If you are working with a linked duplicate and don't want to affect the original with your edits, remember to go to [k]Object > Relations > Make SIngle User > Object & Data[/k] to remove the linkage.",
+          "Don't forget to include your torches when laying out the dungeon.",
+          {
+            "image": [
+              {
+                "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/build_dungeon-01.jpg", "caption": "Getting a birdseye view"
+              },
+              {
+                "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/building_dungeon-02.jpg", "caption": "Adding a short corridor to a new room."
+              }
+            ]
+          },
+          "Think about the creates and barrels. For the crates, you will probably want to create a stack of crates. [k]Alt-D[/k] to duplicate the crates and create a stack. Also [k[R,Z[/k] to rotate them in the z-axis to introduce some randomness. Grab the stacks and place them randomly within the dungeon. Once placed, grab the individual crates and rotate or move them slightly to add variation.",
+          "Do the same thing with the barrels (stack, rotate) and position them in the dungeon.",
+          {
+            "image": [
+              {
+                "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/building_dungeon-03.jpg", "caption": "Creating a stack or crates"
+              },
+              {
+                "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/building_dungeon-04.jpg", "caption": "Placing stacks of crates into position in the dungeon."
+              },
+              {
+                "src": "Blender/Grant Abbitt/CompleteBlendCreator/2/building_dungeon-05.jpg", "caption": "Placing stacks of barrels in the dungeon."
+              }
+            ]
+          },
+          {
+            "section": {
+              "header": "Wrapping Up",
+              "content": [
+                {
+                  "compound_text": [
+                    "To push your skills a bit further, you can try making different objects to add to your dungeon. You could try this tutorial for making a ",
+                    {"url":
+                    {
+                      "href": "https://www.youtube.com/watch?v=lgJaWqIYeKM&list=PLn3ukorJv4vsPy9J9x4--pat6jaPqNm11&index=1&t=9s",
+                      "html": "Low Poly Sword"
+                    }},
+                    ", or explore low poly asset packs that are online for ideas:"
+                  ]
+                },
+                [
+                  {"url":
+                  {
+                    "href": "https://assetstore.unity.com/packages/3d/environments/dungeons/low-poly-dungeons-176350?srsltid=AfmBOoodL8C78qnJuxxVtvLa8_RkDrKsDJ3WiXcs0OTTt6yazBSXZDh9",
+                    "html": "Low Poly Dungeons by JustCreate"
+                  }},
+                  {"url":
+                  {
+                    "href": "https://syntystore.com/products/polygon-dungeon-pack?srsltid=AfmBOoo9RwqOWJJXWKw9VzNIYxp061nc_IlrMhFueh8QB8M1ujNoOhp5",
+                    "html": "Polygon Dungeon Pack by Synty Studios"
+                  }},
+                  {"url":
+                  {
+                    "href": "https://www.unrealengine.com/marketplace/en-US/product/low-poly-dungeon-asset-pack",
+                    "html": "Low Poly Dungeon Asset Pack by Miguel Lobo"
+                  }}
+                ]
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "A Modular Dungeon",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/2/mod_dungeon.glb",
+                    "has_lighting": true,
+                    "canvas_number": 1,
+                    "camera_position": {
+                      "x": 0.07,
+                      "y": 2.56,
+                      "z": 4.01
+                    },
+                    "camera_rotation": {
+                      "x": 0.40,
+                      "y": -2.96,
+                      "z": -1.26
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
