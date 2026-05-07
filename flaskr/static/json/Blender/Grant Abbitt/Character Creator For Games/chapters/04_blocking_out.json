@@ -1,0 +1,618 @@
+{
+  "title": "Blocking Out",
+  "sections": [
+    {
+      "Importing Background Images": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_1.jpg",
+              "caption": "Background reference images."
+            }
+          },
+          {
+            "section": {
+              "header": "Importing an Image",
+              "content": [
+                "Starting with the general scene, open the folder containing your reference image and drag it into Blender. This brings it in as an Empty.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_2.jpg",
+                    "caption": "Dragging the image into Blender."
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Empties",
+                    "content": [
+                      {
+                        "url": {
+                          "href": "https://docs.blender.org/manual/en/latest/modeling/empties.html",
+                          "html": "Blender Documentation"
+                        }
+                      },
+                      "The \"empty\" is a single coordinate point with no additional geometry. Because an empty has no volume and surface, it cannot be rendered. Still it can be used as a handle for many purposes.",
+                      {
+                        "section": {
+                          "header": "Primitives",
+                          "content": [
+                            {
+                              "section": {
+                                "header": "Plain Axes",
+                                "content": [
+                                  "Displays as six lines, initially with one pointing in each of the +X, -X, +Y, -Y, +Z, and -Z axis directions."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Arrows",
+                                "content": [
+                                  "Displays as arrows, initially pointing in the positive X, Y, and Z axis directions, each with a label."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Single Arrow",
+                                "content": [
+                                  "Displays as a single arrow, initially pointing in the +Z axis direction."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Circle",
+                                "content": [
+                                  "Displays as a circle initially in the XZ plane."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Cube",
+                                "content": [
+                                  "Displays as a cube, initially aligned to the XYZ axes."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Sphere",
+                                "content": [
+                                  "Displays as an implied sphere defined by three circles. Initially, the circles are aligned, one each, to the X, Y, and Z axes."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Cone",
+                                "content": [
+                                  "Displays as a cone, initially pointing in the +Y axis direction."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Image",
+                                "content": [
+                                  "Empties can display images. This can be used to create reference images, including blueprints or character sheets to model from. The image is displayed regardless of the 3D display mode.",
+                                  "Empty Displays settings can be accessed from [kbd]Properties > Object Data > Empty[/kbd] panel.",
+                                  {
+                                    "section": {
+                                      "header": "Offset X, Y",
+                                      "content": [
+                                        "Offset the image origin (where 1.0 represents the width/height of the image)."
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Depth",
+                                      "content": [
+                                        {
+                                          "table": [
+                                            [{
+                                              "th": "Default:"
+                                            },
+                                            {
+                                              "td": "Use normal depth behavior."
+                                            }],
+                                            [{
+                                              "th": "Front:"
+                                            },
+                                            {
+                                              "td": "Always display on top of other objects."
+                                            }],
+                                            [{
+                                              "th": "Back:"
+                                            },
+                                            {
+                                              "td": "Always display behind of other objects."
+                                            }]
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Side",
+                                      "content": [
+                                        {
+                                          "table": [
+                                            [{
+                                              "th": "Both:"
+                                            },
+                                            {
+                                              "td": "Display both the front and back of the empty."
+                                            }],
+                                            [{
+                                              "th": "Front:"
+                                            },
+                                            {
+                                              "td": "Only display the front of the image."
+                                            }],
+                                            [{
+                                              "th": "Back:"
+                                            },
+                                            {
+                                              "td": "Only display the back of the image."
+                                            }]
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Show in",
+                                      "content": [
+                                        {
+                                          "section": {
+                                            "header": "Orthographic",
+                                            "content": [
+                                              "Show in orthographic view."
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "section": {
+                                            "header": "Perspective",
+                                            "content": [
+                                              "Show in perspective view."
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "section": {
+                                            "header": "Only Axis Aligned",
+                                            "content": [
+                                              "Only displays the image contents when the view is aligned with the object’s local axis."
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Opacity",
+                                      "content": [
+                                        "Blends the image with the background. The value slider adjusts the opacity of the image, changing how much of the image is blended with the background."
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "image": {
+                                "src": "Blender/Grant Abbitt/CharCreator4Games/4/modeling_empties_draw-types.png",
+                                "caption": "Empty Display Types."
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Front Image",
+                    "content": [
+                      "In order to clear any rotation and position it at the 3D cursor, press [kbd]Alt-R,Alt-G[/kbd]. [kbd]Alt-S[/kbd] would, of course, remove any scale.",
+                      "It should be lying flat; press [kbd]R,X,90[/kbd] to stand it upright behind the starting cube.",
+                      {
+                        "image": {
+                          "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_3.jpg",
+                          "caption": "Standing up the image."
+                        }
+                      },
+                      "We don't need to see the image from the back so go to Object Mode and look at the Data Properties panel on the side and click [kbd]Side > Front[/kbd] to ensure it's only shown from the front. Also, check the box for Transparency and set it 1.00 for now.",
+                      "[kbd]Numpad1[/kbd] into Front View and turn on Wireframe Mode. Using your cube as a guide, [kbd]G[/kbd] to grab the reference image and move it into position. Use the lower-left corner image as the front-view of the monster we are going to create.",
+                      "[kbd]G[/kbd] to move the image back from the cube so it's not right in the center or the model.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_4.jpg",
+                            "caption": "Positioning the image you want to use."
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_5.jpg",
+                            "caption": "Moving the image behind your model."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Side Image",
+                    "content": [
+                      "With the empty selected press [kbd]Shift-D,LMB[/kbd] to duplicate it without moving, then [kbd]R,Z,90[/kbd] to rotate it 90 degrees. [kbd]Numpad3[/kbd] to go into the Side View, and move your reference image into position for the side illustration. Finally, [kbd]G,X[/kbd] to move it off to the side away from your object.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_6.jpg",
+                            "caption": "Duplicating the reference for the side view."
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_7.jpg",
+                            "caption": "Positioning the image."
+                          }
+                        ]
+                      },
+                      "if your reference sheet includes two side versions, one with an arm and one without, it would be a good idea to make a third empty that is a duplicate of the side view and move that one on top of the first side view with an arm.",
+                      {
+                        "image": {
+                          "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_8.jpg",
+                          "caption": "If possible, create a second side view without the arm included."
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Cleaning Up",
+                    "content": [
+                      "Make sure to name your reference images. Select them all and [kbd]M[/kbd] to move them to their own collection."
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Blocking out the shape": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_9.jpg",
+              "caption": "Using cubes to block out the shape."
+            }
+          },
+          {
+            "section": {
+              "header": "The Arms (Front View)",
+              "content": [
+                "[kbd]Numpad1[/kbd] to go into Front View and zoom in. [kbd]Shift-RMB[/kbd] to position the 3D cursor on the arm, and [kbd]Shift-A[/kbd] to add a cube. Scale that down to fit the shoulder area. [kbd]Shift-D[/kbd] to duplicate it and then rotate it and move it into position for the upper arm and scale it to fit the width. It needs to be longer to fill the arm, so press [kbd]S,X,X[/kbd] that allows you to scale in the local x-axis versus the global x-axis.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_10.jpg",
+                    "caption": "Positioning the 3D cursor in the shoulder area."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_11.jpg",
+                    "caption": "Rotating the upper arm into position."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_12.jpg",
+                    "caption": "Scaling the upper arm along the local x-axis."
+                  }]
+                },
+                "For the forearm, [kbd]Shift-D[/kbd] to duplicate the upper arm and move it into position. [kbd]Tab[/kbd] into Edit Mode and [kbd]Ctrl-R[/kbd] to add a loop cut where the forearm should begin to taper. [kbd]3[/kbd] and select the face at the bottom end of the forearm and [kbd]S[/kbd] to scale that into position and grab it downards to the end of the wrist if needed.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_13.jpg",
+                    "caption": "Duplicating the upper arm for the forearm."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_14.jpg",
+                    "caption": "Tapering the forearm."
+                  }]
+                },
+                "[kbd]Shift-D[/kbd] to duplicate the upper arm again and move that into place for the hand. [kbd]S[/kbd] to scale it to the right size. Add a loop cut, [kbd]2[/kbd] to select the edge on the inside of the hand, and adjust the shape to match the reference image.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_15.jpg",
+                    "caption": "Adding in the hand."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_16.jpg",
+                    "caption": "Shaping the hand."
+                  }]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Mirroring",
+              "content": [
+                "Go into Edit Mode and select one of the arm pieces. Add a Mirror Modifier, using the center cube as the Mirror Object. [kbd]Shift-LMB[/kbd] to select the un-mirrored objects and then select the mirrored one. [kbd]Ctrl-L[/kbd] and select 'Copy Modifiers' to add the modifier to the remaining objects.",
+                "The center cube needs to be mirrored now. Go into Edit Mode and add a loop cut down the center. Delete the vertices to the left of the loop cut. Go into Edit Mode and add a Mirror Modifier on the x-axis."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Belly (Front View)",
+              "content": [
+                "The center cube will be the stomach. Scale it in the z-axis so it only covers the stomach. Go into Edit Mode and grab the vertices into the general stomach shape. Make sure you are in Wireframe Mode so you can grab the front and back vertices.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_17.jpg",
+                    "caption": "Covering the stomach area."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_18.jpg",
+                    "caption": "Getting the rough shape of the stomach."
+                  }]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Upper Torso",
+              "content": [
+                "In Object Mode, [kbd]Shift-D[/kbd] to duplicate the stomach and move it up in the z-axis. It doesn't matter if the pieces overlap. Go into Edit Mode and Wireframe Mode and start moving vertices around to match the general shape. Go back into Object Mode and Solid Mode and review how the shape looks before progressing to the side view.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_19.jpg",
+                    "caption": "Duplicating the stomach."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_20.jpg",
+                    "caption": "Getting the rough shape of the upper torso."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_21.jpg",
+                    "caption": "Reviewing the shape in Solid Mode."
+                  }]
+                },
+                "At this point, [kbd]M[/kbd] to move your torso and arm objects into separate collections. Hide the collection with the Arms, and also the reference image for the side view with arms.",
+                "[kbd]Numpad3[/kbd] to go into Side View and begin editing the upper torso from the side. Move the top vertices into position for the shoulders and neck. In order to round out the back, add a loop cut around the middle, and then pull that back edge into position. Review your work in Object Mode, Solid Mode.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_22.jpg",
+                    "caption": "Shaping the shoulders and neck."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_23.jpg",
+                    "caption": "Adding a loop cut for the rounded back."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_24.jpg",
+                    "caption": "Rounding the back."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_25.jpg",
+                    "caption": "Reviewing the shape in Solid Mode."
+                  }]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Belly (Side View)",
+              "content": [
+                "Now it's time to work on the belly. Grab the middle points and pull them forward to the thickest part of the belly. Then grab the back vertices and move them up and into position along the spine. Go back into Solid Mode and you'll see there's a problem. The pieces that were extended for the front of the belly were actually the side vertices. Select the errant vertex and [kbd]G,G[/kbd] to edge slide it back. You can worry about the bulging belly later.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_26.jpg",
+                    "caption": "Extending the belly."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_27.jpg",
+                    "caption": "Lining up the spine."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_28.jpg",
+                    "caption": "Problems with the belly."
+                  },{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_29.jpg",
+                    "caption": "Fixing the belly."
+                  }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Arms (Side View)",
+              "content": [
+                "Hide the collection with the torso pieces, as well as the reference image with no arms. Go into the Side View and Wireframe Mode so you can more easily see things. Rotate your arm pieces and drag them into position. You should be able to to do this in Object Mode. Then go back into Solid Mode to review your work.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_30.jpg",
+                    "caption": "Adjusting the arm pieces in Wireframe Mode."
+                  },
+                  {
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_31.jpg",
+                    "caption": "Back into Solid Mode."
+                  }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Head",
+              "content": [
+                "To start the head, copy either the belly or upper torso pieces. We'll want to use one of those since it has the Mirror Modifier across the x-axis. [k]Shift-D[/k] to duplicate one of them and then [k]G,Z[/k] to move it up in the z-axis. Scale it down and then go into Edit Mode to start moving vertices around.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_32.jpg",
+                    "caption": "Duplicating a torso piece for the head."
+                  },
+                    {
+                      "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_33.jpg",
+                      "caption": "Giving the head a rough shape."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Upper Legs (Front View)",
+              "content": [
+                "This time, [k]Shift-D[/k] to duplicate the shoulder and then [k]G[/k] to move it into place. Go into Edit Mode, Wireframe Mode, and start moving vertices around. Add loop cuts if more geometry is needed. Make sure the upper legs end below the hips, which will be added next.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_34.jpg",
+                    "caption": "Duplicating a shoulder piece for the thigh."
+                  },
+                    {
+                      "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_35.jpg",
+                      "caption": "Moving vertices and adding a loop cut."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Hips",
+              "content": [
+                "Duplicate belly and move it down in the z-axis. Maneuver the vertices around until the hips are in a sort of V-shape. Go into Side View and continue shaping.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_36.jpg",
+                    "caption": "Duplicating a belly for the hips."
+                  },
+                    {
+                      "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_37.jpg",
+                      "caption": "Making a rough shape for the hips."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_38.jpg",
+                      "caption": "Shaping the hips in the Side View."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Upper Legs (Front View)",
+              "content": [
+                "Still in Side View, go into Wireframe Mode and move the upper leg vertices into place. Remember to use [k]G,Y[/k] to limit movement in the y-axis, since you already lined up the z-axis in the Front View.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_39.jpg",
+                    "caption": "Thickening the upper legs in Side View."
+                  }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Lower Legs (Front View)",
+              "content": [
+                "[k]Shift-D[/k] to duplicate the upper legs and move them down in the z-axis. Go into Edit Mode and position the vertices in Front and Side Views. Go back into Solid Mode to review your work.",
+                {
+                  "image": [{
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_40.jpg",
+                    "caption": "Duplicating the upper legs."
+                  },
+                    {
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_41.jpg",
+                    "caption": "Positioning the shape in Front View."
+                  },
+                    {
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_42.jpg",
+                    "caption": "Positioning the shape in Side View."
+                  },
+                    {
+                    "src": "Blender/Grant Abbitt/CharCreator4Games/4/img_43.jpg",
+                    "caption": "Reviewing the final product in Solid Mode."
+                  }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Applying All Modifiers",
+              "content": [
+                "You may want to apply all modifiers at once to your objects, such as before exporting the .glb file. You will want to do this so that it's easy to undo the application when you only have to do it once.  The best way is to convert it to a mesh.",
+                {
+                  "section": {
+                    "header": "Convert",
+                    "content": [
+                      {
+                        "url": {
+                          "href": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/convert.html",
+                          "html": "Blender Documentation"
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Mesh",
+                          "content": [
+                            {
+                              "ref-table": [
+                                [
+                                  {
+                                    "th": "Mode:"
+                                  },
+                                  {
+                                    "td": "Object Mode"
+                                  }
+                                ],
+                                [
+                                  {
+                                    "th": "Menu:"
+                                  },
+                                  {
+                                    "td": "[kbd]Object > Convert > Mesh[/kbd]"
+                                  }
+                                ]
+                              ]
+                            },
+                            "Converts the selected curve, metaball, surface, or text object to a mesh object. The actual defined resolution of these objects will be taken into account for the conversion. Note that it also keeps the faces and volumes created by closed and extruded curves."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "First, select all your objects, and then [k]RMB[/k]. From the menu that pops up, choose [k]Convert to > Mesh[/k]. Your objects are already meshes, so converting from a mesh to a mesh does nothing. It will, however, apply any modifiers that are in place."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Blocked out Shape",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CharCreator4Games/4/2_blocking.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
