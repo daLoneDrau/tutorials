@@ -46,6 +46,7 @@
     },
     {
       "Moving Around the Scene": {
+        "tags": ["controls"],
         "key_concepts": [
           {
             "section": {
@@ -117,6 +118,7 @@
     },
     {
       "Adding Objects": {
+        "tags": ["controls"],
         "key_concepts": [
           {
             "section": {
@@ -383,6 +385,7 @@
     },
     {
       "Viewport & Rendering": {
+        "tags": ["viewport", "rendering"],
         "key_concepts": [
           {
             "section": {
@@ -497,6 +500,7 @@
     },
     {
       "Material Colours": {
+        "tags": ["material", "materials"],
         "key_concepts": [
           {
             "section": {
@@ -557,6 +561,7 @@
     },
     {
       "Material Reflections": {
+        "tags": ["material", "materials", "principled bsdf", "smooth shading", "shading"],
         "key_concepts": [
           {
             "section": {
@@ -762,6 +767,7 @@
     },
     {
       "Lighting": {
+        "tags": ["lighting", "lights"],
         "key_concepts": [
           {
             "section": {
@@ -875,6 +881,7 @@
     },
     {
       "Editing Objects": {
+        "tags": ["extrude", "loop cut"],
         "key_concepts": [
           {
             "section": {
