@@ -3,6 +3,7 @@
   "sections": [
     {
       "Creating a Barrel": {
+        "tags": ["barrel", "bevel", "edge slide"],
         "key_concepts": [
           {
             "image": {
@@ -301,6 +302,7 @@
     },
     {
       "Creating a Crate": {
+        "tags": ["crate"],
         "key_concepts": [
           {
             "image": {
@@ -453,6 +455,7 @@
     },
     {
       "Creating a Pillar": {
+        "tags": ["pillar", "mirror modifier"],
         "key_concepts": [
           {
             "image": {
@@ -703,6 +706,7 @@
     },
     {
       "Pillar Details - Knife & Bisect": {
+        "tags": ["knife", "bisect"],
         "key_concepts": [
           {
             "image": {
@@ -917,6 +921,7 @@
     },
     {
       "Adding Materials": {
+        "tags": ["randomize"],
         "key_concepts": [
           {
             "section": {
@@ -1046,6 +1051,7 @@
     },
     {
       "Making Walls": {
+        "tags": ["dungeon", "wall"],
         "key_concepts": [
           {
             "image": {
@@ -1208,6 +1214,7 @@
     },
     {
       "Completing the Walls": {
+        "tags": ["simple join", "join"],
         "key_concepts": [
           {
             "image": {
@@ -1314,6 +1321,7 @@
     },
     {
       "Creating the Door Surround": {
+        "tags": ["dungeon", "arch", "door"],
         "key_concepts": [
           {
             "image": {
@@ -1562,6 +1570,7 @@
     },
     {
       "Shading the Walls": {
+        "tags": ["material", "select linked"],
         "key_concepts": [
           {
             "section": {
@@ -1702,6 +1711,7 @@
     },
     {
       "Creating the Floor Modules": {
+        "tags": ["floor", "tile", "proportional editing"],
         "key_concepts": [
           {
             "section": {
@@ -1851,6 +1861,7 @@
     },
     {
       "Creating the Torch": {
+        "tags": ["dungeon", "torch", "door"],
         "key_concepts": [
           {
             "section": {
@@ -2157,6 +2168,7 @@
     },
     {
       "Lighting the Dungeon": {
+        "tags": ["dungeon", "light"],
         "key_concepts": [
           {
             "section": {
