@@ -1,1 +1,1471 @@
-
+{
+  "title": "Low-Poly Dinosaur",
+  "sections": [
+    {
+      "Inserting Background Images": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-01.jpg",
+              "caption": "In Blender, you can insert background images so that you can easily trace around the shape"
+            }
+          },
+          {
+            "section": {
+              "header": "Ways to import",
+              "content": [
+                "One way to import an image to Blender is to have your File Explorer window open in front of the Blender window, and then [k]Click+Drag[/k] the file into your scene.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-02.jpg",
+                    "caption": "Dragging an image into Blender"
+                  }
+                },
+                "This will result in the creation of an [b]Empty[/b], which you will see in the Outliner.",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-03.jpg",
+                    "caption": "An Empty created after inserting an image"
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Empties",
+                    "content": [
+                      {
+                        "url": {
+                          "href": "https://docs.blender.org/manual/en/latest/modeling/empties.html",
+                          "html": "Blender Documentation"
+                        }
+                      },
+                      "The \"empty\" is a single coordinate point with no additional geometry. Because an empty has no volume and surface, it cannot be rendered. Still it can be used as a handle for many purposes.",
+                      {
+                        "section": {
+                          "header": "Primitives",
+                          "content": [
+                            {
+                              "section": {
+                                "header": "Plain Axes",
+                                "content": [
+                                  "Displays as six lines, initially with one pointing in each of the +X, -X, +Y, -Y, +Z, and -Z axis directions."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Arrows",
+                                "content": [
+                                  "Displays as arrows, initially pointing in the positive X, Y, and Z axis directions, each with a label."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Single Arrow",
+                                "content": [
+                                  "Displays as a single arrow, initially pointing in the +Z axis direction."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Circle",
+                                "content": [
+                                  "Displays as a circle initially in the XZ plane."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Cube",
+                                "content": [
+                                  "Displays as a cube, initially aligned to the XYZ axes."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Sphere",
+                                "content": [
+                                  "Displays as an implied sphere defined by three circles. Initially, the circles are aligned, one each, to the X, Y, and Z axes."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Cone",
+                                "content": [
+                                  "Displays as a cone, initially pointing in the +Y axis direction."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Image",
+                                "content": [
+                                  "Empties can display images. This can be used to create reference images, including blueprints or character sheets to model from. The image is displayed regardless of the 3D display mode.",
+                                  "Empty Displays settings can be accessed from [kbd]Properties > Object Data > Empty[/kbd] panel.",
+                                  {
+                                    "section": {
+                                      "header": "Offset X, Y",
+                                      "content": [
+                                        "Offset the image origin (where 1.0 represents the width/height of the image)."
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Depth",
+                                      "content": [
+                                        {
+                                          "table": [
+                                            [
+                                              {
+                                                "th": "Default:"
+                                              },
+                                              {
+                                                "td": "Use normal depth behavior."
+                                              }
+                                            ],
+                                            [
+                                              {
+                                                "th": "Front:"
+                                              },
+                                              {
+                                                "td": "Always display on top of other objects."
+                                              }
+                                            ],
+                                            [
+                                              {
+                                                "th": "Back:"
+                                              },
+                                              {
+                                                "td": "Always display behind of other objects."
+                                              }
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Side",
+                                      "content": [
+                                        {
+                                          "table": [
+                                            [
+                                              {
+                                                "th": "Both:"
+                                              },
+                                              {
+                                                "td": "Display both the front and back of the empty."
+                                              }
+                                            ],
+                                            [
+                                              {
+                                                "th": "Front:"
+                                              },
+                                              {
+                                                "td": "Only display the front of the image."
+                                              }
+                                            ],
+                                            [
+                                              {
+                                                "th": "Back:"
+                                              },
+                                              {
+                                                "td": "Only display the back of the image."
+                                              }
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Show in",
+                                      "content": [
+                                        {
+                                          "section": {
+                                            "header": "Orthographic",
+                                            "content": [
+                                              "Show in orthographic view."
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "section": {
+                                            "header": "Perspective",
+                                            "content": [
+                                              "Show in perspective view."
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "section": {
+                                            "header": "Only Axis Aligned",
+                                            "content": [
+                                              "Only displays the image contents when the view is aligned with the object’s local axis."
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Opacity",
+                                      "content": [
+                                        "Blends the image with the background. The value slider adjusts the opacity of the image, changing how much of the image is blended with the background."
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "image": {
+                                "src": "Grant Abbitt/CharCreator4Games/4/modeling_empties_draw-types.png",
+                                "caption": "Empty Display Types."
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "Depending on how your view was positioned, your image may have come in rotated or off-center. You can fix this by pressing [k]Alt-R[/k] for the rotation, and [k]Alt-G[/k] to return the image to the 3D cursor.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-04.jpg",
+                      "caption": "An imported image's rotation and position may need to be adjusted before work can begin"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-05.jpg",
+                      "caption": "After removing Rotation and Position modifications"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Front Image",
+              "content": [
+                "With the image in place, [k]1[/k] to go into Front View and then [k]R,X,90[/k] to stand it up straight. Then [k[G,Z[/k] to move it into position above the floor. You might find it hard to see the grid behind the image, so go to the image properties on the right, and change the Opacity to somewhere between 0.2 and 0.25. If you need to [k]G,X[/k] to line it up along the x-axis as well.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-06.jpg",
+                      "caption": "Standing the image up in Front View"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-07.jpg",
+                      "caption": "Moving the image above the floor"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-08.jpg",
+                      "caption": "Changing the image's Opacity property"
+                    }
+                  ]
+                },
+                "Now, your dinosaur may be 2.5m tall, but we want it to be around 3m, we need to scale it up. First, [k]Shift-S[/k] to move the 3D cursor to the World Origin if needed. Then, change the Transform Pivot Point to 3D Cursor. Now when you [k]S[/k] scale the image to 3m tall, it will scale around the 3D cursor, keeping its feet on the floor. Last, [k]G,Y[/k] and move it back about 2 units, so that you can model in front of it.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-09.jpg",
+                      "caption": "Moving the 3D cursor to World Origin"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-10.jpg",
+                      "caption": "Changing the Transform Pivot Point to 3D cursor"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-11.jpg",
+                      "caption": "Scaling around the 3D cursor"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-12.jpg",
+                      "caption": "Move the image back so you can model in front of it"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Side Image",
+              "content": [
+                "This time, before inserting the image, [k]Numpad3[/k] to go into Side View so it's positioned correctly. If the image is facing the wrong direction, [k]R,Z,180[/k] will turn it around. Again, bring the Opacity down between 0.2 and 0.25, and position the image above the floor. Scale it up to 3m, and finally, [k]G,X[/k] to move it back 2 units so you can model in front of it.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-13.jpg",
+                      "caption": "Inserting the image after going into Side View"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-14.jpg",
+                      "caption": "You can change the direction the image is facing by Rotating around the z-axis"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-15.jpg",
+                      "caption": "Both reference images in place"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Wrapping Up",
+              "content": [
+                "Finally, rename your images and move them to their own collection. You may also wish to make then un-selectable, so you don't accidentally grab them while working on your model.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/insert_images-16.jpg",
+                      "caption": "Organizing your reference images"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Reference Images",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino-01.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "The Dinosaur Body": {
+        "key_concepts": [
+          {
+            "image": {
+              "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-01.jpg",
+              "caption": "Image 1 - Tracing around the background images"
+            }
+          },
+          "In order to create the dinosaur body, we are going to start with a Plane and trace out the side image's outline, and then give it depth in order to make the front.",
+          {
+            "section": {
+              "header": "Start with a Plane",
+              "content": [
+                "In Object Mode, [k]Shift-A,Mesh,Plane[/k] to add a Plane at the 3D cursor. [k]R,Y,90[/k] to stand it upright in front of the side reference image. [k]Ctrl-A,R[/k] to apply the rotation.",
+                "[k]Numpad3[/k] to go into Side View, [k]Tab[/k] into Edit Mode, and [k]1[/k] into Vertex Selection Mode. Also [k]Alt-Z[/k] into X-Ray Mode and if not set, make your Transform Pivot Point the Median.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-02.jpg",
+                      "caption": "Image 2 - Add a Plane in front of the side reference image"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-03.jpg",
+                      "caption": "Image 3 - Going into Edit Mode to begin modeling"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-06.jpg",
+                      "caption": "Image 4 - Setting the Transform Pivot Point to Median"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Body",
+              "content": [
+                "We are going to build the dinosaur's body and head first. Begin by positioning the Plane over the hips. Positioning the Plane as seen in Image 5 illustrates how many cuts you will need to match the curve of the body. So [k]Ctrl-R[/k] to do a Loop Cut across the middle, and [k]LMB,LMB[/k] to set that in position. Then drag the middle vertices in place.",
+                "Grab the two vertices on the right side of the hips and [k]E[/k] to Extrude them. [k]S[/k] to Scale the right edge down to match the curvature of the outline. Make several extrusions, using [k]G[/k] to Grab and [k]S[/k] to Scale along the way to trace along the reference image's outline.",
+                "When you get to the end, there is no need to make the vertices meet at a point, you can leave a square shape at the end of the tail.",
+                "Go back to the other end and start Extruding out towards the neck. When you get to the head, you might find that as it curves around the shape you will get shorter edges on one side, that will be fine, since we will adapt the shape as we go along. Don't worry about the mouth, we will be cutting that put later.",
+                "This should give you the rough shape; we start of simple and build up the complexity as we go.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-07.jpg",
+                      "caption": "Image 5 - Tracing the shape of the tail"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-08.jpg",
+                      "caption": "Image 6 - Tapering off at the end of the tail"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-09.jpg",
+                      "caption": "Image 7 - Finishing the torso and head"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Mouth",
+              "content": [
+                "There are a few ways you can cut in the mouth; you can wait until after you have extruded the plane out to give depth, or you can cut in while it is still flat. In this case, we are going to cut it in while flat.",
+                "[k]Ctrl-R[/k] to add in a Loop Cut across the middle of the shape (Image 8). Normally, you want to be careful about where you add Edge Loops, since this creates more places for topology where you can move around and change the shape. But in this case, we need the topology for the mouth, and we will want more topology later when creating curves for the body.",
+                "Zoom in on the head and move the new vertices into place along the upper jaw (Image 9). Then starting from the right-most vertex in the mouth, [k]Ctrl-K[/k] to use the Knife Tool and cut vertices for the lower jaw (Image 10).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-10.jpg",
+                      "caption": "Image 8 - Adding a Loop Cut across the middle"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-11.jpg",
+                      "caption": "Image 9 - Tracing the upper jaw"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-12.jpg",
+                      "caption": "Image 10 - Cutting the lower jaw with the Knife Tool"
+                    }
+                  ]
+                },
+                "There is a fair bit of detail in the head - a brow ridge (Image 11), eye socket, nostril, and jaw flaps (Image 12). We can use Loop Cuts to add topology for those.",
+                "[k]3[/k] to go into Face Selection Mode, select the inner mouth faces, and [k]X,F[/k] to delete them (Image 13).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-13.jpg",
+                      "caption": "Image 11 - Adding a Loop Cut for the brow ridge"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-14.jpg",
+                      "caption": "Image 12 - Adding topology for the jaw flap"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-15.jpg",
+                      "caption": "Image 13 - Deleting the mouth faces"
+                    }
+                  ]
+                },
+                "Now we want to give the body some volume. We will do this by extruding the shape outwards and mirroring across the x-axis. [k]Numpad1[/k] to go into Front View. Still in Edit Mode, either Box Select all faces or [k]A[/k] to select them all, and move them to middle of the left-side of the body (Image 14). From here we can start pushing the belly out, and extruding the face in later on.",
+                "[k]Tab[/k] into Object Mode and add a Mirror Modifier across the x-axis to the Plane (Image 15). If you don't see your mirror at first, try [k]Ctrl-A[/k] and apply all transforms.",
+                "[k]Tab[/k] into Edit Mode, [k]2[/k] for Edge Selection Mode and select all outer edges (Image 16). Turn on Clipping on the Mirror Modifier and [k]E,X[/k] to join the edges to the mirror.",
+                "Last, [k]A,M,B[/k] to get rid of any vertices that are sitting on top of each other.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-16.jpg",
+                      "caption": "Image 14 - Moving the Plane towards the middle of the left-side"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-17.jpg",
+                      "caption": "Image 15 - Adding a Mirror Modifier across the x-axis"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-18.jpg",
+                      "caption": "Image 16 - Selecting the outer edges"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_body-19.jpg",
+                      "caption": "Image 17 - Extruding the outline edges together"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "A Rough Shape",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino-02.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Dino Curves": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Splitting the Screen into Front and Side Views",
+              "content": [
+                "In this part, we will be adding curves to the dinosaur's body, so we will be switching between Front and Side views often. However, instead of frequently switching, it would be easier to see both views on screen. We will also get rid of the Timeline at the bottom of the screen since it's not needed.",
+                "Hover the dividing area between the 3D Viewport and the Timeline. The cursor should change to an up/down pointing arrow. [k]RMB[/k] to open the Area Options menu.",
+                {
+                  "section": {
+                    "header": "Area Options",
+                    "content": [
+                      "[k]RMB[/k] on the border opens the Area Options.",
+                      {
+                        "section": {
+                          "header": "Vertical/Horizontal Split",
+                          "content": [
+                            "Shows an indicator line that lets you select the area and position where to split. [k]Tab[/k] switches between vertical/horizontal."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Join Areas",
+                          "content": [
+                            "Shows the join direction overlay."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Swap Areas",
+                          "content": [
+                            "Swaps this area with the adjacent one."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "With the Area Options open, select [k]Join Areas[/k] and click on the area that you want to remove. Remove the Timeline this way.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-01.jpg",
+                      "caption": "Image 1 - Opening the Area Options"
+                    }
+                  ]
+                },
+                "Go to the area divider on the right and open the Area Options. This time, choose [k]Vertical Split[/k]. Split the 3D Viewport so that you have two of them, and set one viewport to Front View and the other to Side View. Make the Front viewport smaller and zoom in on the model. For the Side viewport, rotate the camera so you are viewing the model in perspective. [k]T[/k] will get rid of the Toolbar which will help de-clutter the view, and [k]Alt-Z[/k] will enable/disable the Wireframe. It would be less confusing to enable Wireframe Mode in the Front viewport while disabling it on the Side.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-02.jpg",
+                      "caption": "Image 2 - Splitting the screen into Front and Side Views"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Shaping the Head",
+              "content": [
+                "Make sure to [k]Tab[/k] into Edit Mode and [k]3[/k] for Face Selection. We need to taper the dinosaur's mouth, so select the outside faces on the upper jaw that should move in. Zoom in on those faces in both viewports so it's easier to see what you're doing. [k]G,X[/k] and move those faces in slightly. Next, [k]R,Z[/k] to taper the snout in. Make sure you start the rotation in the Perspective viewport so you can be sure the front of the snout is moving inwards. Take a quick look around in the Perspective viewport to make sure it looks okay.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-03.jpg",
+                      "caption": "Image 3 - Selecting the faces of the upper jaw"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-04.jpg",
+                      "caption": "Image 4 - Moving the upper jaw faces in"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-05.jpg",
+                      "caption": "Image 5 - Tapering the dinosaur's snout"
+                    }
+                  ]
+                },
+                "Now select the faces of the lower jaw. Again, [k]G,X[/k] to move them in, and then [k]R,Z[/k] to taper them inwards. Make sure to move around in the Perspective viewport and adjust as needed until it looks good.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-06.jpg",
+                      "caption": "Image 6 - Selecting the faces of the lower jaw"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-07.jpg",
+                      "caption": "Image 7 - Adjusting the lower jaw"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Body",
+              "content": [
+                "Grab the faces around the midsection (Image 8) and [k]G,X[/k] to move them out to the widest part of the sketch. If you move around in the Perspective viewport, you see that the shoulders are coming out too drastically (Image 9). [k]2[/k] into Edge mode and select the two edges along the side. [k]G,X[/k] to move them back in (Image 10). Grab the next two edges as well and [k]G,X[/k] move them in.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-08.jpg",
+                      "caption": "Image 8 - Selecting the dino's mid-section"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-09.jpg",
+                      "caption": "Image 9 - From a different perspective, the shoulders come out too drastically"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-10.jpg",
+                      "caption": "Image 10 - Move the top edges inwards to slope the shoulders"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-11.jpg",
+                      "caption": "Image 11 - Move the next edges inwards"
+                    }
+                  ]
+                },
+                "Move down to the next two edges in the series and [k]G,X[/k] to move them out. These are the lines for the hips, which should be wider (Image 12). After that, select the next two edges and [k]G,X[/k] and bring them out to make more of a curve as the hips narrow towards the tail (Image 13).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-12.jpg",
+                      "caption": "Image 12 - Widening the hips"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-13.jpg",
+                      "caption": "Image 13 - Narrowing towards the tail"
+                    }
+                  ]
+                },
+                "Now we want to merge the tail into a point. First, turn on [k]Auto Merge Vertices[/k] (Image 14), and then select the back two edges on the tail (Image 15). [k]G,X[/k] and merge them into a point.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-14.jpg",
+                      "caption": "Image 14 - Auto Merge Vertices"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-15.jpg",
+                      "caption": "Image 15 - Selecting the tail edges"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-16.jpg",
+                      "caption": "Image 16 - Tapering the tail into a point"
+                    }
+                  ]
+                },
+                "Select the two edges closest to the point (Image 17). We want to thin out the tail proportionally, so press [k]O[/k] to turn on Proportional Editing, and then [k]G,X[/k] to thin out the tail (Image 18). Use the [k]WheelUp[/k]/[k]WheelDown[/k] to adjust the regions that get influenced. [k]1[/k] to go into Vertex mode and select the vertices at the tip of the tail. [k]G,G[/k] to edge slide them into a single vertex (Image 19). Take some time to review your shape in the Perspective viewport.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-17.jpg",
+                      "caption": "Image 17 - Auto Merge Vertices"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-18.jpg",
+                      "caption": "Image 18 - Thinning out the length of the tail"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-19.jpg",
+                      "caption": "Image 19 - Tapering the tail into a point"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Final Curves",
+              "content": [
+                "The dino shape looks about correct, if somewhat boxy. We want to add some curvature to it now. [k]2[/k] into Edge mode and select the top edge before the one leading into the tail. That edge is part of a triangle face and can't be used for what we're going to do. Go to the edge at the top of the upper jaw and [k]Ctrl-LMB[/k] to select all edges in between (Image 20). We are now going to curve them in; [k]G,G[/k] to Edge Slide them in slightly along the x-axis, and then [k]G,G[/k] to slide them down in the z-axis. This will add a curve to the body (Image 21). Repeat along the bottom edge (Image 22).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-20.jpg",
+                      "caption": "Image 20 - Selecting the edges for the top curve"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-21.jpg",
+                      "caption": "Image 21 - Curving the top of the body"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_curves-22.jpg",
+                      "caption": "Image 22 - Curving the bottom of the body"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "Review the shape in the Perspective viewport, making adjustments as needed.",
+          {
+            "section": {
+              "header": "Dino Curves",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino-03.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Dino Legs": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Choosing the Leg Position",
+              "content": [
+                "In the Perspective viewport, [k]Numpad3[/k] into Side View and [k]1[/k] for Vertex Mode. If you haven't already [k]Alt-Z[/k] to go into Wireframe Mode. [k].[/k] to zoom in on the dino would also help. Now, we need to decide which face would be best for extruding the legs from. It should be one that is closest to the leg position in the rough sketch (Image 1). Move the faces vertices and any other nearby to adjust to be a little closer to the leg's shape (Image 2). Notice that the face we are choosing is the one that comes out from the side, not directly from the bottom (Image 3). This is because when we extrude, we want to have a gap between the legs.",
+                "Lastly, when we extrude the face to make the legs, we will only have four edges to work with, since we're extruding a rectangle. This won't be enough geometry to make a curve, giving our dino blocky legs. If we [k]Ctrl-R[/k] to add a loop cut (Image 4), then we can extrude two faces, giving us six edges that can be used for curving the legs.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-01.jpg",
+                      "caption": "Image 1 - Selecting the face closest to the leg"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-02.jpg",
+                      "caption": "Image 2 - Shaping the face to be used for the leg extrusion"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-03.jpg",
+                      "caption": "Image 3 - Highlight of the face chosen for extrusion"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-04.jpg",
+                      "caption": "Image 4 - Adding an Edge Loop to create more geometry"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Upper Legs",
+              "content": [
+                "Select the two faces chosen for the legs and extrude them out to the side (Image 5). [k]G[/k] the two bottom faces and [k]E[/k] those faces out (Image 6).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-05.jpg",
+                      "caption": "Image 5 - Extruding from the hips"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-06.jpg",
+                      "caption": "Image 6 - Taking the legs out from the bottom faces"
+                    }
+                  ]
+                },
+                "Now we need to re-position things. [k]G[/k] to grab the bottom faces and move them more in line with the sketch (Image 7). It's probably too wide at the moment, so [k]S,Shift-X[/k] to scale it but not make the leg thinner (Image 8). In the Front viewport, [k]G[/k] to move it in line with the path of the leg (Image 9). [k]R[/k] to rotate it along the lines of the sketch (Image 10) and then again [k]R[/k] in the Side viewport (Image 11).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-07.jpg",
+                      "caption": "Image 7 - Re-positioning the bottom faces from the side"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-08.jpg",
+                      "caption": "Image 8 - Scaling the leg's width"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-09.jpg",
+                      "caption": "Image 9 - Re-positioning the bottom faces from the front"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-10.jpg",
+                      "caption": "Image 10 - Rotating from the front"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-11.jpg",
+                      "caption": "Image 11 - Rotating from the side"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Lower Legs",
+              "content": [
+                "In the Side viewport, [k]E[/k] the bottom faces again (Image 12) and [k]G[/k] them into position (Image 13). [k]R[/k] to rotate the end of the leg (Image14) and [k]G,X[/k] to move them into position from the front (Image 15). Finally, [k[S[/k] to scale it to the right size (Image 16).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-12.jpg",
+                      "caption": "Image 12 - Extruding the lower legs"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-13.jpg",
+                      "caption": "Image 13 - Positioning the lower legs from the side"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-14.jpg",
+                      "caption": "Image 14 - Rotating the end of the lower leg"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-15.jpg",
+                      "caption": "Image 15 - Positioning the lower legs from the front"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-16.jpg",
+                      "caption": "Image 16 - Scaling the ankle"
+                    }
+                  ]
+                },
+                "[k]E[/k] to extrude the bottom faces again to the top of the foot (Image 17). [k]G[/k] to bring it in from the side and [k]S[/k] to scale it to the right size (Image 18). Again, [k]G[/k], [k]S[/k] to move it into position and scale, this time from the front (Image 19).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-17.jpg",
+                      "caption": "Image 17 - Extruding to the top of the foot"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-18.jpg",
+                      "caption": "Image 18 - Adjusting the ankle from the side"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-19.jpg",
+                      "caption": "Image 19 - Adjusting the ankle from the side"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Foot",
+              "content": [
+                "[k]E[/k] to extrude down to the bottom of the foot (Image 20). In the Front viewport, [k]S[/k] to scale it to the right width (Image 21). Select the front face and [k]E[/k] to extrude to the end of the foot, before the claws (Image 22). [k]1[/k] to go into Vertex mode and select the top vertices of the face. [k]G,G[/k] to slide them down to make the foot the correct height (Image 23). Select the front face again, and in the Front View, [k]S,X[/k] to scale it to the right width for the claws (Image 24).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-12.jpg",
+                      "caption": "Image 12 - Extruding the lower legs"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-13.jpg",
+                      "caption": "Image 13 - Positioning the lower legs from the side"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-14.jpg",
+                      "caption": "Image 14 - Rotating the end of the lower leg"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-15.jpg",
+                      "caption": "Image 15 - Positioning the lower legs from the front"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_legs-16.jpg",
+                      "caption": "Image 16 - Scaling the ankle"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Rounding Things Out",
+              "content": [
+                "Turn off Wireless mode [k]Alt-Z[/k] and [k]1[/k] into Vertex mode. Start rounding off the shape. Feel free to add Bevel Cuts across the middle of the thigh in order to round it off."
+              ]
+            }
+          },
+          "Review the shape in the Perspective viewport, making adjustments as needed.",
+          {
+            "section": {
+              "header": "Dino Legs",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino-04.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Dino Claws": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Creating Faces for the Claws",
+              "content": [
+                "[k]Tab[/k] into Edit Mode and select the front face of the foot. [k]NumpadPeriod[/k] to zoom in on it (Image 1). [k]Shift-H[/k] will hide everything but the selected face (Image 2). [k]Ctrl-R[/k] and add 2 loop cuts in the front to make 3 faces (Image 3). These faces will be used to extrude the claws. Afterwrds, [k]Alt-H[/k] to make everything visible again.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-01.jpg",
+                      "caption": "Image 1 - Zooming in on the front of the foot"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-02.jpg",
+                      "caption": "Image 2 - Hiding everything but the front of the foot."
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-03.jpg",
+                      "caption": "Image 3 - Adding Loop Cuts for the claws"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Extruding the Claws",
+              "content": [
+                "With the claw faces selected, [k]I,I[/k] to Inset the faces (Image 4), and then [k]E,Y[/k] to extrude them out in the y-axis (Image 5). [k]E,Y[/k] to extrude them out again (Image 6) for the tips of the claws, and [k]S[/k] to scale them down in the Front view(Image 7). Make sure the Transform Pivot Point is set to Individual Origins (Image 8). Last, [k]G[/k], [k]R[/k] to move and rotate the tips of the claws into a better position.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-04.jpg",
+                      "caption": "Image 4 - Insetting the claw faces"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-05.jpg",
+                      "caption": "Image 5 - Extruding the claws"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-06.jpg",
+                      "caption": "Image 6 - Extruding the claws again"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-07.jpg",
+                      "caption": "Image 7 - Scaling them down in the Front view"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-08.jpg",
+                      "caption": "Image 8 - Setting the Transform Pivot Point is set to Individual Origins"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-09.jpg",
+                      "caption": "Image 9 - Positioning the tips of the claws"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Shaping the Foot",
+              "content": [
+                "Using the Knife Tool ([k]K[/k]), make cuts from the faces at the front of the foot to the vertices at the top (Image 10) and bottom (Image 11). [k]Alt-Z[/k] into Wireframe Mode and select the faces for the outside claw. [k]R,Z[/k] to rotate it outwards in the z-axis (Image 12) and [k]G,Shift-Z[/k] to move those faces into position (Image 13). Do the same thing for the other claw on the inside (Image 14).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-10.jpg",
+                      "caption": "Image 10 - Cutting edges at the top of the foot"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-11.jpg",
+                      "caption": "Image 11 - Cutting edges at the bottom of the foot"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-12.jpg",
+                      "caption": "Image 12 - Rotating the outside claw"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-13.jpg",
+                      "caption": "Image 13 - Moving the outside claw back into position"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-14.jpg",
+                      "caption": "Image 14 - Rotating and moving the inside claw"
+                    }
+                  ]
+                },
+                "My dinosaur foot has a dramatic instep (Image 15). [k]G[/k] to grab some vertices to move them around until you are satisfied with the shape. Be sure to [k]Numpad7[/k] [k]Numpad9[/k] to get a better view from the bottom as well (Image 16).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-10.jpg",
+                      "caption": "Image 15 - My dinosaur's instep before adjustments"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_claws-16.jpg",
+                      "caption": "Image 16 - Reviewing my adjustments from underneath"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Dino Claws",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino-05.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Dino Face": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Adding Arms",
+              "content": [
+                "[k]Tab[/k] into Edit Mode, [k]3[/k] into Face Selection, and [k]Numpad1[/k] into Front View. We need a face we can use to extrude the arms out. We can't use the face directly in the front; when we go to extrude the face the arms will be too close together (Image 1) We want a face more to the side. [k]Numpad3[/k] into Side View, and [k]Alt-Z[/k] to make sure the reference image is visible. Select the face closest to the shoulder (Image 2). This face is a little too big, but we can cut it smaller using the Knife Tool ([k]K[/k]) (Image 3).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-01.jpg",
+                      "caption": "Image 1 - The front face nearest the arms is not a good choice"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-02.jpg",
+                      "caption": "Image 2 - Choose the face closest to the shoulder"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-03.jpg",
+                      "caption": "Image 3 - Using the Knife Tool to make the face smaller"
+                    }
+                  ]
+                },
+                "[k]1[/k] into Vertex Mode and move the vertices around the shoulder closer to the beginning of the arm (Image 4). [k]3[/k] into Face Mode and select that face. Moving into your Front View, [k]E[/k] to extrude the face out (Image 5). Grab the bottom face of the extrusion, and [k]E[/k] to extrude it out to the elbow (Image 6), and then [k]S[/k] to scale it down so it's roughly in line (Image 7). Again with the bottom face selected, [k]E[/k] to extrude, [k]G[/k] to move it onto place, and [k]S[/k] to scale it in around the wrist (Image 8). Last, [k]E[/k], [k]S[/k] to end the arm at the wrist (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-04.jpg",
+                      "caption": "Image 4 - Moving the vertices into position around the shoulder"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-05.jpg",
+                      "caption": "Image 5 - Extruding the shoulder out"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-06.jpg",
+                      "caption": "Image 6 - Extruding the arm to the elbow"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-07.jpg",
+                      "caption": "Image 7 -Scaling the face in line with the reference image"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-08jpg.jpg",
+                      "caption": "Image 8 - Taking the arm out to the wrist"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-09.jpg",
+                      "caption": "Image 9 - Ending the arm with the claws"
+                    }
+                  ]
+                },
+                "[k]Alt-Z[/k] to turn off X-Ray Mode and review the changes. The top of the should looks rather boxy (Image 10); we want to smooth that out. [k]2[/k] into Edge Mode, select the top outside edge and [k]G,G[/k] to slide it down the outside of the shoulder, then [k]G,G[/k] to slide it back towards the body (Image 11). The arms now have a nice low poly feel to them and don't really need to be rounded any more. If you want to, you can [k]S[/k] to scale in that top edge, but it isn't absolutely needed.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-10.jpg",
+                      "caption": "Image 10 - A boxy shoulder"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-11.jpg",
+                      "caption": "Image 11 - Rounding it out"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adjusting the Neck",
+              "content": [
+                "In Side View, we can see that the edges around the neck aren't spaced evenly (Image 12). [k]Alt-LMB[/k] to select the edges and [k]G,G[/k] to create more even separation between them (Image 13). We do this because right now if viewed from the side or the top, the dino has a rather fat neck. We can fix this by shrinking the middle part of the neck slightly. [k]3[/k] into Face Mode, and [k]Alt-LMB[/k] to select the face loop around the middle (Image 14). [k]S[/k] to scale that in slightly, but not too much. Since we have a Mirror Modifier applied, we can [k]G,X[/k] and bring it in towards the center, as long as clipping is on this will clip the sides together (Image 15).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-12.jpg",
+                      "caption": "Image 12 - The neck edges"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-13.jpg",
+                      "caption": "Image 13 - Evening out the separation between edge loops"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-14.jpg",
+                      "caption": "Image 14 - Selecting the middle face loop"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-15.jpg",
+                      "caption": "Image 15 - Shrinking the neck"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding an Eye",
+              "content": [
+                "[k]Numpad3[/k] into Side View and [k]Alt-Z[/k] to turn on X-Ray Mode. A great way for quickly creating more topology in an area is to select the faces around that area and [k]I[/k] to inset so suddenly you've got a lot more vertices to play with (Image 16). Then [k]1[/k] into Vertex Mode and [k]G[/k] to move the vertices around into an eye shape (Image 17). In the other viewport move around to see how the eye looks from the side. Things probably will look out of place (Image 18), so [k]G,X[/k] to move the vertices around until we have a general eye shape (Image 19). Since this is a low poly shape we don't have to be overly detailed; we're just indicating that there is an eye socket here. Grab the middle vertex in the eye socket and [k]G,X[/k] to move it in (Image 20).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-16.jpg",
+                      "caption": "Image 16 - Inset is a great way to add topology in an area"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-17.jpg",
+                      "caption": "Image 17 - Move the vertices into an eye shape"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-18.jpg",
+                      "caption": "Image 18 - Check other perspectives to make sure the eye socket is right"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-19.jpg",
+                      "caption": "Image 19 - Moving vertices into place"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-20.jpg",
+                      "caption": "Image 20 - Bringing in the eye socket"
+                    }
+                  ]
+                },
+                "If you want to give the eye a more dramatic look, move the front vertices down to angle it from the front, and move the bottom vertices up to give it a bit of a squint (Image 21). Predators have their eyes in front for stereo vision, so grab the vertices at the front of the eye and [k]G,X[/k] to move them in (Image 22). Also, move the back ones out, to angle the eye from front to back.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-21.jpg",
+                      "caption": "Image 21 - Squinting the eye to look more dangerous"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-22.jpg",
+                      "caption": "Image 22 - Move the eyes forward for predators"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Mouth",
+              "content": [
+                "[k]3[/k] into Face Mode and in the Front perspective view select the inner faces of the mouth (Image 23). [k]I[/k] to inset the faces. We want them to exclude the boundary, so [k]I,B[/k] if you need to (Image 24). We want to extrude these faces, and then sink them into the mouth. First, we will do the extrusion  and set the new faces in place ([k]E,LMB[/k]). Be sure to turn off [k]Auto Merge Vertices[/k] (Image 25) before extruding or the vertices created for the extrusion will get merged with the existing ones. Next, we will sink the faces into the mouth with [k]Alt-S[/k]; this extrudes the faces according to their normals (Image 26). If you bring the faces in too much they will overlap through the jaw; you can [k]G,X[/k] to bring them in and then [k]Alt-S[/k] to shrink.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-23.jpg",
+                      "caption": "Image 23 - Selecting the inner mouth faces"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-24.jpg",
+                      "caption": "Image 24 - Insetting the faces"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-25.jpg",
+                      "caption": "Image 25 - Turn off Auto Merge Vertices when extruding in place"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino_face-26.jpg",
+                      "caption": "Image 26 - Extruding along the normals"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Dino Face",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino-06.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "The Landscape": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Sculpting the Landscape",
+              "content": [
+                "In Object Mode, hide the reference images and rotate the dinosaur so it is oriented head-to-tail on the x-axis (Image 1). [k]Shift-A,Mesh,Grid[/k] to add a Grid. Give it 100 subdivisions on the x- and y-axes in order to add topology, and scale it up to 60m (Image 2). Go into the Sculpting workspace, and choose the Grab Brush. If you're not sure which one that is, you can widen the brush dialog with your mouse (Image 3). With the Grab Brush selected, [k]F[/k] to enlarge it (Image 4), and start grabbing topology in the back to make some mountains (Image 5). Make sure to not raise them too high that you are also pulling up the edges. Next, grab the land around the dinosaur to slightly raise it up to create some hills and uneven surface areas (Image 6).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/landscape-01.jpg",
+                      "caption": "Image 1 - Orienting the dinosaur on the x-axis"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/landscape-02.jpg",
+                      "caption": "Image 2 - Adding a grid"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/landscape-03.jpg",
+                      "caption": "Image 3 - Widening the Brush dialog"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/landscape-04.jpg",
+                      "caption": "Image 4 - Enlarging the Grab Brush"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/landscape-05.jpg",
+                      "caption": "Image 5 - Sculpting some mountains"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/landscape-06.jpg",
+                      "caption": "Image 6 - Adding some undulation to the land around the dinosaur"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Making it Low Poly",
+              "content": [
+                "Go back into the Layout workspace and with the grid selected, add the [url]Decimate Modifier.^^../Simple Models/The Decimate Modifier[/url]",
+                "Take the Ratio down to 0.01, enough so that the Face Count for the goes goes to below 200 and the mountains have a chunky, low poly look (Image 7). Decimate is a destructive modifier, so before applying it, we will want to create a backup. [k]Shift-D[/k] to duplicate the landscape, and [k]M[/k] to move it to a new collection. Then hide the selection and apply the modifier to the original. Then, [k]Tab[/k] into Edit Mode and you can start moving vertices around if you want (Image 8). You could turn on Proportional Editing and use the mouse wheel to enlarge your circle of influence in order to make the editing more like sculpting.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/landscape-07.jpg",
+                      "caption": "Image 7 - Decimating the landscape"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/landscape-08.jpg",
+                      "caption": "Image 8 - Adjusting the mountain's shape after applying Decimate"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Landscape",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino-07.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Trees, Lights, and Colours": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Trees",
+              "content": [
+                "We'll want to add some foliage to our landscape using trees. These will be just simple pyramids placed around the landscape. In Object Mode, [k]Shift-A,Mesh,Cone[/k] and bring the vertex count to 4 to make it a pyramid (Image 1). Move the object origin to the base of the pyramid, and then [k]S,Z[/k] to make it taller (Image 2).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/trees-01.jpg",
+                      "caption": "Image 1 - Adding a Cone and making it a pyramid"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/trees-02.jpg",
+                      "caption": "Image 2 - Making the tree taller than the dinosaur (note the origin is at the base)"
+                    }
+                  ]
+                },
+                "[k]Numpad7[/k] into Top View. We need to create a forest of trees, so with the first selected, [k]Alt-D[/k] to create a linked duplicate and the [k]R[/k] to rotate it to give some variation (Image 3). Then select both trees and [k]Alt-D[/k] again and [k]R[/k] to Rotate again (Image 4). Make sure the Transform Pivot Point is set to Individual Origins. Keep duplicating, moving, and rotation until you have a nice set of trees (Image 5).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/trees-03.jpg",
+                      "caption": "Image 3 - Duplicate the original tree and rotate it for variation"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/trees-04.jpg",
+                      "caption": "Image 4 - Creating a set of trees, using Rotation and Scale to add variation"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/trees-05.jpg",
+                      "caption": "Image 5 - A forest of trees"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Colours",
+              "content": [
+                "Go into the Shading workspace and select a tree. Give it a new green colour (Image 6). As long as the trees are linked, all trees should get the same colour. Select the dinosaur and give it a reddish-brown colour (Image 7). Finally, give the mountains a whitish-brown colour (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/trees-06.jpg",
+                      "caption": "Image 6 - Adding a green material to the trees"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/trees-07.jpg",
+                      "caption": "Image 7 - Reddish-brown for the Dinosaur"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/trees-08.jpg",
+                      "caption": "Image 8 - Beige for the mountains"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Trees, Lights, and Colours",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino-08.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "The Mountains": {
+        "key_concepts": [
+          "The goal of this unit is to use nodes to add a gradient to the mountains.",
+          {
+            "section": {
+              "header": "Setting up your workspace",
+              "content": [
+                "If you don't have your viewport split into two screens, do so now. In the right viewport, change it over to the Shader Editor and make sure the Shader Type is set to Object, not World (Image 1). Select the dinosaur in the left viewport, and you will see its material appear to the right (Image 2).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/nodes-01.jpg",
+                      "caption": "Image 1 - Settingup the viewport"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/nodes-02.jpg",
+                      "caption": "Image 2 - Selecting an object will bring up its shader nodes"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Separating the Mountains",
+              "content": [
+                "In the left viewport, in Object Mode, select the landscape. [k]Tab[/k] into Edit Mode, [k]3[/k] and select all the mountain faces. [k]P,S[/k] to separate the mountains by the selected faces (Image 4). Rename the new object to 'mountains' and give thr ground its own material and color.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/nodes-03.jpg",
+                      "caption": "Image 3 - Selecting the mountain faces"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/nodes-04.jpg",
+                      "caption": "Image 4 - Separating the mountains from the ground"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Gradient Shader",
+              "content": [
+                {
+                  "section": {
+                    "header": "Node Wrangler",
+                    "content": [
+                      "We want to turn on the Node Wrangler tool so go to [k]Edit > Preferences > Add-ons[/k] and enable the Node Wrangler add-on. This gives us more options in the Shader Editor."
+                    ]
+                  }
+                },
+                "In the Shader Editor, select the Principled BSDF node and press [k]Ctrl-T[/k]. This is a shortcut that adds a Texture Coordinate Node, Mapping Node, and an Image Texture Node to your shader (Image 5). Delete the Mapping and Image Texture nodes; we will use the Texture Coordinate node to create a gradient going upwards from dark to light. We want to be able to tell Blender that the mountain's shade will be darker the lower its z-value is. [k]Shift-A > Converter > Separate XYZ[/k] and connect the Object output from the Texture Coordinate to the Vector input of the Separate XYZ node (Image 6). Connect the Z output to the Base Color input of the Principled BSDF. You should see the gradient applied across the z-axis (Image 7).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/nodes-05.jpg",
+                      "caption": "Image 5 - The Node Wrangler adds shortcuts to the Shader Editor"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/nodes-06.jpg",
+                      "caption": "Image 6 - Connecting the Separate XYZ node"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/CompleteBlendCreator/3/nodes-07.jpg",
+                      "caption": "Image 7 - Connecting all nodes and seeing the gradient"
+                    }
+                  ]
+                },
+                "Right now the gradient is only black and white, but we want to add a ramp and some colour. [k]Shift-A > Converter > Color Ramp[/k] and put that in between the Separate XYZ and Principled BSDF nodes. Play with the levels in the Color Ramp. If you don't see the expected results, experiment with other outputs from the Texture Coordinate node other than Object."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Mountains",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/CompleteBlendCreator/3/dino-09.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
