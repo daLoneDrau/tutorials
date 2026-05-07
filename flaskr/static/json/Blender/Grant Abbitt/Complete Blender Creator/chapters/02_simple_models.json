@@ -3,6 +3,7 @@
   "sections": [
     {
       "Simple Houses": {
+        "tags": ["house"],
         "key_concepts": [
           {
             "section": {
@@ -354,6 +355,7 @@
     },
     {
       "Making a Lighthouse": {
+        "tags": ["outliner", "lighthouse", "inset"],
         "key_concepts": [
           {
             "section": {
@@ -667,6 +669,7 @@
     },
     {
       "Making the Rocky Base": {
+        "tags": ["terrain", "sculpt mode", "dyntopo"],
         "key_concepts": [
           "Keep the houses and lighthouse created earlier as the base for our scene. We want to finish with a lighthouse on the water.",
           {
@@ -923,6 +926,7 @@
     },
     {
       "The Decimate Modifier": {
+        "tags": ["modifiers", "decimate"],
         "key_concepts": [
           {
             "section": {
@@ -1084,6 +1088,7 @@
     },
     {
       "Snapping": {
+        "tags": ["snapping", "object origin"],
         "key_concepts": [
           "Go back into Object Mode and review your objects (lighthouse and residential homes).",
           "Select the lighthouse and [kbd]S[/kbd] to Scale the lighthouse down to an appropriate size for the island.",
@@ -1193,6 +1198,7 @@
     },
     {
       "Linked Duplicates": {
+        "tags": ["pivot point", "linked duplicate"],
         "key_concepts": [
           "In order to create the lighthouse village quickly, you can use linked duplicates.",
           "Let's say the houses were too big, and you wanted to shrink them all together. You could box-select them in Object Mode and then [kbd]S[/kbd] to scale them down, but this would scale them by the median point between them. What if you wanted to scale them by their individual origins? You would need to adjust the pivot point, as explained below:",
@@ -1594,6 +1600,7 @@
     },
     {
       "Material Slots": {
+        "tags": ["material slots"],
         "key_concepts": [
           "You can texture different parts of an object using material slots.",
           {
