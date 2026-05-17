@@ -3,12 +3,178 @@
   "sections": [
     {
       "3d Isometric Game Tiles": {
+        "tags": ["camera view", "isometric", "terrain", "grass", "rock", "stone"],
         "key_concepts": [
           "[url]Tutorial 3d Isometric Game Tiles - Low Poly style game models for a game | Blender^^https://www.youtube.com/watch?v=ZuzpWPEW5g4[/url]",
           {
             "section": {
-              "header": "SECTION",
+              "header": "Isometric Camera Setup",
               "content": [
+                "Start a new scene and set the camera rotation to isometric (Image 1). With the Camera selected, [k]Numpad0[/k] to toggle the camera view and [k]G[/k] the camera until the cube is centered in the view (Image 2). In the Data Properties tab, set [k]Lens > Type > Orthograpic[/k] (Image 3).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-01.jpg",
+                      "caption": "Image 1 - Starting a new scene and setting the camera rotation to isometric"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-02.jpg",
+                      "caption": "Image 2 - Selecting the Camera, toggling the camera view and moving the camera until the cube is centered in the view"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-03.jpg",
+                      "caption": "Image 3 - Going to the Data Properties tab and setting the Lens Type to Orthographic"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Ground",
+              "content": [
+                "With the cube as the active object, [k]Tab[/k] into Edit Mode, select the bottom vertices and [k]G,Z,1[/k] up to the World Origin (Image 4). Select the top face, [k]E,RMB[/k] [k]S[/k] to scale it out in place (Image 5). Clean it up so that the extra faces are gone and you have only five faces on top (Image 6). Select the faces around the edge and [k]E[/k] to extrude them down (Image 7). Delete the inner faces around the top (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-04.jpg",
+                      "caption": "Image 4 - Going into Edit Mode with the cube as the active object, selecting the bottom vertices and moving them up to the World Origin"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-05.jpg",
+                      "caption": "Image 5 - Selecting the top face and scaling it out in place"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-06.jpg",
+                      "caption": "Image 6 - Cleaning it up so that the extra faces are gone and only five faces remain on top"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-07.jpg",
+                      "caption": "Image 7 - Selecting the faces around the edge and extruding them down"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-08.jpg",
+                      "caption": "Image 8 - Deleting the inner faces around the top"
+                    }
+                  ]
+                },
+                "[k]F[/k] to fill in the empty space up top (Image 9). Select all side edges going around the tiles (Image 10) and [k]Ctrl-B[/k] to bevel them with two segments (Image 11). Select all faces along the beveled edges (Image 12) and [k]Ctrl-I[/k] to invert the selection (Image 13).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-09.jpg",
+                      "caption": "Image 9 - Filling in the empty space up top"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-10.jpg",
+                      "caption": "Image 10 - Selecting all side edges going around the tiles"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-11.jpg",
+                      "caption": "Image 11 - Beveling them with two segments"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-12.jpg",
+                      "caption": "Image 12 - Selecting all faces along the beveled edges"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-13.jpg",
+                      "caption": "Image 13 - Inverting the selection"
+                    }
+                  ]
+                },
+                "[k]RMB,S[/k] to subdivide the selected faces with 3-4 cuts (Image 14). Delete the bottom face (Image 15). [k]O[/k] to turn on Proportional Editing, [k]Numpad0[/k] into camera view[/k] and begin randomly grabbing faces into different directions (Image 16). [k]O[/k] to turn off Proportional Editing when you're done.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-14.jpg",
+                      "caption": "Image 14 - Subdividing the selected faces with 3-4 cuts"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-15.jpg",
+                      "caption": "Image 15 - Deleting the bottom face"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-16.jpg",
+                      "caption": "Image 16 - Turning on Proportional Editing, going into camera view and randomly grabbing faces in different directions"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Grass",
+              "content": [
+                "Add a Cube to the scene and shrink it down (Image 17). [k]/[/k] into Local View and [k]S,X[/k] to make it very thin from the side (Image 18). In Edit Mode, extrude the top face up and scale it in the y-axis (Image 19). [k]G[/k] the top face to move it, giving a bend to the geometry (Image 20). Add a Loop Cut to the longest section and then move that Edge Loop, creating another bend (Image 21). Add a Loop Cut down the middle of the shape (Image 22). Move that Edge Loop in the z- and x-axes (Image 23). Select the vertices for the Edge Loop except the bottom and move them out to add a point to the blade (Image 24). Select all vertices and [k]Shift-D[/k] to duplicate them (Image 25). Move the duplicates around and scale them to create a patch of grass (Image 26). Position the clump on the ground and [k]Alt-D[/k] to make several linked duplicates, covering the ground (Image 27).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Stones",
+              "content": [
+                "If you don't have it, install Extra Mesh Objects ([url]Blender Extensions^^https://extensions.blender.org/[/url]. Enable the Add-on through [k]Edit > Preferences[/k] (Image 28). [k]Shift-A > Mesh > Extras > Rock Generator[/k] to add a rock the the scene (Image 29). [k]/[/k] to see the rock in Local View (Image 30). Apply all modifiers, then add a Decimate Modifier to bring it down to about 100 triangle (Image 31). Create several linked duplicates of the rocks and position them so they poke through the sides of the tile (Image 32). Select all meshes and [k]Shift-D,Y,3.5[/k] to duplicate them to the side [k]Z,1[/k] to move them up (Image 33). Select the bottom edge of the bottom and [k]E,Z,1[/k] to extrude it down (Image 34). Duplicate the rocks, rotate them and place them in the bottom of the new tile (Image 35). Duplicate a rock, scale it up and move it to the top of the surface, removing any grass that is in the way (Image 36).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Water Tile",
+              "content": [
+                "Select the ground, isolate it in Local View and select a top face (Image 37). [k]Ctrl-Numpad+[/k] to select more until you have selected the entire top (Image 38). [k]Shift-D,RMB[/k], [k]P,S[/k] to duplicate and separate the geometry (Image 39). Move the new mesh to the World Origin, and add an Array Modifier in the x-axis and a second in the y (Image 40). Move the water tile around until there is no empty space in the camera background (Image 41).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Dock",
+              "content": [
+                "Add a cube to the scene, move it to the end of a tile and scale it until it is like a post (Image 42). [k]Alt-D,Y[/k], [k]Alt-D,X[/k] to make 2 sets of posts evenly spaced (Image 43). [k]Shift-D,RMB[/k] to duplicate a post in place, [k]R,X,90[/k] to rotate it, and the scale it to the size of a board and move it to the front of the dock (Image 44). [k]Shift-D[/k] to add duplicates until you reach the end of the dock (Image 45). Use Loop Cuts and Bevels to add some notches and wobbles to the geometry (Image 46). Duplicate a post again, and add more structure to the dock (Image 47). Extrude the top face of one of the posts and scale it in to add a cap (if these were linked duplicates, changing affects all) (Image 48).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Materials",
+              "content": [
+                "Assign appropriate materials to all geometry (Image 49). [k]F12[/k] to render (Image 50).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "3d Isometric Game Tiles",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Thomas Potter/Low Poly Characters/synty.style.body.glb",
+                    "canvas_number": 1
+                  }
+                }
               ]
             }
           }
