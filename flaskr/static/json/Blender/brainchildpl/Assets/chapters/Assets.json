@@ -1,0 +1,239 @@
+{
+  "title": "Objects",
+  "sections": [
+    {
+      "Crystal Icon": {
+        "key_concepts": [
+          {
+            "url": {
+              "html": "[Tutorial] How to create a Crystal Icon for a Game in Blender & Photoshop",
+              "href": "https://www.youtube.com/watch?v=_V5ENMw9nus"
+            }
+          },
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+                "In a new scene, remove the default cube. [k]Shift-A[/k] and add an Icosphere. Set the Subdivisions to 2."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Cartoon Hut on the Island": {
+        "key_concepts": [
+          {
+            "url": {
+              "html": "[Tutorial] Creating Low Poly (stylised) Cartoon Hut on the Island in Blender 3d [Part 1]",
+              "href": "https://www.youtube.com/watch?v=XDcEHcisN9s"
+            }
+          },
+          {
+            "url": {
+              "html": "[Tutorial] Creating Low Poly (stylised) Cartoon Hut on the Island in Blender 3d [Part 2]",
+              "href": "https://www.youtube.com/watch?v=qwAU-bg0dlk"
+            }
+          },
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Low poly Cartoon Sword": {
+        "key_concepts": [
+          {
+            "url": {
+              "html": "[Tutorial] Modeling a Low poly Cartoon Sword in Blender [ FOR BEGINNERS ]",
+              "href": "https://www.youtube.com/watch?v=k3humpXl5PE"
+            }
+          },
+          {
+            "url": {
+              "html": "[Tutorial] Unwrapping and exporting to Unity5 a cartoon low poly sword | FOR BEGINNERS| [Part 2]",
+              "href": "https://www.youtube.com/watch?v=4a4j90RfyJg"
+            }
+          },
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "STAIRS / STAIRCASE": {
+        "key_concepts": [
+          {
+            "url": {
+              "html": "How to model STAIRS / STAIRCASE in Blender 2.83 in 12 SECONDS | Low Poly Art | Blender Basics | Tips[Part 2]",
+              "href": "https://www.youtube.com/watch?v=k9BS8ji8d8"
+            }
+          },
+          "[url]How to model STAIRS / STAIRCASE in Blender 2.83 in 12 SECONDS | Low Poly Art | Blender Basics | Tips[Part 2]^^https://www.youtube.com/watch?v=-k9BS8ji8d8[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Lowpoly Treasure Chest": {
+        "key_concepts": [
+          "[url](Part 1) Lowpoly Treasure Chest Blender 3D | low poly 3d game art | Prop Design | Prop Concept Art^^https://www.youtube.com/watch?v=b2FHeyTS0uw[/url]",
+          "[url](Part 2) Lowpoly Treasure Chest Blender 3D | low poly 3d game art | Prop Design | Prop Concept Art^^https://www.youtube.com/watch?v=ARqvL3sQjjY[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Sci-fi Crates": {
+        "key_concepts": [
+          "[url]Sci-fi Painted Crates Tutorial in Blender 2.83^^https://www.youtube.com/watch?v=z_dfMhIRNn0[/url]",
+          {
+            "section": {
+              "header": "Modeling",
+              "content": [
+                {
+                  "section": {
+                    "header": "The Base",
+                    "content": [
+                      "Start with a new scene and delete the camera and light. [k]Tab[/k] into Edit Mode and [k]Ctrl-R[/k] to add a horizontal Loop Cut. Move it towards the top of the cube (Image 1). With the Loop Cut selected, [k]Ctrl-B[/k] to bevel the edge. Then, [k]Alt-E,F[/k] to extrude the edges along their face normals. We will want to extrude them in (Image 2). Add another hortizontal Loop Cut towards the bottom. [k]3[/k] into Face Mode and select the top and bottom faces. [k]S,Shift-Z[/k] and scale those faces in (Image 3).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/brainchildpl/Assets/sci_fi_crates-01.jpg",
+                            "caption": "Image 1 - Adding a Loop Cut"
+                          },
+                          {
+                            "src": "Blender/brainchildpl/Assets/sci_fi_crates-02.jpg",
+                            "caption": "Image 2 - Extruding in the bevel"
+                          },
+                          {
+                            "src": "Blender/brainchildpl/Assets/sci_fi_crates-03.jpg",
+                            "caption": "Image 3 - Scaling in the top and bottom"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/Low Poly Characters/block_man-06.jpg",
+                            "caption": "Image 6 - Adding thickness"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Adding a Lock",
+                    "content": [
+                      "Select the front face on the beveled separation between top and bottom. [k]Shift-S,T[/k] to move the 3D Cursor there. Still in Edit Mode, [k]Shift-A[/k] and add a cube. Doing this in Edit Mode will make it part of the same mesh. Scale it down until it is the right shape and size for a locking mechanism (Image 4). Add a Loop Cut across the cube so that we can adjust the front face without changing the back too much (Image 5). Select the front face and [k]S[/k] to scale it in, [k]I[/k] to add an Inset, and then [k]E[/k] to extrude that inwards (Image 6). If you wanted to scale up or down the lock, selecting one of the lock faces and [k]L[/k] would select only faces attached to the lock.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/brainchildpl/Assets/sci_fi_crates-04.jpg",
+                            "caption": "Image 4 - Adding a Cube for the lock"
+                          },
+                          {
+                            "src": "Blender/brainchildpl/Assets/sci_fi_crates-05.jpg",
+                            "caption": "Image 5 - Adding a Loop Cut"
+                          },
+                          {
+                            "src": "Blender/brainchildpl/Assets/sci_fi_crates-06.jpg",
+                            "caption": "Image 6 - Extruding in the lock"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Unwrapping",
+                    "content": [
+                      "Still in Edit Mode, check the faces to see if there is any z-fighting, and also make sure all faces are oriented correctly. [k]A[/k] to select all topology, and then [k]U,S[/k] to bring up the Smart UV Project dialog. Set the Island Margin to 0.02 and click OK. Go into UV Editing Workspace to see how Blender did (Image 7)."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Painting",
+              "content": [
+                {
+                  "section": {
+                    "header": "Creating a New Texture",
+                    "content": [
+                      "Go to the Texture Paint Workspace. In the UV side of the screen, click New to create a new Image Texture (Image 8). Give the new image a name, and set its size to 2048x2048 to make it a 2K image (Image 9). Now we want to apply that image. In the Texture Paint side of the screen, click the Texture Slots dropdown and click the button to browse for existing images (Image 10). Apply the image that was just created.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/brainchildpl/Assets/sci_fi_crates-08.jpg",
+                            "caption": "Image 8 - Creating a new Image Texture"
+                          },
+                          {
+                            "src": "Blender/brainchildpl/Assets/sci_fi_crates-09.jpg",
+                            "caption": "Image 9 - Setting the texture size"
+                          },
+                          {
+                            "src": "Blender/brainchildpl/Assets/sci_fi_crates-10.jpg",
+                            "caption": "Image 10 - Assigning the texture to the mesh"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Setting the Base Colors",
+                    "content": [
+                      "Let's paint the bottom of the mesh blue. Choose a deep blue color for the mesh; you can do this from the color swatch at the top or from the Brush Setting menu on the right. Click the Fill Button from the menu on the right, or press [k]Shift-Space,5[/k]. Click the mesh to fill it with the blue (Image 11). You'll see this reflected not only on the mesh but in the UV Texture Image. Now let's make the top red. [k]Tab[/k] into Edit Mode, [k]3[/k] for Face Selection, and select the top face. [k]Ctrl-Numpad+[/k] to select the adjoining faces (do it twice). [k]Tab[/k] back into Texture Paint mode, and click the button for Paint Mask (Image 12). This will make only the selected faces active for painting. Switch to a deep red color and fill the top faces (Image 13).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/brainchildpl/Assets/sci_fi_crates-11.jpg",
+                            "caption": "Image 11 - Filling the texture with blue"
+                          },
+                          {
+                            "src": "Blender/brainchildpl/Assets/sci_fi_crates-12.jpg",
+                            "caption": "Image 12 - The Paint Mask button"
+                          },
+                          {
+                            "src": "Blender/brainchildpl/Assets/sci_fi_crates-13.jpg",
+                            "caption": "Image 13 - Filling the top with a base red color"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
