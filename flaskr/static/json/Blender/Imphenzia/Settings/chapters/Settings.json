@@ -1,0 +1,92 @@
+{
+  "title": "Imphenzia",
+  "sections": [
+    {
+      "Default Scene Setup": {
+        "key_concepts": [
+          "[url]My Blender 2.82 Setup (for the 10 Minute Modeling Challenge)^^https://www.youtube.com/watch?v=BlxiCd0Upg4[/url]",
+          {
+            "section": {
+              "header": "A New Scene",
+              "content": [
+                "Open a new scene in Blender [k]Ctrl-N,G[/k]. [k]Delete[/k] the Camera and Light.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Imphenzia/Settings/Default Scene/default_scene-01.jpg",
+                      "caption": "Image 1 - Delete the default Camera and Light"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Default Material",
+              "content": [
+                "Go to the Shading workspace and click the Cube. This will bring up the default material (Image 2). We want to use assign Imphenzia's palette for the default material (Image 3). This palette is 8x8 and takes up very little memory. With Blender and File Explorer open, drag the palette file into Shader Editor. Connect the palette's Image Texture Node's color output to the Principled BSDF's Base Color input (Image 4). It will be blurry on the cube, since it's been shrunk down to a small size; change the Image Texture Node's Interpolation to Closest (Image 5).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Imphenzia/Settings/Default Scene/default_scene-02.jpg",
+                      "caption": "Image 2 - The Cube's default material"
+                    },
+                    {
+                      "src": "Blender/Imphenzia/Settings/Default Scene/ImphenziaPalette01.png",
+                      "caption": "Image 3 - Imphenzia's palette."
+                    },
+                    {
+                      "src": "Blender/Imphenzia/Settings/Default Scene/default_scene-03.jpg",
+                      "caption": "Image 4 - Connecting the palette to the material shader"
+                    },
+                    {
+                      "src": "Blender/Imphenzia/Settings/Default Scene/default_scene-04.jpg",
+                      "caption": "Image 5 - Changing the Image Texture Node's Interpolation to Closest"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Viewport Shading",
+              "content": [
+                "Open the Viewport Shading options and change the Color source to Texture (Image 6). Go down and enable Cavity. Set the Type to Both and bring up the Ridge and Valley values to maximum (Image 7).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Imphenzia/Settings/Default Scene/default_scene-05.jpg",
+                      "caption": "Image 6 - Change the Color source to Texture"
+                    },
+                    {
+                      "src": "Blender/Imphenzia/Settings/Default Scene/default_scene-06.jpg",
+                      "caption": "Image 7 - Enable Cavity and modify the default setting"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Tool Settings",
+              "content": [
+                "[k]Tab[/k] into Edit Mode and open the Tool Settings Options; enable Auto Merge (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Imphenzia/Settings/Default Scene/default_scene-07.jpg",
+                      "caption": "Image 8 - Enable Auto Merge"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
