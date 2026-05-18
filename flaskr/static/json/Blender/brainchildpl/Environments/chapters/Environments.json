@@ -3,7 +3,7 @@
   "sections": [
     {
       "3d Isometric Game Tiles": {
-        "tags": ["camera view", "isometric", "terrain", "grass", "rock", "stone"],
+        "tags": ["camera view", "isometric", "terrain", "grass", "rock", "stone", "dock"],
         "key_concepts": [
           "[url]Tutorial 3d Isometric Game Tiles - Low Poly style game models for a game | Blender^^https://www.youtube.com/watch?v=ZuzpWPEW5g4[/url]",
           {
@@ -108,9 +108,63 @@
             "section": {
               "header": "Grass",
               "content": [
-                "Add a Cube to the scene and shrink it down (Image 17). [k]/[/k] into Local View and [k]S,X[/k] to make it very thin from the side (Image 18). In Edit Mode, extrude the top face up and scale it in the y-axis (Image 19). [k]G[/k] the top face to move it, giving a bend to the geometry (Image 20). Add a Loop Cut to the longest section and then move that Edge Loop, creating another bend (Image 21). Add a Loop Cut down the middle of the shape (Image 22). Move that Edge Loop in the z- and x-axes (Image 23). Select the vertices for the Edge Loop except the bottom and move them out to add a point to the blade (Image 24). Select all vertices and [k]Shift-D[/k] to duplicate them (Image 25). Move the duplicates around and scale them to create a patch of grass (Image 26). Position the clump on the ground and [k]Alt-D[/k] to make several linked duplicates, covering the ground (Image 27).",
+                "Add a Cube to the scene and shrink it down (Image 17). [k]/[/k] into Local View and [k]S,X[/k] to make it very thin from the side (Image 18). In Edit Mode, extrude the top face up and scale it in the y-axis (Image 19). [k]G[/k] the top face to move it, giving a bend to the geometry (Image 20).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-17.jpg",
+                      "caption": "Image 17 - Adding a Cube to the scene and shrinking it down"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-18.jpg",
+                      "caption": "Image 18 - Going into Local View and scaling it to be very thin from the side"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-19.jpg",
+                      "caption": "Image 19 - Going into Edit Mode, extruding the top face up and scaling it in the y-axis"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-20.jpg",
+                      "caption": "Image 20 - Moving the top face to give a bend to the geometry"
+                    }
+                  ]
+                },
+                "Add a Loop Cut to the longest section and then move that Edge Loop, creating another bend (Image 21). Add a Loop Cut down the middle of the shape (Image 22). Move that Edge Loop in the z- and x-axes (Image 23). Select the vertices for the Edge Loop except the bottom and move them out to add a point to the blade (Image 24).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-21.jpg",
+                      "caption": "Image 21 - Adding a Loop Cut to the longest section and moving that Edge Loop to create another bend"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-22.jpg",
+                      "caption": "Image 22 - Adding a Loop Cut down the middle of the shape"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-23.jpg",
+                      "caption": "Image 23 - Moving that Edge Loop in the z- and x-axes"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-24.jpg",
+                      "caption": "Image 24 - Selecting the vertices for the Edge Loop except the bottom and moving them out to add a point to the blade"
+                    }
+                  ]
+                },
+                "Select all vertices and [k]Shift-D[/k] to duplicate them (Image 25). Move the duplicates around and scale them to create a patch of grass (Image 26). Position the clump on the ground and [k]Alt-D[/k] to make several linked duplicates, covering the ground (Image 27).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-25.jpg",
+                      "caption": "Image 25 - Selecting all vertices and duplicating them"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-26.jpg",
+                      "caption": "Image 26 - Moving the duplicates around and scaling them to create a patch of grass"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-27.jpg",
+                      "caption": "Image 27 - Positioning the clump on the ground and making several linked duplicates to cover the ground"
+                    }
                   ]
                 }
               ]
@@ -120,9 +174,62 @@
             "section": {
               "header": "Stones",
               "content": [
-                "If you don't have it, install Extra Mesh Objects ([url]Blender Extensions^^https://extensions.blender.org/[/url]. Enable the Add-on through [k]Edit > Preferences[/k] (Image 28). [k]Shift-A > Mesh > Extras > Rock Generator[/k] to add a rock the the scene (Image 29). [k]/[/k] to see the rock in Local View (Image 30). Apply all modifiers, then add a Decimate Modifier to bring it down to about 100 triangle (Image 31). Create several linked duplicates of the rocks and position them so they poke through the sides of the tile (Image 32). Select all meshes and [k]Shift-D,Y,3.5[/k] to duplicate them to the side [k]Z,1[/k] to move them up (Image 33). Select the bottom edge of the bottom and [k]E,Z,1[/k] to extrude it down (Image 34). Duplicate the rocks, rotate them and place them in the bottom of the new tile (Image 35). Duplicate a rock, scale it up and move it to the top of the surface, removing any grass that is in the way (Image 36).",
+                {
+                  "compound_text": [
+                    "If you don't have it, install Extra Mesh Objects (",
+                    {
+                      "url": {
+                        "href": "https://extensions.blender.org/",
+                        "html": "Blender Extensions"
+                      }
+                    },
+                    ")."
+                  ]
+                },
+                "Enable the Add-on through [k]Edit > Preferences[/k] (Image 28). [k]Shift-A > Mesh > Extras > Rock Generator[/k] to add a rock the the scene (Image 29). [k]/[/k] to see the rock in Local View (Image 30). Apply all modifiers, then add a Decimate Modifier to bring it down to about 100 triangle (Image 31). Create several linked duplicates of the rocks and position them so they poke through the sides of the tile (Image 32).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-28.jpg",
+                      "caption": "Image 28 - Installing Extra Mesh Objects and enabling the Add-on through Edit > Preferences"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-29.jpg",
+                      "caption": "Image 29 - Adding a rock to the scene using Shift-A > Mesh > Extras > Rock Generator"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-30.jpg",
+                      "caption": "Image 30 - Going into Local View to see the rock"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-31.jpg",
+                      "caption": "Image 31 - Applying all modifiers and adding a Decimate Modifier to bring it down to about 100 triangles"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-32.jpg",
+                      "caption": "Image 32 - Creating several linked duplicates of the rocks and positioning them so they poke through the sides of the tile"
+                    }
+                  ]
+                },
+                "Select all meshes and [k]Shift-D,Y,3.5[/k] to duplicate them to the side [k]Z,1[/k] to move them up (Image 33). Select the bottom edge of the bottom and [k]E,Z,1[/k] to extrude it down (Image 34). Duplicate the rocks, rotate them and place them in the bottom of the new tile (Image 35). Duplicate a rock, scale it up and move it to the top of the surface, removing any grass that is in the way (Image 36).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-33.jpg",
+                      "caption": "Image 33 - Selecting all meshes and duplicating them to the side and moving them up"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-34.jpg",
+                      "caption": "Image 34 - Selecting the bottom edge of the bottom and extruding it down"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-35.jpg",
+                      "caption": "Image 35 - Duplicating the rocks, rotating them and placing them in the bottom of the new tile"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-36.jpg",
+                      "caption": "Image 36 - Duplicating a rock, scaling it up and moving it to the top of the surface, removing any grass that is in the way"
+                    }
                   ]
                 }
               ]
@@ -135,6 +242,26 @@
                 "Select the ground, isolate it in Local View and select a top face (Image 37). [k]Ctrl-Numpad+[/k] to select more until you have selected the entire top (Image 38). [k]Shift-D,RMB[/k], [k]P,S[/k] to duplicate and separate the geometry (Image 39). Move the new mesh to the World Origin, and add an Array Modifier in the x-axis and a second in the y (Image 40). Move the water tile around until there is no empty space in the camera background (Image 41).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-37.jpg",
+                      "caption": "Image 37 - Selecting the ground, isolating it in Local View and selecting a top face"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-38.jpg",
+                      "caption": "Image 38 - Expanding the selection until the entire top is selected"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-39.jpg",
+                      "caption": "Image 39 - Duplicating and separating the geometry"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-40.jpg",
+                      "caption": "Image 40 - Moving the new mesh to the World Origin and adding an Array Modifier in the x-axis and a second in the y-axis"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-41.jpg",
+                      "caption": "Image 41 - Moving the water tile around until there is no empty space in the camera background"
+                    }
                   ]
                 }
               ]
@@ -144,9 +271,42 @@
             "section": {
               "header": "Dock",
               "content": [
-                "Add a cube to the scene, move it to the end of a tile and scale it until it is like a post (Image 42). [k]Alt-D,Y[/k], [k]Alt-D,X[/k] to make 2 sets of posts evenly spaced (Image 43). [k]Shift-D,RMB[/k] to duplicate a post in place, [k]R,X,90[/k] to rotate it, and the scale it to the size of a board and move it to the front of the dock (Image 44). [k]Shift-D[/k] to add duplicates until you reach the end of the dock (Image 45). Use Loop Cuts and Bevels to add some notches and wobbles to the geometry (Image 46). Duplicate a post again, and add more structure to the dock (Image 47). Extrude the top face of one of the posts and scale it in to add a cap (if these were linked duplicates, changing affects all) (Image 48).",
+                "Add a cube to the scene, move it to the end of a tile and scale it until it is like a post (Image 42). [k]Alt-D,Y[/k], [k]Alt-D,X[/k] to make 2 sets of posts evenly spaced (Image 43). [k]Shift-D,RMB[/k] to duplicate a post in place, [k]R,X,90[/k] to rotate it, and the scale it to the size of a board and move it to the front of the dock (Image 44).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-42.jpg",
+                      "caption": "Image 42 - Adding a cube to the scene, moving it to the end of a tile and scaling it until it is like a post"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-43.jpg",
+                      "caption": "Image 43 - Making 2 sets of posts evenly spaced using linked duplicates in the y- and x-axes"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-44.jpg",
+                      "caption": "Image 44 - Duplicating a post in place, rotating it 90 degrees in the x-axis, scaling it to the size of a board and moving it to the front of the dock"
+                    }
+                  ]
+                },
+                "[k]Shift-D[/k] to add duplicates until you reach the end of the dock (Image 45). Use Loop Cuts and Bevels to add some notches and wobbles to the geometry (Image 46). Duplicate a post again, and add more structure to the dock (Image 47). Extrude the top face of one of the posts and scale it in to add a cap (if these were linked duplicates, changing affects all) (Image 48).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-45.jpg",
+                      "caption": "Image 45 - Adding duplicates until reaching the end of the dock"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-46.jpg",
+                      "caption": "Image 46 - Using Loop Cuts and Bevels to add some notches and wobbles to the geometry"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-47.jpg",
+                      "caption": "Image 47 - Duplicating a post again and adding more structure to the dock"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-48.jpg",
+                      "caption": "Image 48 - Extruding the top face of one of the posts and scaling it in to add a cap"
+                    }
                   ]
                 }
               ]
@@ -159,6 +319,14 @@
                 "Assign appropriate materials to all geometry (Image 49). [k]F12[/k] to render (Image 50).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-49.jpg",
+                      "caption": "Image 49 - Assigning appropriate materials to all geometry"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-50.jpg",
+                      "caption": "Image 50 - Rendering the scene"
+                    }
                   ]
                 }
               ]
@@ -171,7 +339,7 @@
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Blender/Thomas Potter/Low Poly Characters/synty.style.body.glb",
+                    "path": "Blender/brainchildpl/Environments/3D_iso_game_tiles.glb",
                     "canvas_number": 1
                   }
                 }
