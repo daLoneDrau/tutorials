@@ -1,0 +1,74 @@
+{
+  "title": "Low Poly Female Mesh from Scratch",
+  "sections": [
+    {
+      "Low Poly Female Mesh from Scratch": {
+        "tags": ["base mesh", "female", "t-pose"],
+        "key_concepts": [
+          "[url]Low Poly Female Mesh from Scratch^^https://www.youtube.com/watch?v=xMkZ0o2M-dg[/url]",
+          {
+            "section": {
+              "header": "The Head",
+              "content": [
+                "Add a cube to the scene, [k]S[/k] to scale it down, and [k]G,Z[/k] to position it over the head (Image 1). [k]Tab[/k] into Edit Mode, and [k]Ctrl-R[/k] to add a Loop Cut down the middle (Image 2). [k]Alt-Z[/k] into X-Ray Mode and delete the vertices on the left half of the cube (Image 3). Add a Mirror Modifier in the x-axis with Clipping enabled (Image 4). Scale the cube in the x- and z-axes to match the reference image (Image 5). Add three Loop Cuts and then move the outer vertices to match the contours of the head (Image 6). [k]Numpad3[/k] into Side View and add three more Loop Cuts (Image 7). Grab the two vertices on the top rear of the head and move them down (Image 8). Move around to the front of the head and move the next two pairs into position (Images 9 and 10). Move the three rear vertices by the ear out to the back of the skull and above the ear (Image 11). Move the vertex down to the bridge of the nose (Image 12). Move the next three to the middle of the ear (Image 13). Move the vertex to the cheekbone (Image 14) and the next to the tip of the nose (Image 15). The next three should follow the slope of the jawline to the back of the head (Image 16). The next two should line up with the front and back of the mouth (Image 17). The three on the bottom should shape the bottom of the jaw (Image 18). The last two should finish the front of the face (Image 19). [k]Numpad7[/k] into Top View and select the Edge Loop at the rear and move it to round of the back of the head (Image 20). Do the same for the Edge Loop at the front of the face (Image 21). [k]Numpad1[/k] and review the shape from the front (Image 22). To fix this, select the bottom Edge Loop (Image 23) and move it down and out (Image 24). Review the shape in Solid Viewport Shading Mode (Image 25). Let's move the vertex for the cheekbone back away from the nose (Image 26). [k]Numpad1[/k] into Front View and change to Wireframe Viewport Shading with X-Ray Mode turned off so that we only see the vertices for the front of the face (Image 27).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "compound_text": [
+                    "[k]K[/k] to use the ",
+                    {
+                      "url": {
+                        "href": "tutorials/Blender/Grant Abbitt/Complete Blender Creator/Modular Dungeon/Pillar Details - Knife & Bisect",
+                        "html": "Knife Tool"
+                      }
+                    },
+                    " to cut a shape for the nose from the bridge down to the tip (Image 28)."
+                  ]
+                },
+                {
+                  "image": [
+                  ]
+                },
+                "Move the vertex at the side of the nose over to flatten the face (Image 29).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "The Ears",
+                    "content": [
+                      "Use the Knife Tool to cut some edges in the faces near the ears (Image 30). Select the faces for the ear and extrude them out the side (Image 31). Select the three vertices in the front of the ear and [k]G,G[/k] to Edge Slide them back (Image 32). In the rear, Edge Slide the top and bottom vertices for the ear to make them thinner (Image 33). Shape the ear from the side (Image 34) and the front (Image 35). Move in the vertex behind the ear so the middle isn't too fat (Image 36).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Neck",
+              "content": [
+                "Add a Cylinder with eight vertices to the scene and set [k]Cap Fill Type > Nothing[/k] (Image 37). Delete the vertices on the left and add a Mirror Modifier in the x-axis with Clipping enabled (Image 38). Scale it down and move it in place for the neck (Image 39). From the side, move the top vertices into the head (Image 40). From the Front, extrude the bottom Edge Loop down and out for the traps (Image 41). In Side View, [k]R[/k] the top edge loop and move it so that the side of the cylinder follow the slope of the neck (Image 42). Select the faces on the bottom loop and rotate them (Image 43). From the front, move the bottom vertex down so the Edge Loop follows the angle of the collar bone (Image 44)."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Torso",
+              "content": [
+                "Select the two vertices at the collar bone and move them down to start the chest (Image 45). In Side View, adjust the vertices so the shape of the chest and neck is better (Image 46). Select the two vertices in the back and extrude them down (Image 47). Shape the vertices on the side to start a hole for the arms (Image 48). Select the two bottom edges and extrude them down (Image 49). Fill in the gap between the two lower faces (Image 50). Add a Loop Cut to the new face (Image 51). Reshape the vertices around the arm hole (Image 52). Move the two vertices on the left to match the chest contours (Image 53)."
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
