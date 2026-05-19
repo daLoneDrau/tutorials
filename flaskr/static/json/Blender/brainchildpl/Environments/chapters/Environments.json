@@ -351,12 +351,228 @@
     },
     {
       "3d Cartoon Stylised Tree": {
+        "tags": ["tree", "grass", "terrain", "stone", "rock"],
         "key_concepts": [
           "[url]Tutorial How to create a 3d Cartoon Stylised Tree in Blender 3d | Cartoon Smooth Game Model^^https://www.youtube.com/watch?v=bAQ7nUHghPo[/url]",
           {
             "section": {
-              "header": "SECTION",
+              "header": "Leaves",
               "content": [
+                "Add a cube to the scene, [k]Tab[/k] into Edit Mode, and [k]Ctrl-R[/k] to add a Loop Cut (Image 1). Select the top-left edge and [k]E[/k] to extrude it out a little bit past one square's size (Image 2). To help, you can enable [k]Snap > Snap Target > Grid[/k] to use the grid as your target (Image 3). Add a Loop Cut on the right of the new section (Image 4).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-01.jpg",
+                      "caption": "Image 1 - Adding a cube to the scene, going into Edit Mode, and adding a Loop Cut"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-02.jpg",
+                      "caption": "Image 2 - Selecting the top-left edge and extruding it out a little bit past one square's size"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-03.jpg",
+                      "caption": "Image 3 - Enabling Snap > Snap Target > Grid to use the grid as a target"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-04.jpg",
+                      "caption": "Image 4 - Adding a Loop Cut on the right of the new section"
+                    }
+                  ]
+                },
+                "Extrude a section lower than the starting cube (Image 5). Extrude again down, then right, and then up, snaking around the starting cube (Image 6). Select all outer edges (Image 7). [k]Ctrl-B[/k] to bevel the edges with three segments (Image 8). Go to the vertices above the inner bend and [k]M,A[/k] to merge them at the center to reduce the number of triangles (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-05.jpg",
+                      "caption": "Image 5 - Extruding a section lower than the starting cube"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-06.jpg",
+                      "caption": "Image 6 - Extruding again down, then right, and then up, snaking around the starting cube"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-07.jpg",
+                      "caption": "Image 7 - Selecting all outer edges"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-08.jpg",
+                      "caption": "Image 8 - Beveling the edges with three segments"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-09.jpg",
+                      "caption": "Image 9 - Going to the vertices above the inner bend and merging them at the center to reduce the number of triangles"
+                    }
+                  ]
+                },
+                "In Object Mode, [k]Numpad1[/k] into Front View and rotate the mesh (Image 10). [k]Numpad7[/k] into Top View, [k]Alt-D[/k] to create a linked duplicate, and move it over to the side and rotate (Image 11). Create another linked duplicate, rotating and moving to the side (Image 12). Add a Cube to the scene, select the outer edges and bevel them with three segments (Image 13). Create 10-15 linked duplicates and [k]G[/k], [k]R[/k], [k]S[/k] them around the scene (Image 14).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-10.jpg",
+                      "caption": "Image 10 - Going to Object Mode, going to Front View and rotating the mesh"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-11.jpg",
+                      "caption": "Image 11 - Going to Top View, creating a linked duplicate and moving it over to the side and rotating"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-12.jpg",
+                      "caption": "Image 12 - Creating another linked duplicate, rotating and moving it to the side"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-13.jpg",
+                      "caption": "Image 13 - Adding a Cube to the scene, selecting the outer edges and beveling them with three segments"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-14.jpg",
+                      "caption": "Image 14 - Creating 10-15 linked duplicates and moving, rotating, and scaling them around the scene"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Trunk",
+              "content": [
+                "Add a Circle to the scene, and [k]E,Z[/k] to extrude it up (Image 15). Add two Loop Cuts and then scale in the edges to taper the trunk (Image 16). Add a two Loop Cuts in the middle and [k]G,G[/k] to Edge Slide them closer (Image 17).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-15.jpg",
+                      "caption": "Image 15 - Adding a Circle to the scene and extruding it up"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-16.jpg",
+                      "caption": "Image 16 - Adding two Loop Cuts and scaling in the edges to taper the trunk"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-17.jpg",
+                      "caption": "Image 17 - Adding two Loop Cuts in the middle and Edge Sliding them closer together"
+                    }
+                  ]
+                },
+                "Select one of the faces and extrude it out several times, scaling and changing directions to make it look like a branch (Image 18). Add two more Loop Cuts to the branch and extrude one of the faces on the side, forking the branch (Image 19). Select the branch geometry, [k]Shift-D[/k] and move it around to the other side to make a second branch (Image 20). Select random edges around the bottom and [k]G,Shift-Z[/k] to add some variation to the trunk (Image 21).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-18.jpg",
+                      "caption": "Image 18 - Selecting one of the faces and extruding it out several times, scaling and changing directions to make it look like a branch"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-19.jpg",
+                      "caption": "Image 19 - Adding two more Loop Cuts to the branch and extruding one of the faces on the side to fork the branch"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-20.jpg",
+                      "caption": "Image 20 - Selecting the branch geometry, duplicating and moving it around to the other side to make a second branch"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-21.jpg",
+                      "caption": "Image 21 - Selecting random edges around the bottom and moving them to add some variation to the trunk"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Ground",
+              "content": [
+                "Add a Cube to the scene, go into Local View and scale it down in the z-axis (Image 22). [k]E,RMB[/k], [k]S[/k], [k]E[/k] the top face to extrude it, scale it, and extrude again to make a top layer (Image 23). Select all edges and bevel them (Image 24).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-22.jpg",
+                      "caption": "Image 22 - Adding a Cube to the scene, going into Local View and scaling it down in the z-axis"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-23.jpg",
+                      "caption": "Image 23 - Extruding the top face, scaling it, and extruding again to make a top layer"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-24.jpg",
+                      "caption": "Image 24 - Selecting all edges and beveling them"
+                    }
+                  ]
+                },
+                "Exit Local View and move the ground in place, scaling it up to cover the tree and its foliage (Image 25). Add another cube to the scene and bevel the edges (Image 26). Create several linked duplicates and embed them in the side of the ground (Image 27).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-25.jpg",
+                      "caption": "Image 25 - Exiting Local View and moving the ground into place, scaling it up to cover the tree and its foliage"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-26.jpg",
+                      "caption": "Image 26 - Adding another cube to the scene and beveling the edges"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-27.jpg",
+                      "caption": "Image 27 - Creating several linked duplicates and embedding them in the side of the ground"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Grass",
+              "content": [
+                "Add a Cube to the scene, go into Local View and scale it down in the y-axis and scale the top in the x-axis (Image 28). Scale it down, [k]Alt-D[/k] to duplicate and create a clump of grass (Image 29). Create several clumps around the scene (Image 30).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-28.jpg",
+                      "caption": "Image 28 - Adding a Cube to the scene, going into Local View and scaling it down in the y-axis and scaling the top in the x-axis"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-29.jpg",
+                      "caption": "Image 29 - Scaling it down and creating a clump of grass using linked duplicates"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-30.jpg",
+                      "caption": "Image 30 - Creating several clumps around the scene"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Materials",
+              "content": [
+                "Assign appropriate materials to all geometry (Image 31). [k]F12[/k] to render (Image 32).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-31.jpg",
+                      "caption": "Image 31 - Assigning appropriate materials to all geometry"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/Cartoon Tree/cartoon_tree-32.jpg",
+                      "caption": "Image 32 - Rendering the scene"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Cartoon Tree",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/brainchildpl/Environments/cartoon_tree.glb",
+                    "canvas_number": 1
+                  }
+                }
               ]
             }
           }
