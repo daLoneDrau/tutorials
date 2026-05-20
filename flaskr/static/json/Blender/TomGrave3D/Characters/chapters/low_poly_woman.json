@@ -10,39 +10,203 @@
             "section": {
               "header": "The Head",
               "content": [
-                "Add a cube to the scene, [k]S[/k] to scale it down, and [k]G,Z[/k] to position it over the head (Image 1). [k]Tab[/k] into Edit Mode, and [k]Ctrl-R[/k] to add a Loop Cut down the middle (Image 2). [k]Alt-Z[/k] into X-Ray Mode and delete the vertices on the left half of the cube (Image 3). Add a Mirror Modifier in the x-axis with Clipping enabled (Image 4). Scale the cube in the x- and z-axes to match the reference image (Image 5). Add three Loop Cuts and then move the outer vertices to match the contours of the head (Image 6). [k]Numpad3[/k] into Side View and add three more Loop Cuts (Image 7). Grab the two vertices on the top rear of the head and move them down (Image 8). Move around to the front of the head and move the next two pairs into position (Images 9 and 10). Move the three rear vertices by the ear out to the back of the skull and above the ear (Image 11). Move the vertex down to the bridge of the nose (Image 12). Move the next three to the middle of the ear (Image 13). Move the vertex to the cheekbone (Image 14) and the next to the tip of the nose (Image 15). The next three should follow the slope of the jawline to the back of the head (Image 16). The next two should line up with the front and back of the mouth (Image 17). The three on the bottom should shape the bottom of the jaw (Image 18). The last two should finish the front of the face (Image 19). [k]Numpad7[/k] into Top View and select the Edge Loop at the rear and move it to round of the back of the head (Image 20). Do the same for the Edge Loop at the front of the face (Image 21). [k]Numpad1[/k] and review the shape from the front (Image 22). To fix this, select the bottom Edge Loop (Image 23) and move it down and out (Image 24). Review the shape in Solid Viewport Shading Mode (Image 25). Let's move the vertex for the cheekbone back away from the nose (Image 26). [k]Numpad1[/k] into Front View and change to Wireframe Viewport Shading with X-Ray Mode turned off so that we only see the vertices for the front of the face (Image 27).",
+                "Add a cube to the scene, [k]S[/k] to scale it down, and [k]G,Z[/k] to position it over the head (Image 1). [k]Tab[/k] into Edit Mode, and [k]Ctrl-R[/k] to add a Loop Cut down the middle (Image 2). [k]Alt-Z[/k] into X-Ray Mode and delete the vertices on the left half of the cube (Image 3). Add a Mirror Modifier in the x-axis with Clipping enabled (Image 4).",
                 {
                   "image": [
-                  ]
-                },
-                {
-                  "compound_text": [
-                    "[k]K[/k] to use the ",
                     {
-                      "url": {
-                        "href": "tutorials/Blender/Grant Abbitt/Complete Blender Creator/Modular Dungeon/Pillar Details - Knife & Bisect",
-                        "html": "Knife Tool"
-                      }
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-01.jpg",
+                      "caption": "Image 1 - Adding a cube to the scene, scaling it down and positioning it over the head"
                     },
-                    " to cut a shape for the nose from the bridge down to the tip (Image 28)."
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-02.jpg",
+                      "caption": "Image 2 - Going into Edit Mode and adding a Loop Cut down the middle"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-03.jpg",
+                      "caption": "Image 3 - Going into X-Ray Mode and deleting the vertices on the left half of the cube"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-04.jpg",
+                      "caption": "Image 4 - Adding a Mirror Modifier in the x-axis with Clipping enabled"
+                    }
                   ]
                 },
+                "Scale the cube in the x- and z-axes to match the reference image (Image 5). Add three Loop Cuts and then move the outer vertices to match the contours of the head (Image 6). [k]Numpad3[/k] into Side View and add three more Loop Cuts (Image 7). Grab the two vertices on the top rear of the head and move them down (Image 8).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-05.jpg",
+                      "caption": "Image 5 - Scaling the cube in the x- and z-axes to match the reference image"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-06.jpg",
+                      "caption": "Image 6 - Adding three Loop Cuts and moving the outer vertices to match the contours of the head"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-07.jpg",
+                      "caption": "Image 7 - Going to Side View and adding three more Loop Cuts"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-08.jpg",
+                      "caption": "Image 8 - Grabbing the two vertices on the top rear of the head and moving them down"
+                    }
                   ]
                 },
-                "Move the vertex at the side of the nose over to flatten the face (Image 29).",
+                "Move around to the front of the head and move the next two pairs into position (Images 9 and 10). Move the three rear vertices by the ear out to the back of the skull and above the ear (Image 11). Move the vertex down to the bridge of the nose (Image 12).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-09.jpg",
+                      "caption": "Image 9 - Moving around to the front of the head and moving the next two pairs into position"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-10.jpg",
+                      "caption": "Image 10 - Continuing to move the next two pairs into position"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-11.jpg",
+                      "caption": "Image 11 - Moving the three rear vertices by the ear out to the back of the skull and above the ear"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-12.jpg",
+                      "caption": "Image 12 - Moving the vertex down to the bridge of the nose"
+                    }
+                  ]
+                },
+                "Move the next three to the middle of the ear (Image 13). Move the vertex to the cheekbone (Image 14) and the next to the tip of the nose (Image 15). The next three should follow the slope of the jawline to the back of the head (Image 16).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-13.jpg",
+                      "caption": "Image 13 - Moving the next three to the middle of the ear"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-14.jpg",
+                      "caption": "Image 14 - Moving the vertex to the cheekbone"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-15.jpg",
+                      "caption": "Image 15 - Moving the next vertex to the tip of the nose"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-16.jpg",
+                      "caption": "Image 16 - Moving the next three to follow the slope of the jawline to the back of the head"
+                    }
+                  ]
+                },
+                "The next two should line up with the front and back of the mouth (Image 17). The three on the bottom should shape the bottom of the jaw (Image 18). The last two should finish the front of the face (Image 19). [k]Numpad7[/k] into Top View and select the Edge Loop at the rear and move it to round of the back of the head (Image 20).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-17.jpg",
+                      "caption": "Image 17 - Moving the next two to line up with the front and back of the mouth"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-18.jpg",
+                      "caption": "Image 18 - Moving the three on the bottom to shape the bottom of the jaw"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-19.jpg",
+                      "caption": "Image 19 - Moving the last two to finish the front of the face"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-20.jpg",
+                      "caption": "Image 20 - Going to Top View, selecting the Edge Loop at the rear and moving it to round off the back of the head"
+                    }
+                  ]
+                },
+                "Do the same for the Edge Loop at the front of the face (Image 21). [k]Numpad1[/k] and review the shape from the front (Image 22). To fix this, select the bottom Edge Loop (Image 23) and move it down and out (Image 24).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-21.jpg",
+                      "caption": "Image 21 - Doing the same for the Edge Loop at the front of the face"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-22.jpg",
+                      "caption": "Image 22 - Going to Front View and reviewing the shape"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-23.jpg",
+                      "caption": "Image 23 - Selecting the bottom Edge Loop to fix the shape"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-24.jpg",
+                      "caption": "Image 24 - Moving it down and out"
+                    }
+                  ]
+                },
+                "Review the shape in Solid Viewport Shading Mode (Image 25). Let's move the vertex for the cheekbone back away from the nose (Image 26). [k]Numpad1[/k] into Front View and change to Wireframe Viewport Shading with X-Ray Mode turned off so that we only see the vertices for the front of the face (Image 27).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-25.jpg",
+                      "caption": "Image 25 - Reviewing the shape in Solid Viewport Shading Mode"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-26.jpg",
+                      "caption": "Image 26 - Moving the vertex for the cheekbone back away from the nose"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-27.jpg",
+                      "caption": "Image 27 - Going to Front View and changing to Wireframe Viewport Shading with X-Ray Mode turned off to see only the vertices for the front of the face"
+                    }
+                  ]
+                },
+                "[url]Knife Tool^^/tutorials/Blender/Grant Abbitt/Complete Blender Creator/Modular Dungeon/Pillar Details - Knife & Bisect[/url]",
+                "[k]K[/k] to use the Knife Tool to cut a shape for the nose from the bridge down to the tip (Image 28). Move the vertex at the side of the nose over to flatten the face (Image 29).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-28.jpg",
+                      "caption": "Image 28 - Using the Knife Tool to cut a shape for the nose from the bridge down to the tip"
+                    },
+                    {
+                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-29.jpg",
+                      "caption": "Image 29 - Moving the vertex at the side of the nose over to flatten the face"
+                    }
                   ]
                 },
                 {
                   "section": {
                     "header": "The Ears",
                     "content": [
-                      "Use the Knife Tool to cut some edges in the faces near the ears (Image 30). Select the faces for the ear and extrude them out the side (Image 31). Select the three vertices in the front of the ear and [k]G,G[/k] to Edge Slide them back (Image 32). In the rear, Edge Slide the top and bottom vertices for the ear to make them thinner (Image 33). Shape the ear from the side (Image 34) and the front (Image 35). Move in the vertex behind the ear so the middle isn't too fat (Image 36).",
+                      "Use the Knife Tool to cut some edges in the faces near the ears (Image 30). Select the faces for the ear and extrude them out the side (Image 31). Select the three vertices in the front of the ear and [k]G,G[/k] to Edge Slide them back (Image 32). In the rear, Edge Slide the top and bottom vertices for the ear to make them thinner (Image 33).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-30.jpg",
+                            "caption": "Image 30 - Using the Knife Tool to cut some edges in the faces near the ears"
+                          },
+                          {
+                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-31.jpg",
+                            "caption": "Image 31 - Selecting the faces for the ear and extruding them out the side"
+                          },
+                          {
+                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-32.jpg",
+                            "caption": "Image 32 - Selecting the three vertices in the front of the ear and Edge Sliding them back"
+                          },
+                          {
+                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-33.jpg",
+                            "caption": "Image 33 - Edge Sliding the top and bottom vertices for the ear in the rear to make them thinner"
+                          }
+                        ]
+                      },
+                      "Shape the ear from the side (Image 34) and the front (Image 35). Move in the vertex behind the ear so the middle isn't too fat (Image 36).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-34.jpg",
+                            "caption": "Image 34 - Shaping the ear from the side"
+                          },
+                          {
+                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-35.jpg",
+                            "caption": "Image 35 - Shaping the ear from the front"
+                          },
+                          {
+                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-36.jpg",
+                            "caption": "Image 36 - Moving in the vertex behind the ear so the middle isn't too fat"
+                          }
                         ]
                       }
                     ]
