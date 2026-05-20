@@ -1,0 +1,1083 @@
+{
+  "sections": [
+    {
+      "Bodybuilder": {
+        "tags": ["male", "base mesh"],
+        "key_concepts": [
+          "[url]Create Your First Low Poly Character for Games (Easy and Practical!)^^https://www.youtube.com/watch?v=7SIY64ryWeI&list=PL7mfdgO5iYFYGCjqqPcMuafJJh9OKPiRB&index=1[/url]",
+          "Model a low poly bodybuilder.",
+          {
+            "section": {
+              "header": "I - The Torso",
+              "content": [
+                {
+                  "section": {
+                    "header": "Start With a Cylinder",
+                    "content": [
+                      "Set up your reference images and add a Cylinder with 10 vertices to the scene (Synty Polygon characters' torsos have 10 faces) (Image 1). Delete the top and bottom faces (Image 2). Change the Viewport Shading to [k]MatCap > check_rim_dark[/k] (Image 3). If this is not your preference, you can always change it back. Remove the left vertices and add a Mirror Modifier (Image 4).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-01.jpg",
+                            "caption": "Image 1 - Setting up reference images and adding a Cylinder with 10 vertices to the scene"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-02.jpg",
+                            "caption": "Image 2 - Deleting the top and bottom faces"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-03.jpg",
+                            "caption": "Image 3 - Changing the Viewport Shading to MatCap > check_rim_dark"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-04.jpg",
+                            "caption": "Image 4 - Removing the left vertices and adding a Mirror Modifier"
+                          }
+                        ]
+                      },
+                      "Move the cylinder to the torso area and scale it down to the width of the waist, with the bottom edge near the top of the hips (Image 5). Move the top edge up to the armpit height, creating a v-shape (Image 6). Extrude the top edge to the height of the shoulders (Image 7) and scale in slightly (Image 8). Extrude the top edge again to the height of the neck and move inwards, matching the trapezius (Image 9).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-05.jpg",
+                            "caption": "Image 5 - Moving the cylinder to the torso area and scaling it down to the width of the waist"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-06.jpg",
+                            "caption": "Image 6 - Moving the top edge up to the armpit height, creating a v-shape"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-07.jpg",
+                            "caption": "Image 7 - Extruding the top edge to the height of the shoulders"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-08.jpg",
+                            "caption": "Image 8 - Scale in the top edge slightly"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-09.jpg",
+                            "caption": "Image 9 - Extruding the top edge again to the height of the neck and move inwards, matching the trapezius"
+                          }
+                        ]
+                      },
+                      "Fix the alignment of the inner loop by selecting edges that are too far off and [k]G,G[/k] to Edge slide them into position (near the nipples or under the jawline) (Image 10). Extrude the top edge again to just under the ears to form a neck going to the base of the skull (Image 11). [k]Numpad7[/k] into Top View and round the shape out if needed (Image 12). [k]Numpad3[/k] into Side View. Select the edge loop by the shoulders and [k]G[/k], [k]S[/k], [k]R[/k] it into position from the top of the chest to above ths shoulders (Image 13).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-10.jpg",
+                            "caption": "Image 10 - Fixing the alignment of the inner loop by selecting edges that are too far off and Edge sliding them into position (near the nipples or under the jawline)"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-11.jpg",
+                            "caption": "Image 11 - Extruding the top edge again to just under the ears to form a neck going to the base of the skull"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-12.jpg",
+                            "caption": "Image 12 - Rounding out the shape in Top View "
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-13.jpg",
+                            "caption": "Image 13 - Grabbing, scaling, and rotating the edge loop by the shoulders into position from the top of the chest to above ths shoulders"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Neck and Shoulders",
+                    "content": [
+                      "[k]Numpad3[/k] into Side View. Select the edge loop by the shoulders and [k]G[/k], [k]S[/k], [k]R[/k] it into position from the top of the chest to above ths shoulders (Image 13). Rotate the edge in the middle of the neck to give match the angle of the neck (Image 14). Line up the top edge to the 3rd vertex from the left aligns with the jaw (Image 15). Move the first three vertices of the collarbone edge loop lower to create a shelf where the trapezius muscles rise up (Image 16).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-13.jpg",
+                            "caption": "Image 13 - Grabbing, scaling, and rotating the edge loop by the shoulders into position from the top of the chest to above ths shoulders"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-14.jpg",
+                            "caption": "Image 14 - Rotating the edge in the middle of the neck to give match the angle of the neck"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-15.jpg",
+                            "caption": "Image 15 - Lining up the top edge to the third vertex from the left until it aligns with the jaw"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-16.jpg",
+                            "caption": "Image 16 - Moving the first three vertices of the collarbone edge loop lower to create a shelf where the trapezius muscles rise up"
+                          }
+                        ]
+                      },
+                      "Move the left two vertices in the top edge loop to under the jaw (Image 17). Move the remaining vertices in the top edge loop in to match the width of the neck (Image 18). In Front View, round out the edge at the front of the neck (Image 19).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-17.jpg",
+                            "caption": "Image 17 - Moving the left two vertices in the top edge loop to under the jaw"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-18.jpg",
+                            "caption": "Image 18 - Moving the remaining vertices in the top edge loop in to match the width of the neck"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-19.jpg",
+                            "caption": "Image 19 - Rounding out the edge at the front of the neck"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Chest and Waist",
+                    "content": [
+                      "In Side View, line up the vertical edge loops with the contours of the torso (Image 20). Add a horizontal Loop Cut for the waist and scale and rotate it until it matches the reference image in Side (Image 21) and Front View (Image 22). Using the Knife Tool, cut from the side to below the chest (Image 23).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-20.jpg",
+                            "caption": "Image 20 - Lining up the vertical edge loops with the contours of the torso"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-21.jpg",
+                            "caption": "Image 21 - Adding a horizontal Loop Cut for the waist and scaling and rotating it until it matches the reference image from the side"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-22.jpg",
+                            "caption": "Image 22 - Adding a horizontal Loop Cut for the waist and scaling and rotating it until it matches the reference image from the front"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-23.jpg",
+                            "caption": "Image 23 - Cutting from the side to below the chest"
+                          }
+                        ]
+                      },
+                      "Adjust the contours of the chest to form a shelf for the pectorals (Image 24). Adjust the contours of the chest from the front (image 25). Add a horizontal Loop Cut for the chest and scale it out in the y-axis to round out the chest (Image 26).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-24.jpg",
+                            "caption": "Image 24 - Adjusting the contours of the chest to form a shelf for the pectorals from the side"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-25.jpg",
+                            "caption": "Image 25 - Adjusting the contours of the chest from the front"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-26.jpg",
+                            "caption": "Image 26 - Adding a horizontal Loop Cut for the chest and scale it out in the y-axis to round out the chest"
+                          }
+                        ]
+                      },
+                      "Grab the two outside vertices by the shoulder joint and move them out in the x-axis (Image 27). [k]Numpad7[/k] into Top View, grab the top three vertices and move them in on the y-axis to shape the spine (Image 28). [k]Numpad7,Numpad9[/k] into Bottom View, grab the bottom two vertices and move them in on the y-axis (Image 29).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-27.jpg",
+                            "caption": "Image 27 - Grab the two outside vertices by the shoulder joint and moving them out in the x-axis"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-28.jpg",
+                            "caption": "Image 28 - Grabbing the top three vertices and moving them in on the y-axis in Top View to shape the spine"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-29.jpg",
+                            "caption": "Image 29 - Grabbing the bottom two vertices along the spine and moving them in on the y-axis in Bottom View"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "II - Arms",
+              "content": [
+                {
+                  "section": {
+                    "header": "Begin With a Cylinder",
+                    "content": [
+                      "Add a Cylinder with 6 vertices to the scene and rotate it 30 degrees in the z-axis (Synty Polygon characters' arms have 6 faces) (Image 1). Delete the top and bottom faces (Image 2). Move the cylinder to the arm area and in Edit Mode scale and rotate it until it matches the reference image (Image 3). Extrude the bottom edge to the wrist and rotate to match the image (Image 4).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-01.jpg",
+                            "caption": "Image 1 - Adding a Cylinder with 6 vertices to the scene and rotating it 30 degrees in the z-axis"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-02.jpg",
+                            "caption": "Image 2 - Deleting the top and bottom faces"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-03.jpg",
+                            "caption": "Image 3 - Moving the cylinder to the arm area and in Edit Mode and scaling and rotating it until it matches the reference image"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-04.jpg",
+                            "caption": "Image 4 - Extruding the bottom edge to the wrist and rotating to match the image"
+                          }
+                        ]
+                      },
+                      "Add a Loop Cut to the forearm, rotate and scale it to match the reference image (Image 5). Add a Loop Cut for the bicep, rotating and scaling to match the shape of the arm (Image 6). Scale in the top edge somewhat to shape the arm (Image 7). [k]Numpad3[/k] into Side View and adjust the shape of the arm to match the reference image (Image 8).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-05.jpg",
+                            "caption": "Image 5 - Adding a Loop Cut to the forearm, rotating and scaling it to match the reference image"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-06.jpg",
+                            "caption": "Image 6 - Adding a Loop Cut for the bicep, rotating and scaling to match the shape of the arm"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-07.jpg",
+                            "caption": "Image 7 - Scaling in the top edge somewhat to shape the arm"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-08.jpg",
+                            "caption": "Image 8 - Going into Side View and adjusting the shape of the arm to match the reference image"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Elbow Joint",
+                    "content": [
+                      "Add two Loop Cuts - one above and one below the elbow (Image 9). Select the 3 vertices along the side of the elbow and [k]M,A[/k] to merge them at the center (Image 10). Repeat for the other side (Image 11). [k]2[/k] into Edge Mode, select the two edges along the side of the elbo and [k]X,I[/k] to dissolve them (Image 12). Repeat for the other side (Image 13).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-09.jpg",
+                            "caption": "Image 9 - Adding two Loop Cuts, one above and one below the elbow"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-10.jpg",
+                            "caption": "Image 10 - Selecting the 3 vertices along the side of the elbow and merging them at the center"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-11.jpg",
+                            "caption": "Image 11 - Repeating for the other side"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-12.jpg",
+                            "caption": "Image 12 - Going into Edge Mode, selecting the two edges along the side of the elbow and dissolving them"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-13.jpg",
+                            "caption": "Image 13 - Repeating for the other side"
+                          }
+                        ]
+                      },
+                      "In Front View, select the edge in front of the elbow and scale it in (Image 14). Move around to the back side and scale in the edge by the elbow (Image 15). In Side View, pull out the edge to form the elbow (Image 16).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-14.jpg",
+                            "caption": "Image 14 - Going to Front View, selecting the edge in front of the elbow and scaling it in"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-15.jpg",
+                            "caption": "Image 15 - Moving around to the back side and scaling in the edge by the elbow"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-16.jpg",
+                            "caption": "Image 16 - Going to Side View and pulling out the edge to form the elbow"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "A Cube for the Hand",
+                    "content": [
+                      "Add a Cube to the scene, scale it down and move it into position by the wrist (Image 17). Position and scale the cube from the side (Image 18). Select the bottom face and scale it in in the y-axis (Image 19) and then extrude it out (Image 20). Move the extruded face in on the x-axis and then rotate it in its local y-axis (Image 21).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-17.jpg",
+                            "caption": "Image 17 - Adding a Cube to the scene, scaling it down and moving it into position by the wrist"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-18.jpg",
+                            "caption": "Image 18 - Positioning and scaling the cube from the side"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-19.jpg",
+                            "caption": "Image 19 - Selecting the bottom face and scaling it in in the y-axis"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-20.jpg",
+                            "caption": "Image 20 - Extruding it out"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-21.jpg",
+                            "caption": "Image 21 - Moving the extruded face in on the x-axis and then rotating it in its local y-axis"
+                          }
+                        ]
+                      },
+                      "Scale the bottom face in in the y-axis, and then scale the middle edge loop out (Image 22). Add 3 Loop Cuts to the bottom section (Image 23). From the side, adjust the edge loops for the hand to round out the shape (Image 24). Add two horizontal Loop Cuts near the top and bottom of the palm face (Image 25). Extrude the face on the side and scale it in (Image 26).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-22.jpg",
+                            "caption": "Image 22 - Scaling the bottom face in in the y-axis and then scaling the middle edge loop out"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-23.jpg",
+                            "caption": "Image 23 - Adding 3 Loop Cuts to the bottom section"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-24.jpg",
+                            "caption": "Image 24 - Adjusting the edge loops for the hand from the side to round out the shape"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-25.jpg",
+                            "caption": "Image 25 - Adding two horizontal Loop Cuts near the top and bottom of the palm face"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-26.jpg",
+                            "caption": "Image 26 - Extruding the face on the side and scaling it in"
+                          }
+                        ]
+                      },
+                      "Rotate the face in the x-axis and then move it down in the z-axis (Image 27). Extrude the face again, scale it down, rotate it in the x-axis, and move it down in the z-axis (Image 28). Extrude the face one more time for the last thumb joint, scale it in and and move it down in the z-axis (Image 29). Move each joint loop in the thumb along their local x-axis until they are lined up on their right side (Image 30). Select the faces on the outside of the thumb and move them in the x-axis to add thickness (Image 31).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-27.jpg",
+                            "caption": "Image 27 - Rotating the face in the x-axis and then moving it down in the z-axis"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-28.jpg",
+                            "caption": "Image 28 - Extruding the face again, scaling it down, rotating it in the x-axis, and moving it down in the z-axis"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-29.jpg",
+                            "caption": "Image 29 - Extruding the face one more time for the last thumb joint, scaling it in and moving it down in the z-axis"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-30.jpg",
+                            "caption": "Image 30 - Moving each joint loop in the thumb along their local x-axis until they are lined up on their right side"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-31.jpg",
+                            "caption": "Image 31 - Selecting the faces on the outside of the thumb and moving them in the x-axis to add thickness"
+                          }
+                        ]
+                      },
+                      "Select the two edges inside the palm and move them along the x-axis to make the palm thicker (Image 32). Then select all edges for the palm and thumb to make them thicker (Image 33). Add a Loop Cut to the hand (Image 34). Select the edges on the outside of the hand and [k]G,X,X[/k] to move them out along the x-axis (Image 35). Grab the top edge on the inside and [k]G,X,X[/k] to move it out as well (Image 36).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-32.jpg",
+                            "caption": "Image 32 - Selecting the two edges inside the palm and moving them along the x-axis to make the palm thicker"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-33.jpg",
+                            "caption": "Image 33 - Selecting all edges for the palm and thumb to make them thicker"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-34.jpg",
+                            "caption": "Image 34 - Adding a Loop Cut to the hand"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-35.jpg",
+                            "caption": "Image 35 - Selecting the edges on the outside of the hand and moving them out along the x-axis"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-36.jpg",
+                            "caption": "Image 36 - Grabbing the top edge on the inside and moving it out as well"
+                          }
+                        ]
+                      },
+                      "Grab the other edges on the inside of the hand and move them inwards (Image 37). Delete the top faces (Image 38). In Object Mode, [k]Ctrl-J[/k] to join the hand to the arm (Image 39). Select the top and bottom edge loops for the wrist (Image 40). [k]RMB,L[/k] to bridge the edge loops (Image 41).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-37.jpg",
+                            "caption": "Image 37 - Grabbing the other edges on the inside of the hand and moving them inwards"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-38.jpg",
+                            "caption": "Image 38 - Deleting the top faces"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-39.jpg",
+                            "caption": "Image 39 - Going to Object Mode and joining the hand to the arm"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-40.jpg",
+                            "caption": "Image 40 - Selecting the top and bottom edge loops for the wrist"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/arms-41.jpg",
+                            "caption": "Image 41 - Bridging the edge loops"
+                          }
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "Shoulders",
+                          "content": [
+                            "Add a cylinder with 6 vertices to the scene, rotate 30 degrees in the z-axis, and remove the top and bottom faces (Image 42). Move it to the shoulder region and scale down to size (Image 43). Delete the two bottom faces (Image 44).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-42.jpg",
+                                  "caption": "Image 42 - Adding a cylinder with 6 vertices to the scene, rotating 30 degrees in the z-axis, and removing the top and bottom faces"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-43.jpg",
+                                  "caption": "Image 43 - Moving it to the shoulder region and scaling down to size"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-44.jpg",
+                                  "caption": "Image 44 - Deleting the two bottom faces"
+                                }
+                              ]
+                            },
+                            "Extrude the bottom edge towards the upper arm (Image 45). Scale in the outer edges by their individual origins (Image 46). Scale out the middle edge, rotate it and position between the outer edges (Image 47).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-45.jpg",
+                                  "caption": "Image 45 - Extruding the bottom edge towards the upper arm"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-46.jpg",
+                                  "caption": "Image 46 - Scaling in the outer edges by their individual origins"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-47.jpg",
+                                  "caption": "Image 47 - Scaling out the middle edge, rotating it and positioning between the outer edges"
+                                }
+                              ]
+                            },
+                            "From the side, move the shoulder mesh in place and scale to the right size (Image 48). Extrude the top edge out to form the top faces of the deltoid muscle (Image 49). Scale out the edges to match the width of the previous faces (Image 50).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-48.jpg",
+                                  "caption": "Image 48 - Moving the shoulder mesh in place from the side and scaling to the right size"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-49.jpg",
+                                  "caption": "Image 49 - Extruding the top edge out to form the top faces of the deltoid muscle"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-50.jpg",
+                                  "caption": "Image 50 - Scaling out the edges to match the width of the previous faces"
+                                }
+                              ]
+                            },
+                            "Select the shoulder and the arm mesh and [k]Ctrl-J[/k] to join them (Image 51). Start on the side and select vertices from the shoulder and arm and [k]M[/k] to merge them (Image 52). Going to the front, move the two edge loops over and join the bottom vertices (Image 53). Do the same for the outside edge loop (Image 54).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-51.jpg",
+                                  "caption": "Image 51 - Selecting the shoulder and the arm mesh and joining them"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-52.jpg",
+                                  "caption": "Image 52 - Starting on the side and selecting vertices from the shoulder and arm and merging them"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-53.jpg",
+                                  "caption": "Image 53 - Going to the front, moving the two edge loops over and joining the bottom vertices"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-54.jpg",
+                                  "caption": "Image 54 - Doing the same for the outside edge loop"
+                                }
+                              ]
+                            },
+                            "Cut an edge in the front face with the Knife Tool (Image 55). [k]Numpad1,9[/k] into Rear View and move over the two edge loops and connect the bottom vertices (Image 56). Join the outside bottom vertex to the arm (Image 57). Cut an edge in the back face with the Knife Tool (Image 58).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-55.jpg",
+                                  "caption": "Image 55 - Cutting an edge in the front face with the Knife Tool"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-56.jpg",
+                                  "caption": "Image 56 - Going to Rear View and moving over the two edge loops and connecting the bottom vertices"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-57.jpg",
+                                  "caption": "Image 57 - Joining the outside bottom vertex to the arm"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-58.jpg",
+                                  "caption": "Image 58 - Cutting an edge in the back face with the Knife Tool"
+                                }
+                              ]
+                            },
+                            "Move around to the side and add another cut to the shoulder (Image 59). In Front View, select the vertex sticking out and Edge Slide it in (Image 60). Do the same in the back (Image 61).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-59.jpg",
+                                  "caption": "Image 59 - Moving around to the side and adding another cut to the shoulder"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-60.jpg",
+                                  "caption": "Image 60 - Going to Front View, selecting the vertex sticking out and Edge Sliding it in"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-61.jpg",
+                                  "caption": "Image 61 - Doing the same in the back"
+                                }
+                              ]
+                            },
+                            "From the front, line up the vertices at the side of the shoulder (Image 62). Do the same in the rear (Image 63). In the front, extrude the middle edge out (Image 64) and do the same thing in the rear (Image 65).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-62.jpg",
+                                  "caption": "Image 62 - Lining up the vertices at the side of the shoulder from the front"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-63.jpg",
+                                  "caption": "Image 63 - Doing the same in the rear"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-64.jpg",
+                                  "caption": "Image 64 - Extruding the middle edge out from the front"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-65.jpg",
+                                  "caption": "Image 65 - Doing the same thing in the rear"
+                                }
+                              ]
+                            },
+                            "Extrude the inside faces (Image 66). Create a face for the extruded faces in front (Image 67) and rear (Image 68). Extrude the top two edges (Image 69).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-66.jpg",
+                                  "caption": "Image 66 - Extruding the inside faces"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-67.jpg",
+                                  "caption": "Image 67 - Creating a face for the extruded faces in front"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-68.jpg",
+                                  "caption": "Image 68 - Creating a face for the extruded faces in the rear"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-69.jpg",
+                                  "caption": "Image 69 - Extruding the top two edges"
+                                }
+                              ]
+                            },
+                            "Fill the empty areas with faces in front and rear and then move the outer loop and move it out in the x-axis (Image 70). [k]S,X,0[/k] to line the vertices up (Image 71). Turn on Loop Tools if needed, and [k]RMB,L,C[/k] to make the loop a circle (Image 72). Scale the circle down and move it back (Image 73).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-70.jpg",
+                                  "caption": "Image 70 - Filling the empty areas with faces in front and rear and then moving the outer loop and move it out in the x-axis"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-71.jpg",
+                                  "caption": "Image 71 - Lining the vertices up"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-72.jpg",
+                                  "caption": "Image 72 - Turning on Loop Tools if needed and making the loop a circle"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/arms-73.jpg",
+                                  "caption": "Image 73 - Scaling the circle down and moving it back"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "III - Legs",
+              "content": [
+                {
+                  "section": {
+                    "header": "Begin With a Cylinder",
+                    "content": [
+                      "Add a Cylinder with 8 vertices to the scene, delete the top and bottom faces, and move it into position by the legs (Image 1). Move the bottom edge loop down to the middle of the knee and rotate it to a slight angle (Image 2). Rotate and scale the top edge loop to match the thickest part of the thigh (Image 3).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-01.jpg",
+                            "caption": "Image 1 - Adding a Cylinder with 8 vertices to the scene, deleting the top and bottom faces, and moving it into position by the legs"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-02.jpg",
+                            "caption": "Image 2 - Moving the bottom edge loop down to the middle of the knee and rotating it to a slight angle"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-03.jpg",
+                            "caption": "Image 3 - Rotating and scaling the top edge loop to match the thickest part of the thigh"
+                          }
+                        ]
+                      },
+                      "Extrude the top loop, rotate and scale it for where the top of the thigh meets the pelvis (Image 4). The lower leg topology should follow certain angles (Image 5). Extrude the bottom face to the widest part of the calves and then again down to the ankle, angling the edge loops according to the guide (Image 6).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-04.jpg",
+                            "caption": "Image 4 - Extruding the top loop, rotating and scaling it for where the top of the thigh meets the pelvis"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-05.jpg",
+                            "caption": "Image 5 - Showing the angles the lower leg topology should follow"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-06.jpg",
+                            "caption": "Image 6 - Extruding the bottom face to the widest part of the calves and then again down to the ankle, angling the edge loops according to the guide"
+                          }
+                        ]
+                      },
+                      "[k]Numpad3[/k] into Side View and [k]G,Y[/k], [k]S,Y[/k] the vertices into position to match the reference image (Image 7). Rotate the edge loop by the calf to match the slope of the calf muscle (Image 8). Rotate the edge loop for the knee also to match the reference (Image 9).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-07.jpg",
+                            "caption": "Image 7 - Going to Side View and moving and scaling the vertices into position to match the reference image"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-08.jpg",
+                            "caption": "Image 8 - Rotating the edge loop by the calf to match the slope of the calf muscle"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-09.jpg",
+                            "caption": "Image 9 - Rotating the edge loop for the knee to match the reference"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Knee",
+                    "content": [
+                      "Add two Loop Cuts - one above and one below the knee (Image 10). Select the 3 vertices along the side of the knee and [k]M,A[/k] to merge them at the center (Image 11). Repeat for the other side (Image 12).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-10.jpg",
+                            "caption": "Image 10 - Adding two Loop Cuts, one above and one below the knee"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-11.jpg",
+                            "caption": "Image 11 - Selecting the 3 vertices along the side of the knee and merging them at the center"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-12.jpg",
+                            "caption": "Image 12 - Repeating for the other side"
+                          }
+                        ]
+                      },
+                      "[k]2[/k] into Edge Mode, select the two edges along the side of the knee and [k]X,I[/k] to dissolve them (Image 13). Repeat for the other side (Image 14). Select the edges above and below the knee (Image 15). In Side View, [k]G[/k] to move the edges into position to create a \"bump\" for the knee (Image 16).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-13.jpg",
+                            "caption": "Image 13 - Going into Edge Mode, selecting the two edges along the side of the knee and dissolving them"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-14.jpg",
+                            "caption": "Image 14 - Repeating for the other side"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-15.jpg",
+                            "caption": "Image 15 - Selecting the edges above and below the knee"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-16.jpg",
+                            "caption": "Image 16 - Going to Side View and moving the edges into position to create a bump for the knee"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Foot",
+                    "content": [
+                      "Going to the end of the leg, select the bottom edge loop and [k]E,Z[/k] to extrude it to the bottom of the foot (Image 17). [k]S,Z,0[/k] to even out the edge (Image 18).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-17.jpg",
+                            "caption": "Image 17 - Going to the end of the leg, selecting the bottom edge loop and extruding it to the bottom of the foot"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-18.jpg",
+                            "caption": "Image 18 - Evening out the edge"
+                          }
+                        ]
+                      },
+                      "Scale the edge in the x-axis to widen the foot (Image 19). Select the four front faces (Image 20). In Side View, [k]E,Z[/k] to extrude to the front of the feet (Image 21). Select the top vertices in front and [k]G,G[/k] to Edge Slide them down (Image 22).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-19.jpg",
+                            "caption": "Image 19 - Scaling the edge in the x-axis to widen the foot"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-20.jpg",
+                            "caption": "Image 20 - Selecting the four front faces"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-21.jpg",
+                            "caption": "Image 21 - Going to Side View and extruding to the front of the feet"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-22.jpg",
+                            "caption": "Image 22 - Selecting the top vertices in front and Edge Sliding them down"
+                          }
+                        ]
+                      },
+                      "Select the front faces and [k]S,X[/k] to widen the toes (Image 23). Add a Loop Cut across the foot (Image 24). Select the top vertices of that cut and move them down in the z-axis (Image 25). Select all vertices for the foot and [k]R,Z,-7[/k] to turn the feet slightly outwards, and then [k]G,X[/k] to move them back into position (Image 26).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-23.jpg",
+                            "caption": "Image 23 - Selecting the front faces and widening the toes in the x-axis"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-24.jpg",
+                            "caption": "Image 24 - Adding a Loop Cut across the foot"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-25.jpg",
+                            "caption": "Image 25 - Selecting the top vertices of that cut and moving them down in the z-axis"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-26.jpg",
+                            "caption": "Image 26 - Selecting all vertices for the foot, turning the feet slightly outwards, and then moving them back into position"
+                          }
+                        ]
+                      },
+                      "Delete all faces on the bottom of the foot (Image 27). Add edge loops from the bottom of the foot to the ankle on either side of the foot (Image 28). Create three faces in the middle of the foot (Image 29) and a face at each end (Image 30). Cut the faces in the middle using the Knife Tool (Image 31).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-27.jpg",
+                            "caption": "Image 27 - Deleting all faces on the bottom of the foot"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-28.jpg",
+                            "caption": "Image 28 - Adding edge loops from the bottom of the foot to the ankle on either side of the foot"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-29.jpg",
+                            "caption": "Image 29 - Creating three faces in the middle of the foot"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-30.jpg",
+                            "caption": "Image 30 - Creating a face at each end"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/legs-31.jpg",
+                            "caption": "Image 31 - Cutting the faces in the middle using the Knife Tool"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "III - Legs",
+              "content": [
+                {
+                  "section": {
+                    "header": "Finishing Touches",
+                    "content": [
+                      {
+                        "section": {
+                          "header": "The Back",
+                          "content": [
+                            "After the arms have been developed, select the three outer vertices along the back (Image 30) and in the Top View move them towards the shoulders (Image 31). [k]Numpad1,Numpad9[/k] into Rear View and add a Loop Cut (Image 32).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/torso-30.jpg",
+                                  "caption": "Image 30 - Selecting the three outer vertices along the back"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/torso-31.jpg",
+                                  "caption": "Image 31 - Going to Top View and moving them towards the shoulders"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/torso-32.jpg",
+                                  "caption": "Image 32 - Going to Rear View and adding a Loop Cut"
+                                }
+                              ]
+                            },
+                            "Select the vertex near the bottom of the shoulder blade and [k]G,Z[/k] to move it down (Image 33). Select the vertex above that one and [k]G,Y[/k] to move it out slightly (Image 34). Select the three vertices in the middle of the spine and [k]G,Y[/k] to move them inwards (Image 35).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/torso-33.jpg",
+                                  "caption": "Image 33 - Selecting the vertex near the bottom of the shoulder blade and moving it down"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/torso-34.jpg",
+                                  "caption": "Image 34 - Selecting the vertex above that one and moving it out slightly"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/torso-35.jpg",
+                                  "caption": "Image 35 - Selecting the three vertices in the middle of the spine and moving them inwards"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "The Front",
+                          "content": [
+                            "From the front, select the three faces for the inside of the chest and [k]Shift-H[/k] to hide all other geometry (Image 36). Add a Loop Cut and move it towards the center of the chest (Image 37). Select the three inner vertices and [k]G,Y[/k] to move them in to create some cleavage (Image 38), and then select the inner and outer vertices and [k]G,Y[/k] to shape the chest from the top View.",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/torso-36.jpg",
+                                  "caption": "Image 36 - Selecting the three faces for the inside of the chest from the front and hiding all other geometry"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/torso-37.jpg",
+                                  "caption": "Image 37 - Adding a Loop Cut and moving it towards the center of the chest"
+                                },
+                                {
+                                  "src": "Blender/Markus Art/Characters/Bodybuilder/torso-38.jpg",
+                                  "caption": "Image 38 - Selecting the three inner vertices and moving them in to create some cleavage and then selecting the inner and outer vertices and moving them in the y-axis to shape the chest in the Top View"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Hips",
+                    "content": [
+                      "Select the two edges at the bottom of the torso waist, front and back, and [k]F[/k] to fill them and add a Loop Cut to the new face (Image 39). Select the Edge Loop and move it down to crotch level and scale it in (Image 40). Add Loop Cut to the front and back faces and move those edge loops down (Image 41). Create another Loop Cut in front and move it out to round out the shape (Image 42).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-39.jpg",
+                            "caption": "Image 39 - Selecting the two edges at the bottom of the torso waist front and back, filling them, and adding a Loop Cut to the new face"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-40.jpg",
+                            "caption": "Image 40 - Selecting the Edge Loop and moving it down to crotch level and scaling it in"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-41.jpg",
+                            "caption": "Image 41 - Adding a Loop Cut to the front and back faces and moving those edge loops down"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-42.jpg",
+                            "caption": "Image 42 - Creating another Loop Cut in front and moving it out to round out the shape"
+                          }
+                        ]
+                      },
+                      "Add two Loop Cuts to the front and back towards the top of the hips (Image 43). Select the edges around the waist that haven't been extruded yet and extrude them down to the height of the Loop Cuts you just made (Image 44). [k]S,Y[/k], [k]G,Y[/k] to move them in place from the side (Image 45). Turn on Solid viewport Shading and close the gap between the faces, using the inside vertex as the merge point (Image 46).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-43.jpg",
+                            "caption": "Image 43 - Adding two Loop Cuts to the front and back towards the top of the hips"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-44.jpg",
+                            "caption": "Image 44 - Selecting the edges around the waist that haven't been extruded yet and extruding them down to the height of the Loop Cuts just made"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-45.jpg",
+                            "caption": "Image 45 - Scaling and moving them into place in the y-axis from the side"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-46.jpg",
+                            "caption": "Image 46 - Turning on Solid viewport shading and closing the gap between the faces using the inside vertex as the merge point"
+                          }
+                        ]
+                      },
+                      "Extrude the inner edge down and rotate to match the hips contour (Image 47) and then fill in a face with the neighboring vertices (Image 48). Go around to the side and add two more edge loops to help round out the butt (Image 49). Create a face between these two edges (Image 50).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-47.jpg",
+                            "caption": "Image 47 - Extruding the inner edge down and rotating to match the hips contour"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-48.jpg",
+                            "caption": "Image 48 - Filling in a face with the neighboring vertices"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-49.jpg",
+                            "caption": "Image 49 - Going around to the side and adding two more edge loops to help round out the butt"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-50.jpg",
+                            "caption": "Image 50 - Creating a face between these two edges"
+                          }
+                        ]
+                      },
+                      "Add two Loop Cuts and move those edges out to shape the butt (Image 51). Fill in the face in the front (Image 52). Add a Loop Cut near the crotch (Image 53). Add one more Loop Cut to the band in the back (Image 54).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-51.jpg",
+                            "caption": "Image 51 - Adding two Loop Cuts and moving those edges out to shape the butt"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-52.jpg",
+                            "caption": "Image 52 - Filling in the face in the front"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-53.jpg",
+                            "caption": "Image 53 - Adding a Loop Cut near the crotch"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-54.jpg",
+                            "caption": "Image 54 - Adding one more Loop Cut to the band in the back"
+                          }
+                        ]
+                      },
+                      "Select the edge loop for the opening in front and use Loop Tools to make it into a circle (Image 55). Add a cut to the face on the side (Image 56). Add two more faces to close the gap in the back (Image 57). Go around the hips and shape the butt (Image 58).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-55.jpg",
+                            "caption": "Image 55 - Selecting the edge loop for the opening in front and using Loop Tools to make it into a circle"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-56.jpg",
+                            "caption": "Image 56 - Adding a cut to the face on the side"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-57.jpg",
+                            "caption": "Image 57 - Adding two more faces to close the gap in the back"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Bodybuilder/torso-58.jpg",
+                            "caption": "Image 58 - Going around the hips and shaping the butt"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bodybuilder (No Head)",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Markus Art/bodybuilder_man.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Zombie": {
+        "tags": [
+          "male",
+          "base mesh",
+          "zombie"
+        ],
+        "key_concepts": [
+          "[url]Creating a Low Poly Zombie for Games in Blender is EASY^^https://www.youtube.com/watch?v=QvWv_cItDLI[/url]",
+          "Model a low poly zombie.",
+          {
+            "section": {
+              "header": "I - The Torso",
+              "content": [
+                "Add a Cylinder to the scene with 10 vertices and set [k]Cap Fill Type > Nothing[/k] (Image 1). Delete the left half and add a Mirror Modifier in the x-axis with Clipping enabled (Image 2). Move the cylinder to cover the reference images from the armpit to the bottom of the ribcage (Image 3). Extrude the top edge loop to the top of the shoulders (Image 4). Extrude again to the neck (Image 5). Extrude once more to the top of the neck (Image 6). [k]Numpad3[/k] into Side View and [k]S,Y[/k], [k]R[/k], [k]G[/k] the top four edge loops to match the reference (Image 7). Select the bottom edge loop, rotate slightly, and scale in the y-axis (Image 8). [k]Numpad7[/k] into Top View, select the edge by the shoulder blades and move it out (Image 9).",
+                {
+                  "image": [
+                  ]
+                },
+                "Go around the shape adjusting vertices to focus on several areas:",
+                [
+                  "Line up the front vertices with the collarbone (Image 10).",
+                  "Line up the back edge for the shoulder blades and lumbar region (Image 11).",
+                  "Line up the outer vertices in the back to square off the side of the body (Image 12).",
+                  "Angle the vertices in the back for the spine (Image 13).",
+                  "Make an opening for the shoulder on the side (Image 14)."
+                ],
+                {
+                  "image": [
+                  ]
+                },
+                "Make a Loop Cut down the side (Image 15), and another across the middle (Image 16). Adjust the vertices around the shoulder (Image 17). Extrude the shoulder faces (Image 18). Select the top edges for the shoulder and move them down to match the reference (Image 19). Select the outer vertices for the shoulder and move them back to round out the deltoids (Image 20). Select the outside faces and scale them in the y-axis (Image 21). Delete the bottom faces for the shoulder (Image 22). Extrude the bottom edge loop down twice; first to the top of the hips, then halfway down the hips (Image 23)."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "II - The Arms",
+              "content": [
+                "Add a Cylinder to the scene with 10 vertices and set [k]Cap Fill Type > Nothing[/k] and then [k]R,Z,30[/k] to rotate it (Image 24). Scale it down and move it to the elbow area for the upper arm (Image 25). Select the top edge loop and rotate and scale to match the widest part of the arm (Image 26). Extrude the top edge loop up again to the shoulder (Image 27). Extrude the bottom edge and scale it to match the thick part of the forearm (Image 28). Extrude down twice to the wrists, following the reference image (Image 29). [k]Numpad3[/k] into Side View, select the edge loops from elbow to wrist and [k]R[/k] to rotate them to match the reference (Image 30). Move the upper and lower arm parts into position from the side (Image 31). Scale the edge loops of the lower arm to match the reference image (Image 32). Scale and rotate the edge loop by the bicep and scale out the top edge loop (Image 33). In Object Mode, [k]Ctrl-J[/k] to join the arm to the torso, with the torso as the active object, then select the edge in the middle of the arm and [k]G,G[/k] to slide it closer to the middle of the shoulder (Image 34). Merge the vertices at the top of the arm and bottom of the shoulder (Image 35). Merge the two other vertices on the upper arm (Image 36). Move around to the front and add a vertical Loop Cut to the shoulder (Image 37). Join the shoulder and arm vertices in the front (Image 38) and back (Image 39). Select the vertex on the inner part of the upper arm and [k]G,Shift-Y[/k] to move it closer to the armpit area (Image 40). Select the edge along the inside of the torso and [k]Ctrl-B[/k] to bevel it (Image 41). [k]Numpad1,Numpad9[/k] to go to Rear View, and move the edges by the shoulder blade in (Image 42). Do the same in front (Image 43). Select the two bottom faces on the side and move them out (Image 44). [k]Numpad7,Numpad9[/k] to look from underneath and round out the shape of the hips and waist (Image 45). To finish connecting the arm to the torso, go around to the back of the armpit, select the four rear vertices and [k]F[/k] to fill them with a face (Image 46). Move the vertices in the rear of the shoulder over (Image 47). Go around to the front, select the next four vertices and [k]F[/k] to fill them (Image 48). Fill in the last three vertices (Image 49).",
+                {
+                  "section": {
+                    "header": "Ribs",
+                    "content": [
+                      "Using the Knife Tool, make a cut from the armpit across the body, and shape the lower part of the chest (Image 50). Shape the chest from the side (Image 51). [k]Ctrl-R[/k] and add six Loop Cuts below the chest and move them close together (Image 52). Select every other edge loop and [k]S,Shift[/k] to scale them out slightly (Image 53). Select all edge loops this time and [k]S.Shift[/k] to scale them in slightly (Image 54)."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "III - The Hips",
+              "content": [
+                "This section assumes a leg asset has been created from a Cylinder with 8 vertices.",
+                "[k]F[/k] to add a face between the front and back edges of the hips (Image 55). [k]Ctrl-R[/k] to add a Loop Cut (Image 56). In Side View, pull the edge down (Image 57). From the front, scale it to match the width of the crotch (Image 58). Add a Loop Cut to the front face and move the edge loop down and out (Image 59). Add another Loop Cut, scaled in slightly in the x-axis and pulled forward (Image 60). Join the leg to the torso, with the torso as the active object (Image 61). Join the vertices at the inseam together (Image 62). Continuing out, join the next two vertices in the front (Image 63). [k]2[/k] into Line Selection mode and select these two edges (Image 64), and [k]F[/k] to fill them (Image 65). In Side View, move the back three vertices down to start shaping the glutes (Image 66). Moving around to the front, select these two edges (Image 67) and [k]F[/k] to fill them in (Image 68). [k]Numpad1,Numpad9[/k] into Rear View and add a Loop Cut (Image 69). From the side, move the edge down (Image 70). Join the outside vertex of the edge the top of the leg (Image 71). Make the strip in the back narrow (Image 72). Add another Loop Cut in the back (Image 73). Pull the edge out to start rounding the butt (Image 74). Add another Loop Cut (Image 75) and move it out from the side (Image 76). Select these two edges (Image 77). Create a face between them (Image 78). Create a face next to it with the adjacent edges (Image 79). Create a Loop Cut in those new faces (Image 80). Go around to the side and move that edge loop out to match the contours (Image 81). Add a Loop Cut below that one and move it down (Image 82). Merge vertices with the strip in the back (Image 83). Around the side, select these two faces (Image 84) and fill them in (Image 85). Add a Loop Cut to the new face and move it out to the side (Image 86). Select these two vertices (Image 87) and merge them (Image 88). Select these two vertices (Image 89) and [k]M,A[/k] to merge at the center (Image 90). Fill in the last gap (Image 91)."
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
