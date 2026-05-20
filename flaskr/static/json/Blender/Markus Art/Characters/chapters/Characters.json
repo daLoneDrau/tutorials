@@ -1017,6 +1017,32 @@
       }
     },
     {
+      "Orc Female": {
+        "tags": [
+          "female",
+          "base mesh",
+          "breasts"
+        ],
+        "key_concepts": [
+          "[url]How to Model a Low Poly Orc in Blender | 3D Game Tutorial PART 1^^https://www.youtube.com/watch?v=12Mk2I_kfiY[/url]",
+          "[url]How to Model a Low Poly Orc in Blender | 3D Game Tutorial PART 2^^https://www.youtube.com/watch?v=pEIVniCZnS0[/url]",
+          "Modeling a low poly female base mesh, focusing on the torso and breasts.",
+          {
+            "section": {
+              "header": "I - The Torso",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
       "Zombie": {
         "tags": [
           "male",
