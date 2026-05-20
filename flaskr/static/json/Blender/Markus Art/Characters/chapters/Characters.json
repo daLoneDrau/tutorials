@@ -1021,6 +1021,7 @@
         "tags": [
           "male",
           "base mesh",
+          "hips",
           "zombie"
         ],
         "key_concepts": [
@@ -1030,9 +1031,50 @@
             "section": {
               "header": "I - The Torso",
               "content": [
-                "Add a Cylinder to the scene with 10 vertices and set [k]Cap Fill Type > Nothing[/k] (Image 1). Delete the left half and add a Mirror Modifier in the x-axis with Clipping enabled (Image 2). Move the cylinder to cover the reference images from the armpit to the bottom of the ribcage (Image 3). Extrude the top edge loop to the top of the shoulders (Image 4). Extrude again to the neck (Image 5). Extrude once more to the top of the neck (Image 6). [k]Numpad3[/k] into Side View and [k]S,Y[/k], [k]R[/k], [k]G[/k] the top four edge loops to match the reference (Image 7). Select the bottom edge loop, rotate slightly, and scale in the y-axis (Image 8). [k]Numpad7[/k] into Top View, select the edge by the shoulder blades and move it out (Image 9).",
+                "Add a Cylinder to the scene with 10 vertices and set [k]Cap Fill Type > Nothing[/k] (Image 1). Delete the left half and add a Mirror Modifier in the x-axis with Clipping enabled (Image 2). Move the cylinder to cover the reference images from the armpit to the bottom of the ribcage (Image 3). Extrude the top edge loop to the top of the shoulders (Image 4).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-01.jpg",
+                      "caption": "Image 1 - Adding a Cylinder to the scene with 10 vertices and setting Cap Fill Type to Nothing"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-02.jpg",
+                      "caption": "Image 2 - Deleting the left half and adding a Mirror Modifier in the x-axis with Clipping enabled"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-03.jpg",
+                      "caption": "Image 3 - Moving the cylinder to cover the reference images from the armpit to the bottom of the ribcage"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-04.jpg",
+                      "caption": "Image 4 - Extruding the top edge loop to the top of the shoulders"
+                    }
+                  ]
+                },
+                "Extrude again to the neck (Image 5). Extrude once more to the top of the neck (Image 6). [k]Numpad3[/k] into Side View and [k]S,Y[/k], [k]R[/k], [k]G[/k] the top four edge loops to match the reference (Image 7). Select the bottom edge loop, rotate slightly, and scale in the y-axis (Image 8). [k]Numpad7[/k] into Top View, select the edge by the shoulder blades and move it out (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-05.jpg",
+                      "caption": "Image 5 - Extruding again to the neck"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-06.jpg",
+                      "caption": "Image 6 - Extruding once more to the top of the neck"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-07.jpg",
+                      "caption": "Image 7 - Going to Side View and scaling, rotating, and moving the top four edge loops to match the reference"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-08.jpg",
+                      "caption": "Image 8 - Selecting the bottom edge loop, rotating it slightly, and scaling in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-09.jpg",
+                      "caption": "Image 9 - Going to Top View, selecting the edge by the shoulder blades and moving it out"
+                    }
                   ]
                 },
                 "Go around the shape adjusting vertices to focus on several areas:",
@@ -1045,9 +1087,74 @@
                 ],
                 {
                   "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-10.jpg",
+                      "caption": "Image 10 - Lining up the front vertices with the collarbone"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-11.jpg",
+                      "caption": "Image 11 - Lining up the back edge for the shoulder blades and lumbar region"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-12.jpg",
+                      "caption": "Image 12 - Lining up the outer vertices in the back to square off the side of the body"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-13.jpg",
+                      "caption": "Image 13 - Angling the vertices in the back for the spine"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-14.jpg",
+                      "caption": "Image 14 - Making an opening for the shoulder on the side"
+                    }
                   ]
                 },
-                "Make a Loop Cut down the side (Image 15), and another across the middle (Image 16). Adjust the vertices around the shoulder (Image 17). Extrude the shoulder faces (Image 18). Select the top edges for the shoulder and move them down to match the reference (Image 19). Select the outer vertices for the shoulder and move them back to round out the deltoids (Image 20). Select the outside faces and scale them in the y-axis (Image 21). Delete the bottom faces for the shoulder (Image 22). Extrude the bottom edge loop down twice; first to the top of the hips, then halfway down the hips (Image 23)."
+                "Make a Loop Cut down the side (Image 15), and another across the middle (Image 16). Adjust the vertices around the shoulder (Image 17). Extrude the shoulder faces (Image 18). Select the top edges for the shoulder and move them down to match the reference (Image 19).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-15.jpg",
+                      "caption": "Image 15 - Making a Loop Cut down the side"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-16.jpg",
+                      "caption": "Image 16 - Making another Loop Cut across the middle"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-17.jpg",
+                      "caption": "Image 17 - Adjusting the vertices around the shoulder"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-18.jpg",
+                      "caption": "Image 18 - Extruding the shoulder faces"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-19.jpg",
+                      "caption": "Image 19 - Selecting the top edges for the shoulder and moving them down to match the reference"
+                    }
+                  ]
+                },
+                "Select the outer vertices for the shoulder and move them back to round out the deltoids (Image 20). Select the outside faces and scale them in the y-axis (Image 21). Delete the bottom faces for the shoulder (Image 22). Extrude the bottom edge loop down twice; first to the top of the hips, then halfway down the hips (Image 23).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-20.jpg",
+                      "caption": "Image 20 - Selecting the outer vertices for the shoulder and moving them back to round out the deltoids"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-21.jpg",
+                      "caption": "Image 21 - Selecting the outside faces and scaling them in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-22.jpg",
+                      "caption": "Image 22 - Deleting the bottom faces for the shoulder"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-23.jpg",
+                      "caption": "Image 23 - Extruding the bottom edge loop down twice, first to the top of the hips and then halfway down the hips"
+                    }
+                  ]
+                }
               ]
             }
           },
@@ -1055,12 +1162,169 @@
             "section": {
               "header": "II - The Arms",
               "content": [
-                "Add a Cylinder to the scene with 10 vertices and set [k]Cap Fill Type > Nothing[/k] and then [k]R,Z,30[/k] to rotate it (Image 24). Scale it down and move it to the elbow area for the upper arm (Image 25). Select the top edge loop and rotate and scale to match the widest part of the arm (Image 26). Extrude the top edge loop up again to the shoulder (Image 27). Extrude the bottom edge and scale it to match the thick part of the forearm (Image 28). Extrude down twice to the wrists, following the reference image (Image 29). [k]Numpad3[/k] into Side View, select the edge loops from elbow to wrist and [k]R[/k] to rotate them to match the reference (Image 30). Move the upper and lower arm parts into position from the side (Image 31). Scale the edge loops of the lower arm to match the reference image (Image 32). Scale and rotate the edge loop by the bicep and scale out the top edge loop (Image 33). In Object Mode, [k]Ctrl-J[/k] to join the arm to the torso, with the torso as the active object, then select the edge in the middle of the arm and [k]G,G[/k] to slide it closer to the middle of the shoulder (Image 34). Merge the vertices at the top of the arm and bottom of the shoulder (Image 35). Merge the two other vertices on the upper arm (Image 36). Move around to the front and add a vertical Loop Cut to the shoulder (Image 37). Join the shoulder and arm vertices in the front (Image 38) and back (Image 39). Select the vertex on the inner part of the upper arm and [k]G,Shift-Y[/k] to move it closer to the armpit area (Image 40). Select the edge along the inside of the torso and [k]Ctrl-B[/k] to bevel it (Image 41). [k]Numpad1,Numpad9[/k] to go to Rear View, and move the edges by the shoulder blade in (Image 42). Do the same in front (Image 43). Select the two bottom faces on the side and move them out (Image 44). [k]Numpad7,Numpad9[/k] to look from underneath and round out the shape of the hips and waist (Image 45). To finish connecting the arm to the torso, go around to the back of the armpit, select the four rear vertices and [k]F[/k] to fill them with a face (Image 46). Move the vertices in the rear of the shoulder over (Image 47). Go around to the front, select the next four vertices and [k]F[/k] to fill them (Image 48). Fill in the last three vertices (Image 49).",
+                "Add a Cylinder to the scene with 10 vertices and set [k]Cap Fill Type > Nothing[/k] and then [k]R,Z,30[/k] to rotate it (Image 24). Scale it down and move it to the elbow area for the upper arm (Image 25). Select the top edge loop and rotate and scale to match the widest part of the arm (Image 26). Extrude the top edge loop up again to the shoulder (Image 27).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-24.jpg",
+                      "caption": "Image 24 - Adding a Cylinder to the scene with 10 vertices, setting Cap Fill Type to Nothing and rotating it 30 degrees in the z-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-25.jpg",
+                      "caption": "Image 25 - Scaling it down and moving it to the elbow area for the upper arm"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-26.jpg",
+                      "caption": "Image 26 - Selecting the top edge loop and rotating and scaling to match the widest part of the arm"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-27.jpg",
+                      "caption": "Image 27 - Extruding the top edge loop up again to the shoulder"
+                    }
+                  ]
+                },
+                "Extrude the bottom edge and scale it to match the thick part of the forearm (Image 28). Extrude down twice to the wrists, following the reference image (Image 29). [k]Numpad3[/k] into Side View, select the edge loops from elbow to wrist and [k]R[/k] to rotate them to match the reference (Image 30). Move the upper and lower arm parts into position from the side (Image 31).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-28.jpg",
+                      "caption": "Image 28 - Extruding the bottom edge and scaling it to match the thick part of the forearm"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-29.jpg",
+                      "caption": "Image 29 - Extruding down twice to the wrists following the reference image"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-30.jpg",
+                      "caption": "Image 30 - Going to Side View, selecting the edge loops from elbow to wrist and rotating them to match the reference"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-31.jpg",
+                      "caption": "Image 31 - Moving the upper and lower arm parts into position from the side"
+                    }
+                  ]
+                },
+                "Scale the edge loops of the lower arm to match the reference image (Image 32). Scale and rotate the edge loop by the bicep and scale out the top edge loop (Image 33). In Object Mode, [k]Ctrl-J[/k] to join the arm to the torso, with the torso as the active object, then select the edge in the middle of the arm and [k]G,G[/k] to slide it closer to the middle of the shoulder (Image 34). Merge the vertices at the top of the arm and bottom of the shoulder (Image 35). Merge the two other vertices on the upper arm (Image 36).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-32.jpg",
+                      "caption": "Image 32 - Scaling the edge loops of the lower arm to match the reference image"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-33.jpg",
+                      "caption": "Image 33 - Scaling and rotating the edge loop by the bicep and scaling out the top edge loop"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-34.jpg",
+                      "caption": "Image 34 - Going to Object Mode, joining the arm to the torso with the torso as the active object, then selecting the edge in the middle of the arm and sliding it closer to the middle of the shoulder"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-35.jpg",
+                      "caption": "Image 35 - Merging the vertices at the top of the arm and bottom of the shoulder"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-36.jpg",
+                      "caption": "Image 36 - Merging the two other vertices on the upper arm"
+                    }
+                  ]
+                },
+                "Move around to the front and add a vertical Loop Cut to the shoulder (Image 37). Join the shoulder and arm vertices in the front (Image 38) and back (Image 39). Select the vertex on the inner part of the upper arm and [k]G,Shift-Y[/k] to move it closer to the armpit area (Image 40).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-37.jpg",
+                      "caption": "Image 37 - Moving around to the front and adding a vertical Loop Cut to the shoulder"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-38.jpg",
+                      "caption": "Image 38 - Joining the shoulder and arm vertices in the front"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-39.jpg",
+                      "caption": "Image 39 - Joining the shoulder and arm vertices in the back"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-40.jpg",
+                      "caption": "Image 40 - Selecting the vertex on the inner part of the upper arm and moving it closer to the armpit area"
+                    }
+                  ]
+                },
+                "Select the edge along the inside of the torso and [k]Ctrl-B[/k] to bevel it (Image 41). [k]Numpad1,Numpad9[/k] to go to Rear View, and move the edges by the shoulder blade in (Image 42). Do the same in front (Image 43). Select the two bottom faces on the side and move them out (Image 44). [k]Numpad7,Numpad9[/k] to look from underneath and round out the shape of the hips and waist (Image 45).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-41.jpg",
+                      "caption": "Image 41 - Selecting the edge along the inside of the torso and beveling it"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-42.jpg",
+                      "caption": "Image 42 - Going to Rear View and moving the edges by the shoulder blade in"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-43.jpg",
+                      "caption": "Image 43 - Doing the same in front"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-44.jpg",
+                      "caption": "Image 44 - Selecting the two bottom faces on the side and moving them out"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-45.jpg",
+                      "caption": "Image 45 - Looking from underneath and rounding out the shape of the hips and waist"
+                    }
+                  ]
+                },
+                "To finish connecting the arm to the torso, go around to the back of the armpit, select the four rear vertices and [k]F[/k] to fill them with a face (Image 46). Move the vertices in the rear of the shoulder over (Image 47). Go around to the front, select the next four vertices and [k]F[/k] to fill them (Image 48). Fill in the last three vertices (Image 49).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-46.jpg",
+                      "caption": "Image 46 - Going around to the back of the armpit, selecting the four rear vertices and filling them with a face"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-47.jpg",
+                      "caption": "Image 47 - Moving the vertices in the rear of the shoulder over"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-48.jpg",
+                      "caption": "Image 48 - Going around to the front, selecting the next four vertices and filling them"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-49.jpg",
+                      "caption": "Image 49 - Filling in the last three vertices"
+                    }
+                  ]
+                },
                 {
                   "section": {
                     "header": "Ribs",
                     "content": [
-                      "Using the Knife Tool, make a cut from the armpit across the body, and shape the lower part of the chest (Image 50). Shape the chest from the side (Image 51). [k]Ctrl-R[/k] and add six Loop Cuts below the chest and move them close together (Image 52). Select every other edge loop and [k]S,Shift[/k] to scale them out slightly (Image 53). Select all edge loops this time and [k]S.Shift[/k] to scale them in slightly (Image 54)."
+                      "Using the Knife Tool, make a cut from the armpit across the body, and shape the lower part of the chest (Image 50). Shape the chest from the side (Image 51). [k]Ctrl-R[/k] and add six Loop Cuts below the chest and move them close together (Image 52). Select every other edge loop and [k]S,Shift[/k] to scale them out slightly (Image 53). Select all edge loops this time and [k]S.Shift[/k] to scale them in slightly (Image 54).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Markus Art/Characters/Zombie/zombie-50.jpg",
+                            "caption": "Image 50 - Using the Knife Tool to make a cut from the armpit across the body and shaping the lower part of the chest"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Zombie/zombie-51.jpg",
+                            "caption": "Image 51 - Shaping the chest from the side"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Zombie/zombie-52.jpg",
+                            "caption": "Image 52 - Adding six Loop Cuts below the chest and moving them close together"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Zombie/zombie-53.jpg",
+                            "caption": "Image 53 - Selecting every other edge loop and scaling them out slightly"
+                          },
+                          {
+                            "src": "Blender/Markus Art/Characters/Zombie/zombie-54.jpg",
+                            "caption": "Image 54 - Selecting all edge loops and scaling them in slightly"
+                          }
+                        ]
+                      }
                     ]
                   }
                 }
@@ -1072,7 +1336,199 @@
               "header": "III - The Hips",
               "content": [
                 "This section assumes a leg asset has been created from a Cylinder with 8 vertices.",
-                "[k]F[/k] to add a face between the front and back edges of the hips (Image 55). [k]Ctrl-R[/k] to add a Loop Cut (Image 56). In Side View, pull the edge down (Image 57). From the front, scale it to match the width of the crotch (Image 58). Add a Loop Cut to the front face and move the edge loop down and out (Image 59). Add another Loop Cut, scaled in slightly in the x-axis and pulled forward (Image 60). Join the leg to the torso, with the torso as the active object (Image 61). Join the vertices at the inseam together (Image 62). Continuing out, join the next two vertices in the front (Image 63). [k]2[/k] into Line Selection mode and select these two edges (Image 64), and [k]F[/k] to fill them (Image 65). In Side View, move the back three vertices down to start shaping the glutes (Image 66). Moving around to the front, select these two edges (Image 67) and [k]F[/k] to fill them in (Image 68). [k]Numpad1,Numpad9[/k] into Rear View and add a Loop Cut (Image 69). From the side, move the edge down (Image 70). Join the outside vertex of the edge the top of the leg (Image 71). Make the strip in the back narrow (Image 72). Add another Loop Cut in the back (Image 73). Pull the edge out to start rounding the butt (Image 74). Add another Loop Cut (Image 75) and move it out from the side (Image 76). Select these two edges (Image 77). Create a face between them (Image 78). Create a face next to it with the adjacent edges (Image 79). Create a Loop Cut in those new faces (Image 80). Go around to the side and move that edge loop out to match the contours (Image 81). Add a Loop Cut below that one and move it down (Image 82). Merge vertices with the strip in the back (Image 83). Around the side, select these two faces (Image 84) and fill them in (Image 85). Add a Loop Cut to the new face and move it out to the side (Image 86). Select these two vertices (Image 87) and merge them (Image 88). Select these two vertices (Image 89) and [k]M,A[/k] to merge at the center (Image 90). Fill in the last gap (Image 91)."
+                "[k]F[/k] to add a face between the front and back edges of the hips (Image 55). [k]Ctrl-R[/k] to add a Loop Cut (Image 56). In Side View, pull the edge down (Image 57). From the front, scale it to match the width of the crotch (Image 58).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-55.jpg",
+                      "caption": "Image 55 - Adding a face between the front and back edges of the hips"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-56.jpg",
+                      "caption": "Image 56 - Adding a Loop Cut"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-57.jpg",
+                      "caption": "Image 57 - Going to Side View and pulling the edge down"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-58.jpg",
+                      "caption": "Image 58 - Scaling from the front to match the width of the crotch"
+                    }
+                  ]
+                },
+                "Add a Loop Cut to the front face and move the edge loop down and out (Image 59). Add another Loop Cut, scaled in slightly in the x-axis and pulled forward (Image 60). Join the leg to the torso, with the torso as the active object (Image 61). Join the vertices at the inseam together (Image 62). Continuing out, join the next two vertices in the front (Image 63).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-59.jpg",
+                      "caption": "Image 59 - Adding a Loop Cut to the front face and moving the edge loop down and out"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-60.jpg",
+                      "caption": "Image 60 - Adding another Loop Cut, scaled in slightly in the x-axis and pulled forward"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-61.jpg",
+                      "caption": "Image 61 - Joining the leg to the torso with the torso as the active object"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-62.jpg",
+                      "caption": "Image 62 - Joining the vertices at the inseam together"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-63.jpg",
+                      "caption": "Image 63 - Joining the next two vertices in the front"
+                    }
+                  ]
+                },
+                "[k]2[/k] into Line Selection mode and select these two edges (Image 64), and [k]F[/k] to fill them (Image 65). In Side View, move the back three vertices down to start shaping the glutes (Image 66). Moving around to the front, select these two edges (Image 67) and [k]F[/k] to fill them in (Image 68).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-64.jpg",
+                      "caption": "Image 64 - Going into Edge Selection Mode and selecting these two edges"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-65.jpg",
+                      "caption": "Image 65 - Filling them in"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-66.jpg",
+                      "caption": "Image 66 - Going to Side View and moving the back three vertices down to start shaping the glutes"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-67.jpg",
+                      "caption": "Image 67 - Moving around to the front and selecting these two edges"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-68.jpg",
+                      "caption": "Image 68 - Filling them in"
+                    }
+                  ]
+                },
+                "[k]Numpad1,Numpad9[/k] into Rear View and add a Loop Cut (Image 69). From the side, move the edge down (Image 70). Join the outside vertex of the edge the top of the leg (Image 71). Make the strip in the back narrow (Image 72).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-69.jpg",
+                      "caption": "Image 69 - Going to Rear View and adding a Loop Cut"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-70.jpg",
+                      "caption": "Image 70 - Moving the edge down from the side"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-71.jpg",
+                      "caption": "Image 71 - Joining the outside vertex of the edge to the top of the leg"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-72.jpg",
+                      "caption": "Image 72 - Making the strip in the back narrow"
+                    }
+                  ]
+                },
+                "Add another Loop Cut in the back (Image 73). Pull the edge out to start rounding the butt (Image 74). Add another Loop Cut (Image 75) and move it out from the side (Image 76).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-73.jpg",
+                      "caption": "Image 73 - Adding another Loop Cut in the back"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-74.jpg",
+                      "caption": "Image 74 - Pulling the edge out to start rounding the butt"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-75.jpg",
+                      "caption": "Image 75 - Adding another Loop Cut"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-76.jpg",
+                      "caption": "Image 76 - Moving it out from the side"
+                    }
+                  ]
+                },
+                "Select these two edges (Image 77). Create a face between them (Image 78). Create a face next to it with the adjacent edges (Image 79). Create a Loop Cut in those new faces (Image 80).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-77.jpg",
+                      "caption": "Image 77 - Selecting these two edges"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-78.jpg",
+                      "caption": "Image 78 - Creating a face between them"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-79.jpg",
+                      "caption": "Image 79 - Creating a face next to it with the adjacent edges"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-80.jpg",
+                      "caption": "Image 80 - Creating a Loop Cut in those new faces"
+                    }
+                  ]
+                },
+                "Go around to the side and move that edge loop out to match the contours (Image 81). Add a Loop Cut below that one and move it down (Image 82). Merge vertices with the strip in the back (Image 83).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-81.jpg",
+                      "caption": "Image 81 - Going around to the side and moving that edge loop out to match the contours"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-82.jpg",
+                      "caption": "Image 82 - Adding a Loop Cut below that one and moving it down"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-83.jpg",
+                      "caption": "Image 83 - Merging vertices with the strip in the back"
+                    }
+                  ]
+                },
+                "Around the side, select these two faces (Image 84) and fill them in (Image 85). Add a Loop Cut to the new face and move it out to the side (Image 86). Select these two vertices (Image 87) and merge them (Image 88).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-84.jpg",
+                      "caption": "Image 84 - Going around to the side and selecting these two faces"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-85.jpg",
+                      "caption": "Image 85 - Filling them in"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-86.jpg",
+                      "caption": "Image 86 - Adding a Loop Cut to the new face and moving it out to the side"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-87.jpg",
+                      "caption": "Image 87 - Selecting these two vertices"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-88.jpg",
+                      "caption": "Image 88 - Merging them"
+                    }
+                  ]
+                },
+                "Select these two vertices (Image 89) and [k]M,A[/k] to merge at the center (Image 90). Fill in the last gap (Image 91).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-89.jpg",
+                      "caption": "Image 89 - Selecting these two vertices"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-90.jpg",
+                      "caption": "Image 90 - Merging them at the center"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Zombie/zombie-91.jpg",
+                      "caption": "Image 91 - Filling in the last gap"
+                    }
+                  ]
+                }
               ]
             }
           }
