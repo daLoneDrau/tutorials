@@ -3,7 +3,7 @@
   "sections": [
     {
       "Low Poly Female Mesh from Scratch": {
-        "tags": ["base mesh", "female", "t-pose"],
+        "tags": ["base mesh", "female", "t-pose", "head"],
         "key_concepts": [
           "[url]Low Poly Female Mesh from Scratch^^https://www.youtube.com/watch?v=xMkZ0o2M-dg[/url]",
           {
@@ -14,19 +14,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-01.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-01.jpg",
                       "caption": "Image 1 - Adding a cube to the scene, scaling it down and positioning it over the head"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-02.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-02.jpg",
                       "caption": "Image 2 - Going into Edit Mode and adding a Loop Cut down the middle"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-03.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-03.jpg",
                       "caption": "Image 3 - Going into X-Ray Mode and deleting the vertices on the left half of the cube"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-04.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-04.jpg",
                       "caption": "Image 4 - Adding a Mirror Modifier in the x-axis with Clipping enabled"
                     }
                   ]
@@ -35,19 +35,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-05.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-05.jpg",
                       "caption": "Image 5 - Scaling the cube in the x- and z-axes to match the reference image"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-06.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-06.jpg",
                       "caption": "Image 6 - Adding three Loop Cuts and moving the outer vertices to match the contours of the head"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-07.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-07.jpg",
                       "caption": "Image 7 - Going to Side View and adding three more Loop Cuts"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-08.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-08.jpg",
                       "caption": "Image 8 - Grabbing the two vertices on the top rear of the head and moving them down"
                     }
                   ]
@@ -56,19 +56,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-09.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-09.jpg",
                       "caption": "Image 9 - Moving around to the front of the head and moving the next two pairs into position"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-10.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-10.jpg",
                       "caption": "Image 10 - Continuing to move the next two pairs into position"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-11.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-11.jpg",
                       "caption": "Image 11 - Moving the three rear vertices by the ear out to the back of the skull and above the ear"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-12.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-12.jpg",
                       "caption": "Image 12 - Moving the vertex down to the bridge of the nose"
                     }
                   ]
@@ -77,19 +77,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-13.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-13.jpg",
                       "caption": "Image 13 - Moving the next three to the middle of the ear"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-14.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-14.jpg",
                       "caption": "Image 14 - Moving the vertex to the cheekbone"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-15.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-15.jpg",
                       "caption": "Image 15 - Moving the next vertex to the tip of the nose"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-16.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-16.jpg",
                       "caption": "Image 16 - Moving the next three to follow the slope of the jawline to the back of the head"
                     }
                   ]
@@ -98,19 +98,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-17.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-17.jpg",
                       "caption": "Image 17 - Moving the next two to line up with the front and back of the mouth"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-18.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-18.jpg",
                       "caption": "Image 18 - Moving the three on the bottom to shape the bottom of the jaw"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-19.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-19.jpg",
                       "caption": "Image 19 - Moving the last two to finish the front of the face"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-20.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-20.jpg",
                       "caption": "Image 20 - Going to Top View, selecting the Edge Loop at the rear and moving it to round off the back of the head"
                     }
                   ]
@@ -119,19 +119,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-21.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-21.jpg",
                       "caption": "Image 21 - Doing the same for the Edge Loop at the front of the face"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-22.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-22.jpg",
                       "caption": "Image 22 - Going to Front View and reviewing the shape"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-23.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-23.jpg",
                       "caption": "Image 23 - Selecting the bottom Edge Loop to fix the shape"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-24.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-24.jpg",
                       "caption": "Image 24 - Moving it down and out"
                     }
                   ]
@@ -140,15 +140,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-25.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-25.jpg",
                       "caption": "Image 25 - Reviewing the shape in Solid Viewport Shading Mode"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-26.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-26.jpg",
                       "caption": "Image 26 - Moving the vertex for the cheekbone back away from the nose"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-27.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-27.jpg",
                       "caption": "Image 27 - Going to Front View and changing to Wireframe Viewport Shading with X-Ray Mode turned off to see only the vertices for the front of the face"
                     }
                   ]
@@ -158,11 +158,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-28.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-28.jpg",
                       "caption": "Image 28 - Using the Knife Tool to cut a shape for the nose from the bridge down to the tip"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-29.jpg",
+                      "src": "Blender/TomGrave3D/characters/female base mesh/female_base-29.jpg",
                       "caption": "Image 29 - Moving the vertex at the side of the nose over to flatten the face"
                     }
                   ]
@@ -175,19 +175,19 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-30.jpg",
+                            "src": "Blender/TomGrave3D/characters/female base mesh/female_base-30.jpg",
                             "caption": "Image 30 - Using the Knife Tool to cut some edges in the faces near the ears"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-31.jpg",
+                            "src": "Blender/TomGrave3D/characters/female base mesh/female_base-31.jpg",
                             "caption": "Image 31 - Selecting the faces for the ear and extruding them out the side"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-32.jpg",
+                            "src": "Blender/TomGrave3D/characters/female base mesh/female_base-32.jpg",
                             "caption": "Image 32 - Selecting the three vertices in the front of the ear and Edge Sliding them back"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-33.jpg",
+                            "src": "Blender/TomGrave3D/characters/female base mesh/female_base-33.jpg",
                             "caption": "Image 33 - Edge Sliding the top and bottom vertices for the ear in the rear to make them thinner"
                           }
                         ]
@@ -196,15 +196,15 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-34.jpg",
+                            "src": "Blender/TomGrave3D/characters/female base mesh/female_base-34.jpg",
                             "caption": "Image 34 - Shaping the ear from the side"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-35.jpg",
+                            "src": "Blender/TomGrave3D/characters/female base mesh/female_base-35.jpg",
                             "caption": "Image 35 - Shaping the ear from the front"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/female base mesh/cartoonfemale_base_tree-36.jpg",
+                            "src": "Blender/TomGrave3D/characters/female base mesh/female_base-36.jpg",
                             "caption": "Image 36 - Moving in the vertex behind the ear so the middle isn't too fat"
                           }
                         ]
