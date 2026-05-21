@@ -1031,10 +1031,271 @@
             "section": {
               "header": "I - The Torso",
               "content": [
-                "",
+                "Add a Cylinder to the scene with 12 vertices and set [k]Cap Fill Type > Nothing[/k] (Image 1). Delete the left half and add a Mirror Modifier in the x-axis with Clipping enabled (Image 2). Move the cylinder to cover the reference images from the armpit to the bottom of the ribcage (Image 3). Extrude the top edge loop to the top of the shoulders (Image 4).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-01.jpg",
+                      "caption": "Image 1 - Adding a Cylinder to the scene with 12 vertices and setting Cap Fill Type to Nothing"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-02.jpg",
+                      "caption": "Image 2 - Deleting the left half and adding a Mirror Modifier in the x-axis with Clipping enabled"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-03.jpg",
+                      "caption": "Image 3 - Moving the cylinder to cover the reference images from the armpit to the bottom of the ribcage"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-04.jpg",
+                      "caption": "Image 4 - Extruding the top edge loop to the top of the shoulders"
+                    }
                   ]
+                },
+                "Extrude up again to the base of the neck and then scale the vertices in, trying to maintain a circular shape (use [k]LoopTools > Circle[/k] if needed) (Image 5). Extrude up one more time to the base of the skull (Image 6). Extrude down to the bottom of the waist (Image 7). [k]Numpad3[/k] into Side View, [k]Alt-RMB[/k] the top face loop for the neck and rotate and move them into position to match the reference (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-05.jpg",
+                      "caption": "Image 5 - Extruding up again to the base of the neck and scaling the vertices in while maintaining a circular shape"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-06.jpg",
+                      "caption": "Image 6 - Extruding up one more time to the base of the skull"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-07.jpg",
+                      "caption": "Image 7 - Extruding down to the bottom of the waist"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-08.jpg",
+                      "caption": "Image 8 - Going to Side View, selecting the top face loop for the neck and rotating and moving them into position to match the reference"
+                    }
+                  ]
+                },
+                "Select the edge loop below the neck, [k]R[/k], [k]S,Y[/k], [k]G[/k] to match the reference (Image 9). Scale the edge loop by the chest down and make sure it lines up with the back (Image 10). Scale down the edge loops by the waist and hips and rotate them (Image 11). Extrude two side faces out for the shoulders (Image 12).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-09.jpg",
+                      "caption": "Image 9 - Selecting the edge loop below the neck, rotating, scaling in the y-axis, and moving to match the reference"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-10.jpg",
+                      "caption": "Image 10 - Scaling down the edge loop by the chest and making sure it lines up with the back"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-11.jpg",
+                      "caption": "Image 11 - Scaling down the edge loops by the waist and hips and rotating them"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-12.jpg",
+                      "caption": "Image 12 - Extruding two side faces out for the shoulders"
+                    }
+                  ]
+                },
+                "Select the face loop around the shoulders and [k]G,Y[/k] to move them back (Image 13). Select the edge in the back of the shoulder and [k]G,Y[/k] to move it out so the shoulder doesn't appear to jut out as much (Image 14). Do the same in the front (Image 15). Select the horizontal edges around the shoulder and move them to shape the shoulders (Image 16).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-13.jpg",
+                      "caption": "Image 13 - Selecting the face loop around the shoulders and moving them back in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-14.jpg",
+                      "caption": "Image 14 - Selecting the edge in the back of the shoulder and moving it out in the y-axis so the shoulder doesn't appear to jut out as much"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-15.jpg",
+                      "caption": "Image 15 - Doing the same in the front"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-16.jpg",
+                      "caption": "Image 16 - Selecting the horizontal edges around the shoulder and moving them to shape the shoulders"
+                    }
+                  ]
+                },
+                "Delete the faces from the bottom of the shoulder (Image 17). Adjust the topology by the chest to bring the vertex by the armpit and nipples down, and move up the vertex in the center of the chest (Image 18). Select the bottom edge loop and rotate slightly (Image 19). Repeat for the edge loop above (Image 20).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-17.jpg",
+                      "caption": "Image 17 - Deleting the faces from the bottom of the shoulder"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-18.jpg",
+                      "caption": "Image 18 - Adjusting the topology by the chest to bring the vertex by the armpit and nipples down and moving up the vertex in the center of the chest"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-19.jpg",
+                      "caption": "Image 19 - Selecting the bottom edge loop and rotating slightly"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-20.jpg",
+                      "caption": "Image 20 - Repeating for the edge loop above"
+                    }
+                  ]
+                },
+                "Extrude the bottom edge halfway loop down the hips (Image 21). Add a vertical Loop Cut (Image 22). [k]Numpad7,Numpad9[/k] and [k]G,Y[/k] to pull the new edges forward slightly (Image 23). Go to the edge in the front of the neck and [k]X,I[/k] to dissolve it (Image 24).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-21.jpg",
+                      "caption": "Image 21 - Extruding the bottom edge loop down halfway through the hips"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-22.jpg",
+                      "caption": "Image 22 - Adding a vertical Loop Cut"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-23.jpg",
+                      "caption": "Image 23 - Going to Bottom View and pulling the new edges forward slightly in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-24.jpg",
+                      "caption": "Image 24 - Going to the edge in the front of the neck and dissolving it"
+                    }
+                  ]
+                },
+                "[k]Numpad1,Numpad9[/k] to go around to the rear and add a Loop Cut (Image 25). [k]Numpad7[/k] into Top View and [k]G,Y[/k] to move the edge out slightly (Image 26). Delete the edge in the neck (Image 27). Slide the back edges in towards the spine (Image 28).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-25.jpg",
+                      "caption": "Image 25 - Going around to the rear and adding a Loop Cut"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-26.jpg",
+                      "caption": "Image 26 - Going to Top View and moving the edge out slightly in the y-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-27.jpg",
+                      "caption": "Image 27 - Deleting the edge in the neck"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-28.jpg",
+                      "caption": "Image 28 - Sliding the back edges in towards the spine"
+                    }
+                  ]
+                },
+                "Move the vertices by the shoulder blades down in the z-axis (Image 29). Add a Loop cut to the mid-chest (Image 30). Scale the edge loop out in the x- and y-axes (Image 31). Select the vertices in the back spine area and [k]G,Y,Shift[/k] to bring them in slightly (Image 32).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-29.jpg",
+                      "caption": "Image 29 - Moving the vertices by the shoulder blades down in the z-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-30.jpg",
+                      "caption": "Image 30 - Adding a Loop Cut to the mid-chest"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-31.jpg",
+                      "caption": "Image 31 - Scaling the edge loop out in the x- and y-axes"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-32.jpg",
+                      "caption": "Image 32 - Selecting the vertices in the back spine area and bringing them in slightly"
+                    }
+                  ]
+                },
+                "Add a Loop Cut to the waist, below the breasts (Image 33). In the front, shape the vertices around the breast area into a teardrop (Image 34). Extrude the faces (Image 35). Scale in the extruded faces and move them down (Image 36).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-33.jpg",
+                      "caption": "Image 33 - Adding a Loop Cut to the waist below the breasts"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-34.jpg",
+                      "caption": "Image 34 - Shaping the vertices around the breast area into a teardrop from the front"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-35.jpg",
+                      "caption": "Image 35 - Extruding the faces"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-36.jpg",
+                      "caption": "Image 36 - Scaling in the extruded faces and moving them down"
+                    }
+                  ]
+                },
+                "[k]Shift-Space > Ctrl-1[/k] to use the Smooth Tool, grab the yellow handle and smooth the vertices of the front faces to about 0.52, and then [k]Shift-Space > B[/k] to exit (Image 37). [k]G[/k] to move the front of the breast forward (Image 38). Go into Front View and use the Smooth Tool to smooth the breasts again, watching the results (Image 39). Scale up the front faces (Image 40).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-37.jpg",
+                      "caption": "Image 37 - Using the Smooth Tool to smooth the vertices of the front faces to about 0.52"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-38.jpg",
+                      "caption": "Image 38 - Moving the front of the breast forward"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-39.jpg",
+                      "caption": "Image 39 - Going into Front View and using the Smooth Tool to smooth the breasts again while watching the results"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-40.jpg",
+                      "caption": "Image 40 - Scaling up the front faces"
+                    }
+                  ]
+                },
+                "Move them in slightly on the x-axis (Image 41). Move the inner vertex over (Image 42). Move the lower vertex down (Image 43). Select the three vertices across the breast and move them out slightly (Image 44).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-41.jpg",
+                      "caption": "Image 41 - Moving them in slightly on the x-axis"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-42.jpg",
+                      "caption": "Image 42 - Moving the inner vertex over"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-43.jpg",
+                      "caption": "Image 43 - Moving the lower vertex down"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-44.jpg",
+                      "caption": "Image 44 - Selecting the three vertices across the breast and moving them out slightly"
+                    }
+                  ]
+                },
+                "Move the three vertices above them in (Image 45). Add a Loop Cut around the breasts and scale it up (Image 46). Rotate around to underneath, select the vertex by the nipple and move it out (Image 47). Add a material, render, and have fun (Image 48)!",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-45.jpg",
+                      "caption": "Image 45 - Moving the three vertices above them in"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-46.jpg",
+                      "caption": "Image 46 - Adding a Loop Cut around the breasts and scaling it up"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-47.jpg",
+                      "caption": "Image 47 - Rotating to underneath, selecting the vertex by the nipple and moving it out"
+                    },
+                    {
+                      "src": "Blender/Markus Art/Characters/Female Orc/female_base-48.jpg",
+                      "caption": "Image 48 - Adding a material, rendering, and enjoying the result"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Female Torso",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Markus Art/female_base_mesh.glb",
+                    "canvas_number": 1
+                  }
                 }
               ]
             }
