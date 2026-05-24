@@ -1,166 +1,7 @@
 {
   "sections": [
     {
-      "Arch": {
-        "tags": [
-          "arch",
-          "spin tool"
-        ],
-        "key_concepts": [
-          "[url]Get Good at Blender - Practical challenges to improve you skills!^^https://www.youtube.com/watch?v=V-NF_m1RMaw[/url]",
-          "Using the spin tool for creating arches.",
-          {
-            "section": {
-              "header": "Start With A Cube",
-              "content": [
-                "Make a column, and finish by insetting the top face (Image 1).",
-                {
-                  "image": [
-                    {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/arch/arch-01.jpg",
-                      "caption": "Image 1 - Making a column for the arch"
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "section": {
-              "header": "Spin Tool",
-              "content": [
-                {
-                  "ref-table": [
-                    [{"th": "Mode:"}, {"td": "Edit Mode"}],
-                    [{"th": "Menu:"}, {"td": "[kbd]Mesh > Extrude > Spin[/kbd]"}],
-                    [{"th": "Tool:"}, {"td": "[kbd]Toolbar > Spin[/kbd]"}]
-                  ]
-                },
-                "The Spin tool extrudes (or duplicates it if the selection is manifold) the selected elements, rotating around a specific point and axis.",
-                "Use the tool to create the sort of objects that you would produce on a lathe (this tool is often called \"lathe\" tool or \"sweep\" tool in the literature, for this reason). In fact, it does a sort of circular extrusion of your selected elements, centered on the 3D cursor, and around the axis perpendicular to the working view...",
-                [
-                  "The point of view will determine around which axis the extrusion spins...",
-                  "The position of the 3D cursor will be the center of the rotation."
-                ],
-                {
-                  "section": {
-                    "header": "Tool Settings",
-                    "content": [
-                      {
-                        "section": {
-                          "header": "Steps",
-                          "content": [
-                            "Specifies how many copies will be extruded along the \"sweep\"."
-                          ]
-                        }
-                      },
-                      {
-                        "section": {
-                          "header": "Use Duplicates",
-                          "content": [
-                            "When enabled, will keep the original selected elements as separated islands in the mesh (i.e. unlinked to the result of the spin extrusion)."
-                          ]
-                        }
-                      },
-                      {
-                        "section": {
-                          "header": "Axis",
-                          "content": [
-                            "Specifies the axis to use as the pivot of the spin operation."
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "section": {
-              "header": "Spinning an Arch",
-              "content": [
-                "In Edit Mode, select the inset face. Click the Spin tool on the right (Image 2). We want the spin to go 90&deg; around the y-axis (Image 3). But this doesn't look right. The Spin Tool uses the 3D cursor for the center of the rotation. To fix this, undo the last action, and revert to the Box Select tool. In Object mode, move the column into position where you want the center of rotation to be. In Edit Mode, select the inset face and [k]Shift-S,T[/k] to move the 3D cursor to the top of the column. Then move your column back to where it was. Now we can do the same spin, with the center of rotation where we need it to be (Image 4). Add a Mirror Modifier to finish it off.",
-                {
-                  "image": [
-                    {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/arch/arch-02.jpg",
-                      "caption": "Image 2 - Bringing up the Spin Tool"
-                    },
-                    {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/arch/arch-03.jpg",
-                      "caption": "Image 3 - Doing a bad spin with the center of rotation in the wrong spot"
-                    },
-                    {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/arch/arch-04.jpg",
-                      "caption": "Image 4 - Spinning a 90$deg; arch"
-                    },
-                    {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-04.jpg",
-                      "caption": "Image 4 - Adding two more loop cuts"
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "section": {
-              "header": "Arch",
-              "content": [
-                {
-                  "model": {
-                    "type": "glb",
-                    "path": "Blender/Grant Abbitt/MasterBlender2025/arch.glb",
-                    "canvas_number": 1
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "Blender Tools TBD": {
-        "tags": [
-          "mirror modifier", "inset", "extrude", "bevel", "beginner"
-        ],
-        "key_concepts": [
-          "[url]Beginner Exercises | Part 2 | Blender 2.8 & onwards^^https://www.youtube.com/watch?v=51SdWI-yof4[/url]",
-          "Becoming familiar with several Blender techniques.",
-          {
-            "section": {
-              "header": "TBD",
-              "content": [
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "Chess Piece TBD": {
-        "tags": [
-          "chess",
-          "screw modifier",
-          "modifier"
-        ],
-        "key_concepts": [
-          "[url]Get Good at Blender - Easy Chess Piece^^https://www.youtube.com/watch?v=IY3nH3_RiDU[/url]",
-          "Using the screw modifier.",
-          {
-            "section": {
-              "header": "TBD",
-              "content": [
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "Dining Room TBD": {
+      "1 - Dining Room": {
         "tags": [
           "chair", "beginner"
         ],
@@ -326,7 +167,63 @@
       }
     },
     {
-      "Lego Bricks TBD": {
+      "2 - Blender Tools TBD": {
+        "tags": [
+          "mirror modifier", "inset", "extrude", "bevel", "beginner"
+        ],
+        "key_concepts": [
+          "[url]Beginner Exercises | Part 2 | Blender 2.8 & onwards^^https://www.youtube.com/watch?v=51SdWI-yof4[/url]",
+          "Becoming familiar with several Blender techniques.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "3 - Weapons TBD": {
+        "tags": [
+          "sword", "shield", "barrel","beginner"
+        ],
+        "key_concepts": [
+          "[url]Beginner Exercises | Part 3 | Low Poly Weapons | Blender 2.8^^https://www.youtube.com/watch?v=-0tMeMZpeXE[/url]",
+          "Building up your Blender skills by creating low poly weapons.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "4 - Stone Wall TBD": {
+        "tags": [
+          "stone",
+          "wall",
+          "pier", "dock", "beginner"
+        ],
+        "key_concepts": [
+          "[url]Beginner Exercises | Part 4 | Low Poly Buildings | Blender 2.8^^https://www.youtube.com/watch?v=Syq6JjMdyhI[/url]",
+          "Building up your Blender skills by creating a stone wall and pier.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "6 - Lego Bricks TBD": {
         "tags": [
           "lego", "beginner"
         ],
@@ -344,7 +241,27 @@
       }
     },
     {
-      "Metal Support Frame TBD": {
+      "25 - Chess Piece TBD": {
+        "tags": [
+          "chess",
+          "screw modifier",
+          "modifier"
+        ],
+        "key_concepts": [
+          "[url]Get Good at Blender - Easy Chess Piece^^https://www.youtube.com/watch?v=IY3nH3_RiDU[/url]",
+          "Using the screw modifier.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "31 - Metal Support Frame TBD": {
         "tags": ["frame", "auto mirror", "solidify", "modifier"],
         "key_concepts": [
           "[url]Get Good at Blender Low poly Metal Structures^^https://www.youtube.com/watch?v=WeFPZAU-gXU[/url]",
@@ -448,37 +365,120 @@
       }
     },
     {
-      "Stone Wall TBD": {
+      "Arch": {
         "tags": [
-          "stone",
-          "wall",
-          "pier", "dock", "beginner"
+          "arch",
+          "spin tool"
         ],
         "key_concepts": [
-          "[url]Beginner Exercises | Part 4 | Low Poly Buildings | Blender 2.8^^https://www.youtube.com/watch?v=Syq6JjMdyhI[/url]",
-          "Building up your Blender skills by creating a stone wall and pier.",
+          "[url]Get Good at Blender - Practical challenges to improve you skills!^^https://www.youtube.com/watch?v=V-NF_m1RMaw[/url]",
+          "Using the spin tool for creating arches.",
           {
             "section": {
-              "header": "TBD",
+              "header": "Start With A Cube",
               "content": [
+                "Make a column, and finish by insetting the top face (Image 1).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/arch/arch-01.jpg",
+                      "caption": "Image 1 - Making a column for the arch"
+                    }
+                  ]
+                }
               ]
             }
-          }
-        ]
-      }
-    },
-    {
-      "Weapons TBD": {
-        "tags": [
-          "sword", "shield", "beginner"
-        ],
-        "key_concepts": [
-          "[url]Beginner Exercises | Part 3 | Low Poly Weapons | Blender 2.8^^https://www.youtube.com/watch?v=-0tMeMZpeXE[/url]",
-          "Building up your Blender skills by creating low poly weapons.",
+          },
           {
             "section": {
-              "header": "TBD",
+              "header": "Spin Tool",
               "content": [
+                {
+                  "ref-table": [
+                    [{"th": "Mode:"}, {"td": "Edit Mode"}],
+                    [{"th": "Menu:"}, {"td": "[kbd]Mesh > Extrude > Spin[/kbd]"}],
+                    [{"th": "Tool:"}, {"td": "[kbd]Toolbar > Spin[/kbd]"}]
+                  ]
+                },
+                "The Spin tool extrudes (or duplicates it if the selection is manifold) the selected elements, rotating around a specific point and axis.",
+                "Use the tool to create the sort of objects that you would produce on a lathe (this tool is often called \"lathe\" tool or \"sweep\" tool in the literature, for this reason). In fact, it does a sort of circular extrusion of your selected elements, centered on the 3D cursor, and around the axis perpendicular to the working view...",
+                [
+                  "The point of view will determine around which axis the extrusion spins...",
+                  "The position of the 3D cursor will be the center of the rotation."
+                ],
+                {
+                  "section": {
+                    "header": "Tool Settings",
+                    "content": [
+                      {
+                        "section": {
+                          "header": "Steps",
+                          "content": [
+                            "Specifies how many copies will be extruded along the \"sweep\"."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Use Duplicates",
+                          "content": [
+                            "When enabled, will keep the original selected elements as separated islands in the mesh (i.e. unlinked to the result of the spin extrusion)."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Axis",
+                          "content": [
+                            "Specifies the axis to use as the pivot of the spin operation."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Spinning an Arch",
+              "content": [
+                "In Edit Mode, select the inset face. Click the Spin tool on the right (Image 2). We want the spin to go 90&deg; around the y-axis (Image 3). But this doesn't look right. The Spin Tool uses the 3D cursor for the center of the rotation. To fix this, undo the last action, and revert to the Box Select tool. In Object mode, move the column into position where you want the center of rotation to be. In Edit Mode, select the inset face and [k]Shift-S,T[/k] to move the 3D cursor to the top of the column. Then move your column back to where it was. Now we can do the same spin, with the center of rotation where we need it to be (Image 4). Add a Mirror Modifier to finish it off.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/arch/arch-02.jpg",
+                      "caption": "Image 2 - Bringing up the Spin Tool"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/arch/arch-03.jpg",
+                      "caption": "Image 3 - Doing a bad spin with the center of rotation in the wrong spot"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/arch/arch-04.jpg",
+                      "caption": "Image 4 - Spinning a 90$deg; arch"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-04.jpg",
+                      "caption": "Image 4 - Adding two more loop cuts"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Arch",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/MasterBlender2025/arch.glb",
+                    "canvas_number": 1
+                  }
+                }
               ]
             }
           }
