@@ -282,19 +282,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-01.jpg",
+                      "src": "Blender/Grant Abbitt/Challenges/31/low_poly_metal-01.jpg",
                       "caption": "Image 1 - After auto mirroring"
                     },
                     {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-02.jpg",
+                      "src": "Blender/Grant Abbitt/Challenges/31/low_poly_metal-02.jpg",
                       "caption": "Image 2 - Removing the sides"
                     },
                     {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-03.jpg",
+                      "src": "Blender/Grant Abbitt/Challenges/31/low_poly_metal-03.jpg",
                       "caption": "Image 3 - Adding two loop cuts"
                     },
                     {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-04.jpg",
+                      "src": "Blender/Grant Abbitt/Challenges/31/low_poly_metal-04.jpg",
                       "caption": "Image 4 - Adding two more loop cuts"
                     }
                   ]
@@ -303,15 +303,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-05.jpg",
+                      "src": "Blender/Grant Abbitt/Challenges/31/low_poly_metal-05.jpg",
                       "caption": "Image 5 - Removing faces and closing off the corner"
                     },
                     {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-06.jpg",
+                      "src": "Blender/Grant Abbitt/Challenges/31/low_poly_metal-06.jpg",
                       "caption": "Image 6 - Extruding to the corner"
                     },
                     {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-07.jpg",
+                      "src": "Blender/Grant Abbitt/Challenges/31/low_poly_metal-07.jpg",
                       "caption": "Image 7 - Adding topology to extrude all the way into the center"
                     }
                   ]
@@ -327,11 +327,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-08.jpg",
+                      "src": "Blender/Grant Abbitt/Challenges/31/low_poly_metal-08.jpg",
                       "caption": "Image 8 - Moving the 3D cursor to a selected vertex"
                     },
                     {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-09.jpg",
+                      "src": "Blender/Grant Abbitt/Challenges/31/low_poly_metal-09.jpg",
                       "caption": "Image 9 - Duplicating the topology for the adjacent side"
                     }
                   ]
@@ -354,7 +354,7 @@
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal.glb",
+                    "path": "Blender/Grant Abbitt/Challenges/low_poly_metal.glb",
                     "canvas_number": 1
                   }
                 }
@@ -460,7 +460,7 @@
                       "caption": "Image 4 - Spinning a 90$deg; arch"
                     },
                     {
-                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-04.jpg",
+                      "src": "Blender/Grant Abbitt/Challenges/31/low_poly_metal-04.jpg",
                       "caption": "Image 4 - Adding two more loop cuts"
                     }
                   ]
