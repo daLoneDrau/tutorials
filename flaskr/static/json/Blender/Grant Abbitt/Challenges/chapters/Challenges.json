@@ -169,8 +169,44 @@
           "Easy and simple beginner exercises to help you understand the different ways of modelling shapes.",
           {
             "section": {
-              "header": "TBD",
+              "header": "Table",
               "content": [
+                {
+                  "url": {
+                    "href": "https://www.dimensions.com/collection/dining-tables",
+                    "html": "Dining Tables - Dimensions.com"
+                  }
+                },
+                
+                "[k]Shift-A[/k] and add a cube to the scene. In Object Mode, check the box for [k]Options > Affect only Origins[/k], and then [k]G,Z[/k] to move the cube's origin to its bottom. Turn this off and [k]G,Z[/k] to move the cube to the origin.",
+                "[k]S[/k] until the cube has the dimensions you want (75cm H X 74cm W X 118cm L).",
+                "[k]Tab[/k] into Edit Mode and [k]Numpad7[/k] into Top View. [k]Ctrl-R[/k] to add a loop cut in the middle along the x- and y-axes. Delete the vertices in three of the four quadrants. [k]Tab[/k] into Object Mode and add a Mirror Modifier.",
+                "[k]Numpad1[/k] into Front View. [k]Tab[/k] into Edit Mode, [k]Alt-Z[/k] to turn on X-Ray Mode, [k]1[/k] for Vertex Mode, and grab the vertices at the bottom and move them up to set the thickness of the table top (Image 1).",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/MasterBlender2025/1/tables-01.jpg",
+                    "caption": "Image 1 - The table top"
+                  }
+                },
+                "[k]Numpad7[/k] into Top View, [k]3[/k] into Face Mode and select the top face. [k]H[/k] to hide it. [k]Numpad9[/k] to go into the opposite view. [k]Ctrl-R[/k] to add two horizontal and two vertical loop cuts. Move these into position to mark the border under the table and where the legs will come out (Image 2). [k]3[/k] into Face Mode, [k]Numpad1[/k] into Front View, and extrude the faces down. Select the face for the leg and extrude it all the way down to the floor (Image 3). [k]Ctrl-R[/k] to add a Loop Cut to the leg and slide it towards the bottom. Select the edge facing the center of the table and [k]G,X[/k] to move it out, narrowing the bottom of the leg (Image 4).",
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/MasterBlender2025/1/tables-02.jpg",
+                    "caption": "Image 2 - Making edge loops for the border underneath and legs"
+                  }
+                },
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/MasterBlender2025/1/tables-03.jpg",
+                    "caption": "Image 3 - Extruding the legs"
+                  }
+                },
+                {
+                  "image": {
+                    "src": "Blender/Grant Abbitt/MasterBlender2025/1/tables-03.jpg",
+                    "caption": "Image 4 - Shaping the legs"
+                  }
+                }
               ]
             }
           }
@@ -189,6 +225,110 @@
             "section": {
               "header": "TBD",
               "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Metal Support Frame TBD": {
+        "tags": ["frame", "auto mirror", "solidify", "modifier"],
+        "key_concepts": [
+          "[url]Get Good at Blender Low poly Metal Structures^^https://www.youtube.com/watch?v=WeFPZAU-gXU[/url]",
+          "Make a metal support structure for a wasteland scene.",
+          {
+            "section": {
+              "header": "Auto Mirror",
+              "content": [
+                "Go to [k]Edit > Preferences[/k] and search for the Auto Mirror tool and enable it. To use the Auto Mirror tool, [k]N[/k] and go to the Edit tab. Go under Auto Mirror. Make sure Apply Mirror isn't checked. Click the button for the axis you want to apply the mirror, and then press AutoMirror. This will add a mirror in the selected axis as well as applying cuts."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Start With A Cube",
+              "content": [
+                "[k]Shift-A[/k] and add a cube to the scene. Using the Auto Mirror tool, add mirroring in the x-, y-, and z-axes (Image 1). We don't want three mirror modifiers applied, so after the cuts are made, delete the two additional modifiers and apply the y- and z-axes modifiers to the first one. [k]3[/k] into Face Mode and delete the faces on the sides (Image 2). [k]Numpad3[/k] into Side View, and [k]Ctrl-R[/k] to add two loop cuts and move them 0.2m from the edge (Image 3). Add a second set of loop cuts 0.15m from the first set (Image 4).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-01.jpg",
+                      "caption": "Image 1 - After auto mirroring"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-02.jpg",
+                      "caption": "Image 2 - Removing the sides"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-03.jpg",
+                      "caption": "Image 3 - Adding two loop cuts"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-04.jpg",
+                      "caption": "Image 4 - Adding two more loop cuts"
+                    }
+                  ]
+                },
+                "Select the inner faces and delete them. [k]1[/k] into Vertex Mode and select vertices in the upper right corner and [k]F[/k] to fill them in (Image 5). [k]2[/k] into Edge Mode, select the edge at the corner and [k]E[/k] to extrude it to the center (Image 6). Add a Loop Cut down that middle face and then extrude the center vertex down to the center of the structure (Image 7). Make sure clipping is on in your Mirror Modifier.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-05.jpg",
+                      "caption": "Image 5 - Removing faces and closing off the corner"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-06.jpg",
+                      "caption": "Image 6 - Extruding to the corner"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-07.jpg",
+                      "caption": "Image 7 - Adding topology to extrude all the way into the center"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Duplicating to the Adjacent Side",
+              "content": [
+                "In Vertex Mode, select the top-right vertex. [k]Shift-S,T[/k] to move the 3D cursor to the selection (Image 8). Turn off clipping on the modifier. Select all vertices and [k]Shift-D,R,Z,-90[/k] to make a copy and rotate it to the adjacent side (Image 9). Check the normals and [k]Alt-N,F[/k] to flip them if needed. FInally, [k]A,M,B[/k] to remove any extra vertices.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-08.jpg",
+                      "caption": "Image 8 - Moving the 3D cursor to a selected vertex"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal/low_poly_metal-09.jpg",
+                      "caption": "Image 9 - Duplicating the topology for the adjacent side"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Solidifying",
+              "content": [
+                "In Object Mode, add a Solidify Modifier. Make sure to check the box for Even Thickness."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Metal Structure",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/MasterBlender2025/low_poly_metal.glb",
+                    "canvas_number": 1
+                  }
+                }
               ]
             }
           }
