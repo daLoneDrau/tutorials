@@ -177,7 +177,6 @@
                     "html": "Dining Tables - Dimensions.com"
                   }
                 },
-                
                 "[k]Shift-A[/k] and add a cube to the scene. In Object Mode, check the box for [k]Options > Affect only Origins[/k], and then [k]G,Z[/k] to move the cube's origin to its bottom. Turn this off and [k]G,Z[/k] to move the cube to the origin.",
                 "[k]S[/k] until the cube has the dimensions you want (75cm H X 74cm W X 118cm L).",
                 "[k]Tab[/k] into Edit Mode and [k]Numpad7[/k] into Top View. [k]Ctrl-R[/k] to add a loop cut in the middle along the x- and y-axes. Delete the vertices in three of the four quadrants. [k]Tab[/k] into Object Mode and add a Mirror Modifier.",
@@ -190,21 +189,57 @@
                 },
                 "[k]Numpad7[/k] into Top View, [k]3[/k] into Face Mode and select the top face. [k]H[/k] to hide it. [k]Numpad9[/k] to go into the opposite view. [k]Ctrl-R[/k] to add two horizontal and two vertical loop cuts. Move these into position to mark the border under the table and where the legs will come out (Image 2). [k]3[/k] into Face Mode, [k]Numpad1[/k] into Front View, and extrude the faces down. Select the face for the leg and extrude it all the way down to the floor (Image 3). [k]Ctrl-R[/k] to add a Loop Cut to the leg and slide it towards the bottom. Select the edge facing the center of the table and [k]G,X[/k] to move it out, narrowing the bottom of the leg (Image 4).",
                 {
-                  "image": {
-                    "src": "Blender/Grant Abbitt/MasterBlender2025/1/tables-02.jpg",
-                    "caption": "Image 2 - Making edge loops for the border underneath and legs"
+                  "image": [
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/1/tables-02.jpg",
+                      "caption": "Image 2 - Making edge loops for the border underneath and legs"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/1/tables-03.jpg",
+                      "caption": "Image 3 - Extruding the legs"
+                    },
+                    {
+                      "src": "Blender/Grant Abbitt/MasterBlender2025/1/tables-03.jpg",
+                      "caption": "Image 4 - Shaping the legs"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Chair",
+              "content": [
+                {
+                  "url": {
+                    "href": "https://www.dimensions.com/element/ikea-stefan-chair",
+                    "html": "Ikea Stefan Chair - Dimensions.com"
                   }
                 },
+                "[k]Shift-A[/k] and add a cube to the scene. In Object Mode, check the box for [k]Options > Affect only Origins[/k], and then [k]G,Z[/k] to move the cube's origin to its bottom. Turn this off and [k]G,Z[/k] to move the cube to the origin.",
+                "[k]S[/k] until the cube has the dimensions you want (90cm H X 42cm W X 49cm L).",
+                "[k]Tab[/k] into Edit Mode and [k]Numpad7[/k] into Top View. [k]Ctrl-R[/k] to add a loop cut in the middle along the y-axis. Delete the vertices in left half. [k]Tab[/k] into Object Mode and add a Mirror Modifier.",
+                "[k]Numpad1[/k] into Front View. [k]Tab[/k] into Edit Mode, [k]Alt-Z[/k] to turn on X-Ray Mode, [k]1[/k] for Vertex Mode, and grab the vertices at the bottom and move them up to set the height of the seat (Image 1).",
                 {
                   "image": {
-                    "src": "Blender/Grant Abbitt/MasterBlender2025/1/tables-03.jpg",
-                    "caption": "Image 3 - Extruding the legs"
+                    "src": "Blender/Grant Abbitt/MasterBlender2025/1/tables-01.jpg",
+                    "caption": "Image 4 - The table top"
                   }
                 },
+                "Follow the same general steps as above to shape the chair. Nothing complicated."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Table and Chairs",
+              "content": [
                 {
-                  "image": {
-                    "src": "Blender/Grant Abbitt/MasterBlender2025/1/tables-03.jpg",
-                    "caption": "Image 4 - Shaping the legs"
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Grant Abbitt/MasterBlender2025/table and chairs.glb",
+                    "canvas_number": 1
                   }
                 }
               ]
