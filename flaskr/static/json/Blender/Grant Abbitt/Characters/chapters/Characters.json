@@ -1,0 +1,59 @@
+{
+  "sections": [
+    {
+      "Anime Girl TBD": {
+        "tags": [
+          "female", "base mesh"
+        ],
+        "key_concepts": [
+          "[url]Low Poly | Anime Girl | Blender 2.8^^https://www.youtube.com/watch?v=E5HnnGcGvmc[/url]",
+          "Creating a low poly anime girl character using box modelling techniques.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Rabbit TBD": {
+        "tags": [
+          "animal", "rabbit"
+        ],
+        "key_concepts": [
+          "[url]How to Create, Rig & Animate a Low Poly Rabbit^^https://www.youtube.com/watch?v=iMar3keWaUo[/url]",
+          "Learn the process of making a low poly rabbit from nothing right through to animations.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Rogue TBD": {
+        "tags": [
+          "female", "human", "head", "base mesh",
+          "rogue"
+        ],
+        "key_concepts": [
+          "[url]Creating a Game Character - The Rogue - Blender 3^^https://www.youtube.com/watch?v=BJyFd0uGwFk[/url]",
+          "Making a fully animated, game ready, low poly rogue character.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
