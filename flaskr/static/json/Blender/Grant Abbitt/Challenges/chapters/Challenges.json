@@ -233,6 +233,83 @@
           },
           {
             "section": {
+              "header": "Bowl",
+              "content": [
+                {
+                  "url": {
+                    "href": "https://www.dimensions.com/collection/bowls",
+                    "html": "Bowls - Dimensions.com"
+                  }
+                },
+                "Put your reference images in place. [k]Shift-A[/k] and add a cylinder with 16 vertices to the scene. Move it into place above the origin. Scale it down to the correct height, and flatten it to the right height for the bottom. Extrude the top face out and scale it outwards. Do this several times as you go up to create the curve for the bowl. When you reach the top, if you want to round out the edges, [k]Ctrl-B[/k] at the edges to add a curve."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bottles",
+              "content": [
+                {
+                  "section": {
+                    "header": "Wine Bottle",
+                    "content": [
+                      {
+                        "url": {
+                          "href": "https://www.dimensions.com/element/wine-bottle-750-ml-standard",
+                          "html": "Wine Bottle - Standard (750 mL) - Dimensions.com"
+                        }
+                      },
+                      "Put your reference images in place. [k]Shift-A[/k] and add a cylinder with 16 vertices to the scene. Move it into place above the origin. Scale it down to the correct height, and flatten it to the right height for the bottom. Extrude up to create the shape. If you want to round out the edges, [k]Ctrl-B[/k] at the edges to add a curve.",
+                      "This will cover the outside. Turn on [k]Viewport Overlays > Face Orientation[/k] to check how it looks. If the top was open, you should see there are no faces inside. You can either close the top with [k]F[/k] in Edit Mode, or add a Solidify Modifier (this will increase the triangle count)."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Vintner Jar",
+                    "content": [
+                      {
+                        "url": {
+                          "href": "https://www.dimensions.com/element/ikea-vinter-2021-jar-24-oz",
+                          "html": "IKEA Vintner 2021 Jar (24 oz) - Dimensions.com"
+                        }
+                      },
+                      "Put your reference images in place. [k]Shift-A[/k] and add a cube to the scene. Move it into place above the origin. Scale it down to the correct height. At this point, re-size your reference images to the correct sizes. [k]Tab[/k] into Edit Mode, [k]3[/k] for Vertex Mode and [k]A[/k] to select all vertices. [l]M,C[/k] to merge all vertices at the 3D cursor.",
+                      "In Front View, [k]E[/k] to begin extruding vertices out to match the general profile of the jar (Image 1). Add a Screw Modifier (Image 2). 16 steps is a good number to ensure a round appearance, and if the normals need to be flipped, check the box for [k]Normals > Calculate Order[/k] in the modifier panel. Finally, you can select the vertices at the curve points anf [k]Ctrl-B[/k] to add a bevel to them to round it out (Image 3).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Grant Abbitt/vintner_jar-01.jpg",
+                            "caption": "Image 1 - Wireframe jar"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/vintner_jar-02.jpg",
+                            "caption": "Image 2 - Adding a Screw Modifier"
+                          },
+                          {
+                            "src": "Blender/Grant Abbitt/vintner_jar-03.jpg",
+                            "caption": "Image 2 - Beveling the curves"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Beer Stein",
+                    "content": [
+                      "Put your reference images in place. [k]Shift-A[/k] and add a cylinder to the scene. You can go with 16 vertices for a decent low-poly model, or 8 vertices for a cartoonish low-poly feel. Go into Edit Mode, select the top face and [k]S,Shift-Z[/k] to scale it in in the x- and y-axes. [k]I[/k] to inset the top face to create the rim, and [k]E[/k] to extrude it down to the bottom to create the inner part of the mug. [k]S,Shift-Z[/k] to scale the bottom face out to match the angle of the mug. Feel free to [k]Ctrl-B[/k] to bevel the edges at the top and inside the mug.",
+                      "[k]Ctrl-K[/k] to add four horizontal loop cuts around the mug. These will be used for the bands around the top and bottom, and to start the handle. [k]G,G[/k] to slide them into position.",
+                      "For the bands, [k]Ctrl-B[/k] to bevel them and then [k]Alt-E,F[/k] to extrude those faces out along normals. With the outer face selected, [k]S,Z[/k] to scale them."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
               "header": "Table and Chairs",
               "content": [
                 {
