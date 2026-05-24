@@ -1,0 +1,135 @@
+{
+  "sections": [
+    {
+      "Arch TBD": {
+        "tags": [
+          "arch",
+          "spin tool"
+        ],
+        "key_concepts": [
+          "[url]Get Good at Blender - Practical challenges to improve you skills!^^https://www.youtube.com/watch?v=V-NF_m1RMaw[/url]",
+          "Using the spin tool for creating arches.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Blender Tools TBD": {
+        "tags": [
+          "mirror modifier", "inset", "extrude", "bevel", "beginner"
+        ],
+        "key_concepts": [
+          "[url]Beginner Exercises | Part 2 | Blender 2.8 & onwards^^https://www.youtube.com/watch?v=51SdWI-yof4[/url]",
+          "Becoming familiar with several Blender techniques.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Chess Piece TBD": {
+        "tags": [
+          "chess",
+          "screw modifier",
+          "modifier"
+        ],
+        "key_concepts": [
+          "[url]Get Good at Blender - Easy Chess Piece^^https://www.youtube.com/watch?v=IY3nH3_RiDU[/url]",
+          "Using the screw modifier.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Dining Room TBD": {
+        "tags": [
+          "chair", "beginner"
+        ],
+        "key_concepts": [
+          "[url]Beginner Exercises | Part 1 | Blender 2.8 & Onwards^^https://www.youtube.com/watch?v=98FkRIbihyQ[/url]",
+          "Easy and simple beginner exercises to help you understand the different ways of modelling shapes.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Lego Bricks TBD": {
+        "tags": [
+          "lego", "beginner"
+        ],
+        "key_concepts": [
+          "[url]Beginner Exercises | Part 6 | Lego Bricks | Hard Surface Modelling 2 | Blender 2.8^^https://www.youtube.com/watch?v=Lj0nBJ4Xsy0[/url]",
+          "Making some lego bricks.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Stone Wall TBD": {
+        "tags": [
+          "stone",
+          "wall",
+          "pier", "dock", "beginner"
+        ],
+        "key_concepts": [
+          "[url]Beginner Exercises | Part 4 | Low Poly Buildings | Blender 2.8^^https://www.youtube.com/watch?v=Syq6JjMdyhI[/url]",
+          "Building up your Blender skills by creating a stone wall and pier.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Weapons TBD": {
+        "tags": [
+          "sword", "shield", "beginner"
+        ],
+        "key_concepts": [
+          "[url]Beginner Exercises | Part 3 | Low Poly Weapons | Blender 2.8^^https://www.youtube.com/watch?v=-0tMeMZpeXE[/url]",
+          "Building up your Blender skills by creating low poly weapons.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
