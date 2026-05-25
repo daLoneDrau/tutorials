@@ -1,10 +1,228 @@
 {
   "sections": [
     {
+      "Pipes": {
+        "tags": ["pipes", "knife", "curve"],
+        "key_concepts": [
+          "[url]Learn to Create and Connect Pipes in Blender^^https://www.youtube.com/watch?v=4Lt7Fm7h53U[/url]",
+          "Learn how to quickly create and connect pipes in Blender using correct geometry.",
+          {
+            "section": {
+              "header": "The Basic Shape",
+              "content": [
+                "Select all vertices in the default cube and [k]M,A[/k] to reduce them to a single vertex (Image 1). [k]E,Z[/k], [k]E,X[/k] to extrude it out (Image 2). Select the first vertex and [k]Shift-D,Y[/k] to duplicate it and move it out, and then [k]E,Y[/k] to move it back (make sure Auto Merge is not enabled) (Image 3). These are going to be bends in the pipes, so select the vertex where the bend will go and [k]Ctrl-B,V[/k] and make a bevel with four segments (Image 4).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-01.jpg",
+                      "caption": "Image 1 - Selecting all vertices in the default cube and merging them to a single vertex"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-02.jpg",
+                      "caption": "Image 2 - Extruding it out in the z- and x-axes"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-03.jpg",
+                      "caption": "Image 3 - Selecting the first vertex, duplicating it and moving it out in the y-axis, and then extruding it back with Auto Merge disabled"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-04.jpg",
+                      "caption": "Image 4 - Selecting the vertex where the bend will go and adding a bevel with four segments"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Curve",
+              "content": [
+                "[k]Tab[/k] into Object Mode, and [k]Object > Convert > Curve[/k] (Image 5). In the Data Properties tab, under Geometry, update the Bevel Depth to increase the size (Image 6). We will shrink the size of the upper pipe by going into Edit Mode, selecting one if its vertices and pressing [k]Ctrl-L[/k] to get all linked geometry (Image 7). [k]Alt-S[/k] to scale it down so it becomes a small pipe feeding into a larger one (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-05.jpg",
+                      "caption": "Image 5 - Going to Object Mode and converting to a Curve"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-06.jpg",
+                      "caption": "Image 6 - Updating the Bevel Depth in the Data Properties tab under Geometry to increase the size"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-07.jpg",
+                      "caption": "Image 7 - Going into Edit Mode, selecting one of the upper pipe's vertices and pressing Ctrl-L to get all linked geometry"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-08.jpg",
+                      "caption": "Image 8 - Scaling it down so it becomes a small pipe feeding into a larger one"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Joining the Pipes",
+              "content": [
+                "[k]Object > Convert > Mesh[/k] to change it back to a mesh (Image 9). [k]P,L[/k] and this will separate the mesh into two objects (Image 10). Select the bottom pipe and add a Boolean Modifier with the other pipe as the Target (Image 11). Apply the modifier, [k]Tab[/k]] into Edit Mode, [k]/[/k] Local View, and you will see the results (Image 12).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-09.jpg",
+                      "caption": "Image 9 - Converting it back to a mesh"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-10.jpg",
+                      "caption": "Image 10 - Separating the mesh into two objects"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-11.jpg",
+                      "caption": "Image 11 - Selecting the bottom pipe and adding a Boolean Modifier with the other pipe as the Target"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-12.jpg",
+                      "caption": "Image 12 - Applying the modifier, going into Edit Mode and Local View to see the results"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Fixing the Join",
+              "content": [
+                "Select the faces inside the cutout and [k]X,F[/k] to delete them (Image 13). [k]Numpad7[/k] into Top View, [k]K[/k] to activate the Knife Tool, and after [k]LMB[/k], press [k]A,C[/k] to activate Angle Snap and Cut Through (Image 14). Make two cuts through the pipe (Image 15). Move the two edge loops closer to the hole (Image 16) and add a Loop Cut in the middle (Image 17)..",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-13.jpg",
+                      "caption": "Image 13 - Selecting the faces inside the cutout and deleting them"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-14.jpg",
+                      "caption": "Image 14 - Going to Top View, activating the Knife Tool and enabling Angle Snap and Cut Through"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-15.jpg",
+                      "caption": "Image 15 - Making two cuts through the pipe"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-16.jpg",
+                      "caption": "Image 16 - Moving the two edge loops closer to the hole"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-17.jpg",
+                      "caption": "Image 17 - Adding a Loop Cut in the middle"
+                    }
+                  ]
+                },
+                "We want to clean up any n-gons we have. Connect the two vertices along the x-axis to the hole (Image 18). Connect this vertex to the inner one next to it (Image 19). Repeat this for the other three (Image 20). [k]J[/k] join the remaining vertices to fix the last n-gons (Image 21).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-18.jpg",
+                      "caption": "Image 18 - Connecting the two vertices along the x-axis to the hole to clean up n-gons"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-19.jpg",
+                      "caption": "Image 19 - Connecting this vertex to the inner one next to it"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-20.jpg",
+                      "caption": "Image 20 - Repeating this for the other three"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-21.jpg",
+                      "caption": "Image 21 - Joining the remaining vertices to fix the last n-gons"
+                    }
+                  ]
+                },
+                "[k]A,M,B[/k] to remove any extra vertices. [k]Ctrl-R[/k] to add a Loop Cut, but before placing it, [k]E[/k] to disable Even so that it is closer to the hole (Image 22). Select the inner edge loop and [k]G,Z[/k] to move it up, which will create a smoother transition (Image 23). [k]E,Z[/k], [k]S,Z,0[/k] to extrude some geometry anf flatten it (Image 24). [k]Ctrl-R[/k] to add another Loop Cut with Even disabled (Image 24). [k]Tab[/k] into Object Mode, select the other pipe, and move its bottom edge loop up to create separation (Image 25).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-22.jpg",
+                      "caption": "Image 22 - Adding a Loop Cut with Even disabled so it is closer to the hole"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-23.jpg",
+                      "caption": "Image 23 - Selecting the inner edge loop and moving it up in the z-axis to create a smoother transition"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-24.jpg",
+                      "caption": "Image 24 - Extruding some geometry and flattening it, then adding another Loop Cut with Even disabled"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-25.jpg",
+                      "caption": "Image 25 - Going to Object Mode, selecting the other pipe, and moving its bottom edge loop up to create separation"
+                    }
+                  ]
+                },
+                "In Object Mode, select both pipes and [k]Ctrl-J[/k] to connect them (Image 26). In Edit Mode, [k]Ctrl-R[/k] to bring up the Edge Menu and [k]Bridge Edge Loops[/k] to connect them (Image 27). Select one of the edge loops and [k]X,I[/k] to dissolve it (Image 28). [k]RMB > Shade Smooth[/k] and add a Subdivision Surface Modifier to make it smooth (Image 29).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-26.jpg",
+                      "caption": "Image 26 - Selecting both pipes in Object Mode and joining them"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-27.jpg",
+                      "caption": "Image 27 - Going into Edit Mode and using Bridge Edge Loops from the Edge Menu to connect them"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-28.jpg",
+                      "caption": "Image 28 - Selecting one of the edge loops and dissolving it"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/pipes/pipes-29.jpg",
+                      "caption": "Image 29 - Shading smooth and adding a Subdivision Surface Modifier to make it smooth"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Pipes",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Polygon Runway/Assets/pipes.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Stylized Tree": {
+        "tags": ["tree", "geometry node"],
+        "key_concepts": [
+          "[url]Blender Stylized Trees Tutorial^^https://www.youtube.com/watch?v=jNDYp8aqiyw[/url]",
+          "Using a geometry node setup to create stylized and painterly trees in Blender!.",
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
       "Textured Game Assets": {
         "key_concepts": [
           "[url]Blender Game Assets Tutorial | Polygon Runway^^https://www.youtube.com/watch?v=424SR79NN-g[/url]",
-          "Create game assets and optimize th texturing.",
+          "Create game assets and optimize the texturing.",
           {
             "section": {
               "header": "Starting Off",
