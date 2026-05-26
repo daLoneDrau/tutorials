@@ -212,6 +212,10 @@
             "section": {
               "header": "Starting Off",
               "content": [
+                {
+                  "image": [
+                  ]
+                }
               ]
             }
           }
@@ -227,6 +231,264 @@
             "section": {
               "header": "Starting Off",
               "content": [
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Thor's Hammer": {
+        "tags": ["hammer", "bevel", "decimate"],
+        "key_concepts": [
+          "[url]Hammer Tutorial in Blender 2.9^^https://www.youtube.com/watch?v=0h7JVBJMNiE[/url]",
+          "Create a fancy hammer in Blender 2.9.",
+          {
+            "section": {
+              "header": "Hammer Head",
+              "content": [
+                "Start with the default cube. [k]S,Shift-X[/k] to scale it in the y- and z-axes (Image 1). Add a Mirror Modifier in the x- and y-axes with clipping enabled, [k]Ctrl-R[/k] to add two Loop Cuts and delete the left and top halves (Image 2). [k]I[/k] to Inset the face on the end, [k]E[/k] to extrude it out, and then [k]S[/k] to scale it in (Image 3). Subdivide the mesh horizontally and vertically with four Loop Cuts (Image 4). Select the edges in each corner and [k]Ctrl-B[/k] to bevel them (Image 5).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-01.jpg",
+                      "caption": "Image 1 - Starting with the default cube and scaling it in the y- and z-axes"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-02.jpg",
+                      "caption": "Image 2 - Adding a Mirror Modifier in the x- and y-axes with clipping enabled, adding two Loop Cuts and deleting the left and top halves"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-03.jpg",
+                      "caption": "Image 3 - Insetting the face on the end, extruding it out, and scaling it in"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-04.jpg",
+                      "caption": "Image 4 - Subdividing the mesh horizontally and vertically with four Loop Cuts"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-05.jpg",
+                      "caption": "Image 5 - Selecting the edges in each corner and beveling them"
+                    }
+                  ]
+                },
+                "We want to make a circular hole in the ends, so add two more Loop Cuts to the mesh (Image 6). Select the four faces on the end and [k]S[/k] to scale them up (Image 7), then [k]RMB,L,C[/k] to use Loop Tools to make it a circle (Image 8). [k]E[/k] to extrude the faces in (Image 9). Add a Bevel Modifier, increase Segments to 2, reduce the Amount, change the Limit Method to Weight (Image 10).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-06.jpg",
+                      "caption": "Image 6 - Adding two more Loop Cuts to the mesh to make a circular hole in the ends"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-07.jpg",
+                      "caption": "Image 7 - Selecting the four faces on the end and scaling them up"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-08.jpg",
+                      "caption": "Image 8 - Using Loop Tools to make it a circle"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-09.jpg",
+                      "caption": "Image 9 - Extruding the faces in"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-10.jpg",
+                      "caption": "Image 10 - Adding a Bevel Modifier, increasing Segments to 2, reducing the Amount and changing the Limit Method to Weight"
+                    }
+                  ]
+                },
+                "Select the eight edge loops at the corners and change their Mean Bevel Weight to 1 (Image 11). Do the same for the edge loops at the end (Image 12). Select the faces on the side, and [k]I,B[/k] to inset the faces and [k]E[/k] to bring them in towards the center slightly (Image 13). If you get cracks at the corners, fix them by selecting the edge loop and setting the Mean Bevel Weight to 1 (Image 14). Select the top two faces, [k]I[/k] to inset them, [k]E[/k] to extrude them and set the Mean Bevel Weight to 1 (Image 15).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-11.jpg",
+                      "caption": "Image 11 - Selecting the eight edge loops at the corners and changing their Mean Bevel Weight to 1"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-12.jpg",
+                      "caption": "Image 12 - Doing the same for the edge loops at the end"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-13.jpg",
+                      "caption": "Image 13 - Selecting the faces on the side, insetting the faces and bringing them in towards the center slightly"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-14.jpg",
+                      "caption": "Image 14 - Fixing any cracks at the corners by selecting the edge loop and setting the Mean Bevel Weight to 1"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-15.jpg",
+                      "caption": "Image 15 - Selecting the top two faces, insetting them, extruding them and setting the Mean Bevel Weight to 1"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Handle",
+              "content": [
+                "Add a Cylinder with 12 vertices to the scene and [k]S,Shift-Z[/k] to scale it in (Image 16). [k]Ctrl-R[/k] to give it 20 Loop Cuts (Image 17). Add a Decimate Modifier and set the Type to Un-Subdivide with 1 Iteration (Image 18). You won't see any changes in Edit Mode, but switch to Object Mode and you will see a spiral (Image 19).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-16.jpg",
+                      "caption": "Image 16 - Adding a Cylinder with 12 vertices to the scene and scaling it in"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-17.jpg",
+                      "caption": "Image 17 - Giving it 20 Loop Cuts"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-18.jpg",
+                      "caption": "Image 18 - Adding a Decimate Modifier and setting the Type to Un-Subdivide with 1 Iteration"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-19.jpg",
+                      "caption": "Image 19 - Switching to Object Mode to see the spiral"
+                    }
+                  ]
+                },
+                "Apply the modifier, and in Edit Mode, [k]3[/k] into Face Select Mode, and [k]Shift,Alt,LMB[/k] to select alternating faces (Image 20). [k]Alt-E,F[/k] to extrude them along normals (Image 21). Move the head on top of the handle (Image 22). Add a Cylinder with 12 vertices, scale it down and move it to where the handle connect with the hammer (Image 23). Round out the bottom with a bevel (Image 24).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-20.jpg",
+                      "caption": "Image 20 - Applying the modifier, going into Face Select Mode in Edit Mode and selecting alternating faces"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-21.jpg",
+                      "caption": "Image 21 - Extruding them along normals"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-22.jpg",
+                      "caption": "Image 22 - Moving the head on top of the handle"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-23.jpg",
+                      "caption": "Image 23 - Adding a Cylinder with 12 vertices, scaling it down and moving it to where the handle connects with the hammer"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-24.jpg",
+                      "caption": "Image 24 - Rounding out the bottom with a bevel"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Bronze Cap",
+                    "content": [
+                      "dd a Circle with 12 vertices, move it to the end of the handle and scale it down (Image 25). Extrude it up in the z-axis (Image 26). Select vertices on opposite sides, [k]O[/k] to turn on Proportional Editing and [k]G,Z[/k] to make a curve (Image 27). Add a Solidify Modifier (Image 28). Add a face to the bottom and [k]Ctrl-B[/k] to bevel (Image 29).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-25.jpg",
+                            "caption": "Image 25 - Adding a Circle with 12 vertices, moving it to the end of the handle and scaling it down"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-26.jpg",
+                            "caption": "Image 26 - Extruding it up in the z-axis"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-27.jpg",
+                            "caption": "Image 27 - Selecting vertices on opposite sides, turning on Proportional Editing and moving them in the z-axis to make a curve"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-28.jpg",
+                            "caption": "Image 28 - Adding a Solidify Modifier"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-29.jpg",
+                            "caption": "Image 29 - Adding a face to the bottom and beveling it"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Leather Strap",
+                    "content": [
+                      "Let's add a leather strap. Select the bottom face and [k]Shift-S,T[/k] to move the 3D Cursor there (Image 30). Add a Plane and scale it down (Image 31). Rotate it slightly so it points out of the cap (Image 32). Select the vertices at the end sticking out and [k]Ctrl-RMB[/k] to create a path for the handle (Image 33). [k]Ctrl-J[/k] and join all pieces (Image 34).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-30.jpg",
+                            "caption": "Image 30 - Selecting the bottom face and moving the 3D Cursor there to add a leather strap"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-31.jpg",
+                            "caption": "Image 31 - Adding a Plane and scaling it down"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-32.jpg",
+                            "caption": "Image 32 - Rotating it slightly so it points out of the cap"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-33.jpg",
+                            "caption": "Image 33 - Selecting the vertices at the end sticking out and Ctrl-clicking to create a path for the handle"
+                          },
+                          {
+                            "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-34.jpg",
+                            "caption": "Image 34 - Joining all pieces together"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Render",
+              "content": [
+                "Rotate the hammer 180 degrees (Image 35). For the backdrop, add a Plane to the scene, scale it up, extrude one end and bevel the corner (Image 36). Use the Rock Generator to add a rock, decimate it, and put the hammer on top of it (Image 37). Scatter several rocks around the scene (Image 38). Assign materials and render (Image 39).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-35.jpg",
+                      "caption": "Image 35 - Rotating the hammer 180 degrees"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-36.jpg",
+                      "caption": "Image 36 - Adding a Plane to the scene for the backdrop, scaling it up, extruding one end and beveling the corner"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-37.jpg",
+                      "caption": "Image 37 - Using the Rock Generator to add a rock, decimating it and putting the hammer on top of it"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-38.jpg",
+                      "caption": "Image 38 - Scattering several rocks around the scene"
+                    },
+                    {
+                      "src": "Blender/Polygon Runway/Assets/thor's hammer/hammer-39.jpg",
+                      "caption": "Image 39 - Assigning materials and rendering"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Thor's Hammer",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Polygon Runway/Assets/hammer.glb",
+                    "canvas_number": 1
+                  }
+                }
               ]
             }
           }
