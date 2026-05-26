@@ -1297,6 +1297,18 @@
                 "Start with a Cylinder, however many vertices you like, and [k]S,Shift-Z[/k] to scale it in the x- and y-axes (Image 1). We want to make the pommel and crossguard so [k]Ctrl-R[/k] to add three Loop Cuts (Image 2). Select the face loops by the cuts and [k]Alt-E,F[/k] to extrude them out evenly (Image 3).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-01.jpg",
+                      "caption": "Image 1 - Starting with a Cylinder and scaling it in the x- and y-axes"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-02.jpg",
+                      "caption": "Image 2 - Adding three Loop Cuts to make the pommel and crossguard"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-03.jpg",
+                      "caption": "Image 3 - Selecting the face loops by the cuts and extruding them out evenly"
+                    }
                   ]
                 }
               ]
@@ -1306,18 +1318,84 @@
             "section": {
               "header": "Flanges",
               "content": [
-                "Add a cube, scale it down, and move it into position at the top of the shaft (Image 4). Select the two outside edges of the cube (Image 5). [k]RMB,S[/k] to subdivide it with three cuts (Image 6). Select the edge second from the top and [k]G,G[/k] to slide it up (Image 7). Select the top edge and slide it back (Image 8). We want to move the bottom face back as well, but keep it lined up with the top, so select the bottom face and [k]G[/k] to move it, [k]B[/k] to activate Snap Base and choose the top edge (Image 9). This will restrict movement so that you can align with the top. Select the two edges on the outside of the bottom face and [k]RMB,S[/k] to subdivide it (Image 10). Slide the bottom edge in to make a sort of butterfly shape (Image 11).",
+                "Add a cube, scale it down, and move it into position at the top of the shaft (Image 4). Select the two outside edges of the cube (Image 5). [k]RMB,S[/k] to subdivide it with three cuts (Image 6). Select the edge second from the top and [k]G,G[/k] to slide it up (Image 7).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-04.jpg",
+                      "caption": "Image 4 - Adding a cube, scaling it down and moving it into position at the top of the shaft"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-05.jpg",
+                      "caption": "Image 5 - Selecting the two outside edges of the cube"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-06.jpg",
+                      "caption": "Image 6 - Subdividing it with three cuts"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-07.jpg",
+                      "caption": "Image 7 - Selecting the edge second from the top and sliding it up"
+                    }
+                  ]
+                },
+                "Select the top edge and slide it back (Image 8). We want to move the bottom face back as well, but keep it lined up with the top, so select the bottom face and [k]G[/k] to move it, [k]B[/k] to activate Snap Base and choose the top edge (Image 9). This will restrict movement so that you can align with the top. Select the two edges on the outside of the bottom face and [k]RMB,S[/k] to subdivide it (Image 10). Slide the bottom edge in to make a sort of butterfly shape (Image 11).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-08.jpg",
+                      "caption": "Image 8 - Selecting the top edge and sliding it back"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-09.jpg",
+                      "caption": "Image 9 - Selecting the bottom face and moving it while activating Snap Base to the top edge to keep it aligned"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-10.jpg",
+                      "caption": "Image 10 - Selecting the two edges on the outside of the bottom face and subdividing them"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-11.jpg",
+                      "caption": "Image 11 - Sliding the bottom edge in to make a sort of butterfly shape"
+                    }
                   ]
                 },
                 {
                   "section": {
                     "header": "Beveling",
                     "content": [
-                      "[k]Tab[/k] into Object Mode and [k]Ctrl-A,S[/k] to apply the scale, if you don't the bevel won't apply evenly (Image 12). Select the outside edges (Image 13). [k]Ctrl-B[/k] to bevel them, but not all the way since this is an energy weapon, not a weapon designed to penetrate armour (Image 14). Change the Transform Pivot Point to 3D Cursor (Image 15), and [k]Alt-D,R,90[/k] to create four linked duplicates rotated around the haft (Image 16). Make any adjustments to the flange's geometry in Edit Mode, and it will be applied to all (Image 17).",
+                      "[k]Tab[/k] into Object Mode and [k]Ctrl-A,S[/k] to apply the scale, if you don't the bevel won't apply evenly (Image 12). Select the outside edges (Image 13). [k]Ctrl-B[/k] to bevel them, but not all the way since this is an energy weapon, not a weapon designed to penetrate armour (Image 14).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-12.jpg",
+                            "caption": "Image 12 - Going to Object Mode and applying the scale so the bevel will apply evenly"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-13.jpg",
+                            "caption": "Image 13 - Selecting the outside edges"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-14.jpg",
+                            "caption": "Image 14 - Beveling them, but not all the way since this is an energy weapon"
+                          }
+                        ]
+                      },
+                      "Change the Transform Pivot Point to 3D Cursor (Image 15), and [k]Alt-D,R,90[/k] to create four linked duplicates rotated around the haft (Image 16). Make any adjustments to the flange's geometry in Edit Mode, and it will be applied to all (Image 17).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-15.jpg",
+                            "caption": "Image 15 - Changing the Transform Pivot Point to 3D Cursor"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-16.jpg",
+                            "caption": "Image 16 - Creating four linked duplicates rotated around the haft"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-17.jpg",
+                            "caption": "Image 17 - Making adjustments to the flange's geometry in Edit Mode and seeing them applied to all linked duplicates"
+                          }
                         ]
                       }
                     ]
@@ -1333,6 +1411,26 @@
                 "Add a new Cylinder, and scale it down so it covers the top part of the haft, give it a rotation and apply ([k]Ctrl-A,R[/k] (Image 18). Add a Cube to the scene, scale and mirror so it covers part of the new cylinder evenly on two sides (Image 19). Go into Local View with the cube ([k]/[/k]) and update the shape using [k]G[/k], [k]Ctrl-B[/k] (Image 20). Add a Boolean Modifier to the cylinder with the cube as the target object (Image 21). Apply the modifier to the cube and move one side down to create some difference (Image 22).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-18.jpg",
+                      "caption": "Image 18 - Adding a new Cylinder, scaling it down to cover the top part of the haft, giving it a rotation and applying it"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-19.jpg",
+                      "caption": "Image 19 - Adding a Cube to the scene, scaling and mirroring it to cover part of the new cylinder evenly on two sides"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-20.jpg",
+                      "caption": "Image 20 - Going into Local View with the cube and updating the shape using moving and beveling"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-21.jpg",
+                      "caption": "Image 21 - Adding a Boolean Modifier to the cylinder with the cube as the target object"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-22.jpg",
+                      "caption": "Image 22 - Applying the modifier to the cube and moving one side down to create some difference"
+                    }
                   ]
                 }
               ]
@@ -1345,6 +1443,22 @@
                 "Change the Transform Pivot Point back to the 3D Cursor, select a flange and [k]Alt-D,R,45[/k] (Image 23). Add three more (Image 24). The flanges are running over each other, so select one, and in Edit Mode scale in the thickness (Image 25). Select the four corner flanges, set the Transform Pivot Point to Individual Origins and scale them in Edit Mode to make them smaller (Image 26).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-23.jpg",
+                      "caption": "Image 23 - Changing the Transform Pivot Point back to the 3D Cursor, selecting a flange and creating a linked duplicate rotated 45 degrees"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-24.jpg",
+                      "caption": "Image 24 - Adding three more flanges"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-25.jpg",
+                      "caption": "Image 25 - Selecting one flange and scaling in the thickness in Edit Mode to fix the overlapping"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-26.jpg",
+                      "caption": "Image 26 - Selecting the four corner flanges, setting the Transform Pivot Point to Individual Origins and scaling them down in Edit Mode to make them smaller"
+                    }
                   ]
                 }
               ]
@@ -1357,42 +1471,160 @@
                 "Add a Cube to the side with the longer covering and scale it down (Image 27). Apply the scale and bevel the bottom edge (Image 28). Bevel the edges on the sides (Image 29).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-27.jpg",
+                      "caption": "Image 27 - Adding a Cube to the side with the longer covering and scaling it down"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-28.jpg",
+                      "caption": "Image 28 - Applying the scale and beveling the bottom edge"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-29.jpg",
+                      "caption": "Image 29 - Beveling the edges on the sides"
+                    }
                   ]
                 },
                 {
                   "section": {
                     "header": "Cutting Vents",
                     "content": [
-                      "Add a new Cube and scale it down so it is a thin cube embedded in the power unit (Image 30). Go into Local View and [k]B,C[/k] to bevel the bottom edges and clamp it, creating a rounded end (Image 31). Exit Local View and add an Array Modifier in the z-axis (Image 32). [k]Shift-D[/k] to duplicate the power unit, and leave it in place (Image 33). Add a Boolean Modifier to the power unit with the rounded-end wedges as the target; hide the rounded-end wedges (Image 34). Select the duplicate power unit and scale it down (Image 35). We want a separator for our vents, so go back to the wedge mesh, and add a Loop Cut down the middle (Image 36). Bevel the edge loop until you reach the desired thickness, delete the faces and fill in the gaps (Image 37). Hide the wedges again (Image 38). Select the inner mesh, cutting round wedges, and parent the outer power unit to them, so that if you move the power unit, the other pieces come with it (Image 39).",
+                      "Add a new Cube and scale it down so it is a thin cube embedded in the power unit (Image 30). Go into Local View and [k]B,C[/k] to bevel the bottom edges and clamp it, creating a rounded end (Image 31). Exit Local View and add an Array Modifier in the z-axis (Image 32). [k]Shift-D[/k] to duplicate the power unit, and leave it in place (Image 33). Add a Boolean Modifier to the power unit with the rounded-end wedges as the target; hide the rounded-end wedges (Image 34).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-30.jpg",
+                            "caption": "Image 30 - Adding a new Cube and scaling it down so it is a thin cube embedded in the power unit"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-31.jpg",
+                            "caption": "Image 31 - Going into Local View and beveling the bottom edges with clamping to create a rounded end"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-32.jpg",
+                            "caption": "Image 32 - Exiting Local View and adding an Array Modifier in the z-axis"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-33.jpg",
+                            "caption": "Image 33 - Duplicating the power unit and leaving it in place"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-34.jpg",
+                            "caption": "Image 34 - Adding a Boolean Modifier to the power unit with the rounded-end wedges as the target and hiding the rounded-end wedges"
+                          }
+                        ]
+                      },
+                      "Select the duplicate power unit and scale it down (Image 35). We want a separator for our vents, so go back to the wedge mesh, and add a Loop Cut down the middle (Image 36). Bevel the edge loop until you reach the desired thickness, delete the faces and fill in the gaps (Image 37). Hide the wedges again (Image 38). Select the inner mesh, cutting round wedges, and parent the outer power unit to them, so that if you move the power unit, the other pieces come with it (Image 39).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-35.jpg",
+                            "caption": "Image 35 - Selecting the duplicate power unit and scaling it down"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-36.jpg",
+                            "caption": "Image 36 - Going back to the wedge mesh and adding a Loop Cut down the middle to create a separator for the vents"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-37.jpg",
+                            "caption": "Image 37 - Beveling the edge loop until reaching the desired thickness, deleting the faces and filling in the gaps"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-38.jpg",
+                            "caption": "Image 38 - Hiding the wedges again"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/mace/mace-39.jpg",
+                            "caption": "Image 39 - Selecting the inner mesh cutting round wedges and parenting the outer power unit to them so that moving the power unit brings the other pieces along"
+                          }
                         ]
                       }
                     ]
                   }
-                },
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Knurled Grip",
+              "content": [
+                "Add several Loop Cuts to the grip (Image 40). Select all faces in the grip, and [k]I,I[/k] to inset faces individually (Image 41). Inset the faces again, but this time use [k]Ctrl[/k] to affect the depth (Image 42).",
                 {
-                  "section": {
-                    "header": "Knurled Grip",
-                    "content": [
-                      "Add several Loop Cuts to the grip (Image 40). Select all faces in the grip, and [k]I,I[/k] to inset faces individually (Image 41). Inset the faces again, but this time use [k]Ctrl[/k] to affect the depth (Image 42).",
-                      {
-                        "image": [
-                        ]
-                      }
-                    ]
-                  }
-                },
+                  "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-40.jpg",
+                      "caption": "Image 40 - Adding several Loop Cuts to the grip"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-41.jpg",
+                      "caption": "Image 41 - Selecting all faces in the grip and insetting faces individually"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-42.jpg",
+                      "caption": "Image 42 - Insetting the faces again using Ctrl to affect the depth"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Studs",
+              "content": [
+                "Select a face along the bottom of the grip and [k]Shift-S,T[/k] to position the 3D Cursor (Image 43). Add an Ico Sphere to the scene and scale it down (Image 44). [k]Shift-S,W[/k] to move the 3D Cursor back to the World Origin, set the Transform Pivot Point to 3D Cursor, and [k]Alt-D,R,90[/k] to make four studs around the bottom (Image 45). Repeat these steps at the top of the grip (Image 46). Add two more studs up by the power unit (Image 47).",
                 {
-                  "section": {
-                    "header": "Studs",
-                    "content": [
-                      "Select a face along the bottom of the grip and [k]Shift-S,T[/k] to position the 3D Cursor (Image 43). Add an Ico Sphere to the scene and scale it down (Image 44). [k]Shift-S,W[/k] to move the 3D Cursor back to the World Origin, set the Transform Pivot Point to 3D Cursor, and [k]Alt-D,R,90[/k] to make four studs around the bottom (Image 45). Repeat these steps at the top of the grip (Image 46). Add two more studs up by the power unit (Image 47).",
-                      {
-                        "image": [
-                        ]
-                      }
-                    ]
+                  "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-43.jpg",
+                      "caption": "Image 43 - Selecting a face along the bottom of the grip and positioning the 3D Cursor there"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-44.jpg",
+                      "caption": "Image 44 - Adding an Ico Sphere to the scene and scaling it down"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-45.jpg",
+                      "caption": "Image 45 - Moving the 3D Cursor back to the World Origin, setting the Transform Pivot Point to 3D Cursor and making four studs around the bottom"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-46.jpg",
+                      "caption": "Image 46 - Repeating these steps at the top of the grip"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-47.jpg",
+                      "caption": "Image 47 - Adding two more studs up by the power unit"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Render",
+              "content": [
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/mace/mace-48.jpg",
+                      "caption": "Image 48 - Final Render"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Energy Mace",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Artisans of Vaul/Assets/mace.glb",
+                    "canvas_number": 1
                   }
                 }
               ]
