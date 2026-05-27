@@ -1,0 +1,225 @@
+{
+  "sections": [
+    {
+      "Part 1 TBD": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Blender Tutorial: Geometry Nodes for Beginners - Part 1^^https://www.youtube.com/watch?v=aO0eUnu0hO0[/url]",
+          "Blender tutorial showing how to use Geometry Nodes to create sugar coated candy.",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "Geometry Nodes is like programming, letting you perform actions based on rules you define.",
+                "With a brand new scene opened up, go to the Geometry Nodes tab. This will change the interface, showing the 3D Viewport, Spreadsheet, and Geometry Node Editor (Image 1). We won't be using the Spreadsheet so remove this editor (Image 2). In the Geometry Node Editor click [k]New[/k] and it will create a new Geometry Node Modifier for the mesh (Image 3).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-01.jpg",
+                      "caption": "Image 1 - Opening a new scene and going to the Geometry Nodes tab to see the 3D Viewport, Spreadsheet, and Geometry Node Editor"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-02.jpg",
+                      "caption": "Image 2 - Removing the Spreadsheet editor"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-03.jpg",
+                      "caption": "Image 3 - Clicking New in the Geometry Node Editor to create a new Geometry Node Modifier for the mesh"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Geometry nodes is a modifier",
+              "content": [
+                "Because Geometry Nodes is a modifier, the order matters. Modifiers are applied top-to-bottom. This of Geometry Nodes as post-processing for meshes. In the Geometry Node Editor on the left we can see Geometry Input, which is the mesh, which feeds to the output, which is what is displayed on-screen (Image 4). Anything placed in between those two nodes will affect the output. For example, add a [k]Transform Node[/k] to the editor and update the values; you will see the mesh display change, but in Edit Mode the mesh vertices stay the same (Image 5).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-04.jpg",
+                      "caption": "Image 4 - Seeing the Geometry Input node feeding to the output node in the Geometry Node Editor"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-05.jpg",
+                      "caption": "Image 5 - Adding a Transform Node to the editor and updating the values to see the mesh display change while the vertices stay the same in Edit Mode"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Distributing points",
+              "content": [
+                "In our project, we want to scatter sugar crystals on a candy, so the node we will use is a [k]Distribute Points on Faces Node[/k]. Add this node to the editor, and you will see the display change; it has taken out mesh and converted it to random points distributed where the faces were (Image 6). Increasing or decreasing the Density will change how many points are displayed.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-06.jpg",
+                      "caption": "Image 6 - Adding a Distribute Points on Faces Node to the editor and seeing the mesh converted to random points distributed where the faces were"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Joining Geometry",
+              "content": [
+                "Points don't have anything to render, they just hold data. If you were to try to render the mesh right now nothing would display. We want to render the cube mesh and something at those random points. To do that we need a [k]Join Geometry Node[/k] (Image 7). This will join the point data with the mesh data so they both get sent to the output.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-07.jpg",
+                      "caption": "Image 7 - Adding a Join Geometry Node to join the point data with the mesh data so both get sent to the output"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating Instances on Points",
+              "content": [
+                "Even though we have combined the geometry, nothing will render at those points; we need to supply data for what will be displayed there. We need to add an [k]Instance on Points[/k] node (Image 8). We will see the points disappear from the 3D Viewport, since we haven't identified what instances will be at those points.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-08.jpg",
+                      "caption": "Image 8 - Adding an Instance on Points node to supply data for what will be displayed at the points"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Pinning the Node Layout",
+              "content": [
+                "If you click on another object that doesn't have the same Geometry Nodes Modifier, the nodes in the editor will disappear. You can click the Pin icon to pin the Geometry Nodes you are working on in the editor."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Referencing another object in the nodes",
+              "content": [
+                "Add another cube to the scene, [k]S,0.1[/k] to scale it down, and rename it 'sugar.crystal' (Image 9). In order to make it available as a node, grab it from the Outliner and drag it into the Geometry Node Editor (Image 10). Connect the [k]Object Info Node's[/k] Geometry output to the [k]Instance on Points Node's[/k] Instance input (Image 11). The output will look strange; select the sugar.crystal mesh and [k]Ctrl-A,S[/k] to apply the scale and that will fix it (Image 12).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-09.jpg",
+                      "caption": "Image 9 - Adding another cube to the scene, scaling it down and renaming it 'sugar.crystal'"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-10.jpg",
+                      "caption": "Image 10 - Grabbing the sugar.crystal mesh from the Outliner and dragging it into the Geometry Node Editor"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-11.jpg",
+                      "caption": "Image 11 - Connecting the Object Info Node's Geometry output to the Instance on Points Node's Instance input"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-12.jpg",
+                      "caption": "Image 12 - Selecting the sugar.crystal mesh and applying the scale to fix the strange output"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "How to randomize rotation",
+              "content": [
+                "We want to add rotation to the sugar crystals, but we want it to be random. Add a [k]Random Value Node[/k], set its Data Type to Vector, and connect its Value output to the [k]Instance on Points Node's[/k] Rotation input (Image 13). The Min and Max fields unit of measurement is radians; 180 degrees is pi radians, so if you type 'pi' into the Max field, Blender will convert it to 3.142 (Image 14). We want the random rotation to be between 0 and 360 degrees. 360 degrees is 2pi, which is called 'tau'. Type 'tau' into the Max field (Image 15).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-13.jpg",
+                      "caption": "Image 13 - Adding a Random Value Node, setting its Data Type to Vector and connecting its Value output to the Instance on Points Node's Rotation input"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-14.jpg",
+                      "caption": "Image 14 - Typing 'pi' into the Max field to set the maximum rotation to 180 degrees in radians"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-15.jpg",
+                      "caption": "Image 15 - Typing 'tau' into the Max field to set the random rotation range to 0 to 360 degrees"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "How to randomize scale",
+              "content": [
+                "We also want to randomize the scale, so we need another [k]Random Value Node[/k]. [k]Ctrl-C[/k], [k]Ctrl-V[/k] to duplicate the first one, and connect it to the [k]Instance on Points Node's[/k] Scale input (Image 16). This is distorting the scale on all axes, so some of the shapes are no longer cubes. We want to scale to be uniform on all axes. Change the Data Type to Float to fix this (Image 17). We still have a problem, with the Min set to 0, there are some cubes that are present in memory, but not rendering. Increase the Min to fix this (Image 18).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-16.jpg",
+                      "caption": "Image 16 - Duplicating the Random Value Node and connecting it to the Instance on Points Node's Scale input to randomize the scale"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-17.jpg",
+                      "caption": "Image 17 - Changing the Data Type to Float to make the scale uniform on all axes"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-18.jpg",
+                      "caption": "Image 18 - Increasing the Min value to fix cubes that are present in memory but not rendering"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Render",
+              "content": [
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 1/geometry-19.jpg"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Part 2 TBD": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Blender Tutorial: Geometry Nodes for Beginners - Part 2^^https://www.youtube.com/watch?v=V10GBrmYIDM[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
