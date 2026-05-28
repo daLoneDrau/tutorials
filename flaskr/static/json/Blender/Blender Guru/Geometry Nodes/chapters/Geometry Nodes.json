@@ -1,8 +1,8 @@
 {
   "sections": [
     {
-      "Part 1 TBD": {
-        "tags": [],
+      "Part 1": {
+        "tags": ["geometry nodes"],
         "key_concepts": [
           "[url]Blender Tutorial: Geometry Nodes for Beginners - Part 1^^https://www.youtube.com/watch?v=aO0eUnu0hO0[/url]",
           "Blender tutorial showing how to use Geometry Nodes to create sugar coated candy.",
@@ -201,18 +201,199 @@
       }
     },
     {
-      "Part 2 TBD": {
-        "tags": [],
+      "Part 2": {
+        "tags": ["geometry nodes"],
         "key_concepts": [
           "[url]Blender Tutorial: Geometry Nodes for Beginners - Part 2^^https://www.youtube.com/watch?v=V10GBrmYIDM[/url]",
-          "TBD",
+          "Blender tutorial showing how to use Geometry Nodes to create sugar coated candy.",
           {
             "section": {
-              "header": "TBD",
+              "header": "Exposing Values",
               "content": [
-                "",
+                "Geometry Nodes use many variables, from scale, density, rotation, or transformation. These variables are available in the Geometry Node Editor, but it would be convenient if they were accessible somewhere else. We can do that by dragging an input, such as the [k]Distribute Points on Faces Node[/k] Density input to an empty output on the [k]Group Input Node[/k] (Image 1). This will expose the Density value in the Modifier Properties tab on the right (Image 2). Another set of variables that should be exposed are the scale Min and Max values. They show up as 'Min' and 'Max', but that doesn't tell us what values they adjust. We will want to change the names. [k]LMB[/k] the [k]Group Input Node[/k] and [k]N[/k] to bring up the Sidebar on the right (Image 3). Under [k]Group Sockets[/k] you can change the name of the exposed variables (Image 4).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-01.jpg",
+                      "caption": "Image 1 - Dragging the Distribute Points on Faces Node Density input to an empty output on the Group Input Node to expose it"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-02.jpg",
+                      "caption": "Image 2 - Seeing the Density value now accessible in the Modifier Properties tab on the right"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-03.jpg",
+                      "caption": "Image 3 - Clicking the Group Input Node and pressing N to bring up the Sidebar on the right"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-04.jpg",
+                      "caption": "Image 4 - Changing the names of the exposed variables under Group Sockets"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Importance of Real-World Scale",
+              "content": [
+                "If we haven't changed the object's scale since we started, then our sugar candy is 2m tall. This needs to be updated to real-world scale, sinc eit will affect interactions with other meshes that may use different scale, and affect the depth of field when using our camera. Reduce the size from 2m to 2cm; [k]S,0.01[/k] to both the candy and the sugar crystal (Image 5). If you lose sight of the sugar crystal you can [k]Alt-G[/k] to snap it back to the World Origin. [k]Ctrl-A,S[/k] to apply the scale for both objects (Image 6).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-05.jpg",
+                      "caption": "Image 5 - Reducing the size of both the candy and the sugar crystal from 2m to 2cm to update to real-world scale"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-06.jpg",
+                      "caption": "Image 6 - Applying the scale for both objects"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Why Object Scale Impacts Point Density",
+              "content": [
+                "After applying the scale, many of the scattered sugar crystals disappeared. That is because since we decreased the candy's size, it takes up less volume in the world, which gives less surface area for those scattered instances to stick. To bring up the number of crystals that appear, we need to increase the Density (Image 7).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-07.jpg",
+                      "caption": "Image 7 - Increasing the Density to bring back the scattered sugar crystals that disappeared after applying the scale"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Making Values More Usable",
+              "content": [
+                "Increasing the Density value by 1000 only added one more visible sugar crystal. We would need to increase the Density exponentially in order to make a difference, but guessing how much to increase it by is not helpful. Add a [k]Multiply Node[/k] to the editor, and set its value to 10,000 (Image 8). This will multiply the value entered into the Modifier Properties tab times 10,000, which will put the Density value on a scale that will make it easier to see in the Viewport (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-08.jpg",
+                      "caption": "Image 8 - Adding a Multiply Node set to 10,000 to make the Density value easier to work with"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-09.jpg",
+                      "caption": "Image 9 - Seeing the Density value on a more manageable scale in the Viewport"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Importance of Labelling",
+              "content": [
+                "The larger and more complex your geometry nodes become, the harder it becomes to follow what each node is doing. Blender comes with a Node Wrangler add-on. Enable it by going to [k]Edit > Preferences[/k] and finding it under Add-ons (Image 10). In the Geometry Nodes Editor, you can select multiple nodes and [k]Shift-P[/k] to group them in a frame (Image 11). With the frame selected, [k]N[/k] to open the Sidebar and under the Node tab, add a Label to the frame (Image 12).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-10.jpg",
+                      "caption": "Image 10 - Enabling the Node Wrangler add-on by going to Edit > Preferences and finding it under Add-ons"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-11.jpg",
+                      "caption": "Image 11 - Selecting multiple nodes and grouping them in a frame"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-12.jpg",
+                      "caption": "Image 12 - Opening the Sidebar with the frame selected and adding a Label under the Node tab"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Modelling the Candy",
+              "content": [
+                "Let's start making the cube look like a candy. In Object Mode, [k]Ctrl-1[/k] to add a Subdivision Surface Modifier (Image 13). The surface scattering is wrong because the Geometry Nodes Modifier is being applied before the Subdivision Surface Modifier; move the Subdivision Surface Modifier to the first position (Image 14). Increase the levels to 3 in the Subdivision Surface Modifier (Image 15).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-13.jpg",
+                      "caption": "Image 13 - Going to Object Mode and adding a Subdivision Surface Modifier"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-14.jpg",
+                      "caption": "Image 14 - Moving the Subdivision Surface Modifier to the first position to fix the incorrect surface scattering"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-15.jpg",
+                      "caption": "Image 15 - Increasing the levels to 3 in the Subdivision Surface Modifier"
+                    }
+                  ]
+                },
+                "Add a Loop Cut to the cube and bring it down in the z-axis to flatten the bottom (Image 16). Scale in the top (Image 17). For the sugar crystals themselves, we don't want them to have such sharp edges; we want some blunt edges that will catch the light. Select the crystal's edges and [k]Ctrl-B[/k] to bevel them, and see the affect this has on the candy (Image 18).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-16.jpg",
+                      "caption": "Image 16 - Adding a Loop Cut to the cube and bringing it down in the z-axis to flatten the bottom"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-17.jpg",
+                      "caption": "Image 17 - Scaling in the top"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-18.jpg",
+                      "caption": "Image 18 - Selecting the crystal's edges, beveling them and seeing the effect on the candy"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Reducing Point Intersections",
+              "content": [
+                "If we look closely, we will see sometimes crystals on the candy's surface overlapping each other (Image 19). This is due to the randomness of the placement. We need more control over how the instances are distributed, so change the Distribution Method to Poisson Disk (Image 20). Making this change removed the [k]Multiply Node[/k] connection; re-connect the [k]Multiply Node's[/k] output to the Density Max input (Image 21). To mitigate the overlap, we need to increase the Distance Min value; this will set a minimum distance between points. Add a new [k]Multiply Node[/k] set to 0.001 and expose the Distance Min in the Modifier Properties to make it easier to set (Image 22).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-19.jpg",
+                      "caption": "Image 19 - Looking closely and seeing crystals on the candy's surface overlapping each other"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-20.jpg",
+                      "caption": "Image 20 - Changing the Distribution Method to Poisson Disk to gain more control over instance placement"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-21.jpg",
+                      "caption": "Image 21 - Re-connecting the Multiply Node's output to the Density Max input after the Distribution Method change removed it"
+                    },
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-22.jpg",
+                      "caption": "Image 22 - Adding a new Multiply Node set to 0.001 and exposing the Distance Min in the Modifier Properties to set a minimum distance between points"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Materials, Lighting, Camera",
+              "content": [
+                "Add a material, position the camera, and move the light closer.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Guru/Geometry Nodes/Part 2/geometry-22.jpg",
+                      "caption": "Image 23 - Final render"
+                    }
                   ]
                 }
               ]
