@@ -3,7 +3,7 @@
   "sections": [
     {
       "3d Isometric Game Tiles": {
-        "tags": ["camera view", "isometric", "terrain", "grass", "rock", "stone", "dock"],
+        "tags": ["camera view", "isometric", "terrain", "grass", "rock", "stone", "dock", "extensions"],
         "key_concepts": [
           "[url]Tutorial 3d Isometric Game Tiles - Low Poly style game models for a game | Blender^^https://www.youtube.com/watch?v=ZuzpWPEW5g4[/url]",
           {
