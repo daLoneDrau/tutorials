@@ -216,15 +216,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-01.jpg",
+                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-01.jpg",
                       "caption": "Image 1 - Starting with the default cube, selecting all vertices in Edit Mode and merging them in the center"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-02.jpg",
+                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-02.jpg",
                       "caption": "Image 2 - Going to Front View and extruding the vertices into a branching shape"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-03.jpg",
+                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-03.jpg",
                       "caption": "Image 3 - Duplicating one of the vertices and branching off in a different direction"
                     }
                   ]
@@ -233,15 +233,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-04.jpg",
+                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-04.jpg",
                       "caption": "Image 4 - Moving to a different angle and rotating the branches so the tree isn't flat"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-05.jpg",
+                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-05.jpg",
                       "caption": "Image 5 - Going to Object Mode and converting to a Curve"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-06.jpg",
+                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-06.jpg",
                       "caption": "Image 6 - Going to the Data Properties tab and updating the Bevel Depth and Resolution under the Geometry section"
                     }
                   ]
@@ -254,11 +254,11 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-07.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-07.jpg",
                             "caption": "Image 7 - Going into Edit Mode, turning on Proportional Editing, selecting vertices and scaling them in"
                           },
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-08.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-08.jpg",
                             "caption": "Image 8 - Extruding the bottom vertex down and scaling out slightly"
                           }
                         ]
@@ -277,11 +277,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-09.jpg",
+                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-09.jpg",
                       "caption": "Image 9 - Setting the 3D Cursor at the tops of the branches and adding an Icosphere to each one in Object Mode with one cluster larger than the other"
                     },
                     {
-                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-10.jpg",
+                      "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-10.jpg",
                       "caption": "Image 10 - Joining the meshes together"
                     }
                   ]
@@ -294,23 +294,23 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-11.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-11.jpg",
                             "caption": "Image 11 - Adding a Plane to the scene"
                           },
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-12.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-12.jpg",
                             "caption": "Image 12 - Scaling it in to make it narrow"
                           },
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-13.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-13.jpg",
                             "caption": "Image 13 - Adding two Loop Cuts"
                           },
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-14.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-14.jpg",
                             "caption": "Image 14 - Scaling the edge loops to make a leaf shape"
                           },
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-15.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-15.jpg",
                             "caption": "Image 15 - Moving the middle face up from the side to give a bend"
                           }
                         ]
@@ -319,19 +319,19 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-16.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-16.jpg",
                             "caption": "Image 16 - Adding another Loop Cut down the middle"
                           },
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-17.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-17.jpg",
                             "caption": "Image 17 - Edge sliding the vertices up top to improve the shape"
                           },
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-18.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-18.jpg",
                             "caption": "Image 18 - Edge sliding the vertices at the bottom to improve the shape"
                           },
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-19.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-19.jpg",
                             "caption": "Image 19 - Selecting the bottom vertex, moving the 3D Cursor there, setting the origin to the 3D Cursor, scaling the leaf down and applying the scale to everything"
                           }
                         ]
@@ -347,19 +347,19 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-20.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-20.jpg",
                             "caption": "Image 20 - Selecting the leaf clusters and opening the Geometry Node Editor"
                           },
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-21.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-21.jpg",
                             "caption": "Image 21 - Adding a Mesh to Volume Node"
                           },
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-22.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-22.jpg",
                             "caption": "Image 22 - Adding a Distribute Points in Volume Node"
                           },
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-23.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-23.jpg",
                             "caption": "Image 23 - Adding an Instance on Points Node and an Object Info Node and using the leaf as the instance"
                           }
                         ]
@@ -369,7 +369,7 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-24.jpg",
+                            "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-24.jpg",
                             "caption": "Image 24 - Adding nodes to randomize the rotation and scale and exposing any variables to affect in the Modifier Properties"
                           }
                         ]
@@ -382,15 +382,15 @@
                             {
                               "image": [
                                 {
-                                  "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-25.jpg",
+                                  "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-25.jpg",
                                   "caption": "Image 25 - Selecting the Ico Sphere and adding a green material"
                                 },
                                 {
-                                  "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-26.jpg",
+                                  "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-26.jpg",
                                   "caption": "Image 26 - Adding a Set Material Node in the Geometry Editor and choosing the leaf material"
                                 },
                                 {
-                                  "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-27.jpg",
+                                  "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-27.jpg",
                                   "caption": "Image 27 - Adding a Sample Nearest Face Node set to Vector data type and a Normal Node to read the normal values"
                                 }
                               ]
@@ -399,15 +399,15 @@
                             {
                               "image": [
                                 {
-                                  "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-28.jpg",
+                                  "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-28.jpg",
                                   "caption": "Image 28 - Connecting the Value output to a Store Named Attribute Node, changing its Data Type to Vector and setting the attribute name to 'normals'"
                                 },
                                 {
-                                  "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-29.jpg",
+                                  "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-29.jpg",
                                   "caption": "Image 29 - Connecting the Instance on Points to its Geometry input and passing its output to the Set Material Node"
                                 },
                                 {
-                                  "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_tree-30.jpg",
+                                  "src": "Blender/Polygon Runway/Assets/geometry trees/geometry_trees-30.jpg",
                                   "caption": "Image 30 - Going to the Shader Editor and adding an Attribute Node connected to the Normal input of the Principled BSDF with Attribute Type set to Instancer and attribute name set to 'normals'"
                                 }
                               ]
