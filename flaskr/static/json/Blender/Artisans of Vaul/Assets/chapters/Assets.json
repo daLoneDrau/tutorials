@@ -10,9 +10,38 @@
             "section": {
               "header": "Blocking Out",
               "content": [
-                "Add a cube to the scene, scale it in the x- and z-axes, then [k]Ctrl-A,S[/k] to apply the scale (Image 1). [k]Ctrl-R[/k] a Loop Cut down the middle (Image 2) and [k]Ctrl-B[/k] to bevel it (Image 3). Select the two edge loops (Image 4) and bevel them (Image 5). Add six Loop Cuts going the opposite direction (Image 6).",
+                "Add a cube to the scene, scale it in the x- and z-axes, then [k]Ctrl-A,S[/k] to apply the scale (Image 1). [k]Ctrl-R[/k] a Loop Cut down the middle (Image 2) and [k]Ctrl-B[/k] to bevel it (Image 3).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/air vents/vents-01.jpg",
+                      "caption": "Image 1 - Adding a cube to the scene, scaling it in the x- and z-axes and applying the scale"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/air vents/vents-02.jpg",
+                      "caption": "Image 2 - Adding a Loop Cut down the middle"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/air vents/vents-03.jpg",
+                      "caption": "Image 3 - Beveling it"
+                    }
+                  ]
+                },
+                "Select the two edge loops (Image 4) and bevel them (Image 5). Add six Loop Cuts going the opposite direction (Image 6).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/air vents/vents-04.jpg",
+                      "caption": "Image 4 - Selecting the two edge loops"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/air vents/vents-05.jpg",
+                      "caption": "Image 5 - Beveling them"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/air vents/vents-06.jpg",
+                      "caption": "Image 6 - Adding six Loop Cuts going the opposite direction"
+                    }
                   ]
                 }
               ]
@@ -25,6 +54,22 @@
                 "You can select an edge or vertex, press [k]V[/k], and that will rip it away from the other vertices it is connected to (Image 7). Whichever side your mouse is on when you press [k]V[/k] will indicate that the rip is occurring away from that side. Select several edges to rip (Image 8). [k]V,Z[/k] to rip and constrain it in the z-axis (Image 9). You will see that the rip created holes where backfaces are visible. One way to fix this would be to add a Solidify Modifier, but another option is to use [k]Alt-V[/k] which creates a face connection (Image 10).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/air vents/vents-07.jpg",
+                      "caption": "Image 7 - Selecting an edge or vertex and pressing V to rip it away from the other vertices it is connected to"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/air vents/vents-08.jpg",
+                      "caption": "Image 8 - Selecting several edges to rip"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/air vents/vents-09.jpg",
+                      "caption": "Image 9 - Ripping and constraining in the z-axis"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/air vents/vents-10.jpg",
+                      "caption": "Image 10 - Using Alt-V to create a face connection to fix the holes where backfaces are visible"
+                    }
                   ]
                 }
               ]
@@ -37,7 +82,7 @@
                 {
                   "model": {
                     "type": "glb",
-                    "path": "Blender/Artisans of Vaul/Assets/ammo_crate.glb",
+                    "path": "Blender/Artisans of Vaul/Assets/air vents.glb",
                     "canvas_number": 1
                   }
                 }
