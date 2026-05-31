@@ -1,19 +1,45 @@
 {
   "sections": [
     {
-      "Air Vents TBD": {
-        "tags": [],
+      "Air Vents": {
+        "tags": ["rip", "vent"],
         "key_concepts": [
           "[url]Rip verts and edges in Blender to make a vent^^https://www.youtube.com/watch?v=8KOt9Imp_Zw[/url]",
-          "TBD",
+          "Use the Rip Tool to separate geometry.",
           {
             "section": {
-              "header": "TBD",
+              "header": "Blocking Out",
               "content": [
-                "",
+                "Add a cube to the scene, scale it in the x- and z-axes, then [k]Ctrl-A,S[/k] to apply the scale (Image 1). [k]Ctrl-R[/k] a Loop Cut down the middle (Image 2) and [k]Ctrl-B[/k] to bevel it (Image 3). Select the two edge loops (Image 4) and bevel them (Image 5). Add six Loop Cuts going the opposite direction (Image 6).",
                 {
                   "image": [
                   ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Edge/Vertex Ripping Out",
+              "content": [
+                "You can select an edge or vertex, press [k]V[/k], and that will rip it away from the other vertices it is connected to (Image 7). Whichever side your mouse is on when you press [k]V[/k] will indicate that the rip is occurring away from that side. Select several edges to rip (Image 8). [k]V,Z[/k] to rip and constrain it in the z-axis (Image 9). You will see that the rip created holes where backfaces are visible. One way to fix this would be to add a Solidify Modifier, but another option is to use [k]Alt-V[/k] which creates a face connection (Image 10).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Final Result",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Artisans of Vaul/Assets/ammo_crate.glb",
+                    "canvas_number": 1
+                  }
                 }
               ]
             }
@@ -365,19 +391,233 @@
       }
     },
     {
-      "Axe TBD": {
-        "tags": ["medieval", "sword"],
+      "Axe": {
+        "tags": ["axe", "lattice"],
         "key_concepts": [
           "[url]Using the Lattice Modifier - Creating an Axe in Blender^^https://www.youtube.com/watch?v=x0pd6syEnJA[/url]",
-          "Creating an axe head and handle",
+          "Making different shapes using the Lattice Modifier.",
           {
             "section": {
-              "header": "TBD",
+              "header": "What is a Lattice?",
               "content": [
-                "",
+                "The Lattice Modifier is a deformation modifier available in Blender. It is non-destructive, so it doesn't alter the geometry of the mesh being modified until applied.",
                 {
                   "image": [
                   ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Basic Axe Shape",
+              "content": [
+                "Start with the default cube, [k]Numpad3[/k] into Side View and [k]S,Shift-X[/k] to scale in the y- and z-axes, scale down in the y-axis, and then [k]Ctrl-A,S[/k] to apply the scale (Image 1). Select the the two long edges on the side and [k]Ctrl-B[/k] to bevel them into the blade, leaving a small gap in the middle (Image 2). [k]G,Y[/k] to move the same edges back, making the blade sharper (Image 3). [k]1[/k] into vertex mode, select the two vertices near the blade and [k]J[/k] to join them, making the top face quads instead of an n-gon (Image 4). Repeat for the bottom face (Image 5).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/axe/axe-01.jpg",
+                      "caption": "Image 1 - Starting with the default cube, going to Side View, scaling in the y- and z-axes, scaling down in the y-axis and applying the scale"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/axe/axe-02.jpg",
+                      "caption": "Image 2 - Selecting the two long edges on the side and beveling them into the blade with a small gap in the middle"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/axe/axe-03.jpg",
+                      "caption": "Image 3 - Moving the same edges back in the y-axis to make the blade sharper"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/axe/axe-04.jpg",
+                      "caption": "Image 4 - Going into Vertex Mode, selecting the two vertices near the blade and joining them to make the top face quads instead of an n-gon"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/axe/axe-05.jpg",
+                      "caption": "Image 5 - Repeating for the bottom face"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Lattice Modifier",
+              "content": [
+                "[k]Shift-D,Y[/k] to duplicate the axe head and move it to the side (Image 6).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/axe/axe-06.jpg",
+                      "caption": "Image 6 - Duplicating the axe head and moving it to the side"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Without Hard Ops",
+                    "content": [
+                      "Move the 3D Cursor to the center of the axe blade you will be working in and [k]Shift-A > Lattice > Lattice[/k] (Image 7). The important thing with the lattice mesh is to remember to never apply the scale after transforming. Scale the lattice so that it is JUST larger than the axe head, making it a close fit (DO NOT APPLY SCALE) (Image 8). The lattice will allow us to deform the shape underneath it. We need to add edge loops to our lattice, and the way to do this is on the Data Properties tab. Under Lattice there is a Resolution section with values for U, V, and W. These correspond to the x-, y-, and z-axes. Increase the resolution in the W and you will see edge loops appear to segment the z-axis (Image 9). Before we can begin deforming the mesh, we need to add a Lattice Modifier to the axe head with the lattice as the target Object (Image 10). If we [k]Tab[/k] into Edit Mode with lattice, we see it has vertices we can manipulate. If we select some vertices move them out, we won't see the transformation affecting the axe head, even with the modifier in place (Image 11). That's because the axe head doesn't have enough geometry; select the axe head and create several edge loops in the z-axis (Image 12). Now if we go back to the lattice and deform it, we will see the axe head deformed as well (Image 13). If you look, the deformation is limited by the lattice to stop after is reaches a vertex that is two stops away (Image 14). You will also notice the geometry in the back was pulled out as well. That is because the lattice only has a 2 in the V Resolution (Image 15). Increase the V Resolution, try again, and you will see that the influence stopped two vertices away (Image 16).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-07.jpg",
+                            "caption": "Image 7 - Moving the 3D Cursor to the center of the axe blade and adding a Lattice to the scene"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-08.jpg",
+                            "caption": "Image 8 - Scaling the lattice to be just larger than the axe head without applying the scale"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-09.jpg",
+                            "caption": "Image 9 - Increasing the W Resolution in the Data Properties tab to add edge loops segmenting the z-axis"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-10.jpg",
+                            "caption": "Image 10 - Adding a Lattice Modifier to the axe head with the lattice as the target Object"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-11.jpg",
+                            "caption": "Image 11 - Going into Edit Mode with the lattice and seeing that moving vertices doesn't affect the axe head due to insufficient geometry"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-12.jpg",
+                            "caption": "Image 12 - Selecting the axe head and creating several edge loops in the z-axis"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-13.jpg",
+                            "caption": "Image 13 - Going back to the lattice and deforming it to see the axe head deformed as well"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-14.jpg",
+                            "caption": "Image 14 - Noticing the deformation is limited by the lattice to stop after reaching a vertex two stops away"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-15.jpg",
+                            "caption": "Image 15 - Noticing the geometry in the back was pulled out as well because the lattice only has a V Resolution of 2"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-16.jpg",
+                            "caption": "Image 16 - Increasing the V Resolution and seeing the influence stop two vertices away"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Proportional Editing",
+                    "content": [
+                      "Revert all your changes, [k]O[/k] to turn on Proportional Editing and change the Falloff to Sphere (Image 17). Drag the vertices out and you will get a rounded shape (Image 18).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-17.jpg",
+                            "caption": "Image 17 - Reverting all changes, turning on Proportional Editing and changing the Falloff to Sphere"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-18.jpg",
+                            "caption": "Image 18 - Dragging the vertices out to get a rounded shape"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Why Use a Lattice?",
+                    "content": [
+                      "You could get the same results by using Proportional Editing directly on the object. The benefit of using the lattice is that it is non-destructive; if you go to edit your mesh it still has its original geometry (Image 19). Any changes made there will have the lattice applied to it. For example create an indentation in the middle of the blade (Image 20). With the lattice applied it bends the identation for you, which could have been difficult to do manually (Image 21).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-19.jpg",
+                            "caption": "Image 19 - Showing the benefit of the lattice being non-destructive with the original mesh geometry preserved in Edit Mode"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-20.jpg",
+                            "caption": "Image 20 - Creating an indentation in the middle of the blade"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-21.jpg",
+                            "caption": "Image 21 - Seeing the lattice bend the indentation automatically"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Spike",
+                    "content": [
+                      "Select the vertex in the back and pull it out to make a spike (Image 22). Unfortunately, this also affected the indentation (Image 23). If we increase the W Resolution, we can move the bend further away so it doesn't affect the indentation (Image 24).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-22.jpg",
+                            "caption": "Image 22 - Selecting the vertex in the back and pulling it out to make a spike"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-23.jpg",
+                            "caption": "Image 23 - Noticing this also affected the indentation"
+                          },
+                          {
+                            "src": "Blender/Artisans of Vaul/Assets/axe/axe-24.jpg",
+                            "caption": "Image 24 - Increasing the W Resolution to move the bend further away so it doesn't affect the indentation"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Axe Handle",
+              "content": [
+                "Add a Cylinder to the scene, and scale it up in the z-axis, down in the x- and y-axes to make a handle (Image 25). Add several Loop Cuts in the z-axis (Image 26). Add a Lattice around the handle and increase the W Resolution (Image 27). Scale out the bottom vertices of the lattice (Image 28). Turn on [k]Proportional Editing > Smooth[/k] and [k]G,Y[/k] the bottom edge to add a slant to the handle (Image 29).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/axe/axe-25.jpg",
+                      "caption": "Image 25 - Adding a Cylinder to the scene and scaling it up in the z-axis and down in the x- and y-axes to make a handle"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/axe/axe-26.jpg",
+                      "caption": "Image 26 - Adding several Loop Cuts in the z-axis"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/axe/axe-27.jpg",
+                      "caption": "Image 27 - Adding a Lattice around the handle and increasing the W Resolution"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/axe/axe-28.jpg",
+                      "caption": "Image 28 - Scaling out the bottom vertices of the lattice"
+                    },
+                    {
+                      "src": "Blender/Artisans of Vaul/Assets/axe/axe-29.jpg",
+                      "caption": "Image 29 - Turning on Proportional Editing set to Smooth and moving the bottom edge in the y-axis to add a slant to the handle"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Final Result",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Artisans of Vaul/Assets/axe.glb",
+                    "canvas_number": 1
+                  }
                 }
               ]
             }
@@ -1054,19 +1294,136 @@
       }
     },
     {
-      "Horns TBD": {
-        "tags": [],
+      "Horns": {
+        "tags": ["extensions", "curve", "extra curves", "array"],
         "key_concepts": [
           "[url]Using Curves to create simple and complex horns^^https://www.youtube.com/watch?v=5BXvwqVyCQw[/url]",
-          "TBD",
+          "Creating horns or pointed objects.",
           {
             "section": {
-              "header": "TBD",
+              "header": "Spiral Horn",
               "content": [
-                "",
+                {
+                  "compound_text": [
+                    "If you don't have it, install Extra Curve Objects (",
+                    {
+                      "url": {
+                        "href": "https://extensions.blender.org/",
+                        "html": "Blender Extensions"
+                      }
+                    },
+                    ")."
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Adding a Spiral",
+                    "content": [
+                      "The easiest way to start is to add a curve, so [k]Shift-A > Curve > Spirals > Archimedian[/k] (Image 1). The initial curve will resemble a circle (Image 2). If we adjust the Height, we will see the end of the curve rise up (Image 3). We can also change the rotation and affect the shape (Image 4). Adjusting the Radius Growth will adjust the curve; positive growth curves outwards, while negative growth curves in (Image 5).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Thickening the Spiral",
+                    "content": [
+                      "Now that we have the path, we want to add thickness. Go to the Data Properties tab, and under [k]Geometry > Bevel[/k] adjust the depth and Fill Caps (Image 6).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Tapering the Horn with a Curve",
+                    "content": [
+                      "Now we want to taper it, but we will use another curve for that. Add a Bezier Curve to the scene (Image 7). Go back to the spiral and under [k]Data Properties > Geometry[/k] set the bezier curve as the target of the Taper Object (Image 8).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "What is Happening",
+                          "content": [
+                            "The tapering is following the curve of the bezier; starting off at 0, increasing rapidly, followed by a return to 0 at the end (Image 9). If we [k]Tab[/k] into Edit Mode and move the end of the bezier curve up, we will see the spiral increase in thickness at the end (Image 10). What we want is a curve that starts of high and slopes downward (Image 11).",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Beveling with an Object",
+                    "content": [
+                      "Let's say we want to change the spiral's body shape. We can introduce a new object to base our bevel on instead of round. [k]Shift-A > Curve > Circle[/k] (Image 12). Go back to the spiral and under [k]Data Properties > Geometry > Bevel[/k] set the type to Object and the Target Object to the new circle (Image 13). We ended up with almost the same shape we had before, but now we can modify it. Edit the circle's shape and you will see it reflected in the spiral (Image 14).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "More Complex Horn",
+              "content": [
+                "[k]Shift-D[/k] to duplicate the horn and the circle and move them out to get a better view (Image 15). Select the circle and [k]RMB > Convert > Mesh[/k] (Image 16). In Edit Mode select all vertices, [k]F[/k] to fill them in and [k]E[/k], [k]S[/k] to taper the shape (Image 17). [k]Ctrl-R[/k], [k]S[/k] to scale in the middle (Image 18). [k]Ctrl-B[/k] to bevel the middle (Image 19). And [k]Ctrl-B,C[/k] to bevel the bottom edge loop (Image 20). Add an Array Modifier in the z-axis, not going up less than 1.0 (Image 21). [k]O[/k] to turn on Proportional Editing, select the top edge loop and [k]S,Shift-Z[/k] to scale it out so it is interlocking with the top item (Image 22).",
                 {
                   "image": [
                   ]
+                },
+                {
+                  "section": {
+                    "header": "Transferring the Shape to the Curve",
+                    "content": [
+                      "Select the curve and [k]Shift-S,T[/k] to move the 3D cursor there, and then select the shape and [k]Shift-S,E[/k] to move the shape to the cursor (Image 23). Add a Curve Modifier to the shape and set the spiral as its Curve Object (Image 24). If the shapes are pointing the wrong direction you can change the Deform Axis to a negative axis (Image 25). In the Array Modifier, update the Count to increase the number of segments (Image 26).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Tapering the Horn",
+                    "content": [
+                      "In the previous horn, the shape was applied to the curve, so when the curve was tapered, so was the shape. This time, the curve is applied to the shape; tapering the curve WILL NOT affect the shape. Instead, select the curve and in Edit Mode, [k]Alt-S[/k] to scale the vertices (make sure Proportional Editing is on) (Image 27). We want the scaling applied uniformly, so change the Falloff to Linear and enable Connected Only (Image 28). Now when you scale the end vertex, you will see a more uniform change applied, although you may need to increase the size of the proportional radius (Image 29). To increase the size of the horn, select the shape and [k]S[/k] to scale (Image 30).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Final Result",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Artisans of Vaul/Assets/horns.glb",
+                    "canvas_number": 1
+                  }
                 }
               ]
             }
