@@ -457,7 +457,7 @@
                   "section": {
                     "header": "Without Hard Ops",
                     "content": [
-                      "Move the 3D Cursor to the center of the axe blade you will be working in and [k]Shift-A > Lattice > Lattice[/k] (Image 7). The important thing with the lattice mesh is to remember to never apply the scale after transforming. Scale the lattice so that it is JUST larger than the axe head, making it a close fit (DO NOT APPLY SCALE) (Image 8). The lattice will allow us to deform the shape underneath it. We need to add edge loops to our lattice, and the way to do this is on the Data Properties tab. Under Lattice there is a Resolution section with values for U, V, and W. These correspond to the x-, y-, and z-axes. Increase the resolution in the W and you will see edge loops appear to segment the z-axis (Image 9). Before we can begin deforming the mesh, we need to add a Lattice Modifier to the axe head with the lattice as the target Object (Image 10). If we [k]Tab[/k] into Edit Mode with lattice, we see it has vertices we can manipulate. If we select some vertices move them out, we won't see the transformation affecting the axe head, even with the modifier in place (Image 11). That's because the axe head doesn't have enough geometry; select the axe head and create several edge loops in the z-axis (Image 12). Now if we go back to the lattice and deform it, we will see the axe head deformed as well (Image 13). If you look, the deformation is limited by the lattice to stop after is reaches a vertex that is two stops away (Image 14). You will also notice the geometry in the back was pulled out as well. That is because the lattice only has a 2 in the V Resolution (Image 15). Increase the V Resolution, try again, and you will see that the influence stopped two vertices away (Image 16).",
+                      "Move the 3D Cursor to the center of the axe blade you will be working in and [k]Shift-A > Lattice > Lattice[/k] (Image 7). The important thing with the lattice mesh is to remember to never apply the scale after transforming. Scale the lattice so that it is JUST larger than the axe head, making it a close fit (DO NOT APPLY SCALE) (Image 8). The lattice will allow us to deform the shape underneath it. We need to add edge loops to our lattice, and the way to do this is on the Data Properties tab. Under Lattice there is a Resolution section with values for U, V, and W. These correspond to the x-, y-, and z-axes. Increase the resolution in the W and you will see edge loops appear to segment the z-axis (Image 9). Before we can begin deforming the mesh, we need to add a Lattice Modifier to the axe head with the lattice as the target Object (Image 10). If we [k]Tab[/k] into Edit Mode with lattice, we see it has vertices we can manipulate. If we select some vertices move them out, we won't see the transformation affecting the axe head, even with the modifier in place (Image 11).",
                       {
                         "image": [
                           {
@@ -479,7 +479,12 @@
                           {
                             "src": "Blender/Artisans of Vaul/Assets/axe/axe-11.jpg",
                             "caption": "Image 11 - Going into Edit Mode with the lattice and seeing that moving vertices doesn't affect the axe head due to insufficient geometry"
-                          },
+                          }
+                        ]
+                      },
+                      "That's because the axe head doesn't have enough geometry; select the axe head and create several edge loops in the z-axis (Image 12). Now if we go back to the lattice and deform it, we will see the axe head deformed as well (Image 13). If you look, the deformation is limited by the lattice to stop after is reaches a vertex that is two stops away (Image 14). You will also notice the geometry in the back was pulled out as well. That is because the lattice only has a 2 in the V Resolution (Image 15). Increase the V Resolution, try again, and you will see that the influence stopped two vertices away (Image 16).",
+                      {
+                        "image": [
                           {
                             "src": "Blender/Artisans of Vaul/Assets/axe/axe-12.jpg",
                             "caption": "Image 12 - Selecting the axe head and creating several edge loops in the z-axis"
