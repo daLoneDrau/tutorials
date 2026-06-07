@@ -1,0 +1,25 @@
+{
+  "sections": [
+    {
+      "What are Fields?": {
+        "tags": ["geometry nodes"],
+        "key_concepts": [
+          "[url]Hexagon World with Geometry Nodes Fields - Blender 3.0 Tutorial^^https://www.youtube.com/watch?v=EboNtLKn_m8[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

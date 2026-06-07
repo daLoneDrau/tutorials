@@ -1,0 +1,25 @@
+{
+  "sections": [
+    {
+      "Geometry Nodes Align Rotation To Vector TBD": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Geometry Nodes Align Rotation To Vector - Blender Tutorial^^https://www.youtube.com/watch?v=e9lpUOXLdJg[/url]",
+          "How to use the new rotation algorithm in geometry Nodes.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

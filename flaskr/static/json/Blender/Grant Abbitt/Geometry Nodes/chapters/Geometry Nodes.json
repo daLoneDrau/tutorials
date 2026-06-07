@@ -1,0 +1,70 @@
+{
+  "sections": [
+    {
+      "Procedural Building TBD": {
+        "tags": [
+          "geometry nodes"
+        ],
+        "key_concepts": [
+          "[url]Blender3D - Creating a procedural Building with Blender 2.93 Geometry Nodes (TUTORIAL)^^https://www.youtube.com/watch?v=t1W3yBpPLQ8[/url]",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Audio Visualizer TBD": {
+        "tags": [
+          "geometry nodes", "canyon"
+        ],
+        "key_concepts": [
+          "[url]Blender 2 93 Create a Sci-Fi Scene and Audio visualizer^^https://www.youtube.com/watch?v=1zclu4SpsRc[/url]",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Topography Landscape TBD": {
+        "tags": [
+          "geometry nodes"
+        ],
+        "key_concepts": [
+          "[url]Blender3D 3.3 - Topography Landscape Geometry Nodes^^https://www.youtube.com/watch?v=WTQ7mgGF1zE[/url]",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

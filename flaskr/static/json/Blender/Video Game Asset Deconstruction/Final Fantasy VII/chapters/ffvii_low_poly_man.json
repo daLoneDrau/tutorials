@@ -1,0 +1,405 @@
+{
+  "title": "Low Poly Man",
+  "sections": [
+    {
+      "Creating a Low Poly Male Character in Final Fantasy VII Cloud Strife Style": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Building the Torso",
+              "content": [
+                "In Object Mode, add a Cube. In Edit Mode, go into Face Mode and select the bottom face and [k]Shift-S,T[/k] to move the 3D cursor to the bottom face and then [k]Tab[/k] into Object Mode and [k]RMB > Set Origin > Origin to 3D Cursor[/k] (Image 1). This will place the cube's pivot point on the bottom face. In Edit Mode, [k]Ctrl-R[/k] to add a vertical Loop Cut to the cube and remove the left half. Add a Mirror Modifier and enable clipping (Image 2). Move the cube to the top of the hips and in Front View scale it down to cover the waist up to the bottom of the rib cage (Image 3). In Side View, adjust the sides to match the contours of the waist (Image 4).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-01.jpg",
+                      "caption": "Image 1 - Setting the cube's pivot point to its bottom face"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-02.jpg",
+                      "caption": "Image 2 - Adding a Mirror Modifier in the x-axis to the cube"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-03.jpg",
+                      "caption": "Image 3 - Scaling the cube to cover the waist area; from the top of the hips to the bottom of the rib cage"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-04.jpg",
+                      "caption": "Image 4 - Aligning the cube to match the contours of the waist in the Side View"
+                    }
+                  ]
+                },
+                "In Front View, select the top face and [k]E[/k] to extrude it to the top of the clavicle (Image 5). Add a horizontal Loop Cut and move it to around the thickest part of the chest (Image 6). Adjust the Loop Cut and the top face of the torso to match the contours of the body from the front (Image 7) and the side (Image 8). If you have an image reference for the back, check that as well (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-05.jpg",
+                      "caption": "Image 5 - Extruding the torso up to the clavicles"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-06.jpg",
+                      "caption": "Image 6 - Adding a Loop Cut to the thickest part of the chest/back"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-07.jpg",
+                      "caption": "Image 7 - Scaling Edge Loops to shape the torso from the front"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-08.jpg",
+                      "caption": "Image 8 - Scaling and rotating Edge Loops to shape the torso from the side"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-09.jpg",
+                      "caption": "Image 9 - Checking the shape from the back"
+                    }
+                  ]
+                },
+                "[k]Numpad1[/k] into Front View, select the front outer edge, and [k]Ctrl-B[/k] to bevel it to provide some rounding (Image 10). Select the two lower Edge Loops, [k]Numpad3[/k] into side, and [k]R[/k] to add a slight rotation (about -8.5 degrees) (Image 11).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-10.jpg",
+                      "caption": "Image 10 - Beveling the front outer edge loop"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-11.jpg",
+                      "caption": "Image 11 - Tilting the bottom waist Edge Loops to give an S-curve to the spine"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Building the Hips",
+              "content": [
+                "[k]Ctrl-Alt-S[/k] to save an incremental version of the file. In Edit Mode select the bottom face of the torso and [k]Shift-D,Z[/k] to create a copy of the face and move it down (Image 13). [k]P,S[/k] to separate the selection into a new object (Image 14). In Edit Mode, select the hips' top face and [k]Shift-S,T[/k] to move the cursor there. Then, in Object Mode, [k]RMB > Set Origin > Origin to 3D Cursor[/k] to move the hips' origin to its top face. Select the torso mesh and [k]Shift-S,T[/k] to move the 3D cursor to the bottom of the torso. Select the cube and [k]RMB > Snap > Selection to Cursor[/k] to move it to just below the torso (Image 14).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/incremental_save.jpg",
+                      "caption": "Making an incremental save file"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-12.jpg",
+                      "caption": "Image 12 - Duplicating the bottom face of the torso and moving it down in the z-axis"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-13.jpg",
+                      "caption": "Image 13 - Separating the duplicated face into a new object to start the hips"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-14.jpg",
+                      "caption": "Image 14 - Snapping the hips to below the torso"
+                    }
+                  ]
+                },
+                "In Side View, [k]E[/k] to extrude the hips so they come down about halfway down to the middle of the butt (Image 15). Select edges and [k]S[/k] to scale them in the x- and y-axes to shape the hips from the front (Image 16) and side (Image 17).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-15.jpg",
+                      "caption": "Image 15 - Extruding the hips to halfway down the butt"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-16.jpg",
+                      "caption": "Image 16 - Scaling edges in the x-axis to match the contours of the reference image from the front"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-17.jpg",
+                      "caption": "Image 17 - Scaling edges in the y-axis to match the contours of the reference image from the side"
+                    }
+                  ]
+                },
+                "Select the bottom edge and [k]G,Z[/k] to drag it down to the bottom of the crotch (Image 18). [k]Numpad7,Numpad9[/k] to go into Bottom View (Image 19). [k]K[/k] to add edges between the front and the back that form the shape of an 'M' (Image 20). [k]Numpad1,Numpad9[/k] to go into Rear View (Image 19) and [k]K[/k] to add edges between the side and the middle that form a 'V' shape (Image 21).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-18.jpg",
+                      "caption": "Image 18 - Dragging the bottom edge to the crotch seam"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-19.jpg",
+                      "caption": "Image 19 - Switching the view to underneath of the hips"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-20.jpg",
+                      "caption": "Image 20 - Making cuts to the bottom face with the Knife Tool"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-21.jpg",
+                      "caption": "Image 21 - Making cuts to the back face with the Knife Tool"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Thighs",
+              "content": [
+                "[k]Ctrl-Alt-S[/k] to save an incremental version of the file. Select the bottom face of the hips and move the 3D Cursor there (Image 22). [k]Numpad7[/k] into Top View, [k]Shift-A > Mesh > Plane[/k] to add a Plane at the 3D Cursor, [k]S[/k] to scale it in and [k]R,45[/k] to rotate it (Image 23). [k]E[/k] to extrude it to the middle of the knee (Image 24). [k]G[/k], [k]S[/k] to move and scale the edges to match the contours of the thighs in side (Image 25) and front view (Image 26). Extrude the top and bottom faces and [k]S,X,0[/k], [k]S,Y,0[/k] to bring them into a point (Image 27). Finally, add a Mirror Modifier in the x-axis using the torso as the Mirror Object (Image 28).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/incremental_save.jpg",
+                      "caption": "Making an incremental save file"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-22.jpg",
+                      "caption": "Image 22 - Moving the 3D Cursor to the bottom of the hips"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-23.jpg",
+                      "caption": "Image 23 - Adding a Plane, rotating it, and scaling it down"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-24.jpg",
+                      "caption": "Image 24 - Extruding the thigh to the middle of the knee"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-25.jpg",
+                      "caption": "Image 25 - Adjusting the mesh to the contours of the thigh from the side"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-26.jpg",
+                      "caption": "Image 26 - Adjusting the mesh to the contours of the thigh from the front"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-27.jpg",
+                      "caption": "Image 27 - Bringing the top and bottom out to a point"
+                    },
+                    {
+                      "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-28.jpg",
+                      "caption": "Image 28 - Mirroring the thigh across the x-axis"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Finishing the Legs",
+              "content": [
+                {
+                  "section": {
+                    "header": "Adding Calves",
+                    "content": [
+                      "[k]Ctrl-Alt-S[/k] to save an incremental version of the file. [k]Shift-D[/k] to duplicate the thigh mesh and move it down (Image 29). [k]Tab[/k] into Edit Mode and move the bottom Edge Loop up to the middle of the calves (Image 30). Scale the top and bottom Edge Loops to match the contour of the reference image (Image 31). Extrude the bottom Edge Loop down to the bottom of the calf muscle and scale it in (Image 32). Delete the bottom vertex and extrude the bottom Edge Loop to below the ankles (Image 33). Fill the bottom face (Image 34).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/incremental_save.jpg",
+                            "caption": "Making an incremental save file"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-29.jpg",
+                            "caption": "Image 29 - Duplicating the thighs and move them down"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-30.jpg",
+                            "caption": "Image 30 - Moving the bottom edge loop to the middle of the calf"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-31.jpg",
+                            "caption": "Image 31 - Scaling the top and bottom edge loops to match the contours of the reference image"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-32.jpg",
+                            "caption": "Image 32 - Extruding the bottom edge loop to the bottom of the calf"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-33.jpg",
+                            "caption": "Image 33 - Deleting the bottom vertex and extrude the bottom edge loop to below the ankles"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-34.jpg",
+                            "caption": "Image 34 - Filling the bottom face"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Feet",
+                    "content": [
+                      "Add a Cube to the scene and move it in place. Scale it down so the top is above the ankles (Image 35). In Side View, scale the cube to match the foot length (Image 36). Add a vertical Loop Cut that lines up with the calf's edge loop (Image 37). Select the back face and [k]S,X,0[/k] to taper it in (Image 38). Select the front face and [k]S,X[/k] to scale it in (Image 39). [k]G,Z[/k] to raise the Edge Loop on the top face (Image 40). Add a Mirror Modifier (Image 41).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/incremental_save.jpg",
+                            "caption": "Making an incremental save file"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-35.jpg",
+                            "caption": "Image 35 - Adding a cube for the foot and moving it into position so the top is above the ankles"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-36.jpg",
+                            "caption": "Image 36 - Scaling in the cube to match the foot's length"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-37.jpg",
+                            "caption": "Image 37 - Adding a Loop Cut to match the calf's edge"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-38.jpg",
+                            "caption": "Image 38 - Tapering in the back face"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-39.jpg",
+                            "caption": "Image 39 - Scaling in the front face"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-40.jpg",
+                            "caption": "Image 40 - Lowering the front and back edges"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-41.jpg",
+                            "caption": "Image 41 - Adding a Mirror Modifier"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Arms",
+              "content": [
+                {
+                  "section": {
+                    "header": "Start with the Shoulders",
+                    "content": [
+                      "[k]Ctrl-Alt-S[/k] to add an incremental save. Add a Cube to the scene and move it up to the shoulder area. Scale it down and rotate 45 degrees around the x-axis (Image 42). In Side View, grab the bottom edge and drag it down to create a kite shape (Image 43). Select the two edges across the middle and [k]S,Y[/k] to scale them out in the y-axis (Image 44). Using the Knife Tool, cut edge loops across the vertices on both sides (Image 45). Select the bottom edge and [k]Ctrl-B[/k] to bevel it to create a face from which the upper arm will extend (Image 46). Select the top of the triangle edge created by the bevel and move it up to the center of the cube (Image 47). Extrude the bottom face to the elbow and then again to the wrist (Image 48).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/incremental_save.jpg",
+                            "caption": "Making an incremental save file"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-42.jpg",
+                            "caption": "Image 42 - Adding a cube for the shoulders and rotate 45 degrees"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-43.jpg",
+                            "caption": "Image 43 - Grabbing the bottom edge and drag it down in the z-axis to create a kite shape"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-44.jpg",
+                            "caption": "Image 44 - Scaling the opposite edges in the y-axis"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-45.jpg",
+                            "caption": "Image 45 - Cutting edges to the center with the Knife Tool"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-46.jpg",
+                            "caption": "Image 46 - Beveling the bottom edge"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-47.jpg",
+                            "caption": "Image 47 - Sliding the vertices into the center"
+                          }
+                        ]
+                      },
+                      "Extrude the bottom face to the elbow and then again to the wrist (Image 48). Select all vertices for the lower arm and [k]P,S[/k] to separate them from the shoulder/upper arm (Image 49). Change to editing the lower arm and fill in the top face and [k]Shift-S,T[/k] to move the 3D Cursor there and then [k]RMB > Set Origin > Origin to 3D Cursor[/k] to set the pivot point (Image 50). Rotate the lower arm to match the angle of the reference image and write the angle down (Image 51). [k]Tab[/k] into Edit Mode and [k]Ctrl-R[/k] to add a Loop Cut where the thickest part of the forearm will be (image 52). Scale it up in the y-axis (Image 53). Extrude out the bottom edge for the fist and scale it in slightly (Image 54).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-48.jpg",
+                            "caption": "Image 48 - Extruding the upper and lower arm from the shoulder"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-43.jpg",
+                            "caption": "Image 49 - Separating the lower arm from the upper arm"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-50.jpg",
+                            "caption": "Image 50 - Filling in the top face of the lower arm and setting the object origin"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-51.jpg",
+                            "caption": "Image 51 - Rotating the lower arm to match the reference image"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-46.jpg",
+                            "caption": "Image 52 - Adding a Loop Cut at the thickest part of the forearm"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-53.jpg",
+                            "caption": "Image 53 - Scaling up the forearm in the y-axis"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-54.jpg",
+                            "caption": "Image 54 - Extruding out the fist and scaling in slightly"
+                          }
+                        ]
+                      },
+                      "Switch to the Front View and got to the shoulder. Select the two vertices on the side faces and [k]S,X[/k] to bring them out along the x-axis to add some width to the shoulders (Image 55).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-55.jpg",
+                            "caption": "Image 55 - Scaling out the shoulders in the Front View"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-43.jpg",
+                            "caption": "Image 49 - Separating the lower arm from the upper arm"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-50.jpg",
+                            "caption": "Image 50 - Filling in the top face of the lower arm and setting the object origin"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-51.jpg",
+                            "caption": "Image 51 - Rotating the lower arm to match the reference image"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-46.jpg",
+                            "caption": "Image 52 - Adding a Loop Cut at the thickest part of the forearm"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-53.jpg",
+                            "caption": "Image 53 - Scaling up the forearm in the y-axis"
+                          },
+                          {
+                            "src": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-54.jpg",
+                            "caption": "Image 54 - Extruding out the fist and scaling in slightly"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Low Poly Man Cloud Strife-Style",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/Video Game Asset Deconstruction/Final Fantasy VII/Low Poly Man/low_poly_male_base-01.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

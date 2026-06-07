@@ -1,0 +1,21 @@
+{
+  "title": "Clothing",
+  "sections": [
+    {
+      "Cloth Sewing": {
+        "key_concepts": [
+          "[url]Blender 4.3 Make A Shirt Tutorial | Cloth Sewing EASY^^https://www.youtube.com/watch?v=_xt4mwjW5Kg[/url]",
+          "Learn how to make a shirt in Blender 4.3.",
+          {
+            "section": {
+              "header": "Character in a T-Pose",
+              "content": [
+                "Start with a character model in a T-Pose (Image 1). Select your mesh, go to the Physics Properties tab and enable [k]Collision[/k] (Image 2) to make sure the cloth collides with the mesh. And in the Modifier Properties tab, make sure the Armature Modifier is above the Collision Modifier (Image 3). [k]Shift-A > Plane[/k] and move it to the middle of your mesh (Image 4). [k]Tab[/k] into Edit Mode, [k]R,X,90[/k] and [k]G,Y[/k] to move the plane in front of the character (Image 5). [k]RMB,S[/k] to subdivide the plane and make the Number of Cuts 25 (Image 6). Delete the left half and add a Mirror Modifier in the x-axis with Clipping enabled (Image 7). Cut the plane into a basic T shape (Image 8). With Proportional Editing on, [k]G[/k], [k]R[/k] to shape the edges to follow the contours of the arms and shoulders (Image 9)."
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

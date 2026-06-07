@@ -1821,6 +1821,63 @@
           }
         ]
       }
+    },
+    {
+      "Female Hair": {
+        "key_concepts": [
+          "[url]Descubra o SEGREDO para Cabelos Low Poly Perfeitos no Blender!^^https://www.youtube.com/watch?v=wshJLlYbMEI[/url]",
+          "Make hair for a low poly female character.",
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Low Poly Head": {
+        "key_concepts": [
+          "[url]I discovered the EASY METHOD to MODEL LOW POLY HEAD!^^https://www.youtube.com/watch?v=dEwcGY-Q9Pk[/url]",
+          "Create a low poly head.",
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Low Poly Skull": {
+        "key_concepts": [
+          "[url]Como criar Zumbis Low Poly para JOGOS no Blender - Parte 3 (CABEÇA)^^https://www.youtube.com/watch?v=G8akG8i4Mmc[/url]",
+          "Create a low poly zombie head/skull.",
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   ]
 }

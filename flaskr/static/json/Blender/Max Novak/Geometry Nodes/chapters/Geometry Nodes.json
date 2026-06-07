@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "Environments TBD": {
+        "tags": [
+          "geometry nodes"
+        ],
+        "key_concepts": [
+          "[url]How to Procedurally Generate ANY Enviroment With BLENDER^^https://www.youtube.com/watch?v=90XX4CIQsV0[/url]",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

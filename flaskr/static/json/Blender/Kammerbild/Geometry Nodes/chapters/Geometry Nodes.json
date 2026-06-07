@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "Procedural Buildings TBD": {
+        "tags": [
+          "geometry nodes"
+        ],
+        "key_concepts": [
+          "[url]Blender: procedural buildings with geometry nodes fields | pt. 1^^https://www.youtube.com/watch?v=59PeIGmZQdY[/url]",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

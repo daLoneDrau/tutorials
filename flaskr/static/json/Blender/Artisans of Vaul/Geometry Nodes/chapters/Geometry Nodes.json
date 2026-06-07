@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "Procedural Chipping TBD": {
+        "tags": [
+          "geometry nodes"
+        ],
+        "key_concepts": [
+          "[url]Geometry nodes for damage to stone - Procedural chipping^^https://www.youtube.com/watch?v=lSrG6mYgk5Q&list=PLnqmLZKRm5CZmfLUZiN-fVdcpgUtgdUnp[/url]",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

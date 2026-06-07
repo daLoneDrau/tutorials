@@ -1,0 +1,25 @@
+{
+  "sections": [
+    {
+      "Hexagonal Tiles": {
+        "tags": ["geometry nodes"],
+        "key_concepts": [
+          "[url]Hexagonal Tiles - Getting started with Blender Nodes Part 5^^https://www.youtube.com/watch?v=mLRqhcPIjg8[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

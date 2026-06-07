@@ -1,0 +1,43 @@
+{
+  "title": "Blender Tips",
+  "sections": [
+    {
+      "Blender 3d Tips and Tricks": {
+        "key_concepts": [
+          {
+            "url": {
+              "html": "[Top 5] Blender 3d Tips and Tricks. Useful shortcuts for blender 3d.",
+              "href": "https://www.youtube.com/watch?v=0SovuKT7Akc"
+            }
+          },
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Tips and tricks for Blender 3d | FOR BEGINNERS": {
+        "key_concepts": [
+          {
+            "url": {
+              "html": "[Top 5] Blender 3d Tips and Tricks. Useful shortcuts for blender 3d.",
+              "href": "https://www.youtube.com/watch?v=0SovuKT7Akc"
+            }
+          },
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "sections": [
+    {
+      "Procedural Medieval Bridge TBD": {
+        "tags": [
+          "geometry nodes"
+        ],
+        "key_concepts": [
+          "[url]procedural medieval bridge generator geometry nodes tutorial for beginners^^https://www.youtube.com/watch?v=Vs0zIDEd7Ak&list=PL01RdxZKP5hAG6J2ejENoGonjU6yBGQNc[/url]",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Audio Visualizer TBD": {
+        "tags": [
+          "geometry nodes", "canyon"
+        ],
+        "key_concepts": [
+          "[url]Blender 2 93 Create a Sci-Fi Scene and Audio visualizer^^https://www.youtube.com/watch?v=1zclu4SpsRc[/url]",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Topography Landscape TBD": {
+        "tags": [
+          "geometry nodes"
+        ],
+        "key_concepts": [
+          "[url]Blender3D 3.3 - Topography Landscape Geometry Nodes^^https://www.youtube.com/watch?v=WTQ7mgGF1zE[/url]",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

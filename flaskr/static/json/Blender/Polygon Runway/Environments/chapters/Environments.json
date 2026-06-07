@@ -16,6 +16,21 @@
       }
     },
     {
+      "Castle": {
+        "key_concepts": [
+          "[url]Low Poly Castle in Blender - 3D Modeling Process | Polygon Runway^^https://www.youtube.com/watch?v=O8Jf03rbMtE[/url]",
+          "Medieval courtyards, towers and ramparts, drawbridges. Let's journey into a darker ages and fortify! But in a cozy and mellow way. Also, adding one shot of how this could be used as a background on a game landing page.",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
       "Castle Tower": {
         "key_concepts": [
           "[url]Blender Low Poly Tower Tutorial | Polygon Runway^^https://www.youtube.com/watch?v=6uNpS3Cqbgk[/url]",
@@ -47,7 +62,7 @@
     },
     {
       "Dungeon": {
-        "tags": ["dungeon", "door", "stairs", "arch", "column", "walls", "alcove"],
+        "tags": ["dungeon", "door", "stairs", "arch", "column", "walls", "alcove", "barrel", "floor"],
         "key_concepts": [
           "[url]Dungeon in Blender 2.8 - Low Poly 3D Isometric modeling^^https://www.youtube.com/watch?v=ZIb1WPbey3c[/url]",
           "Model a low poly dungeon scene",
@@ -164,6 +179,165 @@
           {
             "section": {
               "header": "Door",
+              "content": [
+                {
+                  "section": {
+                    "header": "Arch",
+                    "content": [
+                      "Select the far wall and position the 3D Cursor at the bottom (Image 56). [k]Shift-A > Plane[/k] to add a Plane there (Image 57). [k]S[/k] to scale it down (Image 58) and then [k]S,X[/k] to scale it down in the x-axis (Image 59). Extrude it in the z-axis (Image 60). Add an Array Modifier in the z-axis (Image 61). Add a Simple Deform Modifier set to Bend at 60 degrees (Image 62). [k]R,X,60,-[/k] to rotate it (Image 63). [k]Numpad3[/k] into Side View and [k]G,Y[/k] to move the arch over (Image 64). [k]G,z,2.5[/k] will move it to a good height (Image 65).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Frame",
+                    "content": [
+                      "[k]Shift-A > Plane[/k] to add a Plane (Image 66). [k]S[/k] to scale it down (Image 67) and then [k]S,X[/k] to scale it down in the x-axis (Image 68). Add a Mirror Modifier in the x-axis without clipping (Image 69). Extrude it in the z-axis and position it under the arch (Image 70). Move, scale, extrude the door jamb until it is a good width and in a good position (Image 71). Scale it in the x-axis so that it is not as thick as the arch (Image 72).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Door",
+                    "content": [
+                      "[k]Shift-A > Plane[/k] to add a Plane and scale it down, extrude it up until it fills the door frame (Image 73). Add three Loop Cuts and move the top vertices up to curve the door (Image 74). Bevel the Loop Cuts (Image 75) and then select the front faces of the bevel and [k]Alt-E,F[/k] to bring them inwards (Image 76).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      "[k]Shift-A > Plane[/k] to add a Plane and scale it down, extrude it up until it forms a bar in the middle of the door (Image 77). Position the 3D Cursor in the middle of the front face of the bar and add a UV Sphere (Image 78). Delete the back half of the UV Sphere (Image 79). Add an Array Modifier and move the sphere in the y-axis so it lines up evenly (Image 80).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bridge Parapets",
+              "content": [
+                "Select the edge along the left side of the bridge and extrude it out in the x-axis (Image 81). Select the new face and [k]P,S[/k] to separate it into a new object (Image 82). Use Loop Cuts to split it into 12 faces (Image 83). Delete all except the first face (Image 84). Extrude the face up twice (Image 85). Select all faces around the top side and [k]Alt-E,F[/k] to extrude them out (Image 86). In Object Mode, [k]RMB > Set Origin > Origin to Geometry[/k] to move the object's origin (Image 87). Add an Array Modifier in the y-axis and using the Top View, spread them out (Image 88). [k]G,X[/k] the parapets to move them in (Image 89) and then [k]G,X[/k] the outer edge of the floor to move it out so that the parapets are not floating in mid-air (Image 90). Move the 3D Cursor to the parapet's origin, add a Cube, and scale it down (Image 91). In Edit Mode, extrude the face of the cube all the way to the end of the parapets (Image 92).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Rafters",
+              "content": [
+                "Select the edges along the ceiling (Image 93). [k]E,Z[/k] to extrude them down (Image 94). [l]Alt-E,F[/k] to extrude the faces out (Image 95). Go to the corner by the alcove, select the two vertices on the inside of the diagonal edge and [k]E,X[/k] to bring them out (Image 96). Delete the two outside vertices and add a Loop Cut to make a square in the outer face (Image 97). Select the face and extrude it out (Image 98).",
+                {
+                  "image": [
+                  ]
+                },
+                "[k]Shift-RMB[/k] to position the 3D Cursor above and left of the door, and add a Place (Image 99). Rotate the plane 90 degrees in the y-axis and scale it down (Image 100). Extrude it out in the x-axis (Image 101). Select the bottom edge and bevel it to round out the end (Image 102). Add a Mirror Modifier in the y-axis with the door as the target object and apply (Image 103). Select the post, [k]/[/k] into  Local View and in Edit Mode, select the geometry for one of the posts and [k]P,S[/k] to separate it (Image 104). Turn on Snapping with Snap Base set to Face and [k]Shift-D,Shift-Z[/k] to create a duplicate and stick it to the far wall, staying at the same height (Image 105). [k]R,Z,90,-[/k] to rotate it around (Image 106). Add an Array Modifier to replicate four of them in a row (Image 107).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Alcove Revisited",
+              "content": [
+                "Select the alcove cutout and isolate it in Local View (Image 108). Select the bottom face, flip the normals if needed and extrude it up in the z-axis (Image 109).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Floor Slabs",
+              "content": [
+                {
+                  "compound_text": [
+                    "Move the 3D cursor to the floor by the door and add a Plane (Image 110). Scale down to an appropriate size (Image 111). Go into Local View and start ",
+                    {
+                      "url": {
+                        "href": "tutorials/Blender/Grant Abbitt/Complete Blender Creator/Modular Dungeon/Creating the Floor Modules#Creating the First Floor Module",
+                        "html": "editing"
+                      }
+                    },
+                    " (Image 112). Still in Edit Mode, exit Local View, [k]Numpad.[/k] to zoom in on the slab and move it down in the z-axis to sink it into the floor (Image 113). Turn on [k]Snap > Face[/k] and [k]Alt-D[/k] to place random slabs on the floor (Image 114)."
+                  ]
+                },
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Wall Stones",
+              "content": [
+                "In Side View, place the 3D Cursor on the lower part of the wall and add a Plane to the scene (Image 115). [k]Tab[/k] into Edit Mode, select all vertices and [k]M,A[/k] to merge them in the center (Image 116). Extrude and duplicate vertices to draw a pattern on the wall (Image 117). [k]F[/k] to fill in the shapes (Image 118). [k]i[/k] to inset a face in all of them (Image 119). [k]G,X[/k] to bring the inner faces out (Image 120). Select some random chunks, [k]Alt-D[/k] to duplicate them and [k]G[/k], [k]R[/k] them to other spots (Image 121). Duplicate the set and move them to the opposite wall (Image 122).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Breaking the Stairs",
+              "content": [
+                "Select the stairs object, [k]/[/k] into Local View, and add two Loop Cuts (Image 123). Enable [k]Proportionale Editing > Random[/k] and start moving vertices around on the stairs (Image 124). Add random bevels (Image 125).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Debris",
+              "content": [
+                {
+                  "compound_text": [
+                    "Add a rock using the Rock Generator and use a Decimate Modifier to bring the triangles down (Image 126). Create ",
+                    {
+                      "url": {
+                        "href": "tutorials/Blender/GrantAbbitt/Complete Blender Creator/Simple Models/Linked Duplicates",
+                        "html": "Linked Duplicates"
+                      }
+                    },
+                    " of the rock and spread them throughout the scene, applying scale and rotation to add variety (Image 127)."
+                  ]
+                },
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Barrel",
               "content": [
               ]
             }

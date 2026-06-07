@@ -1,0 +1,593 @@
+{
+  "title": "Environments",
+  "sections": [
+    {
+      "Tower Island": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Blender Tutorial for Absolute Beginners - Interface & 3D Modeling. Part 1^^https://www.youtube.com/watch?v=Iyf-Zp3CRLg[/url]",
+          {
+            "section": {
+              "header": "The Island",
+              "content": [
+                {
+                  "section": {
+                    "header": "Ground",
+                    "content": [
+                      "Add the reference image to the scene (Image 1). Start with the default cube and scale it: [k]S,X,3.5[/k], [k]S,Y,4.5[/k], [k]S,Z,0.5[/k] (Image 2). [k]Ctrl-R[/k] to add two Loop Cuts in the x-axis and [k]S,Y[/k] to bring them closer together (Image 3). Add two more Loop Cuts inside the new section and [k]S,Y[/k] to move the edge loops further apart (Image 4). Select the inner face on the side and [k]G,X[/k] to push it inwards to make room for the pier (Image 5). Select all edges around the sides and [k]Ctrl-B[/k] to bevel them with seven segments and a width of 1M (Image 6). If the bevel doesn't look correct, [k]Tab[/k] into Object Mode and [k]Ctrl-A,S[/k] to apply the scale. Select the edges by the pier cutout and [k]Ctrl-B,C[/k] to bevel those edges but clamp them so the bevels don't go over each other; set the segments to three this time (Image 7). We need to remove unnecessary vertices from the even surfaces on top and bottom so we can bevel the edges evenly, so [k]A,X,L[/k] to perform a limited dissolve (Image 8). Select the top face and bevel it with three segments (Image 9). Select the edges around the top and bottom and [k]RMB > Mark Sharp[/k] (Image 10) so that if we turn on [k]Shade Auto Smooth[/k] those lines will be sharp. In the Outliner rename the mesh to 'ground' and organize the project (Image 11).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Rocks",
+                    "content": [
+                      "Add a cube to the scene, [k]/[/k] to go into Local View and [k]G,Z,1[/k] to move it up (Image 12). Set the size: [k]S,X,0.65[/k], [k]S,Y,0.65[/k], [k]S,Z,0.75[/k] (Image 13). Scale in the top face to taper the shape slightly (Image 14). Select a random edge and [k]G,G[/k] to Edge Slide it down (Image 15). Add a Bevel Modifier with the Amount set to 0.15 and the Segments to 2 (Image 16). Doing it through a modifier will allow you to continue to make changes to the underlying geometry while still creating bevels. [k]Shift-D,Y[/k] and create five variations of the rock, all lined up in the y-axis (Image 17). [k]/[/k] to exit Local View and you will see the rocks buried in the island (Image 18). [k]RMB[/k] the rocks collection in the Outliner and [k]Select Objects[/k] to select all the rocks (Image 19). [k]G,X[/k] to move them out in the x-axis to clear them from the island (Image 20). With them all selected [k]Ctrl-A,S[/k] to apply the scale (Image 21), this will ensure the Bevel Modifier is applied evenly across all axes. Duplicate, rotate, scale, and place rocks all around the island (Image 22).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Grass",
+              "content": [
+                "Add a Cube to the scene and shrink it down (Image 17). [k]/[/k] into Local View and [k]S,X[/k] to make it very thin from the side (Image 18). In Edit Mode, extrude the top face up and scale it in the y-axis (Image 19). [k]G[/k] the top face to move it, giving a bend to the geometry (Image 20).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-17.jpg",
+                      "caption": "Image 17 - Adding a Cube to the scene and shrinking it down"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-18.jpg",
+                      "caption": "Image 18 - Going into Local View and scaling it to be very thin from the side"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-19.jpg",
+                      "caption": "Image 19 - Going into Edit Mode, extruding the top face up and scaling it in the y-axis"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-20.jpg",
+                      "caption": "Image 20 - Moving the top face to give a bend to the geometry"
+                    }
+                  ]
+                },
+                "Add a Loop Cut to the longest section and then move that Edge Loop, creating another bend (Image 21). Add a Loop Cut down the middle of the shape (Image 22). Move that Edge Loop in the z- and x-axes (Image 23). Select the vertices for the Edge Loop except the bottom and move them out to add a point to the blade (Image 24).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-21.jpg",
+                      "caption": "Image 21 - Adding a Loop Cut to the longest section and moving that Edge Loop to create another bend"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-22.jpg",
+                      "caption": "Image 22 - Adding a Loop Cut down the middle of the shape"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-23.jpg",
+                      "caption": "Image 23 - Moving that Edge Loop in the z- and x-axes"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-24.jpg",
+                      "caption": "Image 24 - Selecting the vertices for the Edge Loop except the bottom and moving them out to add a point to the blade"
+                    }
+                  ]
+                },
+                "Select all vertices and [k]Shift-D[/k] to duplicate them (Image 25). Move the duplicates around and scale them to create a patch of grass (Image 26). Position the clump on the ground and [k]Alt-D[/k] to make several linked duplicates, covering the ground (Image 27).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-25.jpg",
+                      "caption": "Image 25 - Selecting all vertices and duplicating them"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-26.jpg",
+                      "caption": "Image 26 - Moving the duplicates around and scaling them to create a patch of grass"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-27.jpg",
+                      "caption": "Image 27 - Positioning the clump on the ground and making several linked duplicates to cover the ground"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Stones",
+              "content": [
+                {
+                  "compound_text": [
+                    "If you don't have it, install Extra Mesh Objects (",
+                    {
+                      "url": {
+                        "href": "https://extensions.blender.org/",
+                        "html": "Blender Extensions"
+                      }
+                    },
+                    ")."
+                  ]
+                },
+                "Enable the Add-on through [k]Edit > Preferences[/k] (Image 28). [k]Shift-A > Mesh > Extras > Rock Generator[/k] to add a rock the the scene (Image 29). [k]/[/k] to see the rock in Local View (Image 30). Apply all modifiers, then add a Decimate Modifier to bring it down to about 100 triangle (Image 31). Create several linked duplicates of the rocks and position them so they poke through the sides of the tile (Image 32).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-28.jpg",
+                      "caption": "Image 28 - Installing Extra Mesh Objects and enabling the Add-on through Edit > Preferences"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-29.jpg",
+                      "caption": "Image 29 - Adding a rock to the scene using Shift-A > Mesh > Extras > Rock Generator"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-30.jpg",
+                      "caption": "Image 30 - Going into Local View to see the rock"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-31.jpg",
+                      "caption": "Image 31 - Applying all modifiers and adding a Decimate Modifier to bring it down to about 100 triangles"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-32.jpg",
+                      "caption": "Image 32 - Creating several linked duplicates of the rocks and positioning them so they poke through the sides of the tile"
+                    }
+                  ]
+                },
+                "Select all meshes and [k]Shift-D,Y,3.5[/k] to duplicate them to the side [k]Z,1[/k] to move them up (Image 33). Select the bottom edge of the bottom and [k]E,Z,1[/k] to extrude it down (Image 34). Duplicate the rocks, rotate them and place them in the bottom of the new tile (Image 35). Duplicate a rock, scale it up and move it to the top of the surface, removing any grass that is in the way (Image 36).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-33.jpg",
+                      "caption": "Image 33 - Selecting all meshes and duplicating them to the side and moving them up"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-34.jpg",
+                      "caption": "Image 34 - Selecting the bottom edge of the bottom and extruding it down"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-35.jpg",
+                      "caption": "Image 35 - Duplicating the rocks, rotating them and placing them in the bottom of the new tile"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-36.jpg",
+                      "caption": "Image 36 - Duplicating a rock, scaling it up and moving it to the top of the surface, removing any grass that is in the way"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Water Tile",
+              "content": [
+                "Select the ground, isolate it in Local View and select a top face (Image 37). [k]Ctrl-Numpad+[/k] to select more until you have selected the entire top (Image 38). [k]Shift-D,RMB[/k], [k]P,S[/k] to duplicate and separate the geometry (Image 39). Move the new mesh to the World Origin, and add an Array Modifier in the x-axis and a second in the y (Image 40). Move the water tile around until there is no empty space in the camera background (Image 41).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-37.jpg",
+                      "caption": "Image 37 - Selecting the ground, isolating it in Local View and selecting a top face"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-38.jpg",
+                      "caption": "Image 38 - Expanding the selection until the entire top is selected"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-39.jpg",
+                      "caption": "Image 39 - Duplicating and separating the geometry"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-40.jpg",
+                      "caption": "Image 40 - Moving the new mesh to the World Origin and adding an Array Modifier in the x-axis and a second in the y-axis"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-41.jpg",
+                      "caption": "Image 41 - Moving the water tile around until there is no empty space in the camera background"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Dock",
+              "content": [
+                "Add a cube to the scene, move it to the end of a tile and scale it until it is like a post (Image 42). [k]Alt-D,Y[/k], [k]Alt-D,X[/k] to make 2 sets of posts evenly spaced (Image 43). [k]Shift-D,RMB[/k] to duplicate a post in place, [k]R,X,90[/k] to rotate it, and the scale it to the size of a board and move it to the front of the dock (Image 44).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-42.jpg",
+                      "caption": "Image 42 - Adding a cube to the scene, moving it to the end of a tile and scaling it until it is like a post"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-43.jpg",
+                      "caption": "Image 43 - Making 2 sets of posts evenly spaced using linked duplicates in the y- and x-axes"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-44.jpg",
+                      "caption": "Image 44 - Duplicating a post in place, rotating it 90 degrees in the x-axis, scaling it to the size of a board and moving it to the front of the dock"
+                    }
+                  ]
+                },
+                "[k]Shift-D[/k] to add duplicates until you reach the end of the dock (Image 45). Use Loop Cuts and Bevels to add some notches and wobbles to the geometry (Image 46). Duplicate a post again, and add more structure to the dock (Image 47). Extrude the top face of one of the posts and scale it in to add a cap (if these were linked duplicates, changing affects all) (Image 48).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-45.jpg",
+                      "caption": "Image 45 - Adding duplicates until reaching the end of the dock"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-46.jpg",
+                      "caption": "Image 46 - Using Loop Cuts and Bevels to add some notches and wobbles to the geometry"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-47.jpg",
+                      "caption": "Image 47 - Duplicating a post again and adding more structure to the dock"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-48.jpg",
+                      "caption": "Image 48 - Extruding the top face of one of the posts and scaling it in to add a cap"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Materials",
+              "content": [
+                "Assign appropriate materials to all geometry (Image 49). [k]F12[/k] to render (Image 50).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-49.jpg",
+                      "caption": "Image 49 - Assigning appropriate materials to all geometry"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-50.jpg",
+                      "caption": "Image 50 - Rendering the scene"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "3d Isometric Game Tiles",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/brainchildpl/Environments/3D_iso_game_tiles.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "3d Cartoon Stylised Tree": {
+        "tags": ["tree"],
+        "key_concepts": [
+          "[url]Tutorial How to create a 3d Cartoon Stylised Tree in Blender 3d | Cartoon Smooth Game Model^^https://www.youtube.com/watch?v=bAQ7nUHghPo[/url]",
+          {
+            "section": {
+              "header": "Leaves",
+              "content": [
+                "Add a cube to the scene, [k]Tab[/k] into Edit Mode, and [k]Ctrl-R[/k] to add a Loop Cut (Image 1). Select the top-left edge and [k]E[/k] to extrude it out a little bit past one square's size (Image 2). To help, you can enable [k]Snap > Snap Target > Grid[/k] to use the grid as your target (Image 3). Add a Loop Cut on the right of the new section (Image 4). Extrude a section lower than the starting cube (Image 5). Extrude again down, then right, and then up, snaking around the starting cube (Image 6). Select all outer edges (Image 7). [k]Ctrl-B[/k] to bevel the edges with three segments (Image 8). Go to the vertices above the inner bend and [k]M,A[/k] to merge them at the center to reduce the number of triangles (Image 9). In Object Mode, [k]Numpad1[/k] into Front View and rotate the mesh (Image 10). [k]Numpad7[/k] into Top View, [k]Alt-D[/k] to create a linked duplicate, and move it over to the side and rotate (Image 11). Create another linked duplicate, rotating and moving to the side (Image 12). Add a Cube to the scene, select the outer edges and bevel them with three segments (Image 13). Create 10-15 linked duplicates and [k]G[/k], [k]R[/k], [k]S[/k] them around the scene (Image 14)."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Trunk",
+              "content": [
+                "Add a Circle to the scene, and [k]E,Z[/k] to extrude it up (Image 15). Add two Loop Cuts and then scale in the edges to taper the trunk (Image 16). Add a two Loop Cuts in the middle and [k]G,G[/k] to Edge Slide them closer (Image 17). Select one of the faces and extrude it out several times, scaling and changing directions to make it look like a branch (Image 18). Add two more Loop Cuts to the branch and extrude one of the faces on the side, forking the branch (Image 19). Select the branch geometry, [k]Shift-D[/k] and move it around to the other side to make a second branch (Image 20). Select random edges around the bottom and [k]G,Shift-Z[/k] to add some variation to the trunk (Image 21)."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Ground",
+              "content": [
+                "Add a Cube to the scene, go into Local View and scale it down in the z-axis (Image 22)., and [k]E,RMB[/k], [k]S[/k], [k]E[/k] the top face to extrude it, scale it, and extrude again to make a top layer (Image 23). Select all edges and bevel them (Image 24). Exit Local View and move the ground in place, scaling it up to cover the tree and its foliage (Image 25). Add another cube to the scene and bevel the edges (Image 26). Create several linked duplicates and embed them in the side of the ground (Image 27)."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Grass",
+              "content": [
+                "Add a Cube to the scene, go into Local View and scale it down in the y-axis and scale the top in the x-axis (Image 28). Scale it down, [k]Alt-D[/k] to duplicate and create a clump of grass (Image 29). Create several clumps around the scene (Image 30)."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Materials",
+              "content": [
+                "Assign appropriate materials to all geometry (Image 31). [k]F12[/k] to render (Image 32).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-49.jpg",
+                      "caption": "Image 49 - Assigning appropriate materials to all geometry"
+                    },
+                    {
+                      "src": "Blender/brainchildpl/Environments/3d Isometric Game Tiles/iso_tiles-50.jpg",
+                      "caption": "Image 50 - Rendering the scene"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "3d Isometric Game Tiles",
+              "content": [
+                {
+                  "model": {
+                    "type": "glb",
+                    "path": "Blender/brainchildpl/Environments/3D_iso_game_tiles.glb",
+                    "canvas_number": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Hexagon Tiles": {
+        "key_concepts": [
+          "[url]Tutorial Creating 3d Low Poly (cartoon) Hexagon Tiles ( Floating islands) models.^^https://www.youtube.com/watch?v=DOZGlrqW1rE[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Cartoon 3d Boss Arena": {
+        "key_concepts": [
+          "[url]Tutorial] Modeling 3d Underground Boss Arena | Low Poly 3d Illustration | Cartoon 3d Boss Arena^^https://www.youtube.com/watch?v=_vD63i3-ibE[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Low Poly Assets | 3d Game Design": {
+        "key_concepts": [
+          "[url]Simple Low Poly Game Art - Blender & Unity 3d Low Poly Game | Low Poly Assets | 3d Game Design^^https://www.youtube.com/watch?v=yDi0VhwCTPg[/url]",
+          "[url]Simple Low Poly Game Art - PART 2: Blender & Unity 3d Low Poly Game | Low Poly Assets | Game Design^^https://www.youtube.com/watch?v=Cruzv0bsMCc[/url]",
+          "[url]Simple Low Poly Game Art - PART 3: Blender & Unity 3d Low Poly Game | Low Poly Assets | Game Design^^https://www.youtube.com/watch?v=3WhpDpjq34U[/url]",
+          "[url]Simple Low Poly Game Art - PART 4: Blender & Unity 3d Low Poly Game | Low Poly Assets | Game Design^^https://www.youtube.com/watch?v=PmwDIuOtGjM[/url]",
+          "[url]Simple Low Poly Game Art - PART 5: Blender & Unity 3d Low Poly Game | Low Poly Assets | Game Design^^https://www.youtube.com/watch?v=tckGsqhprFM[/url]",
+          "[url]Simple Low Poly Game Art - PART 6: Blender & Unity 3d Low Poly Game | Low Poly Assets | Game Design^^https://www.youtube.com/watch?v=74d1sufnM2g[/url]",
+          "[url]Simple Low Poly Game Art - PART 7: Blender & Unity 3d Low Poly Game | Low Poly Assets | Game Design^^https://www.youtube.com/watch?v=VLe7TBkg3yk[/url]",
+          "[url]Simple Low Poly Game Art - PART 8: Blender & Unity 3d Low Poly Game | Low Poly Assets | Game Design^^https://www.youtube.com/watch?v=N7zc6YU12z8[/url]",
+          "[url]Simple Low Poly Game Art - PART 9: Blender & Unity 3d Low Poly Game | Low Poly Assets | Game Design^^https://www.youtube.com/watch?v=HNxXj1Lb494[/url]",
+          "[url]Simple Low Poly Game Art - PART 10: Blender & Unity 3d Low Poly Game | Low Poly Assets | Game Design^^https://www.youtube.com/watch?v=rRGHMzIh4HA[/url]",
+          "[url]Simple Low Poly Game Art - PART 11: Blender & Unity 3d Low Poly Game | Low Poly Assets | Game Design^^https://www.youtube.com/watch?v=ubbmgjrGl-M[/url]",
+          "[url]Simple Low Poly Game Art - PART 12: Blender & Unity 3d Low Poly Game | Low Poly Assets | Game Design^^https://www.youtube.com/watch?v=jS848-Y61Bs[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Low Poly CLIFF": {
+        "key_concepts": [
+          "[url]Low Poly CLIFF in Blender 2.90 | Part 1 |^^https://www.youtube.com/watch?v=LW5OSOvkoEM[/url]",
+          "[url]Low Poly CLIFF in Blender 2.90 | Part 2 |^^https://www.youtube.com/watch?v=9D_5E2X5170[/url]",
+          "[url]Low Poly CLIFF in Blender 2.90 | Part 3 |^^https://www.youtube.com/watch?v=iA3pqsbzAa8[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "LOW POLY DUNGEON": {
+        "key_concepts": [
+          "[url]EP1 | Blender 2.90 & Unity - Modular LOW POLY DUNGEON | 3d Game-ready | Blender Speed STYLISED ART^^https://www.youtube.com/watch?v=hx81pWjv7SQ[/url]",
+          "[url]EP2 | Blender 2.90 & Unity - Modular LOW POLY DUNGEON | 3d Game-ready | Blender Speed STYLISED ART^^https://www.youtube.com/watch?v=vGjEh01O3Js[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "LOW POLY Environment Design": {
+        "key_concepts": [
+          "[url]EP1 | 3d LOW POLY Environment Design in Blender 2.90 | Creating 3d Game Ready Models in Blender 2.90^^https://www.youtube.com/watch?v=1xinC1PCzl4[/url]",
+          "[url]EP2 | 3d LOW POLY Environment Design in Blender 2.90 | Creating 3d Game Ready Models in Blender 2.90^^https://www.youtube.com/watch?v=PFxxqq6ymv8[/url]",
+          "[url]EP3 | 3d LOW POLY Environment Design in Blender 2.90 | Creating 3d Game Ready Models in Blender 2.90^^https://www.youtube.com/watch?v=9GSOKbl5Bwo[/url]",
+          "[url]EP4 | 3d LOW POLY Environment Design in Blender 2.90 | Creating 3d Game Ready Models in Blender 2.90^^https://www.youtube.com/watch?v=hdSYTA-g2qY[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Low Poly House": {
+        "key_concepts": [
+          "[url]EP1 | Low Poly House | Game-ready asset creation in Blender 2.90 | 3d Game Design | Lowpoly 3d Art^^https://www.youtube.com/watch?v=6_2KPwQvwnY[/url]",
+          "[url]EP2 | Low Poly House | Game-ready asset creation in Blender 2.90 | 3d Game Design | Lowpoly 3d Art^^https://www.youtube.com/watch?v=ldJfrAfDvpw[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Low Poly Hut": {
+        "key_concepts": [
+          "[url]EP1 | Low Poly Hut in Blender 2.90 | 3d Game Asset | Blender Speed Model | Low poly game asset^^https://www.youtube.com/watch?v=7KQ_2eGUjKM[/url]",
+          "[url]EP2 | Low Poly Hut in Blender 2.90 | 3d Game Asset | Blender Speed Model | Low poly game asset^^https://www.youtube.com/watch?v=Ff1Uz28E3Cs[/url]",
+          "[url]EP3 | Low Poly Hut in Blender 2.90 | 3d Game Asset | Blender Speed Model | Low poly game asset^^https://www.youtube.com/watch?v=SNeoUI721bs[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "LOW POLY stone brick Fence": {
+        "key_concepts": [
+          "[url]LOW POLY stone brick Fence in Blender 2.90 - 3d Low poly environment prop design in Blender 2.90^^https://www.youtube.com/watch?v=QtFOsnixgFc[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "LOWPOLY CLIFF rocks with grass": {
+        "key_concepts": [
+          "[url]LOWPOLY CLIFF rocks with grass / moss in BLENDER 3D | Low poly 3d style for games | 3d Game Art^^https://www.youtube.com/watch?v=fT0Z0K35gzE[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Bridge": {
+        "key_concepts": [
+          "[url]3d Lowpoly Style | Flat Shaded Bridge in Blender 3d using Curve Modifier | Simple 3D Clean Art^^https://www.youtube.com/watch?v=LBjTxBFRpXE[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Simple & Clean 3D Game Art": {
+        "key_concepts": [
+          "[url][Blender & Unity] Playful, Simple & Clean 3D Game Art ( Lowpoly 3D Environment ) Game Ready (PART 1)^^https://www.youtube.com/watch?v=fk1vZzQAL6Y[/url]",
+          "[url][Blender & Unity] Playful, Simple & Clean 3D Game Art ( Lowpoly 3D Environment ) Game Ready (PART 2)^^https://www.youtube.com/watch?v=c7RhXjLWoR4[/url]",
+          "[url][Blender & Unity] Playful, Simple & Clean 3D Game Art ( Lowpoly 3D Environment ) Game Ready (PART 3)^^https://www.youtube.com/watch?v=QR-35Mmusfk[/url]",
+          "[url][Blender & Unity] Playful, Simple & Clean 3D Game Art ( Lowpoly 3D Environment ) Game Ready (PART 4)^^https://www.youtube.com/watch?v=qZJsfoCq0t0[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Low Poly TREES": {
+        "key_concepts": [
+          "[url]Low Poly TREES in Blender 3D & Unity 2019^^https://www.youtube.com/watch?v=e4FQusB8YK4[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Lowpoly Tiny Hut": {
+        "key_concepts": [
+          "[url]TUTORIAL - 3D Modeling Lowpoly Tiny Hut in BLENDER 3.0 (Part 1)^^https://www.youtube.com/watch?v=8OeYfV1HGNA[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Lowpoly Stone Fence": {
+        "key_concepts": [
+          "[url]3D Modeling & Rendering in Blender 3.0 - 3D Lowpoly Stone Fence^^https://www.youtube.com/watch?v=30UPRaeMWag[/url]",
+          {
+            "section": {
+              "header": "SECTION",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

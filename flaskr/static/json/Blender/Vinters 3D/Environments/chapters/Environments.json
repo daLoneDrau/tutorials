@@ -1,0 +1,68 @@
+{
+  "title": "Environments",
+  "sections": [
+    {
+      "Campfire": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Animate a Lowpoly Camp Fire in Blender! Full tutorial from start to finish!^^https://www.youtube.com/watch?v=UJvZli5bVs8[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Church": {
+        "tags": [],
+        "key_concepts": [
+          "[url]I made a spooky graveyard in Blender^^https://www.youtube.com/watch?v=GorG7k3CVaU[/url]",
+          "TBD",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Spooky Graveyard": {
+        "tags": [],
+        "key_concepts": [
+          "[url]I made a spooky graveyard in Blender^^https://www.youtube.com/watch?v=f_Qey1AKDIM[/url]",
+          "Create a cute and spooky scene at the end of a spooky season!",
+          {
+            "section": {
+              "header": "TBD",
+              "content": [
+                "",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

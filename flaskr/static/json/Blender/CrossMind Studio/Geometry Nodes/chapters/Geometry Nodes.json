@@ -1,0 +1,1095 @@
+{
+  "sections": [
+    {
+      "03 Interface and Basics": {
+        "tags": [
+          "geometry nodes",
+          "transform geometry",
+          "join geometry",
+          "subdivision surface",
+          "convex hull",
+          "mesh to curve",
+          "instance on points",
+          "reroute"
+        ],
+        "key_concepts": [
+          "[url]03 Interface and Basics -Geometry Nodes For Beginners / Blender 3.0(Fields)^^https://www.youtube.com/watch?v=sBJ-HuBL6gw[/url]",
+          {
+            "section": {
+              "header": "Getting Started",
+              "content": [
+                "Start with the default cube, go to the Geometry Nodes workspace and create a new Geometry Nodes Modifier (Image 1).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-01.jpg",
+                      "caption": "Image 1 - Starting with the default cube, going to the Geometry Nodes workspace and creating a new Geometry Nodes Modifier"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Transform Geometry Node",
+              "content": [
+                "The [k]Transform Geometry[/k] node will translate, rotate, or scale the geometry along the three axes (Image 2).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-02.jpg",
+                      "caption": "Image 2 - Adding a Transform Geometry node to translate, rotate, or scale the geometry along the three axes"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Disconnecting a Node from the Network",
+              "content": [
+                "If you want to disconnect a node, [k]Alt-LMB[/k] the node and drag it out of the network (Image 3).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-03.jpg",
+                      "caption": "Image 3 - Alt-clicking a node and dragging it out of the network to disconnect it"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Cutting a Node from the Network",
+              "content": [
+                "If you want to cut a node from the network, but leave its neighbors connected, [k]Ctrl-X[/k].",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Slicing a Network",
+              "content": [
+                "If you want to slice a connection between nodes, [k]Ctrl,RMB-drag[/k].",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Duplicating a Node",
+              "content": [
+                "You can duplicate a node with [k]Shift-D[/k] (Image 4). If you want to duplicate a node with the same inputs, it is [k]Ctrl-Shift-D[/k] (Image 5).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-04.jpg",
+                      "caption": "Image 4 - Duplicating a node with Shift-D"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-05.jpg",
+                      "caption": "Image 5 - Duplicating a node with the same inputs using Ctrl-Shift-D"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Join Geometry Node",
+              "content": [
+                "The [k]Join Geometry[/k] node will merge separately generated geometries into a single one. It doesn't matter where the geometry come from. In this example, we have applied two separate [k]Transform Geometry[/k] nodes to the same geometry and then merged them before sending to the output (Image 6).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-06.jpg",
+                      "caption": "Image 6 - Using the Join Geometry node to merge separately generated geometries from two Transform Geometry nodes into a single output"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Organizing Nodes",
+              "content": [
+                "If you feel your screen is too cluttered, you can collapse a node by selecting it and pressing [k]H[/k] (Image 7). You can also move nodes closer with [k]S[/k] (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-07.jpg",
+                      "caption": "Image 7 - Collapsing a node by selecting it and pressing H to reduce clutter"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-08.jpg",
+                      "caption": "Image 8 - Moving nodes closer together with S"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Subdivision Surface Node",
+              "content": [
+                "The [k]Subdivision Surface[/k] node divides mesh faces to form a smooth surface. If we add one to the node network, where we apply it affects the geometric output. Reading the network below, we start with our cube geometry and apply two different transformations to it, then one of them gets the [k]Subdivision Surface[/k] node applied and then both sets of geometry are merged and sent to the output (Image 9). In this example, the [k]Subdivision Surface[/k] node is applied to the geometries after they are merged (image 10). Being able to read the transformations in the order they are applied is helpful.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-09.jpg",
+                      "caption": "Image 9 - Adding a Subdivision Surface node to one of two transformed geometries before merging and sending to the output"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-10.jpg",
+                      "caption": "Image 10 - Applying the Subdivision Surface node to the merged geometries after they are combined"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Convex Hull",
+              "content": [
+                "[k]Convex Hull[/k] is a node that creates a mesh that wraps all points of the input geometry with the smallest number of points. If we apply the [k]Convex Hull[/k] to one of the geometries, we won't see a change, since its geometry was already tightly wrapped with no empty space (Image 11). But if we apply the [k]Convex Hull[/k] node later in the network where is can affect geometry that is not close together, we will see the impact (Image 12). If we look at it in Wireframe Mode, we will only see the single convex mesh (Image 13), but what if we wanted to see all the geometry? We need to add a [k]Join Geometry[/k] node so that the cubes and the convex hull are sent to the output (Image 14). In X-Ray Mode it looks like two balls in a bag.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-11.jpg",
+                      "caption": "Image 11 - Applying the Convex Hull node to one geometry and seeing no change since it was already tightly wrapped"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-12.jpg",
+                      "caption": "Image 12 - Applying the Convex Hull node later in the network to geometry that is not close together to see the impact"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-13.jpg",
+                      "caption": "Image 13 - Seeing only the single convex mesh in Wireframe Mode"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-14.jpg",
+                      "caption": "Image 14 - Adding a Join Geometry node so that both the cubes and the convex hull are sent to the output"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Wireframe",
+              "content": [
+                "Let's say we want to make a wireframe out of the convex hull but not the cubes. First we would need to convert it to curves. For that we start with a [k]Mesh to Curve[/k] node, which converts a mesh geometry to curves (Image 15). These will generate a curve from the mesh, but by default they are not rendered because they have no thickness. We will convert these curves back into a mesh with a [k]Curve to Mesh[k] node (Image 16). The mesh still has no thickness, but the node will let us use a profile shape to define the curve. Add a [k]Curve Circle[/k] to the network as the profile shape (Image 17).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-15.jpg",
+                      "caption": "Image 15 - Adding a Mesh to Curve node to convert the convex hull mesh geometry to curves"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-16.jpg",
+                      "caption": "Image 16 - Converting the curves back into a mesh with a Curve to Mesh node"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-17.jpg",
+                      "caption": "Image 17 - Adding a Curve Circle to the network as the profile shape"
+                    }
+                  ]
+                },
+                "By default, the circle's radius is 1m, so take that down to a more appropriate size (Image 18). Right now the wireframe looks like a net, but there are a lot of gaps. Let's say we wanted a tighter packed net; we need more geometry. We can do this with another [k]Subdivision Surface[/k] node to divide the mesh faces, but where we add it makes a difference. If we add it after making the wireframe net, it will just subdivide the faces on the net (Image 19). Instead, we need to apply it to the convex hull mesh (Image 20).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-18.jpg",
+                      "caption": "Image 18 - Reducing the circle's radius from the default 1m to a more appropriate size"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-19.jpg",
+                      "caption": "Image 19 - Adding a Subdivision Surface node after the wireframe net and seeing it only subdivide the net faces"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-20.jpg",
+                      "caption": "Image 20 - Applying the Subdivision Surface node to the convex hull mesh instead for a tighter packed net"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Points",
+              "content": [
+                "Let's add some bumps to the net. Add an [k]Instance on Points[/k] node and connect a [k]UV Sphere[k] node to it. We can choose where we want to apply: either after the [k]Convex Hull[/k] node or after the [k]Curve to Mesh[/k] node (Image 21).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-21.jpg",
+                      "caption": "Image 21 - Adding an Instance on Points node with a UV Sphere node connected to add bumps to the net"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Inputs and Outputs",
+              "content": [
+                "Nodes will generally have an output and zero or more inputs. The type of output or input can be discovered by hovering the port (Image 22).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-22.jpg",
+                      "caption": "Image 22 - Hovering a port to discover the type of output or input"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Reroute",
+              "content": [
+                "With all the connections the editor will get cluttered. You can use reroutes to organize your connections. [k]Shift-RMB[/k] and cut across a connection; this will add a [k]Reroute[/k] node that you can then [k]G[/k] to move it around (Image 23) or even start another connection from there (Image 24).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-23.jpg",
+                      "caption": "Image 23 - Shift-right-click dragging across a connection to add a Reroute node and moving it around to organize connections"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-24.jpg",
+                      "caption": "Image 24 - Starting another connection from the Reroute node"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Frames",
+              "content": [
+                "You can also [k]Shift-A > Layout > Frame[/k] to add a frame to organize you nodes. [k]N[/k] will bring up the Sidebar where you can add labels or change colors (Image 25).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-25.jpg",
+                      "caption": "Image 25 - Adding a Frame via Shift-A > Layout > Frame and using the Sidebar to add labels or change colors"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Grouping",
+              "content": [
+                "Consider the three nodes we use to convert the hull to a wireframe: [k]Mesh to Curve[/k], [k]Curve to Mesh[/k], and [k]Curve Circle[/k] Image 26). What if we wanted to use that effect somewhere else, such as on one or all of the balls. We could convert it to a group. With all three selected [k]Ctrl-G[/k] to convert it to a Node Group (Image 27). This is the group view, [k]Tab[/k] to move in and out of it (Image 28). We can now [k]Shift-D[/k] the node group and apply the effect somewhere else (Image 29). You can use a combination of frames and groupings to organize youe network (Image 30).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-26.jpg",
+                      "caption": "Image 26 - Seeing the three nodes used to convert the hull to a wireframe: Mesh to Curve, Curve to Mesh, and Curve Circle"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-27.jpg",
+                      "caption": "Image 27 - Selecting all three nodes and pressing Ctrl-G to convert them to a Node Group"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-28.jpg",
+                      "caption": "Image 28 - Using Tab to move in and out of the group view"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-29.jpg",
+                      "caption": "Image 29 - Duplicating the node group and applying the effect somewhere else"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-30.jpg",
+                      "caption": "Image 30 - Using a combination of frames and groupings to organize the network"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Networks",
+              "content": [
+                "You can give your network a name, so that we can use it on other objects (Image 31). Add another mesh, add a Geometry Node Modifier to it and re-use the 'net' network we created (Image 32). In this way, we can make networks involving animations, transformations and apply them to multiple objects without having to re-create them each time.",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-31.jpg",
+                      "caption": "Image 31 - Giving the network a name so it can be used on other objects"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/03/03-32.jpg",
+                      "caption": "Image 32 - Adding another mesh, adding a Geometry Node Modifier to it and re-using the 'net' network"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "04 Applying Materials": {
+        "tags": [
+          "geometry nodes",
+          "set material"
+        ],
+        "key_concepts": [
+          "[url]04 Applying Materials -Geometry Nodes For Beginners / Blender 3.0^^https://www.youtube.com/watch?v=L_8xTV3IP3A[/url]",
+          "How to work with materials in geometry node networks.",
+          {
+            "section": {
+              "header": "Materials",
+              "content": [
+                "Normally when working with meshes you go to the Shader Editor and assign materials, either to the whole mesh or to individual faces. In geometry node networks this won't work, because the geometry we have to work with is still the initial geometry we started with, not the geometry that results from the network. Before starting this exercise, create several materials to experiment with."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Set Material",
+              "content": [
+                "[k]Shift-A > Set Material[/k] to add the node we will use to assign materials (Image 1). The Material input lets you choose from existing materials to assign (Image 2). Assign a material and connect the [k]Set Material[/k] node to the network just before the [k]Group Output[/k] (Image 3). We see the material assigned to all geometry affected by the network. Let's try to assign different materials to each part of our mesh: the object in the net, the net, and the glitter. We do this by adding two more [k]Set Material[/k] nodes and assigning them to the output for each part (Image 4).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/04/04-01.jpg",
+                      "caption": "Image 1 - Adding a Set Material node to assign materials"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/04/04-02.jpg",
+                      "caption": "Image 2 - Choosing from existing materials to assign using the Material input"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/04/04-03.jpg",
+                      "caption": "Image 3 - Assigning a material and connecting the Set Material node to the network just before the Group Output"
+                    },
+                    {
+                      "src": "Blender/CrossMind Studio/Geometry Nodes/04/04-04.jpg",
+                      "caption": "Image 4 - Adding two more Set Material nodes and assigning them to the output for each part to give the object, net, and glitter different materials"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "05 Basic Math": {
+        "tags": [
+          "geometry nodes",
+          "multiply",
+          "value",
+          "combine xyz",
+          "snap"
+        ],
+        "key_concepts": [
+          "[url]05. Understanding Basic Math -Geometry Nodes For Beginners / Blender 3.0^^https://www.youtube.com/watch?v=_PWaBW5uJfE[/url]",
+          {
+            "section": {
+              "header": "Basic Math",
+              "content": [
+                "Dealing with basic meshes we don't have much work to do with math. As we move vertices or edges around, we don't care where those coordinates are, the application is tracking that information for us. But when it comes to procedural nodes we will often be dealing with numbers. The default value types we will be dealing are:",
+                [
+                  "floating point numbers",
+                  "integers",
+                  "vectors"
+                ],
+                {
+                  "section": {
+                    "header": "Simple Animation",
+                    "content": [
+                      "Let's do a simple animation using geometry nodes. Start withe default cube and give it a [k]Geometry Node Modifier[/k] with a [k]Transform Geometry[/k] node (Image 1). Hover the Translation input section and [k]I[/k]; this will insert a keyframe in the Timeline and capture the property information attached (Image 2). Hover the Rotation and Scale and [k]I[/k] to capture their information as well (Image 3). Move the Timeline to 50 and change the Translation, Rotation, and Scale, [k]I[/k] on each of the changes (Image 4). Go to 100 in the Timeline and reset everything (Image 5). Set the Timeline End to 100 (Image 6), and drag the blue frame indicator or [k]Space[/k] to watch the animation (Image 7).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Inverting a Transformation",
+                    "content": [
+                      "Add a second cube by inserting a [k]Join Geometry[/k] node and joining the [k]Transform Geometry[/k] and [k]Group Input[/k] nodes (Image 8). If we play the animation we will see one cube moving and the other staying still. What if we wanted to assign the same animation to the second cube, but going in the opposite direction? We can do this with math. Clear the network and start over with just the [k]Join Geometry[/k] and two [k]Transform Geometry[/k] nodes added (Image 9). We're going to control the animation by adjusting the z-position of the cubes through a separate node. Add a [k]Value[/k] node to the Editor (Image 10). A [k]Value[/k] node inputs numerical values to other nodes; it's a way of using constants in the network. We can't connect it to the [k]Transform Geometry[/k] node directly, instead connect it to the Z input of a [k]Combine XYZ[/k] node (Image 11). The [k]Combine XYZ[/k] node is used to create a vector output from separate components. Set the [k]Value[/k] to 5 and see the affected cube move up in the viewport (Image 12). Update the keyframes to use the [k]Value[/k] node as the property information (Image 13). We want the second cube to move in the opposite direction. We could add a second [k]Value[/k] node but whenever we want to change the transformation, we have to do it in two places. Instead, we will use the same value, but invert it. Add a [k]Transform Geometry[/k] node to the second geometry path, and invert it with a [k]Multiply[/k] node when passing it to the second geometry (Image 14). Playing it will show the two cubes moving away from each other. You can increase the inversion factor from -1 to -5 to see the second cube moving further and faster.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Animating a Clock",
+              "content": [
+                "We will be animating the hands of a clock model. The second hand will move every second, while the minute hand will move 60 times slower than the second hand, and the hour hand will move 60 time slower than the minute hand.",
+                {
+                  "section": {
+                    "header": "The Model",
+                    "content": [
+                      "Build a simple click model: round or square face, tick marks for the minute, and hands for the hour, minute, and second (Image 15).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Animation",
+                    "content": [
+                      "Select the second hand, add a Geometry Node Modifier and name the network 'clock animation' (Image 16). Add a [k]Transform Geometry[/k] node which we will use to rotate the hand 360 degrees around the y-axis (Image 17). We will use a constant for the rotation, so add a [k]Value[/k] and [k]Combine XYZ[/k] node and plug them into the Rotation input (Image 18).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Rotation is Radians",
+                    "content": [
+                      "The Rotation field is in radians, not integers. If we want to go 90 degrees, we can't enter 90 in the value field; instead we need to convert that to radians. 90 degrees is 1/2 pi, so enter '0.5*pi' into the [k]Value[/k] (Image 19).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Frame Rate",
+                    "content": [
+                      "We need to know the animation frame rate in order to set the length of the Timeline. Under the Output Properties tab on the right, look for the [k]Format > Frame Rate[/k] to find the fps (Image 20). If the Frame Rate is 24 fps, that means one second is covered by 24 frames. We want our hand to repeat its animation every 60 seconds, so the Timeline should have 1440 frames (24 x 60) (Image 21).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Animating the Second Hand",
+                    "content": [
+                      "A full revolution for a hand is 2pi or tau. We want the second hand to move tau/fps * 60 every frame. We can get that by adding a [k]Value[/k] node and entering that formula, 'tau/1440' (Image 22). We can use a [k]Combine XYZ[/k] node to make a vector to feed to the Rotation input, but we need a way to read the current frame and multiply it by our value. We can use a [k]Scene Time[/k] node. The [k]Scene Time[/k] node outputs the current time in the scene’s animation in units of seconds or frames. Add that and a [k]Multiply[/k] node to our network and play the animation (Image 23).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Animating the Minute Hand",
+                    "content": [
+                      "Drag the minute hand from the Outliner into the Geometry Node Edit and rename the node 'Minute Hand' (Image 24). Join it to the geometry output and hide the original mesh (Image 25). Add a [k]Transform Geometry[/k] and [k]Combine XYZ[/k] node to update the rotation (Image 26). We are currently multiplying the current frame by tau/1440, so 1440 frames will make a full rotation for the second hand. The minute hand makes a full rotation after 60 seconds, or 60 rotations of the second hand. The minute hand moves 60 times slower than the second hand. Add a [k]Multiply[/k] node and connect it to the output of the second hand's [k]Combine XYA[/k] node and a [k]Value[/k] node set to '1/60' (Image 27). [k]Shift-RMB Drag[/k] the [k]Multiply[/k] connection to create a [k]Reroute[/k] node to better organize your network (Image 28).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Animating the Hour Hand",
+                    "content": [
+                      "Drag the hour hand from the Outliner into the Geometry Node Edit and get it set up with its own [k]Transform Geometry[/k], [k]Combine XYZ[/k], [k]Multiply[/k], and [k]Value[/k] nodes (Image 29). The hour hand makes a full rotation after 12 hours have passed, which is 12 revolutions of the minute hand, so the hour hand moves 1/12 as fast as the minute. Set the [k]Value[/k] node '1/12' and connect the hour's [k]Multiply[/k] node to the output of the minute's [k]Multiply[/k] node (Image 30). Play the animation to confirm.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Snapping to the Seconds",
+                    "content": [
+                      "The second hand is rotating smoothly, but what if we want to snap it to each second, sort of like the clocks in school? Add a [k]Snap[/k] node to the network. The [k]Snap[/k] node rounds the input value down to the nearest integer multiple of Increment. The increment we want to snap to is each sixtieth of the clock face, since the second hand counts of 60 seconds. Set the node's Increment value to '1/60' and place it after the [k]Multiply[/k] node (Image 31). Playing the animation you will see the snapping now.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "06 Displacing Geometry": {
+        "tags": [
+          "geometry nodes",
+          "noise texture",
+          "position"
+        ],
+        "key_concepts": [
+          "[url]06 Displacing Geometry -Geometry Nodes For Beginners / Blender 3.0(Fields)^^https://www.youtube.com/watch?v=_PWaBW5uJfE[/url]",
+          {
+            "section": {
+              "header": "Changing a Mesh's Geometry",
+              "content": [
+                "Let's say you want to change a mesh;s geometry. Normally you would grab the vertices and move them around. But what if you wanted to do that with nodes? If you wanted to move the geometry up, you could do that easily with a [k]Transform Geometry[/k] node, but that affects all vertices equally; what if you wanted to transform individual vertices?"
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Changing Geometry Procedurally",
+              "content": [
+                "Start a scene with a Plane (Image 1). Add a [k]Set Position[/k] node to the network (Image 2). This node sets the location of each point in the geometry, kind of like a [k]Transform Geometry[/k] node, but only dealing with translation, not rotation or scale. We will want a way to read the vertices' position from the geometry. Add a [k]Position[/k] node to the network (Image 3). The [k]Position[/k] node extracts the positional data from the geometry, allowing us to perform operations on it. For instance, if we add an [k]Add[/k] node of type Vector to the [k]Position[/k] node, it will add whatever vector we enter to the geometry's position. So if we enter the vector [0.0,1.0,-1.0], it will translate the geometry 1 in the y-axis and -1 in the z-axis (Image 4). Even here, all vertices are moving in the same direction. If we want input that is organic we will need to use a texture.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Noise Texture",
+              "content": [
+                "A [k]Noise Texture[/k] node will generate fractal Perlin noise. It has two outputs, Factor, which has the value of fractal noise, and Color, which has color with different fractal noise in each component. If we plug that into the other Vector input for the [k]Add[/k] node and adjust the Scale, we will start to see some changes to the mesh (Image 5). As we adjust the Scale, we will only see the corners move since those are the only vertices there are. We want to see more changes, so add a [k]Grid[/k] node with 16 vertices and plug that in as the geometry input (Image 6). As we adjust the scale, we see the geometry moving in all directions. But what if we want to limit movements to one axis? Add a [k]Combine XYZ[/k] node between the [k]Noise Texture[/k] and the [k]Add[/k] node (Image 7). Now you will see peaks and valleys rising in the z-axis only. Change the [k]Noise Texture's[/k] Dimensions field to 4D. This will give you another input, W, to affect the shape. Play with the W, and also adjust the Scale, Detail, and Roughness (Image 8).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding More Details",
+              "content": [
+                "Increase the number of vertices in the [k]Grid[/k] to 200 in each direction and then adjust the Detail input (Image 9).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Adjusting Extremes",
+                    "content": [
+                      "Add a [k]Color Ramp[/k] node between the [k]Noise Texture[/k] and the [k]Combine XYZ[/k] (Image 10). You can adjust the positions of the [k]Color Ramp's[/k] lower end to affect the lowest extreme used (image 11). Similarly you can adjust the higher position to affect the highest extremes (Image 12). Similarly, you can also add an [k]RGB Curves[/k] Node and adjust the contrast between the range values (Image 13).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Using a Mesh other than a Plane",
+              "content": [
+                "Replace the [k]Grid[/k] node with an [k]Ico Sphere[/k] node (Image 14). To have the displacement look like it it affecting the normals of the mesh, remove the [k]Combine XYZ[/k] node and change the [k]Add[/k] node's Operation to [k]Multiply[/k] (Image 15). Again, you can add a [k]Color Ramp[/k] (Image 16) or [k]RGB Curves[/k] (Image 17) to adjust the contrasts.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "07-Points and Instancing": {
+        "tags": [
+          "geometry nodes",
+          "noise texture",
+          "position",
+          "points",
+          "instances"
+        ],
+        "key_concepts": [
+          "[url]07-Points and Instancing -Geometry Nodes( Fields) For Beginners / Blender 3.0^^https://www.youtube.com/watch?v=_PWaBW5uJfE[/url]",
+          {
+            "section": {
+              "header": "Instances on Surfaces",
+              "content": [
+                "In the real world, there examples of instances everywhere, books on shelves, cars on roads, stones on a pathway; these are all instances. And some surface is guiding these instances; their position and rotation. Similarly, the components of 3D meshes can also help guide instances of other 3D meshes in a scene. It makes sense in a 3D world that instead of manually placing items in a scene, use the surface mesh to scatter instances organically. An example of this would be randomly placing plates and cups on a table, or trees in a forest."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Nodes",
+              "content": [
+                "Start with a Plane, give it a Geometry Nodes Modifier, and replace its output with a [k]Grid[/k] node; this will give us the opportunity to increase or decrease the vertices later on (Image 1). Next, add a [k]Cube[/k] node, and scale it down to stick size (Image 2). We want to scatter instances of the cube on the grid. Add an [k]Instances on Points[/k] node, with the grid as the Mesh and the cube as the Instance (Image 3).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Instancing with Displacement",
+              "content": [
+                "[k]Alt-Drag[/k] to disconnect the grid from the instancing (Image 4). Setup the same displacement network we used in the previous chapter (Image 5). Connect the Geometry output from the displacement nodes to the Points input for the [k]Instances on Points[/k] node and then join the geometry for the output (Image 6). We see the instances using the displacement geometry for their positioning. Conversely, we can also use displacement to vary the instance's scale and rotation. Remove the displacement from the plane (Image 7). Duplicate the [k]Noise Texture[/k] and the [k]Add[/k] nodes, attach them to the [k]Instances on Points[/k] Scale input and play with the noise setting until the noise is visible on the instances (Image 8). You can add a [k]Multiply[/k] node to exaggerate the effect (Image 9), or add a [k]Map Range[/k] node to map the ranges (Image 10). We can make the texture a frame-based animation. Add a [k]Scene Time[/k] node, make sure the [k]Noise Texture[/k] is 4D and attach to the W input (Image 11). When you play it, the animation happens very fast. Add a [k]Multiply[/k] node and set it to a low enough value that the animation plays smoothly (Image 12). You can change to a different type of texture, such as a [k]Voronoi Texture[/k] node (Image 13) or even feed a texture node into another texture node (Image 14).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Scattering Instances on Instances",
+              "content": [
+                "The next thing we will do is scatter some geometry on top of our bars. To start, we need some points for our bars. Add a [k]Mesh to Points[/k] node to read the geometry for our bars (Image 15). Change the Mode to Faces and add the bars' geometry back to the output so we can visualize the points better (Image 16). We see that each face has a point, but we really only want a point on the top face. To achieve this we need to read the normal information on the geometry to find which direction each face's normal is facing, and only use the z-axis. Add a [k]Normal[/k] node, a [k]Separate XYZ[/k] node, and a [k]Combine XYZ[/k] node. The [k]Normal[/k] node will read the normal, while the [k]Separate XYZ[/k] node will separate normals based the direction they face. The [k]Combine XYZ[/k] node will then read that separated data for the axes it is receiving input for and feed it back into the Selection input of the [k]Mesh to Points[/k] node (Image 17). This limits the points to those on the z-axis, but we want the top only. Add a [k]Map Range[/k] node and set the limit from 0 to 1 (Image 18). If we want the bottom side, flip the range from 0 to -1 (Image 19). Now let's feed some instances to those points, so add a [k]UV Sphere[/k], another [k]Instance on Points[/k] and add them to the network (Image 20). Let's make some offset between the balls and the bars. Add a [k]Position[/k], [k]Multiply[/k], and [k]Combine XYZ[/k] node to increase the z-position of the ball's position and set it to the Position input on the [k]Mesh to Points[/k] node (Image 21).",
+                {
+                  "image": [
+                  ]
+                },
+                "Last step will be to scatter random instances on those balls. Add a setup to the network to randomly distribute Ico Spheres on the balls. We will add a [k]Distribute Points on Faces[/k] node and [k]Ico Sphere[/k] node, connected to an [k]Instances on Points[/k] node (Image 22). Use the balls geometry output as the mesh faces to distribute faces on, and connect to the final geometry output (Image 23). No changes will show on screen. That is because the balls geometry doesn't actually exist. Add a [k]Realize Instances[k] node to the balls output and we will see the ico spheres (Image 24). Lastly, let's add some randomization to the ico spheres. Add a [k]Noise Texture[/k] and connect it to the Scale input of the [k]Instances on Points[/k] node (Image 25).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Materials",
+              "content": [
+                "In the Material Properties tab let's create four materials: 'plane', 'bars', 'orbs', 'dew drops' (Image 26). Add [k]Set Material[/k] nodes and connect to each output geometry and assign the right material (image 27). Go into the Shading Workspace and we will begin editing our materials. We will use a blue shade for the plane (Image 28). For the bars, we want the metallic cranked up and the roughness brought down. We want to add an [k]Object Info[/k] to read the object information for each bar, and connect it to a [k]Map Range[/k] node and a [k]Hue/Saturation/Value[/k] node to randomize the color (Image 29). The last two materials were too complicated, so we will skip them.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "08-Curve nodes": {
+        "tags": [
+          "geometry nodes",
+          "curve"
+        ],
+        "key_concepts": [
+          "[url]08-Curve nodes-Geometry Nodes( Fields) For Beginners / Blender 3.0^^https://www.youtube.com/watch?v=5iwt2fpUYWQ[/url]",
+          "Using curves to guide procedural setups",
+          {
+            "section": {
+              "header": "Curve Primitives",
+              "content": [
+                "Start with the basic setup for geometry nodes, [k]Shift-A > Curve > Primitives[/k] to explore the curves available (Image 1). Just how you can add mesh primitives, you can also add curve primitives. Add a [k]Curve Circle[/k] and a [k]Star[/k] to the network (Image 2). Increase the radius on the circle so it overlaps the star and add a [k]Fill Curve[/k] node (Image 3). Let's say you wanted to do something like bevel your curve. Add a [k]Fillet Curve[/k] node to the network (Image 4). You can play with the fillet radius to affect the overall shape (Image 5). Also try changing the type from Bézier to Poly (Image 6). You can combine curves for cool effects; add another [k]Star[/k] with a [k]Transform Geometry[/k] to uodate its rotation and see the effect (Image 7).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Curve Basics",
+              "content": [
+                "Disconnect the other geometry and start over with a [k]Bézier Segment[/k] (Image 8).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Making a Tube",
+                    "content": [
+                      "We can easily turn this into a tube with a [k]Curve to Mesh[/k] and a [k]Circle[/k] (Image 9).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Instances on a Curve",
+                    "content": [
+                      "You can also convert a curve to points and add instances at those points, like light poles following a street (Image 10). You can increase or reduce the number of points in the curve with a [k]Resample Curve[/k] node (Image 11). You can also .",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Resampling",
+                    "content": [
+                      "You can increase or reduce the number of points in the curve with a [k]Resample Curve[/k] node (Image 11).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Tapering",
+                    "content": [
+                      "You can taper a curve by adding a [k[]Set Curve Radius[/k]. Add a [k]Curve to Mesh[/k] and a [k]Circle[/k] to visualize the tapering, and [k]Spline Parameter[/k] node to read the radius factor from the curve (Image 12). The tapering won't work yet; that is because the scaling is being overwritten by the [k]Curve to Mesh[/k] node. We need to add a [k]Named Attribute[/k] node, and in the attribute name field look for 'radius' and plug that into the [k]Curve to Mesh's[/k] Scale input (Image 13). We can shorten the curve with a [k]Trim Curve[/k] node that can remove portions at either end (Image 14).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Instancing Curves",
+                    "content": [
+                      "Let's say we want to use curves to scatter grass or hair. Start with a basic grid to distribute points on (Image 15). Add a [k]Curve Line[/k] as the instance to use (Image 16). Now that we have a curve instance, we can start adjusting or shaping it. Add a [k]Trim Curve[/k] node and connect it to the [k]Instances on Point[/k] output, since the output is curves (Image 17). Let's use some noise to randomize the length of the curves (Image 18). That didn't work, since the geometry doesn't exist, so add a [k]Realize Instances[/k] node to the network (Image 19). Now let's say we wanted to translate the position of the curve's end points, to make them point in different directions. Add a [k]Set Position[/k] node and try updating the x-position (Image 20). We see that all vertices move together, top and bottom. We need them to move separately. Add an [k]Endpoint Selection[/k] node and clear the value for the Start Size (Image 21). Now the ends are moving while the starting points stay in place. Add some noise to randomize things (Image 22).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Wireframe Mesh",
+                    "content": [
+                      "Bring in a simple mesh, convert it to a curve, and then back to a mesh with a profile curve (Image 23).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Donut",
+                    "content": [
+                      "Bring in a circle curve and convert it to a mesh with another circle curve as the profile (Image 24).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Final Example",
+              "content": [
+                "Add an [k]Ico Sphere[/k] node and convert its faces to points with [k]Curve Lines[/k] instanced on them (Image 25). We want the curves to face in the direction of the ico sphere's normals. To do that, add a [k]Capture Attribute[/k] and a [k]Normal[/k] node to capture the normal direction (Image 26). Feed that information into an [k]Align Rotation to Vector[/k] node that will set the instance rotation along the chose axis (z) (Image 27). Select the nodes creating and modifying the lines and [k]F[/k] to frame them (image 28).",
+                {
+                  "image": [
+                  ]
+                },
+                "Let's add some noise to the render. Add a [k]Set Position[/k] and [k]Noise Texture[/k] to offset the position (Image 29). There is not enough variation. We need more geometry, so add a [k]Resample Curve[/k] node (Image 30). This still won't work, since the mesh isn't real, so add a [k]Realize Instances[/k] node to make each curve its own instance (Image 31). Let's animate this over time with a [k]Scene Time[/k] and [k]Multiply[/k] node affecting the W input (Image 32). Let's randomize the length of the curves as well, so add a [k]Trim Curve[/k] node reading the curve geometry and the noise randomness affecting its End input (Image 33). If that is too much contrast in the extremes in length between instances, you can try to control that with a [k]Map Range[/k] node (Image 34).",
+                {
+                  "image": [
+                  ]
+                },
+                "It's time for some thickness. Convert it to a mesh with a circle profile (Image 35). Let's taper this, using the example we used previously (Image 36). The taper has the thinnest part at the surface; we need this at the outer end so add a [k]Color Ramp[/k] node and switch the two positions (Image 37).",
+                {
+                  "image": [
+                  ]
+                },
+                "Let's add one more layer to this. Add an [k]Instance on Points[/k] node to read the geometry after [k]Trim Curve[/k] with the instances as cubes (Image 38). Use an [k]Endpoint Selection[/k] node to limit the instances to the end of the curve (Image 39). Finish off by assigning materials and rendering if you want.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "09-Geometry Proximity": {
+        "tags": [
+          "geometry nodes",
+          "proximity"
+        ],
+        "key_concepts": [
+          "[url]09-Geometry Proximity-Geometry Nodes( Fields) For Beginners / Blender 3.0^^https://www.youtube.com/watch?v=9flmk1sHBnk[/url]",
+          {
+            "section": {
+              "header": "Proximity",
+              "content": [
+                "The basic idea is that the proximity of another object can be used to modify aspects of the selected object. A use case would be when making procedural landscape with houses and grass, you could say that whenever a house is placed, you could the house's proximity to the grass to scale its density.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Opener",
+              "content": [
+                "We will use a basic grid for this example with cubes instanced on its points (Image 1). Add some randomness to the cubes' heights with a [k]Noise Texture[/k], [k]Map Range[/k], and [k]Combine XYZ[/k] nodes affecting the instance's scale (Image 2). Now we want to use proximity to another object to modify the grade of the landscape. Add an Ico Sphere to the scene, not the network (Image 3). Bring the Ico Sphere into the network, add it to the geometry output, hide the original, and make it the target of a [k]Geometry Proximity[/k] node (Image 4). In the [k]Object Info[/k] node, the transformation is set to Original. That means that if you scale, rotate, or move the original ico sphere, the geometry in the network won't update until those changes are [k]Ctrl-A[/k] applied. Change the transformation to relative (image 5). Remove the [k]Noise Texture[/k] and connect the [k]Geometry Proximity[/k] node's Distance output to the [k]Map Range[/k] value (Image 6). Now you can grab the original ico sphere and move it around the scene, and the height of the cubes will reflect their proximity to the sphere (Image 7).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating Wires (Grass)",
+              "content": [
+                "Start over with a basic grid setup, making it 25m by 25m (Image 8). Distribute a few points from which we will be scattering wires (Image 9). Add a [k]Curve Line[/k] to make the instances at the points (Image 10). Let's animate the instances rotation with a [k]Noise Texture[/k] and the current frame / 200 (Image 11). We are done with the first part, so organize the nodes for the grass into a frame (Image 12). These curve instances are all clones of each other; whatever changes happen to one happen to all. We want individual instances that we can affect later, so add a [k]Realize Instances[/k] node (Image 13).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Bubble Proximity",
+              "content": [
+                "We want an object whose proximity will influence the grass. Add an Ico Sphere to the scene, and change its Viewport Display Properties to Bounds (Image 14). Bring the ico sphere into the network, set its Transformation to Relative, and hide the original in the Outliner (Image 15). Attach a [k]Geometry Proximity[/k] to the ico sphere (Image 16). What we want is to monitor the proximity of the sphere to the top part of the grass. Add a [k]Set Position[/k] and [k]Endpoint Selection[/k] nodes to read the position of the top of the grass (image 17). Connect the [k]Geometry Proximity[/k] Distance to the [k]Set Position[/k] Offset (Image 18). If you move the sphere around, you should see its influence on the grass. If you change the connection between the [k]Geometry Proximity[/k] and the [k]Set Position[/k] to the Position fields, you will see the grass strands moving towards the sphere (Image 19). What we want is a combination of both; we want the grass closer to the sphere to move towards it, while the grass further should stay unaffected. We can do this with some math.",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Math",
+                    "content": [
+                      "Add a [k]Multiply[/k] vector node and a [k]Position[/k] node to the [k]Set Position[/k] so that we can both read each curve's position and get ready to perform an operation on it (Image 20). if we multiply the grass's position by the sphere's distance, we will see the sphere exert some influence on the grass position (Image 21). We want to limit this influence",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "11- Attributes": {
+        "tags": [
+          "geometry nodes",
+          "vertex groups", "invert values"
+        ],
+        "key_concepts": [
+          "[url]11- Attributes- Blender Geometry Nodes^^https://www.youtube.com/watch?v=-hxiufn2fQo[/url]",
+          "An attribute is a specification that defines the property of an object, element, or file.",
+          {
+            "section": {
+              "header": "Geometry Node Modifier Inputs",
+              "content": [
+                "A list of the node group’s inputs which can have unique values even if the group is shared among multiple modifiers.",
+                "If the input is connected to a Field socket, there will be a toggle to switch between using a single value for the input or using an attribute on the input geometry. Using an attribute for input means the value can be different for every element.",
+                {
+                  "section": {
+                    "header": "Creating a River",
+                    "content": [
+                      "Start our setup with a Plane and a Geometry Nodes Modifier (Image 1). We see in the Spreadsheet there are 4 vertices. Subdivide the mesh several times, giving it much more vertices (Image 2). Go into Weight Paint Mode and draw a simple river shape; notice in the spreadsheet that a column has been added for the vertex group (Image 3). In the Object Properties tab rename the vertex group to 'River'; you will see the Spreadsheet updated as well (Image 4). Now, let's do something with it. Add a [k]Set Position[/k], [k]Position[/k], [k]Add (Vector)[/k], [k]Combine XYZ[/k] node (image 5). We want to isolate the effect to the z-axis and give ourselves more control over it; link the Z input to the [k]Group Input[/k] so that the field appears in the Modifier Properties Tab as an input (Image 6). To the right of the Z input in the Modifier Properties Tab is the Input Attribute Toggle that lets us switch between a single value and an attribute (Image 7). Switch it to attribute and choose the River vertex group (Image 8). See the effect on the mesh now (image 9). This is not what we want, it looks like the range of values applied to the River's vertices in the z-axis goes from 0.0 to 1.0 (image 10). Add a [k]Map Range[/k] to re-map this to a range of 0.0 to -0.5 (Image 11).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "Noisy Riverbed",
+                          "content": [
+                            "Let's add some noise, but only to the riverbed. Add a [k]Noise Texture[/k] and an [k]Add[/k] node and connect them between the [k]Map Range[/k] and the [k]Combine XYZ[/k] (Image 12). We want it limited to the riverbed, so change the [k]Add[/k] node's Operation to Multiply (Image 13).",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Geometry Node Modifier Output Attributes",
+              "content": [
+                "By connecting a field socket to the group output node, you can create custom Attributes from a Field output of any node in the node tree. The domain of the attribute must be specified in the group node’s output properties. Note, this does not work with Instanced Data.",
+                {
+                  "section": {
+                    "header": "Noisy Landscape",
+                    "content": [
+                      "Clear the [k]Map Range[/k] and apply the [k]Noise Texture[/k] directly to the Z input of the [k]Combine XYZ[/k] (Image 14). Right now, the noise is only affecting the Z input, we can't use it in other parts of the modifier. Connect the Factor output to the [k]Geometry Output[/k] and we will see it as an Output Attribute on the modifier (Image 15). [k]N[/k] to open the Sidebar, and give the property a name that speaks to the purpose we have for it (Image 16). If you check the Spreadsheet, even though we have given the socket a name, 'Terrain' doesn't show up because we haven't assigned an attribute for it (Image 17). In the attribute field in Modifier Properties tab, give the attribute a name, and we will see it added to the Spreadsheet (Image 18).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Mixing Colors with the Attribute",
+                    "content": [
+                      "Now that we have the attribute named, go to the Shading Workspace and assign a new green material (Image 19). Add a new brown material and mix the two with a [k]Mix Shader[/k] (Image 20). Add in an [k]Attribute[/k] node, connect the Factor output to the [k]Mix Shader's[/k] input, and set the Attribute Name to 'terrain' (Image 21). So now the noise controls both the z-axis of the mesh, but also the color mix.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Full Example",
+              "content": [
+                {
+                  "section": {
+                    "header": "Setup",
+                    "content": [
+                      "Start over with a large plane (38mx38m) with enough subdivisions, a grass mesh, and a fence mesh (Image 22). Weight Paint a walking path on the ground; grass will be outside the path, but not on it (image 23).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Scattering Grass",
+                    "content": [
+                      "Add nodes to scatter points on the ground (image 24). Add Density as an input attribute for the modifier and set the target to the walking path (Image 25). Invert the distribution with a [k]Color Ramp[/k] (Image 26). A [k]Multiply[/k] node will also allow some control over the density of the grass (Image 27). Add the grass mesh to the network to place on the points (Image 28). Randomize the Scale with a [k]Random Value[/k] node (Image 29). We can also use the [k]Multiply[/k] node for the scale, but the grass will be too extreme (Image 30). To fix this we will use a [k]Map Range[/k] node to adjust the range of values coming from the [k]Multiply[/k], but first let's discuss the range we expect to see. [k]N[/k] to open the Sidebar in the spreadsheet add a row filter (Image 31). In the Column field enter the name of the column we want to filter (Image 32). Using the 'Less Than' and 'Greater Than' filters we can determine that the walking path values range from 0.0 to 1.0. In the [k]Multiply[/k] node we are multiplying the walking path values by 50.0 (Image 33). Our scale range right now is 0.0*50.0 to 1.0*50.0, so add a [k]Map Range[/k] and use those values in the From Min and From Max inputs (Image 34). For the target range, try setting a scale for some grass clusters to 1/2 as big, to others being 5 times the size of the standard mesh (Image 35). Connect the [k]Map Range[/k] to the [k]Multiply[/k] and [k]Instance on Points[/k] nodes to fix the scale (Image 36). This is better, but let's bring in some randomness by multiplying the scale by a [k]Random Value[/k] (Image 37) (go into Top View to review the effect). Randomize the rotation in the z-axis between 0.0 and tau degrees with a [k]Random Value[/k] and [k]Combine XYZ[/k] node (Image 38). Organize the grass nodes into a frame (Image 39).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Putting up a Fence",
+                    "content": [
+                      "Add a Bézier Curve to the scene, scale it up to go across the ground, and [k]Ctrl-A,S[/k] to apply the scale (Image 40). Bring the curve into our network and join it to the geometry output (Image 41). Add a [k]Curve to Points[/k], [k]Instance on Points[/k], and bring in the Fence mesh as the instance (Image 42). Increase the count, and add some variation in scale and rotation (Image 43).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "Limiting Fence Placement",
+                          "content": [
+                            "We have the fences covering the grass and the path, but we want the path to be clear. The first part to doing this is with a [k]Sample Index[/k] node. The [k]Sample Index[/k] node retrieves values from a source geometry at a specific index. It requires geometry to retrieve the attribute from and a Value field to evaluate on the source Geometry. Connect the ground's Geometry to the [k]Sample Index[/k]'s Geometry, and the Density attribute output to the [k]Sample Index[/k]'s value (Image 44). The output of the [k]Sample Index[/k] will determine where the fence posts go, so connect its output to the Selection input on the [k]Instance on Points[/k] node (Image 45). Looking at the scene, all our fence posts disappeared (Image 46). We have one last input on the [k]Sample Index[/k] node. The Index input identifies which index to use when retrieving the data from the input Value field. We need to define the right index for the [k]Sample Index[/k] to use. We can do this with a [k]Sample Nearest[/k] node. The [k]Sample Nearest[/k] node retrieves the index of the geometry element in its input geometry that is closest to the input position. This will allow the [k]Sample Index[/k] node to find the index of the walking path vertex group that is closes to each fence point's position. Connect the ground geometry to the [k]Sample Nearest[/k] Geometry and connect its output to the [k]Sample Index[/k]'s Index input (Image 47). Looking at the scene now, we see that the fence post placement is now limited to areas on the walking path (Image 48). We need to invert the walking path selection with a [k]Color Ramp[/k] node, adjusting the constraints as needed (Image 49). Now we will see the fence's on the grass, avoiding the walking path (Image 50). [k]F[/k] to organize the fence section of the network (Image 51).",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Terrain Displacement",
+                    "content": [
+                      "Right now the ground is flat. We will want to add some bumps and hills. Add a network for adding some noise to the terrain with a [k]Noise Texture[/k], [k]Combine XYZ[/k], [k]Position[/k], [k]Add (Vector)[/k], and [k]Set Position[/k] that will take over geometry output from the original mesh (Image 52). If we look at the scene, the terrain is now bumpy, but still pretty flat, with the highest point being under 1m (Image 53). Let's use a [k]Map Range[/k] to re-map the z-axis to a final range of 0.0 to 3.0 (Image 54). [k]Numpad1[/k] into Front View to see so that you can see the elevation (Image 55). Adjust the From Min and From Max values in the [k]Map Range[/k] until you have peak and valley elevations you think looks good (Image 56). Switch the [k]Noise Texture[/k] Dimensions to 4D and adjust the W, Scale, Roughness, and Detail inputs until you have a shape you like (Image 57). Organize the terrain network into a frame (Image 58).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      "If you look at the scene, the grass is scattering across the faces correctly, but the fence posts aren't following (Image 59). We need to snap the curve’s control points or vertices to the closest location on the target mesh, using a [k]Sample Nearest Surface[/k] node combined with a [k/]Set Position[/k] node. Plug terrain geometry into the Mesh input of a [k]Sample Nearest Surface[k] node, and the curve into the Geometry input of a [k]Set Position[/k] node (Image 60). Connect a [k]Position[/k] node to the Value input of the [k]Sample Nearest Surface[/k] node (Image 61).  Plug the Value output of the [k]Sample Nearest Surface[/k] node into the Position input of the [k]Set Position[/k] node (Image 62). The fence posts should appear more on top of the terrain now (Image 63). The reason that not all positions can be seen is that the curve itself doesn't have enough points; add a [k]Resample Curve[/k] node and increase the Count (Image 64). The fences will now be seen following the terrain (Image 65).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Fences to follow the Path",
+                    "content": [
+                      "We have fence posts following the curve. It would be nice to have fence posts that also follow the outside of the walking path.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

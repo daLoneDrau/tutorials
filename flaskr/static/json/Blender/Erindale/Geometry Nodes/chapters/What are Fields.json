@@ -1,0 +1,25 @@
+{
+  "sections": [
+    {
+      "What are Fields?": {
+        "tags": ["geometry nodes"],
+        "key_concepts": [
+          "[url]What are Fields? - Geometry Nodes 101^^https://www.youtube.com/watch?v=8FCHcbpnFss[/url]",
+          "Blender tutorial showing how to use Geometry Nodes to create sugar coated candy.",
+          {
+            "section": {
+              "header": "What is a field?",
+              "content": [
+                "A field is a function that is calculated at a particular point in space. What does that mean? Here is an example. In this shader, we have a [k]Geometry Node[/k] which passes the world position into a [k]Noise Texture Node[/k] (Image 1). If we grab the plane and move it in the x-xis, we see that the noise field stays still, meaning that as we move the plane, the underlying noise texture in a specific location is unchanged (Image 2). The noise is specifically being calculated at each location where the mesh has a point.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
