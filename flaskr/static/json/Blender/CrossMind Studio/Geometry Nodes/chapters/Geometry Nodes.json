@@ -1077,10 +1077,89 @@
                   "section": {
                     "header": "Fences to follow the Path",
                     "content": [
-                      "We have fence posts following the curve. It would be nice to have fence posts that also follow the outside of the walking path.",
+                      "We have fence posts following the curve. It would be nice to have fence posts that also follow the outside of the walking path. First thing, let's remove the terrain with a [k]Delete Geometry[/k] node (Image 66). If we look at the scene, all the terrain has been removed (Image 67), but what if we only want to remove the walking path? Connect the walking path attribute we created to the Selection input for the [k]Delete Geometry[/k] node (Image 68). This will remove only the walking path faces (Image 69). What we want is the walking path faces only. Add a [k]Map Range[/k] in between the [k]Group Input[/k] and the [k]Delete Geometry[/k] until only the walking path is visible (Image 70). Now we want the outside edges of the walking path. Add a [k]Separate Geometry[/k] node after the [k]Delete Geometry[/k] (Image 71). The [k]Separate Geometry[/k] node produces two geometry outputs. Based on the Selection input, the input geometry is split between the two outputs. We will be using the Selection output. With this separation, we want to limit its geometry to just the outside edges. An outside edge will be an edge that has only 1 edge neighbor. Add an [k]Equal[/k] and an [k]Edge Neighbors[/k] node and connect them to the Selection input, so we limit the edges of the selected geometry to just outside egdes (Image 72). The resulting geometry is a little blocky, so add a [k]Merge by Distance[/k] node to reduce some of the angles (Image 73). We have our outside path; we can add fence posts to it by using [k]Mesh to Curve[/k], [k]Curve to Points[/k], [k]Instance on Points[/k], and using the post as out instance (Image 74). Add the terrain back to the output (Image 75).",
                       {
                         "image": [
                         ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Connecting the Fences",
+                    "content": [
+                      "Let's connect our fences with wires. Add a [k]Join Geometry[/k] node to our network and use it to display our fence posts and the curve they were built off (Image 76). Use a [k]Set Position[/k], [k]Add (Vector)[/k], [k]Position[/k], and [k]Combine XYZ[/k] node to offset the z-axis of the curve and raise it up (Image 77). Add in a [k]Curve to Mesh[/k] and [k]Curve Circle[/k] to thicken the geometry (Image 78). Organize this network into a frame (Image 79), and duplicate it to create a second set of wires underneath (Image 80).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Houses on Selected Areas",
+                    "content": [
+                      "We want to build houses on some of the land. Add another [k]Separate Geometry[/k] node to remove the terrain, but this time for the Selection, use the [k]Noise Texture[/k] fed into a [k]Map Range[/k] to limit the selection to parts of the land (Image 81). Import a hut mesh into the scene or make one (Image 82). Back to the network, add a [k]Distribute Points on Faces[/k], [k]Instance on Points[/k] and use the hut mesh as the instance to add huts to the terrain (image 83). We have huts on the walking path we need to remove, so connect the walking path attribute to the Selection input on the [k]Distribute Points on Faces[/k] node (Image 84), and then a [k]Not[/k] node to invert the selection (Image 85). We have huts on top of huts, so change the Distribution Method to Poisson Disk and increase the Distance Min (Image 86). Add some random rotation in the z-axis (Image 87).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "Fencing around Houses",
+                          "content": [
+                            "The instructor goes into some steps for setting up fencing around areas that have huts/houses, but he doesn't have a good solution for this, so let's skip it.",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Materials",
+                    "content": [
+                      {
+                        "section": {
+                          "header": "Grass Varieties",
+                          "content": [
+                            "Let's make the grass in three different shades. Duplicate the grass mesh and assign different materials to each one (Image 88). In order to randomly select which grass cluster to use, add a [k]Geometry to Instance[/k] node to turn every connected grass mesh into an instance (Image 89). We can randomize them by supplying a random number to the Instance Index input for the [k]Instance on Points[/k] node. Add a [k]Random Value[/k] and [k]Floor[/k] node to the network (Image 90). The Max input on [k]Random Value[/k] will help determine the spread, while the [k]Floor[/k] node will convert it to an Integer.",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Fence Wires",
+                          "content": [
+                            "Create a material for the wires between fence posts, and add a [k]Set Material[/k] to the network after the [k]Curve to Mesh[/k] node (Image 91).",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Terrain",
+                          "content": [
+                            "Create two materials for the terrain, grass and dirt. Add a [k]Set Material Index[/k] node to switch indices and a [k]Greater Than[/k] node that will compare the output of the walking path attribute with a threshold we set (Image 92). ",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
                       }
                     ]
                   }
