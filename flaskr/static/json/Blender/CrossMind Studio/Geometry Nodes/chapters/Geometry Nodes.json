@@ -934,7 +934,7 @@
       "11- Attributes": {
         "tags": [
           "geometry nodes",
-          "vertex groups", "invert values"
+          "vertex groups", "invert values", "landscape"
         ],
         "key_concepts": [
           "[url]11- Attributes- Blender Geometry Nodes^^https://www.youtube.com/watch?v=-hxiufn2fQo[/url]",
@@ -1332,7 +1332,7 @@
                           }
                         ]
                       },
-                      "If you look at the scene, the grass is scattering across the faces correctly, but the fence posts aren't following (Image 59). We need to snap the curve’s control points or vertices to the closest location on the target mesh, using a [k]Sample Nearest Surface[/k] node combined with a [k/]Set Position[/k] node. Plug terrain geometry into the Mesh input of a [k]Sample Nearest Surface[k] node, and the curve into the Geometry input of a [k]Set Position[/k] node (Image 60). Connect a [k]Position[/k] node to the Value input of the [k]Sample Nearest Surface[/k] node (Image 61).  Plug the Value output of the [k]Sample Nearest Surface[/k] node into the Position input of the [k]Set Position[/k] node (Image 62).",
+                      "If you look at the scene, the grass is scattering across the faces correctly, but the fence posts aren't following (Image 59). We need to snap the curve’s control points or vertices to the closest location on the target mesh, using a [k]Sample Nearest Surface[/k] node combined with a [k]Set Position[/k] node. Plug terrain geometry into the Mesh input of a [k]Sample Nearest Surface[/k] node, and the curve into the Geometry input of a [k]Set Position[/k] node (Image 60). Connect a [k]Position[/k] node to the Value input of the [k]Sample Nearest Surface[/k] node (Image 61).  Plug the Value output of the [k]Sample Nearest Surface[/k] node into the Position input of the [k]Set Position[/k] node (Image 62).",
                       {
                         "image": [
                           {
