@@ -949,9 +949,63 @@
                   "section": {
                     "header": "Creating a River",
                     "content": [
-                      "Start our setup with a Plane and a Geometry Nodes Modifier (Image 1). We see in the Spreadsheet there are 4 vertices. Subdivide the mesh several times, giving it much more vertices (Image 2). Go into Weight Paint Mode and draw a simple river shape; notice in the spreadsheet that a column has been added for the vertex group (Image 3). In the Object Properties tab rename the vertex group to 'River'; you will see the Spreadsheet updated as well (Image 4). Now, let's do something with it. Add a [k]Set Position[/k], [k]Position[/k], [k]Add (Vector)[/k], [k]Combine XYZ[/k] node (image 5). We want to isolate the effect to the z-axis and give ourselves more control over it; link the Z input to the [k]Group Input[/k] so that the field appears in the Modifier Properties Tab as an input (Image 6). To the right of the Z input in the Modifier Properties Tab is the Input Attribute Toggle that lets us switch between a single value and an attribute (Image 7). Switch it to attribute and choose the River vertex group (Image 8). See the effect on the mesh now (image 9). This is not what we want, it looks like the range of values applied to the River's vertices in the z-axis goes from 0.0 to 1.0 (image 10). Add a [k]Map Range[/k] to re-map this to a range of 0.0 to -0.5 (Image 11).",
+                      "Start our setup with a Plane and a Geometry Nodes Modifier (Image 1). We see in the Spreadsheet there are 4 vertices. Subdivide the mesh several times, giving it much more vertices (Image 2). Go into Weight Paint Mode and draw a simple river shape; notice in the spreadsheet that a column has been added for the vertex group (Image 3). In the Object Properties tab rename the vertex group to 'River'; you will see the Spreadsheet updated as well (Image 4).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-01.jpg",
+                            "caption": "Image 1 - Starting with a Plane and adding a Geometry Nodes Modifier"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-02.jpg",
+                            "caption": "Image 2 - Subdividing the mesh several times to give it many more vertices"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-03.jpg",
+                            "caption": "Image 3 - Going into Weight Paint Mode and drawing a simple river shape, seeing a column added to the Spreadsheet for the vertex group"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-04.jpg",
+                            "caption": "Image 4 - Renaming the vertex group to 'River' in the Object Properties tab and seeing the Spreadsheet updated"
+                          }
+                        ]
+                      },
+                      "Now, let's do something with it. Add a [k]Set Position[/k], [k]Position[/k], [k]Add (Vector)[/k], [k]Combine XYZ[/k] node (image 5). We want to isolate the effect to the z-axis and give ourselves more control over it; link the Z input to the [k]Group Input[/k] so that the field appears in the Modifier Properties Tab as an input (Image 6). To the right of the Z input in the Modifier Properties Tab is the Input Attribute Toggle that lets us switch between a single value and an attribute (Image 7).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-05.jpg",
+                            "caption": "Image 5 - Adding a Set Position, Position, Add (Vector), and Combine XYZ node"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-06.jpg",
+                            "caption": "Image 6 - Linking the Z input to the Group Input to expose it as an input in the Modifier Properties Tab"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-07.jpg",
+                            "caption": "Image 7 - Using the Input Attribute Toggle to the right of the Z input to switch between a single value and an attribute"
+                          }
+                        ]
+                      },
+                      "Switch it to attribute and choose the River vertex group (Image 8). See the effect on the mesh now (image 9). This is not what we want, it looks like the range of values applied to the River's vertices in the z-axis goes from 0.0 to 1.0 (image 10). Add a [k]Map Range[/k] to re-map this to a range of 0.0 to -0.5 (Image 11).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-08.jpg",
+                            "caption": "Image 8 - Switching to attribute and choosing the River vertex group"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-09.jpg",
+                            "caption": "Image 9 - Seeing the effect on the mesh"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-10.jpg",
+                            "caption": "Image 10 - Noticing the range of values applied to the River's vertices in the z-axis goes from 0.0 to 1.0"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-11.jpg",
+                            "caption": "Image 11 - Adding a Map Range node to re-map the values to a range of 0.0 to -0.5"
+                          }
                         ]
                       },
                       {
@@ -961,6 +1015,14 @@
                             "Let's add some noise, but only to the riverbed. Add a [k]Noise Texture[/k] and an [k]Add[/k] node and connect them between the [k]Map Range[/k] and the [k]Combine XYZ[/k] (Image 12). We want it limited to the riverbed, so change the [k]Add[/k] node's Operation to Multiply (Image 13).",
                             {
                               "image": [
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-12.jpg",
+                                  "caption": "Image 12 - Adding a Noise Texture and an Add node to add noise limited to the riverbed"
+                                },
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-13.jpg",
+                                  "caption": "Image 13 - Changing the Add node's Operation to Multiply to limit the noise to the riverbed"
+                                }
                               ]
                             }
                           ]
@@ -984,6 +1046,26 @@
                       "Clear the [k]Map Range[/k] and apply the [k]Noise Texture[/k] directly to the Z input of the [k]Combine XYZ[/k] (Image 14). Right now, the noise is only affecting the Z input, we can't use it in other parts of the modifier. Connect the Factor output to the [k]Geometry Output[/k] and we will see it as an Output Attribute on the modifier (Image 15). [k]N[/k] to open the Sidebar, and give the property a name that speaks to the purpose we have for it (Image 16). If you check the Spreadsheet, even though we have given the socket a name, 'Terrain' doesn't show up because we haven't assigned an attribute for it (Image 17). In the attribute field in Modifier Properties tab, give the attribute a name, and we will see it added to the Spreadsheet (Image 18).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-14.jpg",
+                            "caption": "Image 14 - Clearing the Map Range and applying the Noise Texture directly to the Z input of the Combine XYZ"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-15.jpg",
+                            "caption": "Image 15 - Connecting the Factor output to the Geometry Output and seeing it as an Output Attribute on the modifier"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-16.jpg",
+                            "caption": "Image 16 - Opening the Sidebar and giving the property a meaningful name"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-17.jpg",
+                            "caption": "Image 17 - Checking the Spreadsheet and seeing 'Terrain' doesn't show up because no attribute has been assigned yet"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-18.jpg",
+                            "caption": "Image 18 - Giving the attribute a name in the Modifier Properties tab and seeing it added to the Spreadsheet"
+                          }
                         ]
                       }
                     ]
@@ -996,6 +1078,18 @@
                       "Now that we have the attribute named, go to the Shading Workspace and assign a new green material (Image 19). Add a new brown material and mix the two with a [k]Mix Shader[/k] (Image 20). Add in an [k]Attribute[/k] node, connect the Factor output to the [k]Mix Shader's[/k] input, and set the Attribute Name to 'terrain' (Image 21). So now the noise controls both the z-axis of the mesh, but also the color mix.",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-19.jpg",
+                            "caption": "Image 19 - Going to the Shading Workspace and assigning a new green material"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-20.jpg",
+                            "caption": "Image 20 - Adding a new brown material and mixing the two with a Mix Shader"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-21.jpg",
+                            "caption": "Image 21 - Adding an Attribute node, connecting the Factor output to the Mix Shader's input, and setting the Attribute Name to 'terrain'"
+                          }
                         ]
                       }
                     ]
@@ -1015,6 +1109,14 @@
                       "Start over with a large plane (38mx38m) with enough subdivisions, a grass mesh, and a fence mesh (Image 22). Weight Paint a walking path on the ground; grass will be outside the path, but not on it (image 23).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-22.jpg",
+                            "caption": "Image 22 - Starting over with a large plane, a grass mesh, and a fence mesh"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-23.jpg",
+                            "caption": "Image 23 - Weight painting a walking path on the ground so grass will grow outside the path but not on it"
+                          }
                         ]
                       }
                     ]
@@ -1024,9 +1126,88 @@
                   "section": {
                     "header": "Scattering Grass",
                     "content": [
-                      "Add nodes to scatter points on the ground (image 24). Add Density as an input attribute for the modifier and set the target to the walking path (Image 25). Invert the distribution with a [k]Color Ramp[/k] (Image 26). A [k]Multiply[/k] node will also allow some control over the density of the grass (Image 27). Add the grass mesh to the network to place on the points (Image 28). Randomize the Scale with a [k]Random Value[/k] node (Image 29). We can also use the [k]Multiply[/k] node for the scale, but the grass will be too extreme (Image 30). To fix this we will use a [k]Map Range[/k] node to adjust the range of values coming from the [k]Multiply[/k], but first let's discuss the range we expect to see. [k]N[/k] to open the Sidebar in the spreadsheet add a row filter (Image 31). In the Column field enter the name of the column we want to filter (Image 32). Using the 'Less Than' and 'Greater Than' filters we can determine that the walking path values range from 0.0 to 1.0. In the [k]Multiply[/k] node we are multiplying the walking path values by 50.0 (Image 33). Our scale range right now is 0.0*50.0 to 1.0*50.0, so add a [k]Map Range[/k] and use those values in the From Min and From Max inputs (Image 34). For the target range, try setting a scale for some grass clusters to 1/2 as big, to others being 5 times the size of the standard mesh (Image 35). Connect the [k]Map Range[/k] to the [k]Multiply[/k] and [k]Instance on Points[/k] nodes to fix the scale (Image 36). This is better, but let's bring in some randomness by multiplying the scale by a [k]Random Value[/k] (Image 37) (go into Top View to review the effect). Randomize the rotation in the z-axis between 0.0 and tau degrees with a [k]Random Value[/k] and [k]Combine XYZ[/k] node (Image 38). Organize the grass nodes into a frame (Image 39).",
+                      "Add nodes to scatter points on the ground (image 24). Add Density as an input attribute for the modifier and set the target to the walking path (Image 25). Invert the distribution with a [k]Color Ramp[/k] (Image 26). A [k]Multiply[/k] node will also allow some control over the density of the grass (Image 27).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-24.jpg",
+                            "caption": "Image 24 - Adding nodes to scatter points on the ground"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-25.jpg",
+                            "caption": "Image 25 - Adding Density as an input attribute for the modifier and setting the target to the walking path"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-26.jpg",
+                            "caption": "Image 26 - Inverting the distribution with a Color Ramp"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-27.jpg",
+                            "caption": "Image 27 - Adding a Multiply node to allow some control over the density of the grass"
+                          }
+                        ]
+                      },
+                      "Add the grass mesh to the network to place on the points (Image 28). Randomize the Scale with a [k]Random Value[/k] node (Image 29). We can also use the [k]Multiply[/k] node for the scale, but the grass will be too extreme (Image 30). To fix this we will use a [k]Map Range[/k] node to adjust the range of values coming from the [k]Multiply[/k], but first let's discuss the range we expect to see. [k]N[/k] to open the Sidebar in the spreadsheet add a row filter (Image 31).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-28.jpg",
+                            "caption": "Image 28 - Adding the grass mesh to the network to place on the points"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-29.jpg",
+                            "caption": "Image 29 - Randomizing the Scale with a Random Value node"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-30.jpg",
+                            "caption": "Image 30 - Using the Multiply node for the scale and seeing the grass is too extreme"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-31.jpg",
+                            "caption": "Image 31 - Opening the Sidebar in the Spreadsheet and adding a row filter"
+                          }
+                        ]
+                      },
+                      "In the Column field enter the name of the column we want to filter (Image 32). Using the 'Less Than' and 'Greater Than' filters we can determine that the walking path values range from 0.0 to 1.0. In the [k]Multiply[/k] node we are multiplying the walking path values by 50.0 (Image 33). Our scale range right now is 0.0*50.0 to 1.0*50.0, so add a [k]Map Range[/k] and use those values in the From Min and From Max inputs (Image 34). For the target range, try setting a scale for some grass clusters to 1/2 as big, to others being 5 times the size of the standard mesh (Image 35).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-32.jpg",
+                            "caption": "Image 32 - Entering the name of the column to filter in the Column field"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-33.jpg",
+                            "caption": "Image 33 - Using Less Than and Greater Than filters to determine the walking path values range from 0.0 to 1.0, and seeing the Multiply node multiplying by 50.0"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-34.jpg",
+                            "caption": "Image 34 - Adding a Map Range and using the calculated values in the From Min and From Max inputs"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-35.jpg",
+                            "caption": "Image 35 - Setting a target scale range from half the mesh size to five times the standard mesh size"
+                          }
+                        ]
+                      },
+                      "Connect the [k]Map Range[/k] to the [k]Multiply[/k] and [k]Instance on Points[/k] nodes to fix the scale (Image 36). This is better, but let's bring in some randomness by multiplying the scale by a [k]Random Value[/k] (Image 37) (go into Top View to review the effect). Randomize the rotation in the z-axis between 0.0 and tau degrees with a [k]Random Value[/k] and [k]Combine XYZ[/k] node (Image 38). Organize the grass nodes into a frame (Image 39).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-36.jpg",
+                            "caption": "Image 36 - Connecting the Map Range to the Multiply and Instance on Points nodes to fix the scale"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-37.jpg",
+                            "caption": "Image 37 - Adding randomness by multiplying the scale by a Random Value node"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-38.jpg",
+                            "caption": "Image 38 - Randomizing the rotation in the z-axis between 0.0 and tau degrees with a Random Value and Combine XYZ node"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-39.jpg",
+                            "caption": "Image 39 - Organizing the grass nodes into a frame"
+                          }
                         ]
                       }
                     ]
@@ -1039,15 +1220,68 @@
                       "Add a Bézier Curve to the scene, scale it up to go across the ground, and [k]Ctrl-A,S[/k] to apply the scale (Image 40). Bring the curve into our network and join it to the geometry output (Image 41). Add a [k]Curve to Points[/k], [k]Instance on Points[/k], and bring in the Fence mesh as the instance (Image 42). Increase the count, and add some variation in scale and rotation (Image 43).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-40.jpg",
+                            "caption": "Image 40 - Adding a Bézier Curve to the scene, scaling it up to go across the ground and applying the scale"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-41.jpg",
+                            "caption": "Image 41 - Bringing the curve into the network and joining it to the geometry output"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-42.jpg",
+                            "caption": "Image 42 - Adding a Curve to Points, Instance on Points node and bringing in the Fence mesh as the instance"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-43.jpg",
+                            "caption": "Image 43 - Increasing the count and adding some variation in scale and rotation"
+                          }
                         ]
                       },
                       {
                         "section": {
                           "header": "Limiting Fence Placement",
                           "content": [
-                            "We have the fences covering the grass and the path, but we want the path to be clear. The first part to doing this is with a [k]Sample Index[/k] node. The [k]Sample Index[/k] node retrieves values from a source geometry at a specific index. It requires geometry to retrieve the attribute from and a Value field to evaluate on the source Geometry. Connect the ground's Geometry to the [k]Sample Index[/k]'s Geometry, and the Density attribute output to the [k]Sample Index[/k]'s value (Image 44). The output of the [k]Sample Index[/k] will determine where the fence posts go, so connect its output to the Selection input on the [k]Instance on Points[/k] node (Image 45). Looking at the scene, all our fence posts disappeared (Image 46). We have one last input on the [k]Sample Index[/k] node. The Index input identifies which index to use when retrieving the data from the input Value field. We need to define the right index for the [k]Sample Index[/k] to use. We can do this with a [k]Sample Nearest[/k] node. The [k]Sample Nearest[/k] node retrieves the index of the geometry element in its input geometry that is closest to the input position. This will allow the [k]Sample Index[/k] node to find the index of the walking path vertex group that is closes to each fence point's position. Connect the ground geometry to the [k]Sample Nearest[/k] Geometry and connect its output to the [k]Sample Index[/k]'s Index input (Image 47). Looking at the scene now, we see that the fence post placement is now limited to areas on the walking path (Image 48). We need to invert the walking path selection with a [k]Color Ramp[/k] node, adjusting the constraints as needed (Image 49). Now we will see the fence's on the grass, avoiding the walking path (Image 50). [k]F[/k] to organize the fence section of the network (Image 51).",
+                            "We have the fences covering the grass and the path, but we want the path to be clear. The first part to doing this is with a [k]Sample Index[/k] node. The [k]Sample Index[/k] node retrieves values from a source geometry at a specific index. It requires geometry to retrieve the attribute from and a Value field to evaluate on the source Geometry. Connect the ground's Geometry to the [k]Sample Index[/k]'s Geometry, and the Density attribute output to the [k]Sample Index[/k]'s value (Image 44). The output of the [k]Sample Index[/k] will determine where the fence posts go, so connect its output to the Selection input on the [k]Instance on Points[/k] node (Image 45). Looking at the scene, all our fence posts disappeared (Image 46). We have one last input on the [k]Sample Index[/k] node. The Index input identifies which index to use when retrieving the data from the input Value field. We need to define the right index for the [k]Sample Index[/k] to use. We can do this with a [k]Sample Nearest[/k] node. The [k]Sample Nearest[/k] node retrieves the index of the geometry element in its input geometry that is closest to the input position. This will allow the [k]Sample Index[/k] node to find the index of the walking path vertex group that is closes to each fence point's position. Connect the ground geometry to the [k]Sample Nearest[/k] Geometry and connect its output to the [k]Sample Index[/k]'s Index input (Image 47).",
                             {
                               "image": [
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-44.jpg",
+                                  "caption": "Image 44 - Connecting the ground's Geometry to the Sample Index's Geometry and the Density attribute output to the Sample Index's value"
+                                },
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-45.jpg",
+                                  "caption": "Image 45 - Connecting the Sample Index output to the Selection input on the Instance on Points node"
+                                },
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-46.jpg",
+                                  "caption": "Image 46 - Seeing all fence posts disappear from the scene"
+                                },
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-47.jpg",
+                                  "caption": "Image 47 - Connecting the ground geometry to the Sample Nearest Geometry and its output to the Sample Index's Index input"
+                                }
+                              ]
+                            },
+                            "Looking at the scene now, we see that the fence post placement is now limited to areas on the walking path (Image 48). We need to invert the walking path selection with a [k]Color Ramp[/k] node, adjusting the constraints as needed (Image 49). Now we will see the fence's on the grass, avoiding the walking path (Image 50). [k]F[/k] to organize the fence section of the network (Image 51).",
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-48.jpg",
+                                  "caption": "Image 48 - Seeing the fence post placement now limited to areas on the walking path"
+                                },
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-49.jpg",
+                                  "caption": "Image 49 - Inverting the walking path selection with a Color Ramp node and adjusting the constraints as needed"
+                                },
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-50.jpg",
+                                  "caption": "Image 50 - Seeing the fences on the grass, avoiding the walking path"
+                                },
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-51.jpg",
+                                  "caption": "Image 51 - Organizing the fence section of the network into a frame"
+                                }
                               ]
                             }
                           ]
@@ -1060,14 +1294,80 @@
                   "section": {
                     "header": "Terrain Displacement",
                     "content": [
-                      "Right now the ground is flat. We will want to add some bumps and hills. Add a network for adding some noise to the terrain with a [k]Noise Texture[/k], [k]Combine XYZ[/k], [k]Position[/k], [k]Add (Vector)[/k], and [k]Set Position[/k] that will take over geometry output from the original mesh (Image 52). If we look at the scene, the terrain is now bumpy, but still pretty flat, with the highest point being under 1m (Image 53). Let's use a [k]Map Range[/k] to re-map the z-axis to a final range of 0.0 to 3.0 (Image 54). [k]Numpad1[/k] into Front View to see so that you can see the elevation (Image 55). Adjust the From Min and From Max values in the [k]Map Range[/k] until you have peak and valley elevations you think looks good (Image 56). Switch the [k]Noise Texture[/k] Dimensions to 4D and adjust the W, Scale, Roughness, and Detail inputs until you have a shape you like (Image 57). Organize the terrain network into a frame (Image 58).",
+                      "Right now the ground is flat. We will want to add some bumps and hills. Add a network for adding some noise to the terrain with a [k]Noise Texture[/k], [k]Combine XYZ[/k], [k]Position[/k], [k]Add (Vector)[/k], and [k]Set Position[/k] that will take over geometry output from the original mesh (Image 52). If we look at the scene, the terrain is now bumpy, but still pretty flat, with the highest point being under 1m (Image 53). Let's use a [k]Map Range[/k] to re-map the z-axis to a final range of 0.0 to 3.0 (Image 54). [k]Numpad1[/k] into Front View to see so that you can see the elevation (Image 55).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-52.jpg",
+                            "caption": "Image 52 - Adding a network for noise to the terrain with a Noise Texture, Combine XYZ, Position, Add (Vector), and Set Position node"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-53.jpg",
+                            "caption": "Image 53 - Seeing the terrain is now bumpy but still pretty flat with the highest point under 1m"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-54.jpg",
+                            "caption": "Image 54 - Using a Map Range to re-map the z-axis to a final range of 0.0 to 3.0"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-55.jpg",
+                            "caption": "Image 55 - Going to Front View to see the elevation"
+                          }
                         ]
                       },
-                      "If you look at the scene, the grass is scattering across the faces correctly, but the fence posts aren't following (Image 59). We need to snap the curve’s control points or vertices to the closest location on the target mesh, using a [k]Sample Nearest Surface[/k] node combined with a [k/]Set Position[/k] node. Plug terrain geometry into the Mesh input of a [k]Sample Nearest Surface[k] node, and the curve into the Geometry input of a [k]Set Position[/k] node (Image 60). Connect a [k]Position[/k] node to the Value input of the [k]Sample Nearest Surface[/k] node (Image 61).  Plug the Value output of the [k]Sample Nearest Surface[/k] node into the Position input of the [k]Set Position[/k] node (Image 62). The fence posts should appear more on top of the terrain now (Image 63). The reason that not all positions can be seen is that the curve itself doesn't have enough points; add a [k]Resample Curve[/k] node and increase the Count (Image 64). The fences will now be seen following the terrain (Image 65).",
+                      "Adjust the From Min and From Max values in the [k]Map Range[/k] until you have peak and valley elevations you think looks good (Image 56). Switch the [k]Noise Texture[/k] Dimensions to 4D and adjust the W, Scale, Roughness, and Detail inputs until you have a shape you like (Image 57). Organize the terrain network into a frame (Image 58).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-56.jpg",
+                            "caption": "Image 56 - Adjusting the From Min and From Max values in the Map Range until achieving desirable peak and valley elevations"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-57.jpg",
+                            "caption": "Image 57 - Switching the Noise Texture Dimensions to 4D and adjusting the W, Scale, Roughness, and Detail inputs until achieving a desired shape"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-58.jpg",
+                            "caption": "Image 58 - Organizing the terrain network into a frame"
+                          }
+                        ]
+                      },
+                      "If you look at the scene, the grass is scattering across the faces correctly, but the fence posts aren't following (Image 59). We need to snap the curve’s control points or vertices to the closest location on the target mesh, using a [k]Sample Nearest Surface[/k] node combined with a [k/]Set Position[/k] node. Plug terrain geometry into the Mesh input of a [k]Sample Nearest Surface[k] node, and the curve into the Geometry input of a [k]Set Position[/k] node (Image 60). Connect a [k]Position[/k] node to the Value input of the [k]Sample Nearest Surface[/k] node (Image 61).  Plug the Value output of the [k]Sample Nearest Surface[/k] node into the Position input of the [k]Set Position[/k] node (Image 62).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-59.jpg",
+                            "caption": "Image 59 - Seeing the grass scattering correctly across the faces but the fence posts not following the terrain"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-60.jpg",
+                            "caption": "Image 60 - Plugging terrain geometry into the Mesh input of a Sample Nearest Surface node and the curve into the Geometry input of a Set Position node"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-61.jpg",
+                            "caption": "Image 61 - Connecting a Position node to the Value input of the Sample Nearest Surface node"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-62.jpg",
+                            "caption": "Image 62 - Plugging the Value output of the Sample Nearest Surface node into the Position input of the Set Position node"
+                          }
+                        ]
+                      },
+                      "The fence posts should appear more on top of the terrain now (Image 63). The reason that not all positions can be seen is that the curve itself doesn't have enough points; add a [k]Resample Curve[/k] node and increase the Count (Image 64). The fences will now be seen following the terrain (Image 65).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-63.jpg",
+                            "caption": "Image 63 - Seeing the fence posts appearing more on top of the terrain"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-64.jpg",
+                            "caption": "Image 64 - Adding a Resample Curve node and increasing the Count to fix the curve not having enough points"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-65.jpg",
+                            "caption": "Image 65 - Seeing the fences now following the terrain"
+                          }
                         ]
                       }
                     ]
@@ -1077,9 +1377,59 @@
                   "section": {
                     "header": "Fences to follow the Path",
                     "content": [
-                      "We have fence posts following the curve. It would be nice to have fence posts that also follow the outside of the walking path. First thing, let's remove the terrain with a [k]Delete Geometry[/k] node (Image 66). If we look at the scene, all the terrain has been removed (Image 67), but what if we only want to remove the walking path? Connect the walking path attribute we created to the Selection input for the [k]Delete Geometry[/k] node (Image 68). This will remove only the walking path faces (Image 69). What we want is the walking path faces only. Add a [k]Map Range[/k] in between the [k]Group Input[/k] and the [k]Delete Geometry[/k] until only the walking path is visible (Image 70). Now we want the outside edges of the walking path. Add a [k]Separate Geometry[/k] node after the [k]Delete Geometry[/k] (Image 71). The [k]Separate Geometry[/k] node produces two geometry outputs. Based on the Selection input, the input geometry is split between the two outputs. We will be using the Selection output. With this separation, we want to limit its geometry to just the outside edges. An outside edge will be an edge that has only 1 edge neighbor. Add an [k]Equal[/k] and an [k]Edge Neighbors[/k] node and connect them to the Selection input, so we limit the edges of the selected geometry to just outside egdes (Image 72). The resulting geometry is a little blocky, so add a [k]Merge by Distance[/k] node to reduce some of the angles (Image 73). We have our outside path; we can add fence posts to it by using [k]Mesh to Curve[/k], [k]Curve to Points[/k], [k]Instance on Points[/k], and using the post as out instance (Image 74). Add the terrain back to the output (Image 75).",
+                      "We have fence posts following the curve. It would be nice to have fence posts that also follow the outside of the walking path. First thing, let's remove the terrain with a [k]Delete Geometry[/k] node (Image 66). If we look at the scene, all the terrain has been removed (Image 67), but what if we only want to remove the walking path? Connect the walking path attribute we created to the Selection input for the [k]Delete Geometry[/k] node (Image 68).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-66.jpg",
+                            "caption": "Image 66 - Adding a Delete Geometry node to remove the terrain"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-67.jpg",
+                            "caption": "Image 67 - Seeing all the terrain removed from the scene"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-68.jpg",
+                            "caption": "Image 68 - Connecting the walking path attribute to the Selection input for the Delete Geometry node"
+                          }
+                        ]
+                      },
+                      "This will remove only the walking path faces (Image 69). What we want is the walking path faces only. Add a [k]Map Range[/k] in between the [k]Group Input[/k] and the [k]Delete Geometry[/k] until only the walking path is visible (Image 70). Now we want the outside edges of the walking path. Add a [k]Separate Geometry[/k] node after the [k]Delete Geometry[/k] (Image 71). The [k]Separate Geometry[/k] node produces two geometry outputs. Based on the Selection input, the input geometry is split between the two outputs. We will be using the Selection output. With this separation, we want to limit its geometry to just the outside edges. An outside edge will be an edge that has only 1 edge neighbor. Add an [k]Equal[/k] and an [k]Edge Neighbors[/k] node and connect them to the Selection input, so we limit the edges of the selected geometry to just outside edges (Image 72).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-69.jpg",
+                            "caption": "Image 69 - Seeing only the walking path faces removed"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-70.jpg",
+                            "caption": "Image 70 - Adding a Map Range between the Group Input and the Delete Geometry until only the walking path is visible"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-71.jpg",
+                            "caption": "Image 71 - Adding a Separate Geometry node after the Delete Geometry to get the outside edges of the walking path"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-72.jpg",
+                            "caption": "Image 72 - Adding an Equal and an Edge Neighbors node connected to the Selection input to limit the geometry to just outside edges"
+                          }
+                        ]
+                      },
+                      "The resulting geometry is a little blocky, so add a [k]Merge by Distance[/k] node to reduce some of the angles (Image 73). We have our outside path; we can add fence posts to it by using [k]Mesh to Curve[/k], [k]Curve to Points[/k], [k]Instance on Points[/k], and using the post as out instance (Image 74). Add the terrain back to the output (Image 75).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-73.jpg",
+                            "caption": "Image 73 - Adding a Merge by Distance node to reduce some of the angles in the blocky geometry"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-74.jpg",
+                            "caption": "Image 74 - Adding fence posts to the outside path using Mesh to Curve, Curve to Points, Instance on Points nodes with the post as the instance"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-75.jpg",
+                            "caption": "Image 75 - Adding the terrain back to the output"
+                          }
                         ]
                       }
                     ]
@@ -1092,6 +1442,26 @@
                       "Let's connect our fences with wires. Add a [k]Join Geometry[/k] node to our network and use it to display our fence posts and the curve they were built off (Image 76). Use a [k]Set Position[/k], [k]Add (Vector)[/k], [k]Position[/k], and [k]Combine XYZ[/k] node to offset the z-axis of the curve and raise it up (Image 77). Add in a [k]Curve to Mesh[/k] and [k]Curve Circle[/k] to thicken the geometry (Image 78). Organize this network into a frame (Image 79), and duplicate it to create a second set of wires underneath (Image 80).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-76.jpg",
+                            "caption": "Image 76 - Adding a Join Geometry node to display both the fence posts and the curve they were built from"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-77.jpg",
+                            "caption": "Image 77 - Using a Set Position, Add (Vector), Position, and Combine XYZ node to offset the z-axis of the curve and raise it up"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-78.jpg",
+                            "caption": "Image 78 - Adding a Curve to Mesh and Curve Circle to thicken the geometry"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-79.jpg",
+                            "caption": "Image 79 - Organizing this network into a frame"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-80.jpg",
+                            "caption": "Image 80 - Duplicating the frame to create a second set of wires underneath"
+                          }
                         ]
                       }
                     ]
@@ -1101,20 +1471,49 @@
                   "section": {
                     "header": "Houses on Selected Areas",
                     "content": [
-                      "We want to build houses on some of the land. Add another [k]Separate Geometry[/k] node to remove the terrain, but this time for the Selection, use the [k]Noise Texture[/k] fed into a [k]Map Range[/k] to limit the selection to parts of the land (Image 81). Import a hut mesh into the scene or make one (Image 82). Back to the network, add a [k]Distribute Points on Faces[/k], [k]Instance on Points[/k] and use the hut mesh as the instance to add huts to the terrain (image 83). We have huts on the walking path we need to remove, so connect the walking path attribute to the Selection input on the [k]Distribute Points on Faces[/k] node (Image 84), and then a [k]Not[/k] node to invert the selection (Image 85). We have huts on top of huts, so change the Distribution Method to Poisson Disk and increase the Distance Min (Image 86). Add some random rotation in the z-axis (Image 87).",
+                      "We want to build houses on some of the land. Add another [k]Separate Geometry[/k] node to remove the terrain, but this time for the Selection, use the [k]Noise Texture[/k] fed into a [k]Map Range[/k] to limit the selection to parts of the land (Image 81). Import a hut mesh into the scene or make one (Image 82). Back to the network, add a [k]Distribute Points on Faces[/k], [k]Instance on Points[/k] and use the hut mesh as the instance to add huts to the terrain (image 83).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-81.jpg",
+                            "caption": "Image 81 - Adding another Separate Geometry node to remove the terrain, using a Noise Texture fed into a Map Range to limit the selection to parts of the land"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-82.jpg",
+                            "caption": "Image 82 - Importing or creating a hut mesh"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-83.jpg",
+                            "caption": "Image 83 - Adding a Distribute Points on Faces and Instance on Points node and using the hut mesh as the instance to add huts to the terrain"
+                          }
+                        ]
+                      },
+                      "We have huts on the walking path we need to remove, so connect the walking path attribute to the Selection input on the [k]Distribute Points on Faces[/k] node (Image 84), and then a [k]Not[/k] node to invert the selection (Image 85). We have huts on top of huts, so change the Distribution Method to Poisson Disk and increase the Distance Min (Image 86). Add some random rotation in the z-axis (Image 87).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-84.jpg",
+                            "caption": "Image 84 - Connecting the walking path attribute to the Selection input on the Distribute Points on Faces node to remove huts from the path"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-85.jpg",
+                            "caption": "Image 85 - Adding a Not node to invert the selection"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-86.jpg",
+                            "caption": "Image 86 - Changing the Distribution Method to Poisson Disk and increasing the Distance Min to fix huts stacking on top of each other"
+                          },
+                          {
+                            "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-87.jpg",
+                            "caption": "Image 87 - Adding some random rotation in the z-axis"
+                          }
                         ]
                       },
                       {
                         "section": {
                           "header": "Fencing around Houses",
                           "content": [
-                            "The instructor goes into some steps for setting up fencing around areas that have huts/houses, but he doesn't have a good solution for this, so let's skip it.",
-                            {
-                              "image": [
-                              ]
-                            }
+                            "The instructor goes into some steps for setting up fencing around areas that have huts/houses, but he doesn't have a good solution for this, so let's skip it."
                           ]
                         }
                       }
@@ -1132,6 +1531,18 @@
                             "Let's make the grass in three different shades. Duplicate the grass mesh and assign different materials to each one (Image 88). In order to randomly select which grass cluster to use, add a [k]Geometry to Instance[/k] node to turn every connected grass mesh into an instance (Image 89). We can randomize them by supplying a random number to the Instance Index input for the [k]Instance on Points[/k] node. Add a [k]Random Value[/k] and [k]Floor[/k] node to the network (Image 90). The Max input on [k]Random Value[/k] will help determine the spread, while the [k]Floor[/k] node will convert it to an Integer.",
                             {
                               "image": [
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-88.jpg",
+                                  "caption": "Image 88 - Duplicating the grass mesh and assigning different materials to each one for three different shades"
+                                },
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-89.jpg",
+                                  "caption": "Image 89 - Adding a Geometry to Instance node to turn every connected grass mesh into an instance"
+                                },
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-90.jpg",
+                                  "caption": "Image 90 - Adding a Random Value and Floor node to supply a random number to the Instance Index input for random grass selection"
+                                }
                               ]
                             }
                           ]
@@ -1144,6 +1555,10 @@
                             "Create a material for the wires between fence posts, and add a [k]Set Material[/k] to the network after the [k]Curve to Mesh[/k] node (Image 91).",
                             {
                               "image": [
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-91.jpg",
+                                  "caption": "Image 91 - Creating a material for the wires and adding a Set Material node to the network after the Curve to Mesh node"
+                                }
                               ]
                             }
                           ]
@@ -1153,9 +1568,28 @@
                         "section": {
                           "header": "Terrain",
                           "content": [
-                            "Create two materials for the terrain, grass and dirt. Add a [k]Set Material Index[/k] node to switch indices and a [k]Greater Than[/k] node that will compare the output of the walking path attribute with a threshold we set (Image 92). ",
+                            "Create two materials for the terrain, grass and dirt. Add a [k]Set Material Index[/k] node to switch indices and a [k]Greater Than[/k] node that will compare the output of the walking path attribute with a threshold we set (Image 92).",
                             {
                               "image": [
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-92.jpg",
+                                  "caption": "Image 92 - Creating grass and dirt materials for the terrain, adding a Set Material Index node and a Greater Than node to switch indices based on the walking path attribute"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Final Render",
+                          "content": [
+                            {
+                              "image": [
+                                {
+                                  "src": "Blender/CrossMind Studio/Geometry Nodes/11/11-93.jpg",
+                                  "caption": "Image 93 - Isometric render"
+                                }
                               ]
                             }
                           ]
