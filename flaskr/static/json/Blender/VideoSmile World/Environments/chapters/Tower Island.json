@@ -1,0 +1,266 @@
+{
+  "title": "Tower Island",
+  "sections": [
+    {
+      "The Island": {
+        "tags": ["island"],
+        "key_concepts": [
+          "[url]Blender Tutorial for Absolute Beginners - Interface & 3D Modeling. Part 1^^https://www.youtube.com/watch?v=Iyf-Zp3CRLg[/url]",
+          {
+            "section": {
+              "header": "Ground",
+              "content": [
+                "Add the reference image to the scene (Image 1). Start with the default cube and scale it: [k]S,X,3.5[/k], [k]S,Y,4.5[/k], [k]S,Z,0.5[/k] (Image 2). [k]Ctrl-R[/k] to add two Loop Cuts in the x-axis and [k]S,Y[/k] to bring them closer together (Image 3). Add two more Loop Cuts inside the new section and [k]S,Y[/k] to move the edge loops further apart (Image 4).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-01.jpg",
+                      "caption": "Image 1 - Adding the reference image to the scene"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-02.jpg",
+                      "caption": "Image 2 - Starting with the default cube and scaling it to the desired dimensions"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-03.jpg",
+                      "caption": "Image 3 - Adding two Loop Cuts in the x-axis and moving the edge loops closer together in the y-axis"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-04.jpg",
+                      "caption": "Image 4 - Adding two more Loop Cuts inside the new section and moving the edge loops further apart in the y-axis"
+                    }
+                  ]
+                },
+                "Select the inner face on the side and [k]G,X[/k] to push it inwards to make room for the pier (Image 5). Select all edges around the sides and [k]Ctrl-B[/k] to bevel them with seven segments and a width of 1M (Image 6). If the bevel doesn't look correct, [k]Tab[/k] into Object Mode and [k]Ctrl-A,S[/k] to apply the scale. Select the edges by the pier cutout and [k]Ctrl-B,C[/k] to bevel those edges but clamp them so the bevels don't go over each other; set the segments to three this time (Image 7). We need to remove unnecessary vertices from the even surfaces on top and bottom so we can bevel the edges evenly, so [k]A,X,L[/k] to perform a limited dissolve (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-05.jpg",
+                      "caption": "Image 5 - Selecting the inner face on the side and pushing it inwards in the x-axis to make room for the pier"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-06.jpg",
+                      "caption": "Image 6 - Selecting all edges around the sides and beveling them with seven segments and a width of 1M"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-07.jpg",
+                      "caption": "Image 7 - Selecting the edges by the pier cutout and beveling those edges with clamping and three segments"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-08.jpg",
+                      "caption": "Image 8 - Performing a limited dissolve to remove unnecessary vertices from the even surfaces on top and bottom"
+                    }
+                  ]
+                },
+                "Select the top face and bevel it with three segments (Image 9). Select the edges around the top and bottom and [k]RMB > Mark Sharp[/k] (Image 10) so that if we turn on [k]Shade Auto Smooth[/k] those lines will be sharp. In the Outliner rename the mesh to 'ground' and organize the project (Image 11).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-09.jpg",
+                      "caption": "Image 9 - Selecting the top face and beveling it with three segments"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-10.jpg",
+                      "caption": "Image 10 - Selecting the edges around the top and bottom and marking them as sharp"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-11.jpg",
+                      "caption": "Image 11 - Renaming the mesh to 'ground' in the Outliner and organizing the project"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Rocks",
+              "content": [
+                "Add a cube to the scene, [k]/[/k] to go into Local View and [k]G,Z,1[/k] to move it up (Image 12). Set the size: [k]S,X,0.65[/k], [k]S,Y,0.65[/k], [k]S,Z,0.75[/k] (Image 13). Scale in the top face to taper the shape slightly (Image 14). Select a random edge and [k]G,G[/k] to Edge Slide it down (Image 15).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-12.jpg",
+                      "caption": "Image 12 - Adding a cube to the scene, going into Local View and moving it up"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-13.jpg",
+                      "caption": "Image 13 - Setting the size of the cube by scaling in the x-, y-, and z-axes"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-14.jpg",
+                      "caption": "Image 14 - Scaling in the top face to taper the shape slightly"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-15.jpg",
+                      "caption": "Image 15 - Selecting a random edge and Edge Sliding it down"
+                    }
+                  ]
+                },
+                "Add a Bevel Modifier with the Amount set to 0.15 and the Segments to 2 (Image 16). Doing it through a modifier will allow you to continue to make changes to the underlying geometry while still creating bevels. [k]Shift-D,Y[/k] and create five variations of the rock, all lined up in the y-axis (Image 17). [k]/[/k] to exit Local View and you will see the rocks buried in the island (Image 18). [k]RMB[/k] the rocks collection in the Outliner and [k]Select Objects[/k] to select all the rocks (Image 19).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-16.jpg",
+                      "caption": "Image 16 - Adding a Bevel Modifier with the Amount set to 0.15 and the Segments to 2"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-17.jpg",
+                      "caption": "Image 17 - Duplicating and creating five variations of the rock, all lined up in the y-axis"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-18.jpg",
+                      "caption": "Image 18 - Exiting Local View and seeing the rocks buried in the island"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-19.jpg",
+                      "caption": "Image 19 - Right-clicking the rocks collection in the Outliner and selecting all the rocks"
+                    }
+                  ]
+                },
+                "[k]G,X[/k] to move them out in the x-axis to clear them from the island (Image 20). With them all selected [k]Ctrl-A,S[/k] to apply the scale (Image 21), this will ensure the Bevel Modifier is applied evenly across all axes. Duplicate, rotate, scale, and place rocks all around the island (Image 22).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-20.jpg",
+                      "caption": "Image 20 - Moving them out in the x-axis to clear them from the island"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-21.jpg",
+                      "caption": "Image 21 - Applying the scale to all selected rocks to ensure the Bevel Modifier is applied evenly across all axes"
+                    },
+                    {
+                      "src": "Blender/VideoSmile World/Environments/Island Tower/Island/island_tower-22.jpg",
+                      "caption": "Image 22 - Duplicating, rotating, scaling, and placing rocks all around the island"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Pier & Water": {
+        "tags": ["shade auto smooth"],
+        "key_concepts": [
+          "[url]Blender Tutorial for Absolute Beginners - 3D Modeling a Pier & Water. Part 2^^https://www.youtube.com/watch?v=sRKJSJlIorA[/url]",
+          {
+            "section": {
+              "header": "The Pier",
+              "content": [
+                {
+                  "section": {
+                    "header": "The Planks",
+                    "content": [
+                      "Add a Cube to the scene and [k]G,Z,Ctrl[/k] to move it up in the z-axis, snapping it to the grid (Image 1). [k]G,X,Ctrl[/k] to bring it forward (Image 2). [k]Numpad3[/k] into Side View and [k]S,Z,Ctrl[/k] to scale it down to about 0.2m tall (Image 3). Rotate the view around and [k]S,X,Ctrl-Shift[/k] to scale it down to 0.5m in the x-axis (Image 4). [k]S,Y,Ctrl[/k] and scale it down to 1.6m in the y-axis (Image 5). [k]G,X[/k] to move the plank over land (Image 6). Add an Array Modifier in the x-axis, generating 5 planks with an offset of 1.15 units (Image 7).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Support Frame",
+                    "content": [
+                      "[k]Shift-D[/k] to duplicate the plank and remove the Array Modifier (Image 8). [k]R,Z,90[/k] to rotate it 90 degrees (Image 9). [k]Numpad3[/k], [k]G,Z[/k], [k]G,Y[/k] to get it into position under the pier (Image 10). [k]G,X[/k] towards the middle of the pier (Image 11). [k]S,X[/k] to increase the size in the x-axis (Image 12). [k]RMB > Set Origin < Origin to 3D Cursor[/k] (Image 13), and then add a Mirror Modifier in the x-axis to add a support on the other side (Image 14),",
+                      {
+                        "image": [
+                        ]
+                      },
+                      "[k]Shift-D[/k] to duplicate the support frame and [k]R,Y,90[/k] (Image 15). [k]S,X[/k] to make them thicker (Image 16). [k]Tab[/k] into Edit Mode, [k]3[/k] for Face Select, grab the top face and [k]G,Z[/k] to lower them (Image 17). [k]A,S,Shift-Z[/k] to make the support columns thinner than the planks running the length of the pier (Image 18). [k]G,X[/k] to bring them forward (Image 19). [k]Shift-Ctrl-Alt-S[/k] and use the Shear Tool to add a slant to the columns (Image 20).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      "[k]Shift-D,Z[/k] to duplicate the support frame and bring it above the planks (Image 21). Remove the Mirror Modifier and [k]G,Y[/k] to move across to the other side (Image 22). [k]RMB > Set Origin < Origin to Geometry[/k] (Image 23). Scale it in the z-axis (Image 24). In Edit Mode, [k]G,G[/k] to Edge Slide the edge on the side back (Image 25). Add a Loop Cut in the middle and [k]S,Y[/k] to make that part thicker (Image 26). Select the back face and [k]S,Y[/k] to make it narrower (Image 27). In Object Mode, [k]Ctrl-A,S[/k] to apply the scale so we can start beveling (Image 28). Select the front edge and [k]Ctrl-B[/k] (Image 29). Add a bevel in the rear (Image 30), and a slight bend in the middle (Image 31). Select the edge loop in the middle and bevel it with 2 segments to give it a smoother shape (image 32).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Posts",
+                    "content": [
+                      "[k]Shift-A > Cylinder[/k] with a radius of 0.2m and a depth of 0.7m (Image 33). Position it at the end of the pier (Image 34). Go into Edit Mode and scale in the bottom face to make it wider up top (Image 35). Select the top face [k]I[/k] to inset some thickness for the bark (Image 36). [k]G,Z[/k] to raise the top face (Image 37). In Object Mode, [k]RMB > Shade Auto Smooth[/k] (Image 38), and in Edit Mode, select the top face, [k]2[/k] into Edge Select, and [k]RMB > Mark Sharp[/k] so that a contrast will show for the tep when we render (Image 39). When we set to Auto Smooth, it added a Smooth by Angle Modifier; adjust the angle until the side edges are smoothed out (Image 40). Make two duplicates (Image 41). Add some variation to the posts; add a tilt in the y-axis, x-axis, make one slightly shorter, slightly wider base, (Image 42) etc...",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Ropes",
+                    "content": [
+                      "[k]Shift-A > Curve > Path[/k] and move it over to the posts (Image 43). Move the path over to the first two posts so that it goes into them (Image 44). In Edit Mode, [k]X[/k] to dissolve the second and fourth vertex (Image 45). In Edit Mode, adjust the vertices to create a path for a rope between posts (Image 46). We need some geometry for the rope so in the Data Properties tab, change the path's [k]Geometry > Bevel > Depth[/k] to 0.07m, the Resolution to 2, and the [k]Shape > Resolution Preview[/k] to 6 (Image 47). [k]Shift-D[/k] to add a second rope for the next post (Image 48). [k]Shift-A > Curve > Circle[/k] and move it around the first post (Image 49). [k]S[/k], [k]G[/k] until the circle is around the same height as the rope, add some thickness, and [k]R,Y[/k] to add a tilt (Image 50). Add two duplicates for the other posts and change their rotation to match the post (Image 51). Select all rope parts and [k]Ctrl-J[/k] to join into one mesh (Image 52).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Plank Variants",
+                    "content": [
+                      "In Object Mode, select the planks mesh and apply the Array Modifier (Image 53). In Edit Mode, with all geometry selected, [k]P,L[/k] to separate each plank into its own mesh (Image 54). In Object Mode, select all planks and [k]RMB > Set Origin > Origin to Geometry[/k] to move each plank's origin to its center of mass (Image 55). Add some variation; [k]R,Z[/k], add some separation between planks, [k]G,G[/k] to edge slide some places, and [k]S,Y[/k] to widen some of the planks (Image 56). Select the occasional vertex and [k]Ctrl-B,V[/k] to add a chamfer (Image 57). Add a Bevel Modifier to one, with the Amount set to 0.025m, the Segments at 2, and enable Harden Normals (Image 58). Select all plank meshes including columns and [k]Ctrl-A,S[/k] (Image 59). [k]Ctrl-L > Copy Modifiers[/k] top copy the Bevel Modifier from the the one that has it (Image 60), and finally Shade Smooth (Image 61).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Water",
+              "content": [
+                "Add a Cube to the scene, [k]S,Shift-Z,6.5[/k] to scale it up to 13mx13mx2m (Image 62). [k]S,Z,0.5[/k], [k]G,Z,0.5,-[/k] to make the water 1m deep and move it below the world origin (Image 63). Select all the stones around the island (Image 64). [k]/[/k] into Local View, select all bottom vertices and [k]S,Z,0[/k] to make them all the same height (Image 65). [k]G,Z[/k] to drag the bottom of the stones down so they're in the water (Image 66). [k]Numpad1[/k] into Front View and move the left face forward in the x-axis, bringing it closer to the rocks (Image 67). [k]Ctrl-A,S[/k] to apply the scale and add a Subdivision Surface Modifier to the cube (Image 68). Select the top and bottom faces of the cube and [k]Ctrl-B[/k] to bevel them with 2 Segments (Image 69). Add two Loop Cuts across the y-axis (Image 70) and one across the x-axis (Image 71). Select all edges at the corners (Image 72) and bevel them, watching how the corners are rounded by the Subdivision Surface Modifier (Image 73). Shade Smooth (Image 74).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Ripples on the Water",
+                    "content": [
+                      "Add a Displace Modifier with a new Texture and click the button to begin setting it up (Image 75). Change the Type to Marble (Image 76) and increase its size (Image 77). Back in the Modifiers Tab bring the Strength down to 0.1 (Image 78). We need the effect only on the top faces. [k]Tab[/k] into Edit Mode, [k]/[/k], select the top faces, and in the Data Tab assign those faces to a new Vertex Group (Image 79). Back in the Modifier Tab use that group as the value of the Vertex Group target for the Displace Modifier (Image 80). Ww won't see any effect until we click the button to display the modifier in Edit Mode (Image 81). Adjust the Strength until you like the effect (Image 82). If you look at the edges, the waves end rather abruptly (Image 83). To fix this, go into Weight Paint Mode (Image 84). Apply the Subdivision Surface Modifier and now we have a high poly mesh (Image 85). Set the Weight to 0.0, the Strength to 0.5, and use the Gradient Brush to push the weight back from the edges (Image 86). Go back into Object Mode and review the changes (Image 87).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "Changing the Waves",
+                          "content": [
+                            "If we want to update the waves' direction or scale, we can do this with by editing the texture coordinates. Add an [k]Empty > Plain Axes[/k] to the scene and scale it up to make it more visible (Image 88). Update the Displace Modifier on the water to make the Empty the target object of the coordinates (Image 89). [k]R[/k], [k]S[/k], [k]G[/k] to play with the Empty and affect the waves (Image 90). Go back to the Texture tab and update the values for Depth and Turbulence to update the waves (Image 91).",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
