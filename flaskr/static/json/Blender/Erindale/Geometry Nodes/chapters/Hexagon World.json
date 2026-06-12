@@ -13,6 +13,14 @@
                 "Start with any object, give it a Geometry Nodes Modifier and delete the initial [k]Group Input[/k] (Image 1). Rename the network (Image 2).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-01.jpg",
+                      "caption": "Image 1 - Starting with any object, giving it a Geometry Nodes Modifier and deleting the initial Group Input"
+                    },
+                    {
+                      "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-02.jpg",
+                      "caption": "Image 2 - Renaming the network"
+                    }
                   ]
                 }
               ]
@@ -22,18 +30,101 @@
             "section": {
               "header": "Creating a Hexagon Grid",
               "content": [
-                "Add a [k]Mesh Line[/k] node, which generates vertices in a line and connects them with edges (Image 3). To save time, select the [k]Mesh Line[/k] node and [k]Ctrl-G[/k] to make a Node Group; this will create [k]Group Input[/k] and [k]Group Output[/k] nodes which are used to represent data flowing into and out of the group (Image 4). [k]N[/k] to open the Sidebar and remove the Start Location and Offset inputs from the Group Sockets; we only need the Count input (Image 5). Rename the Count socket to 'Count X' and add a second input socket, 'Count Y' of the same type (Image 6). Add a [k]Multiply[/k] node that will take the X and Y values, multiply them, and pass them to the Count input (Image 7). Connect the Count X output from the [k]Group Input[/k] to an empty socket in the [k]Group Output[/k] (Image 8). [k]Tab[/k] out of the Edit Group view and rename the group node to 'Points', since this will be our point generator (Image 9).",
+                "Add a [k]Mesh Line[/k] node, which generates vertices in a line and connects them with edges (Image 3). To save time, select the [k]Mesh Line[/k] node and [k]Ctrl-G[/k] to make a Node Group; this will create [k]Group Input[/k] and [k]Group Output[/k] nodes which are used to represent data flowing into and out of the group (Image 4). [k]N[/k] to open the Sidebar and remove the Start Location and Offset inputs from the Group Sockets; we only need the Count input (Image 5). Rename the Count socket to 'Count X' and add a second input socket, 'Count Y' of the same type (Image 6).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-03.jpg",
+                      "caption": "Image 3 - Adding a Mesh Line node, which generates vertices in a line and connects them with edges"
+                    },
+                    {
+                      "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-04.jpg",
+                      "caption": "Image 4 - Selecting the Mesh Line node and pressing Ctrl-G to make a Node Group, creating Group Input and Group Output nodes"
+                    },
+                    {
+                      "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-05.jpg",
+                      "caption": "Image 5 - Opening the Sidebar with N and removing the Start Location and Offset inputs from the Group Sockets"
+                    },
+                    {
+                      "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-06.jpg",
+                      "caption": "Image 6 - Renaming the Count socket to 'Count X' and adding a second input socket, 'Count Y' of the same type"
+                    }
+                  ]
+                },
+                "Add a [k]Multiply[/k] node that will take the X and Y values, multiply them, and pass them to the Count input (Image 7). Connect the Count X output from the [k]Group Input[/k] to an empty socket in the [k]Group Output[/k] (Image 8). [k]Tab[/k] out of the Edit Group view and rename the group node to 'Points', since this will be our point generator (Image 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-07.jpg",
+                      "caption": "Image 7 - Adding a Multiply node to take the X and Y values, multiply them, and pass them to the Count input"
+                    },
+                    {
+                      "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-08.jpg",
+                      "caption": "Image 8 - Connecting the Count X output from the Group Input to an empty socket in the Group Output"
+                    },
+                    {
+                      "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-09.jpg",
+                      "caption": "Image 9 - Pressing Tab to exit the Edit Group view and renaming the group node to 'Points'"
+                    }
                   ]
                 },
                 {
                   "section": {
                     "header": "Positioning Grid Points",
                     "content": [
-                      "Our Count X and Count Y are set to 10, meaning we have 100 points being generated (and can confirm in the Spreadsheet) (Image 10). Change the values to 2 and 3 (Image 11). Add a [k]Set Position[/k], [k]Combine XYZ[/k], and [k]Index[/k] node to the network (Image 12). We see that the mesh is now a line going from 0.0 in the x-axis to 5.0 (Image 13). What is happening is that the [k]Index[/k] node is reading the integer value indicating the position of each element in the list and feeding that to the [k]Combine XYZ[/k] node, and setting that position for each point. So the point at element 0 is being positioned at (0.0, 0.0, 0.0), element 1 is at (1.0, 0.0, 0.0), and so on. Increase the points back to 100 (Image 14). We want to limit the x-position of the points to 0.0 through 9.0, no matter how high the index goes. We can do this with a [k]Modulo[/k] node that outputs the remainder once the first value (the element index) is divided by the second value (10) (Image 15). We used 10 for the modulo division because that is the grid size set in Count X; connect the Count X input to the [k]Modulo[/k] node (Image 16). We can further visualize this with a [k]Mesh to Points[/k] node (Image 17). That laid out the grid points in the x-axis, now we want the y. The x position was determined by performing a modulo division of the index element by the number of x positions determined by Count X. the y position can be found by performing an integer division of the index element by the number of x positions, so elements 0-9 would be at y position 0, elements 10-19 would be at y position 1, and so on. We can perform the integer division with a [k]Divide Floor[/k] node which performs a division of the first value (the element index) by the second value (Count X) and rounds the result down to the nearest integer (Image 18). We can see the result visualized with the [k]Mesh to Points[/k] node in place; we see 100 points (Image 19).",
+                      "Our Count X and Count Y are set to 10, meaning we have 100 points being generated (and can confirm in the Spreadsheet) (Image 10). Change the values to 2 and 3 (Image 11). Add a [k]Set Position[/k], [k]Combine XYZ[/k], and [k]Index[/k] node to the network (Image 12).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-10.jpg",
+                            "caption": "Image 10 - Confirming 100 points being generated with Count X and Count Y set to 10"
+                          },
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-11.jpg",
+                            "caption": "Image 11 - Changing the values to 2 and 3"
+                          },
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-12.jpg",
+                            "caption": "Image 12 - Adding a Set Position, Combine XYZ, and Index node to the network"
+                          }
+                        ]
+                      },
+                      "We see that the mesh is now a line going from 0.0 in the x-axis to 5.0 (Image 13). What is happening is that the [k]Index[/k] node is reading the integer value indicating the position of each element in the list and feeding that to the [k]Combine XYZ[/k] node, and setting that position for each point. So the point at element 0 is being positioned at (0.0, 0.0, 0.0), element 1 is at (1.0, 0.0, 0.0), and so on. Increase the points back to 100 (Image 14). We want to limit the x-position of the points to 0.0 through 9.0, no matter how high the index goes. We can do this with a [k]Modulo[/k] node that outputs the remainder once the first value (the element index) is divided by the second value (10) (Image 15).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-13.jpg",
+                            "caption": "Image 13 - Seeing the mesh as a line going from 0.0 in the x-axis to 5.0"
+                          },
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-14.jpg",
+                            "caption": "Image 14 - Increasing the points back to 100"
+                          },
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-15.jpg",
+                            "caption": "Image 15 - Adding a Modulo node to limit the x-position of the points to 0.0 through 9.0"
+                          }
+                        ]
+                      },
+                      "We used 10 for the modulo division because that is the grid size set in Count X; connect the Count X input to the [k]Modulo[/k] node (Image 16). We can further visualize this with a [k]Mesh to Points[/k] node (Image 17). That laid out the grid points in the x-axis, now we want the y. The x position was determined by performing a modulo division of the index element by the number of x positions determined by Count X. the y position can be found by performing an integer division of the index element by the number of x positions, so elements 0-9 would be at y position 0, elements 10-19 would be at y position 1, and so on. We can perform the integer division with a [k]Divide Floor[/k] node which performs a division of the first value (the element index) by the second value (Count X) and rounds the result down to the nearest integer (Image 18). We can see the result visualized with the [k]Mesh to Points[/k] node in place; we see 100 points (Image 19).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-16.jpg",
+                            "caption": "Image 16 - Connecting the Count X input to the Modulo node"
+                          },
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-17.jpg",
+                            "caption": "Image 17 - Visualizing with a Mesh to Points node"
+                          },
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-18.jpg",
+                            "caption": "Image 18 - Adding a Divide Floor node to perform integer division of the index element by Count X for the y position"
+                          },
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-19.jpg",
+                            "caption": "Image 19 - Seeing the result visualized with the Mesh to Points node, showing 100 points"
+                          }
                         ]
                       }
                     ]
@@ -43,9 +134,42 @@
                   "section": {
                     "header": "Adding Hexagons",
                     "content": [
-                      "We have our points where the hexagons will go, but we don't have any hexagons. We will add them to the network output with an [k]Instance on Points[/k] and a [k]Cylinder[/k] with 6 Vertices (Image 20). We don't need the [k]Mesh to Points[/k] node here, you can remove if you wish. Now in the scene we see hexagons at each point (Image 21). The hexagons are on top of each other at the moment, we will separate them using a [k]Multiply[/k] node to adjust the spacing in the x- and y-axes (Image 22). By default the hexagons are in flat-top orientation; we will change this to pointy-top orientation by changing the rotation in the z-axis by 30 degrees (Image 23). The horizontal distance between adjacent hexagon centers is the square root of 3 x the hexagon radius (1m). In the [k]Multiply[/k] node's X input type 'sqrt(3)' and it will calculate the value for us (Image 24). We see the hexagons spaced out better now (Image 25). The vertical distance between adjacent hexagon centers is the 3/2 x the hexagon radius (1m); enter 1.5 into the [k]Multiply[/k] node's Y input (Image 26). We see overlap between hexagons; this will be fixed after we stagger the rows with an offset.",
+                      "We have our points where the hexagons will go, but we don't have any hexagons. We will add them to the network output with an [k]Instance on Points[/k] and a [k]Cylinder[/k] with 6 Vertices (Image 20). We don't need the [k]Mesh to Points[/k] node here, you can remove if you wish. Now in the scene we see hexagons at each point (Image 21). The hexagons are on top of each other at the moment, we will separate them using a [k]Multiply[/k] node to adjust the spacing in the x- and y-axes (Image 22). By default the hexagons are in flat-top orientation; we will change this to pointy-top orientation by changing the rotation in the z-axis by 30 degrees (Image 23).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-20.jpg",
+                            "caption": "Image 20 - Adding an Instance on Points and a Cylinder with 6 Vertices to the network output"
+                          },
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-21.jpg",
+                            "caption": "Image 21 - Seeing hexagons at each point in the scene"
+                          },
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-22.jpg",
+                            "caption": "Image 22 - Adding a Multiply node to adjust the spacing in the x- and y-axes"
+                          },
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-23.jpg",
+                            "caption": "Image 23 - Changing to pointy-top orientation by rotating in the z-axis by 30 degrees"
+                          }
+                        ]
+                      },
+                      "The horizontal distance between adjacent hexagon centers is the square root of 3 x the hexagon radius (1m). In the [k]Multiply[/k] node's X input type 'sqrt(3)' and it will calculate the value for us (Image 24). We see the hexagons spaced out better now (Image 25). The vertical distance between adjacent hexagon centers is the 3/2 x the hexagon radius (1m); enter 1.5 into the [k]Multiply[/k] node's Y input (Image 26). We see overlap between hexagons; this will be fixed after we stagger the rows with an offset.",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-24.jpg",
+                            "caption": "Image 24 - Entering 'sqrt(3)' into the Multiply node's X input for the horizontal distance between adjacent hexagon centers"
+                          },
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-25.jpg",
+                            "caption": "Image 25 - Seeing the hexagons spaced out better"
+                          },
+                          {
+                            "src": "Blender/Erindale/Geometry Nodes/Hexagon World/hex_world-26.jpg",
+                            "caption": "Image 26 - Entering 1.5 into the Multiply node's Y input for the vertical distance between adjacent hexagon centers"
+                          }
                         ]
                       }
                     ]
