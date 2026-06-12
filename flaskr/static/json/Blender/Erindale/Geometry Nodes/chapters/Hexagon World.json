@@ -2,18 +2,223 @@
   "sections": [
     {
       "What are Fields?": {
-        "tags": ["geometry nodes"],
+        "tags": ["geometry nodes", "mesh line", "modulo", "divide", "floor"],
         "key_concepts": [
           "[url]Hexagon World with Geometry Nodes Fields - Blender 3.0 Tutorial^^https://www.youtube.com/watch?v=EboNtLKn_m8[/url]",
-          "TBD",
+          "Create a hexagon world with geometry nodes",
           {
             "section": {
               "header": "Getting Started",
               "content": [
-                "",
+                "Start with any object, give it a Geometry Nodes Modifier and delete the initial [k]Group Input[/k] (Image 1). Rename the network (Image 2).",
                 {
                   "image": [
                   ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating a Hexagon Grid",
+              "content": [
+                "Add a [k]Mesh Line[/k] node, which generates vertices in a line and connects them with edges (Image 3). To save time, select the [k]Mesh Line[/k] node and [k]Ctrl-G[/k] to make a Node Group; this will create [k]Group Input[/k] and [k]Group Output[/k] nodes which are used to represent data flowing into and out of the group (Image 4). [k]N[/k] to open the Sidebar and remove the Start Location and Offset inputs from the Group Sockets; we only need the Count input (Image 5). Rename the Count socket to 'Count X' and add a second input socket, 'Count Y' of the same type (Image 6). Add a [k]Multiply[/k] node that will take the X and Y values, multiply them, and pass them to the Count input (Image 7). Connect the Count X output from the [k]Group Input[/k] to an empty socket in the [k]Group Output[/k] (Image 8). [k]Tab[/k] out of the Edit Group view and rename the group node to 'Points', since this will be our point generator (Image 9).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Positioning Grid Points",
+                    "content": [
+                      "Our Count X and Count Y are set to 10, meaning we have 100 points being generated (and can confirm in the Spreadsheet) (Image 10). Change the values to 2 and 3 (Image 11). Add a [k]Set Position[/k], [k]Combine XYZ[/k], and [k]Index[/k] node to the network (Image 12). We see that the mesh is now a line going from 0.0 in the x-axis to 5.0 (Image 13). What is happening is that the [k]Index[/k] node is reading the integer value indicating the position of each element in the list and feeding that to the [k]Combine XYZ[/k] node, and setting that position for each point. So the point at element 0 is being positioned at (0.0, 0.0, 0.0), element 1 is at (1.0, 0.0, 0.0), and so on. Increase the points back to 100 (Image 14). We want to limit the x-position of the points to 0.0 through 9.0, no matter how high the index goes. We can do this with a [k]Modulo[/k] node that outputs the remainder once the first value (the element index) is divided by the second value (10) (Image 15). We used 10 for the modulo division because that is the grid size set in Count X; connect the Count X input to the [k]Modulo[/k] node (Image 16). We can further visualize this with a [k]Mesh to Points[/k] node (Image 17). That laid out the grid points in the x-axis, now we want the y. The x position was determined by performing a modulo division of the index element by the number of x positions determined by Count X. the y position can be found by performing an integer division of the index element by the number of x positions, so elements 0-9 would be at y position 0, elements 10-19 would be at y position 1, and so on. We can perform the integer division with a [k]Divide Floor[/k] node which performs a division of the first value (the element index) by the second value (Count X) and rounds the result down to the nearest integer (Image 18). We can see the result visualized with the [k]Mesh to Points[/k] node in place; we see 100 points (Image 19).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Adding Hexagons",
+                    "content": [
+                      "We have our points where the hexagons will go, but we don't have any hexagons. We will add them to the network output with an [k]Instance on Points[/k] and a [k]Cylinder[/k] with 6 Vertices (Image 20). We don't need the [k]Mesh to Points[/k] node here, you can remove if you wish. Now in the scene we see hexagons at each point (Image 21). The hexagons are on top of each other at the moment, we will separate them using a [k]Multiply[/k] node to adjust the spacing in the x- and y-axes (Image 22). By default the hexagons are in flat-top orientation; we will change this to pointy-top orientation by changing the rotation in the z-axis by 30 degrees (Image 23). The horizontal distance between adjacent hexagon centers is the square root of 3 x the hexagon radius (1m). In the [k]Multiply[/k] node's X input type 'sqrt(3)' and it will calculate the value for us (Image 24). We see the hexagons spaced out better now (Image 25). The vertical distance between adjacent hexagon centers is the 3/2 x the hexagon radius (1m); enter 1.5 into the [k]Multiply[/k] node's Y input (Image 26). We see overlap between hexagons; this will be fixed after we stagger the rows with an offset.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Cleanup",
+                    "content": [
+                      "At this point, let's start cleaning up our network. Rename the [k]Modulo[/k] and [k]Divide Floor[/k] nodes to 'Column Index' and 'Row Index' respectively, since that is their output (Image 27). We will do more cleanup later.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Staggering Rows",
+                    "content": [
+                      "How do we stagger? We want odd-number rows to move over to the right 1/2 the radius. We can do this by using modulo division with the Row Index output, dividing it by 2 to see if the result is even or odd (0 or 1). Add in a [k]Modulo[/k] node and a [k]Multiply[/k] node and [k]F[/k] to frame them; the offset will be 0.0 for even-numbered rows and 0.5 for odd (Image 28). To get the right x-position, we will use an [k]Add[/k] node to add the offset to the column index before multiplying by the horizontal spacing (Image 29). The scene now shows the hexagons staggered by row (Image 30).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Cleanup (Cont'd)",
+                    "content": [
+                      "Let's change the hexagon radius to 2.0m (Image 31). Our scene is now broken because the [k]Multiply[/k] node is using magic numbers. The formula for horizontal spacing is sqrt(3) * radius, but out node is just using sqrt(3). We need a way to use the radius we set in the formula. We will use a Node Group for this. Add two [k]Multiply[/k] nodes, a [k]Combine XYZ[/k] node and [k]Ctrl-G[/k] to make them a Node Group (Image 32). The first [k]Multiply[/k] node will be used for the horizontal spacing formula; set one of its values to sqrt(3) and connect it to the X input for the [k]Combine XYZ[/k] node (Image 33). The other [k]Multiply[/k] node is for the vertical spacing; set one of its values to 1.5 and connect it to the Y input (Image 34). Connect the [k]Combine XYZ[/k]'s Vector output to the [k]Group Output[/k] (Image 35). Connect the remaining Value inputs from the [k]Multiply[/k] nodes to the same [k]Group Input[/k] socket and rename it 'Hexagon Radius' (Image 36). [k]Tab[/k] out of the Edit Group workspace and give the group a name (Image 37). We need to set the radius now; add a [k]Value[/k] node and connect it to the group (Image 38). Rename the [k]Value[/k] node, set its value to 1.0 and connect it to the [k]Cylinder[/k] node's Radius input (Image 39). We need to connect the Vector output of our group to the [k]Multiply[/k] node that is setting the positions (Image 40). If we update the radius, we should see the results in the scene (Image 41).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      "This covers the pointy-top hexagon configuration, but what if we want flat-top hexagons? First, go back into the pointy-top group and add a [k]Combine XYZ[/k] node (Image 42). Set its Z input value to 'pi/6' which will be 30 degrees (Image 43). Connect its Vector output to the [k]Group Output[/k] and give each output socket a better name (Image 44). [k]Tab[/k] out and connect the Rotation output to the Rotation input of the [k]Instance on Points[/k] node (Image 45). Add a new [k]Multiply[/k] Node and [k]Ctrl-G[/k] to start a new group (Image 46). Create the same setup as the previous group, except switch the values for horizontal and vertical spacing (Image 47). We will come back to this later",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Centering the Grid",
+                    "content": [
+                      "We need to center the grid now. We will do this by finding its bounds, adding the minimum and maximum points and then scaling by 0.5, and the re-setting the position. Start this process by adding a [k]Bounding Box[/k] node that creates a box mesh with the minimum volume that encapsulates the geometry of the input (Image 48). To that add an [k]Add (Vector)[/k] node to add the Min and Max outputs, and then a [k]Scale[/k] node to scale the result by -0.5 (Image 49). Finally, add in a [k]Set Position[/k] node that will take the first position we set and use the scaling result as an offset (Image 50). We're still not quite centered yet, if you zoom in, you will see the center point of the grid is not quite at the world origin (Image 51). We need to move the grid over by 1/4 the radius of a hexagon. Add a [k]Value[/k] node set to '-sqrt(3)*0.25', a [k]Multiply[/k] node that will multiply the constant value by the radius node, a [k]Combine XYZ[/k] node to connect the resulting value into the X input, and finally a [k]Transform Geometry[/k] node to translate the x-position of each hexagon (Image 52). Now we see the world origin at the center of the grid (Image 53). Change the grid size to 11x11 and you can really see it.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Hexagonal Mask",
+                    "content": [
+                      "Currently our hexagon grid is laid out in a rectangular pattern (Image 54), but for our purposes we want them laid out in a hexagon pattern. We will use a mask which will allow us to delete positions that are outside the hexagon bounds we are going to apply. Add a [k]Gradient Texture[/k] node, change its Style to Radial, and connect its Factor output to the [k]Instance on Points[/k] Scale input (Image 55). The Radial Style outputs a value based on the angle of the input around the Z axis, which is why we see the hexagons scaling from small to large as the angle increases going around the world origin (Image 56). We want to multiply the Factor output by the number of factors we are interested in, which is 6 for the 6 sides of the hexagon mask we want to create (Image 57).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "Vector Math",
+                          "content": [
+                            "So there's a long explanation that explains the math behind the steps we're about to take, but I'm not going to bother writing them out; instead, just review the nodes in the image (Image 58). Just understand that the [k]Map Range[/k] node on the end allows you to visualize the gradient that starts in the middle at 0.0 and goes out, so we can use it as a Selection mask to remove points that are outside of our gradient. Remove the [k]Map Range[/k] node and replace it with a [k]Less Than[/k] node connected to the Selection input of a [k]Delete Geometry[/k] node (Image 59). Two rules must be followed to visualize this successfully: the Count X must be an even number and must be one more than Count Y (Image 60) and you control the size of the displayed hexagon with the Threshold input of the [k]Less Than[/k] node (Image 61). Review the results in the scene (Image 62). One last thing, keep your Threshold with a constant value multiplied by your radius constant so that you can change the hexagon size without needing to re-configure your mask (Image 63).",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Controlling with an Empty",
+                    "content": [
+                      "We need a way to scale things, move the grid around, and have more control. We will do this with an Empty. [k]Shift-A > Empty > Cube[/k] and [k]Shift-A > Empty > Sphere[/k] to add two empties to the scene(Image 64). Rename the cube empty 'WORLD' and the sphere empty 'TEXTURE' (Image 65). The cube empty will control the density and height of the world, and the sphere empty will control density of the texture.",
+                      {
+                        "image": [
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "The World Control",
+                          "content": [
+                            {
+                              "section": {
+                                "header": "Controlling Scale",
+                                "content": [
+                                  "Bring the World empty into the network (Image 66). Duplicate the [k]Transform Geometry[/k] node we used to center the grid and connect the Scale output from the World mesh node to the Scale input of the second [k]Transform Geometry[/k] node (Image 67). In the 3D Viewport scale the World empty and you will see the effect on the grid (Image 68). Connect the Scale output to the [k]Instance on Points[/k] node as well (Image 69) and test the effect in the scene (Image 70).",
+                                  {
+                                    "image": [
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Controlling Height",
+                                "content": [
+                                  "We want to control the height of the landscape using an image texture. Add a [k]Noise Texture[/k] to the network, change its Dimensions to 2D and reduce the Detail to 0.0 (Image 71). Add a [k]Position[/k] node to connect to the [k]Noise Texture[/k]'s Vector input, and bring the TEXTURE empty into the network (Image 72). Disconnect the path from the WORLD empty to the [k]Instance on Points[/k] node's Scale input, and connect the [k]Noise Texture[/k]'s Factor output (Image 73). Reproduce the node below in your network (Image 74). Increase the grid size to 100x99 in order to really see what is happening (Image 75). If you move the TEXTURE empty around you should see the grid change. If moving the TEXTURE empty changes the grid too fast, lower the Scale on the [k]Noise Texture[/k] (Image 76). [k]G,X[/k] on the TEXTURE empty; if the grid looks like the texture is moving in the opposite direction of the empty, then change the [k]Add[/k] node to [k]Subtract[/k] (Image 77). Likewise, check the [k]R[/k] on the empty and if the rotation is in the wrong direction, check the Invert box in the [k]Vector Rotate[/k] node (Image 78). Lastly, if the scaling works in reverse, change the [k]Multiply[/k] to a [k]Divide[/k] (Image 79).",
+                                  {
+                                    "image": [
+                                    ]
+                                  },
+                                  "We don't want the TEXTURE controller to affect the grid's scale, we want it to affect the height of each hex applied to the z-axis. Re-connect the WORLD controller to the Scale input of the [k]Instance on Points[/k] node (Image 80) We will want to multiply the WORLD Scale output by a Vector that have the z-axis date from the [k]Noise Texture[/k]. Add a [k]Multiply (Vector)[/k] node to multiply the WORLD scale and a [k]Combine XYZ[/k] node to get the Z input from the [k]Texture Noise[/k] Factor (Image 81). We can see some height differences right away, but there is still some work to be done. Add a [k]Map Range[/k] node and adjust the From Min input until some of the hexes disappear, which means we've reached the bottom of the range (Image 82). Flip the values of the To Min and To Max inputs (Image 83). Adjust the values of the From Max input until some hexes disappear again (Image 84). Reset the To Min and To Max inputs (Image 85). Scale down the WORLD to get more resolution and scale up the TEXTURE to smooth it out (Image 86). Scale up the To Max in the [k]Map Range[/k] to thicken the grid (Image 87). If we look from the side, we see that the z-scaling applied to the hexagons is happening both above and below the world origin (Image 88). This is because the cylinder's origin is at the world origin. Add a [k]Transform Geometry[/k] node to move the cylinder up 1m, half its depth, to above the world origin (Image 89). We still see some empty patches because they are at 0.0 in the z-axis (Image 90). Adjust the To Min input in the [k]Map Range[/k] until they disappear (Image 91). Feel free to make the landscape more interesting by adjusting the Scale, Detail, or Distortion on the [k]Noise Texture[/k] (Image 92).",
+                                  {
+                                    "image": [
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Sea Level",
+                    "content": [
+                      "We are going to add a floor or sea level to the landscape by removing hexagons whose z-index is below a certain value and then adding a hexagon for the water level. To remove hexagons below our water level, we will filter the cylinder instances with the Selection input on the [k]Instance on Points[/k] node. Add a [k]Greater Than[/k] node that reads the Factor output from the [k]Noise Texture[/k] and only passes along values that are above the threshold (Image 93). Next, we need to add a single large hexagon that covers the display area. First, we need to determine the hexagon's size with a [k]Bounding Box[/k] node that reads the Geometry output of the [k]Delete Geometry[/k] node that sets our hexagon size (Image 94). With the bounds of the hex grid captured, separate them into different axes with a [k]Separate XYZ[/k] node, feed the X output into the Radius input for a [k]Cylinder[/k] node with 6 vertices and add that to the geometry output (Image 95). Change the water cylinder's Depth to 1m and move it above the world origin with a [k]Transform Geometry[/k] node that moves it up 0.5 in the z-axis (Image 96). Add another [k]Transform Geometry[/k] node; we will use this one to control the water level's height by updating the Z input under Scale (Image 97).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "Creating Modifier Inputs",
+                          "content": [
+                            "Going back to the [k]Map Range[/k] node we use to set the landscape height, the To Min and To Max inputs are also the minimum and maximum height of the water level. Add a [k]Group Input[/k] node and connect the To Min and To Max, renaming them 'Height Min' and 'Height Max' (Image 98). Connect the Height Min to a [k]Combine XYZ[/k] node and feed the output to the Scale input for the [k]Transform Geometry[/k] node we added to set the scale (Image 99). With those fields in a [k]Group Input[/k] we can adjust them from the Modifiers tab (Image 100). Go to the [k]Greater Than[/k] node that removes hexagons that are below the threshold and connect the Threshold input to the [k]Group Input[/k], renaming it 'Erosion' (Image 101). Finally, let's control the water level. Add a [k]Add[/k] Node that will take the Height Min and add a value to it before it is passed to the [k]Combine XYZ[/k] node (Image 102). Connect the second Value input to the [k]Group Input[/k] and name it 'Water Level'; we will control the water level rise with this (Image 103).",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Different Terrain Types",
+                    "content": [
+                      "Now we will want different instances to represent our different terrain types: grass, snow, water, etc... Create a new Collection in the Outline called 'HIDDEN' which will contain our terrain originals (Image 104). Add a new Cylinder with 6 vertices to the collection, [k]G,X,30[/k] to move it to the side and [k]/[/k] into Local View (Image 105). In Edit Mode, [k]A[/k], [k]G,Z,1[/k] to move the mesh's origin point to its bottom (Image 106). To keep things simple, create three duplicates, each with a different color (yellow for sand, brown for dirt, green for grass, white for snow) (Image 107). Back in our network, add in a [k]Collection Info[/k] node, with the Collection input set to the HIDDEN collection, and connect the Instances output to the [k]Instance on Points[/k] node (Image 108). In the 3D Viewport, change the Viewport Shading to Material Preview, and you can see the cylinders appearing in the scene (Image 109). In the [k]Collection Info[/k] node enable Separate Children which outputs each child of the collection as a separate instance, Reset Children which removes the transform of each of the collection’s children when converting them to instances, adn finally in the [k]Instance on Points[/k] node enable Pick Instances which chooses an instance from the instance list of the geometry based on the Instance Index input (Image 110). Remove the Rotation we were applying to the instances and reset it to 0 (Image 111). If we look at the scene, we see the cylinders are repeating in a pattern of their index in the list, 0, 1, 2, 3, 0, 1, 2, 3... (Image 112). We need to filter the instance index used based on the noise coming from the texture, so duplicate the [k]Map Range[/k] node by the [k]Noise Texture[/k] and connect it to the Instance Index input (Image 113). We need to fix the range being used for the instances. We have four cylinders, so we want the range to go from 0-4, but because of rounding issues, set the To Min to 0.0 and the To Max to 3.9999 (Image 114). We can also adjust the From Min and From Max values to raise/lower the thresholds for the bottom and top range elements (Image 115). ",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "All Done",
+                    "content": [
+                      "That's a wrap. Feel free to play with the WORLD and TEXTURE settings."
+                    ]
+                  }
                 }
               ]
             }
