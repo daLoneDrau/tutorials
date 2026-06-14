@@ -87,18 +87,84 @@
     },
     {
       "Alternating Tiles": {
+        "tags": ["geometry nodes", "alternating tiles"],
         "key_concepts": [
           "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
           {
             "section": {
               "header": "",
               "content": [
-                "Start with the default cube, give it a Geometry Nodes Modifier, and then set up the network with an [k]Grid/k] node (Image 1). Create a simple tile in the scene which we will scatter on the grid (Image 2). Hide the tile, bring it into the network, and add it to the scene with an [k]Instance on Points[/k] node (Image 3).",
+                "Start with the default cube, give it a Geometry Nodes Modifier, and then set up the network with an [k]Grid[/k] node (Image 1). Create a simple tile in the scene which we will scatter on the grid (Image 2). Hide the tile, bring it into the network, and add it to the scene with an [k]Instance on Points[/k] node (Image 3).",
                 {
                   "image": [
                   ]
                 },
                 "We want to alternate the tiles. Start by adding a [k]Mesh to Points[/k] node and change the Mode to Edges (Image 4). Change the Size X or Size Y of the [k]Grid[/k] node to 1/2 the other size, this will bring the tiles closer together (Image 5).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Single Axis Displacement": {
+        "tags": ["geometry nodes", "absolute", "displacement"],
+        "key_concepts": [
+          "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
+          {
+            "section": {
+              "header": "",
+              "content": [
+                "Start with the alternating tiles from the previous lesson, and change the Size X to 1 and the Size Y to 0.5 (Image 1). We will be changing the position, so add in a [k]Set Position[/k] node to do this, and a [k]Position[/k] node to read the position (Image 2). We will only be displacing the tiles on a single axis, so bring in a [k]Separate XYZ[/k] node and an [k]Add[/k] node to perform a math operation (Image 3). The full network will take the X value of the instance's position, add a floating point value to it, map it to a curve, multiply by a constant factor, then set it as the Z position of the instance (Image 4). To create a bridge shaped-curve, bring the far end of the curve down and bring up the middle (Image 5). Changing the Value in the [k]Multiply[/k] node will change the factor at which the curve is applied (Image 6). Set the [k]Add[/k] node to enable Clamp and then adjust the Value to see what it does (Image 7). You can also add another [k]Multiply[/k] node after the [k]Separate XYZ[/k] to tighten the curve (Image 8).",
+                {
+                  "image": [
+                  ]
+                },
+                "We can limit the effect to just a section of the mesh by limiting the changes by each instance's y-position. We can do that with the following network, adjusting the Threshold as needed (Image 9).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Better Object Scattering": {
+        "tags": ["geometry nodes", "scattering"],
+        "key_concepts": [
+          "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
+          {
+            "section": {
+              "header": "",
+              "content": [
+                "Normally we scatter objects like trees and rocks across a landscape with a [k]Distribute Points on Faces[/k] and an [k]Instance on Points[/k] node, but sometime that isn't optimal when we have vertical faces (Image 1). Let's use a [k]Normal[/k], [k]Separate XYZ[/k], [k]Map Range[/k], [k]Float Curve[/k] node to limit the points to those whose z-index of their normal is between a certain range, and then use a [k]Multiply[/k] node to increase the output, and plug that into the Density of the [k]Distribute Points on Faces[/k] (Image 2). Adjust the curve in the [k]Float Curve[/k] node to adjust how many instances appear in the flatter vs. more sloped parts of the mesh (Image 3).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Using Noise in Geometry Nodes": {
+        "tags": ["geometry nodes", "noise"],
+        "key_concepts": [
+          "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
+          {
+            "section": {
+              "header": "",
+              "content": [
+                "Normally we scatter objects like trees and rocks across a landscape with a [k]Distribute Points on Faces[/k] and an [k]Instance on Points[/k] node, but sometime that isn't optimal when we have vertical faces (Image 1). Let's use a [k]Normal[/k], [k]Separate XYZ[/k], [k]Map Range[/k], [k]Float Curve[/k] node to limit the points to those whose z-index of their normal is between a certain range, and then use a [k]Multiply[/k] node to increase the output, and plug that into the Density of the [k]Distribute Points on Faces[/k] (Image 2). Adjust the curve in the [k]Float Curve[/k] node to adjust how many instances appear in the flatter vs. more sloped parts of the mesh (Image 3).",
                 {
                   "image": [
                   ]
