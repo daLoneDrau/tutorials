@@ -1,0 +1,71 @@
+{
+  "sections": [
+    {
+      "Geometry Node Hacks TBD": {
+        "tags": [
+          "geometry nodes", "dual mesh", "extrude mesh", "asteroid"
+        ],
+        "key_concepts": [
+          "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
+          {
+            "section": {
+              "header": "Toony Asteroid",
+              "content": [
+                "Start with the default cube, give it a Geometry Nodes Modifier, and then set up the network with an [k]Ico Sphere[/k] and [k]Dual Mesh[/k] (Image 1). The [k]Dual Mesh[/k] node converts a mesh into its dual, i.e. faces are turned into vertices and vertices are turned into faces (Image 2). Using this node gives our sphere a better shape for our asteroid. Add in an [k]Extrude Mesh[/k] node and set the Offset very low (Image 3). The [k]Extrude Mesh[/k] node generates new edges or faces on the selected geometry elements and moves them by a certain offset. Add a [k]Scale Elements[/k] node, and make its selection the Top output of the [k]Extrude Mesh[/k] (Image 4).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Extrude Mesh Node",
+                    "content": [
+                      "The [i]Extrude Mesh Node[/i] generates new edges or faces on the selected geometry elements and moves them by a certain offset.",
+                      "The operations are similar to the extrude tools in mesh edit mode, though there are some differences. Most importantly, the node never keeps the back-faces of the extrusion in place, they are always removed. Attribute propagation rules may also be different.",
+                      {
+                        "section": {
+                          "header": "Output",
+                          "content": [
+                            {
+                              "section": {
+                                "header": "Mesh",
+                                "content": [
+                                  "Standard geometry output."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Top",
+                                "content": [
+                                  "A boolean field indicating the “top” elements in the extrusion. In [i]Vertex[/i] mode, these are the new vertices; in [i]Edge[/i] mode, the new edges; and in [i]Face[/i] mode, the moved faces."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Side",
+                                "content": [
+                                  "A boolean field indicating the “side” elements in the extrusion. In [i]Vertex[/i] mode, these are the new edges; in [i]Edge[/i] mode, the new faces; and in [i]Face[/i] mode, too, the newly generated faces (as opposed to the moved ones)."
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "The [k]Extrude Mesh[/k] node generates new edges or faces on the selected geometry elements and moves them by a certain offset. Add a [k]Scale Elements[/k] node, and make its selection the Top output of the [k]Extrude Mesh[/k] (Image 4).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

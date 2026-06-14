@@ -89,17 +89,18 @@
       }
     },
     {
-      "Procedural Dungeons TBD": {
+      "Procedural Dungeons": {
         "tags": [
           "geometry nodes"
         ],
         "key_concepts": [
           "[url]Blender 3.3 - Procedural Dungeons with Geometry Nodes Tutorial^^https://www.youtube.com/watch?v=s7NFsEPBtcA[/url]",
+          "Create a dungeon maker in Blender.",
           {
             "section": {
-              "header": "Getting Started",
+              "header": "Setup",
               "content": [
-                "",
+                "Delete the default cube and create a new collection for the dungeon parts (Image 1).",
                 {
                   "image": [
                   ]

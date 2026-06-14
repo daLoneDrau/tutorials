@@ -1,0 +1,51 @@
+{
+  "sections": [
+    {
+      "Proximity Node": {
+        "tags": [
+          "geometry nodes", "proximity"
+        ],
+        "key_concepts": [
+          "[url]How to use PROXIMITY to Make Objects React in Blender - Geometry Nodes^^https://www.youtube.com/watch?v=FaFPIzce6D0[/url]",
+          "Learn how to use Geometry Proximity in Blender to make elements of an object react based on the distance from another object.",
+          {
+            "section": {
+              "header": "Setup",
+              "content": [
+                "Start with the default cube, add a Geometry Nodes Modifier (Image 1). Delete the [k]Group Input[/k] node and replace it with a [k]Grid[/k] node (Image 2). Let's visualize the grid by replacing it with points. Add an [k]Instance on Points[/k] node, with a [k]Cube[/k] node as the instance (Image 3). Reduce the cube's size and add more points to the grid (Image 4).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Animating the Scale",
+              "content": [
+                "Let's add some animation to the cubes. We want them to grow or shrink based on proximity to another object. Add an Icosphere to the scene  and bring it into the network (Image 5). Add a [k]Geometry Proximity[/k] node and connect it to the icosphere mesh and connect its Distance output to the [k]Instance on Points[/k] node's Scale (Image 6). Each cube is scaling based on its distance from the icosphere.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Controlling the Scale",
+              "content": [
+                "Add a [k]Map Range[/k] node (Image 7). The From Min and From Max setting will determine how wide or narrow the distance influences the scaling. The To Min and To Max determines how large or small the cubes become based on their distance from the icosphere. Let's say you wanted the cubes to become very small, but not disappear at the closest distance to the icosphere, set the To Min value to 0.1 (image 8). Or we can invert the effect, the largest cubes are close to the icosphere, while the fones further away disappear; just set the To Min to 1.0 and To Max to 0.0 (Image 9). The same effect is achieved by making the From Min larger than the From Max.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
