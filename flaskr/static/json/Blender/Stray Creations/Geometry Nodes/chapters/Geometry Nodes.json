@@ -3,6 +3,7 @@
   "sections": [
     {
       "Toony Asteroid": {
+        "tags": ["geometry nodes", "dual mesh", "extrude mesh", "asteroid", "crater"],
         "key_concepts": [
           "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
           {
@@ -54,12 +55,50 @@
                     ]
                   }
                 },
-                "Add a [k]Scale Elements[/k] node, and make its selection the Top output of the [k]Extrude Mesh[/k] (Image 4). [k]Shift-D[/k] the [k]Extrude Mesh[/k] node and extrude after the scaling, but limit the extrusion just to the Top elements of the first extrusion (Image 5). Change the Offset Scale of the second [k]Extrude Mesh[/k] so that the faces extrude inwards (Image 6). Duplicate the [k]Scale Elements[/k] node and connect it to the network, using it to scale in the indentations we made (Image 7). Add in a [k]Subdivision Surface[/k] node, increase the Level, and add a [k]Set Shade Smooth[/k] node (Image 8).",
+                {
+                  "section": {
+                    "header": "Craters",
+                    "content": [
+                      "Add a [k]Scale Elements[/k] node, and make its selection the Top output of the [k]Extrude Mesh[/k] (Image 4). [k]Shift-D[/k] the [k]Extrude Mesh[/k] node and extrude after the scaling, but limit the extrusion just to the Top elements of the first extrusion (Image 5). Change the Offset Scale of the second [k]Extrude Mesh[/k] so that the faces extrude inwards (Image 6). Duplicate the [k]Scale Elements[/k] node and connect it to the network, using it to scale in the indentations we made (Image 7). Add in a [k]Subdivision Surface[/k] node, increase the Level, and add a [k]Set Shade Smooth[/k] node (Image 8).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Randomizing the Shape",
+                    "content": [
+                      "We will start varying the shape by adding some [k]Random Value[/k] nodes. The first [k]Random Value[/k] node will be used to randomize the Offset Scale applied to the first [k]Extrude Mesh[/k] node and the second [k]Random Value[/k] node will randomize the scale applied to the Top faces (Image 9). Next, we will randomize how many sides get extruded into craters; add a [k]Random Value[/k] node, attach it to the Selection input for the first [k]Extrude Mesh[/k] node and adjust the [k]Random Value[/k]'s Min input to see some craters get removed (Image 10). You can also increase the Subdivisions for the [k]Ico Sphere[/k] node to give the surface more faces (Image 11). Define a material and set it with a [k]Set Material[/k] node (Image 12).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Alternating Tiles": {
+        "key_concepts": [
+          "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
+          {
+            "section": {
+              "header": "",
+              "content": [
+                "Start with the default cube, give it a Geometry Nodes Modifier, and then set up the network with an [k]Grid/k] node (Image 1). Create a simple tile in the scene which we will scatter on the grid (Image 2). Hide the tile, bring it into the network, and add it to the scene with an [k]Instance on Points[/k] node (Image 3).",
                 {
                   "image": [
                   ]
                 },
-                "We will start varying the shape by adding some [k]Random Value[/k] nodes. The first [k]Random Value[/k] node will be used to randomize the Offset Scale applied to the first [k]Extrude Mesh[/k] node and the second [k]Random Value[/k] node will randomize the scale applied to the Top faces (Image 9). Next, we will randomize how many sides get extruded into craters; add a [k]Random Value[/k] node, attach it to the Selection input for the first [k]Extrude Mesh[/k] node and adjust the [k]Random Value[/k]'s Min input to see some craters get removed (Image 10). You can also increase the Subdivisions for the [k]Ico Sphere[/k] node to give the surface more faces (Image 11). Define a material and set it with a [k]Set Material[/k] node (Image 12).",
+                "We want to alternate the tiles. Start by adding a [k]Mesh to Points[/k] node and change the Mode to Edges (Image 4). Change the Size X or Size Y of the [k]Grid[/k] node to 1/2 the other size, this will bring the tiles closer together (Image 5).",
                 {
                   "image": [
                   ]
