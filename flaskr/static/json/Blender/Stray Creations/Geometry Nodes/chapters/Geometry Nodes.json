@@ -54,7 +54,7 @@
                     ]
                   }
                 },
-                "The [k]Extrude Mesh[/k] node generates new edges or faces on the selected geometry elements and moves them by a certain offset. Add a [k]Scale Elements[/k] node, and make its selection the Top output of the [k]Extrude Mesh[/k] (Image 4). [k]Shift-D[/k] the [k]Extrude Mesh[/k] node and extrude after the scaling, but limit the extrusion just to the Top elements of the first extrusion (Image 5). Change the Offset Scale of the second [k]Extrude Mesh[/k] so that the faces extrude inwards (Image 6). Duplicate the [k]Scale Elements[/k] node and connect it to the network, using it to scale in the indentations we made (Image 7). Add in a [k]Subdivision Surface[k/] node, increase the Level, and add a [k]Set Shade Smooth[/k] node (Image 8).",
+                "Add a [k]Scale Elements[/k] node, and make its selection the Top output of the [k]Extrude Mesh[/k] (Image 4). [k]Shift-D[/k] the [k]Extrude Mesh[/k] node and extrude after the scaling, but limit the extrusion just to the Top elements of the first extrusion (Image 5). Change the Offset Scale of the second [k]Extrude Mesh[/k] so that the faces extrude inwards (Image 6). Duplicate the [k]Scale Elements[/k] node and connect it to the network, using it to scale in the indentations we made (Image 7). Add in a [k]Subdivision Surface[/k] node, increase the Level, and add a [k]Set Shade Smooth[/k] node (Image 8).",
                 {
                   "image": [
                   ]
