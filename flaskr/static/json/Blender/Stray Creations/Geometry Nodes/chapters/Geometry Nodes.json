@@ -160,11 +160,93 @@
         "tags": ["geometry nodes", "noise"],
         "key_concepts": [
           "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
+          "Start the network with an [k]Ico Sphere[/k], a [k]Subdivision Surface[/k], and a [k]Set to Shade Smooth[/k] (Image 1). Apply noise as a displacement effect with a [k]Noise Texture[/k], [k]Normal[/k], [k]Multiply (Vector)[/k], and [k]Set Position[/k] node (Image 2). Duplicate the [k]Subdivision Surface[/k] node and add it towards the end of the network to smooth things out again (Image 3). We want to make it more intense, but adjusting the noise values just makes the sphere more distorted beyond just the surface. We need o remap the noise values. Noise textures have a range from 0.0 to 1.0, while Normal values are between -1.0 and 1.0. Add a [k]Map Range (Vector)[/k] node to re-map the To Min noise values from -1.0 to 1.0 (Image 4). Add another [k]Multiply (Vector)[/k] node and a constant [k]Value[/k] and adjusting the Value and the Noise levels will give us greater control (Image 5).",
+          {
+            "image": [
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Grid Patterns": {
+        "tags": ["geometry nodes", "grid"],
+        "key_concepts": [
+          "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
           {
             "section": {
-              "header": "",
+              "header": "Octagons",
               "content": [
-                "Normally we scatter objects like trees and rocks across a landscape with a [k]Distribute Points on Faces[/k] and an [k]Instance on Points[/k] node, but sometime that isn't optimal when we have vertical faces (Image 1). Let's use a [k]Normal[/k], [k]Separate XYZ[/k], [k]Map Range[/k], [k]Float Curve[/k] node to limit the points to those whose z-index of their normal is between a certain range, and then use a [k]Multiply[/k] node to increase the output, and plug that into the Density of the [k]Distribute Points on Faces[/k] (Image 2). Adjust the curve in the [k]Float Curve[/k] node to adjust how many instances appear in the flatter vs. more sloped parts of the mesh (Image 3).",
+                "Start the network with a [k]Grid[/k] and an [k]Extrude Mesh[/k] node (Image 1). Add a [k]Scale Elements[/k] node and set the Scale in both nodes to 0.0 and the Selection to the Top Faces (Image 2). Add in a [k]Merge by Distance[/k] and a [k]Dual Mesh[/k] and see the pattern change to octagons (Image 3). Enabling Keep Boundaries on the [k]Dual Mesh[/k] node will fix the sides (Image 4).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Octagons",
+              "content": [
+                "Start over with a [k]Grid[/k] and a [k]Triangulate[/k] node (Image 5). Add a [k]Transform Geometry[k] node to rotate it 45 degrees in the z-axis and another one to scale 0.66666 in the x-axis (Image 6).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Box Mask": {
+        "tags": ["geometry nodes", "mask"],
+        "key_concepts": [
+          "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
+          "We can mask part of our mesh with another mesh. Using the previous grid pattern, add a Cube to the scene and bring it into the network (Image 1). Bring in a [k]Bounding Box[/k] node to read the cube's boundaries, and a [k]Position[/k] and [/k]Absolute (Vector)[/k] node to convert negative position values to positive ones (Image 2). Add a [k]Subtract (Vector)[/k] node to subtract the Max value of the [k]Bounding Box[/k] from the absolute position (Image 3). Separate the axes with a [k]Separate XYZ[/k] node and feed the X and Y outputs into an [k]Or[/k] node (Image 4). Bring in a [k]Delete Geometry[/k] node with its Domain set to Face before the output and set its Selection input to the Boolean output (Image 5)",
+          {
+            "image": [
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Fences": {
+        "tags": ["geometry nodes", "mask"],
+        "key_concepts": [
+          "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
+          {
+            "section": {
+              "header": "Path",
+              "content": [
+                "Add a Bézier Curve to the scene and straighten it out (Image 1). Add a Geometry Nodes Modifier to it, and give it a [k]Resample Curve[/k] node with the Mode set to Length and the Length to 0.35m (Image 2). This will break the curve up into points that are all equal distance from each other, based on the Length you set. Create a quick low poly fence post (Image 3). Hide the post, move it to the network and instance it on the curve (Image 4). In Edit Mode, if you grab any of the curve vertices and move them, the fence instances will follow (Image 5). We will make this a double fence by duplicating the instances and sending both to the output (Image 6). We want to add separation, so give each set of instances their own [k]Transform Geometry[/k] node and separate them on the y-axis and move one on the x-axis to offset (Image 7). Let's add posts to the ends of the fence. Instance a cube, scale it to the right size and then use an [k]Endpoint Selection[/k] node to set it so only the first and last point on the curve get a post (Image 8). Adjust the scale on the fence posts so that there is better spacing between posts (Image 9). We need to remove any fence posts that are outside of our first and last cubes; add an [k]Endpoint Selection[/k] and subtract one from the output value with a [k]Subtract[/k] node and feed that into the Selection input for the [k]Instance on Points[/k] node (Image 10).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Fence Rails",
+              "content": [
+                "Let's add some rails to the fence. Bring in a [k]Curve to Mesh[/k] node to read the original geometry and a [k]Quadrilateral[/k] as its profile shape (Image 11). Scale the rail down and move it up with a [k]Transform Geometry[/k] node (Image 12). Add two more transforms for rails at the top and middle (Image 13).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Following the Curve",
+              "content": [
+                "Add a [k]Curve Tangent[/k] node and a [k]Align Euler to Vector[/k] node and connect them to the rotation for all [k]Instance on Points[/k] nodes (Image 14). Now as we move the fence around it will grow and follow the curve (Image 15).",
                 {
                   "image": [
                   ]
