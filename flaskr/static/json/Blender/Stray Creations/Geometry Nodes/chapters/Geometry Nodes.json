@@ -346,7 +346,7 @@
             "section": {
               "header": "Octagons",
               "content": [
-                "Start over with a [k]Grid[/k] and a [k]Triangulate[/k] node (Image 5). Add a [k]Transform Geometry[k] node to rotate it 45 degrees in the z-axis and another one to scale 0.66666 in the x-axis (Image 6).",
+                "Start over with a [k]Grid[/k] and a [k]Triangulate[/k] node (Image 5). Add a [k]Transform Geometry[/k] node to rotate it 45 degrees in the z-axis and another one to scale 0.66666 in the x-axis (Image 6).",
                 {
                   "image": [
                     {
