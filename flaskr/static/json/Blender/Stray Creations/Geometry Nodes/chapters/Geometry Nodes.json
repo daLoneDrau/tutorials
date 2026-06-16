@@ -145,11 +145,31 @@
                 "Start with the default cube, give it a Geometry Nodes Modifier, and then set up the network with an [k]Grid[/k] node (Image 1). Create a simple tile in the scene which we will scatter on the grid (Image 2). Hide the tile, bring it into the network, and add it to the scene with an [k]Instance on Points[/k] node (Image 3).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Alternating Tiles/alter-01.jpg",
+                      "caption": "Image 1 - Starting with the default cube, giving it a Geometry Nodes Modifier, and setting up the network with a Grid node"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Alternating Tiles/alter-02.jpg",
+                      "caption": "Image 2 - Creating a simple tile in the scene to scatter on the grid"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Alternating Tiles/alter-03.jpg",
+                      "caption": "Image 3 - Hiding the tile, bringing it into the network, and adding it to the scene with an Instance on Points node"
+                    }
                   ]
                 },
                 "We want to alternate the tiles. Start by adding a [k]Mesh to Points[/k] node and change the Mode to Edges (Image 4). Change the Size X or Size Y of the [k]Grid[/k] node to 1/2 the other size, this will bring the tiles closer together (Image 5).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Alternating Tiles/alter-04.jpg",
+                      "caption": "Image 4 - Adding a Mesh to Points node and changing the Mode to Edges"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Alternating Tiles/alter-05.jpg",
+                      "caption": "Image 5 - Changing the Size X or Size Y of the Grid node to 1/2 the other size to bring the tiles closer together"
+                    }
                   ]
                 }
               ]
