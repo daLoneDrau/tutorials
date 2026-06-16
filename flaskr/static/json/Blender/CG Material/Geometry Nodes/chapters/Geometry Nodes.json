@@ -3,9 +3,9 @@
   "sections": [
     {
       "Procedural Wall TBD": {
-        "tags": ["geometry nodes", "wall", "curve"],
+        "tags": ["geometry nodes", "wall", "curve", "terrain"],
         "key_concepts": [
-          "[url]How to create procedural wall with blender geometry nodes^^https://www.youtube.com/watch?v=b_vAUbQpHvI[/url]"
+          "[url]How to create procedural wall with blender geometry nodes^^https://www.youtube.com/watch?v=b_vAUbQpHvI[/url]",
           {
             "section": {
               "header": "Setup",
@@ -20,9 +20,45 @@
           },
           {
             "section": {
-              "header": "Bricks on a Grid",
+              "header": "Terrain",
               "content": [
-                "Our brick wall will be following our curve. Give the Bézier Curve a Geometry Nodes modifier with a [k]Resample Curve[/k] node with the Mode set to Length and a Length of 0.2m (standard length of a brick and mortar joint) (Image 4). We need to bring the curve up to the height of our wall, so add a [k]Curve to Mesh[/k] node and then an [k]Extrude Mesh[/k] node with the Mode set to Edges to bring it out (Image 5). Our mesh is extruding in the normal direction for our curve, which is the y-axis; we need to convert this to the z-axis by adding in a [k]Vector[/k] node to isolate the Offset in the z-axis (Image 6). For the brick layout, we need each cell of the grid's height and width to be the same. We will do this by bringing in a constant Value for the [k]Resample Curve[/k]'s Length and the [k]Extrude Mesh[/k]'s Offset Scale (Image 7). This defines a row of bricks, but we will want several rows; add a [k]Duplicate Elements[/k] node which creates a new geometry with the specified elements from the input duplicated an arbitrary number of times (Image 8). The rows are duplicated, but they are all in the same position. Add in a [k]Set Position[/k] node and Offset each element by its Duplicate Index (Image 9). We see the rows offset by their index in each axis; isolate the offset with a [k]Combine XYZ[/k] node to just the z-axis (Image 10). The offset is still too much since it is 1 unit per row; we will adjust this with a [k]Multiply[/k] node using the constant Value we defined earlier (Image 11). If we look at the Spreadsheet, there are 160 vertices, or 40 per row (Image 12). That is due to overlapping vertices. we can fix this with a [k]Merge by Distance[/k] node (Image 13). We have our grid layout, now we need to place a brick on each grid face. Add a [k]Mesh to Points[/k] node which will visualize each location a brick should go (Image 14). With our points we can add brick instances on each one, but first we need our instance.",
+                "The setup for random terrain involves noise, a map range to adjust the output, isolating the z-axis, and finally positioning the noise on a grid (Image 2).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Noise",
+                    "content": [
+                      "The noise pattern is controlled by the [k]Noise Texture[/k] node. Change the Dimensions to 2D, since we only care about raising or lowering the terrain in the z-axis. Adjusting the Scale will zoom in or out on the noise pattern. Lowering or increasing the Detail and the Roughness will also smooth out or sharpen the texture.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Mapping",
+                    "content": [
+                      "The Factor output from the [k]Noise Texture[/k] node produces floating-point values between 0.0 and 1.0. If you look at the geometry output from the side, you see the Z values range from 0.0 to 1.0 (Image 3). If we want to change the terrain to go from a low point of -2.5 to a high of 5.0, we can do that by adjusting the To Min and To Max values (Image 4). We can set a flat top to the peaks by limiting the From Max value (Image 5). You can also create a flat floor by raising the From Min (Image 6).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Curves for Wall and Path",
+              "content": [
+                "Add two Bézier Curves to the scene and name them 'wall' and 'path' (Image 7). [k]Numpad7[/k] into Top View, select the wall curve, [k]Tab[/k] into Edit Mode, and [k]X,V[/k] (Image 8). From the toolbar on the right, enable the [k]Draw[/k] tool and set the Depth to Surface (Image 9). In Solid Viewport Shading Mode draw a winding curve that our wall will follow (Image 10). Hide the wall curve and bring the it into our network and pin the network in place (Image 11).",
                 {
                   "image": [
                   ]
@@ -32,9 +68,19 @@
           },
           {
             "section": {
-              "header": "Simple Brick",
+              "header": "Building up the Wall",
               "content": [
-                "Add a Cube to the scene and start editing (Image 15). Move the cube up 1m so the origin point is at the bottom (Image 16). In Object Mode, change the dimensions to a standard brick size (Image 17). [k]Ctrl-A,S[/k] to apply the scale and add a Bevel Modifier (Image 18). Rename the mesh in the Outliner and hide it (Image 19).",
+                "Resample the curve so we get a point every 0.1m and convert it to a mesh (Image 12). We need to give some shape to our curve, so we will use a [k]Curve Line[/k] to give it some volume (Image 13). Change the [k]Curve Line[/k]'s Method to Direction, and set the Direction to -1 in the y-axis and 0 in the others (Image 14). Set the height of the wall with the Length field (Image 15).",
+                {
+                  "image": [
+                  ]
+                },
+                "Disconnect the terrain from the geometry output and turn on Wireframe Viewport Shading and X-Ray Mode; if you look at the wall mesh we see vertical faces only (Image 16). Duplicate the [k]Resample Curve[/k] node to the [k]Curve Line[/k] network and we will see horizontal lines added to the wall  mesh (Image 17).",
+                {
+                  "image": [
+                  ]
+                },
+                "We will add stones randomly to the wall with a [k]Distribute Points on Faces[/k] node (Image 18). Set the Distribution Method to Poisson Disk, the Distance Min to 0.4m and the Density Max to 1000.0 (Image 19). Add an [k]Instance on Points[/k] node we will use to add stones (Image 20).",
                 {
                   "image": [
                   ]
@@ -44,24 +90,64 @@
           },
           {
             "section": {
-              "header": "Brick Scale",
+              "header": "Stones",
               "content": [
-                "Back to the curve, at this point, we have created a grid of squares that are 0.2m x 0.2m (Image 20). We need to update the row height to use our fixed brick height or 0.07m. Bring in a constant [k]Value[/k] node set to the right height and connect it to the [k]Extrude Mesh[/k]'s Offset Scale and the [k]Multiply[/k] node used to set each row's Z offset (Image 21).",
+                "We need stone building blocks for the wall. We will follow two possible methods for that",
                 {
-                  "image": [
-                  ]
-                }
+                  "section": {
+                    "header": "Method A",
+                    "content": [
+                      "Add a [k]Cube[/k] node as our instance (Image 21). Lower the Scale on the [k]Instance on Points[/k] node until the stones are a good size (Image 22). Add a [k]Subdivision Surface[/k] node and increase the Edge Crease (Image 23). Add a [k]Random Value[/k] node to control the Scale (Image 24).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "Control the stones' rotation with the [k]Distribute Points on Faces[/k] node's Rotation output (Image 25)."
               ]
             }
           },
           {
             "section": {
-              "header": "Capturing the Curve",
+              "header": "The Path",
               "content": [
-                "Bring the brick mesh into the network and add it as instances on the center point of all grid faces (Image 22). If we look at it, the bricks do not follow the curve of the wall (Image 23). We need to capture the curve's tangent so that we can use that to align the brick's rotation to it. First, add a [k]Store Named Attribute[/k] and [k]Curve Tangent[/k] node to read that information (Image 24). The [k]Store Named Attribute[/k] allows us to store the result of a field on the geometry which in this case we are reading the direction of the curve at each control point. Name our stored attribute 'tangent'; later if we bring in a [k]Named Attribute[/k] node to retrieve the data we can find it under that name (Image 25). Over at the [k]Instance on Points[/k] node, add a [k]Align Rotation to Vector[/k] node, set its Vector input to the 'tangent' attribute we created and connect the to the Rotation output to the [k]Instance on Points[/k] Rotation input (Image 26). If the rotation isn't correct, change the Axis property to see if one is a better match (Image 27). ",
                 {
-                  "image": [
-                  ]
+                  "section": {
+                    "header": "Tunneling through the Wall",
+                    "content": [
+                      "Draw the path curve going through the wall (Image 26). We will use the path to carve out a door in the wall, but first let's visualize the curve as a tunnel going through the wall (Image 27). Bring in a [k]Raycast[/k] node to read the tunnel's geometry and use any intersection with the wall as the Selection to send to the geometry output (Image 28). We want to invert the selection to make an opening, so add a [k]Separate XYZ[/k] and a [k]Greater Than[/k] node (Image 29). Play with the operation, changing it from greater than to less than, changing the Threshold and the circle's radius.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Adding an Arch",
+                    "content": [
+                      "Duplicate the [k]Distribute Points on Faces[/k], [k]Random Value[/k], and [k]Instance on Points[/k] nodes and connect them to the tunnel to give it a rocky face (Image 30). We need to limit the distribution of stones to just those points close to the wall. Bring in a [k]Geometry Proximity[/k] node, set its Geometry input to the wall mesh and connect a [k]Less Than[/k] node to its Distance output (Image 31).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Paved Path",
+                    "content": [
+                      "Now we need a stone pathway. Add in another [k]Curve to Mesh[/k] node for the path curve and this time use a curve line as the profile shape (Image 32). Change the Method to Direction and the Direction to 1.0m in the x-axis (Image 33). Look at the path going through the tunnel and adjust the Start input in the X direction until the path is in the center of the tunnel (Image 34).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
                 }
               ]
             }

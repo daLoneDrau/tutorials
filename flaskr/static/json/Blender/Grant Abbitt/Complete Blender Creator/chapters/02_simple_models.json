@@ -1623,7 +1623,7 @@
               "content": [
                 [
                   "Go into the Shading workspace.",
-                  "Make sure you are the [url]Viewport Shading^^./Viewport & Rendering[/url] is set to Material Preview Mode."
+                  "Make sure you are the [url]Viewport Shading^^../Viewport & Rendering[/url] is set to Material Preview Mode."
                 ],
                 {
                   "section": {

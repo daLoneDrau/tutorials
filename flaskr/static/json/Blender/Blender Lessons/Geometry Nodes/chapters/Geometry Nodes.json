@@ -1,0 +1,149 @@
+{
+  "title": "Geometry Nodes",
+  "sections": [
+    {
+      "Noise Terrain": {
+        "tags": ["geometry nodes", "terrain"],
+        "key_concepts": [
+          "How to create procedural terrain with blender geometry nodes",
+          {
+            "section": {
+              "header": "Setup",
+              "content": [
+                "Start with the default cube, adding a Geometry Nodes Modifier (Image 1).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Terrain",
+              "content": [
+                "The setup for random terrain involves noise, a map range to adjust the output, isolating the z-axis, and finally positioning the noise on a grid (Image 2).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Noise",
+                    "content": [
+                      "The noise pattern is controlled by the [k]Noise Texture[/k] node. Change the Dimensions to 2D, since we only care about raising or lowering the terrain in the z-axis. Adjusting the Scale will zoom in or out on the noise pattern. Lowering or increasing the Detail and the Roughness will also smooth out or sharpen the texture.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Mapping",
+                    "content": [
+                      "The Factor output from the [k]Noise Texture[/k] node produces floating-point values between 0.0 and 1.0. If you look at the geometry output from the side, you see the Z values range from 0.0 to 1.0 (Image 3). If we want to change the terrain to go from a low point of -2.5 to a high of 5.0, we can do that by adjusting the To Min and To Max values (Image 4). We can set a flat top to the peaks by limiting the From Max value (Image 5). You can also create a flat floor by raising the From Min (Image 6).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Curves on Terrain": {
+        "tags": ["geometry nodes", "terrain", "path"],
+        "key_concepts": [
+          "Make curves and paths that follow the height of your terrain.",
+          {
+            "section": {
+              "header": "Setup",
+              "content": [
+                "Create some terrain manually or make some [url]Noise Terrain^^../Noise Terrain[/url]."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Creating the Curve",
+              "content": [
+                "Add a Bézier Curve to the scene (Image 1). [k]Numpad7[/k] into Top View, select the curve, [k]Tab[/k] into Edit Mode, and [k]X,V[/k] (Image 2). From the toolbar on the right, enable the [k]Draw[/k] tool (Image 3). Draw a winding curve that our path will follow (Image 4). Back in Object Mode, hide the curve and bring it into the network (Image 5).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Positioning the Curve on the Terrain",
+              "content": [
+                "Resample the Curve by Length (Image 6). At this point, we can decide how to visualize the curve, as a mesh or as points.",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "As Points",
+                    "content": [
+                      "Add a [k]Curve to Points[/k] node, setting the Mode to Evaluated (Image 7).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "As a Mesh",
+                    "content": [
+                      "Add a [k]Curve to Mesh[/k] node and a curve primitive, such as a circle, line, or star (Image 8).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Raycasting above the Terrain",
+                    "content": [
+                      "However we have transformed the curve, when we look at the 3D Viewport, the curve is below the terrain (Image 9). We need to update the curve's position so it's above the terrain, so add a [k]Set Position[/k] node after we have converted the curve to points or a mesh (Image 10). We need a way to figure out to figure out the position of the terrain at each point on the curve. We will do this with a [k]Raycast[/k] node. Add in the [k]Raycast[/k] node and set its Target Geometry to the terrain's mesh (Image 11). Change the Data Type to Vector (Image 12). Use the Hit Position output to set the curve's position (Image 13). The curve may have disappeared. In that case, check the Ray Direction input. The node is casting a ray in the direction specified for the Ray Length defined (usually 100m). If the curve is z direction is -1.00, try changing to 1.00 to see what happens (Image 14).",
+                      {
+                        "image": [
+                        ]
+                      },
+                      {
+                        "section": {
+                          "header": "Raycasting outside the Terrain",
+                          "content": [
+                            "Edit the curve again to drag one of the vertices outside the grid (Image 15). We see a strange line going from the outside end to the center of the grid. That is because the last vertex is outside the grid, and the raycasting was bro",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
