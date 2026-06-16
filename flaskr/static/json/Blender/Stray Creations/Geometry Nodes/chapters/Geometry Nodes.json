@@ -370,7 +370,7 @@
         "tags": ["geometry nodes", "mask", "bounding box"],
         "key_concepts": [
           "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
-          "We can mask part of our mesh with another mesh. Using the previous grid pattern, add a Cube to the scene and bring it into the network (Image 1). Bring in a [k]Bounding Box[/k] node to read the cube's boundaries, and a [k]Position[/k] and [/k]Absolute (Vector)[/k] node to convert negative position values to positive ones (Image 2). Add a [k]Subtract (Vector)[/k] node to subtract the Max value of the [k]Bounding Box[/k] from the absolute position (Image 3). Separate the axes with a [k]Separate XYZ[/k] node and feed the X and Y outputs into an [k]Or[/k] node (Image 4). Bring in a [k]Delete Geometry[/k] node with its Domain set to Face before the output and set its Selection input to the Boolean output (Image 5).",
+          "We can mask part of our mesh with another mesh. Using the previous grid pattern, add a Cube to the scene and bring it into the network (Image 1). Bring in a [k]Bounding Box[/k] node to read the cube's boundaries, and a [k]Position[/k] and [k]Absolute (Vector)[/k] node to convert negative position values to positive ones (Image 2). Add a [k]Subtract (Vector)[/k] node to subtract the Max value of the [k]Bounding Box[/k] from the absolute position (Image 3). Separate the axes with a [k]Separate XYZ[/k] node and feed the X and Y outputs into an [k]Or[/k] node (Image 4). Bring in a [k]Delete Geometry[/k] node with its Domain set to Face before the output and set its Selection input to the Boolean output (Image 5).",
           {
             "image": [
               {
