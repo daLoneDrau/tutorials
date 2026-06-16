@@ -367,12 +367,32 @@
     },
     {
       "Box Mask": {
-        "tags": ["geometry nodes", "mask"],
+        "tags": ["geometry nodes", "mask", "bounding box"],
         "key_concepts": [
           "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
-          "We can mask part of our mesh with another mesh. Using the previous grid pattern, add a Cube to the scene and bring it into the network (Image 1). Bring in a [k]Bounding Box[/k] node to read the cube's boundaries, and a [k]Position[/k] and [/k]Absolute (Vector)[/k] node to convert negative position values to positive ones (Image 2). Add a [k]Subtract (Vector)[/k] node to subtract the Max value of the [k]Bounding Box[/k] from the absolute position (Image 3). Separate the axes with a [k]Separate XYZ[/k] node and feed the X and Y outputs into an [k]Or[/k] node (Image 4). Bring in a [k]Delete Geometry[/k] node with its Domain set to Face before the output and set its Selection input to the Boolean output (Image 5)",
+          "We can mask part of our mesh with another mesh. Using the previous grid pattern, add a Cube to the scene and bring it into the network (Image 1). Bring in a [k]Bounding Box[/k] node to read the cube's boundaries, and a [k]Position[/k] and [/k]Absolute (Vector)[/k] node to convert negative position values to positive ones (Image 2). Add a [k]Subtract (Vector)[/k] node to subtract the Max value of the [k]Bounding Box[/k] from the absolute position (Image 3). Separate the axes with a [k]Separate XYZ[/k] node and feed the X and Y outputs into an [k]Or[/k] node (Image 4). Bring in a [k]Delete Geometry[/k] node with its Domain set to Face before the output and set its Selection input to the Boolean output (Image 5).",
           {
             "image": [
+              {
+                "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Mask/mask-01.jpg",
+                "caption": "Image 1 - Adding a Cube to the scene and bringing it into the network to mask part of the mesh"
+              },
+              {
+                "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Mask/mask-02.jpg",
+                "caption": "Image 2 - Bringing in a Bounding Box node to read the cube's boundaries, and a Position and Absolute (Vector) node to convert negative position values to positive ones"
+              },
+              {
+                "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Mask/mask-03.jpg",
+                "caption": "Image 3 - Adding a Subtract (Vector) node to subtract the Max value of the Bounding Box from the absolute position"
+              },
+              {
+                "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Mask/mask-04.jpg",
+                "caption": "Image 4 - Separating the axes with a Separate XYZ node and feeding the X and Y outputs into an Or node"
+              },
+              {
+                "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Mask/mask-05.jpg",
+                "caption": "Image 5 - Bringing in a Delete Geometry node with its Domain set to Face before the output and setting its Selection input to the Boolean output"
+              }
             ]
           }
         ]
@@ -380,16 +400,61 @@
     },
     {
       "Fences": {
-        "tags": ["geometry nodes", "mask"],
+        "tags": ["geometry nodes", "fence"],
         "key_concepts": [
           "[url]10 Geometry Nodes HACKS in Blender (+ free download)^^https://www.youtube.com/watch?v=CN2p3tNN0eU[/url]",
           {
             "section": {
               "header": "Path",
               "content": [
-                "Add a Bézier Curve to the scene and straighten it out (Image 1). Add a Geometry Nodes Modifier to it, and give it a [k]Resample Curve[/k] node with the Mode set to Length and the Length to 0.35m (Image 2). This will break the curve up into points that are all equal distance from each other, based on the Length you set. Create a quick low poly fence post (Image 3). Hide the post, move it to the network and instance it on the curve (Image 4). In Edit Mode, if you grab any of the curve vertices and move them, the fence instances will follow (Image 5). We will make this a double fence by duplicating the instances and sending both to the output (Image 6). We want to add separation, so give each set of instances their own [k]Transform Geometry[/k] node and separate them on the y-axis and move one on the x-axis to offset (Image 7). Let's add posts to the ends of the fence. Instance a cube, scale it to the right size and then use an [k]Endpoint Selection[/k] node to set it so only the first and last point on the curve get a post (Image 8). Adjust the scale on the fence posts so that there is better spacing between posts (Image 9). We need to remove any fence posts that are outside of our first and last cubes; add an [k]Endpoint Selection[/k] and subtract one from the output value with a [k]Subtract[/k] node and feed that into the Selection input for the [k]Instance on Points[/k] node (Image 10).",
+                "Add a Bézier Curve to the scene and straighten it out (Image 1). Add a Geometry Nodes Modifier to it, and give it a [k]Resample Curve[/k] node with the Mode set to Length and the Length to 0.35m (Image 2). This will break the curve up into points that are all equal distance from each other, based on the Length you set. Create a quick low poly fence post (Image 3). Hide the post, move it to the network and instance it on the curve (Image 4). In Edit Mode, if you grab any of the curve vertices and move them, the fence instances will follow (Image 5).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-01.jpg",
+                      "caption": "Image 1 - Adding a Bézier Curve to the scene and straightening it out"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-02.jpg",
+                      "caption": "Image 2 - Adding a Geometry Nodes Modifier and a Resample Curve node with the Mode set to Length and the Length to 0.35m"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-03.jpg",
+                      "caption": "Image 3 - Creating a quick low poly fence post"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-04.jpg",
+                      "caption": "Image 4 - Hiding the post, moving it to the network and instancing it on the curve"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-05.jpg",
+                      "caption": "Image 5 - Grabbing curve vertices in Edit Mode and moving them to see the fence instances follow"
+                    }
+                  ]
+                },
+                "We will make this a double fence by duplicating the instances and sending both to the output (Image 6). We want to add separation, so give each set of instances their own [k]Transform Geometry[/k] node and separate them on the y-axis and move one on the x-axis to offset (Image 7). Let's add posts to the ends of the fence. Instance a cube, scale it to the right size and then use an [k]Endpoint Selection[/k] node to set it so only the first and last point on the curve get a post (Image 8). Adjust the scale on the fence posts so that there is better spacing between posts (Image 9). We need to remove any fence posts that are outside of our first and last cubes; add an [k]Endpoint Selection[/k] and subtract one from the output value with a [k]Subtract[/k] node and feed that into the Selection input for the [k]Instance on Points[/k] node (Image 10).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-06.jpg",
+                      "caption": "Image 6 - Making a double fence by duplicating the instances and sending both to the output"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-07.jpg",
+                      "caption": "Image 7 - Giving each set of instances their own Transform Geometry node and separating them on the y-axis while offsetting one on the x-axis"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-08.jpg",
+                      "caption": "Image 8 - Instancing a cube, scaling it to the right size and using an Endpoint Selection node to place posts only at the first and last points on the curve"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-09.jpg",
+                      "caption": "Image 9 - Adjusting the scale on the fence posts for better spacing between posts"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-10.jpg",
+                      "caption": "Image 10 - Adding an Endpoint Selection node and subtracting one from the output with a Subtract node, feeding that into the Selection input of the Instance on Points node to remove posts outside the first and last cubes"
+                    }
                   ]
                 }
               ]
@@ -402,6 +467,18 @@
                 "Let's add some rails to the fence. Bring in a [k]Curve to Mesh[/k] node to read the original geometry and a [k]Quadrilateral[/k] as its profile shape (Image 11). Scale the rail down and move it up with a [k]Transform Geometry[/k] node (Image 12). Add two more transforms for rails at the top and middle (Image 13).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-11.jpg",
+                      "caption": "Image 11 - Bringing in a Curve to Mesh node to read the original geometry and a Quadrilateral as its profile shape"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-12.jpg",
+                      "caption": "Image 12 - Scaling the rail down and moving it up with a Transform Geometry node"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-13.jpg",
+                      "caption": "Image 13 - Adding two more transforms for rails at the top and middle"
+                    }
                   ]
                 }
               ]
@@ -414,6 +491,14 @@
                 "Add a [k]Curve Tangent[/k] node and a [k]Align Euler to Vector[/k] node and connect them to the rotation for all [k]Instance on Points[/k] nodes (Image 14). Now as we move the fence around it will grow and follow the curve (Image 15).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-14.jpg",
+                      "caption": "Image 14 - Adding a Curve Tangent node and an Align Euler to Vector node and connecting them to the rotation for all Instance on Points nodes"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Fences/fences-15.jpg",
+                      "caption": "Image 15 - Seeing the fence grow and follow the curve as it is moved around"
+                    }
                   ]
                 }
               ]
