@@ -187,14 +187,55 @@
             "section": {
               "header": "",
               "content": [
-                "Start with the alternating tiles from the previous lesson, and change the Size X to 1 and the Size Y to 0.5 (Image 1). We will be changing the position, so add in a [k]Set Position[/k] node to do this, and a [k]Position[/k] node to read the position (Image 2). We will only be displacing the tiles on a single axis, so bring in a [k]Separate XYZ[/k] node and an [k]Add[/k] node to perform a math operation (Image 3). The full network will take the X value of the instance's position, add a floating point value to it, map it to a curve, multiply by a constant factor, then set it as the Z position of the instance (Image 4). To create a bridge shaped-curve, bring the far end of the curve down and bring up the middle (Image 5). Changing the Value in the [k]Multiply[/k] node will change the factor at which the curve is applied (Image 6). Set the [k]Add[/k] node to enable Clamp and then adjust the Value to see what it does (Image 7). You can also add another [k]Multiply[/k] node after the [k]Separate XYZ[/k] to tighten the curve (Image 8).",
+                "Start with the alternating tiles from the previous lesson, and change the Size X to 1 and the Size Y to 0.5 (Image 1). We will be changing the position, so add in a [k]Set Position[/k] node to do this, and a [k]Position[/k] node to read the position (Image 2). We will only be displacing the tiles on a single axis, so bring in a [k]Separate XYZ[/k] node and an [k]Add[/k] node to perform a math operation (Image 3). The full network will take the X value of the instance's position, add a floating point value to it, map it to a curve, multiply by a constant factor, then set it as the Z position of the instance (Image 4).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Single Axis Displacement/displacement-01.jpg",
+                      "caption": "Image 1 - Starting with the alternating tiles from the previous lesson and changing the Size X to 1 and the Size Y to 0.5"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Single Axis Displacement/displacement-02.jpg",
+                      "caption": "Image 2 - Adding a Set Position node and a Position node to read the position"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Single Axis Displacement/displacement-03.jpg",
+                      "caption": "Image 3 - Bringing in a Separate XYZ node and an Add node to perform a math operation for single axis displacement"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Single Axis Displacement/displacement-04.jpg",
+                      "caption": "Image 4 - Setting up the full network to take the X value, add a floating point value, map it to a curve, multiply by a constant factor, and set it as the Z position"
+                    }
+                  ]
+                },
+                "To create a bridge shaped-curve, bring the far end of the curve down and bring up the middle (Image 5). Changing the Value in the [k]Multiply[/k] node will change the factor at which the curve is applied (Image 6). Set the [k]Add[/k] node to enable Clamp and then adjust the Value to see what it does (Image 7). You can also add another [k]Multiply[/k] node after the [k]Separate XYZ[/k] to tighten the curve (Image 8).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Single Axis Displacement/displacement-05.jpg",
+                      "caption": "Image 5 - Creating a bridge-shaped curve by bringing the far end down and raising the middle"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Single Axis Displacement/displacement-06.jpg",
+                      "caption": "Image 6 - Changing the Value in the Multiply node to change the factor at which the curve is applied"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Single Axis Displacement/displacement-07.jpg",
+                      "caption": "Image 7 - Setting the Add node to enable Clamp and adjusting the Value to see its effect"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Single Axis Displacement/displacement-08.jpg",
+                      "caption": "Image 8 - Adding another Multiply node after the Separate XYZ to tighten the curve"
+                    }
                   ]
                 },
                 "We can limit the effect to just a section of the mesh by limiting the changes by each instance's y-position. We can do that with the following network, adjusting the Threshold as needed (Image 9).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Single Axis Displacement/displacement-09.jpg",
+                      "caption": "Image 9 - Limiting the effect to a section of the mesh by restricting changes by each instance's y-position and adjusting the Threshold"
+                    }
                   ]
                 }
               ]
