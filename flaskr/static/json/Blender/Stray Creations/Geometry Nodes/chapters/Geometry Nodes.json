@@ -256,6 +256,18 @@
                 "Normally we scatter objects like trees and rocks across a landscape with a [k]Distribute Points on Faces[/k] and an [k]Instance on Points[/k] node, but sometime that isn't optimal when we have vertical faces (Image 1). Let's use a [k]Normal[/k], [k]Separate XYZ[/k], [k]Map Range[/k], [k]Float Curve[/k] node to limit the points to those whose z-index of their normal is between a certain range, and then use a [k]Multiply[/k] node to increase the output, and plug that into the Density of the [k]Distribute Points on Faces[/k] (Image 2). Adjust the curve in the [k]Float Curve[/k] node to adjust how many instances appear in the flatter vs. more sloped parts of the mesh (Image 3).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Better Scattering/scatter-01.jpg",
+                      "caption": "Image 1 - Scattering objects with a Distribute Points on Faces and an Instance on Points node, showing the issue with vertical faces"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Better Scattering/scatter-02.jpg",
+                      "caption": "Image 2 - Adding a Normal, Separate XYZ, Map Range, Float Curve, and Multiply node to limit points to those whose z-index of their normal is within a certain range, plugging the result into the Density of the Distribute Points on Faces node"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Better Scattering/scatter-03.jpg",
+                      "caption": "Image 3 - Adjusting the curve in the Float Curve node to control how many instances appear in the flatter vs. more sloped parts of the mesh"
+                    }
                   ]
                 }
               ]
@@ -272,6 +284,26 @@
           "Start the network with an [k]Ico Sphere[/k], a [k]Subdivision Surface[/k], and a [k]Set to Shade Smooth[/k] (Image 1). Apply noise as a displacement effect with a [k]Noise Texture[/k], [k]Normal[/k], [k]Multiply (Vector)[/k], and [k]Set Position[/k] node (Image 2). Duplicate the [k]Subdivision Surface[/k] node and add it towards the end of the network to smooth things out again (Image 3). We want to make it more intense, but adjusting the noise values just makes the sphere more distorted beyond just the surface. We need o remap the noise values. Noise textures have a range from 0.0 to 1.0, while Normal values are between -1.0 and 1.0. Add a [k]Map Range (Vector)[/k] node to re-map the To Min noise values from -1.0 to 1.0 (Image 4). Add another [k]Multiply (Vector)[/k] node and a constant [k]Value[/k] and adjusting the Value and the Noise levels will give us greater control (Image 5).",
           {
             "image": [
+              {
+                "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Noise/noise-01.jpg",
+                "caption": "Image 1 - Starting the network with an Ico Sphere, a Subdivision Surface, and a Set to Shade Smooth"
+              },
+              {
+                "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Noise/noise-02.jpg",
+                "caption": "Image 2 - Applying noise as a displacement effect with a Noise Texture, Normal, Multiply (Vector), and Set Position node"
+              },
+              {
+                "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Noise/noise-03.jpg",
+                "caption": "Image 3 - Duplicating the Subdivision Surface node and adding it towards the end of the network to smooth things out again"
+              },
+              {
+                "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Noise/noise-04.jpg",
+                "caption": "Image 4 - Adding a Map Range (Vector) node to re-map the To Min noise values from -1.0 to 1.0"
+              },
+              {
+                "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Noise/noise-05.jpg",
+                "caption": "Image 5 - Adding another Multiply (Vector) node and a constant Value node, adjusting the Value and Noise levels for greater control"
+              }
             ]
           }
         ]
@@ -289,6 +321,22 @@
                 "Start the network with a [k]Grid[/k] and an [k]Extrude Mesh[/k] node (Image 1). Add a [k]Scale Elements[/k] node and set the Scale in both nodes to 0.0 and the Selection to the Top Faces (Image 2). Add in a [k]Merge by Distance[/k] and a [k]Dual Mesh[/k] and see the pattern change to octagons (Image 3). Enabling Keep Boundaries on the [k]Dual Mesh[/k] node will fix the sides (Image 4).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Patterns/patterns-01.jpg",
+                      "caption": "Image 1 - Starting the network with a Grid and an Extrude Mesh node"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Patterns/patterns-02.jpg",
+                      "caption": "Image 2 - Adding a Scale Elements node and setting the Scale in both nodes to 0.0 and the Selection to the Top Faces"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Patterns/patterns-03.jpg",
+                      "caption": "Image 3 - Adding a Merge by Distance and a Dual Mesh and seeing the pattern change to octagons"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Patterns/patterns-04.jpg",
+                      "caption": "Image 4 - Enabling Keep Boundaries on the Dual Mesh node to fix the sides"
+                    }
                   ]
                 }
               ]
@@ -301,6 +349,14 @@
                 "Start over with a [k]Grid[/k] and a [k]Triangulate[/k] node (Image 5). Add a [k]Transform Geometry[k] node to rotate it 45 degrees in the z-axis and another one to scale 0.66666 in the x-axis (Image 6).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Patterns/patterns-05.jpg",
+                      "caption": "Image 5 - Starting over with a Grid and a Triangulate node"
+                    },
+                    {
+                      "src": "Blender/Stray Creations/Geometry Nodes/Hacks/Patterns/patterns-06.jpg",
+                      "caption": "Image 6 - Adding a Transform Geometry node to rotate 45 degrees in the z-axis and another to scale 0.66666 in the x-axis"
+                    }
                   ]
                 }
               ]
