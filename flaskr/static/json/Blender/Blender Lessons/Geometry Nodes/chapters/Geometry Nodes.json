@@ -13,6 +13,10 @@
                 "Start with the default cube, adding a Geometry Nodes Modifier (Image 1).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Geometry Nodes/Terrain/terrain-01.jpg",
+                      "caption": "Image 1 - Starting with the default cube and adding a Geometry Nodes Modifier"
+                    }
                   ]
                 }
               ]
@@ -25,6 +29,10 @@
                 "The setup for random terrain involves noise, a map range to adjust the output, isolating the z-axis, and finally positioning the noise on a grid (Image 2).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Geometry Nodes/Terrain/terrain-02.jpg",
+                      "caption": "Image 2 - Setting up random terrain with noise, a map range to adjust the output, isolating the z-axis, and positioning the noise on a grid"
+                    }
                   ]
                 },
                 {
@@ -46,6 +54,22 @@
                       "The Factor output from the [k]Noise Texture[/k] node produces floating-point values between 0.0 and 1.0. If you look at the geometry output from the side, you see the Z values range from 0.0 to 1.0 (Image 3). If we want to change the terrain to go from a low point of -2.5 to a high of 5.0, we can do that by adjusting the To Min and To Max values (Image 4). We can set a flat top to the peaks by limiting the From Max value (Image 5). You can also create a flat floor by raising the From Min (Image 6).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Blender Lessons/Geometry Nodes/Terrain/terrain-03.jpg",
+                            "caption": "Image 3 - Seeing the Factor output from the Noise Texture node produce floating-point values between 0.0 and 1.0, with Z values ranging from 0.0 to 1.0 when viewed from the side"
+                          },
+                          {
+                            "src": "Blender/Blender Lessons/Geometry Nodes/Terrain/terrain-04.jpg",
+                            "caption": "Image 4 - Adjusting the To Min and To Max values to change the terrain range from a low point of -2.5 to a high of 5.0"
+                          },
+                          {
+                            "src": "Blender/Blender Lessons/Geometry Nodes/Terrain/terrain-05.jpg",
+                            "caption": "Image 5 - Setting a flat top to the peaks by limiting the From Max value"
+                          },
+                          {
+                            "src": "Blender/Blender Lessons/Geometry Nodes/Terrain/terrain-06.jpg",
+                            "caption": "Image 6 - Creating a flat floor by raising the From Min value"
+                          }
                         ]
                       }
                     ]
@@ -77,6 +101,26 @@
                 "Add a Bézier Curve to the scene (Image 1). [k]Numpad7[/k] into Top View, select the curve, [k]Tab[/k] into Edit Mode, and [k]X,V[/k] (Image 2). From the toolbar on the right, enable the [k]Draw[/k] tool (Image 3). Draw a winding curve that our path will follow (Image 4). Back in Object Mode, hide the curve and bring it into the network (Image 5).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-01.jpg",
+                      "caption": "Image 1 - Adding a Bézier Curve to the scene"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-02.jpg",
+                      "caption": "Image 2 - Pressing Numpad 7 to enter Top View, selecting the curve, pressing Tab to enter Edit Mode, and pressing X then V"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-03.jpg",
+                      "caption": "Image 3 - Enabling the Draw tool from the toolbar on the right"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-04.jpg",
+                      "caption": "Image 4 - Drawing a winding curve for the path to follow"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-05.jpg",
+                      "caption": "Image 5 - Returning to Object Mode, hiding the curve and bringing it into the network"
+                    }
                   ]
                 }
               ]
@@ -89,6 +133,10 @@
                 "Resample the Curve by Length (Image 6). At this point, we can decide how to visualize the curve, as a mesh or as points.",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-06.jpg",
+                      "caption": "Image 6 - Resampling the curve by Length"
+                    }
                   ]
                 },
                 {
@@ -98,6 +146,10 @@
                       "Add a [k]Curve to Points[/k] node, setting the Mode to Evaluated (Image 7).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-07.jpg",
+                            "caption": "Image 7 - Adding a Curve to Points node and setting the Mode to Evaluated"
+                          }
                         ]
                       }
                     ]
@@ -110,6 +162,10 @@
                       "Add a [k]Curve to Mesh[/k] node and a curve primitive, such as a circle, line, or star (Image 8).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-08.jpg",
+                            "caption": "Image 8 - Adding a Curve to Mesh node and a curve primitive such as a circle, line, or star"
+                          }
                         ]
                       }
                     ]
@@ -119,18 +175,51 @@
                   "section": {
                     "header": "Raycasting above the Terrain",
                     "content": [
-                      "However we have transformed the curve, when we look at the 3D Viewport, the curve is below the terrain (Image 9). We need to update the curve's position so it's above the terrain, so add a [k]Set Position[/k] node after we have converted the curve to points or a mesh (Image 10). We need a way to figure out to figure out the position of the terrain at each point on the curve. We will do this with a [k]Raycast[/k] node. Add in the [k]Raycast[/k] node and set its Target Geometry to the terrain's mesh (Image 11). Change the Data Type to Vector (Image 12). Use the Hit Position output to set the curve's position (Image 13). The curve may have disappeared. In that case, check the Ray Direction input. The node is casting a ray in the direction specified for the Ray Length defined (usually 100m). If the curve is z direction is -1.00, try changing to 1.00 to see what happens (Image 14).",
+                      "However we have transformed the curve, when we look at the 3D Viewport, the curve is below the terrain (Image 9). We need to update the curve's position so it's above the terrain, so add a [k]Set Position[/k] node after we have converted the curve to points or a mesh (Image 10). We need a way to figure out to figure out the position of the terrain at each point on the curve. We will do this with a [k]Raycast[/k] node. Add in the [k]Raycast[/k] node and set its Target Geometry to the terrain's mesh (Image 11).",
                       {
                         "image": [
+                          {
+                            "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-09.jpg",
+                            "caption": "Image 9 - Seeing the curve appearing below the terrain in the 3D Viewport"
+                          },
+                          {
+                            "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-10.jpg",
+                            "caption": "Image 10 - Adding a Set Position node after converting the curve to points or a mesh to update the curve's position above the terrain"
+                          },
+                          {
+                            "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-11.jpg",
+                            "caption": "Image 11 - Adding a Raycast node and setting its Target Geometry to the terrain's mesh"
+                          }
+                        ]
+                      },
+                      "Change the Data Type to Vector (Image 12). Use the Hit Position output to set the curve's position (Image 13). The curve may have disappeared. In that case, check the Ray Direction input. The node is casting a ray in the direction specified for the Ray Length defined (usually 100m). If the curve is z direction is -1.00, try changing to 1.00 to see what happens (Image 14).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-12.jpg",
+                            "caption": "Image 12 - Changing the Data Type to Vector"
+                          },
+                          {
+                            "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-13.jpg",
+                            "caption": "Image 13 - Using the Hit Position output to set the curve's position"
+                          },
+                          {
+                            "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-14.jpg",
+                            "caption": "Image 14 - Checking the Ray Direction input and changing the z direction from -1.00 to 1.00 if the curve has disappeared"
+                          }
                         ]
                       },
                       {
                         "section": {
                           "header": "Raycasting outside the Terrain",
                           "content": [
-                            "Edit the curve again to drag one of the vertices outside the grid (Image 15). We see a strange line going from the outside end to the center of the grid. That is because the last vertex is outside the grid, and the raycasting was bro",
+                            "Edit the curve again to drag one of the vertices outside the grid (Image 15). We see a strange line going from the outside end to the center of the grid. That is because the last vertex is outside the grid, and the raycasting was broken.",
                             {
                               "image": [
+                                {
+                                  "src": "Blender/Blender Lessons/Geometry Nodes/Curves on Terrain/curves-15.jpg",
+                                  "caption": "Image 15 - Editing the curve to drag one of the vertices outside the grid, revealing a strange line caused by broken raycasting"
+                                }
                               ]
                             }
                           ]
