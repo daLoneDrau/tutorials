@@ -1,5 +1,5 @@
 {
-  "title": "Geometry Nodes",
+  "title": "Characters",
   "sections": [
     {
       "Low Poly Head": {
@@ -16,6 +16,10 @@
                 "Delete all objects from the default scene and bring in your reference images paying careful attention to making sure the reference images line up correctly (Image 1).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-01.jpg",
+                      "caption": "Image 1 - Deleting all objects from the default scene and bringing in reference images, carefully aligning them correctly"
+                    }
                   ]
                 }
               ]
@@ -23,11 +27,169 @@
           },
           {
             "section": {
-              "header": "Front of the Face",
+              "header": "Nose",
               "content": [
-                "Add a Plane to the scene and give it a [k]Mirror Modifier[/k] in the x-axis (Image 2). [k]R,X,90[/k] to rotate the plane, scale it, and move it up to cover the tip of the nose (Image 3). Extrude the plane up 3 times: up to the bridge of the nose between the eyes, to between the eyebrows, and halfway up the forehead (Image 4). Go into Side View and bring the plane forward to the front of the face (Image 5). Line up vertices with the nose and forehead from the side (Image 6). Extrude the edge by the eye out to the corner of the eye and above (Image 7). Make a raccoon shape around the eyes (Image 8). Extrude out the edge for the nostrils (Image 9) and bring them back in the y-axis (Image 10). Fill in the gaps between the nostril and the nose bridge and then connect to the bottom of the eye (Image 11). From the side, translate the vertices around the eye towards the side of the head (Image 12). [k]Shift-D[/k] a face and move it down to outside the lips (Image 13). Complete the pattern around the mouth with four faces and [k]S,Y,0[/k] to flatten them (Image 14). Adjust the position of the mouth from the side (Image 15). Duplicate a face again, place it at the bottom of the chin, and [k]S,Y,0[/k] (Image 16). In Side View, bring the face to the chin area and rotate it (Image 17). In Front View, extrude the band around the jawline (Image 18). Go into Side View and adjust (Image 19). Fill in the gap under the nose and add another face between the mouth nose and mouth (Image 20). Connect the eye region to the side of the head, subdividing edges if needed (Image 21). Connect the bottom region by the mouth with the side of the head (Image 22). Select the vertex at the edge of the nostril and extrude it out  (Image 23). Use that vertex to fill in faces for the cheeks (Image 24). Subdivide the edge on the side and create another face (Image 25). Add a Loop Cut to the face and fill in the last faces on the cheek (Image 26).",
+                "Add a Plane to the scene and give it a [k]Mirror Modifier[/k] in the x-axis (Image 2). [k]R,X,90[/k] to rotate the plane, scale it, and move it up to cover the tip of the nose (Image 3). Extrude the plane up 3 times: up to the bridge of the nose between the eyes, to between the eyebrows, and halfway up the forehead (Image 4). Go into Side View and bring the plane forward to the front of the face (Image 5). Line up vertices with the nose and forehead from the side (Image 6).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-02.jpg",
+                      "caption": "Image 2 - Adding a Plane to the scene and giving it a Mirror Modifier in the x-axis"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-03.jpg",
+                      "caption": "Image 3 - Pressing R, X, 90 to rotate the plane, scaling it, and moving it up to cover the tip of the nose"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-04.jpg",
+                      "caption": "Image 4 - Extruding the plane up three times: to the bridge of the nose between the eyes, to between the eyebrows, and halfway up the forehead"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-05.jpg",
+                      "caption": "Image 5 - Going into Side View and bringing the plane forward to the front of the face"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-06.jpg",
+                      "caption": "Image 6 - Lining up vertices with the nose and forehead from the side"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Eyes",
+              "content": [
+                "Extrude the edge by the eye out to the corner of the eye and above (Image 7). Make a raccoon shape around the eyes (Image 8). Extrude out the edge for the nostrils (Image 9) and bring them back in the y-axis (Image 10).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-07.jpg",
+                      "caption": "Image 7 - Extruding the edge by the eye out to the corner of the eye and above"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-08.jpg",
+                      "caption": "Image 8 - Making a raccoon shape around the eyes"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-09.jpg",
+                      "caption": "Image 9 - Extruding out the edge for the nostrils"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-10.jpg",
+                      "caption": "Image 10 - Bringing the nostrils back in the y-axis"
+                    }
+                  ]
+                },
+                "Fill in the gaps between the nostril and the nose bridge and then connect to the bottom of the eye (Image 11). From the side, translate the vertices around the eye towards the side of the head (Image 12).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-11.jpg",
+                      "caption": "Image 11 - Filling in the gaps between the nostril and the nose bridge and connecting to the bottom of the eye"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-12.jpg",
+                      "caption": "Image 12 - Translating the vertices around the eye towards the side of the head from the side view"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Mouth",
+              "content": [
+                "[k]Shift-D[/k] a face and move it down to outside the lips (Image 13). Complete the pattern around the mouth with four faces and [k]S,Y,0[/k] to flatten them (Image 14). Adjust the position of the mouth from the side (Image 15).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-13.jpg",
+                      "caption": "Image 13 - Pressing Shift-D to duplicate a face and moving it down to outside the lips"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-14.jpg",
+                      "caption": "Image 14 - Completing the pattern around the mouth with four faces and pressing S, Y, 0 to flatten them"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-15.jpg",
+                      "caption": "Image 15 - Adjusting the position of the mouth from the side"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Framing the Face",
+              "content": [
+                "Duplicate a face again, place it at the bottom of the chin, and [k]S,Y,0[/k] (Image 16). In Side View, bring the face to the chin area and rotate it (Image 17). In Front View, extrude the band around the jawline (Image 18). Go into Side View and adjust (Image 19).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-16.jpg",
+                      "caption": "Image 16 - Duplicating a face again, placing it at the bottom of the chin, and pressing S, Y, 0"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-17.jpg",
+                      "caption": "Image 17 - Bringing the face to the chin area and rotating it in Side View"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-18.jpg",
+                      "caption": "Image 18 - Extruding the band around the jawline in Front View"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-19.jpg",
+                      "caption": "Image 19 - Going into Side View and adjusting"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Filling in the Gaps",
+              "content": [
+                "Fill in the gap under the nose and add another face between the mouth nose and mouth (Image 20). Connect the eye region to the side of the head, subdividing edges if needed (Image 21). Connect the bottom region by the mouth with the side of the head (Image 22). Select the vertex at the edge of the nostril and extrude it out  (Image 23).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-20.jpg",
+                      "caption": "Image 20 - Filling in the gap under the nose and adding another face between the nose and mouth"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-21.jpg",
+                      "caption": "Image 21 - Connecting the eye region to the side of the head, subdividing edges if needed"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-22.jpg",
+                      "caption": "Image 22 - Connecting the bottom region by the mouth with the side of the head"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-23.jpg",
+                      "caption": "Image 23 - Selecting the vertex at the edge of the nostril and extruding it out"
+                    }
+                  ]
+                },
+                "Use that vertex to fill in faces for the cheeks (Image 24). Subdivide the edge on the side and create another face (Image 25). Add a Loop Cut to the face and fill in the last faces on the cheek (Image 26).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-24.jpg",
+                      "caption": "Image 24 - Using that vertex to fill in faces for the cheeks"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-25.jpg",
+                      "caption": "Image 25 - Subdividing the edge on the side and creating another face"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-26.jpg",
+                      "caption": "Image 26 - Adding a Loop Cut to the face and filling in the last faces on the cheek"
+                    }
                   ]
                 }
               ]
@@ -40,6 +202,14 @@
                 "From the side, move the inner edges for the lips to the thickest part (Image 27). Fill in the lips area by extruding, beveling, and marking seams (Image 28).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-27.jpg",
+                      "caption": "Image 27 - Moving the inner edges for the lips to the thickest part from the side"
+                    },
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-28.jpg",
+                      "caption": "Image 28 - Filling in the lips area by extruding, beveling, and marking seams"
+                    }
                   ]
                 }
               ]
@@ -49,9 +219,13 @@
             "section": {
               "header": "Smoothing",
               "content": [
-                "Shade Auto Smooth and fix any sharp edges that look unnatural (Image 28).",
+                "Shade Auto Smooth and fix any sharp edges that look unnatural (Image 29).",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Blender Lessons/Characters/Head/head-29.jpg",
+                      "caption": "Image 29 - Shading Auto Smooth and fixing any sharp edges that look unnatural"
+                    }
                   ]
                 }
               ]
