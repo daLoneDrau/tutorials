@@ -1,8 +1,8 @@
 {
-  "title": "Low Poly Characters (General)",
+  "title": "Characters (General)",
   "sections": [
     {
-      "Low Poly FACES": {
+      "Head": {
         "key_concepts": [
           "[url]How to make Low poly FACES in BLENDER 3.1!^^https://www.youtube.com/watch?v=mFSQqDborM0[/url]",
           {
@@ -189,7 +189,7 @@
             "section": {
               "header": "Adding Cheekbones",
               "content": [
-                "In order to position the cheekbones, add a horizontal Loop Cut (Image 23). Grab the newly-created vertex in the back (Image 24), [k]Numpad1[/k] into Front View and move it out to the widest part of the cheekbone (Image 25). [k]Alt-Z[/k] to remove X-Ray mode, grab the front cheek vertex and move it out to round out the face somewhat (Image 26). [k]Numpad3[/k] into Side View, [k]Alt-Z[/k] to enable X-Ray Mode, and line the vertex up with the cheekbone (Image 27). Last, grab the vertex by the nose and line it up with the front of the mouth (Image 28). This gives us the general face shape.",
+                "In order to position the cheekbones, add a horizontal Loop Cut (Image 23). Grab the newly-created vertex in the back (Image 24), [k]Numpad1[/k] into Front View and move it out to the widest part of the cheekbone (Image 25).",
                 {
                   "image": [
                     {
@@ -203,7 +203,12 @@
                     {
                       "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-25.jpg",
                       "caption": "Image 25 - Moving the cheekbone out wide"
-                    },
+                    }
+                  ]
+                },
+                "[k]Alt-Z[/k] to remove X-Ray mode, grab the front cheek vertex and move it out to round out the face somewhat (Image 26). [k]Numpad3[/k] into Side View, [k]Alt-Z[/k] to enable X-Ray Mode, and line the vertex up with the cheekbone (Image 27). Last, grab the vertex by the nose and line it up with the front of the mouth (Image 28). This gives us the general face shape.",
+                {
+                  "image": [
                     {
                       "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-26.jpg",
                       "caption": "Image 26 - Rounding out the front of the face"
@@ -321,7 +326,7 @@
                   "section": {
                     "header": "Cutting the Eyes",
                     "content": [
-                      "Using the Knife Tool, cut an edge towards the top of the nose (Image 40). [k]Numpad3[/k] into Side View and [k]G[/k] to move those vertices back to line the left one up with the bottom of the brow ridge (Image 41). [k]Ctrl-K[/k] to cut from the inside of the brow ridge out to the edge of the brow (Image 42) and also another cut to to the top of the brow (Image 43). Select the inside edge (Image 44) and [k]X,I[/k] to dissolve it. We want our brow ridge to be a rectangle, not a triangle, so add another cut from the inside of the eye out to the side (Image 45). Select the inside edge (Image 46) and [k]X,I[/k] to dissolve it. Go into Side View and move the two vertices around so they cut across the middle of the eye (Image 47).",
+                      "Using the Knife Tool, cut an edge towards the top of the nose (Image 40). [k]Numpad3[/k] into Side View and [k]G[/k] to move those vertices back to line the left one up with the bottom of the brow ridge (Image 41). [k]Ctrl-K[/k] to cut from the inside of the brow ridge out to the edge of the brow (Image 42) and also another cut to to the top of the brow (Image 43).",
                       {
                         "image": [
                           {
@@ -339,7 +344,12 @@
                           {
                             "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-43.jpg",
                             "caption": "Image 43 - Adding another cut to the top of the brow"
-                          },
+                          }
+                        ]
+                      },
+                      "Select the inside edge (Image 44) and [k]X,I[/k] to dissolve it. We want our brow ridge to be a rectangle, not a triangle, so add another cut from the inside of the eye out to the side (Image 45). Select the inside edge (Image 46) and [k]X,I[/k] to dissolve it. Go into Side View and move the two vertices around so they cut across the middle of the eye (Image 47).",
+                      {
+                        "image": [
                           {
                             "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-44.jpg",
                             "caption": "Image 44 - Selecting the inside edge and then dissolving it"
@@ -396,7 +406,7 @@
                   "section": {
                     "header": "Cutting the Jawline",
                     "content": [
-                      "For the neck, use the Knife Tool to cut the neckline from underneath the jaw (Image 51). In order to avoid n-gons, select the two vertices pictured and [k]J[/k] to join them (Image 52). Rotate around towards the back of the head and [k]E[/k] to extrude the vertex from the neckline up (Image 53) and again out (Image 54) and then in (Image 55) to make the jawline (make sure the mirror modifier has clipping turned on). Select adjacent vertices and [k]F[/k] to fill them in, creating faces (Image 56). Adjust the vertices to straighten out the jawline (Image 57). [k]3[/k] into Face mode, select the face at the bottom (Image 58) and [k]X,F[/k] to delete it.",
+                      "For the neck, use the Knife Tool to cut the neckline from underneath the jaw (Image 51). In order to avoid n-gons, select the two vertices pictured and [k]J[/k] to join them (Image 52). Rotate around towards the back of the head and [k]E[/k] to extrude the vertex from the neckline up (Image 53) and again out (Image 54) and then in (Image 55) to make the jawline (make sure the mirror modifier has clipping turned on).",
                       {
                         "image": [
                           {
@@ -418,7 +428,12 @@
                           {
                             "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-55.jpg",
                             "caption": "Image 55 - Extrude the vertex in"
-                          },
+                          }
+                        ]
+                      },
+                      "Select adjacent vertices and [k]F[/k] to fill them in, creating faces (Image 56). Adjust the vertices to straighten out the jawline (Image 57). [k]3[/k] into Face mode, select the face at the bottom (Image 58) and [k]X,F[/k] to delete it.",
+                      {
+                        "image": [
                           {
                             "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-56.jpg",
                             "caption": "Image 56 - Filling in the faces"
@@ -479,7 +494,7 @@
                   "section": {
                     "header": "Bringing the Ears out",
                     "content": [
-                      "[k]Numpad3[/k] into Side View. Maneuver the two vertices around the ear towards the bottom (Image 64). [k]Ctrl-K[/k] to use the Knife Tool to cut an opening for the ear (Image 65). [k]3[/k] for Face Mode, [k]Numpad1[/k] into Front View and [k]Alt-Z[/k] to turn off X-Ray Mode. With the ear face selected, [k]E[/k] to extrude it out to the side (Image 66). Move the perspective over to the side. [k]G,G[/k] to slide the front vertices of the ear back into the face to provide an angle for the ears coming out (Image 67). [k]Numpad1[/k] into Front View. Do the ears look like they've disappeared (Image 68)? That's because the side of the head is sloping towards the back. Move the view towards the back and select the back vertices for the ear (Image 69). [k]Numpad1[/k] into Front View and [k]G,X[/k] to move them out to the side (Image 70).",
+                      "[k]Numpad3[/k] into Side View. Maneuver the two vertices around the ear towards the bottom (Image 64). [k]Ctrl-K[/k] to use the Knife Tool to cut an opening for the ear (Image 65). [k]3[/k] for Face Mode, [k]Numpad1[/k] into Front View and [k]Alt-Z[/k] to turn off X-Ray Mode. With the ear face selected, [k]E[/k] to extrude it out to the side (Image 66). Move the perspective over to the side. [k]G,G[/k] to slide the front vertices of the ear back into the face to provide an angle for the ears coming out (Image 67).",
                       {
                         "image": [
                           {
@@ -497,7 +512,12 @@
                           {
                             "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-67.jpg",
                             "caption": "Image 67 - Angling the ears out from the side of the face"
-                          },
+                          }
+                        ]
+                      },
+                      "[k]Numpad1[/k] into Front View. Do the ears look like they've disappeared (Image 68)? That's because the side of the head is sloping towards the back. Move the view towards the back and select the back vertices for the ear (Image 69). [k]Numpad1[/k] into Front View and [k]G,X[/k] to move them out to the side (Image 70).",
+                      {
+                        "image": [
                           {
                             "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-68.jpg",
                             "caption": "Image 68 - The ears are flat against the skull"
@@ -519,7 +539,7 @@
                   "section": {
                     "header": "Shaping the Ears",
                     "content": [
-                      "[k]Numpad3[/k] into Side View and [k]Alt-Z[/k] to turn on X-Ray Mode. Grab the top pairs of vertices for the ears and move them up to match the ear shape (Image 71). [k]2[/k] into Edge Mode and select the edge at the top of the ear. [k]Ctrl-B[/k] to Bevel it (Image 72), and then [k]G[/k] to move the edges into position around the ear (Image 73). Select the two edges at the bottom of the ear (Image 74). [k]LMB,S[/k] to subdivide them (Image 75). [k]1[/k] into Vertex Mode and select the two new vertices in the middle. [k]E[/k] to extrude them down towards the bottom of the ear (Image 76). [k]Alt-Z[/k] to turn off X-Ray Mode and [k]1[/k] into Vertex Mode. Create faces between vertices at the bottom of the ear (Image 77). Turn on the Viewport Overlay for Face Orientation (Image 78) and [k]F[/k] to complete the faces at the bottom of the ear (Image 79). [k]Ctrl-B[/k] to Bevel the bottom vertices and then moves the edges into place for the bottom of the ear (Image 80).",
+                      "[k]Numpad3[/k] into Side View and [k]Alt-Z[/k] to turn on X-Ray Mode. Grab the top pairs of vertices for the ears and move them up to match the ear shape (Image 71). [k]2[/k] into Edge Mode and select the edge at the top of the ear. [k]Ctrl-B[/k] to Bevel it (Image 72), and then [k]G[/k] to move the edges into position around the ear (Image 73).",
                       {
                         "image": [
                           {
@@ -533,7 +553,12 @@
                           {
                             "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-73.jpg",
                             "caption": "Image 73 - Cutting an opening for the ear"
-                          },
+                          }
+                        ]
+                      },
+                      "Select the two edges at the bottom of the ear (Image 74). [k]LMB,S[/k] to subdivide them (Image 75). [k]1[/k] into Vertex Mode and select the two new vertices in the middle. [k]E[/k] to extrude them down towards the bottom of the ear (Image 76).",
+                      {
+                        "image": [
                           {
                             "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-74.jpg",
                             "caption": "Image 74 - Selecting the bottom edges"
@@ -545,7 +570,12 @@
                           {
                             "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-76.jpg",
                             "caption": "Image 76 - Extruding the vertices down towards the bottom of the ear"
-                          },
+                          }
+                        ]
+                      },
+                      "[k]Alt-Z[/k] to turn off X-Ray Mode and [k]1[/k] into Vertex Mode. Create faces between vertices at the bottom of the ear (Image 77). Turn on the Viewport Overlay for Face Orientation (Image 78) and [k]F[/k] to complete the faces at the bottom of the ear (Image 79). [k]Ctrl-B[/k] to Bevel the bottom vertices and then moves the edges into place for the bottom of the ear (Image 80).",
+                      {
+                        "image": [
                           {
                             "src": "Blender/Thomas Potter/Low Poly Characters/Face/low_poly_face-77.jpg",
                             "caption": "Image 77 - Adding faces for the bottom of the ear"

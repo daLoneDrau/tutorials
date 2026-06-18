@@ -1,0 +1,64 @@
+{
+  "title": "Geometry Nodes",
+  "sections": [
+    {
+      "Low Poly Head": {
+        "tags": [
+          "head",
+          "face"
+        ],
+        "key_concepts": [
+          "Modeling the head for a low poly character.",
+          {
+            "section": {
+              "header": "Setup",
+              "content": [
+                "Delete all objects from the default scene and bring in your reference images paying careful attention to making sure the reference images line up correctly (Image 1).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Front of the Face",
+              "content": [
+                "Add a Plane to the scene and give it a [k]Mirror Modifier[/k] in the x-axis (Image 2). [k]R,X,90[/k] to rotate the plane, scale it, and move it up to cover the tip of the nose (Image 3). Extrude the plane up 3 times: up to the bridge of the nose between the eyes, to between the eyebrows, and halfway up the forehead (Image 4). Go into Side View and bring the plane forward to the front of the face (Image 5). Line up vertices with the nose and forehead from the side (Image 6). Extrude the edge by the eye out to the corner of the eye and above (Image 7). Make a raccoon shape around the eyes (Image 8). Extrude out the edge for the nostrils (Image 9) and bring them back in the y-axis (Image 10). Fill in the gaps between the nostril and the nose bridge and then connect to the bottom of the eye (Image 11). From the side, translate the vertices around the eye towards the side of the head (Image 12). [k]Shift-D[/k] a face and move it down to outside the lips (Image 13). Complete the pattern around the mouth with four faces and [k]S,Y,0[/k] to flatten them (Image 14). Adjust the position of the mouth from the side (Image 15). Duplicate a face again, place it at the bottom of the chin, and [k]S,Y,0[/k] (Image 16). In Side View, bring the face to the chin area and rotate it (Image 17). In Front View, extrude the band around the jawline (Image 18). Go into Side View and adjust (Image 19). Fill in the gap under the nose and add another face between the mouth nose and mouth (Image 20). Connect the eye region to the side of the head, subdividing edges if needed (Image 21). Connect the bottom region by the mouth with the side of the head (Image 22). Select the vertex at the edge of the nostril and extrude it out  (Image 23). Use that vertex to fill in faces for the cheeks (Image 24). Subdivide the edge on the side and create another face (Image 25). Add a Loop Cut to the face and fill in the last faces on the cheek (Image 26).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Lips",
+              "content": [
+                "From the side, move the inner edges for the lips to the thickest part (Image 27). Fill in the lips area by extruding, beveling, and marking seams (Image 28).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Smoothing",
+              "content": [
+                "Shade Auto Smooth and fix any sharp edges that look unnatural (Image 28).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
