@@ -1,0 +1,25 @@
+{
+  "title": "Geometry Nodes",
+  "sections": [
+    {
+      "Procedural Chainlink Fence TBD": {
+        "tags": ["geometry nodes", "rock", "material"],
+        "key_concepts": [
+          "[url]Blender Tutorial - Procedural Chainlink Fence (Geometry Nodes)^^https://www.youtube.com/watch?v=CwOHqH60X-0[/url]",
+          {
+            "section": {
+              "header": "Setup",
+              "content": [
+                "Start with the default cube, adding a Geometry Nodes Modifier (Image 1).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

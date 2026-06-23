@@ -1,0 +1,25 @@
+{
+  "title": "Geometry Nodes",
+  "sections": [
+    {
+      "Procedural Cobblestones TBD": {
+        "tags": ["geometry nodes", "cobblestone"],
+        "key_concepts": [
+          "[url]Make GeoNodes Cobble Stone | Beginner Tutorial^^https://www.youtube.com/watch?v=Yn4gKUqWUAo[/url]",
+          {
+            "section": {
+              "header": "Setup",
+              "content": [
+                "Start with the default cube, adding a Geometry Nodes Modifier (Image 1).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
