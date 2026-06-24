@@ -680,15 +680,63 @@
         "tags": [],
         "key_concepts": [
           "[url]Creating a Banner or Flag using Blender Physics Simulator^^https://www.youtube.com/watch?v=_Dl9dMRrHIc[/url]",
-          "TBD",
+          "Use Blender's built-in physics system to create flags or banners.",
           {
             "section": {
-              "header": "TBD",
+              "header": "Banner Pole",
               "content": [
-                "",
+                "Add in a Cylinder for the banner pole, we want it to be 2m tall, and its radius to 1/50th of the height (Image 1). Add in a crossbar by [k]Shift-D[/k], [k]R,Y,90[/k] and [k]G,Z,1[/k] (Image 2). Apply the rotation, [k]N[/k] to bring out the sidebar and reduce the crossbar's length in the x-axis by about 60% (Image 3).",
                 {
                   "image": [
                   ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Banner",
+              "content": [
+                "Add a Plane to the scene, scale it down to slightly less wide as the crossbar and [k]R,X,90[/k] (Image 4). From the side move the banner out slightly in front of the pole (Image 5). [k]S,Z[/k] and [k]G,Z[/k] to move it just below the crossbar (Image 6).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Geometry to the Banner",
+              "content": [
+                "Give the plane a Loop Cut in the x-axis and two in the z-axis (Image 7). [k]RMB,S[/k] and subdivide it further (Image 8).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Physics",
+              "content": [
+                "With the plane selected open the Physics tab (Image 9) and the Cloth tab (image 10). Open the Timeline as well (Image 11). If we were to press [k]Space[/k] to start the animation, we would see the plane moving down in the z-axis (Image 12). This is because since we haven't told Blender how we want the physics handled, it is applying the standard gravity to it. [k]Tab[/k] into Edit Mode and [k]2[/k] for Edge Select Mode (Image 13). Go to the left-most edge at the top [k]Alt-LMB[/k] to select the top edges with the one nearest our cursor as the active object (Image 14). [k]Select > Checker Deselect[/k] to deselect some of the edges in a pattern (Image 15). What we want is some edges at the top selected to be the extensions of the banner that will wrap around the crossbar (Image 16). These edges will be held still and not move with the rest of the banner. Open the Data Tab, create a new Vertex Group and assign those edges to it (Image 17). Back in the Physics tab, under Shape, set the Pin Group and make its Stiffness 1.0 so that they do not move at all (Image 18). Under [k]Physical Properties > Stiffness[/k] set the Tension to 1.0 (Image 19).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Wind",
+                    "content": [
+                      "We need something to apply force to our banner; we will do this with a Wind object (Image 20).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
                 }
               ]
             }
