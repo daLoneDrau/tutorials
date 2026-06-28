@@ -1,0 +1,578 @@
+{
+  "title": "Assignment 2",
+  "sections": [
+    {
+      "Entities, Components, Systems": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Why ECS for Games?",
+              "content": [
+                "ECS stands for Entities, Components, Systems. An Entity is any object in the game (Player, Bullet, Platform, Enemy). ECS is a software design pattern.",
+                "Large AAA games have been made using Object-Oriented Design for years. ECS will allow us to many things quite easily.",
+                {
+                  "section": {
+                    "header": "Object-Oriented",
+                    "content": [
+                      "OOP / OO Design helps with managing data and code. If we were to program the Entity using OO Design principles:",
+                      [
+                        "Entity would be the base class for any in-game object",
+                        "Each Entity would have an (x, y) position",
+                        "Tile, Player, Bullet would be child classes that inherit from Entity"
+                      ],
+                      {
+                        "image": {
+                          "src": "/Dave Churchill/Comp 4300/entity_ood.jpg",
+                          "caption": "Inheritance from the Entity class in OO Design"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Entity-Component",
+                    "content": [
+                      "Following ECS Design principles:",
+                      [
+                        "Entity would be the class for any in-game object",
+                        "Components would be properties that can attach to Entities",
+                        "Position, Speed, Bounding Box, Health, Weapon, Damage would all be examples of Components"
+                      ],
+                      {
+                        "image": {
+                          "src": "/Dave Churchill/Comp 4300/entity_ecs.jpg",
+                          "caption": "Entity-Components in ECS Design"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "ECS Game Programming",
+              "content": [
+                "ECS uses Composition-based design. An [b]Entity[/b] would be any in-game object, and a [b]Component[/b] is a property attached to an Entity. Components are [b]PURE DATA[/b].",
+                "The actual work of affecting Entities would be done by [b]Systems[/b]. System provide the code and logic that drive behaviour. Think of them as a function that does the work related to one part of the gameplay mechanics, such as Movement, Rendering, Sound, or Physics.",
+                {
+                  "section": {
+                    "header": "ECS Example Systems",
+                    "content": [
+                      {"code": "// movement system\nfor (e: entities) { e.pos += e.speed; }"},
+                      "",
+                      {"code": "// collision system\nfor (b: bullets) {\n    for (e: enemies) {\n        if (Physics::IsCollission(b, e) {\n            e.health -= b.damage;\n            b.destroy();\n        }\n    }\n}"},
+                      "",
+                      {"code": "// rendering system\nfor (e: entities) { window.draw(e.sprite, e.position); }"}
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Engine Architecture",
+              "content": [
+                {"code": "Game Engine - oversees all the data. stores all the assets and manages the different scenes\n  > Scene - the different views displayed in the game\n    > Systems - each scene will have its own systems, because each scene will hande inputs differently, rendering, etc...\n    > EntityManager - handles Entity memory management and lifetimes\n      > Entity - in-game objects\n        > Component - Entity properties"},
+                {
+                  "section": {
+                    "header": "Components",
+                    "content": [
+                      "An ECS Component is just [b]DATA[/b]. Although there may be some logic in the constructor, there will be no helper functionality in the components.",
+                      "A Component class will have some [i]intuitive meaning[/i] to an Entity that contains it, for example, Health, Gravity, Position, etc...",
+                      {
+                        "section": {
+                          "header": "Sample Component Implementation",
+                          "content": [
+                            [
+                              "There should be a different [i]Component class[/i] for each Component we want to implement",
+                              "Components will inherit from a base [i]Component class[/i] which will store any data that needs to be common to all Components"
+                            ],
+                            {"code": "class Component\n{\npublic:\n    bool exists = false;\n}\n\n// exists = whether the entity actually contains the derived component\n// default to false so default constructed components are not considered part of the Entity"},
+                            "",
+                            {"code": "class Transform : public Component\n{\npublic:\n    Vec2 pos = {0,0};\n    Vec2 velocity = {0,0};\n    Transform() {}\n    Transform(const Vec2 &p, const Vec2 &v) : pos(p), velocity(v) {}\n}"}
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Entities",
+                    "content": [
+                      "An ECS Entity is an in-game object. It has no unique functionality, it just stores a number of Components, of which it should have [b]at most[/b] 1 of any type.",
+                      "An Entity will have a unique reference id. Either an integer or a UUID.",
+                      "You don't want Entities to be made up of other Entities. If an Entity needs to reference another Entity, it will do so by its id.",
+                      {
+                        "section": {
+                          "header": "Sample Entity Implementation",
+                          "content": [
+                            {"code": "class Entity\n{\n    std::tuple<C1, C2, C3, C4> components;\n    bool alive = true;\n    std::string tag = \"default\";\n    size_t id = 0;\npublic:\n    Entity() {}\n    void add<T>(args);\n    T& get<T>();\n    size_t id() const;\n    bool is_alive() const;\n    void destroy();\n    const std::string& tag() const;\n}"}
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Sample Entity Use Implementation",
+                          "content": [
+                            {
+                              "code": "void doSomething(std::vector<Entity> &entities) {\n    for (auto& e: entities) {\n        e.transform.pos += e.transform.velocity;\n        e.shape.shape.setPosition(e.transform.pos);\n        window.draw(e.shape.shape);\n    }\n}"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Systems",
+                    "content": [
+                      "Systems only operate on entities that contain [i]certain components[/i].",
+                      [
+                        "Movement: Transform",
+                        "Render: Transform & Shape",
+                        "Physics: BoundingBox"
+                      ],
+                      {
+                        "section": {
+                          "header": "Sample Code in a Movement System",
+                          "content": [
+                            {
+                              "code": "void movement(std::vector<Entity> &entities) {\n    for (auto& e: entities) {\n        e.transform.pos += e.transform.velocity;\n        e.shape.shape.setPosition(e.transform.pos);\n        window.draw(e.shape.shape);\n    }\n}"
+                            }
+                          ]
+                        }
+                      },
+                      "You can filter entities for the required components before passing them to the System or check the entities for the required components during the system's processing.",
+                      "",
+                      {
+                        "section": {
+                          "header": "Sample System Code for Lifespan and Render",
+                          "content": [
+                            {
+                              "code": "void lifespan() {\n    for (auto& e: entityManager.getEntities()) {\n\tif (!e->has<Lifespan>()) { continue; };\n\te.get<Lifespan>().remainingLifespan--;\n\tif (e.get<Lifespan>().remainingLifespan <= 0) {\n\t    e.destroy();\n\t}\n    }\n}"
+                            },
+                            "",
+                            {
+                              "code": "void render() {\n    for (auto& e: entityManager.getEntities()) {\n\tif (e->has<Shape>() && e->has<Transform>()) {\n\t    e.shape.shape.setPosition(e.transform.pos);\n\t    window.draw(e.shape.shape);\n\t}\n    }\n}"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "image": {
+                          "src": "/Dave Churchill/Comp 4300/ecs-model.jpg",
+                          "caption": "An ECS Flowchart. Notice that the Entities are mere storage containers, and the Game Loop calls on the Systems to do the work."
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Entity Management and 2D Math for Games": {
+        "key_concepts": [
+          "Data Management is one of the most important concepts in all of programming: [b]separate logic and data[/b]. Create data structures that manage data so the logic code doesn't need to worry about it. Your complex algorithms shouldn't know how your set, map, or vectors are implemented.",
+          {
+            "section": {
+              "header": "Entity Manager",
+              "content": [
+                "The Entity Manager follows the [i]Factory[/i] design pattern. The Entity Manager will handle the creation, storage, and lifetime of [b]all[/b] Entity objects. Entity Manager functions include:",
+                ["addEntity", "removeEntity", "storage", "bookkeeping"],
+                "The Factory should ensure the users cannot create their own Entities.",
+                {
+                  "section": {
+                    "header": "Entity Tags",
+                    "content": [
+                      "Entities can be grouped by their functionality. A way this can be done is through tags.  Tags can be implemented as [i]strings[/i] or [i]bit flags[/i]. The Entity Manager should have functionality for quickly getting Entities by tag."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Sample Entity Manager Implementation",
+                    "content": [
+                      {"code": "typedef std::vector<std::shared_ptr<Entity>> EntityVec;\ntypedef std::map<std::string, EntityVec> EntityMap;\n"},
+                      {"code": "class EntityManager\n{\n    EntityVec entities; // all entities\n    EntityMap entityMap; // all entities by tag\n    size_t totalEntities = 0;\npublic:\n    EntityManager()\n    std::shared_ptr<Entity> addEntity(const std::string& tag); // add a new entity of a specific type\n    EntityVec& getEntities(); // get the full list of entities\n    EntityVec& getEntities(const std::string& tag); // get list of entities by tag\n}"}
+                    ]
+                  }
+                },
+                "",
+                "The [i]addEntity[/i] implementation should create a new Entity object and store it in the vector of all entities and in the mapo of vectors by tag, then return a pointer to the new Entity object.",
+                "You can extend the EntityManager usability by adding functions that will create new Entities with specific tags, and the required component set used by the Entity type. See the example below:",
+                {"code": "void spawnEnemy\n{\n    auto e = entityManager.addEntity(\"enemy\");\n    e->add<Transform>(args);\n    e->add<Shape>(args);\n}"},
+                {
+                  "section": {
+                    "header": "Iterator Invalidation",
+                    "content": [
+                      "Iterator invalidation is when an iterator over a collection becomes invalid because the collection's contents are updated. This can happen during a game's runtime when an explosion occurs, causing explosion entities to be spawned. It can also happen when an Entity's lifespan terminates and it is removed.",
+                      "If you collection needs to resize itself, then all pointers and iterators become invalid.",
+                      "One way to avoid iterator invalidation is to delay the effects of actions that modify collections until it is safe to do so. With the Entity Manager handling all creation and destruction of entities, this becomes easier. Entities should only be added or removed at the beginning of the frame when it is safe.",
+                      "Add a private field to the EntityManager class.",
+                      {"code": "    EntityVec toAdd; // the list of entities to add at the beginning of the frame"},
+                      "",
+                      "And add a public function as well:",
+                      {"code": "    void update(); // runs an update at the beginning of the frame."},
+                      "",
+                      "The [i]addEntity[/i] function should now add new entities to the [i]toAdd[/i] EntityVec, which would then be added to the main [i]entities[/i] and [i]entityMap[/i] collections during the update() call."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Entity Death and Removal",
+                    "content": [
+                      "An Entity can be flagged for removal when it [i]alive[/i] field is set to [i]false[/i]. Non-alive entities would then be removed from the collections during the [i]update()[/i] process."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Entity Removal Usage with Entity Manager",
+                    "content": [
+                      {"image": {"src": "/Dave Churchill/Comp 4300/entitymanager-collisions.jpg", "caption": "Checking for collisions between Enemies and Bullets"}}
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Game Main Loop",
+                    "content": [
+                      "The Game Engine will have a main loop. The very first thing it will do is tell the Entity Manager to update itself.",
+                      {"image": {"src": "/Dave Churchill/Comp 4300/main_loop-01.jpg", "caption": "A Simple Main Loop"}}
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "2D Game Math",
+              "content": [
+                "Positions in a 2D game are on a two-dimensional grid (x,y). We can use a Euclidean plane to visualize individual positions. Each integer position displays one pixel. Most APIs have (0,0) at the top-left.",
+                {"image": {"src": "/Dave Churchill/Comp 4300/vec_math-01.jpg", "caption": "Vector subtraction will give you the distance between two points, while addition will give you the destination."}},
+                {"image": {"src": "/Dave Churchill/Comp 4300/vec_math-02.jpg", "caption": "In this example, a bullet has been fired from the player at an angle of 30 degrees, traveling at a speed of 30px per frame. You can use sin and cosine to determine the destination x and y the bullet will travel to."}},
+                {"image": {"src": "/Dave Churchill/Comp 4300/vec_math-03.jpg", "caption": "Given a player and enemy location, you can use the pythagorean theorem to determine distance between them. With the distance determined, you can find the angle between the player and enemy."}},
+                {"image": {"src": "/Dave Churchill/Comp 4300/vec_math-04.jpg", "caption": "You can convert a vector's length to 1 unit by normalizing it."}},
+                {"image": {"src": "/Dave Churchill/Comp 4300/vec_math-05.jpg", "caption": "If you want to shoot a bullet in the game and have it end where the player clicked, but want it to travel at a consistent speed, you will normalize it in order to determine the speed vector. You will end up with a vector with the correct angle pointing towards the mouse click, with the correct velocity to update on each frame."}},
+                {"image": {"src": "/Dave Churchill/Comp 4300/vec_math-06.jpg", "caption": "You can accomplish the same as above if you were only given the speed and the angle, not the origin and destination."}},
+                {"image": {"src": "/Dave Churchill/Comp 4300/vec_math-07.jpg", "caption": "Some game objects will be given bounding circles instead of boxes. You will want to check for collisions between the bounding circles."}},
+                {"image": {"src": "/Dave Churchill/Comp 4300/vec_math-08.jpg", "caption": "If the distance of between the mid-points of the two circles is less than the sum of their radii, you have a collision."}},
+                {"image": {"src": "/Dave Churchill/Comp 4300/vec_math-09.jpg", "caption": "Square root calculations on modern hardware is slow. Since you don't need the actual distance between the circles, just the inequality, speed things up by squaring both sides."}}
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Assignment 2": {
+        "key_concepts": [
+          {
+            "image": { "src": "/Dave Churchill/Comp 4300/assignment_2-demo.jpg", "caption": "Assignment 2 in action. The player has just fired a bullet."}
+          },
+          {
+            "section": {
+              "header": "Engine Architecture",
+              "content": [
+                "The purpose of Assignment 2 is to introduce the separation of functionality into classes, and bring in the ECS architecture. This will include the creation of ECS classes, the Entity Manager, and ECS Systems.",
+                {
+                  "image": { "src": "/Dave Churchill/Comp 4300/assignment_2-architecture.jpg", "caption": "Architecture."}
+                },
+                {
+                  "image": [
+                    { "src": "/Dave Churchill/Comp 4300/assignment_2-components.jpg", "caption": "Component Class Models. CShape is covered up by the lecturer."},
+                    { "src": "/Dave Churchill/Comp 4300/assignment_2-entity.jpg", "caption": "Entity Class Model."},
+                    { "src": "/Dave Churchill/Comp 4300/assignment_2-entity_manager.jpg", "caption": "Entity Manager Class Model. m_entities of type EntityVec"}
+                  ]
+                },
+                "This assignment will include a Game class. This is the top-level game object, that holds all game data, all game system functions, and all gameplay code.",
+                {
+                  "image": [
+                    { "src": "/Dave Churchill/Comp 4300/assignment_2-game.jpg", "caption": "Game Class Models. Systems are implemented as individual functions."},
+                    { "src": "/Dave Churchill/Comp 4300/assignment_2-vec2.jpg", "caption": "Vec2 Class Model."}
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Game Scene",
+              "content": [
+                "A game can contain many different scenes that have different logic or controls.",
+                {
+                  "section": {
+                    "header": "Example: RPG Games",
+                    "content": [
+                      "RPG games will have many scenes, such as:",
+                      [
+                        "Menu / Text / Dialogue Scenes", "World Map Scene", "Combat / Battle Scene"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Assignment 2 Details",
+              "content": [
+                "In this assignment, objects will be considered to have a bounding circle, not box.",
+                {
+                  "image": [
+                    {"src": "/Dave Churchill/Comp 4300/assignment_2-collisions.jpg", "caption": "A collision between bounding circles, calculated using the distance between their mid-points vs. the sum of their radii."}
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Program Specifications",
+                    "content": [
+                      {
+                        "section": {
+                          "header": "Player",
+                          "content": [
+                            [
+                              "The player is represented by a shape defined in the config file",
+                              "The player must spawn in the center of the screen at the beginning of the game and after it dies",
+                              "The player moves at a speed defined in the config file",
+                              "The player moves in four directions, mapped to the following keys:",
+                              [
+                                "Up - [k]W[/k]", "Left - [k]A[/k]", "Right - [k]D[/k]", "Down - [k]S[/k]"
+                              ],
+                              "The player is confined to movement within the bounds of the window",
+                              "Clicking [k]LMB[/k] within the window will shoot a bullet from the player in that direction.",
+                              "The speed, size, and lifespan of the bullet are defined in the config file"
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Special Ability",
+                          "content": [
+                            [
+                              "Pressing [k]RMB[/k] will fire a special ability",
+                              [
+                                "Multiple bullets will be spawned by the special ability",
+                                "Entities must have a unique graphic associated with them",
+                                "The unique game mechanic is introduced via a new component",
+                                "A cooldown timer must be implemented for the special weapon"
+                              ]
+                            ],
+                            {
+                              "image": [
+                                {"src": "/Dave Churchill/Comp 4300/assignment_2-special.jpg", "caption": "The special ability being fired. The ability fires waves of bullets in a 360 degree radius, with the bullets fading and becoming inactive quicker than regular bullets. Notice that an enemy above the player is destroyed by it."}
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Enemies",
+                          "content": [
+                            [
+                              "Enemies will spawn in a random location on the screen every X frames, with the interval being defined in the config file",
+                              "Enemies must not overlap the sides of the screen at the time of spawn",
+                              "Enemy shapes have a random number of vertices, between a min and max number defined in the config file",
+                              "Enemy shape radius will be defined in the config file",
+                              "Enemies will be assigned a random number when spawning",
+                              "Enemies will be assigned a random speed when spawning, between a min and max value defined in the config file",
+                              "When an enemy reaches a window boundary, it should bounce off and travel in the opposite direction at the same speed",
+                              "When large enemies collide with a bullet or the player, they are destroyed and N number of small enemies spawn in its place, where N is the number of vertices the original enemy had. Each small enemy must have the same number of vertices, color, and speed as the original. The small entities travel outward at angles of fixed intervals equal to (360 / vertices). So if an enemy had 5 vertices, then 5 small enemies would be generated travelling outwards in intervals of 72 degrees."
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Score",
+                          "content": [
+                            [
+                              "Each time an enemy spawns it is assigned a score of N*100, where N is the number of vertices the enemy has. Small enemies get double this value.",
+                              "Enemies killed by bullets add to the game score",
+                              "The score should be displayed in the top-left corner of the screen, in the font defined in the config file"
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Drawing",
+                          "content": [
+                            [
+                              "In the drawing system, all enemies should be given a slow rotation, which looks nicer.",
+                              "Any Entity with a lifespan and is alive should have its color's alpha channel set to a ratio of how long it has left to live. If an Entity has a lifespan of 80 frames and only has 25 frames remaining, its alpha should be (float)25 / 80 * 255. Alpha values will range from 255 at instantiation to 0 by end of life."
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "GUI",
+                          "content": [
+                            [
+                              "A GUI must be drawn in the top-right",
+                              "The GUI must display options to turn off each system independently",
+                              "For each entity in the game, the GUI must list the ID, tag, and position of that entity. You must display a list of all entities, as well as entities by tag. You must also have some way of destroying an entity through the UI",
+                              "You must be able to change the enemy spawn interval through the UI",
+                              "You must be able to manually spawn enemies through the UI"
+                            ],
+                            {
+                              "image": [
+                                {"src": "/Dave Churchill/Comp 4300/assignment_2-gui-01.jpg"},
+                                {"src": "/Dave Churchill/Comp 4300/assignment_2-gui-02.jpg"},
+                                {"src": "/Dave Churchill/Comp 4300/assignment_2-gui-03.jpg"},
+                                {"src": "/Dave Churchill/Comp 4300/assignment_2-gui-04.jpg"}
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Miscellaneous",
+                          "content": [
+                            [
+                              "The [k]P[/k] key should pause/unpause the game",
+                              "The [k]Esc[/k] key should end the game"
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Configuration File",
+                          "content": [
+                            {
+                              "image": [
+                                {"src": "/Dave Churchill/Comp 4300/assignment_2-config.jpg", "caption": "A sample config file"}
+                              ]
+                            },
+                            "The config file will have one line for the following specifications:",
+                            {
+                              "section": {
+                                "header": "Window W H FL FS",
+                                "content": [
+                                  "The window will be constructed with width W, height H, frame limit FL, and a 0 or 1 flag FS for full screen."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Font F S R G B",
+                                "content": [
+                                  "The font properties are the same as assignment 1."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Player SR CR S FR FG FB OR OG OB OT V",
+                                "content": [
+                                  {
+                                    "table": [
+                                      [{"td": "Shape Radius"},{"td": "SR"},{"td": "int"}],
+                                      [{"td": "Collision Radius"},{"td": "CR"},{"td": "int"}],
+                                      [{"td": "Speed"},{"td": "S"},{"td": "float"}],
+                                      [{"td": "Fill Color"},{"td": "FR, FG, FB"},{"td": "int, int, int"}],
+                                      [{"td": "Outline Color"},{"td": "OR, OG, OB"},{"td": "int, int, int"}],
+                                      [{"td": "Outline Thickness"},{"td": "OT"},{"td": "int"}],
+                                      [{"td": "Shape Vertices"},{"td": "V"},{"td": "int"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Enemy SR CR SMIN SMAX OR OG OB OT VMIN VMAX L SI",
+                                "content": [
+                                  {
+                                    "table": [
+                                      [{"td": "Shape Radius"},{"td": "SR"},{"td": "int"}],
+                                      [{"td": "Collision Radius"},{"td": "CR"},{"td": "int"}],
+                                      [{"td": "Min / Max Speed"},{"td": "SMIN, SMAX"},{"td": "float, float"}],
+                                      [{"td": "Outline Color"},{"td": "OR, OG, OB"},{"td": "int, int, int"}],
+                                      [{"td": "Outline Thickness"},{"td": "OT"},{"td": "int"}],
+                                      [{"td": "Min / Max Vertices"},{"td": "VMIN VMAX"},{"td": "int, int"}],
+                                      [{"td": "Small Enemy Lifespan"},{"td": "L"},{"td": "int"}],
+                                      [{"td": "Spawn Interval"},{"td": "SI"},{"td": "int"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Bullet SR CR S FR FG FB OR OG OB OT V L",
+                                "content": [
+                                  {
+                                    "table": [
+                                      [{"td": "Shape Radius"},{"td": "SR"},{"td": "int"}],
+                                      [{"td": "Collision Radius"},{"td": "CR"},{"td": "int"}],
+                                      [{"td": "Speed"},{"td": "S"},{"td": "float"}],
+                                      [{"td": "Fill Color"},{"td": "FR, FG, FB"},{"td": "int, int, int"}],
+                                      [{"td": "Outline Color"},{"td": "OR, OG, OB"},{"td": "int, int, int"}],
+                                      [{"td": "Outline Thickness"},{"td": "OT"},{"td": "int"}],
+                                      [{"td": "Shape Vertices"},{"td": "V"},{"td": "int"}],
+                                      [{"td": "Lifespan"},{"td": "L"},{"td": "int"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Hints",
+                                "content": [
+                                  "Follow these hints in order:",
+                                  [
+                                    "Save the reading of the config file for later, after Entities have been implemented",
+                                    "Implement the [i]Vec2[/i] class",
+                                    "Implement the [i]EntityManager[/i] class along with [i]addEntity[/i] and [i]update()[/i] so you can test it in the [i]Game[/i] class.",
+                                    "Implement the basics of the [i]Game[/i] class:",
+                                    [
+                                      "Construct a player Entity using [i]EntityManager::spawnPlayer()[/i]",
+                                      "Implement basic drawing of entities using [i]Game::render()[/i]",
+                                      "Construct enemies using [i]EntityManager::spawnEnemy()[/i]",
+                                      "Construct bullets using [i]EntityManager::spawnBullet()[/i]"
+                                    ],
+                                    "Implement Player Movement in [i]Game::userInput()[/i] and [i]Game::movement()[/i]",
+                                    "Implement the [i]EntityManager::update()[/i] so that it removes dead entities",
+                                    "Implement the [i]EntityManager::getEntities(tag)[/i] functionality",
+                                    "User input should listen for key pressed and key released events. A key pressed event should set a flag in the player's Input component indicating which direction the player is travelling. Releasing should remove the flag.",
+                                    "The Movement system should read the player's input flags to determine which direction the player is moving.",
+                                    "Implement collisions in [i]Game::collision()[/i] and destroy entities that die",
+                                    "Implement the GUI last, unless you want it for debugging"
+                                  ]
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

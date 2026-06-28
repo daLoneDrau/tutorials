@@ -1,0 +1,394 @@
+{
+  "title": "Assignment 1",
+  "sections": [
+    {
+      "Course Introduction": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Intro to Game Programming",
+              "content": [
+                [
+                  "Emphasis on [u]Programming[/u]",
+                  "This course is",
+                  [
+                    "Programming that makes video games possible",
+                    "Game Engine/Gameplay Programming",
+                    "C++/SFML"
+                  ],
+                  "This course isn't",
+                  [
+                    "A game design course",
+                    "A unity tutorial"
+                  ]
+                ],
+                {
+                  "section": {
+                    "header": "Course Goals",
+                    "content": [
+                      [
+                        "Course Goal is to Learn",
+                        [
+                          "Game Programming",
+                          "Learn the ECS programming architecture",
+                          "Game programming patterns",
+                          "Software design principles",
+                          "Implement several different game projects"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Game Engines",
+                    "content": [
+                      [
+                        [
+                          "Many modern game engines exist",
+                          "Unity, Unreal, Godot, etc...",
+                          "Typically have a user interface to connect with, along with a coding interface as well"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "2D Game Engine Programming",
+                    "content": [
+                      [
+                        [
+                          "Game Engine Layout / Architecture",
+                          "Main Loop Structure / Tick Rate",
+                          "Game States and State Machines",
+                          "Asset Loading / Memory Management",
+                          "Sprites and Animations, Rendering",
+                          "Basic Shaders",
+                          "User Input Handling and Event Systems",
+                          "Data Oriented Design and Config Files",
+                          "Window / Menu / Drag & Drop Systems",
+                          "World View: Camera Systems / Viewports"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "ECS Game Engine Architecture",
+                    "content": [
+                      [
+                        "You will learn about:",
+                        [
+                          "ECS stands for Entities, Components, Systems",
+                          "Architecture, Design, Implementation",
+                          "ECS Classes, Structure, Memory Management",
+                          "Systems for Gameplay Mechanics"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Physics / Math for Games",
+                    "content": [
+                      [
+                        [
+                          "Vector Math / Class Implementation",
+                          "Game Object Kinematics",
+                          [
+                            "Position, Velocity, Rotation",
+                            "Acceleration, Gravity, Projectiles"
+                          ],
+                          "Collision Detection / Resolution",
+                          [
+                            "Circles, Rectangles",
+                            "Bounding Boxes"
+                          ],
+                          "Mass, Momentum, Inertia"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Gameplay Programming",
+                    "content": [
+                      [
+                        [
+                          "Basic Artificial Intelligence",
+                          [
+                            "NPC Behaviour, Steering, Pathfinding"
+                          ],
+                          "Entity Interactions / Dialogues",
+                          "Difficulty Settings / Game Config",
+                          "Game Events / Triggers",
+                          "Items / Inventory / Weapons",
+                          "Saving / Loading Games"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Plan of Attack",
+                    "content": [
+                      [
+                        [
+                          "Assignment 1",
+                          [
+                            "Simple game main loop",
+                            "Drawing a Sprite to the screen",
+                            "Playing a sound when something happens"
+                          ],
+                          "Introduce ECS Game Engine Architecture",
+                          [
+                            "Introduce new topics gradually",
+                            "New assignments incorporating the new topics"
+                          ]
+                        ]
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "ECS Game Programming",
+              "content": [
+                "Why use ECS for games? ECS stands for: Entities, Components, Systems. ECS is actually a software design paradigm. It can be used for all software, not just games. ECS uses composition-based design.",
+                {
+                  "section": {
+                    "header": "Entity",
+                    "content": [
+                      "An entity is any object in the game - the Player, a Platform, a Tile, a Bullet, the Enemy.",
+                      {
+                        "section": {
+                          "header": "Object Oriented Programming",
+                          "content": [
+                            "Object Oriented Programming (OOP) uses the concepts of Objects and Inheritance to implement specific functionality.",
+                            "Object Oriented Design (in games) is the process of strictly using OOP in order to design the architecture of the game engine and the entities within it.",
+                            "OOP / OO Design helps to manage data and code."
+                          ]
+                        }
+                      },
+                      "An Entity will be any object in the game. Each Entity will have an (x, y) position. Entity will be used as the base class for others, such as Tile or Player.",
+                      "Entities could be Static or Dynamic. A Static Entity, such as a Rock or a Tree would stay still and not have a velocity. An example of a Dynamic Entity would be a Bullet, or the Player. They would have a velocity and a position that would be constantly changing."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Component",
+                    "content": [
+                      "Components are properties that can be attached to Entities. ",
+                      "Examples of Components are:",
+                      [
+                        "Position",
+                        "Speed",
+                        "Bounding Box",
+                        "Health",
+                        "Weapon",
+                        "Damage"
+                      ]
+                    ]
+                  }
+                },
+                "Entity: an Entity is any object in the game",
+                ["Player", "Platform", "Tile", "Bullet", "Enemy"],
+                "Component: a Component is property attached to an Entity",
+                ["Position", "Texture", "Animation", "Health", "Gravity", "Components are [b]PURE DATA[/b]"],
+                "System: Systems are the code or logic that drives behaviour",
+                ["Movement", "Rendering", "Sound", "Physics"],
+                {
+                  "section": {
+                    "header": "ECS Example of Entity / Component",
+                    "content": [
+                      {"table": [
+                        [{"th": "Entity"}, {"td": "   "}, {"th": "Components"}],
+                        [{"td": "Player"}, {"td": "   "}, {"td": ["Position, Speed, BBox, Sprite, Health, Gravity, Input"]}],
+                        [{"td": "Enemy"}, {"td": "   "}, {"td": ["Position, Speed, BBox, Sprite, Health, AI"]}],
+                        [{"td": "Bullet"}, {"td": "   "}, {"td": ["Position, Speed, BBox, Sprite, Angle, Damage, Lifespan"]}],
+                        [{"td": "Tile"}, {"td": "   "}, {"td": ["Position, Speed, BBox"]}]
+                      ]}
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "ECS Example of System",
+                    "content": [
+                      {"table": [
+                        [{"th": "System"}, {"td": "   "}, {"th": "Code / Logic"}],
+                        [{"td": "Movement System"}, {"td": "   "}, {"td": {"code": "for (e: entities) {\n    e.pos += e.velocity;\n}"}}],
+                        [{"td": ""}, {"td": "   "}, {"th": ""}],
+                        [{"td": "Collision System"}, {"td": "   "}, {"td": {"code": "for (b: bullets) {\n    for (e: entities) {\n        if Physics::IsCollision(b, e) {\n            e.health -= b.damage;\n            b.destroy();\n        }\n    }\n}"}}],
+                        [{"td": ""}, {"td": "   "}, {"th": ""}],
+                        [{"td": "Rendering System"}, {"td": "   "}, {"td": {"code": "for (e: entities) {\n    window.draw(e.sprite, e.pos);\n}"}}]
+                      ]}
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Engine Architecture",
+                    "content": [
+                      [
+                        "Game Engine",
+                        [
+                          "Scene",
+                          [
+                            "Systems",
+                            "EntityManager",
+                            [
+                              "Entity", "Component"
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Assignment 1": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Assignment Requirements",
+              "content": [
+                {"image": {"src": "/Dave Churchill/Comp 4300/assignment_1-01.jpg", "caption": "Assignment 1 - Final Product"}},
+                "Assignment 1 will display a number of different shapes in a window. The properties of all shapes will be defined in a configuration file. This will be an introductory assignment to familiarize yourself with:",
+                ["File reading", "Setting up the window", "drawing basic shapes", "Creating a basic user interface"],
+                {"image": {"src": "/Dave Churchill/Comp 4300/assignment_1-02.jpg", "caption": "The user interface in action"}},
+                {
+                  "section": {
+                    "header": "Program Specifications",
+                    "content": [
+                      "You will write a program that will read descriptions of shapes from a configuration file, and then draw them to the screen. Each shape will have a name, position, speed, color, as well as properties unique to each shape. For example, a Rectangle will have a width and height, while a Circle will have a radius. The position of the shape refers to its upper-left corner.",
+                      "The shapes are required to \"bounce\" off the sides of the application's window. That means that if the shape hits the left side of the widnow, its x-velocity is reversed. Likewise, if it hits the top of bottom of thw window its y-velocity is reversed. Each shape's name should be rendered in its exact center, in the font size and color defined in the configuration file.",
+                      "A user interface is also needed that displays the following fields:",
+                      [
+                        "A list of all shapes that allows you to select a shape to edit its properties",
+                        "Toggle whether or not the shape is drawn",
+                        "Change the shape's scale (0 to 4)",
+                        "Change the shape's x- and y-velocity (-8 to 8)",
+                        "Change the shape's colour",
+                        "Change the shape's name"
+                      ],
+                      {
+                        "section": {
+                          "header": "The Config File",
+                          "content": [
+                            "A sample configuration file is available below:",
+                            "[i]config.txt[/i]",
+                            {"code": "Window 1280 720\nFont fonts/tech.ttf 18 255 255 255\nCircle CGreen 100 100 -3 2 0 255 0 50\nCircle CBlue 200 200 2 4 0 0 255 100\nCircle CPurple 300 300 -2 -1 255 0 255 75\nRectangle RRed 200 200 4 4 255 0 0 50 25\nRectangle RGrey 300 250 -2 2 100 100 100 50 100\nRectangle RTeal 25 100 -2 -2 0 255 255 100 100"},
+                            "",
+                            "Each line of the configuration file specifies one of the config settings for the assignment. Each line follows a specific format:",
+                            {
+                              "section": {
+                                "header": "Window W H",
+                                "content": [
+                                  "Declares the app window must be constructed with width W and height H.",
+                                  {
+                                    "table": [
+                                      [{"td": "Size"}, {"td": "(W, H)"}, {"td": "int, int"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Font F S R G B",
+                                "content": [
+                                  "Declares the font used to draw the text in the shapes.",
+                                  {
+                                    "table": [
+                                      [{"td": "Font File"}, {"td": "F"}, {"td": "string"}],
+                                      [{"td": "Font Size"}, {"td": "S"}, {"td": "int"}],
+                                      [{"td": "Font RGB Colour"}, {"td": "(R, G, B)"}, {"td": "int, int, int"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Rectangle N X Y SX SY R G B W H",
+                                "content": [
+                                  "Defines a Rectangle shape.",
+                                  {
+                                    "table": [
+                                      [{"td": "Shape Name"}, {"td": "N"}, {"td": "string"}],
+                                      [{"td": "Initial Position"}, {"td": "(X, Y))"}, {"td": "int, int"}],
+                                      [{"td": "Initial Speed"}, {"td": "(SX, SY))"}, {"td": "int, int"}],
+                                      [{"td": "RGB Colour"}, {"td": "(R, G, B)"}, {"td": "int, int, int"}],
+                                      [{"td": "Size"}, {"td": "(W, H)"}, {"td": "int, int"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Circle N X Y SX SY R G B RD",
+                                "content": [
+                                  "Defines a Circle shape.",
+                                  {
+                                    "table": [
+                                      [{"td": "Shape Name"}, {"td": "N"}, {"td": "string"}],
+                                      [{"td": "Initial Position"}, {"td": "(X, Y))"}, {"td": "int, int"}],
+                                      [{"td": "Initial Speed"}, {"td": "(SX, SY))"}, {"td": "int, int"}],
+                                      [{"td": "RGB Colour"}, {"td": "(R, G, B)"}, {"td": "int, int, int"}],
+                                      [{"td": "Radius"}, {"td": "RD"}, {"td": "int"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Hints",
+                    "content": [
+                      [
+                        "Create a custom Entity to store all the shape's properties.",
+                        "A shape will touch the sides if its bounding box makes contact. The bounding box is a rectangle."
+                      ],
+                      {
+                        "section": {
+                          "header": "Main Loop",
+                          "content": [
+                            "The main loop will follow this pattern:",
+                            {"code": "while (true) {\n    // process user input\n    processInput();\n\n    // update internal game simulation\n    update();\n\n    // render current scene\n    render()\n}"}
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,870 @@
+{
+  "title": "Assignment 3",
+  "sections": [
+    {
+      "Collision Detection, Collision Resolution and Axis-Aligned Boundary Boxes (AABB)": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Collision Detection",
+              "content": [
+                "Collision programming involves [b]two[/b] stages:",
+                {
+                  "section": {
+                    "header": "Collision Detection",
+                    "content": [
+                      "Given two moving entities with a given shape or bounds, determine if they intersect. Detection is a geometric problem."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Collision Resolution",
+                    "content": [
+                      "When two entities collide, determine what to do to 'resolve' the physics of the simulation."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Entity Bounding Shapes",
+              "content": [
+                "In the real world, objects can have arbitrary shapes or interaction surfaces. In programming, these are difficult to store, compute, and simulate accurately. All shapes in computer simulations must be made of [b]primitive[/b] types:",
+                ["2D: Line, Triangle, Circle, Rectangle", "3D: Sphere, Plane, Cylinder, Prism"],
+                "Using these types we define the concept of a [b]Bounding Shape[/b] - a simple shape that simulates the interactions bounds of a complex one.",
+                {
+                  "image": { "src": "/Dave Churchill/Comp 4300/bounding_shape-01.jpg", "caption": "Complex shapes with simple bounding shapes."}
+                },
+                {
+                  "section": {
+                    "header": "2D Bounding Shapes",
+                    "content": [
+                      "The simplest 2d bounding shape to store and compute is a circle with a given radius.",
+                      "Other 2d bounding shapes can be constructed in a number of line segments. The simplest of these is a rectangle.",
+                      {
+                        "section": {
+                          "header": "Bounding Box",
+                          "content": [
+                            "Most classic 2D games use rectangular sprite graphics. These rectangular images make a natural fit for a rectangular bounding box. Usually the bounding box will be the smallest rectangle that can fit the sprite.",
+                            {
+                              "image": [
+                                { "src": "/Dave Churchill/Comp 4300/bounding_box-02.jpg", "caption": "A variety of sprites and their bounding boxes."},
+                                { "src": "/Dave Churchill/Comp 4300/bounding_box-03.jpg", "caption": "A few sprites whose bounding boxes are defined in a custom size."}
+                                ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Axis-Aligned Boundary Boxes",
+                          "content": [
+                            "Rectangles in a 2D plane can take any orientation as long as all four corners form 90 degree angles. Detecting intersections of arbitrary rectangles can be quite slow, involving computing if all lines intersect. By aligning rectangles with the x/y axis, you can trade arbitrary alignment for vary fast intersection / collision checks.",
+                            "The simplest collision check you can perform is to see if a single point is inside an AABB.",
+                            "The next check is to determine if two AABBs intersect. Horizontal overlap happens if the top of each box is higher than the bottom of the other. Vertical overlap happens if the left of each box is less than the right of the other. Two AABBs intersect if they have both horizontal and vertical overlap. This does not tell us by how much they intersected.",
+                            {
+                              "image": [
+                                { "src": "/Dave Churchill/Comp 4300/bounding_box-04.jpg", "caption": "Logic for checking if a Point is inside an AABB."},
+                                { "src": "/Dave Churchill/Comp 4300/bounding_box-05jpg", "caption": "Horizontal overlap between two AABBs."},
+                                { "src": "/Dave Churchill/Comp 4300/bounding_box-06.jpg", "caption": "Vertical overlap between two AABBs."}
+                                ]
+                            },
+                            {
+                              "section": {
+                                "header": "Centered AABBs",
+                                "content": [
+                                  "Centered AABBs are AABBs that use the center of the Entity for the position of the AABB.The overalp betwen two Centered AABBs can be found by calculating the delta between the two center points and comparing it to the widths and heights of the AABBs",
+                                  {
+                                    "image": [
+                                      { "src": "/Dave Churchill/Comp 4300/bounding_box-07.jpg", "caption": "Sample code for a Centered AABB."},
+                                      { "src": "/Dave Churchill/Comp 4300/bounding_box-08.jpg", "caption": "Formula for finding the overlap between two Centered AABBs."}
+                                      ]
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Collision Resolution",
+              "content": [
+                "Collision resolution depends entirely on the physics of your game world; what should happen when two objects collide? In some cases, one of the objects should be pushed out to no overlap. In other cases, one object gets blown up.",
+                "When detecting collisions in the game, they will first happen in a specific frame. The frame before collision is detected, there will be no collision. When you detect overlap, you will want to know which direction movement came from. If you store the AABBs position in the previous frame, then you can check for horizontal or vertical overlap there. That will give you an indication from which direction movement came.",
+                "Fore example, if in the previous frame overlap.y > 0, then that means collision movement came from the left or right side. Resolve collision by pushing in an x direction. If in the previous frame overlap.x > 0, then that means collision movement came from the top or bottom. Resolve collision by pushing in an y direction.",
+                [
+                  {
+                    "compund_text": [
+                      "A collision came from the top if previous overlap.x > 0 and its y is higher.",
+                      {"image": { "src": "/Dave Churchill/Comp 4300/bounding_shape-09.jpg"}}
+                    ]
+                  },
+                  {
+                    "compund_text": [
+                      "A collision came from the bottom if previous overlap.x > 0 and its y is lower.",
+                      {"image": { "src": "/Dave Churchill/Comp 4300/bounding_shape-10.jpg"}}
+                    ]
+                  }
+                ],
+                {
+                  "section": {
+                    "header": "Tricky Resolution Cases",
+                    "content": [
+                      "What if their was no overlap in either the x or y in the previous frame? You have to decide how to resolve collisions based on previous position and/or size.",
+                      {"image": { "src": "/Dave Churchill/Comp 4300/bounding_box-11.jpg"}, "caption": "Collision between two objects that had no overlap in a previous frame."},
+                      "What if an entity overlap with multiple entities, such as moving near a stack? Order of collision checks can help, but may be tricky.",
+                      {"image": { "src": "/Dave Churchill/Comp 4300/bounding_box-12.jpg"}, "caption": "Collision with multiple entities."}
+                    ]
+                  }
+                },
+                "All collision resolution discussed is for the simple case of avoiding overlap. This is useful for",
+                ["walking on tiles", "not being able to pass through tiles", "bullets hitting entities"],
+                "There are still other kinds of collision resolution:",
+                ["Kinematic object elastic / inelastic collisions", "Physics simulators with mass and force"],
+                {
+                  "section": {
+                    "header": "Super Mario Bros.",
+                    "content": [
+                      "Super Mario Bros collision detection operate by using simple AABB overlap detection. If Mario and an enemy collide, Mario kills them if he is moving downwards, ignoring and x overlap."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Recommended Videos",
+                    "content": [
+                      [
+                      {
+                        "url": {
+                          "href": "https://youtu.be/_FQJEzJ_cQw",
+                          "html": "How is this speedrun possible by Bismuth"
+                        }
+                      },
+                      {
+                        "url": {
+                          "href": "https://youtu.be/UnU7DJXiMAQ",
+                          "html": "Walls, Floors & Ceilings by Pannenkoek"
+                        }
+                      },
+                      {
+                        "url": {
+                          "href": "https://youtu.be/kpk2tdsPh0A",
+                          "html": "SM64 -Watch for Rolling Rocks by Pannenkoek"
+                        }
+                      }
+                        ]
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Engine Architecture Upgrades, Basic Texture Animation": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Assignment 2 Architecture Review",
+              "content": [
+                "The engine for Assignment 2 was limited. It could:",
+                [
+                  "create game objects as Entities",
+                  "add Component data to Entities",
+                  "implement gameplay via Systems",
+                  "pause and exit the game",
+                  "init / load configuration from a file."
+                ],
+                "It could not:",
+                [
+                  "display more than one 'scene'",
+                  "load texture or sound assets",
+                  "display textured animations",
+                  "have a menu or interface"
+                ],
+                {
+                  "section": {
+                    "header": "The Game Class",
+                    "content": [
+                      "The [b]Game[/b] class in Assignment 2 handled all the functionality for the game. Some of this functionality would be needed in all game scenes:",
+                      ["Main Loop Structure", "Game Window", "Config", "Assets"],
+                      "Some of this functionality should be specific to the type of game scene currently on display:",
+                      ["Input Controls", "Rendering", "Game Logic", "Collisions"]
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Assignment 3 Architecture - Game Engine and Scenes",
+              "content": [
+                "In Assignment 3, we will split the previous [b]Game[/b] class into two separate classes to handle the functionality. The first is the [b]GameEngine[/b] class, responsible for functionality present in all scenes, constructing and management of scenes, and running or quitting the game. The other is the [b]Scene[/b] class, responsible for functionality specific to each scene and entities relevant to that scene.",
+                {
+                  "section": {
+                    "header": "GameEngine",
+                    "content": [
+                      "The [b]GameEngine[/b] class will store top-level game data, such as assets, the game window, and scenes. It will perform top-level functionality, such as changing scenes and handling input. Its Run() method will contain the main game loop. And a pointer to the [b]GameEngine[/b] instance will be passed to all [b]Scenes[/b] in their constructor, giving them access to assets, the main window, and other game scenes.",
+                      {
+                        "section": {
+                          "header": "GameEngine Purpose",
+                          "content": [
+                            [
+                              "Store top-level game data",
+                              ["Assets", "the game Window", "Scenes"],
+                              "Performs top-level functionality",
+                              ["Changing scenes","Handling input"],
+                              "[i]run()[/i] is the main game loop",
+                              "All child scenes will have a pointer to the [b]GameEngine[/b] instance"
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "image": { "src": "/Dave Churchill/Comp 4300/assignment_3-arch-01.jpg", "caption": "The GameEngine Class Model."}
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Scene",
+                    "content": [
+                      {
+                        "section": {
+                          "header": "Scene Purpose",
+                          "content": [
+                            [
+                              "Stores common scene data",
+                              ["a pointer to the [b]EntityManager[/b]", "the Frame Count", "Actions that have been submitted"],
+                              "Scene-specific functionality will be carried out in derived classes",
+                              "The base [b]Scene[/b] class will be abstract and cannot be instantiated",
+                              "[i]simulate(int)[/i] call the derived scene's update a given number of times"
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "image": { "src": "/Dave Churchill/Comp 4300/assignment_3-arch-02.jpg", "caption": "The GameEngine Class Model."}
+                      },
+                      {
+                        "section": {
+                          "header": "Scene Derived Classes",
+                          "content": [
+                            "Scene-derived classes will store scene-specific data, such as the level, a pointer to the player, or the config. Scene-specific Systems are defined within the derived class. Some Scene-derived classes will require very different functionality, so [i]update()[/i], [i]doAction()[/i], and [i]render()[/i] should be implemented for each scene."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Scene Switching",
+                    "content": [
+                      "In order to facilitate scene switching, the [b]GameEngine[/b] class will store a dictionary of identifiers pointing to [b]Scene[/b] instances. The current scene's identifier will be stored as a field. Method 'getCurrentScene()' will also return the active [b]Scene.changeScene(string, scene)[/b] changes the scene to a new scene, or a previously-stored scene. This mimics a finite state machine for [b]Scene[/b] switching.",
+                      {
+                        "section": {
+                          "header": "Scene Switching Example",
+                          "content": [
+                            [
+                              "[b]GameEngine::changeScene()[/b] is called to change the scene to 'menu'.",
+                              "Player is presented with the menu scene",
+                              "Player selects a level on the menu",
+                              [
+                                "[i]LevelPath[/i] = currently selected menu item",
+                                "[b]Menu[/b] tells [b]GameEngine[/b] to change scenes",
+                                {"code": "game->changeScene<Scene_Play>(\"play\", LevelPath)"}
+                              ]
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Asset Management",
+                    "content": [
+                      "Assets are external files loaded into our games. These include:",
+                      [
+                        "Textures (image files: .png, .jpg)",
+                        "Animations (textures + bookkeeping)",
+                        "Sounds (sound files: .wav, .ogg)",
+                        "Fonts (filetype: .ttf)"
+                      ],
+                      "The philosophy is [i]\"Load once, use often\"[/i].",
+                      {
+                        "section": {
+                          "header": "Assets Class",
+                          "content": [
+                            "We want to load assets that are defined in an external configuration file",
+                            {"code":  "Texture MegaMan textures/MMS.png\nSound MegaDeath sounds/death.wav"},
+                            "Assets are loaded into an [b]Assets[/b] class where they can be referenced by name.",
+                            {"code": "assets->getTexture(\"MegaMan\");\nassets->getSound(\"MegaDeath\");"},
+                            "The [b]Assets[/b] class will store the assets in a dictionary.",
+                            {"code": "std::map<std::string, AssetType>"},
+                            "The [b]Assets[/b] class will live inside the [b]GameEngine[/b] class, and will be initialized inside [b]GameEngine::init()[/b]. Scenes will access the assets library via pointers to the [b]GameEngine[/b] instance.",
+                            {"code": "game->getAssets()"},
+                            "Assets should be loaded once at the beginning of the game, and are then available in any scene. For larger applications, you may want to load assets per scene. For example, loading screens on level change in most games are for Asset management and other data loading purposes.",
+                            {
+                              "image": { "src": "/Dave Churchill/Comp 4300/assignment_3-arch-04.jpg", "caption": "The Assets Class Model."}
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Textures & Animations",
+              "content": [
+                {
+                  "section": {
+                    "header": "What is a Texture?",
+                    "content": [
+                      "A texture is a graphic mapped to a shape. It can be generate dynamically or loaded from an existing image file. A rectangular shaoe with a texture attached to it is typically called a [i]'Sprite'[/i]. Sprites are ver common in older games - some older computers had sprite hardware."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Texture / Shape Size",
+                    "content": [
+                      "Sometimes the texture will not be the same size as the Entity's shape. You can specify a sub-rectangle of the texture which will be drawn.",
+                      {
+                        "section": {
+                          "header": "2D Textures from code in Godot",
+                          "content": [
+                            "Textures can be loaded from file in Godot:",
+                            {"code": "func load_texture(name: String, path: String) -> ImageTexture:\n    var image: Image = Image.load_from_file(path)\n    return ImageTexture.create_from_image(image)"}
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Texture Sheets",
+                          "content": [
+                            "Games have many textures that will be used, and it can be hard to manage files. Texture sheets can be used that store many tetxures within the same image. This is an easy way to organize and store textures. If the entire sheet is loaded into graphics memory, less texture swapping occurs.",
+                            "Instead of loading a different texture for each character, pose, or tile, you just assign the correct sub-rectangle that is to be drawn. Rectangles can be stored as variables or computed dynamically.",
+                            {
+                              "section": {
+                                "header": "2D Textures from a sheet using code in Godot",
+                                "content": [
+                                  "If you have loaded a texture sheet, but need to access the individual textures within:",
+                                  {"code": "func get_texture_from_sheet(x: int, y: int, width: int, height: int, sprite_sheet: ImageTexture) -> ImageTexture:\n    var image: Image = sprite_sheet.get_image().get_region(Rect2i(x, y, width, height))\n    return ImageTexture.create_from_image(image)"}
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Texture-Based Animations",
+                    "content": [
+                      "An Animation is a sequence of images that appear as a motion when played quickly. Texture animation can be achieved by quickly displaying different textures.",
+                      {
+                        "section": {
+                          "header": "Animation Implementation",
+                          "content": [
+                            "The [b]Animation[/b] class will store all variables related to an animation, with and update() function to provide logic to progress to the next animation.",
+                            {
+                              "image": { "src": "/Dave Churchill/Comp 4300/assignment_3-arch-05.jpg", "caption": "The Animation Class Model."}
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Texture Animation in Godot",
+                          "content": [
+                            "Texture animation can be achieved in Godot through the use of an [url]AnimatedSprite2D^^https://docs.godotengine.org/en/stable/classes/class_animatedsprite2d.html[/url] instance. Animations are created using a [url]SpriteFrames^^https://docs.godotengine.org/en/stable/classes/class_spriteframes.html[/url] resource.",
+                            {
+                              "section": {
+                                "header": "Creating an AnimatedSprite2D from code in Godot",
+                                "content": [
+                                  { "code": "func get_animated_sprite_2d(animation_name: String, textures: Array[Texture2D], durations: Array[float]) -> AnimatedSprite2D:\n    var sprite_frames: SpriteFrames = SpriteFrames.new()\n    var animated_sprite_2d: AnimatedSprite2D = AnimatedSprite2D.new()\n    animated_sprite_2d.sprite_frames = sprite_frames\n    add_animation_to_sprite_frames(sprite_frames, animation_name, textures, durations)\n    return animated_sprite_2d\n\n\nfunc add_animation_to_sprite_frames(sprite_frames: SpriteFrames, animation_name: String, textures: Array[Texture2D], durations: Array[float]) -> void:\n    sprite_frames.add_animation(animation_name)\n    for i in len(textures):\n\tsprite_frames.add_frame(\n\t    animation_name,\n\t    textures[i],\n\t    durations[i]\n\t)"}
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "image": { "src": "/Dave Churchill/Comp 4300/assignment_3-arch-06.jpg", "caption": "Assignment 3 Model."}
+          },
+          {
+            "section": {
+              "header": "Recommended Videos",
+              "content": [
+                [
+                {
+                  "url": {
+                    "href": "https://youtube.com/watch?v=fJosaT1sCfs",
+                    "html": "The Importance of Keyframes / Run Cycles"
+                  }
+                },
+                {
+                  "url": {
+                    "href": "https://youtu.be/Tfh0ytz8S0k",
+                    "html": "How Old School Graphics Worked"
+                  }
+                }
+                  ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Game Actions & Replay Systems": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Game Inputs & Actions",
+              "content": [
+                "Games are interactive and players get to influence gameplay via inout devices. Inputs are given by the player to influence what Entities do. The result of an input is usually an action the player wants to happen in the game, such as jumping, shooting, or moving. Actions can also be called commands.",
+                "How the player inputs the actions isn't important, as long as it is easy to perform. Similarly, the game engine shouldn't care which inout device caused an action to be triggered. The game engine should only care about the logic required to carry out the action. Ideally, you want to decouple the action logic from the inouts that triggered them.",
+                {
+                  "section": {
+                    "header": "Game Action Implementation",
+                    "content": [
+                      "In Assignment 2, actions were performed inside the event loop. When a specific key was pressed, specific game logic was called. You couldn't separate the two processes, or re-map keys for instance. All input handling and systems logic was done in the [b]Game[/b] class, since there was only one scene.",
+                      {
+                        "image": { "src": "/Dave Churchill/Comp 4300/actions_replays-01.jpg", "caption": "A review of the Assignment 2 Architecture."}
+                      },
+                      {
+                        "section": {
+                          "header": "Action Class",
+                          "content": [
+                            "We want to implement a system in a scene where the scene only know the type of action the player wants to perform, and doesn't care about where the input came from. We will want an Action class that will be a container for the type of action the player wants the scene to perform. All user input will be handled within the [b]GameEngine[/b] class, where [b]Actions[/b] will be created and dispatched to scenes to have their logic carried out. The [b]Scene[/b] class will have a doAction() method that will perform logic based on a specific [b]Action[/b] object.",
+                            "Actions will be given a name (usually associated with the action, such as jump or left). Actions initiated by keyboard or controller will have two phases: press and release which denote the start and end of an action. So Actions will have a type of action as well, [i]'START'[/i] or [i]'END'[/i].",
+                            {
+                              "image": { "src": "/Dave Churchill/Comp 4300/actions_replays-03.jpg", "caption": "Sample implementation of the Action class."}
+                            },
+                            {
+                              "section": {
+                                "header": "Action Start / End",
+                                "content": [
+                                  ["Action Start = Press Button", "Action End  = Release Button"],
+                                  "For example:",
+                                  {"code": "{ \"Right\", \"Start\"}"},
+                                  "Would be a command for the player to move right continuously as if the right input button were being held down. The action would only stop with:",
+                                  {"code": "{ \"Right\", \"End\"}"}
+                                ]
+                              }
+                            },
+                            "We want to be able to map specific user input to a specific Action object. Key Input Events are usually mapped to Integer constants. You could use a dictionary for that. The Scene base class will store a map of input key values to action names.",
+                            {"code": "std::map<int, std::string> actionMap;"},
+                            "To register an action, the method [i]registerAction(int, string)[/i] will be provided which stores the values in the dictionary. Each child Scene will have its own map so it can have different actions available.",
+                            {
+                              "image": { "src": "/Dave Churchill/Comp 4300/actions_replays-03.jpg", "caption": "Input keys being registered in a Scene."}
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Creating Action Objects",
+                          "content": [
+                            "The [b]GameEngine[/b] class will handle the actual input key presses and construct an [b]Action[/b] to dispatch to the current scene. When a Key is pressed, the [b]GameEngine[/b] will ask the [b]Scene[/b] if it has an action name associated with the key's integer value. If the [b]Scene[/b] has an associated action registered, the [b]GameEngine[/b] will create an [b]Action[/b] instance with the correct NAME and TYPE.",
+                            {
+                              "image": { "src": "/Dave Churchill/Comp 4300/actions_replays-05.jpg", "caption": "In this example, the GameEngine checks the current Scene for an action registered for the Key event and dispatches an Action."}
+                            }
+                          ]
+                        }
+                      },
+                      "Once the [b]Action[/b] is sent to the [b]Scene[/b], the [b]Scene[/b] performs the logic associated with the [b]Action[/b] without caring how it was generated.",
+                      {
+                        "image": { "src": "/Dave Churchill/Comp 4300/actions_replays-05.jpg", "caption": "An example of a Scene's doAction() method implementation."}
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Replays",
+              "content": [
+                "Many games have functionality to record gameplay. Now that Scenes don't care where an Action comes from, we can implement Replay files by storing Action strings along with the specific game frame at which they occurred. Then load this file into the GameEngine and feed actions to the Scene."
+              ]
+            }
+          },
+          {
+            "image": { "src": "/Dave Churchill/Comp 4300/actions_replays-07.jpg", "caption": "A review of the Assignment 3 Architecture."}
+          }
+        ]
+      }
+    },
+    {
+      "Assignment 3": {
+        "key_concepts": [
+          {
+            "image": [
+              { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-01.jpg", "caption": "Assignment 3 main menu."},
+              { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-02.jpg", "caption": "Assignment 3 level start."},
+              { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-03.jpg", "caption": "Assignment 3 destroying a brick."}
+              ]
+          },
+          {
+            "section": {
+              "header": "Assignment 3 Specification",
+              "content": [
+                {
+                  "section": {
+                    "header": "Assets",
+                    "content": [
+                      [
+                        "Entities in the game will be rendered using various Textures and Animations which we wil be calling Assets (including Fonts).",
+                        "Assets are loaded once at the beginning of the program and stored in the Assets class, which is stored by the GameEngine class.",
+                        "All Entity positions denote the center of their rectangular sprite, and the center of their bounding box, if they have one.",
+                        "All Assets are defined in assets.txt, with the syntax defined below."
+                      ],
+                      {
+                        "section": {
+                          "header": "Configuration File Specifications",
+                          "content": [
+                            {
+                              "section": {
+                                "header": "Texture Asset Specification:",
+                                "content": [
+                                  "Texture N P X Y S",
+                                  ["Texture Name N string","Texture FilePath P string","Texture X (left) Position X int","Texture Y (top) Position Y int","Enable Smooth S bool (0/1)"],
+                                  {
+                                    "image": [
+                                      { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-17.jpg", "caption": "Texture Assets (example)."}
+                                      ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Animation Asset Specification:",
+                                "content": [
+                                  "Animation N T F D S",
+                                  ["Animation Name N string","Texture Name T string","Frame Count F int","Animation Duration D int"],
+                                  {
+                                    "image": [
+                                      { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-18.jpg", "caption": "Animation Assets (example)."}
+                                      ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Font Asset Specification:",
+                                "content": [
+                                  "Font N P",
+                                  ["Font Name N string","Font FilePath P string"],
+                                  {
+                                    "image": [
+                                      { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-19.jpg", "caption": "Font Assets (example)."}
+                                      ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Tile Asset Specification:",
+                                "content": [
+                                  "Tile N GX GY",
+                                  ["Animation Name N std::string (Animation asset for this tile)","Grid X Position float","Grid Y Position float"],
+                                  {
+                                    "image": [
+                                      { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-20.jpg", "caption": "Tile Assets (example)."}
+                                      ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Player Asset Specification:",
+                                "content": [
+                                  "Player GX GY CW CH LRS JS MV GV B",
+                                  ["Grid X, Y Position float, float","Bounding Box Width, Height float, float","Left/Right Speed float","Jump Speed float","Max Velocity float", "Gravity float", "Bullet Animation std::string"],
+                                  {
+                                    "image": [
+                                      { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-21.jpg", "caption": "Player Assets (example)."}
+                                      ]
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Window Specifications",
+                    "content": [
+                      "Window W H F M",
+                      ["Window Width W int","Window Height H int","Frame rate F int","Toggle Full Screen Mode M bool (0/1)"]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Player",
+                    "content": [
+                      [
+                        "The Player Entity int he game is represented by MegaMan, which has several different Animations: Stand, Run, and Air. You must determine which state the player is currently in and assign the correct Animation.",
+                        "The player moves with the following controls:",
+                        [
+                          "Left:  A key",
+                          "Right: D key",
+                          "Jump:  W key",
+                          "Shoot: [Space] key"
+                        ],
+                        "The player can move left, right, or shoot at any time during the game. This means the player can move left or right while in mid-air.",
+                        "The player can only jump if it is standing on a tile.",
+                        "If the jump key is held down, the player should nto continuously jump, but instead only jump once per button press. If the player lets go of the jump key mid-jump, they should immediately begin to fall.",
+                        "If the player moves left or right, they should face that direction until the opposite direction has been pressed.",
+                        "Bullets shot by the player travel in the direction they are facing.",
+                        "The player collides with 'Tile' entities in the level and cannot move through them. The player lands on a TIle entity and stands in place if it falls on them from above.",
+                        "The player does not collide with 'Decorator' entities in the level.",
+                        "If the player falls below the bottom of the screen, they respawn at the start",
+                        "The player should have a Gravity component which constantly accelerates it downward on the screen until it collides with a tile.",
+                        "The player has a maximum speed specified in the Level file which should not be exceeded in the x- or y-axis.",
+                        "The player's sprite and bounding box are centered on the player's position."
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Animations",
+                    "content": [
+                      [
+                      "Animations are implemented by storing multiple frames inside a texture.",
+                      "The Animation class handles frame advancement based on animation speed",
+                      "You need to implement Animation::update() to properly progress animations",
+                      "You need to implement Animation::hasEnded() which returns true if animation has finished its last frame; false otherwise",
+                      "Animations can be repeating (loop forever) or non-repeating (play once)",
+                      "Any entity with a non-repeating animation should be destroyed once its Animation's hasEnded() returns true"
+                        ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Decorations",
+                    "content": [
+                      [
+                      "Decoration entities are drawn to the screen and have no interaction with any other entities in the game in any way",
+                      "Decorations can be given an animation, but intuitively they should be reserved for static things like clouds, bushes, etc."
+                        ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Tiles",
+                    "content": [
+                      [
+                      "Tiles are entities that define the level geometry and interact with players.",
+                      "Tiles can be given an animation that is defined in the Assets file.",
+                      "Tiles will be given a bounding box equal to the size of their animation. tile->getComponent<Animation>().animation.getSize()",
+                      "The current animation for a tile can be retrieved with: tile->getComponent<Animation>().animation.getName()",
+                      "Tiles have different behavior depending on the Animation they are given."
+                        ],
+                      {
+                        "section": {
+                          "header": "Brick Tiles",
+                          "content": [
+                            "Brick tiles are given the 'Brick' animation",
+                            "When a brick tile collides with a bullet or if the player hits it from below:",
+                            [
+                              "Its animation should change to 'Explosion' non-repeat",
+                              "Non-repeating animation entities are destroyed when hasEnded() is true",
+                              "Its BoundingBox component gets removed"
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Question Tiles",
+                          "content": [
+                            "Question tiles are given the 'Question' animation when created",
+                            "When a Question tile collides with a player hitting from below:",
+                            [
+                              "Its animation should change to 'Question2'",
+                              "A temporary lifespan entity with the 'Coin' animation should appear for 30 frames, 64 pixels above the location of the Question tile"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Drawing",
+                    "content": [
+                      "Should stay the same"
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Miscellaneous",
+                    "content": [
+                      [
+                        "The 'P' key should pause the game",
+                        "The 'T' key should toggle drawing textures",
+                        "The 'C' key should toggle drawing bounding boxes of entities",
+                        "The 'G' key should toggle drawing of the grid",
+                        "The 'Esc' key should go back to the Main Menu or quit the game",
+                        {
+                          "image": [
+                            { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-04.jpg", "caption": "The game with the grid toggled on."}
+                            ]
+                        }
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Level Creation",
+                    "content": [
+                      "You are responsible for designing your own levels.",
+                      {
+                        "section": {
+                          "header": "Level File Specifications",
+                          "content": [
+                            "Tile N GX GY",
+                            [
+                              "Animation Name N string","Grid X Position GX float","Grid Y Position GY float"
+                            ],
+                            "Decoration N X Y",
+                            [
+                              "Animation Name N string","Grid X Position GX float","Grid Y Position GY float"
+                            ],
+                            "Player GX GY CW CH SX SY SM G B",
+                            [
+                              "Player starting position GX, GY float, float","Bounding box dimensions CW, CH float, float","Left/right speed SX float","Jump speed SY float","Max speed SM float","Gravity G float","Bullet Animation B string"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Hints",
+                    "content": [
+                      [
+                        "Implement the T-, C-, and G-key functionality for debugging purposes.",
+                        "Animation::update() and Animation::hasEnded() functionality can be implemented at any time.",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-07.jpg", "caption": "The Animation::update() definition."},
+                          { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-08.jpg", "caption": "The Animation::hasEnded() definition."}
+                          ]
+                      },
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-05.jpg", "caption": "Implement Scene_Play::loadLevel() and Scene_Play::gridToMidPixel() to help lay out assets onscreen"}
+                          ]
+                      },
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-12.jpg", "caption": "Call Scene_Play::spawnPlayer() from Scene_Play::loadLevel() to determine where to spawn or re-spawn the player after they die"}
+                          ]
+                      },
+                        "Implement some WASD movement so you can test collisions",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-13.jpg", "caption": "Pseduocode for the Movement System."}
+                          ]
+                      },
+                        "Implement Scene_Play::spawnBullet() to test shooting. Holding the button down doesn't continuously fire",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-09.jpg", "caption": "The Physics system skeleton."}
+                          ]
+                      },
+                        "Implement Physics::getOverlap() and Physics::getPreviousOverlap() to test collisions. If there is no overlap, return Vector2(0,0).",
+                        "Implement collision checking with bullets / bricks such that the brick is destroyed when the bullet collides with it. Bullets are always destroyed when they collide with a non-decorative tile.",
+                        "Implement collision resolution with non-decorative tiles such that when they collide with one they cannot overlap it or enter it.",
+                        "Implement a way of detecting which side a player collided with a tile.",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-14.jpg", "caption": "Pseduocode for the Collision System."}
+                          ]
+                      },
+                        "Change the controls such that they are a proper left/right/jump style. All movement logic needs to happen in the movement system. the doAction() method is only used to set the proper input component variables.",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-10.jpg", "caption": "Registering actions, defining Font settings, and loading the game level in the Scene's init() method."}
+                          ]
+                      },
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-11.jpg", "caption": "Dispatching actions from the GameEngine."}
+                          ]
+                      },
+                        "The player will have a Gravity component that is an acceleration of velocity applied in the y-axis. This would be applied after in the Movement system, but after processing player movement (such as a jump). Try an initial gravity of 0.1. Velocity from Gravity should accelerate each frame until collision or reaching max speed.",
+                        "Implement Gravity do that the player falls toward the bottom of the screen and lands on tiles when it collides with a tile from above. When the player stops due to a collision, you should set its y-velocity to 0 so it stops accelerating downwards.",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-15.jpg", "caption": "Pseduocode for the Animation System."}
+                          ]
+                      },
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/assignment_3_specs-16.jpg", "caption": "Pseduocode for the onEnd action."}
+                          ]
+                      }
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

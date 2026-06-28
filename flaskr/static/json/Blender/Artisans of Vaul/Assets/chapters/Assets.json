@@ -730,7 +730,67 @@
                   "section": {
                     "header": "Wind",
                     "content": [
-                      "We need something to apply force to our banner; we will do this with a Wind object (Image 20).",
+                      "We need something to apply force to our banner; we will do this with a Wind object (Image 20). The direction of the arrows indicates the direction in which force is applied (Image 21). Pick a direction for the wind to blow and aim it at the banner (Image 22). In the Physics tab is the Strength field; increasing that will increase the range between fields (Image 23). Press [k]Space[/k] to start the animation again and you will see the wind blowing the banner (Image 24). If we move the wind around the other side and crank up the Strength we will see we have a problem; the banner is going through the pole (Image 25).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Collisions",
+                    "content": [
+                      "If we move the wind around the other side and crank up the Strength we will see we have a problem; the banner is going through the pole (Image 25). First, select the banner and go to the Physics tab and make sure Object Collisions and Self Collisions are enabled (Image 26). Next, we need to select the pole and crossbar and in the Physics tab apply a Collision effect to them (Image 27). Now when we play the animation we will see the bar blocking the banner when force is applied (Image 28).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Noise",
+                    "content": [
+                      "Right now during your animation the wind is blowing at a steady Strength. If you want to vary the Strength, adjust the Noise setting for the wind (Image 29).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Collision Distance",
+                    "content": [
+                      "If you move around the scene while the wind is being applied in the animation you will see how close the banner actually comes to the pole; this is set by the [k]Object Collisions > Distance[/k] field set on the banner (Image 30). Increasing or reducing this setting will affect how close or far the banner comes to other objects. Adjust it based on your tastes.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Animation Length",
+                    "content": [
+                      "By default the animation ends at frame 250. Let's say you wanted it to end at frame 400. If you try to change it in the Timeline, the animation will go to 400 but the banner will stop moving after frame 250 (Image 31). Select the banner and under the Physics tab, update [k]Cache > End[/k] to adjust the length of the animation (Image 32).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Vertex Mass",
+                    "content": [
+                      "The Vertex Mass setting under [k]Physical Properties[/k] determines how much each vertex of your mesh weighs which affects how the force is applied. Bring it all the way down and you will see the banner blowing weightlessly (Image 33). Crank it up and you will see the banner pulling down from the attachment vertices at the top (Image 34).",
                       {
                         "image": [
                         ]

@@ -1,0 +1,1085 @@
+{
+  "title": "Assignment 4",
+  "sections": [
+    {
+      "Course Project": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Game Type Suggestions",
+              "content": [
+                {
+                  "section": {
+                    "header": "Platformer",
+                    "content": [
+                      ["MegaMan", "Contra", "Celeste", "Shovel Knight"]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Top-Down Shooter",
+                    "content": [
+                      ["Hotline Miami", "Enter the Gungeon", "Brotato", "Vampire Survivors"]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Action RPG",
+                    "content": [
+                      ["Diablo", "Zelda", "Binding of Isaac", "Path of Exile"]
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          [
+            "The game must contain at least 3 levels and have a separate 'final boss' battle level",
+            "Must contain a custom menu that allows the player to play the game or select options",
+            "Must contain some sort of in-game menu (item selection, inventory, options, etc...)",
+            "Must contain a 'Game Over' screen indicating when the game has been finished",
+            "All levels, player, and game configuration options must be defined in external text files"
+          ],
+          {
+            "section": {
+              "header": "Game Scenes",
+              "content": [
+                [
+                  "Main Menu Scene that implements main menu / options functionality",
+                  "Overworld map scene that allows for level selection / game progression (Super Mario World, etc...)",
+                  "Main gameplay scene that implements the game physics of the main gameplay mode",
+                  "Some sort of inventory or in-game scene that is used for a relevant function",
+                  "A 'Game Over' scene that has some sort of animation and game over / credits"
+                ]
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Required Gameplay and Mechanics",
+              "content": [
+                {
+                  "section": {
+                    "header": "Collisions",
+                    "content": [
+                      [
+                        "Rectangular bounding box collisions between entities",
+                        "Collisions between player and level geometry (walls, tiles, etc...)"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Movement",
+                    "content": [
+                      [
+                        "At least two 'movement abilities' with a cooldown or resource cost",
+                        [
+                          "Some examples:",
+                          [
+                            "Double Jump", "Dash", "Wall Jump", "Jetpack"
+                          ]
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Bullets / Weapons",
+                    "content": [
+                      [
+                        "At least three unique weapons that are usable by the player",
+                        [
+                          "Some examples:",
+                          [
+                            "Boomerang (returns when thrown)", "Shotgun (several bullets fired in a spread)", "Sword (Melee Weapon)", "Grenade (thrown then explodes later)", "Shrink Ray (makes things smaller)"
+                          ]
+                        ],
+                        "Weapons must be swappable during gameplay via UI or hotkey",
+                        "At least one weapon must consume ammo  obtainable during gameplay"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "NPCs",
+                    "content": [
+                      [
+                        "At least three unique non-player characters in the game that act as enemies or allies",
+                        "Must contain basic AI such as pathfinding / shooting / patrolling / battling with the player",
+                        "Each NPC has a unique weapon or method for interacting with the player"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Hit Points / Damage",
+                    "content": [
+                      [
+                        "Players and enemies in the game should have hit points (life) and take damage / die",
+                        "Invincibility frames must be implemented for all entities that take damage",
+                        "Enemy HP levels must be displayed to the user in some way"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Objects / Inventory",
+                    "content": [
+                      [
+                        "At least three different items obtainable during the game via interaction",
+                        "UI should display inventory of these items, allow for their use after obtaining",
+                        "Some examples:",
+                        [
+                          "Health Pack", "Sprint Potion", "Teleport Scroll"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Ray Casting for Visibility",
+                    "content": [
+                      [
+                        "Ray casting calculations should be used for visibility calculations",
+                        "Some examples:",
+                        [
+                          "Turret fires when the player enters line of sight", "NPC aggros player when it enters line of sight"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Ray Casting for Simple Lighting Effect",
+                    "content": [
+                      [
+                        "Some examples:",
+                        [
+                          "Torch illuminates area around player", "Flashlight sends 'light' in cone in front of player", "Full room lighting with shadows"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Gravity / Acceleration",
+                    "content": [
+                      [
+                        "There must be some form of gravity / attractor that applies acceleration to the player"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Camera / World View",
+                    "content": [
+                      [
+                        "The game must use at least two different camera views in an interesting way",
+                        "Some examples:",
+                        [
+                          "Standard main camera view of gameplay", "Mini-map of local area that shows player position"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Audio",
+                    "content": [
+                      [
+                        "Must have some background music during gameplay / menu scenes",
+                        "Must have sound effects that occur for events such as getting hit, item pickup, UI selection, etc..."
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Options",
+                    "content": [
+                      [
+                        "Must have an options menu that allows you to change the following settings:",
+                        [
+                          "Music Volume",
+                          "Sound Effects Volume",
+                          "Game Difficulty",
+                          [
+                            "Normal", "Easy (deal 2x damage, take 0.5x damage", "Hard (deal 0.5x damage, take 2x damage"
+                          ],
+                          "Rebind main gameplay scene keys (move left, right, jump, etc...)"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Game Progression",
+                    "content": [
+                      [
+                        "Overworld map should somehow lock or unlock game progression based on levels completed",
+                        "Must have the ability to save / load games from file"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Status Effects",
+                    "content": [
+                      [
+                        "Must contain at least three separate status effects",
+                        "Status effects are obtainable in some way (item, collision, ability, etc...) which alter gameplay for a limited amount of time",
+                        "Some examples:",
+                        [
+                          "Speed Potion", "Quad Damage", "Invincibility Star"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "User Interface / HUD",
+                    "content": [
+                      [
+                        "Must have a UI which displays information such as:",
+                        [
+                          "Player Health", "Weapons and Ammo", "Game Progression", "Status Effects / Timers"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Moving Tiles",
+                    "content": [
+                      "Must include some part of the level which moves, such as platforms / elevators"
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Shaders",
+                    "content": [
+                      [
+                        "At least three shaders that alter an entity's appearance in a meaningful way",
+                        "Some examples:",
+                        [
+                          "Greyscale when frozen", "Glowing green outline for radiation", "Alternating colors for Mario star-like effect"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Parallax",
+                    "content": [
+                      [
+                        "Must include parallax via multiple background layers",
+                        "Some examples:",
+                        [
+                          "Background layers used to indicate depth"
+                        ]
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Pathfinding / Steering",
+                    "content": [
+                      [
+                        "Some entities must exhibit non-trivial pathfinding or smooth-steering behaviour",
+                        "Some examples:",
+                        [
+                          "Heat-seeking missile smooth-steers toward target entity",
+                          "Pathfinding algorithm used to guide NPC toward player"
+                        ]
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "2D Ray Casting, Line Segment Intersection": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "What is Ray Casting?",
+              "content": [
+                "Ray Casting is the name for a technique that has many different applications in games. Ray Tracing is iterative Ray Casting.",
+                "A ray cast is a single line segment while ray tracing is multiple line segments bouncing off multiple objects.",
+                {
+                  "section": {
+                    "header": "What Does Ray Casting Solve?",
+                    "content": [
+                      "In 2D or 3D, we cast rays outwards from my eyes to the world. What do they hit? What can I see? How does light bounce around."
+                    ]
+                  }
+                },
+                "Ray Casting is very heavy on Vector Math but has many useful applications.",
+                {
+                  "section": {
+                    "header": "Ray Casting vs. Ray Tracing",
+                    "content": [
+                      "In Image 1, we see Ray Casting from a camera to determine what do the View Rays hit, how do they bounce, what is the light source. On the right in Image 2, we see Ray Tracing, where multiple rays are bouncing off reflective surfaces.",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/ray_casting-01.jpg", "caption": "Image 1 - Ray Casting to determine the view from a camera" },
+                          { "src": "/Dave Churchill/Comp 4300/ray_casting-02.jpg", "caption": "Image 2 - Ray Tracing the bouncing of light" }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Ray Casting",
+              "content": [
+                "Ray Casting in two dimensions is the following problem:",
+                [
+                  "Draw a line segment between two points",
+                  "Detect if and where a collision occurs"
+                ],
+                "Ray Tracing is the process of determining where the line bounced to. If no collision occurs on a line between two points, those points have a clear field of vision towards each other.",
+                "2D Ray Casting primarily solves problems that deal with light and visibility.",
+                {
+                  "section": {
+                    "header": "2D Ray Casting - Lighting",
+                    "content": [
+                      "In Image 3 below, we can see that a light source is in the middle of the room. Ray Casting is used to determine where in the room the light source hits, and what areas are left in shadow.",
+                      "In Image 4, we see Ray Casting used to aid shaders that apply darker and lighter shadows to areas of the room.",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/ray_casting-03.jpg", "caption": "Image 3 - Ray Casting in a room" },
+                          { "src": "/Dave Churchill/Comp 4300/ray_casting-04.jpg", "caption": "Image 4 - Ray Casting used to determine how shaders are applied" }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "2D Ray Casting - Visibility",
+                    "content": [
+                      "A good article on 2D Ray Casting and Visibility can be found at [url]Red Blob Games^^https://www.redblobgames.com/articles/visibility[/url].",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/ray_casting-05.jpg", "caption": "Image 5 - Ray Casting for visibility" }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Ray Casting Basics",
+                    "content": [
+                      "Ray Casting asks, 'Is anything blocking these two points?' If so, how do we detect this mathematically?",
+                      "The 'path' between two points is 'blocked' if the lene segment between them intersects with another line segment.",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/ray_casting-06.jpg", "caption": "Image 6 - Points P1 and P2 with an obstacle between them" },
+                          { "src": "/Dave Churchill/Comp 4300/ray_casting-07.jpg", "caption": "Image 7 - The intersection of the line segment from P1 to P2 with the obstacle" },
+                          { "src": "/Dave Churchill/Comp 4300/ray_casting-08.jpg", "caption": "Image 8 - P1's line of sight to P2 is blocked" }
+                        ]
+                      },
+                      "Depending on the application, we may also want to know the 'first' such intersection and where it occurred.",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/ray_casting-09.jpg", "caption": "Image 9 - P1 and P2 have two obstacles between them, but P1's line of sight is limited by its closest obstacle" }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "2D Game Visibility",
+                    "content": [
+                      "If line segment AB does not collide with any vision blocking entities, point B is visible to point A.",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/ray_casting-10.jpg", "caption": "Image 10 - Point B is not visible to Point A" }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "2D Game Lighting",
+                    "content": [
+                      "An Entity can see up to its closest intersection. Anything beyond that is outside its vision.",
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/ray_casting-11.jpg", "caption": "Image 11 - The reach of light from Point A" }
+                        ]
+                      },
+                      "If light travels outwards in all directions from a point, how do we calculate everywhere it lands?",
+                      "Review the interactive demos and tutorials found at [url]Red Blob Games^^https://www.redblobgames.com/articles/visibility[/url] and [url]SIGHT & LIGHT^^https://ncase.me/sight-and-light[/url]."
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Cameras, Views, Viewports": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Visualizing Games",
+              "content": [
+                "Video game worlds are often bigger than we can display on-screen all at once. Like the real world, we can only display a sub-section of the world at a given time. The part of the game world that we can currently see is called a [b]View[/b].",
+                {
+                  "section": {
+                    "header": "View / Camera",
+                    "content": [
+                      "To mathematically describe our desired view of the game world, we often use the concept of an in-game [b]Camera[/b]. We define the location of a camera in the world, and where it points. Similar to real photography, this will determine the final view that we see.",
+                      "Please review the video [url]The Challenge of Cameras^^https://www.youtube.com/watch?v=bHdi5Ar8GXw[/url]"
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "3D Game Cameras",
+                    "content": [
+                      "There many types of cameras. In 3D games, some of the most common types are:",
+                      [
+                        "Fixed, following: The camera is in a fixed position, but is focused on the protagonist as they move around the scene",
+                        "Third-person: The camera is behind the protagonist, following at a fixed distance",
+                        "Fixed position: The camera is in a fixed position, showing a wide view of the scene, but not focused on the protagonist",
+                        "First-person: The camera acts as the protagonist's eye, showing what they would see, and rendering usually their hands and arms only"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "2D Game Cameras",
+                    "content": [
+                      "Typically in 2D games, the camera is pointing perpendicular to the game world. Here are some typical cameras presented by Ansimuz in his video: [url]2D Game Cameras^^https://www.youtube.com/watch?v=l9G6MNhfV7M[/url]:",
+                      [
+                        "Horizontal Position-Locking Camera: great for 2D platformers; the camera follows the protagonist only on the x-axis. If the protagonist moves slowly, then following along both axes looks good; this is most commonly used in top-down view games. It works in platformers when used on a delay, such as the protagonist reaching a specific height before the camera moves up.",
+                        "Grid Camera: The camera is positioned aboved a grid, only showing one cell at a time. A good example is the Overworld from the first Zelda.",
+                        "Camera Trap: used in games like Sonic where the protagonist moves vertically frequently and at high speeds. Instead of following the protagonist, the camera follows a box built around the protagonist. When the protagonist moves they are pushing the box from the inside. The wider the box is, the less abrupt the movement will be when the protagonist changes direction.",
+                        "Auto-scrolling Camera: The camera automatically scrolls in a given direction, whether the protagonist keeps up or not. Think of a level where lava is rising from the floor.",
+                        "Fixed Camera: The camera is in a fixed position",
+                        "Look Ahead Camera:  the camera moves in the direction the protagonist is facing",
+                        "Stop and Go Camera:  the camera stops at a certain point until the protagonist achieves an objective, and then moves forward",
+                        "Focus Target:  the camera focuses on a specific target to give the protagonist an objective"
+                      ],
+                      "See also: ",
+                      [
+                        "[url]Scroll Back: The Theory and Practice of Cameras in Side-Scrollers^^https://www.gamedeveloper.com/design/scroll-back-the-theory-and-practice-of-cameras-in-side-scrollers[/url]",
+                        "[url]The Beauty of Parallax^^https://www.youtube.com/watch?v=z9tBce8eFqE[/url]"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Pathfinding, Steering Behaviour": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Movement In Games",
+              "content": [
+                "Movement is one of the most important part in many video games. It allows exploration of the game world and interaction with entities. Not only does the player move in a game world, but the NPCs / Entities as well.",
+                "This leads to some challenges that need to be solved with movement:",
+                {
+                  "table": [
+                    [{"th": "Pathfinding"}, {"td": "how to get from point A to point B"}],
+                    [{"th": "Path following"}, {"td": "how to move along a path"}],
+                    [{"th": "Physics"}, {"td": "how the environment reacts to movement"}],
+                    [{"th": "Animation"}, {"td": "how entities look"}]
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Pathfinding",
+              "content": [
+                "Video game maps are often filled with [b]obstacles[/b] with which NPCs will [b]collide[/b]. Pathfinding is the method we use to determine which path an NPC should take from its [b]current[/b] location to a [b]goal[/b] location.",
+                "Pathfinding attempts to [b]minimize the 'cost'[/b] of the path. This could be total length, fuel, damage taken, or an arbitrary function.",
+                {
+                  "section": {
+                    "header": "Pathfinding Considerations",
+                    "content": [
+                      {
+                        "section": {
+                          "header": "Single Agent vs Multi-Agent",
+                          "content": [
+                            "[b]Single-agent[/b] pathfinding is the problem of finding a path between two vertices in a graph.",
+                            "The [b]multi-agent pathfinding (MAPF)[/b] problem is a generalization of the single-agent pathfinding problem for multiple agents. It consists of a graph and a number of agents. For each agent, a unique start state and a unique goal state are given, and the task is to find paths for all agents from their start states to their goal states, under the constraint that agents cannot collide during their movements.",
+                            "StarCraft 2 ended up using a triangulation-based navigation mesh for its pathfinding."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Single Goal vs Multi Goal",
+                          "content": [
+                            "Does the pathfinding need to get to one goal or are there multiple goals to choose from, such as an NPC choosing between three alarm buttons to press.",
+                            {
+                              "image": [
+                                { "src": "/Dave Churchill/Comp 4300/pathfinding-01.jpg", "caption": "Image 1 - Single Agent, Single Goal" },
+                                { "src": "/Dave Churchill/Comp 4300/pathfinding-02.jpg", "caption": "Image 2 - Multi-Agent, Single Goal" },
+                                { "src": "/Dave Churchill/Comp 4300/pathfinding-03.jpg", "caption": "Image 3 - Single Agent, Multi Goal" }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Static vs Dynamic",
+                          "content": [
+                            "Static pathfinding problems would have nothing change in the environment, which means you could store optimum paths in a file. Dynamic pathfinding has to do with the environment updating while pathfinding is happening."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Space representation",
+                          "content": [
+                            "How is the game represented? Is it an [b]Open[/b] system with no restrictions in direction and you can move from point A to point B in an arbitrary (Image 4) or straight (Image 5) line? In a [b]Grid[/b] system, the game chops up its locations into squares or rectangles on a coordinate system (Images 6 and 7). There may be an arbitrary [b]Graph[/b] representing the map (Image 8). Or the map itself may be divided into [b]Polygons[/b] that are connected to each other (Image 9).",
+                            {
+                              "image": [
+                                { "src": "/Dave Churchill/Comp 4300/pathfinding-04.jpg", "caption": "Image 4 - Space is Open with no restrictions on paths" },
+                                { "src": "/Dave Churchill/Comp 4300/pathfinding-05.jpg", "caption": "Image 5 - Space is Open and paths must follow straight lines" },
+                                { "src": "/Dave Churchill/Comp 4300/pathfinding-06.jpg", "caption": "Image 6 - Space is represented by a Grid with movement in four directions" },
+                                { "src": "/Dave Churchill/Comp 4300/pathfinding-06.jpg", "caption": "Image 7 - Space is represented by a Grid with movement in eight directions" },
+                                { "src": "/Dave Churchill/Comp 4300/pathfinding-08.jpg", "caption": "Image 8 - Space is represented by a Graph with movement between nodes" },
+                                { "src": "/Dave Churchill/Comp 4300/pathfinding-09.jpg", "caption": "Image 9 - Space is broken into irregular Polygons, with movement restricted to those with connections" }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Movement Directions",
+                          "content": [
+                            "Maybe movement can only happen in specific directions, or move at arbitrary angles, or only between graphs on a node."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Space / Action Representation",
+                    "content": [
+                      "Space and action representations are important decisions, the ideas are linked. The space representations you choose inform the actions that the player is allowed to take. Which representation you choose is based on many factors from the game's design. The choice of space representation in the pathfinding engine will determine which movement actions can be performed."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Navigation Mesh",
+                    "content": [
+                      "What if the game has arbitrary geometry? You would need a graph structure within the environment to enable pathfinding. This graph is composed of polygons and is called a Navigation Mesh. Most game engines now come with software to build and edit a level's navigation mesh."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Single-Agent Pathfinding",
+                    "content": [
+                      "Many graph search algorithms exist for finding shortest paths, each with their own properties. Common algorithms include: Breadth-First Search, Dijkstra, A*. Most video game pathfinding has been some variant of the A* search algorithm.",
+                      {
+                        "section": {
+                          "header": "A* Search Algorithm",
+                          "content": [
+                            "Most well-known as Best-First search algorithm. Evaluates nodes by using g(n) and h(n):",
+                            [
+                              "g(n) = path cost so far to current node n",
+                              "Heuristic function f(n) = g(n) + h(n)",
+                              "where h(n) = estimate of cheapest solution via n"
+                            ],
+                            "Select node from open list with min f(n). Performance depends on the properties of the heuristic function.",
+                            {
+                              "section": {
+                                "header": "A* Python Implementation",
+                                "content": [
+                                  {
+                                    "code": "def astar(maze, start, end):\n    \"\"\"Returns a list of tuples as a path from the given start to the given end in the given maze\"\"\"\n\n    # Create start and end node\n    start_node = Node(parent=None, position=start)\n    start_node.g = start_node.h = start_node.f = 0\n    end_node = Node(None, end)\n    end_node.g = end_node.h = end_node.f = 0\n\n    # Initialize both open and closed list\n    open_list = []\n    closed_list = []\n\n    # Add the start node\n    open_list.append(start_node)\n\n    # Loop until you find the end\n    while len(open_list) > 0:\n\n        # Get the current node\n        current_node = open_list[0]\n        current_index = 0\n        for index, item in enumerate(open_list):\n            if item.f < current_node.f:\n                current_node = item\n                current_index = index\n\n        # Pop current off open list, add to closed list\n        open_list.pop(current_index)\n        closed_list.append(current_node)\n\n        # Found the goal\n        if current_node == end_node:\n            path = []\n            current = current_node\n            while current is not None:\n                path.append(current.position)\n                current = current.parent\n            return path[::-1] # Return reversed path\n\n        # Generate children\n        children = []\n        for new_position in [(0, -1), (0, 1), (-1, 0), (1, 0), (-1, -1), (-1, 1), (1, -1), (1, 1)]: # Adjacent squares\n\n            # Get node position\n            node_position = (current_node.position[0] + new_position[0], current_node.position[1] + new_position[1])\n\n            # Make sure within range\n            if node_position[0] > (len(maze) - 1) or node_position[0] < 0 or node_position[1] > (len(maze[len(maze)-1]) -1) or node_position[1] < 0:\n                continue\n\n            # Make sure walkable terrain\n            if maze[node_position[0]][node_position[1]] != 0:\n                continue\n\n            # Create new node\n            new_node = Node(current_node, node_position)\n\n            # Append\n            children.append(new_node)\n\n        # Loop through children\n        for child in children:\n\n            # Child is on the closed list\n            for closed_child in closed_list:\n                if child == closed_child:\n                    continue\n\n            # Create the f, g, and h values\n            child.g = current_node.g + 1\n            child.h = ((child.position[0] - end_node.position[0]) ** 2) + ((child.position[1] - end_node.position[1]) ** 2)\n            child.f = child.g + child.h\n\n            # Child is already in the open list\n            for open_node in open_list:\n                if child == open_node and child.g > open_node.g:\n                    continue\n\n            # Add the child to the open list\n            open_list.append(child)"
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Pathfinding Workflow",
+                    "content": [
+                      {
+                        "table": [
+                          [{"th": "1."}, {"td": "Identify the problem you're solving"}],
+                          [{"th": "2."}, {"td": "Construct a space representation"}],
+                          [{"th": "3."}, {"td": "Decide which actions are possible"}],
+                          [{"th": "4."}, {"td": "Be given start / goal locations"}],
+                          [{"th": "5."}, {"td": "Apply an algorithm which finds a path"}],
+                          [{"th": "6."}, {"td": "Follow the path from start to goal"}]
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Path Following",
+              "content": [
+                "Now that we have a path, how do we make our agent traverse it in the game? One of the simplest ways is [b]waypoints[/b].",
+                [
+                  "Each point along the path is a waypoint",
+                  "The path to the next waypoint is always clear",
+                  "Walk from one waypoint to the next",
+                  "Stop when the NPC reaches the goal (no more waypoints to traverse)"
+                ]
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Vector Fields for Pathfinding",
+              "content": [
+                "There is an alternate pathfinding method that is called flow fields, influence maps, and vector maps. This is a very efficient structure for pathfinding in the case of 'many paths to a single goal'. Any case where multiple NPCs need to go to a single location should consider using these.",
+                {
+                  "section": {
+                    "header": "Vector Fields",
+                    "content": [
+                      "Please review [url]Understanding Goal-Based Vector Field Pathfinding at envato tuts+^^https://code.tutsplus.com/understanding-goal-based-vector-field-pathfinding--gamedev-9007t[/url]"
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Influence Maps",
+                    "content": [
+                      "Influence maps incorporate logic other than distance to goal. They are used when difficult to come up with an objective function for other algorithms. Some examples include:",
+                      [
+                        "Distance to attacking enemies", "Distance from walls / obstacles"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Steering Behaviour",
+              "content": [
+                "Steering can be seen as a framework for controlling autonomous agents such as robots, CGI in movies, NPCs in games. Steering adds more realism and fluidity to agent movement, can enhance experience.",
+                "Steering can also be really fun to implement, play with parameters, and see what effects can be produced.",
+                "At its core, steering smooths the movement of Entities in games. Changing directions instantaneously or 'stopping on a dime' can look bad in games. Steering acts as a sort of 'force' that smoothly guides an Entity towards a target.",
+                "In Image 10 below, an Entity is travelling at a certain velocity when a target appears in the game world at a different vector. Image 11 shows the standard calculations made to orient the Entity towards the target. This however is bad, since this is instantaneous turning, which looks choppy in games. The steering vector is the change between current velocity and desired velocity (Image 12). Steering doesn't have to be applied instantly. You can scale the force that steering applies to current velocity each frame to create a more realistic action on screen (Image 13). Calcuations for this steering 'force' can be seen in Image 14.",
+                {
+                  "image": [
+                    { "src": "/Dave Churchill/Comp 4300/pathfinding-10.jpg", "caption": "Image 10 - An Entity travelling at a different velocity than one that reaches the goal" },
+                    { "src": "/Dave Churchill/Comp 4300/pathfinding-11.jpg", "caption": "Image 11 - Standard calculations for changing the vector" },
+                    { "src": "/Dave Churchill/Comp 4300/pathfinding-12.jpg", "caption": "Image 12 - The steering vector" },
+                    { "src": "/Dave Churchill/Comp 4300/pathfinding-13.jpg", "caption": "Image 13 - Scaling the force that steering applies" },
+                    { "src": "/Dave Churchill/Comp 4300/pathfinding-14.jpg", "caption": "Image 14 - Calculations for steering" },
+                    { "src": "/Dave Churchill/Comp 4300/pathfinding-15.jpg", "caption": "Image 15 - Steering math" }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Types of Steering",
+                    "content": [
+                      {
+                        "image": [
+                          { "src": "/Dave Churchill/Comp 4300/pathfinding-16.jpg", "caption": "Image 16 - 'Seeking' behaviour is best for stationary targets" },
+                          { "src": "/Dave Churchill/Comp 4300/pathfinding-16.jpg", "caption": "Image 17 - 'Pursue' behaviour aims towards a target's destination" },
+                          { "src": "/Dave Churchill/Comp 4300/pathfinding-16.jpg", "caption": "Image 18 - 'Flee' behaviour moves in the opposite direction of the target" }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Arrival Behaviour",
+                    "content": [
+                      "One issue that comes up with steering is that the closer you get to the target, the more the Entity will oscillate. You must define an arrival behaviour. The simplest solution is to scale speed linearly as it approaches the target within a certain distance."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "OpenSteer",
+                    "content": [
+                      "[url]OpenSteer^^https://opensteer.sourceforge.net/[/url] is a C++ library to help construct [url]steering behaviors^^https://www.red3d.com/cwr/steer/[/url] for autonomous characters in games and animation. In addition to the library, OpenSteer provides an OpenGL-based application called OpenSteerDemo which displays predefined demonstrations of steering behaviors. The user can quickly prototype, visualize, annotate and debug new steering behaviors by writing a plug-in for OpenSteerDemo."
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Assignment 4": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Program Specification",
+              "content": [
+                {
+                  "section": {
+                    "header": "Assets",
+                    "content": [
+                      [
+                        "Entities in the game will be rendered using various Textures and Animations which will be called Assets (along with Fonts and Sounds)",
+                        "Assets are loaded once at the beginning of the program and stored in the Assets class, which is stored by the GameEngine class.",
+                        "All Assets are defined in assets.txt, with the syntax defined below."
+                      ],
+                      {
+                        "section": {
+                          "header": "Player",
+                          "content": [
+                            [
+                              "The player Entity in the game is represented by NotLink, which has several different animations: RunDown, RunUp, RunRight, StandDown, StandUp, StandRight, AtkUp, AtkDown, AtkRight. You must determine which direction and state the player is currently in and assign the correct animation.",
+                              "The Player control scheme follows the 'WASD' configuration with 'Space' as the attack button and 'P' as the pause button.",
+                              "Player movement is fixed to the x- and y-axes, but only one axis can be traversed at a time. Holding down the Left and Up will result in the player moving Up only. No diagonal movements. In the case where two keys on different axes are held down, movement in the horizontal axis is given priority.",
+                              "Pressing the Left and Right action keys at the same time will result in the Player standing still. Holding down the Left and then pressing Right will result in the player facing right, but not moving.",
+                              "Once the Attack animation starts, no other actions are allowed until the animation is finished.",
+                              "The player collides with 'Tile' entities in the level whose bounding box blocks movement and the player cannot move through them.",
+                              "The player will be given a BouncingBox component of a size specified in the level file",
+                              "The player will be given a Health component with a max health that is specified in the level file",
+                              "If the player's current health <= 0, the player respawns, and the NotLinkDie sound should play.",
+                              "If the player has an Invincibility component, it takes no damage from enemies and its sprite is made transparent. The duration of the component is reduced each frame. When the duration reaches 0, the component is removed, making it vulnerable to attacks again.",
+                              "When the player collides with an enemy while not invincible:",
+                              [
+                                "player's current health is reduced by the enemy damage component",
+                                "the NotLinkHit sound plays",
+                                "the player is given an Invincibility component with a 30 frame duration"
+                              ],
+                              "Think about monitoring the Invincibility component with a Status system, whose job is to monitor invincibility, powerups such as sprint, double-damage, or healing potions. When a component's duration reaches 0, you remove it from the Entity."
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Other Entities",
+                          "content": [
+                            [
+                              "Each 'Tile' and 'NPC' specifies two boolean values of whether it blocks movement and whether it blocks vision.",
+                              [
+                                "An entity that blocks movement then Entities that collide with it can't pass through it",
+                                "An entity that blocks vision affects enemy line of sight",
+                                "The BoundingBox component will reflect these changes"
+                              ],
+                              "When the player steps on a Tile with the 'Black' animation, they are teleported to a random 'Black' tile on the map"
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Attacking",
+                          "content": [
+                            [
+                            "When the player attacks a sword appears one tile length away in the direction the player was facing for 10 frames before disappearing",
+                            "The sword's bounding box should equal its animation size",
+                            "When a sword collides with an enemy Entity, it deals its damage component worth of damage to the health of the enemy. The sword should only do damage for one frame, and then be removed so it doesn't do damage for every frame it overlaps.",
+                            "When swung, the Slash sound should play",
+                            "When a sword collides with an enemy Entity, the EnemyHit sound should play",
+                            "When an enemy's health is reduced to 0, it is destroyed, being replaced with a death animation",
+                            "When an enemy is destroyed, the EnemyDie sound should play"
+                              ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "NPC Entities",
+                          "content": [
+                            [
+                            "NPC entities will be given an 'AI' behaviour in the level file, either 'Follow' or 'Patrol'",
+                            [
+                              "'Follow' means it will follow the player when the player is in direct line of sight, or head back to its 'home' position when no player is visible. When an enemy is at its home position it should not oscillate on screen",
+                              "'Patrol' means the NPC will move toward a series of patrol positions, looping back around to the start when the final one is reached. An NPC ahs reached its patrol position if it is within a distance of 5."
+                            ]
+                              ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Tiles",
+                          "content": [
+                            [
+                              "Tiles are entities that define the level geometry and interact with players.",
+                              "Tiles can be given an animation that is defined in the Assets file.",
+                              "Tiles will be given a bounding box equal to the size of their animation. tile->getComponent<Animation>().animation.getSize()",
+                              "The current animation for a tile can be retrieved with: tile->getComponent<Animation>().animation.getName()",
+                              "If a Tile is a Heart, any NPC that collides with it should have its health filled back to maximum"
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Camera",
+                          "content": [
+                            [
+                              "The camera will have two modes that it alternates between: Room Mode and Follow Mode",
+                              [
+                                "In Room Mode the camera is centered on the middle of the room",
+                                "In Follow Mode the camera is centered on the NotLink"
+                              ]
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Rooms",
+                          "content": [
+                            [
+                              "Each level is split up into individual rooms given an (rx, ry) coordinate",
+                              "Room (rx, ry) is defined by the rectangle (rx*w, ry*h, w, h) where w and h are the width and height",
+                              "Each tile is given a (tx,ty) grid position within a room. By default the grid size is 64x64",
+                              "When NotLink moves to a Room, the camera should center on the Room"
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Miscellaneous",
+                          "content": [
+                            [
+                              "The 'P' key should pause the game",
+                              "The 'T' key should toggle drawing textures",
+                              "The 'C' key should toggle drawing bounding boxes of entities",
+                              "The 'G' key should toggle drawing of the grid",
+                              "The 'Esc' key should go back to the Main Menu or quit the game"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Configuration File Specifications",
+                    "content": [
+                      {
+                        "section": {
+                          "header": "Asset Specifications",
+                          "content": [
+                            {
+                              "section": {
+                                "header": "Texture Asset Specification:",
+                                "content": [
+                                  "Texture N P X Y",
+                                  {
+                                    "table": [
+                                      [{"td": "Texture Name"},{"td": "N"},{"td": "string"}],
+                                      [{"td": "Texture FilePath"},{"td": "P"},{"td": "string"}],
+                                      [{"td": "Texture X (left) Position"},{"td": "X"},{"td": "int"}],
+                                      [{"td": "Texture Y (top) Position"},{"td": "Y"},{"td": "int"}],
+                                      [{"td": "Texture Name"},{"td": "N"},{"td": "string"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Animation Asset Specification:",
+                                "content": [
+                                  "Animation N T F R",
+                                  {
+                                    "table": [
+                                      [{"td": "Animation Name"},{"td": "N"},{"td": "string"}],
+                                      [{"td": "Texture Name"},{"td": "T"},{"td": "string"}],
+                                      [{"td": "Frame Count"},{"td": "F"},{"td": "int"}],
+                                      [{"td": "Repeating Flag"},{"td": "R"},{"td": "bool"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Font Asset Specification:",
+                                "content": [
+                                  "Font N P",
+                                  {
+                                    "table": [
+                                      [{"td": "Font Name"},{"td": "N"},{"td": "string"}],
+                                      [{"td": "Font FilePath"},{"td": "P"},{"td": "string"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Sound Asset Specification:",
+                                "content": [
+                                  "Sound N P",
+                                  {
+                                    "table": [
+                                      [{"td": "Sound Name"},{"td": "N"},{"td": "string"}],
+                                      [{"td": "Sound FilePath"},{"td": "P"},{"td": "string"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Level Specifications",
+                          "content": [
+                            {
+                              "section": {
+                                "header": "Player Specification",
+                                "content": [
+                                  "Player X Y BW BH S H",
+                                  {
+                                    "table": [
+                                      [{"td": "Spawn Position"},{"td": "X Y"},{"td": "int, int"}],
+                                      [{"td": "Bounding Box Size"},{"td": "BW BH"},{"td": "int, int"}],
+                                      [{"td": "Speed"},{"td": "S"},{"td": "float"}],
+                                      [{"td": "Health"},{"td": "H"},{"td": "int"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Tile Specification",
+                                "content": [
+                                  "Tile N RX RY TX TY BM BV",
+                                  {
+                                    "table": [
+                                      [{"td":  "Animation Name"}, {"td":  "N"}, {"td":  "string"}],
+                                      [{"td": "Room Coordinate"},{"td": "RX RY"},{"td": "int, int"}],
+                                      [{"td": "Tile Coordinate"},{"td": "TX TY"},{"td": "int, int"}],
+                                      [{"td":  "Blocks Movement"}, {"td":  "BM"}, {"td":  "boolean"}],
+                                      [{"td":  "Blocks Visibility"}, {"td":  "BV"}, {"td":  "boolean"}]
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "NPC Specification",
+                                "content": [
+                                  "NPC N RX RY TX TY BM BV H D AI ...",
+                                  {
+                                    "table": [
+                                      [{"td":  "Animation Name"}, {"td":  "N"}, {"td":  "string"}],
+                                      [{"td": "Room Coordinate"},{"td": "RX RY"},{"td": "int, int"}],
+                                      [{"td": "Tile Coordinate"},{"td": "TX TY"},{"td": "int, int"}],
+                                      [{"td":  "Blocks Movement"}, {"td":  "BM"}, {"td":  "boolean"}],
+                                      [{"td":  "Blocks Visibility"}, {"td":  "BV"}, {"td":  "boolean"}],
+                                      [{"td": "Health"},{"td": "H"},{"td": "int > 0"}],
+                                      [{"td": "Damage"},{"td": "H"},{"td": "int > 0"}],
+                                      [{"td":  "AI Behaviour Name"}, {"td":  "AI"}, {"td":  "string"}],
+                                      [{"td":  "AI Parameters"}, {"td":  "..."}, {"td":  "(see below)"}]
+                                    ]
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "AI = Follow",
+                                      "content": [
+                                        "... = S",
+                                        {
+                                          "table": [
+                                            [{"td":  "Follow Speed"}, {"td":  "S"}, {"td":  "float (speed to follow player)"}]
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "AI = Patrol",
+                                      "content": [
+                                        "... = S X1 Y1 ... XN YN",
+                                        {
+                                          "table": [
+                                            [{"td":  "Patrol Speed"}, {"td":  "S"}, {"td":  "float"}],
+                                            [{"td":  "Position 1-N"}, {"td":  "Xi Yi"}, {"td":  "int, int (Tile Position of Patrol Position i"}]
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
