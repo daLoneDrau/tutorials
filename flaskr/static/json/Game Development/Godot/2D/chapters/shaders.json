@@ -1,0 +1,162 @@
+{
+  "title": "Shaders",
+  "sections": [
+    {
+      "How to PIXELATE SPRITES in Godot Engine in 3 LINES": {
+        "key_concepts": [
+          "[url]by Furcifer^^https://www.youtube.com/watch?v=zgok9i8lyVo[/url]",
+          {
+            "section": {
+              "header": "Pixelation in Games",
+              "content": [
+                "You can use a pixelation effect in 2D games for a damage animation, glitch effect, or screen transition. This is easy to do when you understand UV coordinates.",
+                {
+                  "section": {
+                    "header": "UV Coordinates",
+                    "content": [
+                      "The best way to understand UV coordinates is to visualize them. In the code example below (Image 1), the shader assigns an RGB color value to a pixel based on its UV coordinate. In Image 2, you can see this results in black (0, 0, 0, 1) where UV.x and UV.y are 0, red (1, 0, 0, 1) where UV.x=1 and UV.y=0, green (0, 1, 0, 1) where UV.x=0 and UV.y=1 and a gradient for all other values between 0 and 1.",
+                      {
+                        "image": [
+                          {
+                            "src": "/Godot/2D/shaders/pixelate_sprites-02.jpg",
+                            "caption": "Image 1 - Visualizing the UV coordinates with a shader"
+                          },
+                          {
+                            "src": "/Godot/2D/shaders/pixelate_sprites-01.jpg",
+                            "caption": "Image 2 - A gradient visualizing the UV coordinates"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "The trick for pixelation is to snap the in-between values to a certain interval. In the code example in Image 3, pixelFactor is a float value that is applied to the UV in order to break the values into groups. On line 6, if UV=(0.2, 0.7) then round(UV * pixelFactor) will return (1, 4). Further dividing that again by pixelFactor returns (0.2, 0.8). That way values from (0.2, 0.7) through (0.2, 0.84) will be scaled to the same pixel factor. The result can be seen in Image 4.",
+                {
+                  "image": [
+                    {
+                      "src": "/Godot/2D/shaders/pixelate_sprites-03.jpg",
+                      "caption": "Image 3 - Snapping UV coordinates to an interval"
+                    },
+                    {
+                      "src": "/Godot/2D/shaders/pixelate_sprites-04.jpg",
+                      "caption": "Image 4 - A pixelized gradient"
+                    }
+                  ]
+                },
+                "If you'd like, you can make the number of pixels proportional to the sprite's resolution (Image 5)",
+                {
+                  "image": {
+                    "src": "/Godot/2D/shaders/pixelate_sprites-05.jpg",
+                    "caption": "Image 5 - Making the number of pixels proportional to the sprite's resolution"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Godot 4: Use a shader to pixelate your screen (step-by-step tutorial)": {
+        "key_concepts": [
+          "[url]by FencerDevLog^^https://www.youtube.com/watch?v=XXa9xnVmbOU[/url]",
+          "This pixelation shader uses a ColorRect as the child of a CanvasLayer node (Image 1). Make sure the ColorRect's Layout is set to FullRect. Add a new ShaderMaterial to the ColorRect (Image 2) and give it a new Shader (Image 3) and save it.",
+          {
+            "image": [
+              {
+                "src": "/Godot/2D/shaders/FencerDevLog_full_screen_pixelate-01.jpg",
+                "caption": "Image 1 - Initial setup"
+              },
+              {
+                "src": "/Godot/2D/shaders/FencerDevLog_full_screen_pixelate-02.jpg",
+                "caption": "Image 2 - Adding material"
+              },
+              {
+                "src": "/Godot/2D/shaders/FencerDevLog_full_screen_pixelate-03.jpg",
+                "caption": "Image 3 - Creating a new Shader"
+              },
+              {
+                "src": "/Godot/2D/shaders/FencerDevLog_full_screen_pixelate-04.jpg",
+                "caption": "Image 4 - The pixelation shader code"
+              }
+            ]
+          },
+          "Enter the code below:",
+          {
+            "image": [
+              {
+                "src": "/Godot/2D/shaders/FencerDevLog_full_screen_pixelate-04.jpg",
+                "caption": "Image 4 - The pixelation shader code"
+              }
+            ]
+          },
+          "On Line 2, we set the render_mode to unshaded, since we only want to affect the existing image in the viewport and there is no need to work with lighting.",
+          "Line 4 tells Godot to read the contents of the viewport; the hints make it pixel-perfect. Line 6 creates another shader parameter, pixel_factor. This is used to determine the pixel size of the effect.",
+          "For the calculations used to make the effect, on lines 9 and 10, we take the value of the coordinates of the current pixel and subtract from the the remainder left over when dividing it by the size of the target pixel. So if FRAGCOORD.X=25 and pixel_factor=8, then x=7. This ensures that all pixels in a square the size of pixel_factor will all have the same color. On line 11 we add a shift to move the new pixel to the center of the original one. Finally, on line 12 we render the changes on screen."
+        ]
+      }
+    },
+    {
+      "Palette Limiter Shader": {
+        "key_concepts": [
+          "[url]by Queble^^https://www.youtube.com/watch?v=aaUmIIqLcLc[/url]",
+          "Sometimes if you are using downloaded assets from a variety of sources the colours do not match up. Or, you decide you want to correct your assets' color scheme to match a certain aesthetic. You can achieve this through a palette-limter shader.",
+          "Start by adding a CanvasLayer to your root node (Image 1), and then add a Panel under that (Image 2).",
+          {
+            "image": [
+              {
+                "src": "/Godot/2D/shaders/palette_limter-01.jpg",
+                "caption": "Image 1 - Adding a CanvasLayer node"
+              },
+              {
+                "src": "/Godot/2D/shaders/palette_limter-02.jpg",
+                "caption": "Image 2 - Adding a Panel to the CanvasLayer"
+              }
+            ]
+          },
+          "With the Panel selected, over in the inspector open up the Theme Overrides > Styles and add a new StyleBoxFlat (Image 3). After adding that, go into the Material > Material and add a new ShaderMaterial (Image 4). Then open Material > Shader and add a new Shader (Image 5). Save the new Shader to your shaders folder.",
+          {
+            "image": [
+              {
+                "src": "/Godot/2D/shaders/palette_limter-03.jpg",
+                "caption": "Image 3 - Changing the Panel's theme"
+              },
+              {
+                "src": "/Godot/2D/shaders/palette_limter-04.jpg",
+                "caption": "Image 4 - Adding a ShaderMaterial"
+              },
+              {
+                "src": "/Godot/2D/shaders/palette_limter-05.jpg",
+                "caption": "Image 5 - Adding a Shader"
+              }
+            ]
+          },
+          "In the Shader Editor panel, add the following code:",
+          {"code":  "shader_type canvas_item;\nrender_mode blend_mix;\n\nuniform sampler2D palette: filter_nearest;\nuniform sampler2D screen_texture : hint_screen_texture, repeat_disable, filter_nearest;\n\nvoid fragment()\n{\n    vec3 source_col = texture(screen_texture, SCREEN_UV).rgb;\n    vec3 closest_col = vec3(0.0);\n    float smallest_error = 10.0;\n\n    int palette_size = textureSize(palette, 0).x;\n    float palette_pixel_size = 1.0 / float(palette_size);\n    for (int x = 0; x < palette_size; x++)\n    {\n        vec3 palette_col = texture(palette, vec2(float(x) * palette_pixel_size, 0.0)).rgb;\n        float error = distance(source_col, palette_col);\n        if (error < smallest_error)\n        {\n            closest_col = palette_col;\n            smallest_error = error;\n        }\n    }\n\n    COLOR.rgb = closest_col;\n}"},
+          "",
+          "This shader will sample the screen pixels for the closest match to the uniform palette assigned. You can assign the palette in the Material > Shader Parameters window (Image 6). You can find palettes at [url]LoSpec^^https://lospec.com/palette-list[/url].",
+          {
+            "image": [
+              {
+                "src": "/Godot/2D/shaders/palette_limter-06.jpg",
+                "caption": "Image 6 - Assigning a palette"
+              }
+            ]
+          },
+          {
+            "image": [
+              {
+                "src": "/Godot/2D/shaders/palette_limter-07.jpg",
+                "caption": "Image 7 - The original palette before applying the shader"
+              },
+              {
+                "src": "/Godot/2D/shaders/palette_limter-08.jpg",
+                "caption": "Image 8 - Applying new palettes (GameBoy, Commodore Vic-20, and Apple II)"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

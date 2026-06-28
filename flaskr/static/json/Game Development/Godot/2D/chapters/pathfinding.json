@@ -1,0 +1,56 @@
+{
+  "title": "Pathfinding",
+  "sections": [
+    {
+      "Using Navigation Meshes": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Using Navigation Meshes",
+              "content": [
+                "2D and 3D versions of the navigation mesh are available as [url]NavigationPolygon^^https://docs.godotengine.org/en/stable/classes/class_navigationpolygon.html#class-navigationpolygon[/url] and [url]NavigationMesh^^https://docs.godotengine.org/en/stable/classes/class_navigationmesh.html#class-navigationmesh[/url] respectively.",
+                "Navigation works independently from other engine parts like rendering or physics. Navigation meshes are the only things considered when doing pathfinding, e.g. visuals and collision shapes for example are completely ignored by the navigation system. If you need to take other data (like visuals for example) into account when doing pathfinding, you need to adapt your navigation meshes accordingly. The process of factoring in navigation restrictions in navigation meshes is commonly referred to as navigation mesh baking.",
+                {
+                  "image": {
+                    "src": "/Godot/2D/pathfinding/nav_mesh_vs_physics.webp",
+                    "caption": "A navigation mesh describes a surface that an agent can stand on safely with its center compared to physics shapes that describe outer collision bounds."
+                  }
+                },
+                "Navigation mesh baking can be done either by using a [url]NavigationRegion2D^^https://docs.godotengine.org/en/stable/classes/class_navigationregion2d.html#class-navigationregion2d[/url] or [url]NavigationRegion3D^^https://docs.godotengine.org/en/stable/classes/class_navigationregion3d.html#class-navigationregion3d[/url], or by using the [url]NavigationServer2D^^https://docs.godotengine.org/en/stable/classes/class_navigationserver2d.html#class-navigationserver2d[/url] and [url]NavigationServer3D^^https://docs.godotengine.org/en/stable/classes/class_navigationserver3d.html#class-navigationserver3d[/url] API directly."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Procedural Baking a Navigation Mesh with a NavigationRegion",
+              "content": [
+                "The navigation mesh baking is made more accessible with the NavigationRegion node. When baking with a NavigationRegion node, the individual parsing, baking, and region update steps are all combined into one function.",
+                "The process for NavigationRegion2D baking can also be used at runtime with scripts, and follows the basic process:",
+                [
+                  "Add a NavigationRegion2D",
+                  "Add a NavigationPolygon resource to the NavigationRegion2D",
+                  "Add a Polygon2D below the NavigationRegion2D",
+                  "Set the NavigationPolygon's outline",
+                  "Set the Polygon2D points",
+                  "Bake the NavigationRegion2D"
+                ],
+                "This was solved in the Assignment 4 project with the following code:",
+                {"code":"# Add a NavigationRegion2D\nvar nav_region: NavigationRegion2D = NavigationRegion2D.new()\nGameEngine_auto.get_current_scene().add_child(nav_region)"},
+                "",
+                {"code":"# Add a NavigationPolygon resource to the NavigationRegion2D\nvar nav_mesh = NavigationPolygon.new()\n# set the distance to erode/shrink the walkable surface when baking the navigation mesh.\nnav_mesh.agent_radius = 16"},
+                "",
+                {"code":"# Add a Polygon2D below the NavigationRegion2D\n# several polygons will be needed to carve areas out of the mesh's walkable surface\nvar polies: Array[Polygon2D] = []\n\n# store points for the polygons in a separate array\nvar poly_points: Array[PackedVector2Array] = []\n\n# add points to the poly_points array..."},
+                "",
+                {"code":"# Set the NavigationPolygon's outline\nnav_mesh.add_outline(PackedVector2Array([... define the maximum area the mesh should cover before carve-outs]))"},
+                "",
+                {"code":"# Set the Polygon2D points\nfor points: PackedVector2Array in poly_points:\n    var poly: Polygon2D = Polygon2D.new()\n    nav_region.add_child(poly)\n    poly.set_polygon(points)\n    polies.append(poly)"},
+                "",
+                {"code":"# Bake the NavigationRegion2D\nnav_region.bake_navigation_polygon(false)\n# delete the polygons after baking, otherwise they will be drawn on-screen\nfor poly: Polygon2D in polies:\n    poly.queue_free()"}
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Camera Tricks",
+  "sections": [
+    {
+      "Camera Follow Player": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Centering the Viewport on the Player",
+              "content": [
+                "In order to have the player centered in the Viewport, you will want to add a Camera2D node to the top-level Node for your player. So if your player is an Area2D node with AnimatedSprite2D and CollisionShape2D children, you will want to make the Camera2D a child of the Area2D.",
+                {
+                  "image": {
+                    "src": "/Godot/2D/camera/camera2d-01.jpg",
+                    "caption": "Adding a Camera2D node to the Player"
+                  }
+                },
+                "This can be achieved via code as well. The [b]CameraComponent[/b] class is below:",
+                {
+                  "code": "class_name CameraComponent\n\nextends EntityComponent\n\n\n## the area covered\nvar camera_2d: Camera2D\n\n\nfunc _init() -> void:\n    self.my_class_name = \"CameraComponent\"\n    camera_2d = Camera2D.new()\n"
+                },
+                "And here is an example of attaching the Camera2D via script:",
+                {
+                  "code": "player_entity.set_component(CameraComponent.new())\n    var area_data: AreaComponent = player_entity.get_component(\"AreaComponent\") as AreaComponent\n    var camera_data: CameraComponent = player_entity.get_component(\"CameraComponent\") as CameraComponent\n    area_data.area_2d.add_child(camera_data.camera_2d)"
+                },
+                "By default, the [b]Camera2D[/b]'s [b]Enabled[/b] field should be set to True. As long as there is no other camera in the scene, this will make the camera the one used by the Viewport. Now, when you move the player on the screen, the camera should follow them."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Limiting the Camera's Scrolling",
+              "content": [
+                "Now that the camera is centered on the player, you may also want to limit the camera's boundaries so the viewport doesn't show empty areas. If you know it, you can set it using the camera's [b]Limit[/b] in the editor.",
+                {
+                  "image": {
+                    "src": "/Godot/2D/camera/camera2d-02.jpg",
+                    "caption": "Setting the Camera2D's Limit"
+                  }
+                },
+                "You can also do this in code. The example below shows the camera's limits being set to the limit's of the level's size.",
+                {"code": "var camera_data: CameraComponent = player.get_component(\"CameraComponent\") as CameraComponent\n    # the left scroll limit in pixels is going to be the top_left.x * grid cell size. so if top_left.x = -1 the left limit = -64\n    camera_data.camera_2d.limit_left = level_system.top_left.x * GameEngine_auto.GRID_CELL_SIZE.x\n\n    # the top scroll limit will be the min of 0 or screen height - (top_left.y + 1) * grid cell size\n    camera_data.camera_2d.limit_top = min(0, (level_system.top_left.y + 1) * GameEngine_auto.GRID_CELL_SIZE.y)\n\n    # the right scroll limit in pixels is going to be the (bottom_right.x + 1) * grid cell size\n    camera_data.camera_2d.limit_right = (level_system.bottom_right.x + 1) * GameEngine_auto.GRID_CELL_SIZE.x\n\n    # the bottom scroll limit will be the screen height - bottom_right.y * grid cell size\n    camera_data.camera_2d.limit_bottom = GameEngine_auto.window_size.y - level_system.bottom_right.y * GameEngine_auto.GRID_CELL_SIZE.y"}
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

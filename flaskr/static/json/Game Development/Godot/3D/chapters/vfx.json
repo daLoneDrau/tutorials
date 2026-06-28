@@ -1,0 +1,64 @@
+{
+  "title": "Add VFX to your Game - Godot Tutorial",
+  "sections": [
+    {
+      "Add VFX to your Game - Godot Tutorial": {
+        "key_concepts": [
+          "[url]Add VFX to your Game^^https://www.youtube.com/watch?v=htRjt505sPg[/url]",
+          {
+            "section": {
+              "header": "Layers",
+              "content": [
+                "A visual effect is made up of layers. a 2D explosion effect, there is usually one layer: an [k]AnimatedSprite2D[/k] node with a spritesheet. If you want to increase the complexity, you could also add an [k]AudioStreamPlayer2D[/k] to add a sound.",
+                "For a more complex explosion you can have many layers: separate particle systems for fire, smoke, sparks, debris, a shockwave. You might also have an omni light, sounds, and an animation player to time everything.",
+                {
+                  "section": {
+                    "header": "How Do You Make Each Layer?",
+                    "content": [
+                      "For a simple 2D effect, all you need is a good spritesheet you can display with an animated sprite node. Working in 3D you would probably work with particles.",
+                      {
+                        "section": {
+                          "header": "Particle Systems",
+                          "content": [
+                            "Particle systems spawn particles. You can apply force to particles, animate them over time with things like color and size, and apply textures to them. Because they are simulated in realtime you can add randomness and variation. They are also performant to render.",
+                            "VFX artists usually write their own shaders and apply them to particles."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "How to Particle System",
+              "content": [
+                {
+                  "section": {
+                    "header": "2D",
+                    "content": [
+                      "Starting in 2D, there are two types of particles:",
+                      [
+                        "[k]CPUParticles2D[/k] - particles simulated in the processor. The preferred option for targeting low end hardware, such as mobile devices.",
+                        "[k]GPUParticles2D[/k] - particles simulated in the graphics card. The preferred option for all other platforms."
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "3D",
+                    "content": [
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

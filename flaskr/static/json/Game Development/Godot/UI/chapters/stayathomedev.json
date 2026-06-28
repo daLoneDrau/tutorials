@@ -1,0 +1,279 @@
+{
+  "title": "StayAtHomeDev",
+  "sections": [
+    {
+      "Intro to User Interfaces": {
+        "key_concepts": [
+          "[url]StayAtHomeDev Godot User Interface Tutorials^^https://www.youtube.com/watch?v=r6Y8oWjimAc&list=PLEHvj4yeNfeGiG6ZJXDymk5dYBAjCGiwe&index=10[/url]",
+          {
+            "section": {
+              "header": "Rundown of Nodes",
+              "content": [
+                {
+                  "section": {
+                    "header": "CenterContainer",
+                    "content": [
+                      "[b]CenterContainer[/b] is a container that keeps all of its child controls in its center at their minimum size."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "PanelContainer",
+                    "content": [
+                      "A container that keeps its child controls within the area of a [url]StyleBox^^https://docs.godotengine.org/en/stable/classes/class_stylebox.html#class-stylebox[/url]. Useful for giving controls an outline."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "HBoxContainer/VBoxContainer",
+                    "content": [
+                      "A variant of [url]BoxContainer^^https://docs.godotengine.org/en/stable/classes/class_boxcontainer.html#class-boxcontainer[/url] that can only arrange its child controls horizontally or vertically. Child controls are rearranged automatically when their minimum size changes."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Themes",
+              "content": [
+                "A Theme is a resource used for styling/skinning Controls and Windows. Create your own Theme instead of adding Theme Overrides on individual Control Nodes.",
+                {
+                  "section": {
+                    "header": "Type Variation",
+                    "content": [
+                      "When designing a user interface there may be times when a Control node needs to have a different look than what is normally defined by a Theme. Every control node has theme property overrides, which allow you to redefine the styling for each individual UI element.",
+                      {
+                        "section": {
+                          "header": "Creating a type variation",
+                          "content": [
+                            "To create a type variation open the theme editor, then click the plus icon next to the [b]Type[/b] dropdown on the right side of the editor. Type in what you want to name your theme type variation in the text box, then click [b]Add Type[/b].",
+                            "Below the [b]Type[/b] dropdown are the property tabs. Switch to the tab with a wrench and screwdriver icon.",
+                            {
+                              "image": [
+                                {
+                                  "src": "/Godot/UI/StayAtHomeDev/control_nodes-01.webp"
+                                }
+                              ]
+                            },
+                            "Click on the plus icon next to the Base Type field. You can select the base type there, which would typically be the name of a control node class (e.g., [k]Button[/k], [k]Label[/k], etc). Type variations can also chain and extend other type variations. This works in the same way control nodes inherit styling of their base class. For example, [k]CheckButton[/k] inherits styles from[k]Button[/k] because corresponding node types extend each other.",
+                            "After you select the base type, you should now be able to see its properties on the other tabs in the theme editor. You can edit them as usual."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Using a type variation",
+                          "content": [
+                            "Now that a type variation has been created you can apply it to your nodes. In the inspector dock, under the [b]Theme[/b] property of a control node, you can find the [b]Theme Type Variation[/b] property. It is empty by default, which means that only the base type has an effect on this node.",
+                            "You can either select a type variation from a dropdown list, or input its name manually. Variations appear on the list only if the type variation belongs to the project-wide theme, which you can configure in the project settings. For any other case you have to input the name of the variation manually. Click on the pencil icon to the right. Then type in the name of the type variation and click the check mark icon or press enter. If a type variation with that name exists it will now be used by the node.,"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "StyleBoxes",
+                    "content": [
+                      {
+                        "section": {
+                          "header": "StyleBoxEmpty",
+                          "content": [
+                            "An empty StyleBox that can be used to display nothing instead of the default style (e.g. it can \"disable\" [k]focus[/k] styles). StyleBoxEmpty gives you nothing but padding."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "StyleBoxFlat",
+                          "content": [
+                            "By configuring various properties of this style box, you can achieve many common looks without the need of a texture. This includes optionally rounded borders, antialiasing, shadows, and skew.",
+                            "Setting corner radius to high values is allowed. As soon as corners overlap, the stylebox will switch to a relative system"
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "StyleBoxLine",
+                          "content": [
+                            "A StyleBox that displays a single line of a given color and thickness. The line can be either horizontal or vertical. Useful for separators."
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "StyleBoxTexture",
+                          "content": [
+                            "A texture-based nine-patch StyleBox, in a way similar to [url]NinePatchRect^^https://docs.godotengine.org/en/stable/classes/class_ninepatchrect.html#class-ninepatchrect[/url]. This stylebox performs a 3×3 scaling of a texture, where only the center cell is fully stretched. This makes it possible to design bordered styles regardless of the stylebox's size."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "UI Animation Component": {
+        "key_concepts": [
+          "[url]StayAtHomeDev Godot User Interface Tutorials^^https://www.youtube.com/watch?v=jF3UgstQ1Yk&list=PLEHvj4yeNfeGiG6ZJXDymk5dYBAjCGiwe&index=9[/url]",
+          "In this tutorial, we will be creating an interface or component setup to add animations to the UI, which will be easier than creating a script for every single node we want to animate.",
+          {
+            "section": {
+              "header": "The AnimationNode",
+              "content": [
+                "If you don't have one already, create a new GDScript class called animation_node.gd and have it extend the Node class.",
+                "Add the following export variables to the class:",
+                {
+                  "code": "## flag indicating the AnimationNode controls its transform from the center\n@export var from_center: bool\n\n## the scale factor applied when hovering the AnimationNode\n@export var hover_scale: Vector2 = Vector2(1, 1)## how long in seconds an animation should last\n@export var duration: float = 0.1\n\n@export var transition_type\n\n## the Node that will get animated\nvar target: Control = get_parent()\n\n## the default scale to return to after the animation ends\nvar default_scale: Vector2"
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Tween Functions",
+              "content": [
+                "We can delete the _process() function, and add two tween functions; one for when we hover onto the button, and another for when we hover off. We will also add a function for creating the tweens:",
+                {
+                  "code": "func on_hover() -> void:\n    add_tween(\"scale\", hover_scale, duration)\n\n\nfunc off_hover() -> void:\n    add_tween(\"scale\", default_scale, duration)\n\n\nfunc add_tween(property: String, value, seconds: float) -> void:\n    var tween: Tween = get_tree().create_tween()\n    # tell the tween what it's animating, what property it's animating, what's the value, and how long does the animation take\n    tween.tween_property(target, property, value, seconds).set_trans(transition_type)"
+                },
+                "In the code above, the [i]add_tween()[/i] method is used to add tween animations to a node. The [i]on_hover()[/i] method adds a tween when the [i]target[/i] is hovered."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Initializing the Configuration",
+              "content": [
+                "Now we need to finish setting things up:",
+                {
+                  "code": "func _ready() -> void:\n    target.mouse_entered.connect(on_hover)\n    target.mouse_exited.connect(off_hover)\n\n    call_deferred(\"setup\")\n\n\nfunc setup() -> void:\n    if from_center:\n        target.pivot_offset = target.size * 0.5\n\n    default_scale = target.scale"
+                },
+                "In the [i]_ready()[/i] method connects the two tween functions to the target hover functions. The [i]setup()[/i] method finishes configuring the component with the target's transform behaviour and default scale. It has to be called using [i]call_deferred()[/i] since if it's called too early, the target Node's pivot and scale won't be set until all its children are ready."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Wrapping Up",
+              "content": [
+                "This is the beginning of an animation framework that can be used for UI elements, such as buttons, labels, panels, etc... Play with the current setup on a set of buttons to see how you prefer to use it."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Multiple UI Animations": {
+        "key_concepts": [
+          "[url]StayAtHomeDev Godot User Interface Tutorials^^https://www.youtube.com/watch?v=3lJqkn6nD0o&list=PLEHvj4yeNfeGiG6ZJXDymk5dYBAjCGiwe&index=8[/url]",
+          "In this tutorial, we will be implementing multiple animations on Control nodes so that the animations can occur either simultaneously or sequentially.",
+          {
+            "section": {
+              "header": "New Properties and Export Variables",
+              "content": [
+                "Since we will want to animate several properties at a time we will need to capture those values in export variables. Add the following export variables to the class definition:",
+                {
+                  "code": "@export_group(\"Hover Settings\")\n\n## the length in seconds a hover animation should last\n@export var hover_duration: float = 0.1\n\n## the adjustments applied to the target's colour when hovering\n@export var hover_modulate: Color = Color.WHITE\n\n## the adjustments applied to the target's position when hovering the UiAnimationNode target\n@export var hover_position: Vector2\n\n## the rotation applied when hovering the UiAnimationNode target\n@export var hover_rotation: Vector2\n\n## the scale factor applied when hovering the UiAnimationNode target\n@export var hover_scale: Vector2 = Vector2(1, 1)\n\n## the adjustment made to the target's size when hovering\n@export var hover_size: Vector2 = Vector2(0, 0)\n\n## the way the timing of the hover animation is handled\n@export var hover_transition_type: Tween.TransitionType\n\n## controls the way the hover animation transition is applied to the interpolation (in the beginning, the end, or both)\n@export var hover_easing: Tween.EaseType\n\n## The dictionary where hover animation property values will be stored\nvar hover_values: Dictionary\n\n## close the property group\n@export_group(\"\")"
+                },
+                "In the above code, we added the [i]export_group[/i] property to group the export values together in the Editor, and added several new fields to capture and a dictionary to store them in. These can be set in the Editor now to apply to the \"Hover\" animation.",
+                "The values above cover changes applied when the target is being hovered, but we also need to capture the default values to return to when hovering stops. We will capture them in the following code:",
+                {
+                  "code": "@export_group(\"Options\")\n\n## flag indicating the UiAnimationNode controls its transform from the center\n@export var from_center: bool\n\n## flag indicating whether the different animations should run simultaneously or sequentially\n@export var run_parallel_animations: bool\n\n## the list of properties that should be captured in the default valuesS\n@export var properties: Array[String] = [\n\t\"scale\",\n\t\"position\",\n\t\"rotation\",\n\t\"size\",\n\t\"self_modulate\"\n]\n\n## The dictionary where default property values will be stored\nvar default_values: Dictionary\n\n## close the property group\n@export_group(\"\")"
+                },
+                "In the above code we create a list of properties to capture and a dictionary to store them in, as well as a flags for performing the transforms from the center and running them in parallel. When we need to capture the default values, we will do so from the [b]setup()[/b] method, since it is run after all UI nodes are ready.",
+                {
+                  "code": "## Runs the initial setup to capture default and hover animation property values.\nfunc setup() -> void:\n\tif from_center:\n\t\ttarget.pivot_offset = target.size * 0.5\n\n\tdefault_values = {\n\t\t\"scale\": target.scale,\n\t\t\"position\": target.position,\n\t\t\"rotation\": target.rotation,\n\t\t\"size\": target.size,\n\t\t\"self_modulate\": target.modulate\n\t}\n\n\thover_values = {\n\t\t\"scale\": hover_scale,\n\t\t\"position\": target.position + hover_position,\n\t\t\"rotation\": target.rotation + deg_to_rad(hover_rotation),\n\t\t\"size\": target.size + hover_size,\n\t\t\"self_modulate\": hover_modulate\n\t}"
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Modifying the Add Tween Function",
+              "content": [
+                "With the correct values stored in our dictionaries, we will want to change the way we add the tweens. We will want to set whether the animations play in parallel, and set each animation in order. The code below does this:",
+                {
+                  "code": "## Adds a tween animation.\nfunc add_tween(values: Dictionary, is_parallel: bool, seconds: float, transition: int, easing: int) -> void:\n\tvar tween: Tween = get_tree().create_tween()\n\ttween.set_parallel(is_parallel)\n\n\tfor property: String in properties:\n\t\t# tell the tween what it's animating, what property it's animating, what's the value, and how long does the animation take\n\t\ttween.tween_property(target, property, values[property], seconds).set_trans(transition).set_ease(easing)"
+                },
+                "We will also want to change where the signal connections are made, so add them to the end of the [i]setup()[/i] method:",
+                {
+                  "code": "\ttarget.mouse_entered.connect(add_tween.bind(\n\t\thover_values,\n\t\trun_parallel_animations,\n\t\thover_duration,\n\t\thover_transition_type,\n\t\thover_easing,\n\t))\n\ttarget.mouse_exited.connect(add_tween.bind(\n\t\tdefault_values,\n\t\trun_parallel_animations,\n\t\thover_duration,\n\t\thover_transition_type,\n\t\thover_easing,\n\t))"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "UI Animation Delay": {
+        "key_concepts": [
+          "[url]StayAtHomeDev Godot User Interface Tutorials^^https://www.youtube.com/watch?v=3lJqkn6nD0o&list=PLEHvj4yeNfeGiG6ZJXDymk5dYBAjCGiwe&index=7[/url]",
+          "In this tutorial, we will be adding the ability to delay animations in the UiAnimationNode. To do this, we will add a new export property to the [b]Hover Settings[/b] group: [b]hover_delay: float[/b].",
+          "Now when we run the [i]add_tween()[/i] method, we want to add a pause after setting the parallel flag before adding properties, and then add a timeout before playing the tween. the new [i]add_tween()[/i] code is below:",
+          {
+            "code": "## Adds a tween animation.\nfunc add_tween(values: Dictionary, is_parallel: bool, seconds: float, delay: float, transition: int, easing: int) -> void:\n\tvar tween: Tween = get_tree().create_tween()\n\ttween.set_parallel(is_parallel)\n\ttween.pause()\n\n\tfor property: String in properties:\n\t\t# tell the tween what it's animating, what property it's animating, what's the value, and how long does the animation take\n\t\ttween.tween_property(target, property, values[property], seconds).set_trans(transition).set_ease(easing)\n\n\tawait get_tree().create_timer(delay).timeout\n\ttween.play()"
+          }
+        ]
+      }
+    },
+    {
+      "UI Enter Animation": {
+        "key_concepts": [
+          "[url]StayAtHomeDev Godot User Interface Tutorials^^https://www.youtube.com/watch?v=3lJqkn6nD0o&list=PLEHvj4yeNfeGiG6ZJXDymk5dYBAjCGiwe&index=6[/url]",
+          "In this tutorial, we will be creating an animation when first loading Control nodes, such as having a menu popup or fade in.",
+          {
+            "section": {
+              "header": "Adding Variables and Export Settings",
+              "content": [
+                "First, we will want to add several new settings for entrance animations. First, we want a flag indicating whether the animation is for an entrance animation, and then we will want to create an export group for those values. Just copy-paste the hover settings and rename all the values:",
+                {
+                  "code": "@export_group(\"Entrance Animation Settings\")\n\n## the length in seconds a entrance animation should be delayed before playing\n@export var entrance_delay: float = 0.0\n\n## the length in seconds a entrance animation should last\n@export var entrance_duration: float = 0.1\n\n## the adjustments applied to the target's colour when entering\n@export var entrance_modulate: Color = Color.WHITE\n\n## the adjustments applied to the target's position when entering the UiAnimationNode target\n@export var entrance_position: Vector2\n\n## the rotation applied when entering the UiAnimationNode target\n@export var entrance_rotation: float\n\n## the scale factor applied when entering the UiAnimationNode target\n@export var entrance_scale: Vector2 = Vector2(1, 1)\n\n## the adjustment made to the target's size when entering\n@export var entrance_size: Vector2 = Vector2(0, 0)\n\n## the way the timing of the entrance animation is handled\n@export var entrance_transition_type: Tween.TransitionType\n\n## controls the way the entrance animation transition is applied to the interpolation (in the beginning, the end, or both)\n@export var entrance_easing: Tween.EaseType\n\n## The dictionary where entrance animation property values will be stored\nvar entrance_values: Dictionary\n\n## close the property group\n@export_group(\"\")"
+                },
+                {
+                  "code": "## Runs the initial setup to capture default and hover animation property values.\nfunc setup() -> void:\n\tif from_center:\n\t\ttarget.pivot_offset = target.size * 0.5\n\n\tdefault_values = {\n\t\t\"scale\": target.scale,\n\t\t\"position\": target.position,\n\t\t\"rotation\": target.rotation,\n\t\t\"size\": target.size,\n\t\t\"self_modulate\": target.modulate\n\t}\n\n\tentrance_values = {\n\t\t\"scale\": entrance_scale,\n\t\t\"position\": target.position + entrance_position,\n\t\t\"rotation\": target.rotation + deg_to_rad(entrance_rotation),\n\t\t\"size\": target.size + entrance_size,\n\t\t\"self_modulate\": entrance_modulate\n\t}\n\n\thover_values = {\n\t\t\"scale\": hover_scale,\n\t\t\"position\": target.position + hover_position,\n\t\t\"rotation\": target.rotation + deg_to_rad(hover_rotation),\n\t\t\"size\": target.size + hover_size,\n\t\t\"self_modulate\": hover_modulate\n\t}\n\ttarget.mouse_entered.connect(add_tween.bind(\n\t\thover_values,\n\t\trun_parallel_animations,\n\t\thover_duration,\n\t\thover_delay,\n\t\thover_transition_type,\n\t\thover_easing,\n\t))\n\ttarget.mouse_exited.connect(add_tween.bind(\n\t\tdefault_values,\n\t\trun_parallel_animations,\n\t\thover_duration,\n\t\thover_delay,\n\t\thover_transition_type,\n\t\thover_easing,\n\t))\n\n\tif is_entrance_animation:\n\t\ton_entrance()\n\n\nfunc on_entrance() -> void:\n\tadd_tween(\n\t\tentrance_values,\n\t\ttrue,\n\t\t0.0,\n\t\t0.0,\n\t\tIMMEDIATE_TRANSITION,\n\t\tentrance_easing,\n\t)\n\tadd_tween(\n\t\tdefault_values,\n\t\trun_parallel_animations,\n\t\tentrance_duration,\n\t\tentrance_delay,\n\t\tentrance_transition_type,\n\t\tentrance_easing,\n\t)"
+                },
+                "In [i]setup()[/i] we added a call to a new function, [i]on_entrance()[/i]. This runs if the animation is marked as an entrance animation."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Waiting For Animations to Finish",
+              "content": [
+                "Let's say you want one node's entrance animation to play after another node's animations have finished.  We will add an export variable to the [b]Entrance Animation Settings[/b] to capture the node that should be watched.",
+                {
+                  "code": "## the UiAnimationNode that plays immediately before this\n@export var wait_for: UiAnimationNode"
+                },
+                "In order to know when a node's animation is finished, we can create a signal for that.",
+                {
+                  "code": "## signal that the entrance animation has finished\nsignal entrance_animation_finished"
+                },
+                "We can emit this signal in places when it is done, such as in [i]setup()[/i] when there is no entrance animation, or at the end of [i]add_tween()[/i]. We also add another parameter to [i]add_tween()[/i] to indicate when an entrance animation is playing.",
+                {
+                  "code": "## Adds a tween animation.\nfunc add_tween(values: Dictionary, is_parallel: bool, seconds: float, delay: float, transition: int, easing: int, is_entrance_animation: bool = false) -> void:\n\tvar tween: Tween = get_tree().create_tween()\n\ttween.set_parallel(is_parallel)\n\ttween.pause()\n\n\tfor property: String in properties:\n\t\t# tell the tween what it's animating, what property it's animating, what's the value, and how long does the animation take\n\t\ttween.tween_property(target, property, values[property], seconds).set_trans(transition).set_ease(easing)\n\n\tawait get_tree().create_timer(delay).timeout\n\ttween.play()\n\n\tif is_entrance_animation:\n\t\tawait tween.finished\n\t\tentrance_animation_finished.emit()"
+                },
+                "Last, you will need to connect the signal emission to a call to [i]add_tween()[/i]. Do this in the [i]setup()[/i] after making your connections:",
+                {
+                  "code": "## Runs the initial setup to capture default and hover animation property values.\nfunc setup() -> void:\n\tif from_center:\n\t\ttarget.pivot_offset = target.size * 0.5\n\n\tdefault_values = {\n\t\t\"scale\": target.scale,\n\t\t\"position\": target.position,\n\t\t\"rotation\": target.rotation,\n\t\t\"size\": target.size,\n\t\t\"self_modulate\": target.modulate\n\t}\n\n\tentrance_values = {\n\t\t\"scale\": entrance_scale,\n\t\t\"position\": target.position + entrance_position,\n\t\t\"rotation\": target.rotation + deg_to_rad(entrance_rotation),\n\t\t\"size\": target.size + entrance_size,\n\t\t\"self_modulate\": entrance_modulate\n\t}\n\n\thover_values = {\n\t\t\"scale\": hover_scale,\n\t\t\"position\": target.position + hover_position,\n\t\t\"rotation\": target.rotation + deg_to_rad(hover_rotation),\n\t\t\"size\": target.size + hover_size,\n\t\t\"self_modulate\": hover_modulate\n\t}\n\ttarget.mouse_entered.connect(add_tween.bind(\n\t\thover_values,\n\t\trun_parallel_animations,\n\t\thover_duration,\n\t\thover_delay,\n\t\thover_transition_type,\n\t\thover_easing,\n\t))\n\ttarget.mouse_exited.connect(add_tween.bind(\n\t\tdefault_values,\n\t\trun_parallel_animations,\n\t\thover_duration,\n\t\thover_delay,\n\t\thover_transition_type,\n\t\thover_easing,\n\t))\n\tif wait_for:\n\t\twait_for.entrance_animation_finished.connect(add_tween.bind(\n\t\t\tdefault_values,\n\t\t\trun_parallel_animations,\n\t\t\tentrance_duration,\n\t\t\tentrance_delay,\n\t\t\tentrance_transition_type,\n\t\t\tentrance_easing,\n\t\t\ttrue\n\t\t))\n\n\tif is_entrance_animation:\n\t\ton_entrance()\n\telse:\n\t\tentrance_animation_finished.emit()"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "OpenAI",
+  "sections": [
+    {
+      "Scene Graph Layouts": {
+        "key_concepts": [
+          "ChatGPT can be used to sketch out scene graph layouts (e.g., which Containers and controls they should include) to provide wireframe-level guidance",
+          {
+            "section": {
+              "header": "UI Shorthand",
+              "content": [
+                "When ChatGPT sketches out the scene graph layouts it uses notation which is not something Godot actually understands. A list of ChatGPT shorthand notation and their meanings are below:",
+                [
+                  "c:# → means child spacing (the custom_constants/separation property of the HBoxContainer) is set to a specific number of px.",
+                  "p:# → means padding or margin around the container is a specific number of px.",
+                  "size_flags_h=# → means assigning a bit flag for how the UI element's parent nodes how they should resize and place the node on the X axis",
+                  "size_flags_h=# → means assigning a bit flag for how the UI element's parent nodes how they should resize and place the node on the Y axis"
+                ],
+                {
+                  "section": {
+                    "header": "Size Flags Bitmask Cheat Sheet",
+                    "content": [
+                      "Here’s a quick cheat sheet for Godot’s size flags bitmask values:",
+                      {
+                        "section": {
+                          "header": "Horizontal (size_flags_h)",
+                          "content": [
+                            [
+                              "0 → SIZE_SHRINK_CENTER (default, minimal size, centered if extra space exists)",
+                              "1 → FILL → Fill the space allocated, but don’t expand.",
+                              "2 → EXPAND → Ask for extra space if available, but don’t necessarily fill it.",
+                              "3 → EXPAND | FILL → Expand to take all extra space and fill it.",
+                              "4 → SHRINK_BEGIN → Stick to the left side.",
+                              "8 → SHRINK_END → Stick to the right side."
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Vertical (size_flags_v)",
+                          "content": [
+                            [
+                              "0 → default minimal size.",
+                              "1 → FILL → Fill the vertical space given.",
+                              "2 → EXPAND → Request extra vertical space.",
+                              "3 → EXPAND | FILL → Expand vertically and fill the space.",
+                              "4 → SHRINK_BEGIN → Stick to the top.",
+                              "8 → SHRINK_END → Stick to the bottom."
+                            ]
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Setting size_flags_h or size_flags_v",
+                          "content": [
+                            "In the Godot Editor, select the UI element and in the Inspector expand [k]Control > Layout > Container Sizing[/k] (Image 1). To set the specific size flags, use the following settings:",
+                            {
+                              "image": [
+                                {
+                                  "src": "Game Development/Godot/UI/OpenAI/openai_scene_graph_layouts-01.jpg",
+                                  "caption": "Image 1 - Where to adjust the size flags in the Godot Editor"
+                                }
+                              ]
+                            },
+                            "To set the specific size flags, use the following settings:",
+                            [
+                              "0 → Shrink Begin",
+                              "1 → Fill",
+                              "2 → set manually in raw .tscn file",
+                              "3 → set manually in raw .tscn file",
+                              "4 → Shrink Center",
+                              "8 → Shrink End"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

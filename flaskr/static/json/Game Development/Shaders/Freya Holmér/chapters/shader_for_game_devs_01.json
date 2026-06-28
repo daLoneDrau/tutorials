@@ -1,0 +1,437 @@
+{
+  "title": "Shader Basics",
+  "sections": [
+    {
+      " Shaders for Game Devs - Part 1": {
+        "key_concepts": [
+          "[url]Shaders for Game Devs - Part 1^^https://www.youtube.com/watch?v=kfM-yu0iQBk[/url]",
+          {
+            "section": {
+              "header": "What Is A Shader?",
+              "content": [
+                "A shader can be thought of as code that runs on your GPU. Let's say you have a mesh; a shader will define the way the surface of the mesh should look and possibly move. The code that defines that is shader code.",
+                "Shaders are unrelated to textures; textures can be input data used by shader code. Normal maps and diffuse textures are examples of data often used in textures. Shaders take the information from textures or other parameters (colors, values, etc.), running a process on that input and then outputting it to the screen.",
+                "A diffuse texture is something that contains the color of the surface of a mesh.",
+                "Normal maps are a way of adding geometry data without actually adding geometry. You can have a mesh that has very simple data, but with a normal map it will look like it has complex geometry (think of a flat cylinder that has a coin texture and normal map)."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Use Cases",
+              "content": [
+                "Some examples of shaders in action:",
+                [
+                  "Spell-casting effects",
+                  "Hit or wound effects",
+                  "Progress/health bars",
+                  "Animated markings in the UI",
+                  "Casting shadows",
+                  "Rendering skin using sub-surface scattering",
+                  "Particle effects",
+                  "Distortion from a force field",
+                  "Fresnel shaders/outline shaders",
+                  "Highlighting meshes or sprites",
+                  "Dithering effects (think of the Return of the Obra Dinn)",
+                  "Water"
+                ],
+                {
+                  "section": {
+                    "header": "Fresnel Shaders",
+                    "content": [
+                      "A ubiquitous shader. As something is facing away from you, it generates a stronger light. The edges will be lit up, but the middle will not. Kind of like an outline effect, but not the same. Fresnel works best for relatively smooth surfaces."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Structure of a Shader",
+              "content": [
+                "There is a .shader file (or in godot, .gdshader).",
+                {
+                  "section": {
+                    "header": "The .shader",
+                    "content": [
+                      "The .shader file contains the shader's input properties, such as values, colors, textures, etc. Input properties are passed directly, but some properties are passed indirectly, such as the mesh the shader is operating on, or the matrix for the mesh containing the transform data.",
+                      "Some shaders have subshaders. A subshader is code that can be shared between shaders. In Godot, these are .gdshaderinc files.",
+                      "A shader can have a pass, but subshaders can have multiple passes.",
+                      "The pass is the engine, it's where the actual work takes place. This is usually done through a Vertex Shader or a Fragment Shader. The code for the shader will be in the Vertex or Fragment Shader, written using a shading language (GLSL for Godot)."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Vertex Shader",
+              "content": [
+                "A Vertex Shader takes the vertices of your mesh and iterates over them. Each iteration allows you to access data from each vertex being operated on. Think of a Vertex Shader as running the loop below:",
+                {"code": "foreach Vertex {\n    // do something\n}"},
+                "On a basic level, your shader will want to take each vertex and render it somewhere in the clip space. Clip space is different from world space, local space, or view space. Clip space is a normalized space from -1..1 in your current view or render target. This is done by taking the local space coordinates of the vertices and transform that using an MVP matrix to convert them to clip space. If you want, you can modify the vertices in your pass.",
+                "Uses for the Vertex Shader include animating water, making leaves or grass that sway in the wind. This can be done with math in the Vertex Shader that calculates the direction they should move.",
+                "In the Vertex Shader, all you do is set the position of the vertices or pass data to the Fragment Shader.",
+                {
+                  "section": {
+                    "header": "Local Space",
+                    "content": [
+                      "Local space is the coordinate space that is local to your object, i.e. where your object begins in. Imagine that you've created your cube in a modeling software package (like Blender). The origin of your cube is probably at (0,0,0) even though your cube may end up at a different location in your final application. Probably all the models you've created all have (0,0,0) as their initial position. All the vertices of your model are therefore in local space: they are all local to your object.",
+                      "The vertices of the container we've been using were specified as coordinates between -0.5 and 0.5 with 0.0 as its origin. These are local coordinates."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "World Space",
+                    "content": [
+                      "If we would import all our objects directly in the application they would probably all be somewhere positioned inside each other at the world's origin of (0,0,0) which is not what we want. We want to define a position for each object to position them inside a larger world. The coordinates in world space are exactly what they sound like: the coordinates of all your vertices relative to a (game) world. This is the coordinate space where you want your objects transformed to in such a way that they're all scattered around the place (preferably in a realistic fashion). The coordinates of your object are transformed from local to world space; this is accomplished with the model matrix.",
+                      "The model matrix is a transformation matrix that translates, scales and/or rotates your object to place it in the world at a location/orientation they belong to. Think of it as transforming a house by scaling it down (it was a bit too large in local space), translating it to a suburbia town and rotating it a bit to the left on the y-axis so that it neatly fits with the neighboring houses. You could think of the matrix in the previous chapter to position the container all over the scene as a sort of model matrix as well; we transformed the local coordinates of the container to some different place in the scene/world.,"
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "View Space",
+                    "content": [
+                      "The view space is what people usually refer to as the camera of OpenGL (it is sometimes also known as camera space or eye space). The view space is the result of transforming your world-space coordinates to coordinates that are in front of the user's view. The view space is thus the space as seen from the camera's point of view. This is usually accomplished with a combination of translations and rotations to translate/rotate the scene so that certain items are transformed to the front of the camera. These combined transformations are generally stored inside a view matrix that transforms world coordinates to view space. In the next chapter we'll extensively discuss how to create such a view matrix to simulate a camera."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Clip Space",
+                    "content": [
+                      "At the end of each vertex shader run, OpenGL expects the coordinates to be within a specific range and any coordinate that falls outside this range is clipped. Coordinates that are clipped are discarded, so the remaining coordinates will end up as fragments visible on your screen. This is also where clip space gets its name from.",
+                      "Because specifying all the visible coordinates to be within the range -1.0 and 1.0 isn't really intuitive, we specify our own coordinate set to work in and convert those back to NDC as OpenGL expects them.",
+                      "To transform vertex coordinates from view to clip-space we define a so called projection matrix that specifies a range of coordinates e.g. -1000 and 1000 in each dimension. The projection matrix then converts coordinates within this specified range to normalized device coordinates (-1.0, 1.0) (not directly, a step called Perspective Division sits in between). All coordinates outside this range will not be mapped between -1.0 and 1.0 and therefore be clipped. With this range we specified in the projection matrix, a coordinate of (1250, 500, 750) would not be visible, since the x coordinate is out of range and thus gets converted to a coordinate higher than 1.0 in NDC and is therefore clipped."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Fragment Shader",
+              "content": [
+                "A Fragment Shader will iterate over fragments of the mesh; sometimes this will be a 1:1 rendering of each pixel, but not always. The main purpose of a fragment shader is to set the color of the fragment or pixel of the geometry when it appears on screen. SO the fragment shader will iterate over every pixel of the mesh before it appears on screen, and you can write code to define how it should look.",
+                "In the Fragment Shader you can specify color, glossiness, Fresnel, etc...",
+                "One of the limitations of the shader pipeline is that the Vertex Shader always runs before the Fragment Shader. Information can be passed from the Vertex Shader to the Fragment shader, but not vice-versa."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Shader vs. Material",
+              "content": [
+                "In Unity or Godot, you do not apply a shader to an object. Instead, you assign a Material to an object, and then assign the shader to the Material. A Material is the pre-configured set of properties to be used when rendering with a shader. You can have multiple materials using the same shader, but each material has different input data."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Shader Code",
+              "content": [
+                "Before we begin our first shader, we need to discuss the different types of shaders Godot supports:",
+                [
+                  "spatial for 3D rendering.",
+                  "canvas_item for 2D rendering.",
+                  "particles for particle systems.",
+                  "sky to render Skies.",
+                  "fog to render FogVolumes"
+                ],
+                "Let's build our first shader. First, we need to declare the shader type. We'll start with a canvas_item shader for 2D rendering.",
+                {"code": "shader_type canvas_item;"},
+                "Next, we'll add a [k]Render Mode[/k]. Shaders have optional render modes you can specify on the second line, after the shader type. Render modes alter the way Godot applies the shader. For example, the [k]unshaded[/k] mode makes the engine skip the built-in light processor function. We will set the render mode [k]blend_mix[/k], which applies a mix blend mode based on alpha values in the mesh.",
+                {"code": "render_mode blend_mix;"},
+                "Now let's add an input property, just a simple float value set to 1.0.",
+                {"code": "uniform float value = 1.0;"}
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Vertex Normals",
+              "content": [
+                "A vertex normal is a directional vector associated with a vertex (corner) of a 3D model, used to smooth out sharp edges and fake curved surfaces by influencing how light reflects off the mesh, even if the underlying geometry is flat. Vertex normals are the direction the vertex is pointing. Normals are defined on a per-vertex basis."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Passing Data from Vertex to Fragment",
+              "content": [
+                "To send data from the vertex to the fragment (or light) processor function, [k]varyings[/k] are used. They are set for every primitive vertex in the vertex processor, and the value is interpolated for every pixel in the fragment processor.",
+                {"code": "shader_type spatial;\n\nvarying vec3 some_color;\n\nvoid vertex() {\n    some_color = NORMAL; // Make the normal the color.\n}\n\nvoid fragment() {\n    ALBEDO = some_color;\n}\n\nvoid light() {\n    DIFFUSE_LIGHT = some_color * 100; // optionally\n}"},
+                "Since the vertex shader deals with vertices, and the fragment shader deals with the pixels or fragments that could be between vertices, the values passed will be blended or interpolated between the corners of a face using the values of the closest vertices."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Space Conversions",
+              "content": [
+                {
+                  "section": {
+                    "header": "World Space",
+                    "content": [
+                      "Sometimes you will want to convert the [k]VERTEX[/k] from local space (the default in the vertex shader) or view space (fragment shader) to world space. You can do it in the vertex shader with the following code:",
+                      {
+                        "code": "void vertex() {\n    // Convert local VERTEX to world space\n    vec3 world_vertex = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;\n}"
+                      },
+                      "In the fragment shader, the [k]VERTEX[/k] built-in is in view space, so you will use a different transform:",
+                      {
+                        "code": "void fragment() {\n    // Convert view VERTEX to world space\n    vec3 world_vertex = (INV_VIEW_MATRIX * vec4(VERTEX, 1.0)).xyz;\n}"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "View Space",
+                    "content": [
+                      "The [k]VERTEX[/k] is in view space in the fragment shader, but in order to get the value in the vertex shader, you will use a transformation matrix to convert the world space value to view space:",
+                      {
+                        "code": "void vertex() {\n    // Convert local VERTEX to world space\n    vec3 world_vertex = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;\n\n    // Convert world VERTEX to view space\n    vec3 view_vertex = (VIEW_MATRIX * vec4(world_vertex, 1.0)).xyz;\n}"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Clip Space",
+                    "content": [
+                      "In the vertex shader you can convert from view space to clip space using another built-in transformation matrix:",
+                      {
+                        "code": "void vertex() {\n    // Convert local VERTEX to world space\n    vec3 world_vertex = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;\n\n    // Convert world VERTEX to view space\n    vec3 view_vertex = (VIEW_MATRIX * vec4(world_vertex, 1.0)).xyz;\n\n    // Convert view VERTEX to clip space\n    vec3 clip_vertex = (PROJECTION_MATRIX * vec4(view_vertex, 1.0)).xyz;\n}"
+                      },
+                      "In the fragment shader, this involves a single transformation, since the [k]VERTEX[/k] is already in view space:",
+                      {
+                        "code": "void fragment() {\n    // Convert view VERTEX to clip space\n    vec3 clip_vertex = (PROJECTION_MATRIX * vec4(VERTEX, 1.0)).xyz;\n}"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Our First Shader",
+              "content": [
+                "Our first shader will do something very simple: color a mesh red. Set up a 3D scene with world environment, light, and camera. Add a [k]Node3D[/k] to contain our meshes and add a [k]MeshInstance3D[/k] to it. Assign it some sort of [k]Mesh[/k] and give the mesh a [k]ShaderMaterial[/k]. In our shader, add the following code:",
+                {"code": "shader_type spatial;\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    // Called for every pixel the material is visible on.\n    ALBEDO = vec3(1.0, 0.0, 0.0);\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}\n"},
+                "There are several output values from the fragment shader. ALBEDO will set the pixel's color, and ALPHA will set the pixel's transparency.",
+                "This works to set the fragment color to red, but what if we want to use the same shader on a second mesh, but change the color to green? Instead of creating a new shader, we will add a property to the shader, and use that as the color being set:",
+                {"code": "shader_type spatial;\n\nuniform vec3 input_color : source_color;\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    // Called for every pixel the material is visible on.\n    ALBEDO = input_color;\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}\n"},
+                "The key lines are the uniform added to the top of the shader. Uniforms are values passed to shaders, which are defined in the global scope of the shader, outside of functions. When a shader is later assigned to a material, the uniforms will appear as editable parameters in the material's inspector. Uniforms can't be written from within the shader. Any data type except for void can be a uniform.",
+                "Uniform hints are provided to make the compiler understand what the uniform is used for, and how the editor should allow users to modify it. Adding the [k]source_color[/k] hint tells the editor that the vec3 property input_color is meant to be an RGB color, and allows you to set it in the editor with a ColorPicker.",
+                "The property itself is used in the fragment() code, and is set to the [k]ALBEDO[/k].",
+                {
+                  "section": {
+                    "header": "Swizzling",
+                    "content": [
+                      "Shader swizzling is a computer graphics technique in shader languages (like GLSL) that lets you easily reorder, select, and duplicate components (like x, y, z, w or r, g, b, a) of a vector to create a new vector, making code cleaner and more efficient for tasks like color manipulation or texture coordinate shuffling, essentially treating components as interchangeable channels. For example, from vec4 myColor = {1, 2, 3, 4}, you could create vec2 redBlue = myColor.rg; or vec3 newColor = myColor.bgw;"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Visualizing Normals",
+              "content": [
+                "We learned that normals indicate a surface's direction. We will now create a shader that will visualize a surface's direction using the normal values. We will assign the normal value to the [k]ALBEDO[/k] in the fragment shader. Any normal that points strongly in the x-axis will be redder, normals along the y-axis will be green, and normals on the z-axis will be blue, matching the rgb color scheme.",
+                {"code": "shader_type spatial;\n\nvarying vec3 world_normal;\nvarying vec3 view_normal;\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    ALBEDO = NORMAL;\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}\n"}
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Visualizing UVs",
+              "content": [
+                "In shaders, a UV (U/V coordinate) is a 2D value (like a pixel's X/Y) that tells the shader exactly where on a 2D texture image to sample color data for a specific point (vertex or fragment) on a 3D model's surface, essentially \"unwrapping\" the 3D model into a 2D map for texturing.",
+                "We can visualize a mesh's UV coordinates using a shader. This will be easiest to see on a simple mesh, like a Plane.",
+                {"code": "shader_type spatial;\n\nvarying vec3 world_normal;\nvarying vec3 view_normal;\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    ALBEDO = vec3(UV, 0);\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}\n"},
+                {
+                  "section": {
+                    "header": "Applying a Gradient",
+                    "content": [
+                      "With the UV's visualized, we can do something with it, such as apply a gradient between two colors. We will add two uniform colors to the shader parameters, and then add interpolation to the fragment shader to make a gradient along the x-axis between the colors.",
+                      {
+                        "code": "shader_type spatial;\n\nuniform vec3 color_a : source_color;\nuniform vec3 color_b : source_color;\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    // blend between two colors based on X UV coordinate\n    ALBEDO = mix(color_a, color_b, UV.x);\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}\n"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Adding a Range",
+                    "content": [
+                      "Let's say we want limit application of the gradient to a range. In order to get this right, we need to go back to basics and visualize the uv itself. Change the fragment shader output to show the changes in the x-axis.",
+                      {
+                        "code": "shader_type spatial;\n\nuniform vec3 color_a : source_color;\nuniform vec3 color_b : source_color;\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    // blend between two colors based on X UV coordinate\n    ALBEDO = vec3(UV.xxx);\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}\n"
+                      },
+                      "Let's add two new uniforms, one for the gradient start, the other for the end. We will use the [k]hint_range[/k] hint to make it a slider in the Editor and limit the upper and lower values (keeping them between 0 and 1). With those range values, we will use inverse linear interpolation to map the UV's X coordinate to the range.",
+                      {
+                        "section": {
+                          "header": "Inverse Lerp",
+                          "content": [
+                            "Inverse Lerp (Inverse Linear Interpolation) is a mathematical function that does the opposite of Lerp; instead of giving you a blended value between A and B based on a fraction (t), it takes that blended value and tells you what the original fraction (t) was, returning a result between 0 and 1 (or 0% and 100%). If Lerp(a, b, t) = value, then InverseLerp(a, b, value) = t. It's super useful for mapping a value from one range (like distance or time) to a normalized 0-to-1 scale, perfect for controlling other effects like volume, color, or animation progress."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Visualizing the Range",
+                    "content": [
+                      "We will add an inverse_mix() method to the shader code, and call it from the fragment shader. We can then use the sliders in the Editor to see how the gradient start and end would look.",
+                      {
+                        "code": "shader_type spatial;\n\nuniform vec3 color_a : source_color;\nuniform vec3 color_b : source_color;\nuniform float gradient_start: hint_range(0.0, 1.0) = 0.0;\nuniform float gradient_end: hint_range(0.0, 1.0) = 1.0;\n\nfloat inverse_mix(float a, float b, float v) {\n    return (v - a) / (b - a);\n}\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    float t = inverse_mix(gradient_start, gradient_end, UV.x);\n    ALBEDO = vec3(t, t, t);\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}\n"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Combining the Gradient and the Range",
+                    "content": [
+                      "Last, we will mix the UV's X coordinate with the range scaling applied with the gradient colors for the full effect:",
+                      {
+                        "code": "shader_type spatial;\n\nuniform vec3 color_a : source_color;\nuniform vec3 color_b : source_color;\nuniform float gradient_start: hint_range(0.0, 1.0) = 0.0;\nuniform float gradient_end: hint_range(0.0, 1.0) = 1.0;\n\nfloat inverse_mix(float a, float b, float v) {\n    return (v - a) / (b - a);\n}\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    float t = inverse_mix(gradient_start, gradient_end, UV.x);\n    ALBEDO = mix(color_a, color_b, t);\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}\n"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Seeing the Range Repeat using the Fractional Part",
+                    "content": [
+                      "The inverse_mix method will sometimes return values above range max. We don't want those any values outside our range of 0..1. You might noe be able to tell that is happening, until we add a [k]fract()[/k] method call. The fract() method returns the fractional part of a float value. If we add this to the shader to get the fractional part of t, we will see the gradient repeat when we get values that are greater than 1.0.",
+                      {
+                        "code": "shader_type spatial;\n\nuniform vec3 color_a : source_color;\nuniform vec3 color_b : source_color;\nuniform float gradient_start: hint_range(0.0, 1.0) = 0.0;\nuniform float gradient_end: hint_range(0.0, 1.0) = 1.0;\n\nfloat inverse_mix(float a, float b, float v) {\n    return (v - a) / (b - a);\n}\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    float t = inverse_mix(gradient_start, gradient_end, UV.x);\n    t = fract(t);\n    ALBEDO = vec3(t, t, t);\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}\n"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Clamping the Range",
+                    "content": [
+                      "The fix for this is to [k]clamp()[/k] values returned form the inverse_mix() method to our range:",
+                      {"code": "shader_type spatial;\n\nuniform vec3 color_a : source_color;\nuniform vec3 color_b : source_color;\nuniform float gradient_start: hint_range(0.0, 1.0) = 0.0;\nuniform float gradient_end: hint_range(0.0, 1.0) = 1.0;\n\nfloat inverse_mix(float a, float b, float v) {\n    return (v - a) / (b - a);\n}\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    float t = inverse_mix(gradient_start, gradient_end, UV.x);\n    ALBEDO = vec3(t, t, t);\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}\n"},
+                      "Last, we will mix the UV's X coordinate with the range scaling applied with the gradient colors for the full effect:",
+                      {"code": "shader_type spatial;\n\nuniform vec3 color_a : source_color;\nuniform vec3 color_b : source_color;\nuniform float gradient_start: hint_range(0.0, 1.0) = 0.0;\nuniform float gradient_end: hint_range(0.0, 1.0) = 1.0;\n\nfloat inverse_mix(float a, float b, float v) {\n    return (v - a) / (b - a);\n}\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    float t = inverse_mix(gradient_start, gradient_end, UV.x);\n    t = clamp(t, 0, 1);\n    t = fract(t);\n    ALBEDO = mix(color_a, color_b, t);\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}\n"}
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Cg Standard Library",
+                    "content": [
+                      "If you want a greater understanding of built-in methods such as [k]fract[/k] or [k]clamp[/k], you can read the definitions or see reference implementations at the:",
+                      "[url]Cg Standard Library^^https://developer.download.nvidia.com/cg/index_stdlib.html[/url]."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Triangle Waves",
+              "content": [
+                "Once you understand how the math functions work in shaders, you can get many effects out of them that might otherwise be hard, such as animation or procedurally-generated content. In this example we will be creating a triangle wave. This is a wave that repeats values in a triangular pattern. We will do this using the UV.x value, which we know covers a range from 0..1, and the desmos graphing calculator.",
+                "[url]desmos Graphing Calculator^^https://www.desmos.com/calculator[/url]",
+                {
+                  "section": {
+                    "header": "Wave Bands",
+                    "content": [
+                      "Bands can be added to the output by getting the fractional part of the x- or y-values of the UV. The shader below will help illustrate that:",
+                      {
+                        "code": "shader_type spatial;\n\nuniform int num_bands: hint_range(1, 10, 1);\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    float t = clamp(fract(UV.x * float(num_bands)), 0.0, 1.0);\n    ALBEDO = vec3(t);\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Graphing the Wave",
+                    "content": [
+                      "Go into desmos and start a new graph. We are only interested in values between 0 and 1, so add this equation into the calculator: [k]x{0<=x<=1}[/k]. This will visualize the graph f(x)=x and limit it to values between 0 and 1.",
+                      "Plot the equation [k]abs(x*2-1)[/k], which will see the y values go from 1 to 0 back to 1 when x is between 0 and 1. This is a triangle wave, since it fluctuates between values. You can add this to a shader using UV.x:"
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Waves and Bands",
+                    "content": [
+                      "You can combine the two to produce bands of waves:",
+                      {
+                        "code": "shader_type spatial;\n\nuniform int num_bands: hint_range(1, 10, 1);\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    float t = clamp(abs(fract(UV.x * float(num_bands)) * 2.0 - 1.0), 0.0, 1.0);\n    ALBEDO = vec3(t);\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}"
+                      },
+                      "You can also achieve the same results using [k]sin[/k] or [k]cos[/k]. For this, we will want to introduce the concept of [k]Tau[/k], which is the angle of a full circle in radians. This will ensure the pattern repeats perfectly, and starts and ends on the same value.",
+                      {
+                        "code": "shader_type spatial;\n\nuniform int num_bands: hint_range(1, 10, 1);\n\nconst float EPSILON = 0.0001;\n#define TAU 6.28318530718\n\nbool is_zero_approx(float value) {\n    return abs(value) < EPSILON;\n}\n\nvoid vertex() {\n    // Called for every vertex the material is visible on.\n}\n\nvoid fragment() {\n    //float t = clamp(abs(fract(UV.x * float(num_bands)) * 2.0 - 1.0), 0.0, 1.0);\n    float t = cos(UV.x * TAU * float(num_bands));\n    ALBEDO = vec3(t);\n}\n\n//void light() {\n//    // Called for every pixel for every light affecting the material.\n//    // Uncomment to replace the default light processing function with this one.\n//}"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Pattern Manipulation",
+              "content": [
+                "Now that we have established a wave, we can add distortion. We can add distortion to the waves, to manipulate where they appear based on the position they are in vertically. for instance, we can create a variable, [k]xOffset[/k] to store an offset to apply to the fragment. If we set the offset to the value of [k]UV.y[/k] and add it to the coordinate used [k]cos((UV.x + xOffset)[/k] we will get diagonal bands.",
+                "You can also apply trigonemtry to the offset. Change the offset to [k]float xOffset = cos(UV.y * TAU * float(num_vertical_waves)) * 0.03;[/k]. This applies the cosine function to the UV.y in the selected number of vertical bands and at a specific distortion level.",
+                {
+                  "section": {
+                    "header": "Animation",
+                    "content": [
+                      "We can now animate this render. With access to a time variable, (in Godot, the [k]TIME[/k] built-in), you can apply that to the coordinate as well: [k]float t = cos((UV.x + xOffset + TIME * speed) * TAU * float(num_bands)) * 0.5 + 0.5;[/k]. You can modify the [k]speed[/k] to speed up or slow down the animation rate.",
+                      "Let's say we need a spell effect that starts at a character's feet and fades as it moves up. We can set the [k]ALPHA[/k] built-in to match the [k]UV.y[/k] value to create a fade effect as the [k]UV.y[/k] decreases."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Blending",
+              "content": [
+                "When you get a color from a fragment shader, that is considered the source color. This will be blended with the background, which is any objects behind the mesh. This is considered the destination color. The formula for determining the color that gets on the screen is to take the source color multiplied by a constant A, and then plus or minus the destination color times a constant B [k]source_color * A +/- destination_color * B[/k]. If you want to change the way the source color blends with the background color, then you need to modify the constants A or B, or the operation that occurs.",
+                {
+                  "section": {
+                    "header": "Additive",
+                    "content": [
+                      "Tends to make things brighter, is incapable of brightening without negative values. In order to do additive blending with just the source color plus the destination color, set A=1, B=1, and operator '+'."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Multiply",
+                    "content": [
+                      "In order to do multiplicative blending with just the source color plus the destination color, set A=destination_color and B=0."
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

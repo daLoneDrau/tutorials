@@ -1,0 +1,99 @@
+{
+  "title": "3D Sandbox",
+  "sections": [
+    {
+      "Setting Up My 3D Sandbox": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
+                "Start a new project, call it something like '3D Sandbox'. Start a new Scene and set its Root Node to 3D Scene (Image 1). Under the Root Node, add a [k]Node3D[/k] node and call it 'Meshes' (Image 2). This will be our container for meshes added to the scene.",
+                {
+                  "image": [
+                    {
+                      "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                      "caption": "Image 1 - Starting a new 3D Scene"
+                    },
+                    {
+                      "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                      "caption": "Image 2 - Adding a container for meshes"
+                    },
+                    {
+                      "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                      "caption": "Image 3 - Adding a MeshInstance3D"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Our First Mesh",
+                    "content": [
+                      "Under the Meshes node, add a [k]MeshInstance3D[/k] (Image 3). After adding, nothing will appear in the Viewport. That's because it has no mesh. In the Inspector, assign a [k]PlaneMesh[/k] (Image 4). Now the mesh will appear in the Viewport. Let's make this our ground. In the Mesh Properties in the Inspector, change the Size x and y to 20m (Image 5). We'll want to give it some color, so go to the Material property and give it a [k]StandardMaterial3D[/k] (Image 6). Open the Material properties, go down to Albedo and change the color to an acceptable green(Image 7).",
+                      {
+                        "image": [
+                          {
+                            "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                            "caption": "Image 3 - Adding a MeshInstance3D"
+                          },
+                          {
+                            "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                            "caption": "Image 4 - Assigning a mesh"
+                          },
+                          {
+                            "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                            "caption": "Image 5 - Changing the size"
+                          },
+                          {
+                            "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                            "caption": "Image 6 - Assigning a material"
+                          },
+                          {
+                            "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                            "caption": "Image 7 - Changing the Albedo"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Adding a Rectangle",
+                    "content": [
+                      "Add a new [k]MeshInstance3D[/k] under Meshes and this time give it a [k]BoxMesh[/k] (Image 8). Let's change the dimensions of the box, making it 2m wide, 1m deep, and 4m tall. In Godot, the y- and z-axes are switched, so the y-axis is height, and the z-axis is depth (Image 9). Half the box is under the Ground mesh, so we'll need to raise it. Since the box is 4m high, go down to the Transform property and change the y property to 2m (Image 10).",
+                      {
+                        "image": [
+                          {
+                            "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                            "caption": "Image 8 - Adding a BoxMesh"
+                          },
+                          {
+                            "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                            "caption": "Image 9 - Changing the box's size"
+                          },
+                          {
+                            "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                            "caption": "Image 10 - Moving the box fully above ground"
+                          },
+                          {
+                            "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                            "caption": "Image 6 - Assigning a material"
+                          },
+                          {
+                            "src": "Game Development/Godot/3D/Sandbox/sandbox-1.jpg",
+                            "caption": "Image 7 - Changing the Albedo"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
