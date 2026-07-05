@@ -639,8 +639,10 @@
             }
           }
         ]
-      },
-      "Body": {
+      }
+    },
+    {
+      "Low Poly Characters": {
         "key_concepts": [
           {
             "section": {
