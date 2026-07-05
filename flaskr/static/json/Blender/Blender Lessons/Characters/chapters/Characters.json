@@ -233,6 +233,25 @@
           }
         ]
       }
+    },
+    {
+      "Hairstyles (For Men)": {
+        "tags": [
+          "head",
+          "face"
+        ],
+        "key_concepts": [
+          "[url]Tutorial: Make a low - poly Hairstyles for Men^^https://www.youtube.com/watch?v=yvvoi35ckoo[/url]",
+          "Several different low poly hairstyles for male characters",
+          {
+            "section": {
+              "header": "Thick Hair",
+              "content": [
+              ]
+            }
+          }
+        ]
+      }
     }
   ]
 }
