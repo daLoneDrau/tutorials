@@ -252,6 +252,54 @@
           }
         ]
       }
+    },
+    {
+      "Dragon from Skin": {
+        "tags": ["dragon", "skin"],
+        "key_concepts": [
+          "[url][Blender] Quickly Creating a Base Mesh For Sculpting/Modelling by BudgetMelodies^^https://www.youtube.com/watch?v=54iqf0VdlOU[/url]",
+          {
+            "section": {
+              "header": "Making a Skeleton",
+              "content": [
+                "Start with a Plane and possibly a reference image (Image 1). In Edit Mode, select all vertices and [k]M,A[/k] to reduce them to one (image 2). We can extrude this vertex into a general path of edges with no volume (Image 3), so if we tried to render it, the screen would be empty. Keep extruding edges until we have the general shape for the neck, body, and tail (Image 4)."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adding Volume",
+              "content": [
+                "We are going to add volume with a [k]Skin Modifier[/k] (Image 5). To improve the blockiness of it, add a [k]Subdivision Surface Modifier[/k], followed by a second [k]Subdivision Surface Modifier[/k] (Image 6).",
+                {
+                  "section": {
+                    "header": "Adjusting the Radius",
+                    "content": [
+                      "To thicken sections of the mesh, select the vertex in the area to adjust and [k]Ctrl-A[/k] (Image 7)."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Legs",
+              "content": [
+                "Go to the area where the anterior legs will be and extrude that vertex out to the side (Image 8). Shape the leg with further vertices (Image 9). The area where the leg meets the body will not look right, so [k]Ctrl-R[/k] to cut a vertex between the body and shoulder joint (Image 10) and the delete it (Image 11). You will be left with the leg vertices as bare edges again (Image 12), so go to the [k]Skin Modifier[/k], select the top vertex and mark it as the root for the leg (Image 13). Do the same in the back or duplicate the geometry for the posterior leg (Image 14). Symmetrize the mesh in the right direction (in our case from -Y to +Y) to create the legs on the other side (Image 15). Alternatively, you could apply a [k]Mirror Modifier[/k]."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Convert to Mesh",
+              "content": [
+                "The last step is to convert it to a mesh. In Object Mode [k]Object > Convert > Mesh[/k] (Image 16). Make sure [k]Keep Original[/k] is checked so you keep the original version for editing (Image 17). Now we have a mesh, but it is actually different parts.."
+              ]
+            }
+          }
+        ]
+      }
     }
   ]
 }

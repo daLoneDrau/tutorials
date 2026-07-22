@@ -1,0 +1,137 @@
+{
+  "sections": [
+    {
+      "Mixamo Add-Ons for Blender TBD": {
+        "tags": [],
+        "key_concepts": [
+          "[url]Mixamo Addon for Blender 5 now available!^^https://www.youtube.com/watch?v=jJy86EHllAs[/url]",
+          "How to use the new rotation algorithm in geometry Nodes.",
+          {
+            "section": {
+              "header": "Add-Ons",
+              "content": [
+                "Go to [k]Edit > Preferences > Add-Ons[/k] and search for the Mixamo extensions (Image 1). If you don't have them installed, go to the [k]Get Extensions[/k] tab and search for 'mixamo' (Image 2). There are three we need to install: 'Mixamo Rig', 'Import Mixamo - Root Motion', and 'Retarget'. After installing, check the [k]Add-Ons[/k] tab to make sure they're enabled (Image 3). If we [k]N[/k] to open the sidebar, we should see a Mixamo tab (Image 4). Let's try it out.",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Mixamo Rig",
+                    "content": [
+                      "Import an FBX file from Mixamo and import it into the scene (Image 5). Select the armature and in the Mixamo tab, press [k]Create Control Rig[/k] and you will have the same animation, but now applied to a control rig wit IK controls (Image 6).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Import Mixamo - Root Motion",
+                    "content": [
+                      "go to [k]File > Import[/k] and you will see a new option for Mixamo FBX files (Image 7). You will get the animation, but this time with a root bone, which is good for importing into game engines (Image 8). If you try to generate a control rig for this using the other extension, you will get an error; the animation will disappear and you won't get a control rig (Image 9).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Saga Character Pack TBD": {
+        "tags": [],
+        "key_concepts": [
+          "Rigging Characters for the Saga mini-game.",
+          {
+            "section": {
+              "header": "Rigging",
+              "content": [
+                "Add a Basic Human metarig to the scene. Adjust the scale, place the bones, etc.. and generate the rig. Once the rig has been generated, you can duplicate it to apply to multiple meshes that share the same base mesh (in our project, Siegfried and Beowulf). Parent the rig to the mesh with automatic weights."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Adjusting Weights",
+              "content": [
+                "Select the mesh, go into Edit Mode, Vertex Selection Mode. Start checking areas that didn't look right when posing the mesh. Areas to look for:",
+                [
+                  "the head, with the helmet, hair, beard",
+                  "the sides of the torso, some pieces are usually attached to the arms or hands",
+                  "the waist/hips, especially the belt area"
+                ],
+                "When you have identified areas that are influenced by the wrong vertex groups, select them and do the following cleanup:",
+                [
+                  "If the area should be assigned to only one vertex group, run the remove_all_vertex_groups_from_selected_vertices_except_assigned script. This will remove all vertex groups except the one you want assigned.",
+                  "If the area should be assigned to multiple vertex groups, for example a shoulder that gets influence from the spine and shoulder bones, then:",
+                  [
+                    "select vertices in the affected area you need to fix",
+                    "open [k]Data Properties > Vertex Groups[/k]",
+                    "check the box for [k]Auto Normalize[/k]",
+                    "select the vertex groups that should have no influence and click [k]Remove[/k]"
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Mixamo to Rigify TBD": {
+        "tags": [],
+        "key_concepts": [
+          "Connect Blender's Rigify with the Mixamo Animation Library.",
+          {
+            "section": {
+              "header": "Rigify",
+              "content": [
+                "We want to create two versions of the rigged character to work with: the original Rigify metarig armature that is adjusted for your mesh, and the rigify control rig. Start by adding the Rigify armature to your scene and adjusting it to fit your mesh (Image 1). Generate the control rig as usual (Image 2). We are going to create two versions so duplicate your mesh.",
+                {
+                  "section": {
+                    "header": "Preparing an Armature for Mixamo",
+                    "content": [
+                      "Go back to the metarig armature you adjusted for your mesh and duplicate or work from the original. Delete the breast bones if you haven't already. Delete the pelvic bones on either side (Image 3). Delete the bones by the heel (Image 4). Select the lower neck bone and [k]Ctrl-X[/k] to merge it with the upper neck bone (Image 5). Go into Pose Mode and [k]RMB > Conversion > Rename Bones[/k] (Image 6). Set the Source and Target (Image 7). If you go to [k]Data > Viewport Display[/k] and enable [k]Names[/k] you will see that the bones now follow the Mixamo bone naming conventions (Image 8)."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Double Rigging",
+                    "content": [
+                      "Parent the control rig to your first mesh, and parent the metarig armature to the second (Image 9). Clean up the weights on the control rig to ensure any articulation of the rig doesn't result in strange deformation. Don't bother to adjust the weights for the second mesh/armature. In order to download animations from Mixamo we need an armature and a mesh."
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Mixamo",
+              "content": [
+                "Select the metarig and export it to an FBX file, applying any modifiers. Upload the FBX to Mixamo. Since it is already rigged, you won't need to go through the rigging process in Mixamo. We didn't bother with adjusting the weights in Blender because all we need from Mixamo is the animation applied to the armature, we don't care about the deformation on the duplicate mesh; we only care that it has the exact some articulation points (joint positions) as out Rigify control rig. Select the animations you want and download the FBX file."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Mixamo to Rigify",
+              "content": [
+                "Import your animation into Blender (Image 10). Delete the mesh from the imported object (Image 11). [k]LMB[/k] to select the Rigify control rig and [k]Shift-LMB[/k] to select the Mixamo armature so it's the active object (Image 12). Go into Pose Mode, [k]RMB > Binding > Bind to Active Armature[/k] (Image 13). In the dialog, bind the Rigify_Controls to Mixamo (Image 14). Watch the animation play on your mesh. In the Outliner, make sure the two rigs are still selected with the Mixamo rig as the active object (Image 15) and [k]RMB > Animation > Bake Constrained Actions[/k] (Image 16). Press [k]Bake[/k]. Select the rigify controls and the mesh and export the file to a GLB."
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -400,12 +400,12 @@
             "section": {
               "header": "Inverse Kinematics",
               "content": [
-                "Go into Pose Mode and select the bone connection by the ankle (Image 36). [k]E,Y[/k] to extrude a bone out in the y-axis (Image 37). We want to use this new bone to set up inverse kinematics for the leg. [k]F2[/k] and name the bone 'leg_IK.L' (Image 38). [k]Shift-LMB[/k] 'shin.L' and then [k]Ctrl-Shift-C[/k] to bring up the Add Constraints with Target menu and choose Inverse Kinematics (Image 39). This will create the constraint for you and assign the first selected bone as the target bone (Image 40).",
+                "Go into Edit Mode and select the bone connection by the ankle (Image 36). [k]E,Y[/k] to extrude a bone out in the y-axis (Image 37). We want to use this new bone to set up inverse kinematics for the leg. Go into Pose Mode and [k]F2[/k] and name the bone 'leg_IK.L' (Image 38). [k]Shift-LMB[/k] 'shin.L' and then [k]Ctrl-Shift-C[/k] to bring up the Add Constraints with Target menu and choose Inverse Kinematics (Image 39). This will create the constraint for you and assign the first selected bone as the target bone (Image 40).",
                 {
                   "image": [
                     {
                       "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-36.jpg",
-                      "caption": "Image 36 - Going into Pose Mode and selecting the bone connection by the ankle"
+                      "caption": "Image 36 - Going into Edit Mode and selecting the bone connection by the ankle"
                     },
                     {
                       "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-37.jpg",
@@ -413,7 +413,7 @@
                     },
                     {
                       "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-38.jpg",
-                      "caption": "Image 38 - Naming the new bone 'leg_IK.L'"
+                      "caption": "Image 38 - Going into Pose Mode and renaming the new bone 'leg_IK.L'"
                     },
                     {
                       "src": "Blender/CGDive/Rigging Basics/Basic Rigging/basic_rigging-39.jpg",
