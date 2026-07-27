@@ -1,0 +1,73 @@
+{
+  "title": "Characters",
+  "sections": [
+    {
+      "Equipment Slots": {
+        "tags": [
+          "rigging",
+          "slots",
+          "equipment"
+        ],
+        "key_concepts": [
+          "[url]Rigging equipment and weapon slot in Blender^^https://www.youtube.com/watch?v=W2WsgkI3Iqc[/url]",
+          {
+            "section": {
+              "header": "Creating a Deformation Bone for the Weapon",
+              "content": [
+                "Move your weapon back to the World Origin and set its origin to the point where the character's hand should grip it (Image 1). With the character's armature selected, [k]Tab[/k] into Edit Mode and [k]Shift-A[/k] to add a new bone (Image 2). Scale the bone down somewhat, the final size doesn't matter (Image 3). This will be the deformation bone for our weapon (an axe), so [k]F2[/k] and rename it 'def_axe' (Image 4). We don't want to work with the original so [k]Shift-D[/k] to duplicate it and [k]F2[/k] to rename the new bone 'tgt_axe' (Image 5). [k]S[/k] to scale the target bone down so there is some separation between the two and then in [k]Pose Mode[/k] select the deformation bone, then the target bone and [k]Ctrl-Shift-C > Copy Transforms[/k] to add a constraint (Image 6). Back in [k]Object Mode[/k] select the axe mesh and in [k]Data Properties > Vertex Groups[/k] add a new Vertex Group named after the deformation bone, 'def_axe' (Image 7). Add an [k]Armature Modifier[/k] sourced from the main armature (Image 8). In [k]Edit Mode[/k] select all vertices and under [k]Data Properties > Vertex Groups[/k] assign the group (Image 9). Now if you move the def_axe bone in [k]Pose Mode[/k] then the axe geometry will follow (Image 10).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Building the Snapping Mechanism",
+              "content": [
+                "Duplicate the target bone with a smaller copy and name it 'ctrl_axe' (Image 11). In [k]Pose Mode[/k] give it a ",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Basic Breakdown",
+              "content": [
+                [
+                  "Deform Bone - deform bone on the accessory",
+                  "Control Bone - a control bone meant to target the different equipment slots",
+                  "Slot Bones - bones the control bone will snap to. The slot bones will be rotated so that the accessory is placed correctly and the main armature bones (hands, spine for backpacks) will be parented to them."
+                ],
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Constraints",
+                    "content": [
+                      [
+                        "Deform Bone - Copy Transforms constraint targeting the control bone",
+                        "Control Bone - Copy Transforms constraints targeting each slot bone. Only one constraint can have 100% influence at a given time",
+                        "Slot Bones - no constraints, they will be children of the main armature bones"
+                      ],
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
