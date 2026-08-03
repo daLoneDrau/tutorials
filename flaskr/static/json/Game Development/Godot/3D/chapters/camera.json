@@ -1,0 +1,23 @@
+{
+  "title": "Camera",
+  "sections": [
+    {
+      "Isometric 3D Camera": {
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Setup",
+              "content": [
+                "Create a Node3D and name it CameraPivot (Image 1). Change the [k]Rotation[/k] to (-35.264, 45, 0) (Image 2). Add a Camera3D as a child of CameraPivot (Image 3). Set [k]Projection[/k] to Orthogonal (Image 4). Set the [k]Position[/k] to (0, 0, 15) (Image 5). In Godot, a Camera3D always looks down its own local −Z axis. Its local +Y axis points up, and its local +X axis points right, so the camera will be pointing at the CameraPivot. Adjust the [k]Size[/k] until the camera is looking at the all the content you want to see (Image 6).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
