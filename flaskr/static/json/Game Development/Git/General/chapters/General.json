@@ -1,0 +1,28 @@
+{
+  "sections": [
+    {
+      "Submodules": {
+        "tags": ["git", "submodules"],
+        "key_concepts": [
+          "Git Submodules",
+          {
+            "section": {
+              "header": "Adding Git Submodules",
+              "content": [
+                [
+                  "create your main project",
+                  "run \"git init\" to create the local repository",
+                  "navigate to the folder where the submodule should reside",
+                  "run the command \"git submodule add git@github.com:daLoneDrau/godot-4_5-ecs\"",
+                  "if you get a fatal error saying you cannot connect, try to register an ssh key",
+                  "go to git desktop and push changes to origin",
+                  "git submodule add git@github.com:daLoneDrau/Godot-4_5-ECS"
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
