@@ -1,0 +1,76 @@
+{
+  "sections": [
+    {
+      "Humanoid Walk Cycle TBD": {
+        "tags": [
+          "animation",
+          "walk"
+        ],
+        "key_concepts": [
+          "[url]Create a Walk Cycle animation in Blender^^https://www.youtube.com/watch?v=SLh3hUIxv1s[/url]",
+          "Animate a simple walk cycle in Blender.",
+          {
+            "section": {
+              "header": "Set Up",
+              "content": [
+                "We are going to be working from the following reference images (Images 1 and 2). Open the [k]Animation Workspace[/k] Image 3). Change the Editor Context for the Dope Sheet to [k]Action Editor[/k] (Image 4). Click [k]New[/k] to create a new action (Image 5) and give it a relevant name (Image 6). Click [k]New[/k] to create a new action slot for the animation that will automatically be assigned to our armature (Image 7). Open the [k]Output Properties[/k] tab on the right (Image 8). A basic walk cycle is generally animated over a second, so go on frame 24 in the Action Editor and [k]Ctrl-End[/k] to set the end frame to 24 (Image 9). This is assuming the framerate is 24fps, which can be confirmed in the [k]Output Properties[/k] (Image 10). Go to [k]Action Editor > View[/k] and enable [k]Playback Controls[/k] (Image 11). And go to [k]Edit > Preferences > Animation[/k] and enable [k]Only Insert Available[/k]; this will stop Blender from adding keyframes to channels of F-Curves that do not exist (Image 12).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "First Pose",
+              "content": [
+                "We are going to start with the first pose, \"Contact\"; that is the moment where the front foot contacts the ground  (Images 13 and 14). The poses do not need to be perfect right away. Move to frame 1 and create an A shape with the legs (Image 15). Raise the heel on the back foot and the toes on the front foot (Image 16). You can also lower the center of gravity with the hips and widen the strides of the front and back feet (Image 17).",
+                {
+                  "image": [
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Contrapposto",
+                    "content": [
+                      "[k]Contrapposto[/k] is a body gesture created by shifting weight from one leg to another, resulting in an asymmetrical posture. The hips and chest are going to be moving in different directions in this pose. Rotate the character's hips to the right so that they open up and gives extra room for the front leg to come out (Image 18). Rotate the chest the opposite way (Image 19). In this pose the arms will be the widest from the body; move the arms so they don't hang at the sides and move the shoulders down and out slightly (if you have the hand FK enabled it might be easier to turn it off) (Image 20). From the sides move the arms in the opposite direction of the legs (Image 21). Rotate each joint separately, shoulder, elbow, wrist. Rotate the character's chest and neck and chest forward so they don't look like they are in a relaxed walk (Image 22). Go around the pose, making small tweaks where needed. When we are ready, [k]A[/k] to select all bones and [k]I[/k] to insert the keyframes to the [k]Action Editor[/k] (Image 23).",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Duplicating and Mirroring",
+                    "content": [
+                      "There are three contact frames in our animation: frame 1 when the animation starts, frame 13 when the opposite foot makes contact and frame 25 when the first foot makes contact again. We have frame 1 in place. In the [k]Action Editor[/k] click on frame 1 and [k]Shift-D[/k] and duplicate it over to frame 25 (image 24). Select frame 1 and again and [k]Ctrl-C[/k], go to frame 13 and [k]Ctrl-Shift-V[/k] to place a mirrored copy in frame 13 (Image 25). If you [k]Space[/k] you will see a crude walk cycle play.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Passing Pose",
+              "content": [
+                "The next pose is the passing pose, where the feet are closest to each other (Images 26 and 27). Each keyframe in the animation will happen 6 frames after the last, so to see the transition clearer, copy frame 1 to frame 7 (Image 28). In the passing pose, the weight will fully shift toward the supporting leg. Select the bone to rotate the front foot and [k]Alt-R[/k] to flatten it (Image 29). Grab the front foot Ik and [k]G,Y[/k] to move it back under the body since this will be the only leg supporting weight (Image 30). From the front, [k]Alt-R[/k] to remove the rotation from the hips and [k]G,X[/k] to move it slightly to the supporting leg's side (Image 31). Grab the back foot and move it forward so it's almost aligned with the foot on the ground and lift it up, keeping the foot as close as possible to the ground (energy preservation) (Image 32). Push the character's torso up (Image 33). [k]Alt-R[/k] to clear the rotation on the chest (Image 34).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
