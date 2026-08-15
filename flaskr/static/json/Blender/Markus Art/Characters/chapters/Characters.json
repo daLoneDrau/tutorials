@@ -1449,7 +1449,7 @@
             "section": {
               "header": "II - The Arms",
               "content": [
-                "Add a Cylinder to the scene with 10 vertices and set [k]Cap Fill Type > Nothing[/k] and then [k]R,Z,30[/k] to rotate it (Image 24). Scale it down and move it to the elbow area for the upper arm (Image 25). Select the top edge loop and rotate and scale to match the widest part of the arm (Image 26). Extrude the top edge loop up again to the shoulder (Image 27).",
+                "Add a Cylinder to the scene with six vertices and set [k]Cap Fill Type > Nothing[/k] and then [k]R,Z,30[/k] to rotate it (Image 24). Scale it down and move it to the elbow area for the upper arm (Image 25). Select the top edge loop and rotate and scale to match the widest part of the arm (Image 26). Extrude the top edge loop up again to the shoulder (Image 27).",
                 {
                   "image": [
                     {
