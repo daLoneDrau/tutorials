@@ -37,6 +37,41 @@
           }
         ]
       }
+    },
+    {
+      "Transparent Render": {
+        "tags": [
+          "render",
+          "transparency"
+        ],
+        "key_concepts": [
+          "Rendering with Transparency",
+          {
+            "section": {
+              "header": "Render Properties",
+              "content": [
+                "Under the [k]Render[/k] properties, go to [k]Film > Transparent[/k] and enable it (Image 1). Go to [k]Color Management[k] and check the [k]View[/k] setting. Use [k]Standard[/k] if you want a flat, literal 1:1 reproduction of your actual color values — correct for UI/icon work where you want exact color fidelity; otherwise if you want a cinematic scene rendering use [kk]Filmic[/k] or [k]AgX[/k].",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Clear the Scene",
+              "content": [
+                "The render will render everything within the camera viewport, even if you have it hidden. Move everything out of the way of the camera so they don't affect the background transparency.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   ]
 }
