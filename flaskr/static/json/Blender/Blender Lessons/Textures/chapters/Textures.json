@@ -50,7 +50,7 @@
             "section": {
               "header": "Render Properties",
               "content": [
-                "Under the [k]Render[/k] properties, go to [k]Film > Transparent[/k] and enable it (Image 1). Go to [k]Color Management[k] and check the [k]View[/k] setting. Use [k]Standard[/k] if you want a flat, literal 1:1 reproduction of your actual color values — correct for UI/icon work where you want exact color fidelity; otherwise if you want a cinematic scene rendering use [kk]Filmic[/k] or [k]AgX[/k].",
+                "Under the [k]Render[/k] properties, go to [k]Film > Transparent[/k] and enable it (Image 1). Go to [k]Color Management[/k] and check the [k]View[/k] setting. Use [k]Standard[/k] if you want a flat, literal 1:1 reproduction of your actual color values — correct for UI/icon work where you want exact color fidelity; otherwise if you want a cinematic scene rendering use [k]Filmic[/k] or [k]AgX[/k].",
                 {
                   "image": [
                   ]
