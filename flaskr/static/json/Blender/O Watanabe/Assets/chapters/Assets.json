@@ -24,6 +24,11 @@
             "section": {
               "header": "Starting Off",
               "content": [
+                "Bring your reference image(s) into Blender and position them (Image 1). Add a cube to the scene, cut it in half and give it a [k]Mirror Modifier[/k] (Image 2). TWe will start with the arch, move the cube into place at the top and scale it down (Image 3). Bring the width out to the width of the gate, making sure to add loop cuts for the support column (Image 4). Add a horizontal loop cut to separate the top into two sections (Image 5). Adjust the edges and vertices to follow the shape of the arch (Image 6). Extrude the faces for the columns, adding in loop cuts for crossbeams and widening the base (Image 7). Extrude the crossbeam (Image 8). Select all front and back faces along the top of the arch and [k]Alt-E,F[/k] (Image 9). Still in [k]Edit Mode[/k], add a Cube to the scene, scale it down and move it into position at the top of the arch for the sign (image 10). Select the front face and [k]I,B[/k] to inset it (Image 1). [k]E[/k] to bring it in (Image 12). Select the two edges on the face around the side and subdivide them (Image 13). Select all faces around the sides and [k]Alt-E,I[/k] (Image 14). Isolate the faces at the top and bottom and add loop cuts (Image 15). Add two more loop cuts around the sides (Image 16), and then further loop cuts in each side section (Image 17).",
+                {
+                  "image": [
+                  ]
+                }
               ]
             }
           }
