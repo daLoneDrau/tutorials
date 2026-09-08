@@ -233,6 +233,53 @@
           }
         ]
       }
+    },
+    {
+      "Tiling a Texture from a Trim Sheet": {
+        "tags": ["shader nodes", "tiling"],
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Setting up the Network",
+              "content": [
+                "Go to the Shading Workspace and begin with the default material. Replace the [k]Principled BSDF[/k] node with an [k]Emission[/k] node. Add an Image Texture node, and set its image to the trim sheet. You will see that the entire trim sheet is on the mesh now."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Reading the UV Coordinates",
+              "content": [
+                "Add a Texture Coordinate node and a Mapping node. Connect the Texture Coordinate node's UV output to the Mapping Node's Vector input. The Mapping node's Scale input will determine how many times the tile will repeat in the X and Y direction. Add a Vector Math > Wrap node and connect its input to the Mapping node's output. Set the Min input to (0, 0, 0) and the Max input to (1, 1, 1). This repeats the scaled UV pattern back into a 0–1 range instead of letting it run off into neighboring atlas cells the way plain scaling does. Add a Vector Math > Multiply node and connect it to the Wrap node. Set the Multiple node's X and Y values to the size of the UV in the trim sheet. For example, if the trim sheet is 1024x1024 and the UV we want is 256x256, then the X and Y values will both be 0.25. Add in a Vector Math > Add node and connect the Multiply node to one of its Vector inputs. This node will control the offset for the texture in the trim sheet. If the texture is at 256px from the left and the trim sheet is 1024px wide, then the X value of the second Vector input should be 0.25. Last thing is to connect the Add node's out to the Vector input of the Image Texture node."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Controlling the Tiling",
+              "content": [
+                "You can control the repeating in the x- and y-axes from the Mapping node's Scale input. If you want it repeated twice in the y-axis, but only once in the x, set X to 1 and Y to 2. Be aware that when the X and Y values are not the same, there will be stretching."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Seams",
+              "content": [
+                "If you notice seams between tiles, change the Image Texture node's Interpolation input to Closest."
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Baking",
+              "content": [
+                "If you want to use your material in a game engine like Godot it won't work. You will need to bake your texture and them export a new material. First add a new Image Texture node and give it a new image. Set the new image's resolution to the size you want (256x256 is good for PS1 retro), and uncheck 32-bit float. Do not connect this node to anything, but make it the active node. Go to the Render Properties tab and change the Render Engine to Cycles. Go under the Bake section and set the Bake Type to Emission to match the shader network. Click bake. If it complains about no active image or object, make sure your mesh and the Image Texture node are selected. Now if you go back to your network and click the Image Texture node, you will see it has been baked with the right texture. Connect that Image Texture node to your Emission node and verify the mesh looks correct. Export it as a GLB file and import into Godot. When you import into Godot, double-click the GLB file and re-import. It should look but, under the Material section set Extract to Extract Once and Extract Path to a folder for storing the material. Bring your GLB file into a 3D scene. It should not look like it did in the import scene. That is because the wrong material is applied. Double-click the imported asset in the Scene tree and choose a New Inherited Scene. In this scene, give the mesh a StandardMaterial3d Surface Material Override and set the Albedo Texture to the imported material file. Save the scene as a TSCN and you will able to use it now."
+              ]
+            }
+          }
+        ]
+      }
     }
   ]
 }
