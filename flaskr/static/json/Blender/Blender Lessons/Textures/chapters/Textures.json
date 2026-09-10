@@ -72,6 +72,28 @@
           }
         ]
       }
+    },
+    {
+      "Wireframe Models": {
+        "tags": [
+          "wireframe"
+        ],
+        "key_concepts": [
+          "Setting up the Model to Render as a Wireframe",
+          {
+            "section": {
+              "header": "Edges",
+              "content": [
+                "Select your mesh, go to Edge select mode. Select the edge loops running along the cell boundaries you want to keep visible (not the diagonals). [k]Edge → Mark Sharp[/k] on those loops, then add an [k]Edge Split[/k] modifier (Sharp Edges enabled) — this physically duplicates vertices along marked edges, breaking the shared topology there. Leave the diagonals unmarked — they stay welded, which is what lets the existing shared-vertex + coplanar check keep suppressing them. Apply the modifier (or leave it non-destructive if your export pipeline respects modifiers) and re-export the .glb.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   ]
 }
