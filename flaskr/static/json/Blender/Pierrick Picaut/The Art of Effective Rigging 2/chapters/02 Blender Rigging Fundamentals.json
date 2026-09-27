@@ -5,15 +5,49 @@
       "02_01 What is rigging": {
         "tags": [],
         "key_concepts": [
+          "Rigging is about creating mechanism, whatever their complexity, to make something move.",
+          "As soon as you create an item to move another, you’re rigging.",
+          "Transform a mesh object into a digital puppet."
+        ]
+      }
+    },
+    {
+      "02_02 Why using an armature?": {
+        "tags": [],
+        "key_concepts": [
+          "You can use several methods to control an object: you can parent it to an empty and move it around, you can give it a modifier and update the modifier settings over time, or you can use an armature.",
           {
             "section": {
-              "header": "Starting Off",
+              "header": "What is an armature?",
               "content": [
-                "Rigging is about creating mechanism, whatever their complexity, to make something move.",
-                "As soon as you create an item to move another, you’re rigging.",
-                "Transform a mesh object into a digital puppet.",
+                "An armature is an object you can add in Blender. it has three default modes (Image 1). In Edit Mode we can add more bones connected to each other or disconnect them. In Pose Mode we can animate those bones or create constraints.",
                 {
-                  "image": []
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "What is an object?",
+              "content": [
+                "In Blender an object is just a container. it is a basic point in space defined by a location, an orientation, and a scale (Image 2). It can also contain mesh data, camera data, constraint data, etc. So you need to understand that an object is just the basic point in space containing a hierarchy of component data. So when animating an object, you are playing with the different transform values' channels.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Where armatures come in",
+              "content": [
+                "When you are creating an animation, when setting it on an object, if you are animating one object it is not too bad, but if you animating several objects together it becomes complex. And if the object's position gets reset, then you have to make sure your animation accounts for that. But if you are using armatures, you can store all movement in a single action. Armatures have their own structure that allow you to affect multiple of their child objects (bones). Armatures are exportable to game engines, and are used in 99.9% of animation solutions.",
+                {
+                  "image": [
+                  ]
                 }
               ]
             }
@@ -22,15 +56,67 @@
       }
     },
     {
-      "02_02 Why using an armature?": {
-        "tags": [],
-        "key_concepts": []
-      }
-    },
-    {
       "02_03 Parenting": {
-        "tags": [],
-        "key_concepts": []
+        "tags": ["parenting"],
+        "key_concepts": [
+          [
+            "Parents can have multiple children",
+            "Children can have only one parent",
+            "Children inherit all parent's transforms",
+            "Visual transform displayed on-screen is not the same as child's transform"
+          ],
+          {
+            "section": {
+              "header": "What is parenting?",
+              "content": [
+                "Rigging is about creating relationships between different objects using parenting or constraints. The accumulation and combination of both allows you to create complex mechanisms. Parenting is the common way to create a relationship between two objects or bones. To parent one object to another we first select the child, then the parent and then [k]Ctrl-P[/k] (Image 1). Depending on the context, you will see different options in the Parent menu. Once an object is parented to another, its children will follow any transformation we apply to the parent (Image 2). A relationship line will be visible between a parent and its children; this can be toggled using the [k]Viewport Overlays[/k] menu (Image 3).",
+                {
+                  "image": [
+                  ]
+                },
+                "In an armature, bones can parent other bones, but in this case, the bones can be connected or at an offset (Image 4).",
+                {
+                  "image": [
+                  ]
+                },
+                "Clear a parent with [k]Alt-P[/k].",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "How transformations affect children",
+              "content": [
+                "Parent a simple primitive mesh to another and rotate the parent. Look at the parent transforms (Image 5); now select the child and review its transforms (Image 6). The child's transforms in its local space have not changed, but since it follows its parents transforms, its transform in world space has. Later, if you are applying a constraint to a child that relies on the child's transforms, remember that the parent's transforms affect the child's position in world space, but do not affect its local space transforms.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          "The full parent-child hierarchy can be explored through the Outliner (Image 7), and through individual objects in the [k]Object Properties[/k] tab (Image 8). Bone hierarchies can be explored through the [k]Bone Properties[/k] tab (Image 8).",
+          {
+            "image": [
+            ]
+          },
+          {
+            "section": {
+              "header": "Vertex parenting",
+              "content": [
+                "You can parent a child object to a single vertex of the parent. Select your child and then your parent in [k]Object Mode[/k] and then go into [k]Edit Mdoe[/k]. Select the vertex of the parent you want and [k]Ctrl-P[/k]. That vertex is now the parent; moving the vertex around will affect the child's location, but not rotation or scale since that information isn't carried by a vertex (Image 9). To fix that, we will use three vertices as the parent (Image 10). Three vertices for a triangle; a triangle is the most basic 3D asset and has a position and an orientation. An example of this would be adding a button to a shirt of a shoulder armor to a shoulder. Being parented to the triangle allows other transforms to affect th child, such as rotation or scale (Image 11).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+        ]
       }
     },
     {
