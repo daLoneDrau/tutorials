@@ -1,0 +1,12 @@
+{
+    "title": "08",
+    "sections": [
+        { "08_04 Proper deformation bones hierarchy": { "tags": [], "key_concepts": [] } },
+        { "08_05 Fixing rig for games - scaling": { "tags": [], "key_concepts": [] } },
+        { "08_06 Fixing rig for games - constraints": { "tags": [], "key_concepts": [] } },
+        { "08_07 Fixing rig for games - Animations": { "tags": [], "key_concepts": [] } },
+        { "08_08 Fixing limb stretching": { "tags": [], "key_concepts": [] } },
+        { "08_09 Exporting to game engine": { "tags": [], "key_concepts": [] } },
+        { "08_10 Rigging from FBX": { "tags": [], "key_concepts": [] } }
+    ]
+}

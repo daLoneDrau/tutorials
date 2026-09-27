@@ -1,0 +1,22 @@
+{
+    "title": "06 P2Dbot rig",
+    "sections": [
+        { "06_01 P2DBOT RIG introduction": { "tags": [], "key_concepts": [] } },
+        { "06_02 Deformation bones": { "tags": [], "key_concepts": [] } },
+        { "06_03 Deformation bones_02": { "tags": [], "key_concepts": [] } },
+        { "06_04 Deformation bones_03": { "tags": [], "key_concepts": [] } },
+        { "06_05 Skinning": { "tags": [], "key_concepts": [] } },
+        { "06_06 Skinning_02": { "tags": [], "key_concepts": [] } },
+        { "06_07 Skinning_03": { "tags": [], "key_concepts": [] } },
+        { "06_08 Skinning_04": { "tags": [], "key_concepts": [] } },
+        { "06_09 Skinning_05": { "tags": [], "key_concepts": [] } },
+        { "06_10 Shape keys": { "tags": [], "key_concepts": [] } },
+        { "06_11 Corrective bones": { "tags": [], "key_concepts": [] } },
+        { "06_12 Corrective bones_02": { "tags": [], "key_concepts": [] } },
+        { "06_13 ORG bones": { "tags": [], "key_concepts": [] } },
+        { "06_14 Spine": { "tags": [], "key_concepts": [] } },
+        { "06_15 Spine_02": { "tags": [], "key_concepts": [] } },
+        { "06_16 Spine_03": { "tags": [], "key_concepts": [] } },
+        { "06_17 Spine_04": { "tags": [], "key_concepts": [] } }
+    ]
+}

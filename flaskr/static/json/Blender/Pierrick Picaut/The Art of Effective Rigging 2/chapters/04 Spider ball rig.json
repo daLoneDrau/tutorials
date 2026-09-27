@@ -1,0 +1,33 @@
+{
+    "title": "04 Spider ball rig",
+    "sections": [
+        { "04_01 Spider ball rig": { "tags": [], "key_concepts": [] } },
+        { "04_02 Spider ball Deformation bones": { "tags": [], "key_concepts": [] } },
+        { "04_03 Spider ball Deformation bones_02": { "tags": [], "key_concepts": [] } },
+        { "04_04 Skinning": { "tags": [], "key_concepts": [] } },
+        { "04_05 Skining_02_no_comment": { "tags": [], "key_concepts": [] } },
+        { "04_06 Inverse kinematics constraint": { "tags": [], "key_concepts": [] } },
+        { "04_07 Isolation mechanism": { "tags": [], "key_concepts": [] } },
+        { "04_08 Spider body rig": { "tags": [], "key_concepts": [] } },
+        { "04_09 Spider ball leg rig": { "tags": [], "key_concepts": [] } },
+        { "04_10 Spider ball leg rig_02": { "tags": [], "key_concepts": [] } },
+        { "04_11 Spider ball leg rig_03": { "tags": [], "key_concepts": [] } },
+        { "04_12 Spider ball leg rig_04": { "tags": [], "key_concepts": [] } },
+        { "04_13 Local location": { "tags": [], "key_concepts": [] } },
+        { "04_14 Spider ball Arm rig": { "tags": [], "key_concepts": [] } },
+        { "04_15 Spider ball Arm rig_02": { "tags": [], "key_concepts": [] } },
+        { "04_16 Spider ball Arm rig_03": { "tags": [], "key_concepts": [] } },
+        { "04_17 Spider ball Head rig": { "tags": [], "key_concepts": [] } },
+        { "04_18 Custom properties": { "tags": [], "key_concepts": [] } },
+        { "04_19 Drivers": { "tags": [], "key_concepts": [] } },
+        { "04_20 Spider ball head rig_02": { "tags": [], "key_concepts": [] } },
+        { "04_21 Spider ball head rig_03": { "tags": [], "key_concepts": [] } },
+        { "04_22 Limit distance VS limit scale": { "tags": [], "key_concepts": [] } },
+        { "04_23 Fixing arms and legs": { "tags": [], "key_concepts": [] } },
+        { "04_24 Spider ball Panels rig": { "tags": [], "key_concepts": [] } },
+        { "04_25 Leg’s advanced fix": { "tags": [], "key_concepts": [] } },
+        { "04_26 Keying set, bone groups and naming convention": { "tags": [], "key_concepts": [] } },
+        { "04_27 Rig UI (Blender 3.X)": { "tags": [], "key_concepts": [] } },
+        { "04_28 Rig UI (Blender 4.X)": { "tags": [], "key_concepts": [] } }
+    ]
+}

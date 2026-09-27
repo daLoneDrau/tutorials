@@ -1,0 +1,10 @@
+{
+    "title": "03 My First rig",
+    "sections": [
+        { "03_01 Ball presentation": { "tags": [], "key_concepts": [] } },
+        { "03_02 Ball rig": { "tags": [], "key_concepts": [] } },
+        { "03_03 Ball rig squash and stretch": { "tags": [], "key_concepts": [] } },
+        { "03_04 Rig cleanup": { "tags": [], "key_concepts": [] } },
+        { "03_05 Custom bone shapes": { "tags": [], "key_concepts": [] } }
+    ]
+}
