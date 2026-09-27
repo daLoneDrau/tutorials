@@ -1,0 +1,21 @@
+{
+  "title": "01 Getting started",
+  "sections": [
+    {
+      "01_03 Optimising Blender interface": {
+        "tags": ["interface", "thick lines"],
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Updating Preferences",
+              "content": [
+                "By default, rig controller's custom shapes are very thin, which can sometimes be difficult to see. We can chane that. Go to [k]Edit > Preferences[/k] (Image 1), and under [k]Interface > Line Width[/k] change it to [k]Thick[/k] (Image 2). Now the bones and their custom shapes will be easier to read. Also, check the box for [k]Developer Extras[/k] (Image 3); this will display extra input when hovering Blender input, including its RNA path which is helpful for scripting or editing drivers. Also, later on you will need to remember to user [k]Alt-LMB[/k] and [k]Shift-Alt-LMB[/k] for later.",
+                {
+                  "image": []
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },

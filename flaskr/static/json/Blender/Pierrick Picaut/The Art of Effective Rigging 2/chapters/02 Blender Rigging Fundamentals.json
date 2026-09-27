@@ -1,25 +1,139 @@
 {
-    "title": "02 Blender Rigging Fundamentals",
-    "sections": [
-        { "02_01 What is rigging": { "tags": [], "key_concepts": [] } },
-        { "02_02 Why using an armature?": { "tags": [], "key_concepts": [] } },
-        { "02_03 Parenting": { "tags": [], "key_concepts": [] } },
-        { "02_04 World, local, custom space": { "tags": [], "key_concepts": [] } },
-        { "02_05 Constraints": { "tags": [], "key_concepts": [] } },
-        { "02_06 Armature Object": { "tags": [], "key_concepts": [] } },
-        { "02_07 Bones fundamental": { "tags": [], "key_concepts": [] } },
-        { "02_08 Bones manipulation": { "tags": [], "key_concepts": [] } },
-        { "02_09 Assign to armature": { "tags": [], "key_concepts": [] } },
-        { "02_10 Introduction to vertex groups": { "tags": [], "key_concepts": [] } },
-        { "02_11 Tracking constraints": { "tags": [], "key_concepts": [] } },
-        { "02_12 Additional tracking constraints": { "tags": [], "key_concepts": [] } },
-        { "02_13 Bone tranform channels": { "tags": [], "key_concepts": [] } },
-        { "02_14 Transform constraints": { "tags": [], "key_concepts": [] } },
-        { "02_15 Transform constraints Copy rotation": { "tags": [], "key_concepts": [] } },
-        { "02_16 Transform constraints part 3": { "tags": [], "key_concepts": [] } },
-        { "02_17 Transform constraints Limits": { "tags": [], "key_concepts": [] } },
-        { "02_18 Transform constraints Transformation": { "tags": [], "key_concepts": [] } },
-        { "02_19 The bone layer manager (Blender 3.x only)": { "tags": [], "key_concepts": [] } },
-        { "02_20 Naming, renaming, naming tool": { "tags": [], "key_concepts": [] } }
-    ]
+  "title": "02 Blender Rigging Fundamentals",
+  "sections": [
+    {
+      "02_01 What is rigging": {
+        "tags": [],
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Starting Off",
+              "content": [
+                "Rigging is about creating mechanism, whatever their complexity, to make something move.",
+                "As soon as you create an item to move another, you’re rigging.",
+                "Transform a mesh object into a digital puppet.",
+                {
+                  "image": []
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "02_02 Why using an armature?": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_03 Parenting": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_04 World, local, custom space": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_05 Constraints": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_06 Armature Object": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_07 Bones fundamental": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_08 Bones manipulation": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_09 Assign to armature": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_10 Introduction to vertex groups": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_11 Tracking constraints": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_12 Additional tracking constraints": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_13 Bone tranform channels": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_14 Transform constraints": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_15 Transform constraints Copy rotation": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_16 Transform constraints part 3": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_17 Transform constraints Limits": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_18 Transform constraints Transformation": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_19 The bone layer manager (Blender 3.x only)": {
+        "tags": [],
+        "key_concepts": []
+      }
+    },
+    {
+      "02_20 Naming, renaming, naming tool": {
+        "tags": [],
+        "key_concepts": []
+      }
+    }
+  ]
 }
