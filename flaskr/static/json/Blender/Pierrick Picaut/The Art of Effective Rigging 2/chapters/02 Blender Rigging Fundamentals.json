@@ -115,32 +115,207 @@
                 }
               ]
             }
-          },
+          }
         ]
       }
     },
     {
       "02_04 World, local, custom space": {
-        "tags": [],
-        "key_concepts": []
+        "tags": ["world space", "local space", "custom space"],
+        "key_concepts": [
+          [
+            "World space : global coordinates, aligned with the view widget",
+            "Local space : Local coordinates of an object or a bone, along which it performs any transform",
+            "Parent only affects world space as a child will follow it’s parent but it won’t change it’s local coordinates",
+            "Custom space : an object location and orientation defines A new origin point. Any other object/bones using these coordinates will have his coordinates evaluated from the difference between world space origin and this custom space coordinates."
+          ],
+          {
+            "section": {
+              "header": "World space",
+              "content": [
+                "By default when you manipulate an object in Blender you are working on it in world space These coordinates are represented by the lines on the ground and the [k]Viewport Navigation Gizmo[/k] (Image 1). For an object, its coordinates are calculated from its origin point. If an object is not parented, its local coordinates are the same world coordinates. Rotations are performed around an axis, and orientation is the result of rotation. All transformations are performed and calculated from the object's origin point.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Local space",
+              "content": [
+                "In this scene, a cylinder is parented to a cube, and we can see that the cube's X offset is -3 (Imaghe 2). If I move the cylinder 2 units in the x-axis, we can see the cube move in world space, but it's coordinates in local space do not change (Image 3). If we rotate the parent cylinder along the x-axis and then move the cube in it's local z-axis, we see it does not move straight up and down, but follows its parent's rotation (Image 4).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bone space",
+              "content": [
+                "Bones can have any default position and orientation; this is called the rest pose. Consider this set up: we have a parent bone, a child bone, and a bone we will call constrained (Image 5). The child bone's rotation was changed in [k]Edit Mode[/k] so this will be its Rest Pose. Go into [k]Pose Mode[/k], select the constrained bone and open the [k]Bone Constraints[/k] tab (Image 6). Add a bone constraint to [k]Copy Rotation[/k] (Image 7), and set the [k]Target[/k] to the armature and the [k]Bone[/k] to child (Image 8). We will see the constraint bone copy the child bone's rotation immediately and rotating the parent and child bones will affect the constrained bone (Image 9).",
+                {
+                  "image": [
+                  ]
+                },
+                "But if we change the [k]Target[/k] and [k]Owner[/k] to [k]Local Space[/k] the we see the constrained bone return to its Rest Pose (Image 10). Now rotating the parent bone has no effect on constrained, its only when rotating the child bone that we see an effect (Image 11).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Custom space",
+              "content": [
+                "Custom space is where we use an object to define the space used to evaluate any coordinate. You will almost never use it in a project.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     {
       "02_05 Constraints": {
-        "tags": [],
-        "key_concepts": []
+        "tags": ["constraints"],
+        "key_concepts": [
+          "Constraints:",
+          [
+            "Can be stacked like modifiers, order matters.",
+            "Are applied after parenting and object transform.",
+            "Owner : object constrained.",
+            "Target : object constraining.",
+            "Constraints influence the transform values of an object/bone.",
+            "Constraint influence power can be modified."
+          ],
+          {
+            "section": {
+              "header": "What are constraints?",
+              "content": [
+                "Constraints are a powerful tool when it comes to rigging in Blender. Constraints can be used on objects and affect their transforms. This means they will work on an object's point of origin, but not their mesh or geometry. They can be added to any type of object: cameras, empties, grease pencils, etc. There are object constraints whioh are applied to objects (Image 1) and bone constraints applied to bones (Image 2). Bone/Object constraints are the same thing, expect in rigging you will use bons constraints since object constraints will affect the parent armature. There are many constraints (Image 3) but mose of the time you will only use a handful of them.",
+                {
+                  "image": [
+                  ]
+                },
+                "Earlier we learned that parenting is one way to make an object influence another; a child will follow its parent's location, rotation, and scale. Constraints are another way.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Our first constraints",
+              "content": [
+                "Let's set up a scene with three objects: a cube, a sphere, and an empty (Image 4). Add a [k]Copy Transforms[/k] constraint to the cube (Image 5). The constraint will show red since it is disabled while the [k]Target[/k] is empty (Image 6). If we set the [k]Target[/k] to the empty, we will see the cube snap to the empty; this is because we are copying its transforms in World Space (Image 7). Most constraints will have an influence slider (Image 8); 1 is full influence, 0 is no influence.",
+                {
+                  "image": [
+                  ]
+                },
+                "Constraints override parenting and object transforms. Let's parent the sphere to the cube and try to move the empty along the x-axis; nothing will happen (Image 9). In order to allow the sphere to influence the cube you need to disable the constraint (Image 10). By default a constraint replaces an object's transforms, but this can be changed (Image 11).",
+                {
+                  "image": [
+                  ]
+                },
+                "Like modifiers, constraints can be applied (Image 11); thia applies the transform to the object but removes the constraint for future changes. Constraints can also be duplicated. Constraints are applied in the same order as modifiers: top-to-bottom. In this example (Image 12), we see the cube get copy the transform values from the empty first, and then copy the transform from the sphere, which is the final result seen in the viewport. You can adjust the influence on multiple constraints to affect the results.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     {
       "02_06 Armature Object": {
-        "tags": [],
-        "key_concepts": []
+        "tags": ["armature", "pose mode", "rest pose", "bone collections"],
+        "key_concepts": [
+          [
+            "As any Blender object, it’s a container with trnasformation information.",
+            "It features specific datas : Armature data and bones data.",
+            "It has 3 modes, object, edit and pose.",
+            "You should always have your armature transform channels reset. before rigging anything.",
+            "Use bone constraint, not object constraint to build your rig.",
+            "[k]Tab[/k] = Enter/exit edit mode.",
+            "[k]Ctrl-Tab = Enter/exit pose mode.",
+            "Bone layers/collections, bone groups = organise your armature."
+          ],
+          {
+            "section": {
+              "header": "What is an armature?",
+              "content": [
+                "Armatures are objects in Blender. You can add one to you scene with [k]Shift-A > Armature[/k] and a bone will appear where the 3D cursor was. If your 3D cursor wasn't at the world origin when you added the armature, it will reflect that in the transform (Image 1). You will want to [k]Alt-R,Alt-S,Alt-G[/k] to clear all transforms on your armature. You want to create a rig with an armature that has no rotation, scale, or location offset; otherwise you could generate unexpected behavior when animating. It is a best practice to clear the transforms on both the armature and the mesh before rigging.",
+                {
+                  "image": [
+                  ]
+                },
+                "An armature is a blender object, and it has several components attached to it, such as Data properties, Bone properties, and Bone Constraints properties (Image 2). Armatures have three main modes. [k]Object Mode[/k] allows you to edit the armature's transforms. [k]Edit Mode[/k] is where you will set the orientation of different bones, add new bones, parent bones; basically create the structure of your armature. This is also where we set the Rest Pose for each bone. [k]Pose Mode[/k] is where we animate the armature and also add constraints.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Armature properties",
+              "content": [
+                "In the [k]Data Propeties[/k] for an armature, you will see two different options: [k]Pose Position[/k] or [k]Rest Position[/k] (Image 4). This affects the position displayed in [k]Pose Mode[/k]. For example, let's create a simple armature and pose it (Image 5). While [k]Pose Position[/k] is toggled, we see the armature's latest pose; but if we toggle [k]Rest Position[/k] then the viewport goes back to the armature's Rest Pose (Image 6). You can clear a pose by using [k]Alt-R,Alt-S,Alt-G[/k] or [k]Pose > Clear Transform > All[/k].",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bone collections",
+              "content": [
+                "Bone collections help you organize, hide, isolate, and manage rig bones; you can find your bone collections in the [k]Data Properties[/k] (Image 6). Bones are assigned to a collection with [k]M[/k], and removed with [k]Shift-M[/k]. Bones can be assigned to multiple collections. Collections are nestable, so collections can contain other collections.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bone colors",
+              "content": [
+                "You can change a bone's color under [k]Bone Properties > Viewport Display[/k] (Image 7).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     {
       "02_07 Bones fundamental": {
         "tags": [],
-        "key_concepts": []
+        "key_concepts": [
+          
+        ]
       }
     },
     {
