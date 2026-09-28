@@ -12,7 +12,7 @@
       }
     },
     {
-      "02_02 Why using an armature?": {
+      "02_02 Why using an armature": {
         "tags": [],
         "key_concepts": [
           "You can use several methods to control an object: you can parent it to an empty and move it around, you can give it a modifier and update the modifier settings over time, or you can use an armature.",
@@ -329,7 +329,111 @@
             "B-Bones are unique to Blender and can’t be used by other softwares or game Engines.",
             "They behave like a 2 vectors bezier curve.",
             "Shift+W Toggle Deform."
-          ]
+          ],          
+          {
+            "section": {
+              "header": "Bone types",
+              "content": [
+                "There are different types of bones in Blender.",
+                {
+                  "image": [
+                  ]
+                },       
+                {
+                  "section": {
+                    "header": "Controller bones",
+                    "content": [
+                      "Controller bones are exposed to the animator allowing for character or rig posing and animation.",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                },       
+                {
+                  "section": {
+                    "header": "Deformation bones",
+                    "content": [
+                      "Deformation bones are driven by the controller bones and actually deform the character. They influence the vertices positions of the mesh. This influence can be shared by multiple bones for complex deformations. Deformation bone's influence can be adjusted using vertex groups to create complex deformations.",                             
+                      {
+                        "section": {
+                          "header": "Vertex groups",
+                          "content": [
+                            "Vertex groups are a named group of vertices with an influence value. A signle vertex can belong to multiple vertex groups.",
+                            {
+                              "image": [
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Mechanism bones",
+                    "content": [
+                      "Mechanism bones are intermediate or helper bones in Blender that act as a bridge between your animator-facing Control bones and the actual Deformation bones that bend your mesh. ",
+                      {
+                        "image": [
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bone anatomy",
+              "content": [
+                "Bones have two ends: the tail (Image 1) and the head (Image 2). The head is the bone's pivot point. The section in the middle is the body (Image 3); this represents the length of the bone. The roll of the bone is controlled by its rotation; [k]Ctrl-R[/k] to rotate the bone around its y-axis (Image 4). Bone roll and orientation are very important in rigging, so make sure you stay aware.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Settings for working with bones",
+              "content": [
+                "You will want to see more information about the armature you are working on; go to the [k]Data Properties > Viewport Display[/k] and enable [k]Name[/k] and [k]Axes]/k] (Image 5). And go to [k]Object Properties > Viewport Display > Display As[/k] and set it to [k]Wire[/k] (Image 6). This will ensure your bones are transparent. The last setting is under [k]Data Properties > Viewport Display[/k] and enable [k]In Front[/k]; thie ensures your bone is always visible.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "What is a bone?",
+              "content": [
+                "A bone at its heart is simply a vector; it has a position, an orientation, and a factor.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "B-bones",
+              "content": [
+                "B-bones or bendy bones are a type of bone unique to Blender. They cannot be exported to a game engine. They are a special type of bone that can be manipulated as a 2 vector bezier curve.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
         ]
       }
     },
