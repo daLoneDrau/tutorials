@@ -314,7 +314,22 @@
       "02_07 Bones fundamental": {
         "tags": [],
         "key_concepts": [
-          
+          "By Default, an armature is made of a single bone. We can consider 3 families of bones:",
+          [            
+            "Deformation bones = deform the mesh using Associated Vertex group influences.",
+            "Controller bones = Used by the animator to pose/animate an object.",
+            "Mechanism bones = USed to drive the deformation bones with the controllers and create complex mechanism."
+          ],
+          [
+            "The Bone’s head is its pivot point.",
+            "CTRL+R change bone roll. Twisting the bone around its local Y axis. In edit mode",
+            "Use Wire display mode for the armature object.",
+            "Use in Front to display the bones in front of any other object.",
+            "A bone can be considered as Vector, its size doesn’t matter, but there are exceptions.",
+            "B-Bones are unique to Blender and can’t be used by other softwares or game Engines.",
+            "They behave like a 2 vectors bezier curve.",
+            "Shift+W Toggle Deform."
+          ]
         ]
       }
     },
