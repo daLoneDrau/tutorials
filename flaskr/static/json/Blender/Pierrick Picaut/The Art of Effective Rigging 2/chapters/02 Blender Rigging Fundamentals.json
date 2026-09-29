@@ -769,7 +769,41 @@
       "02_11 Tracking constraints": {
         "tags": [],
         "key_concepts": [
-          "in this lesson we will get the turret to follow a target. Constraints are only avilable in [k]Pose Mode[/k]."
+          "In this lesson we will get the turret to follow a target. Constraints are only avilable in [k]Pose Mode[/k].",
+          {
+            "section": {
+              "header": "Damped track constraint",
+              "content": [
+                "Select the armature and [k]Ctrl-Tab[/k] into [k]Pose Mode[/k]. Select the turret bone, and add a [k]Damped Track[/k] constraint (Image 1). When a bone gets a constraint, it turns green in the 3D viewport (Image 2). Right now the constraint is disabled since there is no target. [k]Tab[/k] into [k]Edit Mode[/k], [k]Shift-D,Y[/k] the turret bone and place the duplicate in front of the cannon (Image 3). Rename the bone to 'target' (Image 4).",
+                {
+                  "image": [
+                  ]
+                },
+                "[k]Ctrl-Tab[/k] back into [k]Pose Mode[/k] and we see the target bone is also green; this is because when it was duplicated it also duplicated the original's constraints (Image 5). [k]Ctrl-Alt-C[/k] or click the 'x' button on the constraint to remove it (Image 6). Select the turret bone and make the [k]Target[/k] the armature and the [k]Bone[/k] the target bone (Image 7). We see immediately that the turret bone flipped. This is because we need to fix the [k]Track Axis[/k]. The [k]Damped Track[/k] constraint will aim at the target with the selected track axis. Right now, the y-axis of the turret bone is aimed at the target bone; flip this to the -y-axis (Image 8). Now if we move the target bone around in [k]Pose Mode[/k] the turret will follow (Image 9).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Locked track constraint",
+              "content": [
+                "Remove the [k]Damped Track[/k] constraint (Image 10). [k]LMB[/k] the target bone and [k]Shift-LMB[/k] the turret bone; this tells blender that we are ready to make the target bone the target of a constraint and the turret bone the owner (Image 11). [k]Ctrl-Shift-C[/k] to open the [k]Add Constraint[/k] menu and choose [k]Locked Track[/k] (Image 12). This creates a new constraint and automatically assigns the [k]Target[/k] and [k]Bone[/k] (Image 13). Again, we need to set the [k]Track Axis[/k] to -Y (Image 14). The [k]Locked Track[/k] constraint locks tracking movement to rotating a single axis, defaulting to the z-axis. This limits the movement to follow the target as it moves from side to side, but we want to limit to up and down. Change the [k]Locked Axis[/k] field to X (Image 15); now when the target bone moves up and down the turret will follow. Add the same constraint to the arm bone, locking the track in the z-axis so the arm moves rotates in a circle following the target (Image 16).",
+                {
+                  "image": [
+                  ]
+                },
+                "We see as we move the target around that the arm and turret move independently; the turret moves up and down but doesn't follow the target if it moves off to the side. [k]Tab[/k] into [k]Edit Mode[/k], [k]LMB[/k] the turret bone, [k]Shift-LMB[/k] the arm bone and [k]Ctrl-P > Keep Offset[/k] (Image 17). Now the arm is parented to the turret; when the arm bone rotates so does the turret. Moving the target around now shows the cannon tracking it (Image 18). We want everything to follow the root bone, and since turret is a child of the arm, making the arm a child of the root will automatically make the arm follow the root. Make the root the parent of the arm (Image 19). If we go into [k]Pose Mode[/k] and move the root bone, we see the cannon pointing at the target, but the target doesn't move with the root (Image 20). We want the target to stay with the root, so parent the root to the target as well (Image 21). The only bones we want to work with now are the target and root bones. Let's organize our bones; select the turret and arm bones in [k]Pose Mode[/k] and [k]M[/k] to add them to a new Bone Collection (Image 22). We can then hide the collection in the [k]Data Properties[/k] tab so they are hidden in the viewport while the targeting still works (Image 23).",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
         ]
       }
     },
