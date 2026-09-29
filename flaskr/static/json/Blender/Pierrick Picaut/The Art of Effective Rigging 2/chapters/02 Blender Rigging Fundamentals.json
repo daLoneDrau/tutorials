@@ -322,13 +322,13 @@
           ],
           [
             "The Bone’s head is its pivot point.",
-            "CTRL+R change bone roll. Twisting the bone around its local Y axis. In edit mode",
+            "[k]CTRL-R[/k] change bone roll. Twisting the bone around its local Y axis. In edit mode",
             "Use Wire display mode for the armature object.",
             "Use in Front to display the bones in front of any other object.",
             "A bone can be considered as Vector, its size doesn’t matter, but there are exceptions.",
             "B-Bones are unique to Blender and can’t be used by other softwares or game Engines.",
             "They behave like a 2 vectors bezier curve.",
-            "Shift+W Toggle Deform."
+            "[k]Shift-W[/k] Toggle Deform."
           ],          
           {
             "section": {
