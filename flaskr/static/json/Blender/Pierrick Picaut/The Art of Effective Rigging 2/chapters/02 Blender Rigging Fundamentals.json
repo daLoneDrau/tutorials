@@ -251,7 +251,7 @@
             "You should always have your armature transform channels reset. before rigging anything.",
             "Use bone constraint, not object constraint to build your rig.",
             "[k]Tab[/k] = Enter/exit edit mode.",
-            "[k]Ctrl-Tab = Enter/exit pose mode.",
+            "[k]Ctrl-Tab[/k] = Enter/exit pose mode.",
             "Bone layers/collections, bone groups = organise your armature."
           ],
           {
