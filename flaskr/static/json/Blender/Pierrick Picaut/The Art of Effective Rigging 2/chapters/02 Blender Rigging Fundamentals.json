@@ -131,7 +131,7 @@
               ]
             }
           },
-          "The full parent-child hierarchy can be explored through the Outliner (Image 7), and through individual objects in the [k]Object Properties[/k] tab (Image 8). Bone hierarchies can be explored through the [k]Bone Properties[/k] tab (Image 8).",
+          "The full parent-child hierarchy can be explored through the Outliner (Image 7), and through individual objects in the [k]Object Properties[/k] tab (Image 8). Bone hierarchies can be explored through the [k]Bone Properties[/k] tab (Image 9).",
           {
             "image": [
               {
@@ -140,7 +140,11 @@
               },
               {
                 "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-08.jpg",
-                "caption": "Image 8 - Reviewing parent-child relationships through individual objects in the Object Properties tab and bone hierarchies in the Bone Properties tab"
+                "caption": "Image 8 - Reviewing parent-child relationships through individual objects in the Object Properties tab"
+              },
+              {
+                "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-08.jpg",
+                "caption": "Image 9 - Reviewing bone hierarchies in the Bone Properties tab"
               }
             ]
           },
@@ -148,20 +152,20 @@
             "section": {
               "header": "Vertex parenting",
               "content": [
-                "You can parent a child object to a single vertex of the parent. Select your child and then your parent in [k]Object Mode[/k] and then go into [k]Edit Mdoe[/k]. Select the vertex of the parent you want and [k]Ctrl-P[/k]. That vertex is now the parent; moving the vertex around will affect the child's location, but not rotation or scale since that information isn't carried by a vertex (Image 9). To fix that, we will use three vertices as the parent (Image 10). Three vertices for a triangle; a triangle is the most basic 3D asset and has a position and an orientation. An example of this would be adding a button to a shirt of a shoulder armor to a shoulder. Being parented to the triangle allows other transforms to affect the child, such as rotation or scale (Image 11).",
+                "You can parent a child object to a single vertex of the parent. Select your child and then your parent in [k]Object Mode[/k] and then go into [k]Edit Mdoe[/k]. Select the vertex of the parent you want and [k]Ctrl-P[/k]. That vertex is now the parent; moving the vertex around will affect the child's location, but not rotation or scale since that information isn't carried by a vertex (Image 10). To fix that, we will use three vertices as the parent (Image 11). Three vertices for a triangle; a triangle is the most basic 3D asset and has a position and an orientation. An example of this would be adding a button to a shirt of a shoulder armor to a shoulder. Being parented to the triangle allows other transforms to affect the child, such as rotation or scale (Image 12).",
                 {
                   "image": [
                     {
                       "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-09.jpg",
-                      "caption": "Image 9 - Parenting a child object to a single vertex of the parent and seeing the vertex affect the child's location but not rotation or scale"
+                      "caption": "Image 10 - Parenting a child object to a single vertex of the parent and seeing the vertex affect the child's location but not rotation or scale"
                     },
                     {
                       "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-10.jpg",
-                      "caption": "Image 10 - Using three vertices as the parent to form a triangle"
+                      "caption": "Image 11 - Using three vertices as the parent to form a triangle"
                     },
                     {
                       "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-11.jpg",
-                      "caption": "Image 11 - Seeing the child affected by rotation and scale when parented to a triangle of three vertices"
+                      "caption": "Image 12 - Seeing the child affected by rotation and scale when parented to a triangle of three vertices"
                     }
                   ]
                 }
