@@ -528,10 +528,7 @@
                   "section": {
                     "header": "Controller bones",
                     "content": [
-                      "Controller bones are exposed to the animator allowing for character or rig posing and animation.",
-                      {
-                        "image": []
-                      }
+                      "Controller bones are exposed to the animator allowing for character or rig posing and animation."
                     ]
                   }
                 },
@@ -544,10 +541,7 @@
                         "section": {
                           "header": "Vertex groups",
                           "content": [
-                            "Vertex groups are a named group of vertices with an influence value. A signle vertex can belong to multiple vertex groups.",
-                            {
-                              "image": []
-                            }
+                            "Vertex groups are a named group of vertices with an influence value. A signle vertex can belong to multiple vertex groups."
                           ]
                         }
                       }
@@ -558,10 +552,7 @@
                   "section": {
                     "header": "Mechanism bones",
                     "content": [
-                      "Mechanism bones are intermediate or helper bones in Blender that act as a bridge between your animator-facing Control bones and the actual Deformation bones that bend your mesh. ",
-                      {
-                        "image": []
-                      }
+                      "Mechanism bones are intermediate or helper bones in Blender that act as a bridge between your animator-facing Control bones and the actual Deformation bones that bend your mesh. "
                     ]
                   }
                 }
@@ -574,7 +565,24 @@
               "content": [
                 "Bones have two ends: the tail (Image 1) and the head (Image 2). The head is the bone's pivot point. The section in the middle is the body (Image 3); this represents the length of the bone. The roll of the bone is controlled by its rotation; [k]Ctrl-R[/k] to rotate the bone around its y-axis (Image 4). Bone roll and orientation are very important in rigging, so make sure you stay aware.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_07 Bones fundamental/0207-01.jpg",
+                      "caption": "Image 1 - Seeing the tail end of a bone"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_07 Bones fundamental/0207-02.jpg",
+                      "caption": "Image 2 - Seeing the head end of a bone, which is its pivot point"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_07 Bones fundamental/0207-03.jpg",
+                      "caption": "Image 3 - Seeing the body of the bone representing its length"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_07 Bones fundamental/0207-04.jpg",
+                      "caption": "Image 4 - Pressing Ctrl-R to rotate the bone around its y-axis to control its roll"
+                    }
+                  ]
                 }
               ]
             }
@@ -583,9 +591,18 @@
             "section": {
               "header": "Settings for working with bones",
               "content": [
-                "You will want to see more information about the armature you are working on; go to the [k]Data Properties > Viewport Display[/k] and enable [k]Name[/k] and [k]Axes]/k] (Image 5). And go to [k]Object Properties > Viewport Display > Display As[/k] and set it to [k]Wire[/k] (Image 6). This will ensure your bones are transparent. The last setting is under [k]Data Properties > Viewport Display[/k] and enable [k]In Front[/k]; thie ensures your bone is always visible.",
+                "You will want to see more information about the armature you are working on; go to the [k]Data Properties > Viewport Display[/k] and enable [k]Name[/k] and [k]Axes]/k] (Image 5). And go to [k]Object Properties > Viewport Display > Display As[/k] and set it to [k]Wire[/k] (Image 6). This will ensure your bones are transparent. The last setting is under [k]Data Properties > Viewport Display[/k] and enable [k]In Front[/k]; this ensures your bone is always visible.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_07 Bones fundamental/0207-05.jpg",
+                      "caption": "Image 5 - Enabling Name and Axes under Data Properties > Viewport Display"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_07 Bones fundamental/0207-06.jpg",
+                      "caption": "Image 6 - Setting Object Properties > Viewport Display > Display As to Wire to make bones transparent"
+                    }
+                  ]
                 }
               ]
             }
@@ -594,10 +611,7 @@
             "section": {
               "header": "What is a bone?",
               "content": [
-                "A bone at its heart is simply a vector; it has a position, an orientation, and a factor.",
-                {
-                  "image": []
-                }
+                "A bone at its heart is simply a vector; it has a position, an orientation, and a factor."
               ]
             }
           },
@@ -605,10 +619,7 @@
             "section": {
               "header": "B-bones",
               "content": [
-                "B-bones or bendy bones are a type of bone unique to Blender. They cannot be exported to a game engine. They are a special type of bone that can be manipulated as a 2 vector bezier curve.",
-                {
-                  "image": []
-                }
+                "B-bones or bendy bones are a type of bone unique to Blender. They cannot be exported to a game engine. They are a special type of bone that can be manipulated as a 2 vector bezier curve."
               ]
             }
           }
