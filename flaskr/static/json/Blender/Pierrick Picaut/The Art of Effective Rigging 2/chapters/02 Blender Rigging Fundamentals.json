@@ -80,11 +80,29 @@
               "content": [
                 "Rigging is about creating relationships between different objects using parenting or constraints. The accumulation and combination of both allows you to create complex mechanisms. Parenting is the common way to create a relationship between two objects or bones. To parent one object to another we first select the child, then the parent and then [k]Ctrl-P[/k] (Image 1). Depending on the context, you will see different options in the Parent menu. Once an object is parented to another, its children will follow any transformation we apply to the parent (Image 2). A relationship line will be visible between a parent and its children; this can be toggled using the [k]Viewport Overlays[/k] menu (Image 3).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-01.jpg",
+                      "caption": "Image 1 - Selecting the child, then the parent, and pressing Ctrl-P to open the Parent menu"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-02.jpg",
+                      "caption": "Image 2 - Seeing the children follow any transformation applied to the parent"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-03.jpg",
+                      "caption": "Image 3 - Toggling the relationship line between a parent and its children using the Viewport Overlays menu"
+                    }
+                  ]
                 },
                 "In an armature, bones can parent other bones, but in this case, the bones can be connected or at an offset (Image 4).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-04.jpg",
+                      "caption": "Image 4 - Seeing bones in an armature parenting other bones, either connected or at an offset"
+                    }
+                  ]
                 },
                 "Clear a parent with [k]Alt-P[/k].",
                 {
@@ -99,22 +117,53 @@
               "content": [
                 "Parent a simple primitive mesh to another and rotate the parent. Look at the parent transforms (Image 5); now select the child and review its transforms (Image 6). The child's transforms in its local space have not changed, but since it follows its parents transforms, its transform in world space has. Later, if you are applying a constraint to a child that relies on the child's transforms, remember that the parent's transforms affect the child's position in world space, but do not affect its local space transforms.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-05.jpg",
+                      "caption": "Image 5 - Parenting a simple primitive to another, rotating the parent, and reviewing the parent's transforms"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-06.jpg",
+                      "caption": "Image 6 - Selecting the child and reviewing its transforms to see local space is unchanged while world space has been affected"
+                    }
+                  ]
                 }
               ]
             }
           },
           "The full parent-child hierarchy can be explored through the Outliner (Image 7), and through individual objects in the [k]Object Properties[/k] tab (Image 8). Bone hierarchies can be explored through the [k]Bone Properties[/k] tab (Image 8).",
           {
-            "image": []
+            "image": [
+              {
+                "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-07.jpg",
+                "caption": "Image 7 - Exploring the full parent-child hierarchy through the Outliner"
+              },
+              {
+                "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-08.jpg",
+                "caption": "Image 8 - Reviewing parent-child relationships through individual objects in the Object Properties tab and bone hierarchies in the Bone Properties tab"
+              }
+            ]
           },
           {
             "section": {
               "header": "Vertex parenting",
               "content": [
-                "You can parent a child object to a single vertex of the parent. Select your child and then your parent in [k]Object Mode[/k] and then go into [k]Edit Mdoe[/k]. Select the vertex of the parent you want and [k]Ctrl-P[/k]. That vertex is now the parent; moving the vertex around will affect the child's location, but not rotation or scale since that information isn't carried by a vertex (Image 9). To fix that, we will use three vertices as the parent (Image 10). Three vertices for a triangle; a triangle is the most basic 3D asset and has a position and an orientation. An example of this would be adding a button to a shirt of a shoulder armor to a shoulder. Being parented to the triangle allows other transforms to affect th child, such as rotation or scale (Image 11).",
+                "You can parent a child object to a single vertex of the parent. Select your child and then your parent in [k]Object Mode[/k] and then go into [k]Edit Mdoe[/k]. Select the vertex of the parent you want and [k]Ctrl-P[/k]. That vertex is now the parent; moving the vertex around will affect the child's location, but not rotation or scale since that information isn't carried by a vertex (Image 9). To fix that, we will use three vertices as the parent (Image 10). Three vertices for a triangle; a triangle is the most basic 3D asset and has a position and an orientation. An example of this would be adding a button to a shirt of a shoulder armor to a shoulder. Being parented to the triangle allows other transforms to affect the child, such as rotation or scale (Image 11).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-09.jpg",
+                      "caption": "Image 9 - Parenting a child object to a single vertex of the parent and seeing the vertex affect the child's location but not rotation or scale"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-10.jpg",
+                      "caption": "Image 10 - Using three vertices as the parent to form a triangle"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_03 Parenting/0203-11.jpg",
+                      "caption": "Image 11 - Seeing the child affected by rotation and scale when parented to a triangle of three vertices"
+                    }
+                  ]
                 }
               ]
             }
