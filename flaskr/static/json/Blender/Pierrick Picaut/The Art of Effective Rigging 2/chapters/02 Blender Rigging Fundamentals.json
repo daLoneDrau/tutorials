@@ -152,7 +152,7 @@
             "section": {
               "header": "Vertex parenting",
               "content": [
-                "You can parent a child object to a single vertex of the parent. Select your child and then your parent in [k]Object Mode[/k] and then go into [k]Edit Mdoe[/k]. Select the vertex of the parent you want and [k]Ctrl-P[/k]. That vertex is now the parent; moving the vertex around will affect the child's location, but not rotation or scale since that information isn't carried by a vertex (Image 10). To fix that, we will use three vertices as the parent (Image 11). Three vertices for a triangle; a triangle is the most basic 3D asset and has a position and an orientation. An example of this would be adding a button to a shirt of a shoulder armor to a shoulder. Being parented to the triangle allows other transforms to affect the child, such as rotation or scale (Image 12).",
+                "You can parent a child object to a single vertex of the parent. Select your child and then your parent in [k]Object Mode[/k] and then go into [k]Edit Mdoe[/k]. Select the vertex of the parent you want and [k]Ctrl-P[/k]. That vertex is now the parent; moving the vertex around will affect the child's location, but not rotation or scale since that information isn't carried by a vertex (Image 10). To fix that, we will use three vertices as the parent (Image 11). Three vertices for a triangle; a triangle is the most basic 3D asset and has a position and an orientation. An example of this would be adding a button to a shirt or shoulder armor to a shoulder. Being parented to the triangle allows other transforms to affect the child, such as rotation or scale (Image 12).",
                 {
                   "image": [
                     {
@@ -195,7 +195,12 @@
               "content": [
                 "By default when you manipulate an object in Blender you are working on it in world space These coordinates are represented by the lines on the ground and the [k]Viewport Navigation Gizmo[/k] (Image 1). For an object, its coordinates are calculated from its origin point. If an object is not parented, its local coordinates are the same world coordinates. Rotations are performed around an axis, and orientation is the result of rotation. All transformations are performed and calculated from the object's origin point.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_04 World, local, custom space/0204-01.jpg",
+                      "caption": "Image 1 - Seeing world space coordinates represented by the lines on the ground and the Viewport Navigation Gizmo"
+                    }
+                  ]
                 }
               ]
             }
@@ -204,9 +209,22 @@
             "section": {
               "header": "Local space",
               "content": [
-                "In this scene, a cylinder is parented to a cube, and we can see that the cube's X offset is -3 (Imaghe 2). If I move the cylinder 2 units in the x-axis, we can see the cube move in world space, but it's coordinates in local space do not change (Image 3). If we rotate the parent cylinder along the x-axis and then move the cube in it's local z-axis, we see it does not move straight up and down, but follows its parent's rotation (Image 4).",
+                "In this scene, a cylinder is parented to a cube, and we can see that the cube's X offset is -3 (Image 2). If I move the cylinder 2 units in the x-axis, we can see the cube move in world space, but it's coordinates in local space do not change (Image 3). If we rotate the parent cylinder along the x-axis and then move the cube in it's local z-axis, we see it does not move straight up and down, but follows its parent's rotation (Image 4).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_04 World, local, custom space/0204-02.jpg",
+                      "caption": "Image 2 - Seeing a cylinder parented to a cube with the cube's X offset at -3"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_04 World, local, custom space/0204-03.jpg",
+                      "caption": "Image 3 - Moving the cylinder 2 units in the x-axis and seeing the cube move in world space while its local space coordinates remain unchanged"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_04 World, local, custom space/0204-04.jpg",
+                      "caption": "Image 4 - Rotating the parent cylinder along the x-axis and moving the cube in its local z-axis, seeing it follow the parent's rotation rather than moving straight up and down"
+                    }
+                  ]
                 }
               ]
             }
@@ -217,11 +235,41 @@
               "content": [
                 "Bones can have any default position and orientation; this is called the rest pose. Consider this set up: we have a parent bone, a child bone, and a bone we will call constrained (Image 5). The child bone's rotation was changed in [k]Edit Mode[/k] so this will be its Rest Pose. Go into [k]Pose Mode[/k], select the constrained bone and open the [k]Bone Constraints[/k] tab (Image 6). Add a bone constraint to [k]Copy Rotation[/k] (Image 7), and set the [k]Target[/k] to the armature and the [k]Bone[/k] to child (Image 8). We will see the constraint bone copy the child bone's rotation immediately and rotating the parent and child bones will affect the constrained bone (Image 9).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_04 World, local, custom space/0204-05.jpg",
+                      "caption": "Image 5 - Setting up a parent bone, a child bone, and a constrained bone"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_04 World, local, custom space/0204-06.jpg",
+                      "caption": "Image 6 - Going into Pose Mode, selecting the constrained bone and opening the Bone Constraints tab"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_04 World, local, custom space/0204-07.jpg",
+                      "caption": "Image 7 - Adding a Copy Rotation bone constraint"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_04 World, local, custom space/0204-08.jpg",
+                      "caption": "Image 8 - Setting the Target to the armature and the Bone to child"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_04 World, local, custom space/0204-09.jpg",
+                      "caption": "Image 9 - Seeing the constrained bone copy the child bone's rotation, with rotating the parent and child bones affecting the constrained bone"
+                    }
+                  ]
                 },
                 "But if we change the [k]Target[/k] and [k]Owner[/k] to [k]Local Space[/k] the we see the constrained bone return to its Rest Pose (Image 10). Now rotating the parent bone has no effect on constrained, its only when rotating the child bone that we see an effect (Image 11).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_04 World, local, custom space/0204-10.jpg",
+                      "caption": "Image 10 - Changing the Target and Owner to Local Space and seeing the constrained bone return to its Rest Pose"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_04 World, local, custom space/0204-11.jpg",
+                      "caption": "Image 11 - Seeing that rotating the parent bone has no effect on the constrained bone, with only rotating the child bone producing an effect"
+                    }
+                  ]
                 }
               ]
             }
