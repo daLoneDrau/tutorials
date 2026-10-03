@@ -418,11 +418,21 @@
               "content": [
                 "Armatures are objects in Blender. You can add one to you scene with [k]Shift-A > Armature[/k] and a bone will appear where the 3D cursor was. If your 3D cursor wasn't at the world origin when you added the armature, it will reflect that in the transform (Image 1). You will want to [k]Alt-R,Alt-S,Alt-G[/k] to clear all transforms on your armature. You want to create a rig with an armature that has no rotation, scale, or location offset; otherwise you could generate unexpected behavior when animating. It is a best practice to clear the transforms on both the armature and the mesh before rigging.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_06 Armature Object/0206-01.jpg",
+                      "caption": "Image 1 - Adding an armature with Shift-A > Armature and seeing the bone appear at the 3D cursor position, reflecting any offset in the transform"
+                    }
+                  ]
                 },
                 "An armature is a blender object, and it has several components attached to it, such as Data properties, Bone properties, and Bone Constraints properties (Image 2). Armatures have three main modes. [k]Object Mode[/k] allows you to edit the armature's transforms. [k]Edit Mode[/k] is where you will set the orientation of different bones, add new bones, parent bones; basically create the structure of your armature. This is also where we set the Rest Pose for each bone. [k]Pose Mode[/k] is where we animate the armature and also add constraints.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_06 Armature Object/0206-02.jpg",
+                      "caption": "Image 2 - Seeing the armature's components including Data Properties, Bone Properties, and Bone Constraints Properties"
+                    }
+                  ]
                 }
               ]
             }
@@ -431,9 +441,22 @@
             "section": {
               "header": "Armature properties",
               "content": [
-                "In the [k]Data Propeties[/k] for an armature, you will see two different options: [k]Pose Position[/k] or [k]Rest Position[/k] (Image 4). This affects the position displayed in [k]Pose Mode[/k]. For example, let's create a simple armature and pose it (Image 5). While [k]Pose Position[/k] is toggled, we see the armature's latest pose; but if we toggle [k]Rest Position[/k] then the viewport goes back to the armature's Rest Pose (Image 6). You can clear a pose by using [k]Alt-R,Alt-S,Alt-G[/k] or [k]Pose > Clear Transform > All[/k].",
+                "In the [k]Data Propeties[/k] for an armature, you will see two different options: [k]Pose Position[/k] or [k]Rest Position[/k] (Image 3). This affects the position displayed in [k]Pose Mode[/k]. For example, let's create a simple armature and pose it (Image 4). While [k]Pose Position[/k] is toggled, we see the armature's latest pose; but if we toggle [k]Rest Position[/k] then the viewport goes back to the armature's Rest Pose (Image 5). You can clear a pose by using [k]Alt-R,Alt-S,Alt-G[/k] or [k]Pose > Clear Transform > All[/k].",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_06 Armature Object/0206-03.jpg",
+                      "caption": "Image 3 - Seeing the Pose Position and Rest Position options in the Data Properties for an armature"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_06 Armature Object/0206-04.jpg",
+                      "caption": "Image 4 - Creating a simple armature and posing it"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_06 Armature Object/0206-05.jpg",
+                      "caption": "Image 5 - Toggling between Pose Position showing the latest pose and Rest Position returning the viewport to the armature's Rest Pose"
+                    }
+                  ]
                 }
               ]
             }
@@ -444,7 +467,12 @@
               "content": [
                 "Bone collections help you organize, hide, isolate, and manage rig bones; you can find your bone collections in the [k]Data Properties[/k] (Image 6). Bones are assigned to a collection with [k]M[/k], and removed with [k]Shift-M[/k]. Bones can be assigned to multiple collections. Collections are nestable, so collections can contain other collections.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_06 Armature Object/0206-06.jpg",
+                      "caption": "Image 6 - Finding bone collections for organizing, hiding, isolating, and managing rig bones in the Data Properties"
+                    }
+                  ]
                 }
               ]
             }
@@ -455,7 +483,12 @@
               "content": [
                 "You can change a bone's color under [k]Bone Properties > Viewport Display[/k] (Image 7).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_06 Armature Object/0206-07.jpg",
+                      "caption": "Image 7 - Changing a bone's color under Bone Properties > Viewport Display"
+                    }
+                  ]
                 }
               ]
             }
