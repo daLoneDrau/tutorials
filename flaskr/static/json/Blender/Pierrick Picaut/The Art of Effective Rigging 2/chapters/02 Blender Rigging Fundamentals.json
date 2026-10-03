@@ -23,6 +23,10 @@
                 "An armature is an object you can add in Blender. it has three default modes (Image 1). In Edit Mode we can add more bones connected to each other or disconnect them. In Pose Mode we can animate those bones or create constraints.",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_02 Why using an armature/0202-01.jpg",
+                      "caption": "Image 1 - Seeing an armature object's three default modes in Blender"
+                    }
                   ]
                 }
               ]
@@ -35,6 +39,10 @@
                 "In Blender an object is just a container. it is a basic point in space defined by a location, an orientation, and a scale (Image 2). It can also contain mesh data, camera data, constraint data, etc. So you need to understand that an object is just the basic point in space containing a hierarchy of component data. So when animating an object, you are playing with the different transform values' channels.",
                 {
                   "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_02 Why using an armature/0202-02.jpg",
+                      "caption": "Image 2 - Seeing an object as a basic point in space defined by a location, an orientation, and a scale, containing a hierarchy of component data"
+                    }
                   ]
                 }
               ]
@@ -46,8 +54,7 @@
               "content": [
                 "When you are creating an animation, when setting it on an object, if you are animating one object it is not too bad, but if you animating several objects together it becomes complex. And if the object's position gets reset, then you have to make sure your animation accounts for that. But if you are using armatures, you can store all movement in a single action. Armatures have their own structure that allow you to affect multiple of their child objects (bones). Armatures are exportable to game engines, and are used in 99.9% of animation solutions.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -57,7 +64,9 @@
     },
     {
       "02_03 Parenting": {
-        "tags": ["parenting"],
+        "tags": [
+          "parenting"
+        ],
         "key_concepts": [
           [
             "Parents can have multiple children",
@@ -71,18 +80,15 @@
               "content": [
                 "Rigging is about creating relationships between different objects using parenting or constraints. The accumulation and combination of both allows you to create complex mechanisms. Parenting is the common way to create a relationship between two objects or bones. To parent one object to another we first select the child, then the parent and then [k]Ctrl-P[/k] (Image 1). Depending on the context, you will see different options in the Parent menu. Once an object is parented to another, its children will follow any transformation we apply to the parent (Image 2). A relationship line will be visible between a parent and its children; this can be toggled using the [k]Viewport Overlays[/k] menu (Image 3).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 },
                 "In an armature, bones can parent other bones, but in this case, the bones can be connected or at an offset (Image 4).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 },
                 "Clear a parent with [k]Alt-P[/k].",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -93,16 +99,14 @@
               "content": [
                 "Parent a simple primitive mesh to another and rotate the parent. Look at the parent transforms (Image 5); now select the child and review its transforms (Image 6). The child's transforms in its local space have not changed, but since it follows its parents transforms, its transform in world space has. Later, if you are applying a constraint to a child that relies on the child's transforms, remember that the parent's transforms affect the child's position in world space, but do not affect its local space transforms.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
           },
           "The full parent-child hierarchy can be explored through the Outliner (Image 7), and through individual objects in the [k]Object Properties[/k] tab (Image 8). Bone hierarchies can be explored through the [k]Bone Properties[/k] tab (Image 8).",
           {
-            "image": [
-            ]
+            "image": []
           },
           {
             "section": {
@@ -110,8 +114,7 @@
               "content": [
                 "You can parent a child object to a single vertex of the parent. Select your child and then your parent in [k]Object Mode[/k] and then go into [k]Edit Mdoe[/k]. Select the vertex of the parent you want and [k]Ctrl-P[/k]. That vertex is now the parent; moving the vertex around will affect the child's location, but not rotation or scale since that information isn't carried by a vertex (Image 9). To fix that, we will use three vertices as the parent (Image 10). Three vertices for a triangle; a triangle is the most basic 3D asset and has a position and an orientation. An example of this would be adding a button to a shirt of a shoulder armor to a shoulder. Being parented to the triangle allows other transforms to affect th child, such as rotation or scale (Image 11).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -121,7 +124,11 @@
     },
     {
       "02_04 World, local, custom space": {
-        "tags": ["world space", "local space", "custom space"],
+        "tags": [
+          "world space",
+          "local space",
+          "custom space"
+        ],
         "key_concepts": [
           [
             "World space : global coordinates, aligned with the view widget",
@@ -135,8 +142,7 @@
               "content": [
                 "By default when you manipulate an object in Blender you are working on it in world space These coordinates are represented by the lines on the ground and the [k]Viewport Navigation Gizmo[/k] (Image 1). For an object, its coordinates are calculated from its origin point. If an object is not parented, its local coordinates are the same world coordinates. Rotations are performed around an axis, and orientation is the result of rotation. All transformations are performed and calculated from the object's origin point.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -147,8 +153,7 @@
               "content": [
                 "In this scene, a cylinder is parented to a cube, and we can see that the cube's X offset is -3 (Imaghe 2). If I move the cylinder 2 units in the x-axis, we can see the cube move in world space, but it's coordinates in local space do not change (Image 3). If we rotate the parent cylinder along the x-axis and then move the cube in it's local z-axis, we see it does not move straight up and down, but follows its parent's rotation (Image 4).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -159,13 +164,11 @@
               "content": [
                 "Bones can have any default position and orientation; this is called the rest pose. Consider this set up: we have a parent bone, a child bone, and a bone we will call constrained (Image 5). The child bone's rotation was changed in [k]Edit Mode[/k] so this will be its Rest Pose. Go into [k]Pose Mode[/k], select the constrained bone and open the [k]Bone Constraints[/k] tab (Image 6). Add a bone constraint to [k]Copy Rotation[/k] (Image 7), and set the [k]Target[/k] to the armature and the [k]Bone[/k] to child (Image 8). We will see the constraint bone copy the child bone's rotation immediately and rotating the parent and child bones will affect the constrained bone (Image 9).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 },
                 "But if we change the [k]Target[/k] and [k]Owner[/k] to [k]Local Space[/k] the we see the constrained bone return to its Rest Pose (Image 10). Now rotating the parent bone has no effect on constrained, its only when rotating the child bone that we see an effect (Image 11).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -176,8 +179,7 @@
               "content": [
                 "Custom space is where we use an object to define the space used to evaluate any coordinate. You will almost never use it in a project.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -187,7 +189,9 @@
     },
     {
       "02_05 Constraints": {
-        "tags": ["constraints"],
+        "tags": [
+          "constraints"
+        ],
         "key_concepts": [
           "Constraints:",
           [
@@ -204,13 +208,11 @@
               "content": [
                 "Constraints are a powerful tool when it comes to rigging in Blender. Constraints can be used on objects and affect their transforms. This means they will work on an object's point of origin, but not their mesh or geometry. They can be added to any type of object: cameras, empties, grease pencils, etc. There are object constraints whioh are applied to objects (Image 1) and bone constraints applied to bones (Image 2). Bone/Object constraints are the same thing, expect in rigging you will use bons constraints since object constraints will affect the parent armature. There are many constraints (Image 3) but mose of the time you will only use a handful of them.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 },
                 "Earlier we learned that parenting is one way to make an object influence another; a child will follow its parent's location, rotation, and scale. Constraints are another way.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -221,18 +223,15 @@
               "content": [
                 "Let's set up a scene with three objects: a cube, a sphere, and an empty (Image 4). Add a [k]Copy Transforms[/k] constraint to the cube (Image 5). The constraint will show red since it is disabled while the [k]Target[/k] is empty (Image 6). If we set the [k]Target[/k] to the empty, we will see the cube snap to the empty; this is because we are copying its transforms in World Space (Image 7). Most constraints will have an influence slider (Image 8); 1 is full influence, 0 is no influence.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 },
                 "Constraints override parenting and object transforms. Let's parent the sphere to the cube and try to move the empty along the x-axis; nothing will happen (Image 9). In order to allow the sphere to influence the cube you need to disable the constraint (Image 10). By default a constraint replaces an object's transforms, but this can be changed (Image 11).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 },
                 "Like modifiers, constraints can be applied (Image 11); thia applies the transform to the object but removes the constraint for future changes. Constraints can also be duplicated. Constraints are applied in the same order as modifiers: top-to-bottom. In this example (Image 12), we see the cube get copy the transform values from the empty first, and then copy the transform from the sphere, which is the final result seen in the viewport. You can adjust the influence on multiple constraints to affect the results.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -242,7 +241,12 @@
     },
     {
       "02_06 Armature Object": {
-        "tags": ["armature", "pose mode", "rest pose", "bone collections"],
+        "tags": [
+          "armature",
+          "pose mode",
+          "rest pose",
+          "bone collections"
+        ],
         "key_concepts": [
           [
             "As any Blender object, it’s a container with trnasformation information.",
@@ -260,13 +264,11 @@
               "content": [
                 "Armatures are objects in Blender. You can add one to you scene with [k]Shift-A > Armature[/k] and a bone will appear where the 3D cursor was. If your 3D cursor wasn't at the world origin when you added the armature, it will reflect that in the transform (Image 1). You will want to [k]Alt-R,Alt-S,Alt-G[/k] to clear all transforms on your armature. You want to create a rig with an armature that has no rotation, scale, or location offset; otherwise you could generate unexpected behavior when animating. It is a best practice to clear the transforms on both the armature and the mesh before rigging.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 },
                 "An armature is a blender object, and it has several components attached to it, such as Data properties, Bone properties, and Bone Constraints properties (Image 2). Armatures have three main modes. [k]Object Mode[/k] allows you to edit the armature's transforms. [k]Edit Mode[/k] is where you will set the orientation of different bones, add new bones, parent bones; basically create the structure of your armature. This is also where we set the Rest Pose for each bone. [k]Pose Mode[/k] is where we animate the armature and also add constraints.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -277,8 +279,7 @@
               "content": [
                 "In the [k]Data Propeties[/k] for an armature, you will see two different options: [k]Pose Position[/k] or [k]Rest Position[/k] (Image 4). This affects the position displayed in [k]Pose Mode[/k]. For example, let's create a simple armature and pose it (Image 5). While [k]Pose Position[/k] is toggled, we see the armature's latest pose; but if we toggle [k]Rest Position[/k] then the viewport goes back to the armature's Rest Pose (Image 6). You can clear a pose by using [k]Alt-R,Alt-S,Alt-G[/k] or [k]Pose > Clear Transform > All[/k].",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -289,8 +290,7 @@
               "content": [
                 "Bone collections help you organize, hide, isolate, and manage rig bones; you can find your bone collections in the [k]Data Properties[/k] (Image 6). Bones are assigned to a collection with [k]M[/k], and removed with [k]Shift-M[/k]. Bones can be assigned to multiple collections. Collections are nestable, so collections can contain other collections.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -301,8 +301,7 @@
               "content": [
                 "You can change a bone's color under [k]Bone Properties > Viewport Display[/k] (Image 7).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -315,7 +314,7 @@
         "tags": [],
         "key_concepts": [
           "By Default, an armature is made of a single bone. We can consider 3 families of bones:",
-          [            
+          [
             "Deformation bones = deform the mesh using Associated Vertex group influences.",
             "Controller bones = Used by the animator to pose/animate an object.",
             "Mechanism bones = USed to drive the deformation bones with the controllers and create complex mechanism."
@@ -329,41 +328,38 @@
             "B-Bones are unique to Blender and can’t be used by other softwares or game Engines.",
             "They behave like a 2 vectors bezier curve.",
             "[k]Shift-W[/k] Toggle Deform."
-          ],          
+          ],
           {
             "section": {
               "header": "Bone types",
               "content": [
                 "There are different types of bones in Blender.",
                 {
-                  "image": [
-                  ]
-                },       
+                  "image": []
+                },
                 {
                   "section": {
                     "header": "Controller bones",
                     "content": [
                       "Controller bones are exposed to the animator allowing for character or rig posing and animation.",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       }
                     ]
                   }
-                },       
+                },
                 {
                   "section": {
                     "header": "Deformation bones",
                     "content": [
-                      "Deformation bones are driven by the controller bones and actually deform the character. They influence the vertices positions of the mesh. This influence can be shared by multiple bones for complex deformations. Deformation bone's influence can be adjusted using vertex groups to create complex deformations.",                             
+                      "Deformation bones are driven by the controller bones and actually deform the character. They influence the vertices positions of the mesh. This influence can be shared by multiple bones for complex deformations. Deformation bone's influence can be adjusted using vertex groups to create complex deformations.",
                       {
                         "section": {
                           "header": "Vertex groups",
                           "content": [
                             "Vertex groups are a named group of vertices with an influence value. A signle vertex can belong to multiple vertex groups.",
                             {
-                              "image": [
-                              ]
+                              "image": []
                             }
                           ]
                         }
@@ -377,8 +373,7 @@
                     "content": [
                       "Mechanism bones are intermediate or helper bones in Blender that act as a bridge between your animator-facing Control bones and the actual Deformation bones that bend your mesh. ",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       }
                     ]
                   }
@@ -392,8 +387,7 @@
               "content": [
                 "Bones have two ends: the tail (Image 1) and the head (Image 2). The head is the bone's pivot point. The section in the middle is the body (Image 3); this represents the length of the bone. The roll of the bone is controlled by its rotation; [k]Ctrl-R[/k] to rotate the bone around its y-axis (Image 4). Bone roll and orientation are very important in rigging, so make sure you stay aware.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -404,8 +398,7 @@
               "content": [
                 "You will want to see more information about the armature you are working on; go to the [k]Data Properties > Viewport Display[/k] and enable [k]Name[/k] and [k]Axes]/k] (Image 5). And go to [k]Object Properties > Viewport Display > Display As[/k] and set it to [k]Wire[/k] (Image 6). This will ensure your bones are transparent. The last setting is under [k]Data Properties > Viewport Display[/k] and enable [k]In Front[/k]; thie ensures your bone is always visible.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -416,8 +409,7 @@
               "content": [
                 "A bone at its heart is simply a vector; it has a position, an orientation, and a factor.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -428,8 +420,7 @@
               "content": [
                 "B-bones or bendy bones are a type of bone unique to Blender. They cannot be exported to a game engine. They are a special type of bone that can be manipulated as a 2 vector bezier curve.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -470,8 +461,7 @@
               "content": [
                 "We will be doing a lot of work with bones, so let's start practicing. There are three modes when dealing with armatures: [k]Object Mode[/k], [k]Edit Mode[/k], and [k]Pose Mode[/k]. In [k]Object Mode[/k] you are manipulating the armature's container. It is best to keep the armature object free of transformations. Clear all transformations in [k]Object Mode[/k] with [k]Alt-R,Alt-S,Alt-G[/k]. As we learned in the previous lesson, adjust our settings.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -482,8 +472,7 @@
               "content": [
                 "[k]Edit Mode[/k] is where we will be doing a lot of our work.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 },
                 {
                   "section": {
@@ -491,17 +480,15 @@
                     "content": [
                       "Just like working with geometry, you can extrude a bone from its tail with [k]E[/k], or [k]Ctrl-RMB[/k]. You can also extrude from the head of a bone by selecting it and [k]E[/k] to extrude (Image 1). Bones extruded from the tail are automatically children of the bones they were extruded from; while bones extruded from the head have no parent. if you have multiple bones selected and [k]E[/k] to extrude then bones will be extruded from all of them (Image 2). However, if you have multiple bones selected and [k]Ctrl-RMB[/k] it will only extrude from the last bone in the chain; this is not recommended. [k]E,X[/k], [k]E,Y[/k], or [k]E,Z[/k] to constrain the axis for the extrusion.",
                       {
-                        "image": [
-                        ]
-                      },                      
+                        "image": []
+                      },
                       {
                         "section": {
                           "header": "Normal orientation",
                           "content": [
                             "If you want to extrude bones and constrain them to the axes of the bone they are extruding from, change the orientation to [k]Normal[/k] (Image 3). If you have bones you want aligned, you can select all your bones and [k]Ctrl-Alt-A[/k] and this will align your bones using the active bone (Image 4).",
                             {
-                              "image": [
-                              ]
+                              "image": []
                             }
                           ]
                         }
@@ -515,8 +502,7 @@
                     "content": [
                       "If you want to extrude bones and constrain them to the axes of the bone they are extruding from, change the orientation to [k]Normal[/k] (Image 3). If you have bones you want aligned, you can select all your bones and [k]Ctrl-Alt-A[/k] and this will align your bones using the active bone (Image 4).",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       }
                     ]
                   }
@@ -527,8 +513,7 @@
                     "content": [
                       "By default, blender is set to use the [k]Median Point[/k] as the transform pivot point, but for bones this means they are rotating around their middle (Image 5). It's better to use the [k]Active Element[/k] as the pivot point so that bones rotate around their head (Image 6).",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       }
                     ]
                   }
@@ -539,8 +524,7 @@
                     "content": [
                       "In [k]Edit Mode[/k] connect bones with [k]Ctrl-P[/k], disconnect with [k]Alt-P[/k].",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       }
                     ]
                   }
@@ -553,7 +537,12 @@
     },
     {
       "02_09 Assign to armature": {
-        "tags": ["rigging", "turret", "cannon", "armature"],
+        "tags": [
+          "rigging",
+          "turret",
+          "cannon",
+          "armature"
+        ],
         "key_concepts": [
           [
             "Use the mesh topology to better position your bones.",
@@ -576,8 +565,7 @@
               "content": [
                 "To properly position out bones we will uses mesh editing. The idea is to find a perfect rotation point or pivot point for each bone.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 },
                 {
                   "section": {
@@ -585,8 +573,7 @@
                     "content": [
                       "Any object we add to a scene will be added at the 3D cursor. [k]Shift-RMB[/k] will place the 3D cursor anywhere in the scene. We want it centered, so press [k]Shift-C[/k] (Image 1). You should always rig from the center of the world to prevent the rig from having any errors when it comes to symmetry.",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       }
                     ]
                   }
@@ -597,8 +584,7 @@
                     "content": [
                       "[k]Shift-A > Armature[/k] and assign the settings from 02_07 (Image 2). By default the y-axis of the bone is aligned with the z-axis of world space. When we send the rig to the animator we will use the [k]Graph Editor[/k] which edits the local space of the selected bone. Whenever we can, we want to align the bone with world space. To do this, [k]Tab[/k] into Edit Mode, select the bone's tail (Image 3). Since the 3D Cursor is located at the bone's head, [k]Shift-S,E[/k] to snap the tail to the head (Image 4). With the tail still selected, [k]G,Y,1[/k] to extrude it 1m along the positive y-axis (Image 5). Now our bone orientation is the same as the world orientation. [k]F2[/k] and rename the bone to 'root' (Image 6). In rigging, the root bone is the highest bone in the hierarchy that controls other bones.",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       }
                     ]
                   }
@@ -609,8 +595,7 @@
                     "content": [
                       "Now we need to create a bone for the arm. The arm will rotate the turret 360°, so a good place to start the arm bone is where the arm meets the base (Image 7). In [k]Edit Mode[/k] select the geometry around that area and [k]Shift-S,T[/k] to move the 3D Cursor there (Image 8). Select the armature and go back into [k]Edit Mode[/k]. We will duplicate the root bone and snap it to the 3D Cursor. First, set [k]Transform Pivot Point > Individual Origins[/k] (Image 9). [k]Shift-D[/k], [k]Shift-S,E[/k] to duplicate and snap to the 3D Cursor (Image 10). [k]F2[/k] to rename it 'arm' (Image 11).",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       }
                     ]
                   }
@@ -621,8 +606,7 @@
                     "content": [
                       "Select the arm geometry, and find the vertices near the top where the turret connects and [k]Shift-S,T[/k] to position the 3D Cursor there (Image 12). Get back to the armature and in [k]Edit Mode[/k] [k]Shift-D[/k], [k]Shift-S,E[/k] to duplicate a bone and snap to the 3D Cursor (Image 13). [k]F2[/k] to rename it 'turret' (Image 14).",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       }
                     ]
                   }
@@ -636,8 +620,7 @@
               "content": [
                 "There are two ways to assign an armature: parenting to bones or using vertex groups.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 },
                 {
                   "section": {
@@ -645,8 +628,7 @@
                     "content": [
                       "The simplest way is to parent the geometry to the bones. Our current geometry is three separate objects (Image 15).",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       },
                       {
                         "section": {
@@ -654,8 +636,7 @@
                           "content": [
                             "Let's parent the cannon geometry. [k]LMB[/k] to select the cannon and [k]Shift-LMB[/k] to select the armature as the active object (Image 16). [k]Ctrl-Tab[/k] to go into Pose Mode (Image 17). Select the turret bone (Image 18). [k]Ctrl-P,B[/k] to parent the turret bone to the cannon geometry (Image 19).",
                             {
-                              "image": [
-                              ]
+                              "image": []
                             }
                           ]
                         }
@@ -666,8 +647,7 @@
                           "content": [
                             "Go to the [k]Outliner[/k] and select the base (Image 20); by using the [k]Outliner[/k] we can select other objects without needing to switching back and forth between pose mode and object mode. Select the root bone and [k]Ctrl-P,B[/k] to parent to the base mesh (Image 21). Do the same for the arm (Image 22). Now if we go to change any of the transforms for the bones in [k]Pose Mode[/k] the cannon's geometry is affected as well (Image 23). This works veyr nicely with any mechanical objects, such as robots, cars, etc.",
                             {
-                              "image": [
-                              ]
+                              "image": []
                             }
                           ]
                         }
@@ -681,13 +661,11 @@
                     "content": [
                       "The second way to parent an armature to a mesh is with Vertex Groups. For this we will use the cannon geometry that is a single object. [k]LMB[/k] to select the cannon and [k]Shift-LMB[/k] to select the armature as the active object (Image 24). [k]Ctrl-P,E[/k] to parent the object with empty groups (Image 25). Select the cannon geometry and look at [k]Data > Vertex Groups[/k]; we see that vertex groups have been created for each bone in the armature (Image 26). Vertex groups are used by most modifiers to set a level of influence. Vertex groups are used in most softwares and engines. With the cannon selected [k]Tab[/k] into [k]Edit Mode[/k] and see the options in the [k]Vertex Groups[/k] panel change (Image 27).",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       },
                       "Select all the vertices for the turret part and assign them to the turret vertex group (Image 28). Now if we go into [k]Pose Mode[/k] for the armature we can move the turret around with the turret bone (Image 29). Assign the remaning vertices to the arm and root bones.",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       }
                     ]
                   }
@@ -698,8 +676,7 @@
                     "content": [
                       "If you go the [k]Modifiers[/k] tab, you will see that the cannon geometry has an [k]Armature Modifier[/k] (Image 30). This is because the armature deforms the mesh. If you de-activate the modifier and go into [k]Pose Mode[/k] transforming the bones won't have an affect on the mesh.",
                       {
-                        "image": [
-                        ]
+                        "image": []
                       }
                     ]
                   }
@@ -712,7 +689,9 @@
     },
     {
       "02_10 Introduction to vertex groups": {
-        "tags": ["vertex groups"],
+        "tags": [
+          "vertex groups"
+        ],
         "key_concepts": [
           {
             "section": {
@@ -720,8 +699,7 @@
               "content": [
                 "Vertex groups are mesh data. They allow you to tag vertices on a mesh and give them an influence value known as weight. Vertex groups are used by a lot of modifiers and particle systems. Let's get in some practice with vertex groups, starting with a plane. With your plane selected, open the [k]Vertex Groups[/k] panel in the [k]Data Properties[/k] tab (Image 1). Using the '+' button, create two groups: 1 and 2 (Image 2). Select two vertices on the plane, select group 1, change the weight to 0.5 and assign those vertices (Image 3). Select the other two vertices, increase the weight to 1.0 and assign to group 1 (Image 4). With those two vertices selected, select group 2, change the weight to 0.75 and assign (Image 5). Vertices can belong to multiple groups. You can use vertex groups in your modeling worklow to organize your model's mesh.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -732,8 +710,7 @@
               "content": [
                 "In order to see your vertex groups more intuitively, in [k]Edit Mode[/k] open your [k]Mesh Edit Overlays[/k] window and enable [k]Vertex Group Weights[/k] (Image 6). This option is not available in [k]Object Mode[/k]. The weight displayed is for the selected vertex group; blue means no influence, red is maximum influence, while green indicates an influence of 0.5. Let's look at group 1's influence (Image 7). Select the bottom corner vertex and remove it from group 1 (Image 8); we see the corner turn blue.",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -744,8 +721,7 @@
               "content": [
                 "Add a [k]Solidify Modifier[/k] to the plane with a thickness of 1 and offset of 1 (image 9). There is a Vertex Group field in the modifier; assign group 2 and you will see the change immediately (Image 10). Select one of the corner vertices that had no influence from group 2 and assign it an influence of 0.5; we will see the corner raise up 0.5m from the modifier (Image 11).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -756,8 +732,7 @@
               "content": [
                 "Let's set up our second example. Add a cube and an armature and place bones at each corner of the cube; eight total (Image 12). Select the cube, then the armature and [k]Ctrl-P,E[/k] to parent the cube with empty groups (Image 13). We now see the cube has eight vertex groups assigned. If you want to change how the vertex groups are ordered, click the arrow dropdown (Image 14).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -776,13 +751,11 @@
               "content": [
                 "Select the armature and [k]Ctrl-Tab[/k] into [k]Pose Mode[/k]. Select the turret bone, and add a [k]Damped Track[/k] constraint (Image 1). When a bone gets a constraint, it turns green in the 3D viewport (Image 2). Right now the constraint is disabled since there is no target. [k]Tab[/k] into [k]Edit Mode[/k], [k]Shift-D,Y[/k] the turret bone and place the duplicate in front of the cannon (Image 3). Rename the bone to 'target' (Image 4).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 },
                 "[k]Ctrl-Tab[/k] back into [k]Pose Mode[/k] and we see the target bone is also green; this is because when it was duplicated it also duplicated the original's constraints (Image 5). [k]Ctrl-Alt-C[/k] or click the 'x' button on the constraint to remove it (Image 6). Select the turret bone and make the [k]Target[/k] the armature and the [k]Bone[/k] the target bone (Image 7). We see immediately that the turret bone flipped. This is because we need to fix the [k]Track Axis[/k]. The [k]Damped Track[/k] constraint will aim at the target with the selected track axis. Right now, the y-axis of the turret bone is aimed at the target bone; flip this to the -y-axis (Image 8). Now if we move the target bone around in [k]Pose Mode[/k] the turret will follow (Image 9).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
@@ -793,13 +766,11 @@
               "content": [
                 "Remove the [k]Damped Track[/k] constraint (Image 10). [k]LMB[/k] the target bone and [k]Shift-LMB[/k] the turret bone; this tells blender that we are ready to make the target bone the target of a constraint and the turret bone the owner (Image 11). [k]Ctrl-Shift-C[/k] to open the [k]Add Constraint[/k] menu and choose [k]Locked Track[/k] (Image 12). This creates a new constraint and automatically assigns the [k]Target[/k] and [k]Bone[/k] (Image 13). Again, we need to set the [k]Track Axis[/k] to -Y (Image 14). The [k]Locked Track[/k] constraint locks tracking movement to rotating a single axis, defaulting to the z-axis. This limits the movement to follow the target as it moves from side to side, but we want to limit to up and down. Change the [k]Locked Axis[/k] field to X (Image 15); now when the target bone moves up and down the turret will follow. Add the same constraint to the arm bone, locking the track in the z-axis so the arm moves rotates in a circle following the target (Image 16).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 },
                 "We see as we move the target around that the arm and turret move independently; the turret moves up and down but doesn't follow the target if it moves off to the side. [k]Tab[/k] into [k]Edit Mode[/k], [k]LMB[/k] the turret bone, [k]Shift-LMB[/k] the arm bone and [k]Ctrl-P > Keep Offset[/k] (Image 17). Now the arm is parented to the turret; when the arm bone rotates so does the turret. Moving the target around now shows the cannon tracking it (Image 18). We want everything to follow the root bone, and since turret is a child of the arm, making the arm a child of the root will automatically make the arm follow the root. Make the root the parent of the arm (Image 19). If we go into [k]Pose Mode[/k] and move the root bone, we see the cannon pointing at the target, but the target doesn't move with the root (Image 20). We want the target to stay with the root, so parent the root to the target as well (Image 21). The only bones we want to work with now are the target and root bones. Let's organize our bones; select the turret and arm bones in [k]Pose Mode[/k] and [k]M[/k] to add them to a new Bone Collection (Image 22). We can then hide the collection in the [k]Data Properties[/k] tab so they are hidden in the viewport while the targeting still works (Image 23).",
                 {
-                  "image": [
-                  ]
+                  "image": []
                 }
               ]
             }
