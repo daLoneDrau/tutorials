@@ -591,7 +591,7 @@
             "section": {
               "header": "Settings for working with bones",
               "content": [
-                "You will want to see more information about the armature you are working on; go to the [k]Data Properties > Viewport Display[/k] and enable [k]Name[/k] and [k]Axes]/k] (Image 5). And go to [k]Object Properties > Viewport Display > Display As[/k] and set it to [k]Wire[/k] (Image 6). This will ensure your bones are transparent. The last setting is under [k]Data Properties > Viewport Display[/k] and enable [k]In Front[/k]; this ensures your bone is always visible.",
+                "You will want to see more information about the armature you are working on; go to the [k]Data Properties > Viewport Display[/k] and enable [k]Name[/k] and [k]Axes[/k] (Image 5). And go to [k]Object Properties > Viewport Display > Display As[/k] and set it to [k]Wire[/k] (Image 6). This will ensure your bones are transparent. The last setting is under [k]Data Properties > Viewport Display[/k] and enable [k]In Front[/k]; this ensures your bone is always visible.",
                 {
                   "image": [
                     {
