@@ -181,32 +181,456 @@
     },
     {
       "05_05 Skinning and Weight painting": {
-        "tags": [],
-        "key_concepts": []
+        "tags": [
+          "skinning",
+          "weight painting",
+          "vertex groups"
+        ],
+        "key_concepts": [
+          "Weight painting is something many beginners find challenging. The best way to learn is by doing, so let's get started.",
+          {
+            "section": {
+              "header": "Manual vertex group creation",
+              "content": [
+                "If we take a look at our mesh, it has no vertex groups assigned (Image 1). Just as an example, select all vertices for the thumb tip and assign them to a Vertex Group the same name as the thumbtip bone, 'DEF_THUMB_02_L' (Image 2). If we went into [k]Pose Mode[/k] now and tried to move the thumb bone, nothing would happen. It's only after assigning an [k]Armature Modifier[/k] to the mesh that moving the thumb bone will work (Image 3). Manual vertex group creation can be useful when you need to add more deformation bones on your deformation armature, but for a full armature there are faster ways. Delete the [k]Armature Modifier[/k] and vertex group (Image 4).",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Parenting to armature I",
+              "content": [
+                "Select the mesh and the armature with the armature as the active object and [k]Ctrl-P > Armature Deform > With Empty Groups[/k] (Image 4). This automatically assigns an [k]Armature Modifier[/k] to your mesh and creates vertex groups for all of the armature's bones without assigning any vertices. (Image 5). This option gives you full control over the weight painting.",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Parenting to armature II",
+              "content": [
+                "Select the mesh and the armature with the armature as the active object again and [k]Ctrl-P > Armature Deform > With Automatic Weights[/k] (Image 6). This didn't work (Image 7). This is one of the most common bugs when it comes to automating weight. Blender was not able to calculate the weight to be assigned to each vertex, and there could be many reasons for that. Once you know them, it's not hard to fix.",
+                {
+                  "image": []
+                },
+                {
+                  "section": {
+                    "header": "Doubles",
+                    "content": [
+                      "Once common issue is doubles, or verlapping vertices. These are vertices that are so close to each other, Blender can't figure out how to assign weight. To remove the doubles, with the mesh selected go into [k]Edit Mode[/k] and [k]A,M,B[/k] (Image 8). We see that 32 doubles were removed (Image 9). Be careful and watch your [k]Merge Distance[/k] (Image 10). Depending on the size of your model, if the distance is too big it could ruin it (Image 11). Try parenting with automatic weights again (Image 12). Same error.",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Seperated meshes",
+                    "content": [
+                      "Objects that are constructed of separate meshes can sometimes have overlap which will cause difficulties for Blender when calculating the weight. Go back into [k]Edit Mode[/k] with our mesh and [k]A,P > By Loose Parts[/k] (Image 13). This separates the geometry into its separate objects (Image 14). Back in [k]Object Mode[/k] select all objects, make the armature the active object and [k]Ctrl-P > Armature Deform > With Automatic Weights[/k] (Image 15). This time it worked. Now, select all objects except the armature, make the torso active and [k]Ctrl-J[k] (Image 16). Now if we go into [k]Pose Mode[/k] and move the armature the mesh follows (Image 17).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Parenting to armature III",
+              "content": [
+                "We are going to revert to the mesh version we had when we started this exercise, with overlapping vertices. This time, instead of removing extra geometry or separating loose parts we are going to select the mesh and armature together, scale them up and then parent with automatic weights (Image 18). It worked this time, but the mesh got small. We can see the scale is still applied to the armature, so let's clear that with [k]Alt-S[/k] (Image 19). That brought the armature back to normal size, but made the mesh even tinier; we will fix that. [k]Alt-P > Clear Parent Inverse[/k] (Image 20). We can see that the mesh kept all the vertex groups and still has the [k]Armature Modifier[/k] so it will deform. But trying to pose the mesh we see that not everything was assigned correctly (Image 21).",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Summary",
+              "content": [
+                "Those are three ways to parent your mesh. In the next lesson we will cover them.",
+                {
+                  "image": []
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     {
       "05_06 Skinning and Weight painting_02": {
-        "tags": [],
-        "key_concepts": []
+        "tags": [
+          "weight painting",
+          "skinning"
+        ],
+        "key_concepts": [
+          "Weight painting is a tool; it doesn't replace assigning weight by hand, it does the same thing, but with a more artistic approach. To prepare, parent our armature to our mesh with empty groups.",
+          {
+            "section": {
+              "header": "Manually assigning and mirroring",
+              "content": [
+                "In [k]Edit Mode[/k] select a vertex for the left shoulder pad and [k]L[/k] while hovering the mesh or [k]Ctrl-L[/k] in either instance (Image 2). With all left shoulder pad vertices selected, assign them to the left shoulder pad group (Image 3). Posing the shoulder pad bone now works as expected. Go back into [k]Edit Mode[/k] and select the right shoulder pad geometry (Image 4). Go to [k]Mesh > Weights > Mirror[/k] (Image 5). This mirrors the weights from the opposite geometry and now the right shoulder pad is in the group for the opposite bone (Image 6).",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Normalizing",
+              "content": [
+                "Normalize All is your best operator for normalizing your weights. Double check the contextual menu. Don't bother with any of the other normalize options.",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Wrapping up",
+              "content": [
+                "Clear all vertex group assignments before we move on.",
+                {
+                  "image": []
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     {
       "05_07 Skinning the arms and legs": {
-        "tags": [],
-        "key_concepts": []
+        "tags": [
+          "weight painting",
+          "skinning"
+        ],
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Getting ready",
+              "content": [
+                "Enable [k]Vertex Group Weights > All[/k] so we can see the weights assigned (black where there is no weight) (Image 1). Our legs and arms are mostly made up of unconnected meshes. It makes more sense to 'skin' those pieces in [k]Edit Mode[/k] instead of weight painting.",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Skinning the arms",
+              "content": [
+                {
+                  "section": {
+                    "header": "Starting with the thumb",
+                    "content": [
+                      "Still in [k]Edit Mode[/k] hover the tip of the left thumb and [k]L[/k] (Image 2). Go to [k]Object > Vertex Groups[/k] and search for the bone name we can see behind the selection (Image 3). Select the 'DEF_THUMB_02_L' group and assign it with a weight of 1; you will see the selection turn red (Image 4).",
+                      {
+                        "image": []
+                      },
+                      "It's a best practice to [k]H[/k] the selection as you go so you don't miss anything (Image 5). Move on the little ball behind the thumb tip and assign it to the same bone (Image 6). Move on to the thumb base and assign to 'DEF_THUMB_01_L' (Image 7). [k]Alt-H[/k] and review the model; we see the thumb base red for 'DEF_THUMB_01_L' and the tip blue (not black) to show it has influence but not from that group (Image 8).",
+                      {
+                        "image": []
+                      },
+                      " With our first geometry assigned, go into [k]Pose Mode[/k] test the thumb movement to see how it looks (Image 9). Go back into [k]Edit Mode[/k], hide our previously assigned geometry, and assign the last ball part of the thumb to '' (Image 10).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The hand",
+                    "content": [
+                      "Let's move on to the hand. The robot's hand is made of three different parts: the hand base, the ball attachment to the wrist, and the rings attached to the balls for the wrist, thumb, and three fingers (Image 11). Assign these to the 'DEF_HAND_L' group (Image 12).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The fingers",
+                    "content": [
+                      "Starting from the knuckle joints, it should be easy to do the fingers; remember, one joint per bone (Image 13).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The forearm",
+                    "content": [
+                      "The forearm is three pieces: the forearm base, elbow pad, and ball joint (Image 14). It's always a good idea to check [k]Pose Mode[/k] as you go along to ensure the deformation looks correct (Image 15).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Finishing the arm",
+                    "content": [
+                      "Select the upper arm mesh and ball for the arm bone (Image 16). And the shoulder pad should be obvious (Image 17). And the arms are done! Don't forget to test the poses.",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Skinning the legs",
+              "content": [
+                "The ball by the hips and the leg mesh belong to 'DEF_LEG_L' (Image 18). The ball, knee, and shin geometry are assigned to the shin bone (Image 19). The main foot body, heel, and side pieces are assigned to the foot bone (Image 20). The last piece goes to our toes (Image 21).",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Fixing the weight",
+              "content": [
+                "After weight painting the legs, we will test some poses. We have a clipping issue; rotating the foot bone causes part of the inside of the foot to come out of the shin (Image 22). We need to assign the vertices that are causing the clipping to the shin bone instead of the foot, or maybe to both. But if we go back to [k]Edit Mode[/k] for the mesh we can't see the deformation causing the problem (Image 23). When skinning a mesh, we need to see how it deforms in [k]Edit Mode[/k]. In order to achieve this, go to the [k]Armature Modifier[/k] and enable both [k]Edit Mode[/k] (Image 24) and [k]On Cage[/k] (Image 25). [strong]Always use this display method while skinning.[/strong]",
+                {
+                  "image": []
+                },
+                "After weight painting the legs, we will test some poses. We have a clipping issue; rotating the foot bone causes part oSelect the edge loop at the top of the foot part that is clipping through the shin; we will assign it to the shin bone (Image 26). Since they are already assigned to the foot bone, they will now share influence with the shin bone; set a weight of 1 and assign the vertices (Image 27). There's still some clipping (Image 28). In order to see better, turn on transparency and hide the right side and the back of the foot/shin (Image 29).",
+                {
+                  "image": []
+                },
+                "We will start by fixing the bottom clipping. Select the two vertices that are clipping at the bottom and assign them to the shin bone with a weight of 0.2 and increasing until you think it looks best (Image 30). Go back to the first edge loop we worked on (Image 31). We want this to move more towards the shin, but it already has a weight of 1 assigned to the shin bone; how do we move it more? We can do this by reducing the influence of the foot bone; [k]N[/k] to open the [k]Sidebar[/k] and under [k]Item[/k] reduce the weight assigned to the foot (Image 31). This action only affected the selected vertex even though we have four vertices selected. In order to assign this setting to all selecter vertices click [k]Copy[/k] (Image 32). If we go back to [k]Edit Mode[/k] the issue looks much better (Image 33).",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Mirroring",
+              "content": [
+                "In [k]Edit Mode[/k] select all the vertices on the right side that you will want mirrored (Image 34). A good way to do this is to enable transparency, box select some vertices in the area and then [k]Ctrl-L[/k] to select all associated geometry. [k]Mesh > Weights > Mirror[/k] and then in the [k]Mirror Vertex Group[/k] panel enable [k]All Groups[/k] (Image 35). We will know it worked if the body parts change from black to blue, meaning they have a vertex group assigned (Image 36). Again, the final test is to pose your rig.",
+                {
+                  "image": []
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     {
       "05_08 Skinning and Weight painting_03": {
-        "tags": [],
-        "key_concepts": []
+        "tags": [
+          "weight painting",
+          "skinning"
+        ],
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Separating your mesh",
+              "content": [
+                "It is perfectly acceptable to separate your mesh into different parts, weight paint it, and then join it back so long as you don't change the topology. In [k]Edit Mode[/k] with our mesh, select the torso and the ears using [k]L[/k] or [k]Ctrl-L[/k] and then [k]Ctrl-I[/k] to invert our selection (Image 1). [k]P,S[/k] to seprate the limbs from the body (Image 2).",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Weight painting workflow",
+              "content": [
+                "Here is a sample workflow to follow when weight painting. Follow the initial set up found in [url]lesson 2.7 - Settings^^../02_07 Bones fundamental[/url]. We will use a simple model that was parented with empty groups to skin (Image 3).",
+                {
+                  "image": []
+                },
+                {
+                  "section": {
+                    "header": "Initial pass",
+                    "content": [
+                      "Assign vertices to a single deformation group with full influence, hiding each section until all vertices are assigned (Images 4, 5, 6). Afterwards, switch to [k]Pose Mode[/k] and see how the deformations look. When we look at the deformation in [k]Edit Mode[/k] we see harsh angles and hard deformation (Image 7).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Fixing the deformation",
+                    "content": [
+                      "To smooth the transition from one group to another we can use the smooth operation. First, select the edge loop at the harsh bend and [k]Ctrl-+[/k] to expand the selection; this will be all the geometry where you want to smooth operation to process (Image 8). [k]Mesh > Weights > Smooth[/k] (Image 9).",
+                      {
+                        "image": []
+                      },
+                      {
+                        "section": {
+                          "header": "Viewport Shading Options",
+                          "content": [
+                            "The Smooth operator blends the weights of selected vertices based on the average of adjacent vertices, creating smoother transitions in weight painting. This operator is useful for refining weight distributions, improving deformation in rigging, and eliminating abrupt transitions between vertex weights.",
+                            {
+                              "section": {
+                                "header": "Subset",
+                                "content": [
+                                  "Restrict the tool to a subset.",
+                                  [
+                                    "Active Group",
+                                    "Selected Pose Bones",
+                                    "Deform Pose Bones",
+                                    "All Groups"
+                                  ]
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Factor",
+                                "content": [
+                                  "Controls the amount of blending toward the average weight of [strong]connected[/strong] vertices.",
+                                  [
+                                    "A [italic]Factor[/italic] of 0.0 preserves the original weights.",
+                                    "A [italic]Factor[/italic] of 1.0 fully adopts the calculated average weight.",
+                                    "Values between 0.0 and 1.0 blend the weights proportionally."
+                                  ]
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Iterations",
+                                "content": [
+                                  "Sets how many times the smoothing operation is repeated. Higher values produce smoother results but may introduce unwanted artifacts in fine details."
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Expand/Contract",
+                                "content": [
+                                  "Adjusts the smoothing influence by expanding or contracting the selection:",
+                                  [
+                                    "Positive values expand the selection to include neighboring vertices.",
+                                    "Negative values contract the selection to focus on a smaller subset of vertices."
+                                  ]
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Smoothing the bend",
+                          "content": [
+                            "Set [k]Smooth Vertex Weights > Subset > Deform Pose Bones[/k] (Image 10). From there, adjust the smoothing with the [k]Factor[/k] and [k]Iterations[/k] settings, as well as [k]Expand/Contract[/k] (Image 11).",
+                            {
+                              "image": []
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "image": []
+                      },
+                      {
+                        "section": {
+                          "header": "Smoothing the entire mesh",
+                          "content": [
+                            "We can see that the mesh deformation doesn't look great (Image 12). What we'll want to do is apply the smoothing operation to almost the entire mesh. Select all edge loops except the ones at the ends (Image 13) and apply smoothing, adjusting the settings until you are satisfied (Image 14). This is a great way to skin hair, clothes, wires, etc., but for character's limbs we need a finer tweaking.",
+                            {
+                              "image": []
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Normalizing",
+                          "content": [
+                            "Select all vertices and [k]Mesh > Weights > Normalize All[/k] (Image 15). Set [k]Subset > Deform Pose Bones[/k] and disable [k]Lock Active[/k] (Image 16). Now all weights should be normalized, but if we go poke around our mesh looking at specific values in the [k]Sidebar[/k] we see there are some vertex groups assigned with 0 influence (Image 17). We will clean it up by going selecting all vertices, [k]Mesh > Weights > Clean[/k], set [k]Subset > All Groups[/k] and [k]Limit > 0.001[/k] for a low threshold (Image 18). After that, select all again and run [k]Mesh > Weights > Normalize All[/k] (Image 19). Now you should have a clean mesh.",
+                            {
+                              "image": []
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Last thoughts",
+              "content": [
+                {
+                  "section": {
+                    "header": "Don't oversmooth",
+                    "content": [
+                      "Not every problem can be solved with smoothing. Complex skinning is achieved with manual weight painting."
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Advanced skinning",
+                    "content": [
+                      "We can use corrective shape keys and corrective bones to improve our deformations."
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     {
       "05_09 Skinning and Weight painting_04": {
-        "tags": [],
-        "key_concepts": []
+        "tags": [
+          "weight painting"
+        ],
+        "key_concepts": [
+          "Weight painting is a skinning method that uses painting tools, similar to sculpting or texture painting. Let's practice weight painting with a plane that has been subdivided and has two vertex groups with nothing assigned.",
+          {
+            "section": {
+              "header": "Set up",
+              "content": [
+                "Go into [k]Weight Paint Mode[/k] (Image 1). When you are painting weight you are actually working on the vertices. Open the [k]Weight Paint Overlays[/k] and enable [k]Show Wire[/k] (Image 2). We are using a digital brush, and the options for the brush can be found in the [k]Sidebar[/k] (Image 3) and at the top of the screen (Image 4). In the brush options, the [k]Weight[/k] the target influence you are setting when you brush, and the [k]Strength[/k] is how many brushstrokes it takes to reach the weight. Set the [k]Weight[/k] to 0.1 and [k]Strength[/k] to 1 and paint a vertex (Image 5). Now, set [k]Weight[/k] to 1.0 and paint a few other vertices (Image 6). You will see the difference between the weight at each vertex.",
+                {
+                  "image": []
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     {
@@ -217,8 +641,133 @@
     },
     {
       "05_11 Skinning the torso": {
-        "tags": [],
-        "key_concepts": []
+        "tags": [
+          "skinning",
+          "weight painting"
+        ],
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Set up",
+              "content": [
+                "Select the torso and head geometry and go into [k]Weight Paint Mode[/k] (Image 1). Check the overlays and make sure [k]Zero Weights > All[/k] (Image 2). Set [k]Viewport Shading > Solid[/k] (Image 3). We will want to be able to select the bones underneath the mesh in order to assign groups, so disable [k]Paint Mask[/k] (Image 4).",
+                {
+                  "image": []
+                },
+                "Enable symmetry in the x-axis so that our actions affect both sides (Image 5). [k]N[/k] to open the [k]Sidebar[/k] and under [k]Tool > Options[/k] enable [k]Auto Normalize[/k] (Image 6). Under [k]Brush Settings[/k] set [k]Weight[/k] and [k]Strength[/k] to 1 (Image 7).",
+                {
+                  "image": []
+                },
+                "Go to [k]Brush Settings > Falloff[/k] and set it to [k]Constant[/k] (Image 8) and set [k]Falloff Shape > Projected[/k] (Image 9). Make sure that [k]Brush Settings > Advanced > Front Faces Only[/k] is disabled so that we can paint through our mesh ([strong]Note: Pierrick Picaut recommends this, but for low poly models you may want to enable this to have more control[/strong]) (Image 10). Lastly, if you want to see the wireframe on the model go to [k]Weight Paint Overlays[/k] and enable [k]Show Wire[/k] (Image 11).",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Painting the torso",
+              "content": [
+                {
+                  "section": {
+                    "header": "The hips",
+                    "content": [
+                      "We are ready to paint. In [k]Object Mode[/k] select your armature and then your mesh as the active object (Image 12). Change to [k]Weight Painr Mode[/k] (Image 13). [k]Alt-LMB[/k] the hips bone to make its vertex group active (Image 14). Start painting; it is a good idea to paint the boundaries of the region first (Image 15) and then fill in the middle (Image 16).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The spine",
+                    "content": [
+                      "[k]Alt-LMB[/k] the spine bone, paint the boundaries of the region (Image 17) and then fill it in (Image 18). Rotate around the model to review your work (Image 19).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The chest",
+                    "content": [
+                      "[k]Alt-LMB[/k] the chest bone, and start painting the boundaries of the region (Image 20). If when painting the boundaries you can see a black area between the new region's boundaries and the blue of an area that was already assigned that means the black areas has no assignment and you can paint those (Image 21). Finish filling in the chest area; don't worry about the shoulders for now (Image 22).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "De-cluttering",
+                    "content": [
+                      "If the viewport is too cluttered, go into [k]Object Mode[/k] for the mesh and remove the arms, legs, and shoulders that were removed; and go into [k]Pose Mode[/k] for the armature and remove any bones we don't need to assign right now (Image 23).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The neck",
+                    "content": [
+                      "Paint the neck region completely since it's such a small area (Image 24). If you accidentally marked some of the neck when painting the chest, don't worry; since the [k]Weight[/k] is set to 1 and [k]Options > Auto Normalize[/k] is enabled then painting over those vertices will automatically set the weight for the incorrectly-assigned region to 0.",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The head",
+                    "content": [
+                      "Finish off with painting the head (Image 25).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Testing the painting",
+              "content": [
+                {
+                  "section": {
+                    "header": "Moving the root",
+                    "content": [
+                      "Go into [k]Pose Mode[/k], grab the root bone and move it along an axis. Any vertices that were left unpainted will not move (Image 26). It will be easy to go back into [k]Weight Paint Mode[/k] and fix them. Don't forget to clear your transform after.",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Testing in an animation",
+                    "content": [
+                      "A very common way to test how the weight painting looks is to go to [k]Pose Mode[/k] and record an animation. Open up the [k]Timeline[/k] (Image 27). Select the head bone, go to frame 0, and hovering the rotation values in the [k]Sidebar[/k] press [k]I[/k] (Image 28). This captures the rotation values for the head bone in frame 0. Rotate the head backwards, move the [k]Timeline[/k] to frame 5 and [k]I[/k] to insert a keyframe for that rotation (Image 29). Now, rotate the head forewards towards the chest and capture that rotation in frame 10 (Image 30). You can even go back into [k]Weight Painting Mode[/k] with this animation and use the [k]Left[/k] and [k]Right[/k] arrows to move around and see how the model looks at different keyframes (Image 31).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     {

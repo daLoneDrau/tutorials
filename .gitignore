@@ -7,3 +7,5 @@
 Screenshot*.png
 *.blend
 *.blend1
+**/3d/**/*.png
+**/3d/**/*.jpg
