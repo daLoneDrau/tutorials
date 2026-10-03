@@ -307,14 +307,24 @@
             "section": {
               "header": "What are constraints?",
               "content": [
-                "Constraints are a powerful tool when it comes to rigging in Blender. Constraints can be used on objects and affect their transforms. This means they will work on an object's point of origin, but not their mesh or geometry. They can be added to any type of object: cameras, empties, grease pencils, etc. There are object constraints whioh are applied to objects (Image 1) and bone constraints applied to bones (Image 2). Bone/Object constraints are the same thing, expect in rigging you will use bons constraints since object constraints will affect the parent armature. There are many constraints (Image 3) but mose of the time you will only use a handful of them.",
+                "Constraints are a powerful tool when it comes to rigging in Blender. Constraints can be used on objects and affect their transforms. This means they will work on an object's point of origin, but not their mesh or geometry. They can be added to any type of object: cameras, empties, grease pencils, etc. There are object constraints whioh are applied to objects (Image 1) and bone constraints applied to bones (Image 2). Bone/Object constraints are the same thing, expect in rigging you will use bons constraints since object constraints will affect the parent armature. There are many constraints (Image 3) but most of the time you will only use a handful of them.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-01.jpg",
+                      "caption": "Image 1 - Seeing object constraints applied to objects"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-02.jpg",
+                      "caption": "Image 2 - Seeing bone constraints applied to bones"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-03.jpg",
+                      "caption": "Image 3 - Seeing the full list of available constraints"
+                    }
+                  ]
                 },
-                "Earlier we learned that parenting is one way to make an object influence another; a child will follow its parent's location, rotation, and scale. Constraints are another way.",
-                {
-                  "image": []
-                }
+                "Earlier we learned that parenting is one way to make an object influence another; a child will follow its parent's location, rotation, and scale. Constraints are another way."
               ]
             }
           },
@@ -324,15 +334,54 @@
               "content": [
                 "Let's set up a scene with three objects: a cube, a sphere, and an empty (Image 4). Add a [k]Copy Transforms[/k] constraint to the cube (Image 5). The constraint will show red since it is disabled while the [k]Target[/k] is empty (Image 6). If we set the [k]Target[/k] to the empty, we will see the cube snap to the empty; this is because we are copying its transforms in World Space (Image 7). Most constraints will have an influence slider (Image 8); 1 is full influence, 0 is no influence.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-04.jpg",
+                      "caption": "Image 4 - Setting up a scene with three objects: a cube, a sphere, and an empty"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-05.jpg",
+                      "caption": "Image 5 - Adding a Copy Transforms constraint to the cube"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-06.jpg",
+                      "caption": "Image 6 - Seeing the constraint show red while the Target is empty and the constraint is disabled"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-07.jpg",
+                      "caption": "Image 7 - Setting the Target to the empty and seeing the cube snap to it by copying its transforms in World Space"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-08.jpg",
+                      "caption": "Image 8 - Seeing the influence slider where 1 is full influence and 0 is no influence"
+                    }
+                  ]
                 },
                 "Constraints override parenting and object transforms. Let's parent the sphere to the cube and try to move the empty along the x-axis; nothing will happen (Image 9). In order to allow the sphere to influence the cube you need to disable the constraint (Image 10). By default a constraint replaces an object's transforms, but this can be changed (Image 11).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-09.jpg",
+                      "caption": "Image 9 - Parenting the sphere to the cube and trying to move the empty along the x-axis, seeing nothing happen due to the constraint overriding transforms"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-10.jpg",
+                      "caption": "Image 10 - Disabling the constraint to allow the sphere to influence the cube"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-11.jpg",
+                      "caption": "Image 11 - Changing the default behavior where a constraint replaces an object's transforms, and seeing the option to apply the constraint"
+                    }
+                  ]
                 },
                 "Like modifiers, constraints can be applied (Image 11); thia applies the transform to the object but removes the constraint for future changes. Constraints can also be duplicated. Constraints are applied in the same order as modifiers: top-to-bottom. In this example (Image 12), we see the cube get copy the transform values from the empty first, and then copy the transform from the sphere, which is the final result seen in the viewport. You can adjust the influence on multiple constraints to affect the results.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-12.jpg",
+                      "caption": "Image 12 - Seeing the cube copy transform values from the empty first, then from the sphere, with the sphere's values as the final result shown in the viewport"
+                    }
+                  ]
                 }
               ]
             }
