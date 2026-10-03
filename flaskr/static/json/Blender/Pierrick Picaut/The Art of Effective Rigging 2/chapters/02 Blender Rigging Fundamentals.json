@@ -657,10 +657,7 @@
             "section": {
               "header": "Starting in Object Mode",
               "content": [
-                "We will be doing a lot of work with bones, so let's start practicing. There are three modes when dealing with armatures: [k]Object Mode[/k], [k]Edit Mode[/k], and [k]Pose Mode[/k]. In [k]Object Mode[/k] you are manipulating the armature's container. It is best to keep the armature object free of transformations. Clear all transformations in [k]Object Mode[/k] with [k]Alt-R,Alt-S,Alt-G[/k]. As we learned in the previous lesson, adjust our settings.",
-                {
-                  "image": []
-                }
+                "We will be doing a lot of work with bones, so let's start practicing. There are three modes when dealing with armatures: [k]Object Mode[/k], [k]Edit Mode[/k], and [k]Pose Mode[/k]. In [k]Object Mode[/k] you are manipulating the armature's container. It is best to keep the armature object free of transformations. Clear all transformations in [k]Object Mode[/k] with [k]Alt-R,Alt-S,Alt-G[/k]. As we learned in the previous lesson, adjust our settings."
               ]
             }
           },
@@ -678,15 +675,29 @@
                     "content": [
                       "Just like working with geometry, you can extrude a bone from its tail with [k]E[/k], or [k]Ctrl-RMB[/k]. You can also extrude from the head of a bone by selecting it and [k]E[/k] to extrude (Image 1). Bones extruded from the tail are automatically children of the bones they were extruded from; while bones extruded from the head have no parent. if you have multiple bones selected and [k]E[/k] to extrude then bones will be extruded from all of them (Image 2). However, if you have multiple bones selected and [k]Ctrl-RMB[/k] it will only extrude from the last bone in the chain; this is not recommended. [k]E,X[/k], [k]E,Y[/k], or [k]E,Z[/k] to constrain the axis for the extrusion.",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_08 Bones manipulation/0208-01.jpg",
+                            "caption": "Image 1 - Extruding from the head of a bone by selecting it and pressing E"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_08 Bones manipulation/0208-02.jpg",
+                            "caption": "Image 2 - Pressing E with multiple bones selected to extrude bones from all of them simultaneously"
+                          }
+                        ]
                       },
                       {
                         "section": {
                           "header": "Normal orientation",
                           "content": [
-                            "If you want to extrude bones and constrain them to the axes of the bone they are extruding from, change the orientation to [k]Normal[/k] (Image 3). If you have bones you want aligned, you can select all your bones and [k]Ctrl-Alt-A[/k] and this will align your bones using the active bone (Image 4).",
+                            "If you want to extrude bones and constrain them to the axes of the bone they are extruding from, change the orientation to [k]Normal[/k] (Image 3).",
                             {
-                              "image": []
+                              "image": [
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_08 Bones manipulation/0208-03.jpg",
+                                  "caption": "Image 3 - Changing the orientation to Normal to constrain bone extrusions to the axes of the bone they are extruding from"
+                                }
+                              ]
                             }
                           ]
                         }
@@ -698,9 +709,14 @@
                   "section": {
                     "header": "Aligning bones",
                     "content": [
-                      "If you want to extrude bones and constrain them to the axes of the bone they are extruding from, change the orientation to [k]Normal[/k] (Image 3). If you have bones you want aligned, you can select all your bones and [k]Ctrl-Alt-A[/k] and this will align your bones using the active bone (Image 4).",
+                      "If you have bones you want aligned, you can select all your bones and [k]Ctrl-Alt-A[/k] and this will align your bones using the active bone (Image 4).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_08 Bones manipulation/0208-04.jpg",
+                            "caption": "Image 4 - Selecting all bones and pressing Ctrl-Alt-A to align them using the active bone"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -711,7 +727,16 @@
                     "content": [
                       "By default, blender is set to use the [k]Median Point[/k] as the transform pivot point, but for bones this means they are rotating around their middle (Image 5). It's better to use the [k]Active Element[/k] as the pivot point so that bones rotate around their head (Image 6).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_08 Bones manipulation/0208-05.jpg",
+                            "caption": "Image 5 - Seeing bones rotating around their middle when using the default Median Point as the transform pivot point"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_08 Bones manipulation/0208-06.jpg",
+                            "caption": "Image 6 - Using Active Element as the pivot point so that bones rotate around their head"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -720,10 +745,7 @@
                   "section": {
                     "header": "Connecting bones",
                     "content": [
-                      "In [k]Edit Mode[/k] connect bones with [k]Ctrl-P[/k], disconnect with [k]Alt-P[/k].",
-                      {
-                        "image": []
-                      }
+                      "In [k]Edit Mode[/k] connect bones with [k]Ctrl-P[/k], disconnect with [k]Alt-P[/k]."
                     ]
                   }
                 }
