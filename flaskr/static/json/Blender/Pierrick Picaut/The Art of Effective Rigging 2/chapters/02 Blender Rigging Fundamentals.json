@@ -785,15 +785,17 @@
               "content": [
                 "To properly position out bones we will uses mesh editing. The idea is to find a perfect rotation point or pivot point for each bone.",
                 {
-                  "image": []
-                },
-                {
                   "section": {
                     "header": "Adding assets",
                     "content": [
                       "Any object we add to a scene will be added at the 3D cursor. [k]Shift-RMB[/k] will place the 3D cursor anywhere in the scene. We want it centered, so press [k]Shift-C[/k] (Image 1). You should always rig from the center of the world to prevent the rig from having any errors when it comes to symmetry.",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-01.jpg",
+                            "caption": "Image 1 - Pressing Shift-C to center the 3D cursor at the world origin"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -804,7 +806,28 @@
                     "content": [
                       "[k]Shift-A > Armature[/k] and assign the settings from 02_07 (Image 2). By default the y-axis of the bone is aligned with the z-axis of world space. When we send the rig to the animator we will use the [k]Graph Editor[/k] which edits the local space of the selected bone. Whenever we can, we want to align the bone with world space. To do this, [k]Tab[/k] into Edit Mode, select the bone's tail (Image 3). Since the 3D Cursor is located at the bone's head, [k]Shift-S,E[/k] to snap the tail to the head (Image 4). With the tail still selected, [k]G,Y,1[/k] to extrude it 1m along the positive y-axis (Image 5). Now our bone orientation is the same as the world orientation. [k]F2[/k] and rename the bone to 'root' (Image 6). In rigging, the root bone is the highest bone in the hierarchy that controls other bones.",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-02.jpg",
+                            "caption": "Image 2 - Adding an armature with Shift-A > Armature and assigning the settings from 02_07"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-03.jpg",
+                            "caption": "Image 3 - Pressing Tab to enter Edit Mode and selecting the bone's tail"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-04.jpg",
+                            "caption": "Image 4 - Pressing Shift-S then E to snap the tail to the head at the 3D Cursor location"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-05.jpg",
+                            "caption": "Image 5 - Pressing G, Y, 1 to move the tail 1m along the positive y-axis to align the bone orientation with world orientation"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-06.jpg",
+                            "caption": "Image 6 - Pressing F2 to rename the bone to 'root'"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -815,7 +838,28 @@
                     "content": [
                       "Now we need to create a bone for the arm. The arm will rotate the turret 360°, so a good place to start the arm bone is where the arm meets the base (Image 7). In [k]Edit Mode[/k] select the geometry around that area and [k]Shift-S,T[/k] to move the 3D Cursor there (Image 8). Select the armature and go back into [k]Edit Mode[/k]. We will duplicate the root bone and snap it to the 3D Cursor. First, set [k]Transform Pivot Point > Individual Origins[/k] (Image 9). [k]Shift-D[/k], [k]Shift-S,E[/k] to duplicate and snap to the 3D Cursor (Image 10). [k]F2[/k] to rename it 'arm' (Image 11).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-07.jpg",
+                            "caption": "Image 7 - Identifying where the arm meets the base as the starting point for the arm bone"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-08.jpg",
+                            "caption": "Image 8 - Selecting the geometry around the arm-base junction in Edit Mode and pressing Shift-S then T to move the 3D Cursor there"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-09.jpg",
+                            "caption": "Image 9 - Setting Transform Pivot Point to Individual Origins"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-10.jpg",
+                            "caption": "Image 10 - Pressing Shift-D then Shift-S then E to duplicate the root bone and snap it to the 3D Cursor"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-11.jpg",
+                            "caption": "Image 11 - Pressing F2 to rename the bone to 'arm'"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -826,7 +870,20 @@
                     "content": [
                       "Select the arm geometry, and find the vertices near the top where the turret connects and [k]Shift-S,T[/k] to position the 3D Cursor there (Image 12). Get back to the armature and in [k]Edit Mode[/k] [k]Shift-D[/k], [k]Shift-S,E[/k] to duplicate a bone and snap to the 3D Cursor (Image 13). [k]F2[/k] to rename it 'turret' (Image 14).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-12.jpg",
+                            "caption": "Image 12 - Selecting the arm geometry vertices near the top where the turret connects and pressing Shift-S then T to position the 3D Cursor there"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-13.jpg",
+                            "caption": "Image 13 - Returning to the armature in Edit Mode and pressing Shift-D then Shift-S then E to duplicate a bone and snap it to the 3D Cursor"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-14.jpg",
+                            "caption": "Image 14 - Pressing F2 to rename the bone to 'turret'"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -848,7 +905,12 @@
                     "content": [
                       "The simplest way is to parent the geometry to the bones. Our current geometry is three separate objects (Image 15).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-15.jpg",
+                            "caption": "Image 15 - Seeing the current geometry as three separate objects"
+                          }
+                        ]
                       },
                       {
                         "section": {
@@ -856,7 +918,24 @@
                           "content": [
                             "Let's parent the cannon geometry. [k]LMB[/k] to select the cannon and [k]Shift-LMB[/k] to select the armature as the active object (Image 16). [k]Ctrl-Tab[/k] to go into Pose Mode (Image 17). Select the turret bone (Image 18). [k]Ctrl-P,B[/k] to parent the turret bone to the cannon geometry (Image 19).",
                             {
-                              "image": []
+                              "image": [
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-16.jpg",
+                                  "caption": "Image 16 - Clicking LMB to select the cannon and Shift-LMB to select the armature as the active object"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-17.jpg",
+                                  "caption": "Image 17 - Pressing Ctrl-Tab to go into Pose Mode"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-18.jpg",
+                                  "caption": "Image 18 - Selecting the turret bone"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-19.jpg",
+                                  "caption": "Image 19 - Pressing Ctrl-P then B to parent the cannon geometry to the turret bone"
+                                }
+                              ]
                             }
                           ]
                         }
@@ -865,9 +944,26 @@
                         "section": {
                           "header": "Parenting the other geometry",
                           "content": [
-                            "Go to the [k]Outliner[/k] and select the base (Image 20); by using the [k]Outliner[/k] we can select other objects without needing to switching back and forth between pose mode and object mode. Select the root bone and [k]Ctrl-P,B[/k] to parent to the base mesh (Image 21). Do the same for the arm (Image 22). Now if we go to change any of the transforms for the bones in [k]Pose Mode[/k] the cannon's geometry is affected as well (Image 23). This works veyr nicely with any mechanical objects, such as robots, cars, etc.",
+                            "Go to the [k]Outliner[/k] and select the base (Image 20); by using the [k]Outliner[/k] we can select other objects without needing to switching back and forth between pose mode and object mode. Select the root bone and [k]Ctrl-P,B[/k] to parent to the base mesh (Image 21). Do the same for the arm (Image 22). Now if we go to change any of the transforms for the bones in [k]Pose Mode[/k] the cannon's geometry is affected as well (Image 23). This works very nicely with any mechanical objects, such as robots, cars, etc.",
                             {
-                              "image": []
+                              "image": [
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-20.jpg",
+                                  "caption": "Image 20 - Selecting the base through the Outliner without switching out of Pose Mode"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-21.jpg",
+                                  "caption": "Image 21 - Selecting the root bone and pressing Ctrl-P then B to parent it to the base mesh"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-22.jpg",
+                                  "caption": "Image 22 - Doing the same parenting process for the arm"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-23.jpg",
+                                  "caption": "Image 23 - Seeing the cannon's geometry affected by changing bone transforms in Pose Mode"
+                                }
+                              ]
                             }
                           ]
                         }
@@ -879,13 +975,39 @@
                   "section": {
                     "header": "Parenting with Vertex Groups",
                     "content": [
-                      "The second way to parent an armature to a mesh is with Vertex Groups. For this we will use the cannon geometry that is a single object. [k]LMB[/k] to select the cannon and [k]Shift-LMB[/k] to select the armature as the active object (Image 24). [k]Ctrl-P,E[/k] to parent the object with empty groups (Image 25). Select the cannon geometry and look at [k]Data > Vertex Groups[/k]; we see that vertex groups have been created for each bone in the armature (Image 26). Vertex groups are used by most modifiers to set a level of influence. Vertex groups are used in most softwares and engines. With the cannon selected [k]Tab[/k] into [k]Edit Mode[/k] and see the options in the [k]Vertex Groups[/k] panel change (Image 27).",
+                      "The second way to parent an armature to a mesh is with Vertex Groups. For this we will use the cannon geometry that is a single object. [k]LMB[/k] to select the cannon and [k]Shift-LMB[/k] to select the armature as the active object (Image 24). [k]Ctrl-P,E[/k] to parent the object with empty groups (Image 25). Select the cannon geometry and look at [k]Data > Vertex Groups[/k]; we see that vertex groups have been created for each bone in the armature (Image 26). Vertex groups are used by most modifiers to set a level of influence. Vertex groups are used in most software and engines. With the cannon selected [k]Tab[/k] into [k]Edit Mode[/k] and see the options in the [k]Vertex Groups[/k] panel change (Image 27).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-24.jpg",
+                            "caption": "Image 24 - Clicking LMB to select the cannon and Shift-LMB to select the armature as the active object for vertex group parenting"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-25.jpg",
+                            "caption": "Image 25 - Pressing Ctrl-P then E to parent the object with empty groups"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-26.jpg",
+                            "caption": "Image 26 - Seeing vertex groups created for each bone in the armature under Data > Vertex Groups"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-27.jpg",
+                            "caption": "Image 27 - Pressing Tab to enter Edit Mode with the cannon selected and seeing the Vertex Groups panel options change"
+                          }
+                        ]
                       },
-                      "Select all the vertices for the turret part and assign them to the turret vertex group (Image 28). Now if we go into [k]Pose Mode[/k] for the armature we can move the turret around with the turret bone (Image 29). Assign the remaning vertices to the arm and root bones.",
+                      "Select all the vertices for the turret part and assign them to the turret vertex group (Image 28). Now if we go into [k]Pose Mode[/k] for the armature we can move the turret around with the turret bone (Image 29). Assign the remaining vertices to the arm and root bones.",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-28.jpg",
+                            "caption": "Image 28 - Selecting all the vertices for the turret part and assigning them to the turret vertex group"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-29.jpg",
+                            "caption": "Image 29 - Going into Pose Mode for the armature and moving the turret around with the turret bone"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -896,7 +1018,12 @@
                     "content": [
                       "If you go the [k]Modifiers[/k] tab, you will see that the cannon geometry has an [k]Armature Modifier[/k] (Image 30). This is because the armature deforms the mesh. If you de-activate the modifier and go into [k]Pose Mode[/k] transforming the bones won't have an affect on the mesh.",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_09 Assign to armature/0209-30.jpg",
+                            "caption": "Image 30 - Seeing the Armature Modifier on the cannon geometry under the Modifiers tab"
+                          }
+                        ]
                       }
                     ]
                   }
