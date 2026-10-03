@@ -3,7 +3,10 @@
   "sections": [
     {
       "01_03 Optimising Blender interface": {
-        "tags": ["interface", "thick lines"],
+        "tags": [
+          "interface",
+          "thick lines"
+        ],
         "key_concepts": [
           {
             "section": {
@@ -11,7 +14,20 @@
               "content": [
                 "By default, rig controller's custom shapes are very thin, which can sometimes be difficult to see. We can chane that. Go to [k]Edit > Preferences[/k] (Image 1), and under [k]Interface > Line Width[/k] change it to [k]Thick[/k] (Image 2). Now the bones and their custom shapes will be easier to read. Also, check the box for [k]Developer Extras[/k] (Image 3); this will display extra input when hovering Blender input, including its RNA path which is helpful for scripting or editing drivers. Also, later on you will need to remember to user [k]Alt-LMB[/k] and [k]Shift-Alt-LMB[/k] for later.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/01_03 Optimising Blender interface/0103-01.jpg",
+                      "caption": "Image 1 - Going to Edit > Preferences"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/01_03 Optimising Blender interface/0103-02.jpg",
+                      "caption": "Image 2 - Changing the Line Width to Thick under Interface > Line Width"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/01_03 Optimising Blender interface/0103-03.jpg",
+                      "caption": "Image 3 - Checking the box for Developer Extras to display extra input when hovering Blender input, including RNA paths"
+                    }
+                  ]
                 }
               ]
             }
