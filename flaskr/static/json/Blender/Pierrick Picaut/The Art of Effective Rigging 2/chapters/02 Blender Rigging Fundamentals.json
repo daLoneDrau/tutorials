@@ -370,16 +370,20 @@
                     },
                     {
                       "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-11.jpg",
-                      "caption": "Image 11 - Changing the default behavior where a constraint replaces an object's transforms, and seeing the option to apply the constraint"
+                      "caption": "Image 11 - Changing the default behavior where a constraint replaces an object's transforms "
                     }
                   ]
                 },
-                "Like modifiers, constraints can be applied (Image 11); thia applies the transform to the object but removes the constraint for future changes. Constraints can also be duplicated. Constraints are applied in the same order as modifiers: top-to-bottom. In this example (Image 12), we see the cube get copy the transform values from the empty first, and then copy the transform from the sphere, which is the final result seen in the viewport. You can adjust the influence on multiple constraints to affect the results.",
+                "Like modifiers, constraints can be applied (Image 11); thia applies the transform to the object but removes the constraint for future changes. Constraints can also be duplicated. Constraints are applied in the same order as modifiers: top-to-bottom. In this example (Image 13), we see the cube get copy the transform values from the empty first, and then copy the transform from the sphere, which is the final result seen in the viewport. You can adjust the influence on multiple constraints to affect the results.",
                 {
                   "image": [
                     {
                       "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-12.jpg",
-                      "caption": "Image 12 - Seeing the cube copy transform values from the empty first, then from the sphere, with the sphere's values as the final result shown in the viewport"
+                      "caption": "Image 12 - Seeing the option to apply the constraint"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_05 Constraints/0205-13.jpg",
+                      "caption": "Image 13 - Seeing the cube copy transform values from the empty first, then from the sphere, with the sphere's values as the final result shown in the viewport"
                     }
                   ]
                 }
