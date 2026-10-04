@@ -214,13 +214,12 @@ def parse_inline(content):
 def get_content_item(content):
     content_item = {}
     if isinstance(content, str):
-        if any(tag in content for tag in ("[kbd]", "[k]", "[url]", "[i]", "[u]", "[b]")):
-            if INLINE_TAG_RE.search(content):
+        if INLINE_TAG_RE.search(content):
                 content_item["type"] = "compound_text"
                 content_item["content"] = parse_inline(content)
-            else:
-                content_item["type"] = "text"
-                content_item["content"] = content
+        else:
+            content_item["type"] = "text"
+            content_item["content"] = content
     elif isinstance(content, list):
         content_item["type"] = "list"
         content_item["content"] = [get_content_item(item) for item in content]
