@@ -142,15 +142,79 @@
               "content": [
                 "We will continue our deformation skeleton with the leg. For the upper part of the leg we will rely on our geometry to start us off; select the geometry surrounding the hip joint and [k]Shift-S,T[/k] (Image 1). Back in [k]Edit Mode[/k] with the armature selected, [k]Shift-A[/k] to add a new bone (Image 2); the head will be positioned perfectly for the hips. Go back to the mesh and look for the geometry around the knee joint and place the 3D Cursor there (Image 3). Go back to our armature, select the tail and [k]Shift-S,E[/k] (Image 4).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-01.jpg",
+                      "caption": "Image 1 - Selecting the geometry surrounding the hip joint and pressing Shift-S then T to snap the 3D Cursor there"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-02.jpg",
+                      "caption": "Image 2 - Going back into Edit Mode with the armature selected and pressing Shift-A to add a new bone at the hip position"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-03.jpg",
+                      "caption": "Image 3 - Going back to the mesh and placing the 3D Cursor at the geometry around the knee joint"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-04.jpg",
+                      "caption": "Image 4 - Returning to the armature, selecting the tail and pressing Shift-S then E to snap it to the 3D Cursor"
+                    }
+                  ]
                 },
                 "With the first leg bone created, we need to recalculate the roll so that the x-axis is pointing forward (Image 5). We will rig the leg using inverse kinematics, and it's best to have your IK chain's local x-axis pointing towards your pole target. With the upper leg bone selected [k]Shift-N[/k] to bring up the [k]Recalculate Roll[/k] menu and select [k]Global +X Axis[/k] (Image 6). This should change our bone's roll so that the x-axis is pointing forward (Image 7). If that doesn't work, test different options until you get what you need.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-05.jpg",
+                      "caption": "Image 5 - Recalculating the roll of the first leg bone so that the x-axis points forward"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-06.jpg",
+                      "caption": "Image 6 - Pressing Shift-N with the upper leg bone selected and choosing Global +X Axis from the Recalculate Roll menu"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-07.jpg",
+                      "caption": "Image 7 - Seeing the bone's roll changed so that the x-axis is pointing forward"
+                    }
+                  ]
                 },
-                "Extrude the bone down towards the ankle (Image 8). Again, go back to the mesh, select the vertices around the ankle, [k]Shift-S,T[/k] to snap the 3D Cursor there and then in [k]Edit Mode[/k] with the bone's tail selected [k]Shift-S,E[/k] (Image 9). Extrude the bone towards the front of the foot; this will be the rotation point of the toes (Image 10). Extrude again along the y-axis to the end of the foot (Image 11). If we come around to the front we might see that the bones, especially the toes are a little twisted (Image 12). Select all the bones in the chain with the upper leg bone last, making it the active bone, and [k]Shift-N > Active Bone[/k] (Image 13). Now that our chain is clean, rename the bones with the 'DEF_' prefix for deformation and the '_L' suffix for the side (Image 14).",
+                "Extrude the bone down towards the ankle (Image 8). Again, go back to the mesh, select the vertices around the ankle, [k]Shift-S,T[/k] to snap the 3D Cursor there and then in [k]Edit Mode[/k] with the bone's tail selected [k]Shift-S,E[/k] (Image 9). Extrude the bone towards the front of the foot; this will be the rotation point of the toes (Image 10). Extrude again along the y-axis to the end of the foot (Image 11).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-08.jpg",
+                      "caption": "Image 8 - Extruding the bone down towards the ankle"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-09.jpg",
+                      "caption": "Image 9 - Selecting the vertices around the ankle, pressing Shift-S then T to snap the 3D Cursor there, then pressing Shift-S then E to snap the bone's tail to the cursor"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-10.jpg",
+                      "caption": "Image 10 - Extruding the bone towards the front of the foot for the toe rotation point"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-11.jpg",
+                      "caption": "Image 11 - Extruding again along the y-axis to the end of the foot"
+                    }
+                  ]
+                },
+                "If we come around to the front we might see that the bones, especially the toes are a little twisted (Image 12). Select all the bones in the chain with the upper leg bone last, making it the active bone, and [k]Shift-N > Active Bone[/k] (Image 13). Now that our chain is clean, rename the bones with the 'DEF_' prefix for deformation and the '_L' suffix for the side (Image 14).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-12.jpg",
+                      "caption": "Image 12 - Coming around to the front and seeing the bones, especially the toes, are a little twisted"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-13.jpg",
+                      "caption": "Image 13 - Selecting all bones in the chain with the upper leg bone last as the active bone and pressing Shift-N > Active Bone"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-14.jpg",
+                      "caption": "Image 14 - Renaming the bones with the 'DEF_' prefix for deformation and the '_L' suffix for the side"
+                    }
+                  ]
                 }
               ]
             }
@@ -159,9 +223,22 @@
             "section": {
               "header": "The arm",
               "content": [
-                "We are ready to move on to the arm, but first we need to understand that the arm, leg, and wrist joints are meant to rotate in all directions, although somehwat limited, while the knee and elbow joints rotate around a single axis. Go to the mesh, select the shoulder joint vertices and [k]Shift-S,T[/k] to snap the 3D Cursor there and then add a bone in that location (Image 15). Snap the 3D Cursor to the elbow geometry and then snap the bone's tail to the 3D Cursor (Image 16). Extrude the forearm bone, find the mid-point of the wrist geometry, snap the cursor there, and then snap the forearm tail there (Image 17).",
+                "We are ready to move on to the arm, but first we need to understand that the arm, leg, and wrist joints are meant to rotate in all directions, although somewhat limited, while the knee and elbow joints rotate around a single axis. Go to the mesh, select the shoulder joint vertices and [k]Shift-S,T[/k] to snap the 3D Cursor there and then add a bone in that location (Image 15). Snap the 3D Cursor to the elbow geometry and then snap the bone's tail to the 3D Cursor (Image 16). Extrude the forearm bone, find the mid-point of the wrist geometry, snap the cursor there, and then snap the forearm tail there (Image 17).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-15.jpg",
+                      "caption": "Image 15 - Selecting the shoulder joint vertices, snapping the 3D Cursor there, and adding a bone at that location"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-16.jpg",
+                      "caption": "Image 16 - Snapping the 3D Cursor to the elbow geometry and then snapping the bone's tail to the cursor"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-17.jpg",
+                      "caption": "Image 17 - Extruding the forearm bone, finding the mid-point of the wrist geometry, and snapping the forearm tail there"
+                    }
+                  ]
                 },
                 {
                   "section": {
@@ -169,7 +246,16 @@
                     "content": [
                       "Extrude the forearm bone to the center of the hand (Image 18). Then, switch to the hand geometry and find the edges on either side about halfway down, snap the 3D Cursor there, and then snap the tail to the cursor (Image 19). It's okay of the hand bone isn't positioned perfectly since the hand will be following the wrist and the finger bones won't be connected.",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-18.jpg",
+                            "caption": "Image 18 - Extruding the forearm bone to the center of the hand"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-19.jpg",
+                            "caption": "Image 19 - Switching to the hand geometry, finding the edges halfway down on either side, snapping the 3D Cursor there, and snapping the tail to the cursor"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -180,7 +266,24 @@
                     "content": [
                       "As with the leg, we want to re-calculate the roll of the arm bone so that its x-axis points towards the IK controller (Image 20). Select the upper arm bone, [k]Shift-N[/k] and try options until you find the one that points the x-axis in the right direction (in this case it was [k]Global -Z Axis[/k] (Image 21). Adjust the other by selecting the others with the upper arm bone as the active object and [k]Shift-N > Active Bone[/k] (Image 22). Rename the bones (Image 23).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-20.jpg",
+                            "caption": "Image 20 - Recalculating the roll of the arm bone so that its x-axis points towards the IK controller"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-21.jpg",
+                            "caption": "Image 21 - Selecting the upper arm bone, pressing Shift-N and choosing Global -Z Axis to point the x-axis in the right direction"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-22.jpg",
+                            "caption": "Image 22 - Selecting the remaining arm bones with the upper arm bone as the active object and pressing Shift-N > Active Bone"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-23.jpg",
+                            "caption": "Image 23 - Renaming the arm bones"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -194,7 +297,28 @@
               "content": [
                 "In the robot model, the finger joints are marked by a sphere. We will use those spheres to position our fingers, starting with the thumb. Add two bones perfectly positioned within the sphere joints for the thumb, and extrude the last bone to the thumb's tip, snapping each head and tail position to the 3D Cursor (Image 24). We need to adjust the thumb bone's roll so that they are pointing in the direction in which the fingers will curl. We will do this by finding a point on the thumb joint that is in that direction and snapping the 3D Cursor there (Image 25). Select the thumb bones and [k]Shift-N > Cursor[/k] to point the z-axis towards that point (Image 26). Parent the hand bone to the thumb bone and rename them (Image 27). Repeat these steps for the next three fingers (Image 28).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-24.jpg",
+                      "caption": "Image 24 - Adding two bones within the sphere joints for the thumb and extruding the last bone to the thumb's tip, snapping each position to the 3D Cursor"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-25.jpg",
+                      "caption": "Image 25 - Finding a point on the thumb joint in the curl direction and snapping the 3D Cursor there"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-26.jpg",
+                      "caption": "Image 26 - Selecting the thumb bones and pressing Shift-N > Cursor to point the z-axis towards that point"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-27.jpg",
+                      "caption": "Image 27 - Parenting the hand bone to the thumb bone and renaming them"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_03 Positioning deformation bones_02/0503-28.jpg",
+                      "caption": "Image 28 - Repeating these steps for the next three fingers"
+                    }
+                  ]
                 }
               ]
             }
