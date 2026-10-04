@@ -1167,11 +1167,49 @@
               "content": [
                 "Select the armature and [k]Ctrl-Tab[/k] into [k]Pose Mode[/k]. Select the turret bone, and add a [k]Damped Track[/k] constraint (Image 1). When a bone gets a constraint, it turns green in the 3D viewport (Image 2). Right now the constraint is disabled since there is no target. [k]Tab[/k] into [k]Edit Mode[/k], [k]Shift-D,Y[/k] the turret bone and place the duplicate in front of the cannon (Image 3). Rename the bone to 'target' (Image 4).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-01.jpg",
+                      "caption": "Image 1 - Selecting the armature, pressing Ctrl-Tab to enter Pose Mode, selecting the turret bone, and adding a Damped Track constraint"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-02.jpg",
+                      "caption": "Image 2 - Seeing the bone turn green in the 3D viewport after receiving a constraint"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-03.jpg",
+                      "caption": "Image 3 - Pressing Tab to enter Edit Mode, then Shift-D and Y to duplicate the turret bone and place it in front of the cannon"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-04.jpg",
+                      "caption": "Image 4 - Renaming the bone to 'target'"
+                    }
+                  ]
                 },
                 "[k]Ctrl-Tab[/k] back into [k]Pose Mode[/k] and we see the target bone is also green; this is because when it was duplicated it also duplicated the original's constraints (Image 5). [k]Ctrl-Alt-C[/k] or click the 'x' button on the constraint to remove it (Image 6). Select the turret bone and make the [k]Target[/k] the armature and the [k]Bone[/k] the target bone (Image 7). We see immediately that the turret bone flipped. This is because we need to fix the [k]Track Axis[/k]. The [k]Damped Track[/k] constraint will aim at the target with the selected track axis. Right now, the y-axis of the turret bone is aimed at the target bone; flip this to the -y-axis (Image 8). Now if we move the target bone around in [k]Pose Mode[/k] the turret will follow (Image 9).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-05.jpg",
+                      "caption": "Image 5 - Pressing Ctrl-Tab to return to Pose Mode and seeing the target bone is also green due to the duplicated constraint"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-06.jpg",
+                      "caption": "Image 6 - Pressing Ctrl-Alt-C or clicking the 'x' button to remove the constraint from the target bone"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-07.jpg",
+                      "caption": "Image 7 - Selecting the turret bone and setting the Target to the armature and the Bone to the target bone"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-08.jpg",
+                      "caption": "Image 8 - Changing the Track Axis from the y-axis to the -y-axis to fix the turret bone's flipped orientation"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-09.jpg",
+                      "caption": "Image 9 - Moving the target bone around in Pose Mode and seeing the turret follow"
+                    }
+                  ]
                 }
               ]
             }
@@ -1180,13 +1218,81 @@
             "section": {
               "header": "Locked track constraint",
               "content": [
-                "Remove the [k]Damped Track[/k] constraint (Image 10). [k]LMB[/k] the target bone and [k]Shift-LMB[/k] the turret bone; this tells blender that we are ready to make the target bone the target of a constraint and the turret bone the owner (Image 11). [k]Ctrl-Shift-C[/k] to open the [k]Add Constraint[/k] menu and choose [k]Locked Track[/k] (Image 12). This creates a new constraint and automatically assigns the [k]Target[/k] and [k]Bone[/k] (Image 13). Again, we need to set the [k]Track Axis[/k] to -Y (Image 14). The [k]Locked Track[/k] constraint locks tracking movement to rotating a single axis, defaulting to the z-axis. This limits the movement to follow the target as it moves from side to side, but we want to limit to up and down. Change the [k]Locked Axis[/k] field to X (Image 15); now when the target bone moves up and down the turret will follow. Add the same constraint to the arm bone, locking the track in the z-axis so the arm moves rotates in a circle following the target (Image 16).",
+                "Remove the [k]Damped Track[/k] constraint (Image 10). [k]LMB[/k] the target bone and [k]Shift-LMB[/k] the turret bone; this tells blender that we are ready to make the target bone the target of a constraint and the turret bone the owner (Image 11). [k]Ctrl-Shift-C[/k] to open the [k]Add Constraint[/k] menu and choose [k]Locked Track[/k] (Image 12). This creates a new constraint and automatically assigns the [k]Target[/k] and [k]Bone[/k] (Image 13). Again, we need to set the [k]Track Axis[/k] to -Y (Image 14).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-10.jpg",
+                      "caption": "Image 10 - Removing the Damped Track constraint"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-11.jpg",
+                      "caption": "Image 11 - Clicking LMB on the target bone and Shift-LMB on the turret bone to set up the constraint target and owner"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-12.jpg",
+                      "caption": "Image 12 - Pressing Ctrl-Shift-C to open the Add Constraint menu and choosing Locked Track"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-13.jpg",
+                      "caption": "Image 13 - Seeing the new constraint created with the Target and Bone automatically assigned"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-14.jpg",
+                      "caption": "Image 14 - Setting the Track Axis to -Y"
+                    }
+                  ]
                 },
-                "We see as we move the target around that the arm and turret move independently; the turret moves up and down but doesn't follow the target if it moves off to the side. [k]Tab[/k] into [k]Edit Mode[/k], [k]LMB[/k] the turret bone, [k]Shift-LMB[/k] the arm bone and [k]Ctrl-P > Keep Offset[/k] (Image 17). Now the arm is parented to the turret; when the arm bone rotates so does the turret. Moving the target around now shows the cannon tracking it (Image 18). We want everything to follow the root bone, and since turret is a child of the arm, making the arm a child of the root will automatically make the arm follow the root. Make the root the parent of the arm (Image 19). If we go into [k]Pose Mode[/k] and move the root bone, we see the cannon pointing at the target, but the target doesn't move with the root (Image 20). We want the target to stay with the root, so parent the root to the target as well (Image 21). The only bones we want to work with now are the target and root bones. Let's organize our bones; select the turret and arm bones in [k]Pose Mode[/k] and [k]M[/k] to add them to a new Bone Collection (Image 22). We can then hide the collection in the [k]Data Properties[/k] tab so they are hidden in the viewport while the targeting still works (Image 23).",
+                "The [k]Locked Track[/k] constraint locks tracking movement to rotating a single axis, defaulting to the z-axis. This limits the movement to follow the target as it moves from side to side, but we want to limit to up and down. Change the [k]Locked Axis[/k] field to X (Image 15); now when the target bone moves up and down the turret will follow. Add the same constraint to the arm bone, locking the track in the z-axis so the arm moves rotates in a circle following the target (Image 16).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-15.jpg",
+                      "caption": "Image 15 - Changing the Locked Axis field to X so the turret follows the target moving up and down"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-16.jpg",
+                      "caption": "Image 16 - Adding the same constraint to the arm bone with the Locked Axis set to Z so the arm rotates in a circle following the target"
+                    }
+                  ]
+                },
+                "We see as we move the target around that the arm and turret move independently; the turret moves up and down but doesn't follow the target if it moves off to the side. [k]Tab[/k] into [k]Edit Mode[/k], [k]LMB[/k] the turret bone, [k]Shift-LMB[/k] the arm bone and [k]Ctrl-P > Keep Offset[/k] (Image 17). Now the arm is parented to the turret; when the arm bone rotates so does the turret. Moving the target around now shows the cannon tracking it (Image 18). We want everything to follow the root bone, and since turret is a child of the arm, making the arm a child of the root will automatically make the arm follow the root. Make the root the parent of the arm (Image 19).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-17.jpg",
+                      "caption": "Image 17 - Pressing Tab to enter Edit Mode, clicking LMB on the turret bone, Shift-LMB on the arm bone, and pressing Ctrl-P > Keep Offset to parent the arm to the turret"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-18.jpg",
+                      "caption": "Image 18 - Moving the target around and seeing the cannon tracking it with the arm and turret working together"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-19.jpg",
+                      "caption": "Image 19 - Making the root the parent of the arm so everything follows the root bone"
+                    }
+                  ]
+                },
+                "If we go into [k]Pose Mode[/k] and move the root bone, we see the cannon pointing at the target, but the target doesn't move with the root (Image 20). We want the target to stay with the root, so parent the root to the target as well (Image 21). The only bones we want to work with now are the target and root bones. Let's organize our bones; select the turret and arm bones in [k]Pose Mode[/k] and [k]M[/k] to add them to a new Bone Collection (Image 22). We can then hide the collection in the [k]Data Properties[/k] tab so they are hidden in the viewport while the targeting still works (Image 23).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-20.jpg",
+                      "caption": "Image 20 - Going into Pose Mode and moving the root bone, seeing the cannon pointing at the target while the target doesn't move with the root"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-21.jpg",
+                      "caption": "Image 21 - Parenting the target to the root so the target stays with the root"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-22.jpg",
+                      "caption": "Image 22 - Selecting the turret and arm bones in Pose Mode and pressing M to add them to a new Bone Collection"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_11 Tracking constraints/0211-23.jpg",
+                      "caption": "Image 23 - Hiding the collection in the Data Properties tab so the bones are hidden in the viewport while targeting still works"
+                    }
+                  ]
                 }
               ]
             }
