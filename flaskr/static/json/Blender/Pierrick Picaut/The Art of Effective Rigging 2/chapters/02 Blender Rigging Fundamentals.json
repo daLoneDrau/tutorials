@@ -1049,9 +1049,30 @@
             "section": {
               "header": "What is a vertex group",
               "content": [
-                "Vertex groups are mesh data. They allow you to tag vertices on a mesh and give them an influence value known as weight. Vertex groups are used by a lot of modifiers and particle systems. Let's get in some practice with vertex groups, starting with a plane. With your plane selected, open the [k]Vertex Groups[/k] panel in the [k]Data Properties[/k] tab (Image 1). Using the '+' button, create two groups: 1 and 2 (Image 2). Select two vertices on the plane, select group 1, change the weight to 0.5 and assign those vertices (Image 3). Select the other two vertices, increase the weight to 1.0 and assign to group 1 (Image 4). With those two vertices selected, select group 2, change the weight to 0.75 and assign (Image 5). Vertices can belong to multiple groups. You can use vertex groups in your modeling worklow to organize your model's mesh.",
+                "Vertex groups are mesh data. They allow you to tag vertices on a mesh and give them an influence value known as weight. Vertex groups are used by a lot of modifiers and particle systems. Let's get in some practice with vertex groups, starting with a plane. With your plane selected, open the [k]Vertex Groups[/k] panel in the [k]Data Properties[/k] tab (Image 1). Using the '+' button, create two groups: 1 and 2 (Image 2). Select two vertices on the plane, select group 1, change the weight to 0.5 and assign those vertices (Image 3). Select the other two vertices, increase the weight to 1.0 and assign to group 1 (Image 4). With those two vertices selected, select group 2, change the weight to 0.75 and assign (Image 5). Vertices can belong to multiple groups. You can use vertex groups in your modeling workflow to organize your model's mesh.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-01.jpg",
+                      "caption": "Image 1 - Opening the Vertex Groups panel in the Data Properties tab with the plane selected"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-02.jpg",
+                      "caption": "Image 2 - Creating two groups named 1 and 2 using the '+' button"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-03.jpg",
+                      "caption": "Image 3 - Selecting two vertices, selecting group 1, changing the weight to 0.5 and assigning those vertices"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-04.jpg",
+                      "caption": "Image 4 - Selecting the other two vertices, increasing the weight to 1.0 and assigning them to group 1"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-05.jpg",
+                      "caption": "Image 5 - Selecting group 2 with those two vertices still selected, changing the weight to 0.75 and assigning"
+                    }
+                  ]
                 }
               ]
             }
@@ -1062,7 +1083,20 @@
               "content": [
                 "In order to see your vertex groups more intuitively, in [k]Edit Mode[/k] open your [k]Mesh Edit Overlays[/k] window and enable [k]Vertex Group Weights[/k] (Image 6). This option is not available in [k]Object Mode[/k]. The weight displayed is for the selected vertex group; blue means no influence, red is maximum influence, while green indicates an influence of 0.5. Let's look at group 1's influence (Image 7). Select the bottom corner vertex and remove it from group 1 (Image 8); we see the corner turn blue.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-06.jpg",
+                      "caption": "Image 6 - Opening Mesh Edit Overlays in Edit Mode and enabling Vertex Group Weights"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-07.jpg",
+                      "caption": "Image 7 - Looking at group 1's influence with blue indicating no influence, red indicating maximum influence, and green indicating 0.5"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-08.jpg",
+                      "caption": "Image 8 - Selecting the bottom corner vertex and removing it from group 1, seeing the corner turn blue"
+                    }
+                  ]
                 }
               ]
             }
@@ -1073,7 +1107,20 @@
               "content": [
                 "Add a [k]Solidify Modifier[/k] to the plane with a thickness of 1 and offset of 1 (image 9). There is a Vertex Group field in the modifier; assign group 2 and you will see the change immediately (Image 10). Select one of the corner vertices that had no influence from group 2 and assign it an influence of 0.5; we will see the corner raise up 0.5m from the modifier (Image 11).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-09.jpg",
+                      "caption": "Image 9 - Adding a Solidify Modifier to the plane with a thickness of 1 and offset of 1"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-10.jpg",
+                      "caption": "Image 10 - Assigning group 2 to the Vertex Group field in the modifier and seeing the change immediately"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-11.jpg",
+                      "caption": "Image 11 - Selecting a corner vertex with no influence from group 2 and assigning it an influence of 0.5, seeing the corner raise 0.5m"
+                    }
+                  ]
                 }
               ]
             }
@@ -1082,9 +1129,26 @@
             "section": {
               "header": "Vertex groups and modifiers",
               "content": [
-                "Let's set up our second example. Add a cube and an armature and place bones at each corner of the cube; eight total (Image 12). Select the cube, then the armature and [k]Ctrl-P,E[/k] to parent the cube with empty groups (Image 13). We now see the cube has eight vertex groups assigned. If you want to change how the vertex groups are ordered, click the arrow dropdown (Image 14).",
+                "Let's set up our second example. Add a cube and an armature and place bones at each corner of the cube; eight total (Image 12). Select the cube, then the armature and [k]Ctrl-P,E[/k] to parent the cube with empty groups (Image 13). We now see the cube has eight vertex groups assigned (Image 14). If you want to change how the vertex groups are ordered, click the arrow dropdown (Image 15).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-12.jpg",
+                      "caption": "Image 12 - Adding a cube and an armature and placing eight bones at each corner of the cube"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-13.jpg",
+                      "caption": "Image 13 - Selecting the cube then the armature and pressing Ctrl-P then E to parent the cube with empty groups"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-14.jpg",
+                      "caption": "Image 14 - Seeing eight vertex groups assigned to the cube"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/02_10 Introduction to vertex groups/0210-15.jpg",
+                      "caption": "Image 15 - Clicking the arrow dropdown to change the order of the vertex groups"
+                    }
+                  ]
                 }
               ]
             }
