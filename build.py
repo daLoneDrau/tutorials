@@ -180,79 +180,47 @@ def load_library():
 # Content item parser  (mirrors flaskr/routes.py exactly)
 # ---------------------------------------------------------------------------
 
+INLINE_TAG_RE = re.compile(r"\[(kbd|k|url|i|u|b)\]([^\[]+)\[/\1\]")
+
+def parse_inline(content):
+    """Split a string into a flat list of text / kbd / italic / anchor ... items."""
+    items = []
+    pos = 0
+    for m in INLINE_TAG_RE.finditer(content):
+        if m.start() > pos:
+            items.append({"type": "text", "content": content[pos:m.start()]})
+        tag, inner = m.group(1), m.group(2)
+        if tag in ("kbd", "k"):
+            items.append({"type": "kbd", "content": inner})
+        elif tag == "i":
+            items.append({"type": "italic", "content": inner})
+        elif tag == "u":
+            items.append({"type": "underline", "content": inner})
+        elif tag == "b":
+            items.append({"type": "strong", "content": inner})
+        elif tag == "url":
+            parts = inner.split("^^")
+            items.append({
+                "type": "anchor",
+                "href": parts[1] if len(parts) > 1 else "#",
+                "content": parts[0],
+            })
+        pos = m.end()
+    if pos < len(content):
+        items.append({"type": "text", "content": content[pos:]})
+    return items
+
+
 def get_content_item(content):
     content_item = {}
     if isinstance(content, str):
         if any(tag in content for tag in ("[kbd]", "[k]", "[url]", "[i]", "[u]", "[b]")):
+        if INLINE_TAG_RE.search(content):
             content_item["type"] = "compound_text"
-            content_item["content"] = []
-            if "[kbd]" in content:
-                regex_list = re.findall(r"\[kbd\][^[]+\[\/kbd\]", content)
-                for i in regex_list:
-                    content = content.replace(i, "|")
-                content = content.split("|")
-                for i, v in enumerate(content):
-                    content_item["content"].append(get_content_item(v))
-                    if i < len(regex_list):
-                        o = {"kbd": regex_list[i].replace("[kbd]", "").replace("[/kbd]", "")}
-                        content_item["content"].append(get_content_item(o))
-            if "[k]" in content:
-                regex_list = re.findall(r"\[k\][^[]+\[\/k\]", content)
-                for i in regex_list:
-                    content = content.replace(i, "|")
-                content = content.split("|")
-                for i, v in enumerate(content):
-                    content_item["content"].append(get_content_item(v))
-                    if i < len(regex_list):
-                        o = {"kbd": regex_list[i].replace("[k]", "").replace("[/k]", "")}
-                        content_item["content"].append(get_content_item(o))
-            if "[i]" in content:
-                regex_list = re.findall(r"\[i\][^[]+\[\/i\]", content)
-                for i in regex_list:
-                    content = content.replace(i, "|")
-                content = content.split("|")
-                for i, v in enumerate(content):
-                    content_item["content"].append(get_content_item(v))
-                    if i < len(regex_list):
-                        o = {"italic": regex_list[i].replace("[i]", "").replace("[/i]", "")}
-                        content_item["content"].append(get_content_item(o))
-            if "[u]" in content:
-                regex_list = re.findall(r"\[u\][^[]+\[\/u\]", content)
-                for i in regex_list:
-                    content = content.replace(i, "|")
-                content = content.split("|")
-                for i, v in enumerate(content):
-                    content_item["content"].append(get_content_item(v))
-                    if i < len(regex_list):
-                        o = {"underline": regex_list[i].replace("[u]", "").replace("[/u]", "")}
-                        content_item["content"].append(get_content_item(o))
-            if "[b]" in content:
-                regex_list = re.findall(r"\[b\][^[]+\[\/b\]", content)
-                for i in regex_list:
-                    content = content.replace(i, "|")
-                content = content.split("|")
-                for i, v in enumerate(content):
-                    content_item["content"].append(get_content_item(v))
-                    if i < len(regex_list):
-                        o = {"strong": regex_list[i].replace("[b]", "").replace("[/b]", "")}
-                        content_item["content"].append(get_content_item(o))
-            if "[url]" in content:
-                regex_list = re.findall(r"\[url\][^[]+\[\/url\]", content)
-                for i in regex_list:
-                    content = content.replace(i, "|")
-                content = content.split("|")
-                for i, v in enumerate(content):
-                    content_item["content"].append(get_content_item(v))
-                    if i < len(regex_list):
-                        parts = regex_list[i].replace("[url]", "").replace("[/url]", "").split("^^")
-                        href = parts[1] if len(parts) > 1 else "#"
-                        html = parts[0]
-                        o = {"url": {"href": href, "html": html}}
-                        content_item["content"].append(get_content_item(o))
+            content_item["content"] = parse_inline(content)
         else:
             content_item["type"] = "text"
             content_item["content"] = content
-
     elif isinstance(content, list):
         content_item["type"] = "list"
         content_item["content"] = [get_content_item(item) for item in content]
