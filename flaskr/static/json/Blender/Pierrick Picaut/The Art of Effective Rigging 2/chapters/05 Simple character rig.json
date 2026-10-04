@@ -22,7 +22,7 @@
               "content": [
                 {
                   "compound_text": [
-                    "When you start rigging, select your character model and [k]Ctrl-A,S[/k] to apply the scale, and [k]Alt-R[/k], [k]Alt-G[/k]; you want a model that has a scale of 1 and is centered on the world origin (Image 1). [k]Shift-A > Armature[/k] and [k]F2[/k] to rename it; something like 'armature_bot_chibi' (Image 2). Fix the display setting as specified in ",
+                    "When you start rigging, select your character model and [k]Ctrl-A,S[/k] to apply the scale, and [k]Alt-R[/k], [k]Alt-G[/k]; you want a model that has a scale of 1 and is centered on the world origin (Image 1). [k]Shift-A > Armature[/k] and test [k]F2[/k] to rename it; something like 'armature_bot_chibi' (Image 2). Fix the display setting as specified in ",
                     {"url": {"href":"../02_07 Bones fundamental"},"content":"lesson 2.7 - Settings"},
                     " (Image 3)."
                   ]
