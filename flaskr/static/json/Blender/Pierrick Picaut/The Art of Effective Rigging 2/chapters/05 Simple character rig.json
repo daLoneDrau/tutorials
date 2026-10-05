@@ -341,7 +341,28 @@
               "content": [
                 "There are two bones remaining. In the human body, the connection of the arm to the torso is through the clavicle or collar bone. Before we get there, we forgot to parent the hips to the leg, so do that now (Image 1). [k]Numpad7[/k] into [k]Top View[/k], [k]Shift-D[/k] the arm bone and move it forwards (Image 2). Go into [k]Front View[/k] and move it somewhere close to the clavicle (Image 3). Grab the tail and move it back towards the shoulder (Image 4). Parent the new bone to the arm bone (Image 5).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_04 Positioning deformation bones_03/0504-01.jpg",
+                      "caption": "Image 1 - Parenting the hips to the leg"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_04 Positioning deformation bones_03/0504-02.jpg",
+                      "caption": "Image 2 - Pressing Numpad 7 to enter Top View, then Shift-D to duplicate the arm bone and moving it forwards"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_04 Positioning deformation bones_03/0504-03.jpg",
+                      "caption": "Image 3 - Going into Front View and moving the bone close to the clavicle"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_04 Positioning deformation bones_03/0504-04.jpg",
+                      "caption": "Image 4 - Grabbing the tail and moving it back towards the shoulder"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_04 Positioning deformation bones_03/0504-05.jpg",
+                      "caption": "Image 5 - Parenting the new bone to the arm bone"
+                    }
+                  ]
                 }
               ]
             }
@@ -352,7 +373,24 @@
               "content": [
                 "Duplicate the upper arm bone again and position it in the shoulder plate (Image 6). If we look from the top, we see that out shoulder plate aligns nicely with the x-axis, while the bone we just added aligns more with the upper arm (Image 7). We want the bone to align with the x-axis too, so select the head of the bone, snap the 3D cursor there, change the pivot point to the 3D cursor, and then select the tail and [k]Y,S,0[/k] (Image 8). Rename your bones and make sure the chest bone is parented to the shoulder bone (Image 9).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_04 Positioning deformation bones_03/0504-06.jpg",
+                      "caption": "Image 6 - Duplicating the upper arm bone again and positioning it in the shoulder plate"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_04 Positioning deformation bones_03/0504-07.jpg",
+                      "caption": "Image 7 - Looking from the top and seeing the shoulder plate aligns with the x-axis while the new bone aligns more with the upper arm"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_04 Positioning deformation bones_03/0504-08.jpg",
+                      "caption": "Image 8 - Selecting the head of the bone, snapping the 3D Cursor there, changing the pivot point to the 3D Cursor, selecting the tail and pressing Y, S, 0 to align the bone with the x-axis"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_04 Positioning deformation bones_03/0504-09.jpg",
+                      "caption": "Image 9 - Renaming the bones and making sure the chest bone is parented to the shoulder bone"
+                    }
+                  ]
                 }
               ]
             }
@@ -363,7 +401,16 @@
               "content": [
                 "Go into [k]Pose Mode[/k] and test things out to make sure it looks good (Image 10). [k]Tab[/k] into [k]Edit Mode[/k] [k]A[/k] to select all bones and [k]RMB > Symmetrize[/k] to create right-side versions of the armature (Image 11).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_04 Positioning deformation bones_03/0504-10.jpg",
+                      "caption": "Image 10 - Going into Pose Mode and testing to make sure everything looks good"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_04 Positioning deformation bones_03/0504-11.jpg",
+                      "caption": "Image 11 - Pressing Tab to enter Edit Mode, pressing A to select all bones, and pressing RMB then Symmetrize to create right-side versions of the armature"
+                    }
+                  ]
                 }
               ]
             }
