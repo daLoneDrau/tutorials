@@ -975,9 +975,18 @@
             "section": {
               "header": "Separating your mesh",
               "content": [
-                "It is perfectly acceptable to separate your mesh into different parts, weight paint it, and then join it back so long as you don't change the topology. In [k]Edit Mode[/k] with our mesh, select the torso and the ears using [k]L[/k] or [k]Ctrl-L[/k] and then [k]Ctrl-I[/k] to invert our selection (Image 1). [k]P,S[/k] to seprate the limbs from the body (Image 2).",
+                "It is perfectly acceptable to separate your mesh into different parts, weight paint it, and then join it back so long as you don't change the topology. In [k]Edit Mode[/k] with our mesh, select the torso and the ears using [k]L[/k] or [k]Ctrl-L[/k] and then [k]Ctrl-I[/k] to invert our selection (Image 1). [k]P,S[/k] to separate the limbs from the body (Image 2).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-01.jpg",
+                      "caption": "Image 1 - In Edit Mode, selecting the torso and ears using L or Ctrl-L and then pressing Ctrl-I to invert the selection"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-02.jpg",
+                      "caption": "Image 2 - Pressing P then S to separate the limbs from the body"
+                    }
+                  ]
                 }
               ]
             }
@@ -988,7 +997,12 @@
               "content": [
                 "Here is a sample workflow to follow when weight painting. Follow the initial set up found in [url]lesson 2.7 - Settings^^../02_07 Bones fundamental[/url]. We will use a simple model that was parented with empty groups to skin (Image 3).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-03.jpg",
+                      "caption": "Image 3 - Using a simple model parented with empty groups to demonstrate the weight painting workflow"
+                    }
+                  ]
                 },
                 {
                   "section": {
@@ -996,7 +1010,24 @@
                     "content": [
                       "Assign vertices to a single deformation group with full influence, hiding each section until all vertices are assigned (Images 4, 5, 6). Afterwards, switch to [k]Pose Mode[/k] and see how the deformations look. When we look at the deformation in [k]Edit Mode[/k] we see harsh angles and hard deformation (Image 7).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-04.jpg",
+                            "caption": "Image 4 - Assigning vertices to a single deformation group with full influence and hiding each section"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-05.jpg",
+                            "caption": "Image 5 - Continuing to assign vertices to deformation groups, hiding completed sections"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-06.jpg",
+                            "caption": "Image 6 - Finishing the assignment of all vertices to their deformation groups"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-07.jpg",
+                            "caption": "Image 7 - Seeing harsh angles and hard deformation in Edit Mode when reviewing the deformations"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1007,7 +1038,16 @@
                     "content": [
                       "To smooth the transition from one group to another we can use the smooth operation. First, select the edge loop at the harsh bend and [k]Ctrl-+[/k] to expand the selection; this will be all the geometry where you want to smooth operation to process (Image 8). [k]Mesh > Weights > Smooth[/k] (Image 9).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-08.jpg",
+                            "caption": "Image 8 - Selecting the edge loop at the harsh bend and pressing Ctrl-+ to expand the selection for the smooth operation"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-09.jpg",
+                            "caption": "Image 9 - Going to Mesh > Weights > Smooth"
+                          }
+                        ]
                       },
                       {
                         "section": {
@@ -1032,10 +1072,10 @@
                               "section": {
                                 "header": "Factor",
                                 "content": [
-                                  "Controls the amount of blending toward the average weight of [strong]connected[/strong] vertices.",
+                                  "Controls the amount of blending toward the average weight of [b]connected[/b] vertices.",
                                   [
-                                    "A [italic]Factor[/italic] of 0.0 preserves the original weights.",
-                                    "A [italic]Factor[/italic] of 1.0 fully adopts the calculated average weight.",
+                                    "A [i]Factor[/i] of 0.0 preserves the original weights.",
+                                    "A [i]Factor[/i] of 1.0 fully adopts the calculated average weight.",
                                     "Values between 0.0 and 1.0 blend the weights proportionally."
                                   ]
                                 ]
@@ -1070,13 +1110,19 @@
                           "content": [
                             "Set [k]Smooth Vertex Weights > Subset > Deform Pose Bones[/k] (Image 10). From there, adjust the smoothing with the [k]Factor[/k] and [k]Iterations[/k] settings, as well as [k]Expand/Contract[/k] (Image 11).",
                             {
-                              "image": []
+                              "image": [
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-10.jpg",
+                                  "caption": "Image 10 - Setting Smooth Vertex Weights > Subset > Deform Pose Bones"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-11.jpg",
+                                  "caption": "Image 11 - Adjusting the smoothing with the Factor and Iterations settings as well as Expand/Contract"
+                                }
+                              ]
                             }
                           ]
                         }
-                      },
-                      {
-                        "image": []
                       },
                       {
                         "section": {
@@ -1084,7 +1130,20 @@
                           "content": [
                             "We can see that the mesh deformation doesn't look great (Image 12). What we'll want to do is apply the smoothing operation to almost the entire mesh. Select all edge loops except the ones at the ends (Image 13) and apply smoothing, adjusting the settings until you are satisfied (Image 14). This is a great way to skin hair, clothes, wires, etc., but for character's limbs we need a finer tweaking.",
                             {
-                              "image": []
+                              "image": [
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-12.jpg",
+                                  "caption": "Image 12 - Seeing the mesh deformation doesn't look great"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-13.jpg",
+                                  "caption": "Image 13 - Selecting all edge loops except the ones at the ends"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-14.jpg",
+                                  "caption": "Image 14 - Applying smoothing and adjusting the settings until satisfied"
+                                }
+                              ]
                             }
                           ]
                         }
@@ -1095,7 +1154,28 @@
                           "content": [
                             "Select all vertices and [k]Mesh > Weights > Normalize All[/k] (Image 15). Set [k]Subset > Deform Pose Bones[/k] and disable [k]Lock Active[/k] (Image 16). Now all weights should be normalized, but if we go poke around our mesh looking at specific values in the [k]Sidebar[/k] we see there are some vertex groups assigned with 0 influence (Image 17). We will clean it up by going selecting all vertices, [k]Mesh > Weights > Clean[/k], set [k]Subset > All Groups[/k] and [k]Limit > 0.001[/k] for a low threshold (Image 18). After that, select all again and run [k]Mesh > Weights > Normalize All[/k] (Image 19). Now you should have a clean mesh.",
                             {
-                              "image": []
+                              "image": [
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-15.jpg",
+                                  "caption": "Image 15 - Selecting all vertices and going to Mesh > Weights > Normalize All"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-16.jpg",
+                                  "caption": "Image 16 - Setting Subset > Deform Pose Bones and disabling Lock Active"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-17.jpg",
+                                  "caption": "Image 17 - Finding vertex groups assigned with 0 influence when checking specific values in the Sidebar"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-18.jpg",
+                                  "caption": "Image 18 - Selecting all vertices, going to Mesh > Weights > Clean, setting Subset > All Groups and Limit > 0.001 for a low threshold"
+                                },
+                                {
+                                  "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_08 Skinning and Weight painting_03/0508-19.jpg",
+                                  "caption": "Image 19 - Selecting all again and running Mesh > Weights > Normalize All for a clean mesh"
+                                }
+                              ]
                             }
                           ]
                         }
@@ -1178,7 +1258,7 @@
                 {
                   "image": []
                 },
-                "Go to [k]Brush Settings > Falloff[/k] and set it to [k]Constant[/k] (Image 8) and set [k]Falloff Shape > Projected[/k] (Image 9). Make sure that [k]Brush Settings > Advanced > Front Faces Only[/k] is disabled so that we can paint through our mesh ([strong]Note: Pierrick Picaut recommends this, but for low poly models you may want to enable this to have more control[/strong]) (Image 10). Lastly, if you want to see the wireframe on the model go to [k]Weight Paint Overlays[/k] and enable [k]Show Wire[/k] (Image 11).",
+                "Go to [k]Brush Settings > Falloff[/k] and set it to [k]Constant[/k] (Image 8) and set [k]Falloff Shape > Projected[/k] (Image 9). Make sure that [k]Brush Settings > Advanced > Front Faces Only[/k] is disabled so that we can paint through our mesh ([b]Note: Pierrick Picaut recommends this, but for low poly models you may want to enable this to have more control[/b]) (Image 10). Lastly, if you want to see the wireframe on the model go to [k]Weight Paint Overlays[/k] and enable [k]Show Wire[/k] (Image 11).",
                 {
                   "image": []
                 }
