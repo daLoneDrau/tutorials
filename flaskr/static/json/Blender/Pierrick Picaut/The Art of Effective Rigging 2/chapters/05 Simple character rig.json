@@ -431,9 +431,22 @@
             "section": {
               "header": "Manual vertex group creation",
               "content": [
-                "If we take a look at our mesh, it has no vertex groups assigned (Image 1). Just as an example, select all vertices for the thumb tip and assign them to a Vertex Group the same name as the thumbtip bone, 'DEF_THUMB_02_L' (Image 2). If we went into [k]Pose Mode[/k] now and tried to move the thumb bone, nothing would happen. It's only after assigning an [k]Armature Modifier[/k] to the mesh that moving the thumb bone will work (Image 3). Manual vertex group creation can be useful when you need to add more deformation bones on your deformation armature, but for a full armature there are faster ways. Delete the [k]Armature Modifier[/k] and vertex group (Image 4).",
+                "If we take a look at our mesh, it has no vertex groups assigned (Image 1). Just as an example, select all vertices for the thumb tip and assign them to a Vertex Group the same name as the thumbtip bone, 'DEF_THUMB_02_L'. If we went into [k]Pose Mode[/k] now and tried to move the thumb bone, nothing would happen. It's only after assigning an [k]Armature Modifier[/k] to the mesh that moving the thumb bone will work (Image 2). Manual vertex group creation can be useful when you need to add more deformation bones on your deformation armature, but for a full armature there are faster ways. Delete the [k]Armature Modifier[/k] and vertex group (Image 3).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-01.jpg",
+                      "caption": "Image 1 - Seeing the mesh has no vertex groups assigned"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-02.jpg",
+                      "caption": "Image 2 - Assigning an Armature Modifier to the mesh and seeing the thumb bone move the geometry"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-03.jpg",
+                      "caption": "Image 3 - Deleting the Armature Modifier and vertex group"
+                    }
+                  ]
                 }
               ]
             }
@@ -444,7 +457,16 @@
               "content": [
                 "Select the mesh and the armature with the armature as the active object and [k]Ctrl-P > Armature Deform > With Empty Groups[/k] (Image 4). This automatically assigns an [k]Armature Modifier[/k] to your mesh and creates vertex groups for all of the armature's bones without assigning any vertices. (Image 5). This option gives you full control over the weight painting.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-04.jpg",
+                      "caption": "Image 4 - Selecting the mesh and armature with the armature as the active object and pressing Ctrl-P > Armature Deform > With Empty Groups"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-05.jpg",
+                      "caption": "Image 5 - Seeing the Armature Modifier automatically assigned and vertex groups created for all bones without any vertices assigned"
+                    }
+                  ]
                 }
               ]
             }
@@ -455,15 +477,45 @@
               "content": [
                 "Select the mesh and the armature with the armature as the active object again and [k]Ctrl-P > Armature Deform > With Automatic Weights[/k] (Image 6). This didn't work (Image 7). This is one of the most common bugs when it comes to automating weight. Blender was not able to calculate the weight to be assigned to each vertex, and there could be many reasons for that. Once you know them, it's not hard to fix.",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-06.jpg",
+                      "caption": "Image 6 - Selecting the mesh and armature with the armature as the active object and pressing Ctrl-P > Armature Deform > With Automatic Weights"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-07.jpg",
+                      "caption": "Image 7 - Seeing the automatic weight assignment fail"
+                    }
+                  ]
                 },
                 {
                   "section": {
                     "header": "Doubles",
                     "content": [
-                      "Once common issue is doubles, or verlapping vertices. These are vertices that are so close to each other, Blender can't figure out how to assign weight. To remove the doubles, with the mesh selected go into [k]Edit Mode[/k] and [k]A,M,B[/k] (Image 8). We see that 32 doubles were removed (Image 9). Be careful and watch your [k]Merge Distance[/k] (Image 10). Depending on the size of your model, if the distance is too big it could ruin it (Image 11). Try parenting with automatic weights again (Image 12). Same error.",
+                      "Once common issue is doubles, or overlapping vertices. These are vertices that are so close to each other, Blender can't figure out how to assign weight. To remove the doubles, with the mesh selected go into [k]Edit Mode[/k] and [k]A,M,B[/k] (Image 8). We see that 32 doubles were removed (Image 9). Be careful and watch your [k]Merge Distance[/k] (Image 10). Depending on the size of your model, if the distance is too big it could ruin it (Image 11). Try parenting with automatic weights again (Image 12). Same error.",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-08.jpg",
+                            "caption": "Image 8 - Going into Edit Mode with the mesh selected and pressing A then M then B to merge by distance and remove doubles"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-09.jpg",
+                            "caption": "Image 9 - Seeing 32 doubles removed"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-10.jpg",
+                            "caption": "Image 10 - Watching the Merge Distance carefully"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-11.jpg",
+                            "caption": "Image 11 - Seeing how too large a Merge Distance can ruin the model depending on its size"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-12.jpg",
+                            "caption": "Image 12 - Trying to parent with automatic weights again and seeing the same error"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -474,7 +526,28 @@
                     "content": [
                       "Objects that are constructed of separate meshes can sometimes have overlap which will cause difficulties for Blender when calculating the weight. Go back into [k]Edit Mode[/k] with our mesh and [k]A,P > By Loose Parts[/k] (Image 13). This separates the geometry into its separate objects (Image 14). Back in [k]Object Mode[/k] select all objects, make the armature the active object and [k]Ctrl-P > Armature Deform > With Automatic Weights[/k] (Image 15). This time it worked. Now, select all objects except the armature, make the torso active and [k]Ctrl-J[k] (Image 16). Now if we go into [k]Pose Mode[/k] and move the armature the mesh follows (Image 17).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-13.jpg",
+                            "caption": "Image 13 - Going back into Edit Mode and pressing A then P > By Loose Parts to separate the geometry"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-14.jpg",
+                            "caption": "Image 14 - Seeing the geometry separated into its individual objects"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-15.jpg",
+                            "caption": "Image 15 - Selecting all objects in Object Mode, making the armature active and pressing Ctrl-P > Armature Deform > With Automatic Weights successfully"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-16.jpg",
+                            "caption": "Image 16 - Selecting all objects except the armature, making the torso active and pressing Ctrl-J to join them"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-17.jpg",
+                            "caption": "Image 17 - Going into Pose Mode and seeing the mesh follow the armature"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -488,7 +561,24 @@
               "content": [
                 "We are going to revert to the mesh version we had when we started this exercise, with overlapping vertices. This time, instead of removing extra geometry or separating loose parts we are going to select the mesh and armature together, scale them up and then parent with automatic weights (Image 18). It worked this time, but the mesh got small. We can see the scale is still applied to the armature, so let's clear that with [k]Alt-S[/k] (Image 19). That brought the armature back to normal size, but made the mesh even tinier; we will fix that. [k]Alt-P > Clear Parent Inverse[/k] (Image 20). We can see that the mesh kept all the vertex groups and still has the [k]Armature Modifier[/k] so it will deform. But trying to pose the mesh we see that not everything was assigned correctly (Image 21).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-18.jpg",
+                      "caption": "Image 18 - Selecting the mesh and armature together, scaling them up and parenting with automatic weights"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-19.jpg",
+                      "caption": "Image 19 - Pressing Alt-S to clear the scale on the armature, returning it to normal size"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-20.jpg",
+                      "caption": "Image 20 - Pressing Alt-P > Clear Parent Inverse to fix the mesh size"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/0505-21.jpg",
+                      "caption": "Image 21 - Seeing the mesh has kept all vertex groups and the Armature Modifier but finding that not everything was assigned correctly when posing"
+                    }
+                  ]
                 }
               ]
             }
