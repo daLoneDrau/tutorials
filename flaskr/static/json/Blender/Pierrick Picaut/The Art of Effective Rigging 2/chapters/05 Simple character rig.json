@@ -1279,15 +1279,62 @@
               "content": [
                 "Select the torso and head geometry and go into [k]Weight Paint Mode[/k] (Image 1). Check the overlays and make sure [k]Zero Weights > All[/k] (Image 2). Set [k]Viewport Shading > Solid[/k] (Image 3). We will want to be able to select the bones underneath the mesh in order to assign groups, so disable [k]Paint Mask[/k] (Image 4).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-01.jpg",
+                      "caption": "Image 1 - Selecting the torso and head geometry and going into Weight Paint Mode"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-02.jpg",
+                      "caption": "Image 2 - Checking the overlays and setting Zero Weights > All"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-03.jpg",
+                      "caption": "Image 3 - Setting Viewport Shading > Solid"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-04.jpg",
+                      "caption": "Image 4 - Disabling Paint Mask to allow selecting bones underneath the mesh"
+                    }
+                  ]
                 },
                 "Enable symmetry in the x-axis so that our actions affect both sides (Image 5). [k]N[/k] to open the [k]Sidebar[/k] and under [k]Tool > Options[/k] enable [k]Auto Normalize[/k] (Image 6). Under [k]Brush Settings[/k] set [k]Weight[/k] and [k]Strength[/k] to 1 (Image 7).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-05.jpg",
+                      "caption": "Image 5 - Enabling symmetry in the x-axis so actions affect both sides"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-06.jpg",
+                      "caption": "Image 6 - Pressing N to open the Sidebar and enabling Auto Normalize under Tool > Options"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-07.jpg",
+                      "caption": "Image 7 - Setting Weight and Strength to 1 under Brush Settings"
+                    }
+                  ]
                 },
                 "Go to [k]Brush Settings > Falloff[/k] and set it to [k]Constant[/k] (Image 8) and set [k]Falloff Shape > Projected[/k] (Image 9). Make sure that [k]Brush Settings > Advanced > Front Faces Only[/k] is disabled so that we can paint through our mesh ([b]Note: Pierrick Picaut recommends this, but for low poly models you may want to enable this to have more control[/b]) (Image 10). Lastly, if you want to see the wireframe on the model go to [k]Weight Paint Overlays[/k] and enable [k]Show Wire[/k] (Image 11).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-08.jpg",
+                      "caption": "Image 8 - Going to Brush Settings > Falloff and setting it to Constant"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-09.jpg",
+                      "caption": "Image 9 - Setting Falloff Shape > Projected"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-10.jpg",
+                      "caption": "Image 10 - Disabling Front Faces Only under Brush Settings > Advanced to allow painting through the mesh"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-11.jpg",
+                      "caption": "Image 11 - Enabling Show Wire in the Weight Paint Overlays to see the wireframe on the model"
+                    }
+                  ]
                 }
               ]
             }
@@ -1302,7 +1349,28 @@
                     "content": [
                       "We are ready to paint. In [k]Object Mode[/k] select your armature and then your mesh as the active object (Image 12). Change to [k]Weight Painr Mode[/k] (Image 13). [k]Alt-LMB[/k] the hips bone to make its vertex group active (Image 14). Start painting; it is a good idea to paint the boundaries of the region first (Image 15) and then fill in the middle (Image 16).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-12.jpg",
+                            "caption": "Image 12 - Selecting the armature and then the mesh as the active object in Object Mode"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-13.jpg",
+                            "caption": "Image 13 - Changing to Weight Paint Mode"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-14.jpg",
+                            "caption": "Image 14 - Pressing Alt-LMB on the hips bone to make its vertex group active"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-15.jpg",
+                            "caption": "Image 15 - Painting the boundaries of the hips region first"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-16.jpg",
+                            "caption": "Image 16 - Filling in the middle of the hips region"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1313,7 +1381,20 @@
                     "content": [
                       "[k]Alt-LMB[/k] the spine bone, paint the boundaries of the region (Image 17) and then fill it in (Image 18). Rotate around the model to review your work (Image 19).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-17.jpg",
+                            "caption": "Image 17 - Pressing Alt-LMB on the spine bone and painting the boundaries of its region"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-18.jpg",
+                            "caption": "Image 18 - Filling in the spine region"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-19.jpg",
+                            "caption": "Image 19 - Rotating around the model to review the work so far"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1324,7 +1405,20 @@
                     "content": [
                       "[k]Alt-LMB[/k] the chest bone, and start painting the boundaries of the region (Image 20). If when painting the boundaries you can see a black area between the new region's boundaries and the blue of an area that was already assigned that means the black areas has no assignment and you can paint those (Image 21). Finish filling in the chest area; don't worry about the shoulders for now (Image 22).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-20.jpg",
+                            "caption": "Image 20 - Pressing Alt-LMB on the chest bone and starting to paint the boundaries of its region"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-21.jpg",
+                            "caption": "Image 21 - Seeing a black area between the new region's boundaries and the blue of already-assigned areas, indicating vertices with no assignment"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-22.jpg",
+                            "caption": "Image 22 - Finishing filling in the chest area without worrying about the shoulders yet"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1335,7 +1429,12 @@
                     "content": [
                       "If the viewport is too cluttered, go into [k]Object Mode[/k] for the mesh and remove the arms, legs, and shoulders that were removed; and go into [k]Pose Mode[/k] for the armature and remove any bones we don't need to assign right now (Image 23).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-23.jpg",
+                            "caption": "Image 23 - Removing unneeded objects and bones from the viewport to reduce clutter"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1346,7 +1445,12 @@
                     "content": [
                       "Paint the neck region completely since it's such a small area (Image 24). If you accidentally marked some of the neck when painting the chest, don't worry; since the [k]Weight[/k] is set to 1 and [k]Options > Auto Normalize[/k] is enabled then painting over those vertices will automatically set the weight for the incorrectly-assigned region to 0.",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-24.jpg",
+                            "caption": "Image 24 - Painting the neck region completely due to its small size"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1357,7 +1461,12 @@
                     "content": [
                       "Finish off with painting the head (Image 25).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-25.jpg",
+                            "caption": "Image 25 - Finishing off by painting the head"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1375,7 +1484,12 @@
                     "content": [
                       "Go into [k]Pose Mode[/k], grab the root bone and move it along an axis. Any vertices that were left unpainted will not move (Image 26). It will be easy to go back into [k]Weight Paint Mode[/k] and fix them. Don't forget to clear your transform after.",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-26.jpg",
+                            "caption": "Image 26 - Going into Pose Mode, grabbing the root bone and moving it along an axis to reveal any unpainted vertices that do not move"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -1386,7 +1500,28 @@
                     "content": [
                       "A very common way to test how the weight painting looks is to go to [k]Pose Mode[/k] and record an animation. Open up the [k]Timeline[/k] (Image 27). Select the head bone, go to frame 0, and hovering the rotation values in the [k]Sidebar[/k] press [k]I[/k] (Image 28). This captures the rotation values for the head bone in frame 0. Rotate the head backwards, move the [k]Timeline[/k] to frame 5 and [k]I[/k] to insert a keyframe for that rotation (Image 29). Now, rotate the head forewards towards the chest and capture that rotation in frame 10 (Image 30). You can even go back into [k]Weight Painting Mode[/k] with this animation and use the [k]Left[/k] and [k]Right[/k] arrows to move around and see how the model looks at different keyframes (Image 31).",
                       {
-                        "image": []
+                        "image": [
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-27.jpg",
+                            "caption": "Image 27 - Opening the Timeline to set up a test animation"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-28.jpg",
+                            "caption": "Image 28 - Selecting the head bone, going to frame 0, and hovering over the rotation values in the Sidebar and pressing I to capture a keyframe"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-29.jpg",
+                            "caption": "Image 29 - Rotating the head backwards, moving the Timeline to frame 5 and pressing I to insert a keyframe"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-30.jpg",
+                            "caption": "Image 30 - Rotating the head forwards towards the chest and capturing that rotation at frame 10"
+                          },
+                          {
+                            "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-31.jpg",
+                            "caption": "Image 31 - Going back into Weight Painting Mode and using the Left and Right arrows to move through keyframes and review the model's deformation"
+                          }
+                        ]
                       }
                     ]
                   }
