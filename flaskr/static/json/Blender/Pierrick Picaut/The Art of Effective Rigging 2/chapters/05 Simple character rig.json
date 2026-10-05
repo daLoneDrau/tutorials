@@ -609,9 +609,43 @@
             "section": {
               "header": "Manually assigning and mirroring",
               "content": [
-                "In [k]Edit Mode[/k] select a vertex for the left shoulder pad and [k]L[/k] while hovering the mesh or [k]Ctrl-L[/k] in either instance (Image 2). With all left shoulder pad vertices selected, assign them to the left shoulder pad group (Image 3). Posing the shoulder pad bone now works as expected. Go back into [k]Edit Mode[/k] and select the right shoulder pad geometry (Image 4). Go to [k]Mesh > Weights > Mirror[/k] (Image 5). This mirrors the weights from the opposite geometry and now the right shoulder pad is in the group for the opposite bone (Image 6).",
+                "Parent the armature to the mesh with empty groups (Image 1). In [k]Edit Mode[/k] select a vertex for the left shoulder pad and [k]L[/k] while hovering the mesh or [k]Ctrl-L[/k] in either instance (Image 2). With all left shoulder pad vertices selected, assign them to the left shoulder pad group (Image 3). Posing the shoulder pad bone now works as expected (Image 4).",
                 {
-                  "image": []
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/050605_06 Skinning and Weight painting_02-01.jpg",
+                      "caption": "Image 1 - Parenting the armature to the mesh with empty groups"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/050605_06 Skinning and Weight painting_02-02.jpg",
+                      "caption": "Image 2 - Going into Edit Mode, selecting a vertex for the left shoulder pad and pressing L while hovering the mesh or Ctrl-L to select all connected vertices"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/050605_06 Skinning and Weight painting_02-03.jpg",
+                      "caption": "Image 3 - Assigning all left shoulder pad vertices to the left shoulder pad group"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/050605_06 Skinning and Weight painting_02-04.jpg",
+                      "caption": "Image 4 - Seeing the shoulder pad bone posing work as expected"
+                    }
+                  ]
+                },
+                "Go back into [k]Edit Mode[/k] and select the right shoulder pad geometry (Image 5). Go to [k]Mesh > Weights > Mirror[/k] (Image 6). This mirrors the weights from the opposite geometry and now the right shoulder pad is in the group for the opposite bone (Image 7).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/050605_06 Skinning and Weight painting_02-05.jpg",
+                      "caption": "Image 5 - Going back into Edit Mode and selecting the right shoulder pad geometry"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/050605_06 Skinning and Weight painting_02-06.jpg",
+                      "caption": "Image 6 - Going to Mesh > Weights > Mirror"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_05 Skinning and Weight painting/050605_06 Skinning and Weight painting_02-07.jpg",
+                      "caption": "Image 7 - Seeing the weights mirrored from the opposite geometry with the right shoulder pad now assigned to the opposite bone's group"
+                    }
+                  ]
                 }
               ]
             }
