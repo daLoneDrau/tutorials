@@ -1225,7 +1225,34 @@
               "content": [
                 "Go into [k]Weight Paint Mode[/k] (Image 1). When you are painting weight you are actually working on the vertices. Open the [k]Weight Paint Overlays[/k] and enable [k]Show Wire[/k] (Image 2). We are using a digital brush, and the options for the brush can be found in the [k]Sidebar[/k] (Image 3) and at the top of the screen (Image 4). In the brush options, the [k]Weight[/k] the target influence you are setting when you brush, and the [k]Strength[/k] is how many brushstrokes it takes to reach the weight. Set the [k]Weight[/k] to 0.1 and [k]Strength[/k] to 1 and paint a vertex (Image 5). Now, set [k]Weight[/k] to 1.0 and paint a few other vertices (Image 6). You will see the difference between the weight at each vertex.",
                 {
-                  "image": []
+                  "image": [
+                    [
+                      {
+                        "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_09 Skinning and Weight painting_04/0509-01.jpg",
+                        "caption": "Image 1 - Going into Weight Paint Mode"
+                      },
+                      {
+                        "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_09 Skinning and Weight painting_04/0509-02.jpg",
+                        "caption": "Image 2 - Opening the Weight Paint Overlays and enabling Show Wire"
+                      },
+                      {
+                        "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_09 Skinning and Weight painting_04/0509-03.jpg",
+                        "caption": "Image 3 - Finding the brush options in the Sidebar"
+                      },
+                      {
+                        "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_09 Skinning and Weight painting_04/0509-04.jpg",
+                        "caption": "Image 4 - Seeing the brush options at the top of the screen"
+                      },
+                      {
+                        "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_09 Skinning and Weight painting_04/0509-05.jpg",
+                        "caption": "Image 5 - Setting the Weight to 0.1 and Strength to 1 and painting a vertex"
+                      },
+                      {
+                        "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_09 Skinning and Weight painting_04/0509-06.jpg",
+                        "caption": "Image 6 - Setting the Weight to 1.0 and painting a few other vertices to see the difference in weight at each vertex"
+                      }
+                    ]
+                  ]
                 }
               ]
             }
