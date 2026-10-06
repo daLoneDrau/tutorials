@@ -2113,7 +2113,7 @@
             "section": {
               "header": "Decorating the Haft",
               "content": [
-                "Add a new Cylinder, and scale it down so it covers the top part of the haft, give it a rotation and apply ([k]Ctrl-A,R[/k] (Image 18). Add a Cube to the scene, scale and mirror so it covers part of the new cylinder evenly on two sides (Image 19). Go into Local View with the cube ([k]/[/k]) and update the shape using [k]G[/k], [k]Ctrl-B[/k] (Image 20). Add a Boolean Modifier to the cylinder with the cube as the target object (Image 21). Apply the modifier to the cube and move one side down to create some difference (Image 22).",
+                "Add a new Cylinder, and scale it down so it covers the top part of the haft, give it a rotation and apply ([k]Ctrl-A,R[/k] (Image 18). Add a Cube to the scene, scale and mirror so it covers part of the new cylinder evenly on two sides (Image 19). [k]/[/k] into Local View with the cube and update the shape using [k]G[/k], [k]Ctrl-B[/k] (Image 20). Add a [k]Boolean Modifier[/k] to the cylinder with the cube as the target object (Image 21). Apply the modifier to the cube and move one side down to create some difference (Image 22).",
                 {
                   "image": [
                     {
