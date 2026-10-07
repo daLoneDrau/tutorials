@@ -1,9 +1,13 @@
 {
-  "title": "Low Poly Female Mesh from Scratch",
   "sections": [
     {
       "Low Poly Female Mesh from Scratch": {
-        "tags": ["base mesh", "female", "t-pose", "head"],
+        "tags": [
+          "base mesh",
+          "female",
+          "t-pose",
+          "head"
+        ],
         "key_concepts": [
           "[url]Low Poly Female Mesh from Scratch^^https://www.youtube.com/watch?v=xMkZ0o2M-dg[/url]",
           {
@@ -228,6 +232,126 @@
               "header": "The Torso",
               "content": [
                 "Select the two vertices at the collar bone and move them down to start the chest (Image 45). In Side View, adjust the vertices so the shape of the chest and neck is better (Image 46). Select the two vertices in the back and extrude them down (Image 47). Shape the vertices on the side to start a hole for the arms (Image 48). Select the two bottom edges and extrude them down (Image 49). Fill in the gap between the two lower faces (Image 50). Add a Loop Cut to the new face (Image 51). Reshape the vertices around the arm hole (Image 52). Move the two vertices on the left to match the chest contours (Image 53)."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "PS1 Style Mesh": {
+        "tags": [
+          "base mesh",
+          "female",
+          "ps1",
+          "retro"
+        ],
+        "key_concepts": [
+          "[url]I Made a PS1-Style Character in Blender (Low Poly Retro Look)^^https://www.youtube.com/watch?v=GOmAvPOrAwE[/url]",
+          {
+            "section": {
+              "header": "Blocking the base model",
+              "content": [
+                "Get your front reference image in place (Image 1). Add a cube to the scene, add a [k]Mirror Modifier[/k] in the x-axis with clipping enabled and position it where the head is (Image 2). [k]Tab[/k] into [k]Object Mode[/k] and [k]Shift-D,Z[/k] the cube to make copies with the modifier added for the torso and hips regions (Image 3).",
+                {
+                  "image": []
+                },
+                {
+                  "section": {
+                    "header": "Working the head",
+                    "content": [
+                      "To keep with the retro style, we want to do this with as few Loop Cuts as possible, [k]Ctrl-R[/k] in the x-, y-, and z-axes for a total of three cuts (Image 4). Shape the main form from the front (Image 5). Add one more loop cut by the hairline (Image 6). Move around to the side and shape the skull following the author's example (Image 7).",
+                      {
+                        "image": []
+                      },
+                      {
+                        "section": {
+                          "header": "The neck",
+                          "content": [
+                            "Move around to the bottom of the head and subdivide the edge in the middle (Image 8). Move the new vertex over to the width of the neck (Image 9), cut an edge loop for the neck (Image 10), and extrude it down (Image 11).",
+                            {
+                              "image": []
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "The nose and brow",
+                          "content": [
+                            "Add edge loops so there is enough edges above and below the brow and below the nose (Image 12). Add a vertical loop cut at the width of the nose (Image 13). [k]3[/k] into [k]Face Mode[/k] and select faces to make a simple nose and brow (Image 14). Go around to the side, extrude the faces and rotate them (Image 15).",
+                            {
+                              "image": []
+                            },
+                            "Bring the tip of the nose out and up, and the bridge of the nose down and back to match the reference (Image 16). Merge the two vertices on the outside of the brow with the face using [k]M,L[/k] (Image 17). Narrow the tip of the nose (Image 18).",
+                            {
+                              "image": []
+                            },
+                            "Bring the inner part of the brow ridge to the inner part of the brow (Image 19). Straighten out the bridge of the nose (Image 20). [k]M,L[/k] to merge the top vertices of the brow with the rest of the face (Image 21).",
+                            {
+                              "image": []
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "The ear",
+                          "content": [
+                            "Cut a shape for the ear (Image 22). Extrude the ear faces out (Image 23). [k]G,G[/k] the near edges in (Image 24). Shape the ear (Image 25).",
+                            {
+                              "image": []
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The chest pt. I",
+                    "content": [
+                      "Match the basic shape of the torso from the front (Image 26). Add a [k]Loop Cut[/k] around arm pit height and enable [k]Even[/k] (Image 27). Move the two inner top vertices in line with the neck (Image 28). Move the next two vertices around the arm hole and line up the edge under the arm hole and out to the tip of the breasts (Image 29). Add another [k]Loop Cut[/k] for the mid-chest and adjust the thickness (Image 30). Add yet another [k]Loop Cut[/k] for the below the chest and adjust the thickness (Image 31). You may wish to [i]round out[/i] the breasts with another loop cut, but given that this is [b]PSX[/b] style, you might want the breast area to look sharp (Image 32). Finish the waist (Image 33). Add a vertical [k]Loop Cut[/k] (Image 34).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The hips",
+                    "content": [
+                      "Bring the hips up to the top of the waist and narrow them to match the image (Image 35). Add a vertical [k]Loop Cut[/k] (Image 36) and narrow it towards the crotch (Image 37). Move the outer vertices to match the hips (Image 38). Add a horizontal [k]Loop Cut[/k] (Image 39). Move the inner edge down an out to form a triangle (Image 40). Add another vertical [k]Loop Cut[/k] (Image 41). Grab the vertices in the middle and round out the edge (Image 42). Do the same on the outside (Image 43). Move up the bottom middle vertices to match the crease in the pants (Image 44). Start shaping the hips from the side, narrowing the edge at the bottom (Image 45). Add a vertical [k]Loop Cut[/k] (Image 46).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The arms",
+                    "content": [
+                      "Add a cube to the scene and scale it so it matches the general size of the arm (Images 47 and 48). Adjust the vertices from the side so it matches the reference somewhat (Image 49). in [k]Object Mode[/k] [k]Shift-D[/k] and move it down to make the forearm (Image 50). Adjust the size so it matches the reference (Image 51).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The hand",
+                    "content": [
+                      "Add a cube to the scene and scale it so it matches the general size of the hand (Image 52).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                }
               ]
             }
           }

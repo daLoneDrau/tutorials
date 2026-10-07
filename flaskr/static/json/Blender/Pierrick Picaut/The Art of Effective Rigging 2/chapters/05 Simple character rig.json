@@ -1534,14 +1534,46 @@
     },
     {
       "05_12 Skinning the torso_02": {
-        "tags": [],
-        "key_concepts": []
+        "tags": [
+          "skinning",
+          "weight painting"
+        ],
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Tweaking the weight",
+              "content": [
+                "After the first round of skinning, we are now going to tweak it. In the [k]Sidebar[/k] lower the weight to 0.1 (Image 1). The last animation was rotating the head bone. Create a new animation rotating the neck bone, and add it to the [k]Action Editor[/k] (Image 2). It can be helpful to turn off the weight display; set [k]Weight Paint Overlays > Opacity> 0.0[/k] (Image 3). With the weighting overlay reduced we see that the hard surface of the back plate is stretching with the neck (Image 3). This is what we want to fix; select the chest bone and start slowly painting those vertices to decrease the influence of the neck so they don't bend so much (Image 4). By tweaking the weight on those vertices we can reduce the stretching of that back plate (Image 5).",
+                {
+                  "image": []
+                },
+                "[b]Go back and pose your model, bone by bone looking for distortions and clean up the weight accordingly[/b]."
+              ]
+            }
+          }
+        ]
       }
     },
     {
       "05_13 Skinning the torso_03": {
-        "tags": [],
-        "key_concepts": []
+        "tags": [
+          "skinning",
+          "weight painting",
+          "shoulder"
+        ],
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Painting the shoulders",
+              "content": [
+                "We haven't assigned any weight to our shoulders bones yet. These bones control the arms; create an animation for rotating the shoulders (Image 1).",
+                {
+                  "image": []
+                }
+              ]
+            }
+          }
+        ]
       }
     },
     {
