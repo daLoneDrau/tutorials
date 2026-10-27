@@ -18,23 +18,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-01.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-001.jpg",
                       "caption": "Image 1 - Setting up reference images"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-02.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-002.jpg",
                       "caption": "Image 2 - Adding a Cylinder to the scene with 12 vertices and no cap"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-03.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-003.jpg",
                       "caption": "Image 3 - Adding a Mirror Modifier in the x-axis with Clipping enabled"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-04.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-004.jpg",
                       "caption": "Image 4 - Scaling the cylinder down to cover the waist section from the front"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-05.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-005.jpg",
                       "caption": "Image 5 - Shaping the cylinder from the side"
                     }
                   ]
@@ -43,19 +43,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-06.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-006.jpg",
                       "caption": "Image 6 - Extruding the top edge up below the chest"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-07.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-007.jpg",
                       "caption": "Image 7 - Shaping the extrusion from the side"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-08.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-008.jpg",
                       "caption": "Image 8 - Extruding up one more time"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-09.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-009.jpg",
                       "caption": "Image 9 - Reviewing the extrusion from the side"
                     }
                   ]
@@ -64,15 +64,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-10.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-010.jpg",
                       "caption": "Image 10 - Pressing 2 to enter Edge Mode and selecting the front two edges"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-11.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-011.jpg",
                       "caption": "Image 11 - Pressing Numpad 3 and E to bring the edges up to mid-chest"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-12.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-012.jpg",
                       "caption": "Image 12 - Extruding once more to the top of the shoulder"
                     }
                   ]
@@ -81,15 +81,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-13.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-013.jpg",
                       "caption": "Image 13 - Pressing Numpad 1 then Numpad 9 and selecting the two edges in the rear"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-14.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-014.jpg",
                       "caption": "Image 14 - Pressing Numpad 3 and E to bring the rear edges up to round out the back"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-15.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-015.jpg",
                       "caption": "Image 15 - Extruding up another edge to the top of the shoulder"
                     }
                   ]
@@ -98,19 +98,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-16.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-016.jpg",
                       "caption": "Image 16 - Pressing Numpad 7 to enter Top View and seeing the body has an oval shape"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-17.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-017.jpg",
                       "caption": "Image 17 - Pressing Alt-LMB to select the edge along the back and pressing G then Y to bring it out"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-18.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-018.jpg",
                       "caption": "Image 18 - Bringing the inside edge by the spine in and the edge by the shoulder blades out in the y- and x-axes"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-19.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-019.jpg",
                       "caption": "Image 19 - Adjusting the front edges"
                     }
                   ]
@@ -119,19 +119,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-20.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-020.jpg",
                       "caption": "Image 20 - Rotating the edges for the front and rear"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-21.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-021.jpg",
                       "caption": "Image 21 - Moving around towards the top and connecting these edges"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-22.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-022.jpg",
                       "caption": "Image 22 - Adding a Loop Cut and bringing it up"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-23.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-023.jpg",
                       "caption": "Image 23 - Going around to the side and moving the edges in so the arm hole isn't too wide"
                     }
                   ]
@@ -140,11 +140,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-24.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-024.jpg",
                       "caption": "Image 24 - Selecting the two edges near the front of the arm hole and pressing F to fill"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-25.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-025.jpg",
                       "caption": "Image 25 - Doing the same on the opposite side"
                     }
                   ]
@@ -157,11 +157,11 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/vivini/Characters/male base/male_base-26.jpg",
+                            "src": "Blender/vivini/Characters/male base/male_base-026.jpg",
                             "caption": "Image 26 - Selecting the two vertices in the back and pressing M then A to merge at center"
                           },
                           {
-                            "src": "Blender/vivini/Characters/male base/male_base-27.jpg",
+                            "src": "Blender/vivini/Characters/male base/male_base-027.jpg",
                             "caption": "Image 27 - Repeating the merge with the other two sets of vertices in the Edge Loops going towards the back"
                           }
                         ]
@@ -180,19 +180,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-28.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-028.jpg",
                       "caption": "Image 28 - Selecting the vertex at the top of the shoulder and extruding it out along the trapezius"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-29.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-029.jpg",
                       "caption": "Image 29 - Extruding the vertices along the front of the chest and top of the back"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-30.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-030.jpg",
                       "caption": "Image 30 - Selecting all three vertices and pressing F to fill"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-31.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-031.jpg",
                       "caption": "Image 31 - Extruding them up for the neck"
                     }
                   ]
@@ -201,15 +201,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-32.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-032.jpg",
                       "caption": "Image 32 - Selecting the neck's bottom Edge Loop and pressing S, Z, 0 then R to match the angle of the neck, repeating for the top edge"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-33.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-033.jpg",
                       "caption": "Image 33 - Adding Loop Cuts around the sides and moving them out to round out the neck"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-34.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-034.jpg",
                       "caption": "Image 34 - Selecting the four vertices in the front and pressing F to fill them in"
                     }
                   ]
@@ -218,15 +218,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-35.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-035.jpg",
                       "caption": "Image 35 - Filling in the next face along the side"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-36.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-036.jpg",
                       "caption": "Image 36 - Repeating the same steps in the back"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-37.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-037.jpg",
                       "caption": "Image 37 - Going around the side and fixing the arm hole so it is a cleaner circle"
                     }
                   ]
@@ -242,19 +242,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-38.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-038.jpg",
                       "caption": "Image 38 - Extruding the bottom edge halfway down the pelvis"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-39.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-039.jpg",
                       "caption": "Image 39 - Rotating from the side and scaling it out"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-40.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-040.jpg",
                       "caption": "Image 40 - Extruding again and rotating it slightly in the opposite direction"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-41.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-041.jpg",
                       "caption": "Image 41 - Reviewing from the front"
                     }
                   ]
@@ -263,19 +263,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-42.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-042.jpg",
                       "caption": "Image 42 - Adding another cylinder with 6 vertices"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-43.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-043.jpg",
                       "caption": "Image 43 - Pressing R, Z, 30 then S and G to move the cylinder into place by the shoulders"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-44.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-044.jpg",
                       "caption": "Image 44 - Pressing Shift-D and moving the duplicate down to the thigh area"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-45.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-045.jpg",
                       "caption": "Image 45 - Bringing the top Edge Loop to the middle of the thigh and the bottom to just above the knee"
                     }
                   ]
@@ -284,19 +284,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-46.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-046.jpg",
                       "caption": "Image 46 - Extruding the bottom twice to the middle of the knee and again to below the knee"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-47.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-047.jpg",
                       "caption": "Image 47 - Extruding again to three more points: the widest part of the calf, just above the ankle, and just below the ankle"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-48.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-048.jpg",
                       "caption": "Image 48 - Shaping the leg from the front"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-49.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-049.jpg",
                       "caption": "Image 49 - Shaping the leg from the side"
                     }
                   ]
@@ -305,11 +305,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-50.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-050.jpg",
                       "caption": "Image 50 - Giving the top edge a slight rotation from the side"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-51.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-051.jpg",
                       "caption": "Image 51 - Extruding the top up to about crotch level and giving it a slight rotation"
                     }
                   ]
@@ -325,19 +325,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-52.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-052.jpg",
                       "caption": "Image 52 - Rotating the arm cylinder to match the reference image"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-53.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-053.jpg",
                       "caption": "Image 53 - Sizing up the cylinder to match the reference from the top of the bicep to the elbow"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-54.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-054.jpg",
                       "caption": "Image 54 - Extending the bottom edge to the widest part of the forearm and then again to the wrist"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-55.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-055.jpg",
                       "caption": "Image 55 - Extruding the top edge to the arm hole in the torso and rotating it"
                     }
                   ]
@@ -346,15 +346,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-56.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-056.jpg",
                       "caption": "Image 56 - Adding a Loop Cut, scaling it up and moving it out to provide a bend"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-57.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-057.jpg",
                       "caption": "Image 57 - Selecting the outer edge, pressing S, Z, 0 and lining up the three edges to match the reference"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-58.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-058.jpg",
                       "caption": "Image 58 - Going around to the side, thickening the arms and adding a Loop Cut for the biceps and triceps shape"
                     }
                   ]
@@ -363,15 +363,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-59.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-059.jpg",
                       "caption": "Image 59 - Selecting the arm mesh and then the torso mesh and pressing Ctrl-J to join them"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-60.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-060.jpg",
                       "caption": "Image 60 - Going around the shoulder and pressing M then A to merge all vertices"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-61.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-061.jpg",
                       "caption": "Image 61 - Selecting the two vertices on the outside of the shoulder and pressing S then Y to scale"
                     }
                   ]
@@ -387,19 +387,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-62.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-062.jpg",
                       "caption": "Image 62 - Selecting vertices in front of the pelvis, moving them in and rotating them slightly"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-63.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-063.jpg",
                       "caption": "Image 63 - Pulling the bottom front vertices down"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-64.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-064.jpg",
                       "caption": "Image 64 - Going around to the rear and shaping the three vertices in the lower back"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-65.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-065.jpg",
                       "caption": "Image 65 - Selecting the leg mesh and torso mesh and pressing Ctrl-J to join them"
                     }
                   ]
@@ -408,19 +408,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-66.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-066.jpg",
                       "caption": "Image 66 - Going around the bottom of the hips and joining the inner four vertices of the legs to the hips using M then L"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-67.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-067.jpg",
                       "caption": "Image 67 - Extruding the vertex from the top of the leg to the center around the back"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-68.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-068.jpg",
                       "caption": "Image 68 - Filling in the gaps"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-69.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-069.jpg",
                       "caption": "Image 69 - Continuing to fill in the remaining gaps"
                     }
                   ]
@@ -429,15 +429,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-70.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-070.jpg",
                       "caption": "Image 70 - Extruding the vertex on the inside of the leg in the x-axis underneath"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-71.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-071.jpg",
                       "caption": "Image 71 - Filling it in"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-72.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-072.jpg",
                       "caption": "Image 72 - Going around to the front and filling in the last gap"
                     }
                   ]
@@ -446,19 +446,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-73.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-073.jpg",
                       "caption": "Image 73 - Going to the bottom edge of the leg and extruding the vertices, shaping them for the foot"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-74.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-074.jpg",
                       "caption": "Image 74 - Extruding the back vertices down to the origin"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-75.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-075.jpg",
                       "caption": "Image 75 - Extruding the side edge forward to the end of the foot"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-76.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-076.jpg",
                       "caption": "Image 76 - Lowering the top vertices to the top of the toes"
                     }
                   ]
@@ -467,23 +467,23 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-77.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-077.jpg",
                       "caption": "Image 77 - Selecting the four vertices at the top of the foot and pressing F to fill them in"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-78.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-078.jpg",
                       "caption": "Image 78 - Filling in faces on the sides and front"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-79.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-079.jpg",
                       "caption": "Image 79 - Widening the front face"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-80.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-080.jpg",
                       "caption": "Image 80 - Adding Loop Cuts for the big toe"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-81.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-081.jpg",
                       "caption": "Image 81 - Pulling the edge forward to curve the toes"
                     }
                   ]
@@ -492,19 +492,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-82.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-082.jpg",
                       "caption": "Image 82 - Filling in the back face by the heel"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-83.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-083.jpg",
                       "caption": "Image 83 - Selecting the two edges along the sides of the foot and pressing RMB then S to subdivide"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-84.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-084.jpg",
                       "caption": "Image 84 - Cutting edge loops from the upper edge to the new vertices"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-85.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-085.jpg",
                       "caption": "Image 85 - Filling in the faces"
                     }
                   ]
@@ -520,19 +520,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-86.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-086.jpg",
                       "caption": "Image 86 - Selecting the middle vertex on the inside of the wrist to flatten the inside of the hand"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-87.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-087.jpg",
                       "caption": "Image 87 - Pressing G then G to slide the vertex up to the front"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-88.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-088.jpg",
                       "caption": "Image 88 - Selecting the opposite vertex and pressing S to scale them in"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-89.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-089.jpg",
                       "caption": "Image 89 - Re-centering at the end of the wrist and scaling out if needed"
                     }
                   ]
@@ -541,15 +541,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-90.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-090.jpg",
                       "caption": "Image 90 - Extruding the bottom edge down to where the thumb comes out of the palm"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-91.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-091.jpg",
                       "caption": "Image 91 - Extruding again to where the knuckles would end"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-92.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-092.jpg",
                       "caption": "Image 92 - Coming around to the side and widening the hand"
                     }
                   ]
@@ -558,19 +558,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-93.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-093.jpg",
                       "caption": "Image 93 - Adding a Loop Cut around the palm for where the thumb is"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-94.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-094.jpg",
                       "caption": "Image 94 - Adding another Loop Cut to match the thumb's thickness"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-95.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-095.jpg",
                       "caption": "Image 95 - Using Edge Slide on the middle vertex to reduce triangles"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-96.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-096.jpg",
                       "caption": "Image 96 - Extruding the three faces for the thumb"
                     }
                   ]
@@ -579,15 +579,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-97.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-097.jpg",
                       "caption": "Image 97 - Grabbing the top edge and pressing G then G to slide it in"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-98.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-098.jpg",
                       "caption": "Image 98 - Pressing G then G on the bottom edges on the underside to slide them in"
                     },
                     {
-                      "src": "Blender/vivini/Characters/male base/male_base-99.jpg",
+                      "src": "Blender/vivini/Characters/male base/male_base-099.jpg",
                       "caption": "Image 99 - Filling in the faces at the bottom"
                     },
                     {
