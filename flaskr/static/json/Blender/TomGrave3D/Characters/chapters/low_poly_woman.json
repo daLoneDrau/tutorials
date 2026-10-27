@@ -345,12 +345,108 @@
                   "section": {
                     "header": "The hand",
                     "content": [
-                      "Add a cube to the scene and scale it so it matches the general size of the hand (Image 52).",
+                      "Add a cube to the scene and scale it so it matches the general size of the hand (Image 52). Shape the cube to your preference for a fist (Image 53).",
                       {
                         "image": []
                       }
                     ]
                   }
+                },
+                {
+                  "section": {
+                    "header": "The legs",
+                    "content": [
+                      "Add a cube to the scene and scale it so it matches the general size of the leg (Image 54). Add a horizontal [k]Loop Cut[/k] and widen in the middle (Image 55). Repeat these steps with another cube for the lower leg (Image 56).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The feet",
+                    "content": [
+                      "Add a cube to the scene, scale it and add [k]Loop Cuts[/k] so it matches the shape of the foot from the side (Image 57). Go to the front and widen the feet (Image 58).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Rounding out the limbs pt. I",
+                    "content": [
+                      "Add a vertical [k]Loop Cut[/k] to the upper and lower legs and then [k]Edge Slide[/k] the outer vertices in front (Image 59) and back (Image 60) to round out the legs.",
+                      {
+                        "image": []
+                      },
+                      "Add a [k]Loop Cuts[/k] around the side of the arms (Image 61) and then scale in the front and back faces along the x-axis (Image 62).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Rounding out the torso",
+                    "content": [
+                      "Grab the bottom edges on the side and [k]G,G[/k] to tighten up the waist (Image 63). Grab the edges on the side from mid-chest to the bottom and [k]G,Y[/k] (Image 64). Bring down the top outside vertex to round out the top edge (Image 65). Grab the edge between the breasts and [k]G,Y[/k] to create some separation (Image 66). Add a vertical [k]Loop Cut along the x-axis (Image 67). Grab the edges along the back and [k]G,X[/k] to bring them in (Image 68) and then [k]G,Y[/k] to bring them towards the front (Image 69).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Rounding out the hips",
+                    "content": [
+                      "Add another [k]Loop Cut[/k] towards the top of the hips and scale it out in the y-axis (Image 70) Move the front and back edges in using [k]G,Y[/k], [k]G,X[/k] (Image 71).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Rounding out the limbs pt. II",
+                    "content": [
+                      "Add a [k]Loop Cut[/k] below the shoulder (Image 72). Move the top edges of the shoulder down to create a spade-like shape (Image 73). Add a [k]Loop Cut[/k] down the sides (Image 74), and grab the edges around and [k]G,Y[/k] to bring them in in the front and back (Image 75). Repeat the same process of [k]Loop Cut[/k] (Image 76) and edge movement (Image 77) for the legs.",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Final touches",
+                    "content": [
+                      "Select all parts with the torso as the active object and [k]Ctrl-J[/k] (Image 78). Go into the areas with overlap and create a raised part between joints (Image 79).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Sectional hair",
+              "content": [
+                "For the hair we will be doing this in sections. Use generative AI to create a hair texture that is made of three parts: base color, shadows, and highlights (Image 80). We will put the hair together from several strip-like pieces, usually just two faces wide, tapering down to a point.",
+                {
+                  "image": []
+                },
+                "Start with a plane and add enough [k]Loop Cuts[/k] so it can bend and follow the shape of the head (Image 81). [k]M,A[/k] ro merge the vertices at the bottom (Image 82). [k]S,X[/k] to make it thinner (Image 83). Grab the middle edge, [k]O[/k] for [k]Proportional Editing[/k] and [k]S,X[/k] (Image 84). Scale in the top edge (Image 85). Go to the side and [k]G,Z[/k] to pull out the middle spine (Image 86).",
+                {
+                  "image": []
                 }
               ]
             }

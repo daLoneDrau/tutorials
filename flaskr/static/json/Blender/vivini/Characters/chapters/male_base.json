@@ -1,0 +1,622 @@
+{
+  "sections": [
+    {
+      "Struggling to make fake 3D muscles": {
+        "tags": [
+          "base mesh",
+          "male",
+          "texture",
+          "painting"
+        ],
+        "key_concepts": [
+          "[url]Struggling to make fake 3D muscles^^https://www.youtube.com/watch?v=jPOwH4eHZ7w[/url]",
+          {
+            "section": {
+              "header": "The Torso",
+              "content": [
+                "Set up your reference images (Image 1). Add a Cylinder to the scene, 12 vertices, no cap (Image 2). Add a [k]Mirror Modifier[/k] in the x-axis with Clipping enabled (Image 3). Scale the cylinder down so it covers the waist section from the front (Image 4) and side (Image 5).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-01.jpg",
+                      "caption": "Image 1 - Setting up reference images"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-02.jpg",
+                      "caption": "Image 2 - Adding a Cylinder to the scene with 12 vertices and no cap"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-03.jpg",
+                      "caption": "Image 3 - Adding a Mirror Modifier in the x-axis with Clipping enabled"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-04.jpg",
+                      "caption": "Image 4 - Scaling the cylinder down to cover the waist section from the front"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-05.jpg",
+                      "caption": "Image 5 - Shaping the cylinder from the side"
+                    }
+                  ]
+                },
+                "Extrude the top edge up below the chest (Image 6) and shape it from the side as well (Image 7). Extrude the up one more time (Images 8 and 9).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-06.jpg",
+                      "caption": "Image 6 - Extruding the top edge up below the chest"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-07.jpg",
+                      "caption": "Image 7 - Shaping the extrusion from the side"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-08.jpg",
+                      "caption": "Image 8 - Extruding up one more time"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-09.jpg",
+                      "caption": "Image 9 - Reviewing the extrusion from the side"
+                    }
+                  ]
+                },
+                "[k]2[/k] into [k]Edge Mode[/k] and select the front two edges (Image 10). [k]Numpad3[/k] and [k]E[/k] and bring them up to mid-chest (Image 11). Extrude once more to the top of the shoulder (Image 12).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-10.jpg",
+                      "caption": "Image 10 - Pressing 2 to enter Edge Mode and selecting the front two edges"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-11.jpg",
+                      "caption": "Image 11 - Pressing Numpad 3 and E to bring the edges up to mid-chest"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-12.jpg",
+                      "caption": "Image 12 - Extruding once more to the top of the shoulder"
+                    }
+                  ]
+                },
+                "[k]Numpad1,Numpad9[/k] and select the two edges in the rear (Image 13). [k]Numpad3[/k] and [k]E[/k] to bring them up to round out the back (Image 14). Extrude up another edge to the top of the shoulder (Image 15).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-13.jpg",
+                      "caption": "Image 13 - Pressing Numpad 1 then Numpad 9 and selecting the two edges in the rear"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-14.jpg",
+                      "caption": "Image 14 - Pressing Numpad 3 and E to bring the rear edges up to round out the back"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-15.jpg",
+                      "caption": "Image 15 - Extruding up another edge to the top of the shoulder"
+                    }
+                  ]
+                },
+                "[k]Numpad7[/k] into [k]Top View[/k] and you will see the body has an oval shape (Image 16). [k]Alt-LMB[/k] the edge along the back and [k]G,Y[/k] to bring out out (Image 17). Bring the inside edge by the spine in and the edge by the shoulder blades out in the y- and x-axes (Image 18). Adjust the front as well (Image 19).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-16.jpg",
+                      "caption": "Image 16 - Pressing Numpad 7 to enter Top View and seeing the body has an oval shape"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-17.jpg",
+                      "caption": "Image 17 - Pressing Alt-LMB to select the edge along the back and pressing G then Y to bring it out"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-18.jpg",
+                      "caption": "Image 18 - Bringing the inside edge by the spine in and the edge by the shoulder blades out in the y- and x-axes"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-19.jpg",
+                      "caption": "Image 19 - Adjusting the front edges"
+                    }
+                  ]
+                },
+                "Rotate the edges for the front and rear (Image 20). Move around towards the top and connect these edges (Image 21). Add a [k]Loop Cut[/k] and bring it up (Image 22). Go around to the side and move these edges in so the arm hole isn't too wide (Image 23).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-20.jpg",
+                      "caption": "Image 20 - Rotating the edges for the front and rear"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-21.jpg",
+                      "caption": "Image 21 - Moving around towards the top and connecting these edges"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-22.jpg",
+                      "caption": "Image 22 - Adding a Loop Cut and bringing it up"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-23.jpg",
+                      "caption": "Image 23 - Going around to the side and moving the edges in so the arm hole isn't too wide"
+                    }
+                  ]
+                },
+                "Select the two edges near the front of the arm hole and [k]F[/k] (Image 24). Do the same on the opposite side (Image 25).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-24.jpg",
+                      "caption": "Image 24 - Selecting the two edges near the front of the arm hole and pressing F to fill"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-25.jpg",
+                      "caption": "Image 25 - Doing the same on the opposite side"
+                    }
+                  ]
+                },
+                {
+                  "section": {
+                    "header": "Reducing Triangles",
+                    "content": [
+                      "Select the two vertices in the back here and [k]M,A[/k] (Image 26). Repeat with the other two sets of vertices in the [k]Edge Loops[/k] going towards the back (Image 27).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-26.jpg",
+                            "caption": "Image 26 - Selecting the two vertices in the back and pressing M then A to merge at center"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-27.jpg",
+                            "caption": "Image 27 - Repeating the merge with the other two sets of vertices in the Edge Loops going towards the back"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Neck",
+              "content": [
+                "Select the vertex at the top of the shoulder and extrude it out along the trapezius (Image 28). Extrude the vertices along the front of the chest and top of the back also (Image 29). Select all three vertices and [k]F[/k] (Image 30). Extrude them up for the neck (Image 31).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-28.jpg",
+                      "caption": "Image 28 - Selecting the vertex at the top of the shoulder and extruding it out along the trapezius"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-29.jpg",
+                      "caption": "Image 29 - Extruding the vertices along the front of the chest and top of the back"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-30.jpg",
+                      "caption": "Image 30 - Selecting all three vertices and pressing F to fill"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-31.jpg",
+                      "caption": "Image 31 - Extruding them up for the neck"
+                    }
+                  ]
+                },
+                "Select the neck's bottom [k]Edge Loop[/k] and [k]S,Z,0[/k] and then [k]R[/k] to match the angle of the neck; repeat for the top edge (Image 32). Add [k]Loop Cuts[/k] around the sides and move them out to round out the neck (Image 33). Select the four vertices in the front and [k]F[/k] to fill them in (Image 34).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-32.jpg",
+                      "caption": "Image 32 - Selecting the neck's bottom Edge Loop and pressing S, Z, 0 then R to match the angle of the neck, repeating for the top edge"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-33.jpg",
+                      "caption": "Image 33 - Adding Loop Cuts around the sides and moving them out to round out the neck"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-34.jpg",
+                      "caption": "Image 34 - Selecting the four vertices in the front and pressing F to fill them in"
+                    }
+                  ]
+                },
+                "Fill in the next face along the side (Image 35). Repeat the same steps in the back (Image 36). Go around the side and fix the arm hole so it is a cleaner circle (Image 37).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-35.jpg",
+                      "caption": "Image 35 - Filling in the next face along the side"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-36.jpg",
+                      "caption": "Image 36 - Repeating the same steps in the back"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-37.jpg",
+                      "caption": "Image 37 - Going around the side and fixing the arm hole so it is a cleaner circle"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Hips",
+              "content": [
+                "Extrude the bottom edge halfway down the pelvis (Image 38) and rotate it from the side and scale it out (Image 39). Extrude again, and rotate it slightly in the opposite direction as before (Image 40). Review from the front as well (Image 41).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-38.jpg",
+                      "caption": "Image 38 - Extruding the bottom edge halfway down the pelvis"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-39.jpg",
+                      "caption": "Image 39 - Rotating from the side and scaling it out"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-40.jpg",
+                      "caption": "Image 40 - Extruding again and rotating it slightly in the opposite direction"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-41.jpg",
+                      "caption": "Image 41 - Reviewing from the front"
+                    }
+                  ]
+                },
+                "Add another cylinder, this time with 6 vertices (Image 42). [k]R,Z,30[/k] [k]S[/k], [k]G[/k] to move it in place by the shoulders (Image 43). [k]Shift-D[/k] and move the duplicate down to the thigh area (Image 44). Bring the top [k]Edge Loop[/k] to the middle of the thigh and the bottom to just above the knee (Image 45).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-42.jpg",
+                      "caption": "Image 42 - Adding another cylinder with 6 vertices"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-43.jpg",
+                      "caption": "Image 43 - Pressing R, Z, 30 then S and G to move the cylinder into place by the shoulders"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-44.jpg",
+                      "caption": "Image 44 - Pressing Shift-D and moving the duplicate down to the thigh area"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-45.jpg",
+                      "caption": "Image 45 - Bringing the top Edge Loop to the middle of the thigh and the bottom to just above the knee"
+                    }
+                  ]
+                },
+                "Extrude the bottom twice - once to the middle of the knee and again to below the knee (Image 46). Extrude again to three more points - the widest part of the calf, just above the ankle, and just below the ankle (Image 47). Shape the leg from front and side (Images 48 and 49).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-46.jpg",
+                      "caption": "Image 46 - Extruding the bottom twice to the middle of the knee and again to below the knee"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-47.jpg",
+                      "caption": "Image 47 - Extruding again to three more points: the widest part of the calf, just above the ankle, and just below the ankle"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-48.jpg",
+                      "caption": "Image 48 - Shaping the leg from the front"
+                    },
+                    {
+                      "src": "Blender/vivini/Characters/male base/male_base-49.jpg",
+                      "caption": "Image 49 - Shaping the leg from the side"
+                    }
+                  ]
+                },
+                "Give the top edge a slight rotation from the side (Images 50). Extrude the top up to about crotch level and give it a slight rotation (Image 51).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-50.jpg",
+                      "caption": "Image 50 - Giving the top edge a slight rotation from the side"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-51.jpg",
+                      "caption": "Image 51 - Extruding the top up to about crotch level and giving it a slight rotation"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Arms",
+              "content": [
+                "Rotate the arm cylinder to match the reference image (Image 52). Size up the cylinder to match the reference from the top of the bicep to the elbow (Image 53). Extend the bottom edge to the widest part of the forearm and then again to the wrist (Image 54). Extrude the top edge to the arm hole in the torso and rotate it (Image 55).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-52.jpg",
+                      "caption": "Image 52 - Rotating the arm cylinder to match the reference image"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-53.jpg",
+                      "caption": "Image 53 - Sizing up the cylinder to match the reference from the top of the bicep to the elbow"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-54.jpg",
+                      "caption": "Image 54 - Extending the bottom edge to the widest part of the forearm and then again to the wrist"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-55.jpg",
+                      "caption": "Image 55 - Extruding the top edge to the arm hole in the torso and rotating it"
+                    }
+                  ]
+                },
+                "Add a [k]Loop Cut[/k], scale it up and move it out to provide a bend (Image 56). Select the outer edge, [k]S,Z,0[/k] and then do your best to line up the three edges to match the reference (Image 57). Go around to the side and thicken the arms and add a [k]Loop Cut[/k] for the biceps/triceps shape (Image 58).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-56.jpg",
+                      "caption": "Image 56 - Adding a Loop Cut, scaling it up and moving it out to provide a bend"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-57.jpg",
+                      "caption": "Image 57 - Selecting the outer edge, pressing S, Z, 0 and lining up the three edges to match the reference"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-58.jpg",
+                      "caption": "Image 58 - Going around to the side, thickening the arms and adding a Loop Cut for the biceps and triceps shape"
+                    }
+                  ]
+                },
+                "Select the arm mesh and then the torso mesh and [k]Ctrl-J[/k] (Image 59). Go around the shoulder and [k]M,A[/k] all vertices (Image 60). Select the two vertices on the outside of the shoulder and [k]S,Y[/k] (Image 61).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-59.jpg",
+                      "caption": "Image 59 - Selecting the arm mesh and then the torso mesh and pressing Ctrl-J to join them"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-60.jpg",
+                      "caption": "Image 60 - Going around the shoulder and pressing M then A to merge all vertices"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-61.jpg",
+                      "caption": "Image 61 - Selecting the two vertices on the outside of the shoulder and pressing S then Y to scale"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Hips and Legs",
+              "content": [
+                "Select vertices in front of the pelvis, move them in and rotate them slightly (Image 62). Pull the bottom front vertices down (Image 63). Go around to the rear and shape the three vertices in the lower back (Image 64). Select the leg mesh and torse mesh and [k]Ctrl-J[/k] (Image 65).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-62.jpg",
+                      "caption": "Image 62 - Selecting vertices in front of the pelvis, moving them in and rotating them slightly"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-63.jpg",
+                      "caption": "Image 63 - Pulling the bottom front vertices down"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-64.jpg",
+                      "caption": "Image 64 - Going around to the rear and shaping the three vertices in the lower back"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-65.jpg",
+                      "caption": "Image 65 - Selecting the leg mesh and torso mesh and pressing Ctrl-J to join them"
+                    }
+                  ]
+                },
+                "Go around the bottom of the hips and join the inner four vertices of the legs to the hips, using [k]M,L[/k] to join the leg vertices to where the hip vertices end (Image 66). Around the back extrude the vertex from the top of the leg to the center (Image 67) and then fill in the gaps (Images 68 and 69).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-66.jpg",
+                      "caption": "Image 66 - Going around the bottom of the hips and joining the inner four vertices of the legs to the hips using M then L"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-67.jpg",
+                      "caption": "Image 67 - Extruding the vertex from the top of the leg to the center around the back"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-68.jpg",
+                      "caption": "Image 68 - Filling in the gaps"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-69.jpg",
+                      "caption": "Image 69 - Continuing to fill in the remaining gaps"
+                    }
+                  ]
+                },
+                "Underneath, extrude the vertex on the inside of the leg in the x-axis (Image 70) and then fill it in (Image 71). Go around to the front and fill in the last gap (Image 72).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-70.jpg",
+                      "caption": "Image 70 - Extruding the vertex on the inside of the leg in the x-axis underneath"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-71.jpg",
+                      "caption": "Image 71 - Filling it in"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-72.jpg",
+                      "caption": "Image 72 - Going around to the front and filling in the last gap"
+                    }
+                  ]
+                },
+                "Go to the bottom edge of the leg (which should be mid-ankle, if not move it) and extrude the vertices and shape it for the foot (Image 73). Extrude the back vertices down to the origin (Image 74). Extrude the side edge forward to the end of the foot (Image 75) and lower the top vertices to the top of the toes (Image 76).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-73.jpg",
+                      "caption": "Image 73 - Going to the bottom edge of the leg and extruding the vertices, shaping them for the foot"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-74.jpg",
+                      "caption": "Image 74 - Extruding the back vertices down to the origin"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-75.jpg",
+                      "caption": "Image 75 - Extruding the side edge forward to the end of the foot"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-76.jpg",
+                      "caption": "Image 76 - Lowering the top vertices to the top of the toes"
+                    }
+                  ]
+                },
+                "Select the four vertices at the top of the foot and [k]F[/k] to fill them in (Image 77). Fill in faces on the sides and front (Image 78). Widen the front face (Image 79). Add [k]Loop Cuts[/k] for the big toe (Image 80) and pull the edge forward to curve the toes (Image 81).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-77.jpg",
+                      "caption": "Image 77 - Selecting the four vertices at the top of the foot and pressing F to fill them in"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-78.jpg",
+                      "caption": "Image 78 - Filling in faces on the sides and front"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-79.jpg",
+                      "caption": "Image 79 - Widening the front face"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-80.jpg",
+                      "caption": "Image 80 - Adding Loop Cuts for the big toe"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-81.jpg",
+                      "caption": "Image 81 - Pulling the edge forward to curve the toes"
+                    }
+                  ]
+                },
+                "Fill in the back face by the heel (Image 82). Select the two edges along the sides of the foot and [k]RMB,S[/k] (Image 83). Cut edge loops from the upper edge to the new vertices (Image 84) and then fill in the faces (Image 85).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-82.jpg",
+                      "caption": "Image 82 - Filling in the back face by the heel"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-83.jpg",
+                      "caption": "Image 83 - Selecting the two edges along the sides of the foot and pressing RMB then S to subdivide"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-84.jpg",
+                      "caption": "Image 84 - Cutting edge loops from the upper edge to the new vertices"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-85.jpg",
+                      "caption": "Image 85 - Filling in the faces"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "The Hands (Clenched Fist)",
+              "content": [
+                "We want to flatten then inside of the hand, so select the middle vertex on the inside of the wrist (Image 86) and [k]G,G[/k] it up to the front (Image 87). Select the opposite vertex and [k]S[/k] them in (Image 88). Re-center them at the end of the wrist and scale them out if needed (Image 89).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-86.jpg",
+                      "caption": "Image 86 - Selecting the middle vertex on the inside of the wrist to flatten the inside of the hand"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-87.jpg",
+                      "caption": "Image 87 - Pressing G then G to slide the vertex up to the front"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-88.jpg",
+                      "caption": "Image 88 - Selecting the opposite vertex and pressing S to scale them in"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-89.jpg",
+                      "caption": "Image 89 - Re-centering at the end of the wrist and scaling out if needed"
+                    }
+                  ]
+                },
+                "Extrude the bottom edge down to where the thumb comes out of the palm (Image 90) and then again to where the knuckles would end (Image 91). Come around to the side and widen the hand (Image 92).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-90.jpg",
+                      "caption": "Image 90 - Extruding the bottom edge down to where the thumb comes out of the palm"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-91.jpg",
+                      "caption": "Image 91 - Extruding again to where the knuckles would end"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-92.jpg",
+                      "caption": "Image 92 - Coming around to the side and widening the hand"
+                    }
+                  ]
+                },
+                "Add a [k]Loop Cut[/k] around the palm for where the thumb (Image 93) and another one to match the thumb's thickness (Image 94). [k]Edge Slide[/k] the middle vertex to reduce triangles (Image 95). Extrude the three faces for the thumb (Image 96).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-93.jpg",
+                      "caption": "Image 93 - Adding a Loop Cut around the palm for where the thumb is"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-94.jpg",
+                      "caption": "Image 94 - Adding another Loop Cut to match the thumb's thickness"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-95.jpg",
+                      "caption": "Image 95 - Using Edge Slide on the middle vertex to reduce triangles"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-96.jpg",
+                      "caption": "Image 96 - Extruding the three faces for the thumb"
+                    }
+                  ]
+                },
+                "Grab the top edge and [k]G,G[/k] in (Image 97). On the underside [k]G,G[/k] the bottom edges in (Image 98). Fill in the faces at the bottom (Image 99). Go around the side and merge the vertices down (Image 100).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-97.jpg",
+                      "caption": "Image 97 - Grabbing the top edge and pressing G then G to slide it in"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-98.jpg",
+                      "caption": "Image 98 - Pressing G then G on the bottom edges on the underside to slide them in"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-99.jpg",
+                      "caption": "Image 99 - Filling in the faces at the bottom"
+                    },
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-100.jpg",
+                      "caption": "Image 100 - Going around the side and merging the vertices down"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Cleanup",
+              "content": [
+                "Cut an edge across the front of the chest (Image 101).",
+                {
+                  "image": [
+                    {
+                      "src": "Blender/Pierrick Picaut/The Art of Effective Rigging 2/05_11 Skinning the torso/0511-101.jpg",
+                      "caption": "Image 101 - Cutting an edge across the front of the chest"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
