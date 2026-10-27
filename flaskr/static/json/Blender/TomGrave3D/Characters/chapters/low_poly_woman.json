@@ -256,15 +256,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-01.jpg",
+                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-001.jpg",
                       "caption": "Image 1 - Getting the front reference image in place"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-02.jpg",
+                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-002.jpg",
                       "caption": "Image 2 - Adding a cube to the scene, adding a Mirror Modifier in the x-axis with clipping enabled and positioning it where the head is"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-03.jpg",
+                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-003.jpg",
                       "caption": "Image 3 - Pressing Tab to enter Object Mode and pressing Shift-D then Z to make copies with the modifier added for the torso and hips regions"
                     }
                   ]
@@ -277,19 +277,19 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-04.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-004.jpg",
                             "caption": "Image 4 - Pressing Ctrl-R to add Loop Cuts in the x-, y-, and z-axes for a total of three cuts"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-05.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-005.jpg",
                             "caption": "Image 5 - Shaping the main form from the front"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-06.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-006.jpg",
                             "caption": "Image 6 - Adding one more loop cut by the hairline"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-07.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-007.jpg",
                             "caption": "Image 7 - Moving around to the side and shaping the skull"
                           }
                         ]
@@ -302,19 +302,19 @@
                             {
                               "image": [
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-08.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-008.jpg",
                                   "caption": "Image 8 - Moving around to the bottom of the head and subdividing the edge in the middle"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-09.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-009.jpg",
                                   "caption": "Image 9 - Moving the new vertex over to the width of the neck"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-10.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-010.jpg",
                                   "caption": "Image 10 - Cutting an edge loop for the neck"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-11.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-011.jpg",
                                   "caption": "Image 11 - Extruding the neck down"
                                 }
                               ]
@@ -330,19 +330,19 @@
                             {
                               "image": [
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-12.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-012.jpg",
                                   "caption": "Image 12 - Adding edge loops above and below the brow and below the nose"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-13.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-013.jpg",
                                   "caption": "Image 13 - Adding a vertical loop cut at the width of the nose"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-14.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-014.jpg",
                                   "caption": "Image 14 - Pressing 3 to enter Face Mode and selecting faces to make a simple nose and brow"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-15.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-015.jpg",
                                   "caption": "Image 15 - Going around to the side, extruding the faces and rotating them"
                                 }
                               ]
@@ -351,15 +351,15 @@
                             {
                               "image": [
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-16.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-016.jpg",
                                   "caption": "Image 16 - Bringing the tip of the nose out and up, and the bridge of the nose down and back to match the reference"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-17.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-017.jpg",
                                   "caption": "Image 17 - Pressing M then L to merge the two vertices on the outside of the brow with the face"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-18.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-018.jpg",
                                   "caption": "Image 18 - Narrowing the tip of the nose"
                                 }
                               ]
@@ -368,15 +368,15 @@
                             {
                               "image": [
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-19.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-019.jpg",
                                   "caption": "Image 19 - Bringing the inner part of the brow ridge to the inner part of the brow"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-20.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-020.jpg",
                                   "caption": "Image 20 - Straightening out the bridge of the nose"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-21.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-021.jpg",
                                   "caption": "Image 21 - Pressing M then L to merge the top vertices of the brow with the rest of the face"
                                 }
                               ]
@@ -392,19 +392,19 @@
                             {
                               "image": [
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-22.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-022.jpg",
                                   "caption": "Image 22 - Cutting a shape for the ear"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-23.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-023.jpg",
                                   "caption": "Image 23 - Extruding the ear faces out"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-24.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-024.jpg",
                                   "caption": "Image 24 - Pressing G then G to slide the near edges in"
                                 },
                                 {
-                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-25.jpg",
+                                  "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-025.jpg",
                                   "caption": "Image 25 - Shaping the ear"
                                 }
                               ]
@@ -423,23 +423,23 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-26.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-026.jpg",
                             "caption": "Image 26 - Matching the basic shape of the torso from the front"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-27.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-027.jpg",
                             "caption": "Image 27 - Adding a Loop Cut around arm pit height and enabling Even"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-28.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-028.jpg",
                             "caption": "Image 28 - Moving the two inner top vertices in line with the neck"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-29.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-029.jpg",
                             "caption": "Image 29 - Moving the next two vertices around the arm hole and lining up the edge under the arm hole and out to the tip of the breasts"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-30.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-030.jpg",
                             "caption": "Image 30 - Adding another Loop Cut for the mid-chest and adjusting the thickness"
                           }
                         ]
@@ -448,19 +448,19 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-31.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-031.jpg",
                             "caption": "Image 31 - Adding yet another Loop Cut below the chest and adjusting the thickness"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-32.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-032.jpg",
                             "caption": "Image 32 - Optionally rounding out the breast area with another loop cut while keeping the PSX style sharp look"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-33.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-033.jpg",
                             "caption": "Image 33 - Finishing the waist"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-34.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-034.jpg",
                             "caption": "Image 34 - Adding a vertical Loop Cut"
                           }
                         ]
@@ -476,19 +476,19 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-35.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-035.jpg",
                             "caption": "Image 35 - Bringing the hips up to the top of the waist and narrowing them to match the image"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-36.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-036.jpg",
                             "caption": "Image 36 - Adding a vertical Loop Cut"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-37.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-037.jpg",
                             "caption": "Image 37 - Narrowing the cut towards the crotch"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-38.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-038.jpg",
                             "caption": "Image 38 - Moving the outer vertices to match the hips"
                           }
                         ]
@@ -497,23 +497,23 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-39.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-039.jpg",
                             "caption": "Image 39 - Adding a horizontal Loop Cut"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-40.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-040.jpg",
                             "caption": "Image 40 - Moving the inner edge down and out to form a triangle"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-41.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-041.jpg",
                             "caption": "Image 41 - Adding another vertical Loop Cut"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-42.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-042.jpg",
                             "caption": "Image 42 - Grabbing the vertices in the middle and rounding out the edge"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-43.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-043.jpg",
                             "caption": "Image 43 - Doing the same on the outside"
                           }
                         ]
@@ -522,15 +522,15 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-44.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-044.jpg",
                             "caption": "Image 44 - Moving up the bottom middle vertices to match the crease in the pants"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-45.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-045.jpg",
                             "caption": "Image 45 - Shaping the hips from the side and narrowing the edge at the bottom"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-46.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-046.jpg",
                             "caption": "Image 46 - Adding a vertical Loop Cut"
                           }
                         ]
@@ -546,23 +546,23 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-47.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-047.jpg",
                             "caption": "Image 47 - Adding a cube to the scene and scaling it to match the general size of the arm"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-48.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-048.jpg",
                             "caption": "Image 48 - Continuing to scale the cube to match the general size of the arm"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-49.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-049.jpg",
                             "caption": "Image 49 - Adjusting the vertices from the side to match the reference"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-50.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-050.jpg",
                             "caption": "Image 50 - Pressing Shift-D in Object Mode and moving the duplicate down to make the forearm"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-51.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-051.jpg",
                             "caption": "Image 51 - Adjusting the size to match the reference"
                           }
                         ]
@@ -578,11 +578,11 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-52.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-052.jpg",
                             "caption": "Image 52 - Adding a cube to the scene and scaling it to match the general size of the hand"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-53.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-053.jpg",
                             "caption": "Image 53 - Shaping the cube to a fist"
                           }
                         ]
@@ -598,15 +598,15 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-54.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-054.jpg",
                             "caption": "Image 54 - Adding a cube to the scene and scaling it to match the general size of the leg"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-55.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-055.jpg",
                             "caption": "Image 55 - Adding a horizontal Loop Cut and widening in the middle"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-56.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-056.jpg",
                             "caption": "Image 56 - Repeating these steps with another cube for the lower leg"
                           }
                         ]
@@ -622,11 +622,11 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-57.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-057.jpg",
                             "caption": "Image 57 - Adding a cube, scaling it and adding Loop Cuts to match the shape of the foot from the side"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-58.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-058.jpg",
                             "caption": "Image 58 - Going to the front and widening the feet"
                           }
                         ]
@@ -642,11 +642,11 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-59.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-059.jpg",
                             "caption": "Image 59 - Adding a vertical Loop Cut to the upper and lower legs and using Edge Slide on the outer vertices in front"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-60.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-060.jpg",
                             "caption": "Image 60 - Using Edge Slide on the outer vertices in back to round out the legs"
                           }
                         ]
@@ -655,11 +655,11 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-61.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-061.jpg",
                             "caption": "Image 61 - Adding Loop Cuts around the side of the arms"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-62.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-062.jpg",
                             "caption": "Image 62 - Scaling in the front and back faces along the x-axis"
                           }
                         ]
@@ -675,15 +675,15 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-63.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-063.jpg",
                             "caption": "Image 63 - Grabbing the bottom edges on the side and pressing G then G to tighten up the waist"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-64.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-064.jpg",
                             "caption": "Image 64 - Grabbing the edges on the side from mid-chest to the bottom and pressing G then Y"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-65.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-065.jpg",
                             "caption": "Image 65 - Bringing down the top outside vertex to round out the top edge"
                           }
                         ]
@@ -692,19 +692,19 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-66.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-066.jpg",
                             "caption": "Image 66 - Grabbing the edge between the breasts and pressing G then Y to create some separation"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-67.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-067.jpg",
                             "caption": "Image 67 - Adding a vertical Loop Cut along the x-axis"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-68.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-068.jpg",
                             "caption": "Image 68 - Grabbing the edges along the back and pressing G then X to bring them in"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-69.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-069.jpg",
                             "caption": "Image 69 - Pressing G then Y to bring the edges towards the front"
                           }
                         ]
@@ -720,11 +720,11 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-70.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-070.jpg",
                             "caption": "Image 70 - Adding another Loop Cut towards the top of the hips and scaling it out in the y-axis"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-71.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-071.jpg",
                             "caption": "Image 71 - Moving the front and back edges in using G then Y and G then X"
                           }
                         ]
@@ -740,11 +740,11 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-72.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-072.jpg",
                             "caption": "Image 72 - Adding a Loop Cut below the shoulder"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-73.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-073.jpg",
                             "caption": "Image 73 - Moving the top edges of the shoulder down to create a spade-like shape"
                           }
                         ]
@@ -753,19 +753,19 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-74.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-074.jpg",
                             "caption": "Image 74 - Adding a Loop Cut down the sides"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-75.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-075.jpg",
                             "caption": "Image 75 - Grabbing the edges around and pressing G then Y to bring them in at the front and back"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-76.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-076.jpg",
                             "caption": "Image 76 - Adding a Loop Cut for the legs"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-77.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-077.jpg",
                             "caption": "Image 77 - Moving the edges on the legs"
                           }
                         ]
@@ -781,11 +781,11 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-78.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-078.jpg",
                             "caption": "Image 78 - Selecting all parts with the torso as the active object and pressing Ctrl-J to join them"
                           },
                           {
-                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-79.jpg",
+                            "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-079.jpg",
                             "caption": "Image 79 - Going into the areas with overlap and creating a raised part between joints"
                           }
                         ]
@@ -804,7 +804,7 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-80.jpg",
+                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-080.jpg",
                       "caption": "Image 80 - Using generative AI to create a hair texture made of three parts: base color, shadows, and highlights"
                     }
                   ]
@@ -813,15 +813,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-81.jpg",
+                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-081.jpg",
                       "caption": "Image 81 - Starting with a plane and adding enough Loop Cuts so it can bend and follow the shape of the head"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-82.jpg",
+                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-082.jpg",
                       "caption": "Image 82 - Pressing M then A to merge the vertices at the bottom"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-83.jpg",
+                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-083.jpg",
                       "caption": "Image 83 - Pressing S then X to make the plane thinner"
                     }
                   ]
@@ -830,15 +830,15 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-84.jpg",
+                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-084.jpg",
                       "caption": "Image 84 - Grabbing the middle edge, pressing O for Proportional Editing and pressing S then X"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-85.jpg",
+                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-085.jpg",
                       "caption": "Image 85 - Scaling in the top edge"
                     },
                     {
-                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-86.jpg",
+                      "src": "Blender/TomGrave3D/characters/ps1 base mesh/ps1-086.jpg",
                       "caption": "Image 86 - Going to the side and pressing G then Z to pull out the middle spine"
                     }
                   ]
