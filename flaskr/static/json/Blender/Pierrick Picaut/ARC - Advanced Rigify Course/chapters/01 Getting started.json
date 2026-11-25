@@ -1,0 +1,39 @@
+{
+  "title": "01 Getting started",
+  "sections": [
+    {
+      "01_01 Welcome to ARC course": {
+        "tags": [
+        ],
+        "key_concepts": [
+          "The course is made of six chapters:",
+          [
+            "Introduction",
+            "Tips you should know before you start rigging",
+            "Rigify fundamentals: how it works, its UI, how to break it, and how to fix it",
+            "Exploring each rig type in depth: how they work and how to improve them",
+            "Advanced Rigify workflow techniques like the use of postscripts or the action manager",
+            "Finally, rigging the Crimson Ronin, the character model included in the course"
+          ]
+        ]
+      }
+    },
+    {
+      "01_02 Preferences, Addons and Software": {
+        "tags": [
+        ],
+        "key_concepts": [
+          "The course is made of six chapters:",
+          [
+            "Introduction",
+            "Tips you should know before you start rigging",
+            "Rigify fundamentals: how it works, its UI, how to break it, and how to fix it",
+            "Exploring each rig type in depth: how they work and how to improve them",
+            "Advanced Rigify workflow techniques like the use of postscripts or the action manager",
+            "Finally, rigging the Crimson Ronin, the character model included in the course"
+          ]
+        ]
+      }
+    }
+  ]
+}

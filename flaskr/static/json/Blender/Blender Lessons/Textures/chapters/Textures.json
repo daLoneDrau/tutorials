@@ -1,5 +1,5 @@
 {
-  "title": "Characters",
+  "title": "Textures",
   "sections": [
     {
       "Baking a Texture from Multiple Materials": {
@@ -85,6 +85,52 @@
               "header": "Edges",
               "content": [
                 "Select your mesh, go to Edge select mode. Select the edge loops running along the cell boundaries you want to keep visible (not the diagonals). [k]Edge → Mark Sharp[/k] on those loops, then add an [k]Edge Split[/k] modifier (Sharp Edges enabled) — this physically duplicates vertices along marked edges, breaking the shared topology there. Leave the diagonals unmarked — they stay welded, which is what lets the existing shared-vertex + coplanar check keep suppressing them. Apply the modifier (or leave it non-destructive if your export pipeline respects modifiers) and re-export the .glb.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Render Setup": {
+        "tags": [
+          "render", "camera", "game", "setup"
+        ],
+        "key_concepts": [
+          "Setting up your scene to view it at render size. When creating game assets that will be viewed at a fixed size, it is good to build and paint the asset when viewed at the right size. It helps to add a view to your workspace that will show you how it looks through the camera.",
+          {
+            "section": {
+              "header": "Viewport Setup",
+              "content": [
+                "Position your reference images and camera (Image 1). Open a new [k]3D Viewport[/k] window in the workspace that will be dedicated to your view (Image 2). In the new viewport, [k]Numpad0[/k] to go into Camera view. Change the [k]Viewport Shading[/k]; if your assets use a texture, change the [k]Viewport Shading[/k] to [k]Solid[/k] and set the [k]Object[/k] to [k]Texture[/k]. If you are using materials to color your assets, set [k]Viewport Shading > Material Preview[/k]. Set [k]View > Navigation > Zoom Camera 1:1[/k] so that we see the correct size in the viewport.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Output Setup",
+              "content": [
+                "In the [k]Output Properties[/k], set the [k]Format > Resolution X[/k] [k]Format > Resolution Y[/k] to the size you want. If you are building a model that will be viewed at 128x128px, then those are the sizes you need to set.",
+                {
+                  "image": [
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Camera Setup",
+              "content": [
+                "With the camera focused on your asset, go to the [k]Data Properties[/k] and set the [k]Type[/k] (for our retro projects, usually [k]Orthographic[/k]) and [k]Orthographic Scale[/k] if needed.",
                 {
                   "image": [
                   ]

@@ -1,12 +1,10 @@
 {
   "sections": [
     {
-      "Struggling to make fake 3D muscles": {
+      "Struggling to make fake 3D muscles pt I": {
         "tags": [
           "base mesh",
-          "male",
-          "texture",
-          "painting"
+          "male"
         ],
         "key_concepts": [
           "[url]Struggling to make fake 3D muscles^^https://www.youtube.com/watch?v=jPOwH4eHZ7w[/url]",
@@ -617,6 +615,645 @@
           }
         ]
       }
-    }
-  ]
-}
+    },
+    {
+      "Struggling to make fake 3D muscles pt II": {
+        "tags": [
+          "base mesh",
+          "male",
+          "texture",
+          "painting"
+        ],
+        "key_concepts": [
+          "[url]Struggling to make fake 3D muscles^^https://www.youtube.com/watch?v=jPOwH4eHZ7w[/url]",
+          {
+            "section": {
+              "header": "Unwrapping",
+              "content": [
+                {
+                  "section": {
+                    "header": "Marking Seams",
+                    "content": [
+                      "Select the edges underneath the head and above the neck and [k]RMB,M[/k] (Image 1). Select the front part of the face and add seams there as well (Image 2). Add another seam where the neck meets the torso (Image 3). Mark a seam between the arm and the torso (Image 4).",
+                      {
+                        "image": []
+                      },
+                      "Add a seam where the waist meets the hips (Image 5). Add another seam around the wrist (Image 6). [k]Alt-LMB[/k] the edge on the inside of the arm and [k]RMB,M[/k] (Image 7). Mark a seam at the inseam (Image 8).",
+                      {
+                        "image": []
+                      },
+                      "Mark seams around the bottom of the foot (Image 9). Mark a seam around the ankle (Image 10). Mark seams on the palm (Image 11). Add one last seam around the top of the leg (Image 12).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Setting up the Texture",
+                    "content": [
+                      "Go to the [k]Shading Workspace[/k] and give the model a new material (Image 13). In the Shader network add an Image Texture; for PS1-style, make it 256x256 (Image 14). Go to the [k]UV Editing Workspace[/k] and unwrap the image (Image 15); try several options to get the best unwrap.",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Painting",
+              "content": [
+                {
+                  "section": {
+                    "header": "Base Color",
+                    "content": [
+                      "The base color is the main native color of the body or outfit. Go to the [k]Texture Paint Workspace[/k] and set your base color (Image 16). (I used a Vagrant Story inspired color palette, the base color is #B98A6A). Paint the model all over the body (Image 17), you can adjust the size of the brush using [k]F[/k] (Image 18). Paint a pair of gray (#70747A) shorts on the hips (Image 19). As you paint it's easy to hide section you're not working on; [k]Tab[/k] into [k]Edit Mode[/k], hover a section you want to hide and then [k]L,H[/k] (Image 20).",
+                      {
+                        "image": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Shadows",
+                    "content": [
+                      "Now we are ready to get into the hard part, painting shadows, highlights, and deep shadows. Before we begin, there are two techniques we want to make sure we use as we go along:",
+                      {
+                        "section": {
+                          "header": "Modifier Viewport Display",
+                          "content": [
+                            "Sometimes you want to get to areas that are blocked by the other half of the model; turn off the [k]Realtime[/k] display of the [k]Mirror Modifier[/k] so you only see the left half (Image 21).",
+                            {
+                              "image": []
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Sample Color",
+                          "content": [
+                            "If you need to change to a color that was already painted to do some touch-ups, [k]Shift-X[/k] over an area with the color you want to sample that color (Image 22).",
+                            {
+                              "image": []
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Painting Shadows",
+                          "content": [
+                            "The shadow color (#91654F) is a darker, slightly shifted hue used on the side opposite the light source. We will paint this color in several places: under the pectorals, the lower sides of arms, beneath the jaw, the inner thighs, and on lower surfaces of muscles.",
+                            {
+                              "section": {
+                                "header": "The Inner Thighs",
+                                "content": [
+                                  "Hide the [k]Mirror Modifier[/k] in [k]Realtime[/k], change the shading to [k]Shade Flat[/k] and in the [k]Texture Paint Workspace[/k] change the [k]Viewport Shading[/k] to [k]Solid[/k] (Image 23). [k]Numpad3,Numpad9[/k] and paint a shadow stripe down the inner edge of the leg (Image 24). Change the [k]Viewport Shading[/k] to [k]Material Preview[/k], unhide the [k]Mirror Modifier[/k] and review the model in both [k]Front View[/k] and [k]Rear View[/k] (Images 25 and 26).",
+                                  {
+                                    "image": []
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Under the Arms",
+                                "content": [
+                                  "Hide the [k]Mirror Modifier[/k], go back into [k]Solid[/k] shading and hide the torso, hips, and leg geometry (Image 27). Paint a shadow going from the armpit to the wrist and palm (Image 28). Reveal the torso and hide the arms and paint a shadow along the torso (Image 29).",
+                                  {
+                                    "image": []
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "The Neck and Back of the Head",
+                                "content": [
+                                  "Isolate the neck and underside of the jaw and paint it entirely in shadow (Image 30). Reveal the hidden torso geometry and paint a circle around the neck (Image 31).",
+                                  {
+                                    "image": []
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "Touching Up",
+                                "content": [
+                                  "Draw a wedge at the bottom of the torso by the shorts (Images 35 and 36).",
+                                  {
+                                    "image": []
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "The Front of the Torso",
+                                "content": [
+                                  "At this point, it will be easier to return to [k]Smooth Shading[/k] and full mirroring. We want to shade a wedge starting under the armpits and extending out to under the chest and under the deltoid (Image 32). Review it from multiple angles, making adjustments that feel right (Images 33 and 34).",
+                                  {
+                                    "image": []
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Touching Up",
+                                      "content": [
+                                        "Draw a wedge at the bottom of the torso by the shorts (Images 35 and 36). Shade a space between the biceps and forearms, curving form the muscles (Image 37).",
+                                        {
+                                          "image": []
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "The Back of the Body",
+                                "content": [
+                                  "Go back to [k]Flat Shading[/k] and shade a line around the mid-point of the shoulder blades, curving slightly up in the center of the back (Image 38). Do anothetr curving line around the small of the back (Image 39). Fill in the gap between those lines going all the way to the sides (Image 40).",
+                                  {
+                                    "image": []
+                                  },
+                                  {
+                                    "section": {
+                                      "header": "Touching Up",
+                                      "content": [
+                                        "Clean up the shading on the back of the arms (Image 41). Do a similar thing for the legs (Image 42).",
+                                        {
+                                          "image": []
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "section": {
+                                "header": "The Shorts",
+                                "content": [
+                                  "Draw a thick shadow (#4B5057) at the bottom of the shorts and a thinner one at the top (Image 43). Paint shadows in between the legs (Image 44). Review how the paint job looks (Images 45 and 46). Do some touch-ups (Images 47 and 48).",
+                                  {
+                                    "image": []
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "section": {
+                          "header": "Highlights",
+                          "content": [
+                            "The highlight color (#D2A482) is a lighter hue used strictly on protruding points facing the light. We will paint this color on the tops of shoulders, upper chest, upper thighs, nose bridge, tops of forearms and knees.",
+                            "Start by shading in the chest and shoulders, front and back (Images 49 and 50). Shade in the front of the face and the top of the head (Image 51). Shade in the front of the biceps and forearms (Image 52).",
+                            {
+                              "image": []
+                            },
+                            "Paint highlights in front of the leg for the quads, kneecaps, and shins (Image 53). Draw an oval shape in front that will be the beginnings of an abdominal wall (Image 54). Paint the outside of the hand and top of the thumb and fingers in front (Images 55 and 56).",
+                            {
+                              "image": []
+                            },
+                            "Touch up the forearms by bringing a little slice of the base color into the highlight area (Image 57). Use the base color to draw lines to create separation for the shoulders and chest (Image 58). Draw a highlighted area above the abdominals (Image 59). Paint the base color into the abs (Image 60).",
+                            {
+                              "image": []
+                            },
+                            {
+                              "section": {
+                                "header": "Serratus Anterior",
+                                "content": [
+                                  "The serratus anterior is a fan-shaped muscle located on the lateral wall of the thorax (the side of the rib cage) that plays a critical role in shoulder movement, scapular stability, and respiration. It is often nicknamed the \"boxer's muscle\" because it is heavily used during a throwing or punching motion.",
+                                  "Draw three highlight lines under the pectorals, on the rib cage (Image 61). Add some more highlights and shadows to the abs, especially down towards the bottom and around the side (Images 62 and 63). Use the [k]Smear Tool[/k] to smear around the back (Image 64).",
+                                  {
+                                    "image": []
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "image": []
+                      },
+                      "",
+                      {
+                        "image": []
+                      },
+                      "Fill in the next face along the side (Image 35). Repeat the same steps in the back (Image 36). Go around the side and fix the arm hole so it is a cleaner circle (Image 37).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-035.jpg",
+                            "caption": "Image 35 - Filling in the next face along the side"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-036.jpg",
+                            "caption": "Image 36 - Repeating the same steps in the back"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-037.jpg",
+                            "caption": "Image 37 - Going around the side and fixing the arm hole so it is a cleaner circle"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Hips",
+                    "content": [
+                      "Extrude the bottom edge halfway down the pelvis (Image 38) and rotate it from the side and scale it out (Image 39). Extrude again, and rotate it slightly in the opposite direction as before (Image 40). Review from the front as well (Image 41).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-038.jpg",
+                            "caption": "Image 38 - Extruding the bottom edge halfway down the pelvis"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-039.jpg",
+                            "caption": "Image 39 - Rotating from the side and scaling it out"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-040.jpg",
+                            "caption": "Image 40 - Extruding again and rotating it slightly in the opposite direction"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-041.jpg",
+                            "caption": "Image 41 - Reviewing from the front"
+                          }
+                        ]
+                      },
+                      "Add another cylinder, this time with 6 vertices (Image 42). [k]R,Z,30[/k] [k]S[/k], [k]G[/k] to move it in place by the shoulders (Image 43). [k]Shift-D[/k] and move the duplicate down to the thigh area (Image 44). Bring the top [k]Edge Loop[/k] to the middle of the thigh and the bottom to just above the knee (Image 45).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-042.jpg",
+                            "caption": "Image 42 - Adding another cylinder with 6 vertices"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-043.jpg",
+                            "caption": "Image 43 - Pressing R, Z, 30 then S and G to move the cylinder into place by the shoulders"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-044.jpg",
+                            "caption": "Image 44 - Pressing Shift-D and moving the duplicate down to the thigh area"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-045.jpg",
+                            "caption": "Image 45 - Bringing the top Edge Loop to the middle of the thigh and the bottom to just above the knee"
+                          }
+                        ]
+                      },
+                      "Extrude the bottom twice - once to the middle of the knee and again to below the knee (Image 46). Extrude again to three more points - the widest part of the calf, just above the ankle, and just below the ankle (Image 47). Shape the leg from front and side (Images 48 and 49).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-046.jpg",
+                            "caption": "Image 46 - Extruding the bottom twice to the middle of the knee and again to below the knee"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-047.jpg",
+                            "caption": "Image 47 - Extruding again to three more points: the widest part of the calf, just above the ankle, and just below the ankle"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-048.jpg",
+                            "caption": "Image 48 - Shaping the leg from the front"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-049.jpg",
+                            "caption": "Image 49 - Shaping the leg from the side"
+                          }
+                        ]
+                      },
+                      "Give the top edge a slight rotation from the side (Images 50). Extrude the top up to about crotch level and give it a slight rotation (Image 51).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-050.jpg",
+                            "caption": "Image 50 - Giving the top edge a slight rotation from the side"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-051.jpg",
+                            "caption": "Image 51 - Extruding the top up to about crotch level and giving it a slight rotation"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Arms",
+                    "content": [
+                      "Rotate the arm cylinder to match the reference image (Image 52). Size up the cylinder to match the reference from the top of the bicep to the elbow (Image 53). Extend the bottom edge to the widest part of the forearm and then again to the wrist (Image 54). Extrude the top edge to the arm hole in the torso and rotate it (Image 55).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-052.jpg",
+                            "caption": "Image 52 - Rotating the arm cylinder to match the reference image"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-053.jpg",
+                            "caption": "Image 53 - Sizing up the cylinder to match the reference from the top of the bicep to the elbow"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-054.jpg",
+                            "caption": "Image 54 - Extending the bottom edge to the widest part of the forearm and then again to the wrist"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-055.jpg",
+                            "caption": "Image 55 - Extruding the top edge to the arm hole in the torso and rotating it"
+                          }
+                        ]
+                      },
+                      "Add a [k]Loop Cut[/k], scale it up and move it out to provide a bend (Image 56). Select the outer edge, [k]S,Z,0[/k] and then do your best to line up the three edges to match the reference (Image 57). Go around to the side and thicken the arms and add a [k]Loop Cut[/k] for the biceps/triceps shape (Image 58).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-056.jpg",
+                            "caption": "Image 56 - Adding a Loop Cut, scaling it up and moving it out to provide a bend"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-057.jpg",
+                            "caption": "Image 57 - Selecting the outer edge, pressing S, Z, 0 and lining up the three edges to match the reference"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-058.jpg",
+                            "caption": "Image 58 - Going around to the side, thickening the arms and adding a Loop Cut for the biceps and triceps shape"
+                          }
+                        ]
+                      },
+                      "Select the arm mesh and then the torso mesh and [k]Ctrl-J[/k] (Image 59). Go around the shoulder and [k]M,A[/k] all vertices (Image 60). Select the two vertices on the outside of the shoulder and [k]S,Y[/k] (Image 61).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-059.jpg",
+                            "caption": "Image 59 - Selecting the arm mesh and then the torso mesh and pressing Ctrl-J to join them"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-060.jpg",
+                            "caption": "Image 60 - Going around the shoulder and pressing M then A to merge all vertices"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-061.jpg",
+                            "caption": "Image 61 - Selecting the two vertices on the outside of the shoulder and pressing S then Y to scale"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Hips and Legs",
+                    "content": [
+                      "Select vertices in front of the pelvis, move them in and rotate them slightly (Image 62). Pull the bottom front vertices down (Image 63). Go around to the rear and shape the three vertices in the lower back (Image 64). Select the leg mesh and torse mesh and [k]Ctrl-J[/k] (Image 65).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-062.jpg",
+                            "caption": "Image 62 - Selecting vertices in front of the pelvis, moving them in and rotating them slightly"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-063.jpg",
+                            "caption": "Image 63 - Pulling the bottom front vertices down"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-064.jpg",
+                            "caption": "Image 64 - Going around to the rear and shaping the three vertices in the lower back"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-065.jpg",
+                            "caption": "Image 65 - Selecting the leg mesh and torso mesh and pressing Ctrl-J to join them"
+                          }
+                        ]
+                      },
+                      "Go around the bottom of the hips and join the inner four vertices of the legs to the hips, using [k]M,L[/k] to join the leg vertices to where the hip vertices end (Image 66). Around the back extrude the vertex from the top of the leg to the center (Image 67) and then fill in the gaps (Images 68 and 69).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-066.jpg",
+                            "caption": "Image 66 - Going around the bottom of the hips and joining the inner four vertices of the legs to the hips using M then L"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-067.jpg",
+                            "caption": "Image 67 - Extruding the vertex from the top of the leg to the center around the back"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-068.jpg",
+                            "caption": "Image 68 - Filling in the gaps"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-069.jpg",
+                            "caption": "Image 69 - Continuing to fill in the remaining gaps"
+                          }
+                        ]
+                      },
+                      "Underneath, extrude the vertex on the inside of the leg in the x-axis (Image 70) and then fill it in (Image 71). Go around to the front and fill in the last gap (Image 72).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-070.jpg",
+                            "caption": "Image 70 - Extruding the vertex on the inside of the leg in the x-axis underneath"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-071.jpg",
+                            "caption": "Image 71 - Filling it in"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-072.jpg",
+                            "caption": "Image 72 - Going around to the front and filling in the last gap"
+                          }
+                        ]
+                      },
+                      "Go to the bottom edge of the leg (which should be mid-ankle, if not move it) and extrude the vertices and shape it for the foot (Image 73). Extrude the back vertices down to the origin (Image 74). Extrude the side edge forward to the end of the foot (Image 75) and lower the top vertices to the top of the toes (Image 76).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-073.jpg",
+                            "caption": "Image 73 - Going to the bottom edge of the leg and extruding the vertices, shaping them for the foot"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-074.jpg",
+                            "caption": "Image 74 - Extruding the back vertices down to the origin"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-075.jpg",
+                            "caption": "Image 75 - Extruding the side edge forward to the end of the foot"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-076.jpg",
+                            "caption": "Image 76 - Lowering the top vertices to the top of the toes"
+                          }
+                        ]
+                      },
+                      "Select the four vertices at the top of the foot and [k]F[/k] to fill them in (Image 77). Fill in faces on the sides and front (Image 78). Widen the front face (Image 79). Add [k]Loop Cuts[/k] for the big toe (Image 80) and pull the edge forward to curve the toes (Image 81).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-077.jpg",
+                            "caption": "Image 77 - Selecting the four vertices at the top of the foot and pressing F to fill them in"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-078.jpg",
+                            "caption": "Image 78 - Filling in faces on the sides and front"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-079.jpg",
+                            "caption": "Image 79 - Widening the front face"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-080.jpg",
+                            "caption": "Image 80 - Adding Loop Cuts for the big toe"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-081.jpg",
+                            "caption": "Image 81 - Pulling the edge forward to curve the toes"
+                          }
+                        ]
+                      },
+                      "Fill in the back face by the heel (Image 82). Select the two edges along the sides of the foot and [k]RMB,S[/k] (Image 83). Cut edge loops from the upper edge to the new vertices (Image 84) and then fill in the faces (Image 85).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-082.jpg",
+                            "caption": "Image 82 - Filling in the back face by the heel"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-083.jpg",
+                            "caption": "Image 83 - Selecting the two edges along the sides of the foot and pressing RMB then S to subdivide"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-084.jpg",
+                            "caption": "Image 84 - Cutting edge loops from the upper edge to the new vertices"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-085.jpg",
+                            "caption": "Image 85 - Filling in the faces"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "The Hands (Clenched Fist)",
+                    "content": [
+                      "We want to flatten then inside of the hand, so select the middle vertex on the inside of the wrist (Image 86) and [k]G,G[/k] it up to the front (Image 87). Select the opposite vertex and [k]S[/k] them in (Image 88). Re-center them at the end of the wrist and scale them out if needed (Image 89).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-086.jpg",
+                            "caption": "Image 86 - Selecting the middle vertex on the inside of the wrist to flatten the inside of the hand"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-087.jpg",
+                            "caption": "Image 87 - Pressing G then G to slide the vertex up to the front"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-088.jpg",
+                            "caption": "Image 88 - Selecting the opposite vertex and pressing S to scale them in"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-089.jpg",
+                            "caption": "Image 89 - Re-centering at the end of the wrist and scaling out if needed"
+                          }
+                        ]
+                      },
+                      "Extrude the bottom edge down to where the thumb comes out of the palm (Image 90) and then again to where the knuckles would end (Image 91). Come around to the side and widen the hand (Image 92).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-090.jpg",
+                            "caption": "Image 90 - Extruding the bottom edge down to where the thumb comes out of the palm"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-091.jpg",
+                            "caption": "Image 91 - Extruding again to where the knuckles would end"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-092.jpg",
+                            "caption": "Image 92 - Coming around to the side and widening the hand"
+                          }
+                        ]
+                      },
+                      "Add a [k]Loop Cut[/k] around the palm for where the thumb (Image 93) and another one to match the thumb's thickness (Image 94). [k]Edge Slide[/k] the middle vertex to reduce triangles (Image 95). Extrude the three faces for the thumb (Image 96).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-093.jpg",
+                            "caption": "Image 93 - Adding a Loop Cut around the palm for where the thumb is"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-094.jpg",
+                            "caption": "Image 94 - Adding another Loop Cut to match the thumb's thickness"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-095.jpg",
+                            "caption": "Image 95 - Using Edge Slide on the middle vertex to reduce triangles"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-096.jpg",
+                            "caption": "Image 96 - Extruding the three faces for the thumb"
+                          }
+                        ]
+                      },
+                      "Grab the top edge and [k]G,G[/k] in (Image 97). On the underside [k]G,G[/k] the bottom edges in (Image 98). Fill in the faces at the bottom (Image 99). Go around the side and merge the vertices down (Image 100).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-097.jpg",
+                            "caption": "Image 97 - Grabbing the top edge and pressing G then G to slide it in"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-098.jpg",
+                            "caption": "Image 98 - Pressing G then G on the bottom edges on the underside to slide them in"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-099.jpg",
+                            "caption": "Image 99 - Filling in the faces at the bottom"
+                          },
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-100.jpg",
+                            "caption": "Image 100 - Going around the side and merging the vertices down"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "section": {
+                    "header": "Cleanup",
+                    "content": [
+                      "Cut an edge across the front of the chest (Image 101).",
+                      {
+                        "image": [
+                          {
+                            "src": "Blender/vivini/Characters/male base/male_base-101.jpg",
+                            "caption": "Image 101 - Cutting an edge across the front of the chest"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
