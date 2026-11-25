@@ -3,8 +3,7 @@
   "sections": [
     {
       "01_01 Welcome to ARC course": {
-        "tags": [
-        ],
+        "tags": [],
         "key_concepts": [
           "The course is made of six chapters:",
           [
@@ -20,18 +19,71 @@
     },
     {
       "01_02 Preferences, Addons and Software": {
-        "tags": [
-        ],
+        "tags": ["rigify", "developer extras", "python"],
         "key_concepts": [
           "The course is made of six chapters:",
-          [
-            "Introduction",
-            "Tips you should know before you start rigging",
-            "Rigify fundamentals: how it works, its UI, how to break it, and how to fix it",
-            "Exploring each rig type in depth: how they work and how to improve them",
-            "Advanced Rigify workflow techniques like the use of postscripts or the action manager",
-            "Finally, rigging the Crimson Ronin, the character model included in the course"
-          ]
+          {
+            "section": {
+              "header": "Installing Rigify",
+              "content": [
+                "Go to [k]Edit > Prefences[/k] (Image 1) and then [k]Add-Ons[/k] (Image 2). Rigify is installed by default in Blender, search for 'rigify' and then enable it (Image 3). You should also review the [url]Rigify Documentation^^https://docs.blender.org/manual/en/5.2/addons/rigify/[/url].",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Icon Viewer",
+              "content": [
+                "Go to [k]Prefences > Get Extensions[/k] and search for and install 'icon viewer' (Image 6). This allows you to see the name of each icon in Blender.",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Bone Widget",
+              "content": [
+                "The last add-on to install is 'bone widget' (Image 7). Bone Widget is a blender add-on to assist with making custom bone shapes. It has an editable library of shapes that make it easy to apply to any rig.",
+                {
+                  "image": []
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "01_03 Python Learning Ressources": {
+        "tags": ["python"],
+        "key_concepts": [
+          {
+            "section": {
+              "header": "Python Scripting Knowledge",
+              "content": [
+                "You only need basic Python scripting knowledge to understand the scripts provided in the course. And it’s much better to use them when you actually know what you’re reading.",
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Python for Rigging",
+              "content": [
+                "Adding constraints, duplicating bones, editing influences... requires only low-level Python skills and will drastically improve your rigging abilities",
+                {
+                  "image": []
+                }
+              ]
+            }
+          }
         ]
       }
     }
