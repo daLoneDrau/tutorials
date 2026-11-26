@@ -1,0 +1,76 @@
+{
+  "title": "02 Blender rigging tips",
+  "sections": [
+    {
+      "02_01 Useful shortcuts": {
+        "tags": [
+          "tips"
+        ],
+        "key_concepts": [
+          "The course is made of six chapters:",
+          {
+            "section": {
+              "header": "Armature Modes",
+              "content": [
+                "When rigging and working with armature objects, you will be switching through three modes: [k]Pose[/k], [k]Edit[/k], and [k]Object[/k] modes. In the 3D view with the armature active:",
+                [
+                  "[k]CTRL-Tab[/k] = toggle pose mode",
+                  "[k]Tab[/k] = toggle edit mode"
+                ],
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Hiding",
+              "content": [
+                "Oftentimes you will want to hide bones you are working with. Whatever the context:",
+                [
+                  "[k]H[/k] : hide selected",
+                  "[k]Shift-H[/k] : hide unselected",
+                  "[k]Alt-H[/k] : unhide"
+                ],
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Local Mode",
+              "content": [
+                "You can isolate the object you are working on in [k]Local Mode[/k]. Only the selected objects are shown and only in the current editor.",
+                [
+                  "[k]/[/k] : toggle local mode"
+                ],
+                {
+                  "image": []
+                }
+              ]
+            }
+          },
+          {
+            "section": {
+              "header": "Outliner",
+              "content": [
+                "The [k]Outliner[/k] is very helpful with enabling the selection and visibility restriction filters.",
+                [
+                  "[k]LMB[/k] : toggle restriction",
+                  "[k]Shift-LMB[/k] : toggle restriction inside collection or to children",
+                  "[k]CTRK-LMB[/k] : isolate"
+                ],
+                {
+                  "image": []
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
