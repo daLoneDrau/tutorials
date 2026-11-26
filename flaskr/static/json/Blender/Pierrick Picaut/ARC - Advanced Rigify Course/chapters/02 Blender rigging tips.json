@@ -68,6 +68,22 @@
                 }
               ]
             }
+          },
+          {
+            "section": {
+              "header": "Box Selection",
+              "content": [
+                "Box selection, works in any editor and any mode. It is additive, so it will add more to the current selection each time it is used. Holding [k]Shift-LMB[/k] will make it a focus selection, only selecting items that fall into the current selection.",
+                [
+                  "[k]B[/k] : toggle restriction",
+                  "[k]Shift-LMB[/k] : focus selection",
+                  "[k]CTRK-LMB[/k] : isolate"
+                ],
+                {
+                  "image": []
+                }
+              ]
+            }
           }
         ]
       }
