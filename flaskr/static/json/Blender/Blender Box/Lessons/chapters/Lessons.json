@@ -17,31 +17,31 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-01.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01.jpg",
                       "caption": "Image 1 - Making the Deku Shield from The Legend of Zelda: Ocarina of Time"
                     },
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-02.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-02.jpg",
                       "caption": "Image 2 - Going to Render > Color Management and setting View > Standard for a less filmic look"
                     },
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-03.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-03.jpg",
                       "caption": "Image 3 - Enabling View Layer > Passes > Data > Depth for the Grease Pencil later"
                     },
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-04.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-04.jpg",
                       "caption": "Image 4 - Adding a cube and scaling it down in the y-axis"
                     },
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-05.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-05.jpg",
                       "caption": "Image 5 - Adding a Loop Cut from the front and giving it a general shield shape"
                     },
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-06.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-06.jpg",
                       "caption": "Image 6 - Adding a few more cuts to match the game"
                     },
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-07.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-07.jpg",
                       "caption": "Image 7 - Coming around to the top and angling it out"
                     }
                   ]
@@ -54,27 +54,27 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-08.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-08.jpg",
                             "caption": "Image 8 - Adding more Loop Cuts across and up and down"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-09.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-09.jpg",
                             "caption": "Image 9 - Pressing 2 to enter Edge Mode and selecting all interior edges except the middle one"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-10.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-10.jpg",
                             "caption": "Image 10 - Pressing Ctrl-B to bevel the edges with two segments"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-11.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-11.jpg",
                             "caption": "Image 11 - Setting Transform Pivot Point > Individual Origins and pressing S to scale all the inner edges to create the appearance of wooden slats"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-12.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-12.jpg",
                             "caption": "Image 12 - Adding five Loop Cuts across the top and bottom sections"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-13.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-13.jpg",
                             "caption": "Image 13 - In Object Mode, pressing RMB > Shade Smooth and reviewing the model"
                           }
                         ]
@@ -90,27 +90,27 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-14.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-14.jpg",
                             "caption": "Image 14 - Adding a cylinder with 8 vertices, rotating it 90 degrees in the x-axis and shrinking it down"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-15.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-15.jpg",
                             "caption": "Image 15 - Pressing I to inset the face on one end, G to bring it out, E to extrude and Ctrl-RMB to keep extruding sections, then pressing S, Z, 0 on the last one to flatten it"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-16.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-16.jpg",
                             "caption": "Image 16 - Setting the handle's origin to the world origin and adding a Mirror Modifier"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-17.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-17.jpg",
                             "caption": "Image 17 - Moving the parts of the handle closer together to fit a hand"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-18.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-18.jpg",
                             "caption": "Image 18 - Enabling Clipping in the Mirror Modifier and extruding the bottom face down"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-19.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-19.jpg",
                             "caption": "Image 19 - Moving the handle over to the side where the wielder would naturally carry it"
                           }
                         ]
@@ -126,23 +126,23 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-20.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-20.jpg",
                             "caption": "Image 20 - Adding a cube and scaling it down"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-21.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-21.jpg",
                             "caption": "Image 21 - Using E and Ctrl-RMB to extrude the strap shape"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-22.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-22.jpg",
                             "caption": "Image 22 - Adding a Mirror Modifier with Clipping and completing the loop"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-23.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-23.jpg",
                             "caption": "Image 23 - Adding a Subdivision Surface Modifier for a smoother look"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-24.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-24.jpg",
                             "caption": "Image 24 - Positioning the strap"
                           }
                         ]
@@ -158,15 +158,15 @@
                       {
                         "image": [
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-25.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-25.jpg",
                             "caption": "Image 25 - Selecting the shield geometry and adding a Displace Modifier with a new Texture named 'LumpyWood'"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-26.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-26.jpg",
                             "caption": "Image 26 - Opening the Texture Properties and setting Type > Voronoi"
                           },
                           {
-                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-27.jpg",
+                            "src": "Blender/Blender Box/Lessons/Deku Shield/deku-27.jpg",
                             "caption": "Image 27 - Adjusting Colors > Contrast and Voronoi > Size until getting the desired result"
                           }
                         ]
@@ -192,11 +192,11 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-28.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-28.jpg",
                       "caption": "Image 28 - Opening the Shading Workspace and adding a Shader to RGB and Color Ramp to the shield's shade network"
                     },
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-29.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-29.jpg",
                       "caption": "Image 29 - Giving the Color Ramp five stops"
                     }
                   ]
@@ -221,7 +221,7 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-30.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-30.jpg",
                       "caption": "Image 30 - Setting up shader networks for the handle and strap as well"
                     }
                   ]
@@ -237,19 +237,19 @@
                 {
                   "image": [
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-31.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-31.jpg",
                       "caption": "Image 31 - Adding a second material to the shield named 'shieldBorder', changing its Surface to Emission and setting the Color to #331A20"
                     },
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-32.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-32.jpg",
                       "caption": "Image 32 - Adding a Solidify Modifier, enabling Normals > Flip and setting Materials > Material Offset to 1 so it uses the second material slot"
                     },
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-33.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-33.jpg",
                       "caption": "Image 33 - Enabling Settings > Surface > Backface Culling > Camera under Material Properties for the second material"
                     },
                     {
-                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-01-34.jpg",
+                      "src": "Blender/Blender Box/Lessons/Deku Shield/deku-34.jpg",
                       "caption": "Image 34 - Adjusting the Solidify Modifier > Thickness setting to thicken the shield border, with the Face Orientation overlay disabled"
                     }
                   ]
